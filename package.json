@@ -6,8 +6,10 @@
   "dependencies": {},
   "devDependencies": {
     "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
+    "grunt-copy": "^0.1.0",
     "grunt-exec": "^3.0.0",
     "grunt-run": "^0.8.0",
     "nucleus-styleguide": "^1.1.1"
