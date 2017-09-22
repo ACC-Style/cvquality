@@ -1,5 +1,5 @@
 {
-    "title": "Nucleus",
+    "title": "ACC | CV Quality",
     "files": ["assets/scss/**/*.scss"],
     "target": "docs",
     "css": [
