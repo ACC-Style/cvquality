@@ -1,0 +1,13 @@
+@mixin icon-lock{
+	background: url(/images/QII/icn-lock.png) no-repeat right top transparent;
+}
+
+/**
+ * @icon .lock
+ * @markup
+ *  <i class="lock"></i>
+ */
+.lock {
+  @include icon-lock;
+  padding-right: 18px;
+}

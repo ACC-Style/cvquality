@@ -1,0 +1,28 @@
+{
+  "name": "qii",
+  "version": "1.0.0",
+  "description": "style guide for qii",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-exec": "^3.0.0",
+    "grunt-run": "^0.8.0",
+    "nucleus-styleguide": "^1.1.1"
+  },
+  "scripts": {
+    "styleguide": "nucleus --config config.nucleus.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattWatier/QII-Documentation.git"
+  },
+  "author": "Matt Watier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MattWatier/QII-Documentation/issues"
+  },
+  "homepage": "https://github.com/MattWatier/QII-Documentation#readme"
+}

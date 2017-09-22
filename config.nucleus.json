@@ -1,0 +1,15 @@
+{
+    "title": "Nucleus",
+    "files": ["assets/scss/**/*.scss"],
+    "target": "docs",
+    "css": [
+   "../assets/css/vendor/bootstrap/bootstrap.css",
+    "../assets/css/index.css",
+    "../assets/css/styleguide.css"],
+
+	"namespace": "",
+    "verbose": 3,
+    "counterCSS": null,
+    "staticLipsum": false,
+    "placeholderService": false
+}
