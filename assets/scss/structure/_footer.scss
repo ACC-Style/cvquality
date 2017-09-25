@@ -1,0 +1,189 @@
+
+#site-footer {
+	clear: both;
+	.wrapper {
+		padding: 10px 0 40px;
+		position: relative;
+		overflow: auto;
+		color: #000;
+		background: #a1a0a4;
+	}
+}
+
+#footer-nav {
+	padding: 0 3%;
+	li {
+		margin-right: 20px;
+		max-width: 254px;
+		float: left;
+		list-style-type: none;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	h2 {
+		height: 3em;
+		display: table-cell;
+		vertical-align: bottom;
+		font-size: 0.875em;
+		/* 14px; */
+		line-height: 1.4em;
+	}
+	a {
+		font-size: 0.875em;
+		/* 14px */
+		color: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+	li li {
+		margin: 0;
+		float: none;
+		li a {
+			padding-left: 16px;
+			color: #000;
+			text-transform: none;
+		}
+	}
+}
+
+/**
+* Social engagement buttons.
+* 
+*	
+* @molecule Social Buttons
+* @section Footer > Social Buttons
+* @markup 
+ <section id="social" class="social-buttons">
+  <h1>Stay Connected</h1>
+	<ul>
+	<li class="twitter"><a id="msFooter_lnkTwitter" href="https://twitter.com/accintouch" target="_blank"><i class="fa fa-twitter"></i></a></li>
+	<li class="facebook"><a id="msFooter_lnkFacebook" href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank"><i class="fa fa-facebook"></i></a></li>
+	<li class="linkedin"><a id="msFooter_lnkLinkedIn" href="http://www.linkedin.com/groups/American-College-Cardiology-732607?trk=myg_ugrp_ovr" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+	<li class="youtube"><a id="msFooter_lnkYoutube" href="http://www.youtube.com/user/ACCinTouch" target="_blank"><i class="fa fa-youtube"></i></a></li>
+	</ul>
+  </section>
+* 
+**/
+.social-buttons {
+	margin-top: 1em;
+	padding: 2.5em 3% 1em;
+	clear: left;
+	h1 {
+		margin-bottom: 0.75em;
+		padding: 0;
+		font-size: 0.875em;
+		/* 14px */
+		text-transform: uppercase;
+		color:  $off-white;
+	}
+	i{
+		color: $off-white;
+	    font-size: 20px;
+	    margin: 10px;
+	    text-align: center;
+	}
+	li {
+		margin: 0 8px 0 0;
+		padding-left: 0;
+		float: left;
+		list-style-type: none;
+		a {
+			height: 40px;
+			width: 40px;
+			display: block;
+			text-align: center;
+		}
+		&.twitter a {
+			background-color: #78cdf0;
+		}
+		&.facebook a {
+			background-color: #537bbd;
+		}
+		&.youtube a {
+			background-color: #e9654b;
+		}
+		&.linkedin a {
+			background-color: #2085c7;
+		}
+	}
+}
+
+
+#site-footer address {
+	margin-top: 1em;
+	padding: 12px 3% 0;
+	clear: both;
+	h2 {
+		font-weight: normal;
+		font-size: 1em;
+		font-family: 'Lato', sans-serif;
+	}
+	img {
+		display: none;
+	}
+	a {
+		color: #000;
+		text-decoration: none;
+	}
+}
+
+address abbr[title] {
+	text-decoration: none;
+	border: 0;
+}
+
+@include bp(md) {
+ /* Footer */
+    #site-footer .wrapper {
+        padding-bottom: 10px;
+        border-top: solid 12px #a1a0a4;
+        border-bottom: solid 20px #a1a0a4;
+    }
+    ul#footer-nav {
+        margin-right: 3%;
+        margin-left: 245px;
+        float: left;
+        border-left: solid 1px #ddd;
+        li {
+            margin-right: 3%;
+            width: 47%;
+            max-width: auto;
+            float: left;
+            li {
+                float: none;
+                width: auto;
+            }
+        }
+    }
+    #site-footer {
+        address {
+            width: 200px;
+            margin-top: 0;
+            padding: 0;
+            position: absolute;
+            top: 100px;
+            left: 3%;
+            h2 {
+                display: none;
+            }
+            img {
+                margin: 0 10px 1em 0;
+                float: left;
+                display: block;
+            }
+        }
+        h1 {
+            padding: 0;
+        }
+    }
+    
+
+
+@include bp(lg){
+	 ul#footer-nav {
+        margin-left: 172px;
+        margin-right: 227px;
+        border-right: solid 1px #ddd;
+    }
+}

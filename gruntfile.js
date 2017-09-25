@@ -15,7 +15,7 @@ module.exports = function(grunt) {
         copy: {
             main: {
                 expand: true,
-                src: ['assets/css/*.css','assets/css/**/*.css'],
+                src: ['assets/css/*.css','assets/css/**/*.css','assets/images/*'],
                 dest: 'docs/',
             },
         },
@@ -28,10 +28,26 @@ module.exports = function(grunt) {
                 tasks: ['sass','copy', 'exec']
             }
         }
+  //       phantomcss: {
+  //   desktop: {
+  //     options: {
+  //       screenshots: 'baselines/desktop',
+  //       results: 'results/desktop',
+  //       viewportSize: [1280, 800]
+  //     },
+  //     src: [
+  //       'tests/phantomcss/start.js',
+  //       'tests/phantomcss/*-test.js'
+  //     ]
+  //   }
+  // }
     });
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-exec');
+    grunt.loadNpmTasks('@micahgodbolt/grunt-phantomcss');
+
+
     grunt.registerTask('default', ['watch']);
 }

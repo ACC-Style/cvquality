@@ -1,0 +1,23 @@
+.active,
+.inactive,
+.disabled {}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.highlighted {}
+
+.error {
+    color: $error-color;
+}
+
+
+
+.note span,
+.required,
+.asterisk {
+    font-size: 120%;
+    color: #a00;
+}

@@ -1,7 +1,7 @@
 # Design UI Elements
 
-## boxing ??
-* can we nest layouts in sitefinity?
+## boxing
+* using a variation of containers of the layout type boxes can be added. 
 
 
 ## twitter widget
@@ -15,7 +15,7 @@
 
 ## accordian
 * can we nest layouts in sitefinity components? 
-* are the accoridians chained or independent - Monica research?
+* are independent
 
 
 ## testimonial
@@ -25,7 +25,7 @@
 * Name
 
 ### Component Def
-* hightlighed
+* highlighted
 * Select id when embeded or random tag
 * Layout Deisgn hor/vert
 	* hor becomes vert when < tablet
@@ -34,7 +34,7 @@
 
 ## more #anchor
 * can we nest layouts in sitefinity components? 
-* more  collapsable content
+* more collapsible content
 
 ### Component Def 
 * toggle text from "more" to "less"
@@ -68,31 +68,29 @@
 * Short Des
 * Product Page Link
 
-## Video Register --> sent back for 
-* link product id to pass along to register page
-* question redesign to make less clickable
 
-## Web to lead --> Carl
-####questions
-	1. Integration Salesforce??? Reg Form??? 
-	2. currently in CVqualtiy
-	3. url??
+## Web to lead
+* Meeting with SCPC registration email receiver   --> Carl
+* url: https://cvquality.acc.org/About-QII/RFI-Form
+
+#### Out Standing Actions
+	Integration Salesforce from Reg Form?  
 
 ## Purchase Links
 * class of "purchase" to button
-* No passing of product info ( roadmap:fix the pass through)
 * Acred Market Place 
 	* URL https://portal.scpcp.org/Login.aspx will be  https://portal.[domain].org/Login.aspx 
+	* No passing of product info ( roadmap:fix the pass through)
 	* No SSO we will loose any user info for now.
 
 ## Map
-* Pull code from current imp...
+* Pull code from current map...
 	* meet the team
 	* bing map?
 
-
+## Event
 ### Element Def
-* tag/type (congress,new,event,qii )
+* tag/type (congress,news,event,qii,webinar, industry event, & ncdr )
 * date (single, range, time?)
 * name/title
 * location
@@ -105,9 +103,8 @@
 	* link to longer description page? 
 * add to calendar
 	* iCal, Outlook, G-Cal
-
-####questions
-	1. registration "button"? --> DS team --> market place (no query string)
+* optional register button with link path
+* registration "button" no query string for product
 
 ### Component Def 
 * expanded & condensed mode
@@ -123,21 +120,18 @@
 * highlights click (do nothing)
 
 ## Full Calendar of Events (page)
+* list
 
-#### questions
-	1. registration "button"? --> DS team --> market place (no query string)
-	2. scewmorphic vs list ?
+## Recorded Webinar Registration 
+* link product id to pass along to register page
+* redesign block to make the video less clickable
+* after registration go to video page.
+* no thank you or memory of prior video registration
 
-## regestering for events?
-* talk to dublin team
 
-#### questions
-	1. register for ( title, description )?
-	2. how do we currate product info for this page?
-	3. do all products we reg for have a corisponding dynmic item
-	4. adding more items when on this page?
-	5. how do we pass in register for
-	6. ( USER FLOW )thank you path?  page, email, link? -->DS Team needs to map
+## registering/buying a product
+* Send to market place
+
 
 
 # Wireframe Update
@@ -147,8 +141,20 @@
 * change text on page 32 register to reflect that it is a product place holder.
 * ( USER FLOW )thank you path
 
-# Old Enviroment
+# Old Environment
 * Carl to setup team meeting and introduction
 * did they write in asp?
 * twiter widget
 * map 
+
+# (OUT OF SCOPE-Roadmap)
+
+##Product Registration 
+* how do we curate  product info for this page?
+* do all products we reg for have a corresponding dynamic item - NO
+* adding more items when on this page? -NO
+* how do we pass in register for - Nothing
+* ( USER FLOW )thank you path?  page, email, link? -->DS Team needs to map
+
+## Registering for Live Webinar
+* Send to Link
