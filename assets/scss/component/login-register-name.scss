@@ -1,0 +1,70 @@
+/**
+* Login Text that shows in the header and shows the name of the user. 
+*
+*
+* @molecule User Name Container
+* @section Header > Login
+* @markup
+*   <div class="logged-in">
+*       <div class="clearfix">
+*           <span class="welcome">
+*               Welcome  , [User Name]
+*            </span>
+*           <span id="logout">
+*               <a id="qiiLoginStatus_lnkLogout" title="Logout" href="javascript:__doPostBack('ctl00$qiiLoginStatus$lnkLogout','')">Logout</a>
+*           </span>
+*       </div>
+*       <p class="my-cardiosource">
+*           <a href="" target="_blank">My ACC</a>
+*       </p>
+*   </div>
+ */
+
+
+.login {
+    display: none;
+}
+
+
+
+
+#button-login-register {
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.logged-in {
+    margin-top: 0.675em;
+    padding-left: 3%;
+    position: absolute;
+    z-index: 300;
+    font-size: 0.75em;
+    /* reduced per http://jira.beaconfire.us/browse/ACCQII-391 */
+    line-height: 1.25em;
+    color: #08a;
+}
+
+#saHeader_msLogin_lnkLogin {
+    margin-top: 0.675em;
+    padding-left: 3%;
+    position: absolute;
+    z-index: 300;
+    font-size: 0.75em;
+    /* reduced per http://jira.beaconfire.us/browse/ACCQII-391 */
+    line-height: 1.25em;
+    color: #08a;
+    padding: 6px 0px 6px 3%;
+    /* background:url(/images/QII/icn-arrow-blue.png) no-repeat right center transparent; REMOVED ACCQII-375 */
+}
+
+.logged-in {
+    /* margin-top:-2.75em; REMOVED 2015 homepage refresh */
+}
+
+
+@media screen and (max-width: 400px) {
+    .welcome,
+    #logout {
+        display: none;
+    }
+}

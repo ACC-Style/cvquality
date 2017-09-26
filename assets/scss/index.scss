@@ -13,11 +13,6 @@ $baseline-modifier:1.5;
 @import "helpers/fixes";
 @import "helpers/states";
 //@import "base/icons";
-.login {
-    display: none;
-}
-
-
 
 
 
@@ -219,123 +214,13 @@ address {
 /* For IE 6/7 (trigger hasLayout) */
 
 
-/* Header */
-
-h1 {
-    margin: 0;
-    padding: 25px 3% 20px 3%;
-}
-
-#site-logo img {
-    max-width: 100%;
-}
-
-#header .nav-utility {
-    display: none;
-}
-
-#site-search {
-    padding: 0.5em 3%;
-    background: #a1a0a4;
-    border-bottom: dotted 1px #fff;
-}
-
-.initiative #site-search {
-    background: #a1a0a4;
-}
-
-#site-search {
-    label {
-        position: absolute;
-        left: -9999px;
-    }
-    input#keyword {
-        width: 70%;
-    }
-}
-
+@import "structure/header";
 
 /* Nav */
 
-#mobile-menus {
-    padding: 0 3%;
-    height: 44px;
-    position: relative;
-    /* displays shadow above next sibling tag */
-    background: #ffffff;
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlY2VhZWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(top, #ffffff 0%, #eceaea 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #eceaea));
-    background: -webkit-linear-gradient(top, #ffffff 0%, #eceaea 100%);
-    background: -o-linear-gradient(top, #ffffff 0%, #eceaea 100%);
-    background: -ms-linear-gradient(top, #ffffff 0%, #eceaea 100%);
-    background: linear-gradient(to bottom, #ffffff 0%, #eceaea 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eceaea', GradientType=0);
-    box-shadow: 0px 3px 3px #999;
-    -webkit-box-shadow: 0px 3px 3px #999;
-    -moz-box-shadow: 0px 3px 3px #999;
-}
+@import "component/mobile-menu-toggle";
+@import "component/login-register-name";
 
-#button-login-register {
-    margin-top: 5px;
-    display: inline-block;
-}
-
-.logged-in {
-    margin-top: 0.675em;
-    padding-left: 3%;
-    position: absolute;
-    z-index: 300;
-    font-size: 0.75em;
-    /* reduced per http://jira.beaconfire.us/browse/ACCQII-391 */
-    line-height: 1.25em;
-    color: #08a;
-}
-
-#saHeader_msLogin_lnkLogin {
-    margin-top: 0.675em;
-    padding-left: 3%;
-    position: absolute;
-    z-index: 300;
-    font-size: 0.75em;
-    /* reduced per http://jira.beaconfire.us/browse/ACCQII-391 */
-    line-height: 1.25em;
-    color: #08a;
-    padding: 6px 0px 6px 3%;
-    /* background:url(/images/QII/icn-arrow-blue.png) no-repeat right center transparent; REMOVED ACCQII-375 */
-}
-
-.logged-in {
-    /* margin-top:-2.75em; REMOVED 2015 homepage refresh */
-}
-
-@media screen and (max-width: 400px) {
-    .welcome,
-    #logout {
-        display: none;
-    }
-}
-
-#button-nav {
-    margin-top: 5px;
-    padding-right: 52px;
-    height: 39px;
-    float: right;
-    position: relative;
-    font-weight: 600;
-    font-size: 0.9375em;
-    line-height: 2.25em;
-    text-transform: uppercase;
-    cursor: pointer;
-    span {
-        position: absolute;
-        top: 0;
-        right: 10px;
-        z-index: 300;
-        font-size: 3em;
-        color: #a1a0a4;
-    }
-}
 
 #nav-primary,
 #page-nav {
@@ -351,15 +236,15 @@ h1 {
     max-height: 600px;
     width: 100%;
 }
-
-.breadcrumbs {
-    display: none;
-}
-
 .nav-active #page-nav {
     max-height: 1000px;
     width: 100%;
 }
+.breadcrumbs {
+    display: none;
+}
+
+
 
 #nav-primary {
     position: relative;
@@ -520,22 +405,7 @@ h1 {
 
 /* Content */
 
-.breadcrumbs {
-    padding: 0.5em 3%;
-    font-weight: 600;
-    font-size: 0.75em;
-    /* 12px */
-    line-height: 1.5em;
-    color: #555;
-    a {
-        color: #0197c4;
-        text-decoration: none;
-    }
-    .separator {
-        padding: 0 3px;
-        color: #0197c4;
-    }
-}
+
 
 #colone,
 main {

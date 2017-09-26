@@ -1,24 +1,98 @@
+/**
+* Page Footer Used on the site.
+*
+*
+* @deprecated
+* @structure Footer
+* @section Footer
+* @markup
+*  <footer id="site-footer" role="contentinfo">
+*  <div class="wrapper">
+*  <ul id="footer-nav">
+*  <li>
+*  <h2>Quality Improvement for Institutions:</h2>
+*  <ul>
+*  <li><a id="msFooter_rptQii_hypLnk_0" href="/home" target="_top">Home</a></li>
+*  <li><a id="msFooter_rptQii_hypLnk_1" href="/About-QII" target="_top">About</a></li>
+*  <li><a id="msFooter_rptQii_hypLnk_2" href="/Get-Started" target="_top">Get Started</a></li>
+*  <li><a id="msFooter_rptQii_hypLnk_3" href="/News" target="_top">News</a></li>
+*  </ul>
+*  <ul>
+*  <li><a href="http://www.acc.org/footer-pages/terms-and-conditions">Terms &amp; Conditions</a></li>
+*  <li><a href="http://www.acc.org/footer-pages/privacy-policy">Privacy Policy</a></li>
+*  <li><a href="http://www.acc.org/footer-pages/registered-user-agreement">Registered User Agreement</a></li>
+*  </ul>
+*  </li>
+*  <li>
+*  <h2>Offerings:</h2>
+*  <ul>
+*  <li><a id="msFooter_rptOfferings_hypLnk_0" href="/NCDR-Home" target="_top">NCDR</a></li>
+*  <li>
+*  <a id="msFooter_rptOfferings_hypLnk_1" href="/Initiatives" target="_top">Initiatives</a>
+*  </li>
+*  <li><a id="msFooter_rptOfferings_hypLnk_2" href="/qi-communications-kit" target="_top">QI  Participation Kit</a></li>
+*  <li><a id="msFooter_rptOfferings_hypLnk_3" href="/Clinical-Toolkits" target="_top">Clinical Toolkits</a></li>
+*  </ul>
+*  </li>
+*  <li>
+*  <h2>ACC Sites:</h2>
+*  <ul>
+*  <li><a id="msFooter_rptAccSites_hypLnk_1" href="http://www.acc.org" target="_blank">ACC</a></li>
+*  <li><a id="msFooter_rptAccSites_hypLnk_2" href="http://www.acc.org/footer-pages/media-center" target="_blank">ACC Media</a></li>
+*  <li><a id="msFooter_rptAccSites_hypLnk_3" href="https://www.cardiosmart.org/" target="_blank">CardioSmart</a></li>
+*  </ul>
+*  </li>
+*  </ul>
+*  <section id="social" class="social-buttons deprecated">
+*  <h1>Stay Connected</h1>
+*  <ul>
+*  <li class="twitter"><a id="msFooter_lnkTwitter" href="https://twitter.com/accintouch" target="_blank">Twitter</a></li>
+*  <li class="facebook"><a id="msFooter_lnkFacebook" href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank">Facebook</a></li>
+*  <li class="linkedin"><a id="msFooter_lnkLinkedIn" href="http://www.linkedin.com/groups/American-College-Cardiology-732607?trk=myg_ugrp_ovr" target="_blank">LinkedIn</a></li>
+*  <li class="youtube"><a id="msFooter_lnkYoutube" href="http://www.youtube.com/user/ACCinTouch" target="_blank">Youtube</a></li>
+*  </ul>
+*  </section>
+*  <address class="vcard"> <!-- http://microformats.org/wiki/hcard -->
+*  <a class="fn org url" href="http://www.acc.org" target="_blank">
+*  <img alt="" src="assets/images/acc-logo-footer.png" id="msFooter_imgFooter">
+*  </a>
+*  <h2><a class="fn org url" href="http://www.acc.org" target="_blank">American College of Cardiology</a></h2>
+*  <span class="adr">
+*  <span class="street-address">2400 N St. NW</span><br>
+*  <span class="locality">Washington</span>, <span class="country-name"><abbr title="District of Colombia">DC</abbr></span> <span class="postal-code"></span>
+*  </span> <!-- end .adr --><br>
+*  <a href="mailto:" class="email"></a>
+*  <abbr tel="+18002574737" class="tel">(800) 257-4737</abbr>
+*  <a href="mailto:cvquality@acc.org">cvquality@acc.org</a>
+*  </address>
+*  </div>
+*  <!-- wrapper -->
+*  </footer>
+*/
+#site-footer{}
+
 
 /**
 * Social engagement buttons.
 * 
 *	
-* @molecule Social Buttons
+* @molecule Social Buttons (Deprecated)
 * @section Footer > Social Buttons
 * @deprecated
 * @markup 
- <section id="social" class="social-buttons depracated">
-  <h1>Stay Connected</h1>
-	<ul>
-	<li class="twitter"><a id="msFooter_lnkTwitter" href="https://twitter.com/accintouch" target="_blank">Twitter</a></li>
-	<li class="facebook"><a id="msFooter_lnkFacebook" href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank">Facebook</a></li>
-	<li class="linkedin"><a id="msFooter_lnkLinkedIn" href="http://www.linkedin.com/groups/American-College-Cardiology-732607?trk=myg_ugrp_ovr" target="_blank">LinkedIn</a></li>
-	<li class="youtube"><a id="msFooter_lnkYoutube" href="http://www.youtube.com/user/ACCinTouch" target="_blank">Youtube</a></li>
-	</ul>
-  </section>
+* <section id="social" class="social-buttons deprecated">
+*  <h1>Stay Connected</h1>
+*	<ul>
+*	<li class="twitter"><a id="msFooter_lnkTwitter" href="https://twitter.com/accintouch" target="_blank">Twitter</a></li>
+*	<li class="facebook"><a id="msFooter_lnkFacebook" href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank">Facebook</a></li>
+*	<li class="linkedin"><a id="msFooter_lnkLinkedIn" href="http://www.linkedin.com/groups/American-College-Cardiology-732607?trk=myg_ugrp_ovr" target="_blank">LinkedIn</a></li>
+*	<li class="youtube"><a id="msFooter_lnkYoutube" href="http://www.youtube.com/user/ACCinTouch" target="_blank">Youtube</a></li>
+*	</ul>
+*  </section>
 * 
 **/
-.social-buttons.depracated {
+
+.social-buttons.deprecated {
 	margin-top: 1em;
 	padding: 2.5em 3% 1em;
 	clear: left;
@@ -41,7 +115,7 @@
 			display: block;
 			text-indent: -9999px;
 			background: no-repeat transparent;
-			background-image: url(../images/icn-social-media.png) !important;
+			background-image: url(../assets/images/icn-social-media.png) !important;
 		}
 		&.twitter a {
 			background-position: 3px 4px;

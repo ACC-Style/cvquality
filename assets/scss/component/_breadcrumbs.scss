@@ -1,0 +1,16 @@
+.breadcrumbs {
+    padding: 0.5em 3%;
+    font-weight: 600;
+    font-size: 0.75em;
+    /* 12px */
+    line-height: 1.5em;
+    color: #555;
+    a {
+        color: #0197c4;
+        text-decoration: none;
+    }
+    .separator {
+        padding: 0 3px;
+        color: #0197c4;
+    }
+}

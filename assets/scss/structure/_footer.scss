@@ -1,4 +1,5 @@
 
+
 #site-footer {
 	clear: both;
 	.wrapper {
@@ -6,24 +7,49 @@
 		position: relative;
 		overflow: auto;
 		color: #000;
-		background: #a1a0a4;
+		background: $warm-grey;
 	}
 }
 
 #footer-nav {
 	padding: 0 3%;
+	@include bp(md){
+        margin-right: 3%;
+        margin-left: 245px;
+        float: left;
+        border-left: solid 1px #ddd;       
+	}
+	@include bp(lg){
+        margin-left: 172px;
+        margin-right: 227px;
+        border-right: solid 1px #ddd;
+	}
 	li {
 		margin-right: 20px;
 		max-width: 254px;
 		float: left;
 		list-style-type: none;
+		@include bp(lg){
+			li {
+            margin-right: 3%;
+            width: 47%;
+            max-width: auto;
+            float: left;
+            li {
+                float: none;
+                width: auto;
+            }
+        }
+        }
+
 		&:last-child {
 			margin-right: 0;
 		}
 	}
 	h2 {
-		height: 3em;
+		/* allows for vertical align bottomw without extra DOM*/ 
 		display: table-cell;
+		height: 3em;
 		vertical-align: bottom;
 		font-size: 0.875em;
 		/* 14px; */
@@ -45,6 +71,8 @@
 			text-transform: none;
 		}
 	}
+	
+
 }
 
 /**
@@ -140,22 +168,7 @@ address abbr[title] {
         border-top: solid 12px #a1a0a4;
         border-bottom: solid 20px #a1a0a4;
     }
-    ul#footer-nav {
-        margin-right: 3%;
-        margin-left: 245px;
-        float: left;
-        border-left: solid 1px #ddd;
-        li {
-            margin-right: 3%;
-            width: 47%;
-            max-width: auto;
-            float: left;
-            li {
-                float: none;
-                width: auto;
-            }
-        }
-    }
+   
     #site-footer {
         address {
             width: 200px;
