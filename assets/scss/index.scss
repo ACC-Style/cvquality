@@ -3,6 +3,8 @@ $ms-ratio: 1.125;
 $baseline-modifier:1.5;
 @import "https://use.fontawesome.com/972bb54a90.css";
 @import "vendor/modular-scale";
+@import "vendor/bootstrap.override/custom";
+@import "vendor/bootstrap/bootstrap";
 @import "helpers/mixens";
 @import "helpers/flex";
 @import "helpers/breakpoints";
@@ -219,10 +221,12 @@ address {
 /* Nav */
 
 @import "component/mobile-menu-toggle";
-@import "component/login-register-name";
+@import "component/user-status-container";
+@import "component/nav-basic";
+@import "component/nav-primary";
+@import "component/nav-utility";
 
 
-#nav-primary,
 #page-nav {
     max-height: 0;
     overflow: hidden;
@@ -246,49 +250,7 @@ address {
 
 
 
-#nav-primary {
-    position: relative;
-    background: #A5CDED;
-    ul {
-        margin: 2.75em auto 0;
-        max-width: 1020px;
-        ul {
-            margin-top: 0;
-            max-height: 0;
-            overflow: hidden;
-        }
-    }
-    li {
-        list-style-type: none;
-        float: left;
-        &.current:before {
-            margin-left: -4px;
-            height: 0;
-            width: 0;
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 50%;
-            content: "";
-            background: #ffc425;
-            border-color: rgba(0, 0, 0, 0) #A1A0A4;
-            border-style: solid;
-            border-width: 7px 7px 0 7px;
-        }
-    }
-    a {
-        padding: 0 3%;
-        display: block;
-        font-weight: 600;
-        font-size: 1.125em;
-        line-height: 44px;
-        color: #fff;
-        text-decoration: none;
-        text-transform: uppercase;
-        background: #a1a0a4;
-        border-bottom: dotted 1px #fff;
-    }
-}
+
 
 .nav-utility {
     /*display:none;*/
@@ -313,29 +275,8 @@ address {
     }
 }
 
-#nav-primary .nav-utility ul {
-    margin-top: 0;
-    border-top: 0;
-}
 
-.nav-utility li:first-child {
-    margin-top: 5px;
-    width: 100%;
-    position: absolute;
-    top: 2.75em;
-}
 
-#nav-primary .nav-utility li:first-child a {
-    color: #fff;
-    background: #A1A0A4;
-    border-top: dotted 1px #fff;
-}
-
-.initiative #nav-primary .nav-utility li:first-child a {
-    color: #fff;
-    background: #a1a0a4;
-    border-top: dotted 1px #fff;
-}
 
 
 /* Secondary Nav Level */
@@ -354,18 +295,6 @@ address {
   max-height: 500px;
 } */
 
-#nav-primary {
-    ul ul {
-        border: 0;
-    }
-    li li a {
-        padding-left: 6%;
-        font-size: 1em;
-        color: #888;
-        text-transform: none;
-        background: #E7E7E3;
-    }
-}
 
 
 /* Turned off per ML 
@@ -388,19 +317,7 @@ address {
     top: 0;
     width: 44px;
 }
-*/
 
-.initiative #nav-primary {
-    >ul {
-        height: 0;
-    }
-    .nav-utility ul li {
-        display: none;
-        &:first-child {
-            display: block;
-        }
-    }
-}
 
 
 /* Content */
@@ -768,9 +685,6 @@ ul.generic-list {
 
 /* Footer */
 @import "structure/footer";
-@import "structure/footer.deprecated";
-
-
 
 /* Main */
 
@@ -2586,69 +2500,12 @@ table.dataTable thead {
         border-radius: 0 3px 3px 0;
         -webkit-border-radius: 0 3px 3px 0;
     }
-    #nav-primary,
-    #page-nav {
-        max-height: 10000px;
-        overflow: visible;
-    }
-    #nav-primary {
-        position: static;
-        background: #a1a0a4;
-        ul {
-            margin-top: 0;
-            text-align: center;
-            border-top: solid 4px #ffc425;
-        }
-        li {
-            display: inline-block;
-            float: none;
-            position: relative;
-        }
-        a {
-            padding: 0 16px;
-            display: inline-block;
-            font-size: 1.05em;
-            font-weight: bold;
-            background: transparent;
-            border: 0;
-        }
-        li:last-child a {
-            display: inline-block;
-            float: none;
-            position: relative;
-        }
-    }
+    
     #header-wrap ul.primary-nav li {
         float: left;
         padding-left: 22px;
     }
-    /* Sub Nav */
-    #nav-primary {
-        ul ul {
-            max-height: 0;
-            position: absolute;
-            left: -9999px;
-            overflow: hidden;
-            text-align: left;
-            transition: max-height 1s ease-out;
-            -webkit-transition: max-height 1s ease-out;
-            -moz-transition: max-height 1s ease-out;
-        }
-        li {
-            &:hover ul,
-            &.bfHover ul {
-                max-height: 9999px;
-                /* changed from 300px for 2015 refresh -- was truncating */
-                top: 44px;
-                left: 0;
-                z-index: 99;
-            }
-            li a {
-                width: 10em;
-                display: block;
-            }
-        }
-    }
+    
     /* Internal Nav */
     #page-nav,
     .nav-active #page-nav {
@@ -2666,36 +2523,7 @@ table.dataTable thead {
             font-family: 'Raleway', Verdana, Helvetica, sans-serif;
         }
     }
-    #nav-primary .nav-utility a {
-        padding: 0 16px 0 0;
-        font-weight: 600;
-        font-size: 0.875em;
-        color: #666;
-        background: transparent;
-    }
-    .nav-utility li:first-child {
-        margin-top: 0;
-        width: auto;
-        top: 0;
-    }
-    #nav-primary .nav-utility li:first-child a,
-    .initiative #nav-primary .nav-utility li:first-child a {
-        color: #666;
-        background: transparent;
-    }
-    #nav-primary .nav-utility li:last-child a {
-        padding-right: 0;
-    }
-    .nav-utility {
-        a:after {
-            padding-left: 16px;
-            content: '|';
-            color: #ffc425;
-        }
-        li:last-child a:after {
-            content: '';
-        }
-    }
+
     #msBottomAds_bottomResponsiveAds div {
         margin: 0 1.5%;
         display: inline;
@@ -3541,12 +3369,13 @@ p>iframe {
             }
         }
     }
-    #nav-primary {
-        .primary-nav li,
-        .nav-utility li {
-            float: none;
-        }
-    }
+    // Removal because placement will be taken care of differently
+     // #nav-primary {
+    //     .primary-nav li,
+    //     .nav-utility li {
+    //         float: none;
+    //     }
+    // }
 }
 
 

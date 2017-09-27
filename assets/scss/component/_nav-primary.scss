@@ -1,0 +1,210 @@
+/**
+* Primary Nav at the top of the page.
+*
+* @molecule  Nav Primary
+* @section Nav > Primary
+* @modifiers
+*  .active for use on marking when on page
+*  .disabled used to show when it is un-navigatable
+*  .alt used to make a standout button in the primary nav
+*  .alt.primary used to decorate the standout button to the positive flow
+*  .alt.secondary used to convert the standout button to the alternate flow
+* @markup 
+*  <nav id="nav-primary">
+*      <ul class="nav nav-fill">
+*        <li class="nav-item">
+*          <a class="nav-link active" href="#">@{lipsum:1:words}</a>
+*        </li>
+*        <li class="nav-item">
+*          <a class="nav-link" href="#">@{lipsum:1:words}</a>
+*        </li>
+*        <li class="nav-item">
+*          <a class="nav-link" href="#">@{lipsum:1:words}</a>
+*        </li>
+*        <li class="nav-item">
+*          <a class="nav-link disabled" href="#">@{lipsum:1:words}</a>
+*        </li>
+*        <li class="nav-item alt primary">
+*          <a class="nav-link disabled" href="#">Login</a>
+*        </li>
+*      </ul>
+*  </nav>
+*/
+
+#nav-primary{
+    @include font(700);
+    font-size: ms(2);
+    background: $warm-grey;
+    border-top: $light-orange 4px solid;
+    .nav{
+        width:100%;
+    }
+    .nav-item{
+        
+        &.alt{
+
+            &.primary{ @include teal-gradient;}
+            &.secondary{@include grey-gradient;}
+        }
+    }
+    .nav-link{
+        padding-bottom: 10px;
+        padding-top: 10px;
+        text-transform: uppercase;
+        color:$off-white;
+        &:hover{
+            color:#fff;
+        }
+    }
+}
+
+/**
+* TODO Refactor
+#nav-primary {
+    position: relative;
+    background: #A5CDED;
+    ul {
+        margin: 2.75em auto 0;
+        max-width: 1020px;
+        ul {
+            margin-top: 0;
+            max-height: 0;
+            overflow: hidden;
+        }
+    }
+    li {
+        list-style-type: none;
+        float: left;
+        &.current:before {
+            margin-left: -4px;
+            height: 0;
+            width: 0;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            content: "";
+            
+            border-color: rgba(0, 0, 0, 0) #A1A0A4;
+            border-style: solid;
+            border-width: 7px 7px 0 7px;
+        }
+    }
+    a {
+        padding: 0 3%;
+        display: block;
+        font-weight: 600;
+        font-size: 1.125em;
+        line-height: 44px;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        background: #a1a0a4;
+        border-bottom: dotted 1px #fff;
+    }
+}
+#nav-primary .nav-utility li:first-child a {
+    color: #fff;
+    background: #A1A0A4;
+    border-top: dotted 1px #fff;
+}
+
+.initiative #nav-primary .nav-utility li:first-child a {
+    color: #fff;
+    background: #a1a0a4;
+    border-top: dotted 1px #fff;
+}
+*/
+
+/**
+TO DO DROP DOWNS
+#nav-primary {
+    ul ul {
+        border: 0;
+    }
+    li li a {
+        padding-left: 6%;
+        font-size: 1em;
+        color: #888;
+        text-transform: none;
+        background: #E7E7E3;
+    }
+}
+
+
+.initiative #nav-primary {
+    >ul {
+        height: 0;
+    }
+    .nav-utility ul li {
+        display: none;
+        &:first-child {
+            display: block;
+        }
+    }
+}
+*/
+
+/**
+To Do Refactor DESK TOP DESIGN FOR PRIMARY NAV
+#nav-primary,
+    #page-nav {
+        max-height: 10000px;
+        overflow: visible;
+    }
+    #nav-primary {
+        position: static;
+        background: #a1a0a4;
+        ul {
+            margin-top: 0;
+            text-align: center;
+            border-top: solid 4px #ffc425;
+        }
+        li {
+            display: inline-block;
+            float: none;
+            position: relative;
+        }
+        a {
+            padding: 0 16px;
+            display: inline-block;
+            font-size: 1.05em;
+            font-weight: bold;
+            background: transparent;
+            border: 0;
+        }
+        li:last-child a {
+            display: inline-block;
+            float: none;
+            position: relative;
+        }
+    }
+
+
+
+    -- Sub Nav --
+    #nav-primary {
+        ul ul {
+            max-height: 0;
+            position: absolute;
+            left: -9999px;
+            overflow: hidden;
+            text-align: left;
+            transition: max-height 1s ease-out;
+            -webkit-transition: max-height 1s ease-out;
+            -moz-transition: max-height 1s ease-out;
+        }
+        li {
+            &:hover ul,
+            &.bfHover ul {
+                max-height: 9999px;
+                top: 44px;
+                left: 0;
+                z-index: 99;
+            }
+            li a {
+                width: 10em;
+                display: block;
+            }
+        }
+    }*/

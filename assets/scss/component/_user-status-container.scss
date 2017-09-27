@@ -1,0 +1,46 @@
+/**
+* User Status Container contains system feed back on what systems you may or may not be logged into. 
+*
+*
+* @molecule User Status Container
+* @section Header > Login
+* @markup
+*   <div class="user-status-container">
+*       <span class="welcome">
+*           Welcome
+*        </span>
+*       <span class="username">
+*           [User Name]
+*        </span>
+*       <span class="register">
+*           <a title="Register" href="javascript:__doPostBack('ctl00$qiiLoginStatus$lnkLogout','')">Register</a>
+*       </span>
+*       <ul class="acounts">
+*       <li class="ACRED acount">
+*           <a href="" target="_blank">ACRED</a>
+*       </li>
+*       <li class="NCDR acount">
+*           <a href="" target="_blank">NCDR</a>
+*       </li>
+*       <li class="QII acount">
+*           <a href="" target="_blank">QII</a>
+*       </li>
+*       <li class="ACC acount">
+*           <a href="" target="_blank">My ACC</a>
+*       </li>
+*       </ul>
+*       <span class="logout">
+*           <a title="Logout" href="javascript:__doPostBack('ctl00$qiiLoginStatus$lnkLogout','')">Logout</a>
+*       </span>
+*   </div>
+*/
+
+.user-status-container{
+    font-size:ms(-2);
+    color: $scrubteal;
+    line-height: 1.25em;
+    .accounts{
+        .account{}
+    }
+}
+

@@ -1,0 +1,5 @@
+%nav-basic{
+	@extend .nav;
+	@include font(700);
+	list-style-type: none;
+}
