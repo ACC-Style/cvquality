@@ -14,6 +14,7 @@ $baseline-modifier:1.5;
 @import "vendor/bootstrap/kitchensink";
 @import "helpers/fixes";
 @import "helpers/states";
+
 //@import "base/icons";
 
 
@@ -210,22 +211,21 @@ address {
 }
 
 
-/* For modern browsers */
 
 
-/* For IE 6/7 (trigger hasLayout) */
 
 
-@import "structure/header";
 
 /* Nav */
-
+@import "component/box";
 @import "component/mobile-menu-toggle";
 @import "component/user-status-container";
 @import "component/nav-basic";
 @import "component/nav-primary";
 @import "component/nav-utility";
 
+
+@import "structure/header";
 
 #page-nav {
     max-height: 0;

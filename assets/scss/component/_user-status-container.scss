@@ -39,6 +39,10 @@
     font-size:ms(-2);
     color: $scrubteal;
     line-height: 1.25em;
+    span{
+    	display:inline-block;
+    	float:left;
+    }
     .accounts{
         .account{}
     }
