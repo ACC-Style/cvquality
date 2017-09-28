@@ -6913,7 +6913,9 @@ address {
       color: #fff; }
   @media only screen and (min-width: 768px) {
     #nav-primary .nav-item + .nav-item {
-      border: none transparent 0; } }
+      border: none transparent 0; }
+    #nav-primary .nav-link {
+      text-align: center; } }
 
 /**
 * TODO Refactor

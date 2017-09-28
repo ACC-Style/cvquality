@@ -64,6 +64,7 @@
     }
     @include bp(md){
         .nav-item + .nav-item{ border: none transparent 0;}
+        .nav-link{ text-align: center;}
     }
     &.mobile{
         @extend .flex-column;
