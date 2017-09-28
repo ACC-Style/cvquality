@@ -3,18 +3,19 @@ $ms-ratio: 1.125;
 $baseline-modifier:1.5;
 @import "https://use.fontawesome.com/972bb54a90.css";
 @import "vendor/modular-scale";
-@import "vendor/bootstrap.override/custom";
-@import "vendor/bootstrap/bootstrap";
 @import "helpers/mixens";
 @import "helpers/flex";
 @import "helpers/breakpoints";
 @import "base/colors";
 @import "base/modular-scale-typography";
 @import "base/fonts";
-@import "vendor/bootstrap/kitchensink";
 @import "helpers/fixes";
-@import "helpers/states";
 
+@import "vendor/bootstrap.override/custom";
+@import "vendor/bootstrap/bootstrap";
+@import "vendor/bootstrap.override/dropdown.override";
+@import "vendor/bootstrap/kitchensink";
+@import "helpers/states";
 //@import "base/icons";
 
 
@@ -48,12 +49,6 @@ a {
     &:hover,
     &:active {
         text-decoration: underline;
-    }
-    &.button {
-        &:hover,
-        &:active {
-            text-decoration: none;
-        }
     }
 }
 
@@ -137,7 +132,7 @@ input {
     color: #08a;
 }
 
-.button,
+.button,.btn,
 #button-login-register,
 input[type="submit"],
 input[type="button"],
@@ -145,6 +140,7 @@ button,
 .cs-box h2,
 #cs-button,
 #view-results .comparison-rep {
+
     padding: 6px 16px;
     display: inline-block;
     font-weight: 500;

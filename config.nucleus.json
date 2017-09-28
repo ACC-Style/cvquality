@@ -3,10 +3,13 @@
     "files": ["assets/scss/**/*.scss"],
     "target": "docs",
     "css": [
-    "assets/css/vendor/bootstrap/bootstrap.css",
     "assets/css/index.css",
     "assets/css/styleguide.css"],
-
+    "scripts": [
+        "https://code.jquery.com/jquery-3.2.1.slim.min.js",
+        "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js",
+        "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+    ],
 	"namespace": "",
     "verbose": 3,
     "counterCSS": null,

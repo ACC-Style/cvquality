@@ -40,7 +40,11 @@
    
     // Tablet Up Mode
     @include bp(md){
-     background-color:#fff;
+        font-weight: 400;
+        background-color:#fff;
+        .nav-link{
+            color:$warm-grey-dark;
+            }
      // pipes between nav items
         .nav-link:after{
             padding-left: 1em;
@@ -55,16 +59,17 @@
         }
     }
     // Phone Decrative Override
-    &.mobile{background-color:$warm-grey-light;
-            @extend .flex-column;
-            @extend .nav-fill;
-            .nav-item{
-                width:auto;
-                
-            }
-            .nav-item + .nav-item{}
-            .nav-link{}
-            .nav-link:after{ padding-left:0; content: '';}
+    &.mobile{
+        font-weight: 400;
+        background-color:$warm-grey-light;
+        @extend .flex-column;
+        @extend .nav-fill;
+        .nav-item{
+            width:auto;          
         }
+        .nav-item + .nav-item{}
+        .nav-link{}
+        .nav-link:after{ padding-left:0; content: '';}
+    }
 }
 

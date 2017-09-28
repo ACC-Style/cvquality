@@ -1,0 +1,11 @@
+// Hover Effect for Drop Down
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-menu{
+	background-color: $off-white;
+}
+.dropdown-divider{
+	border-color:  $light-orange;
+	margin:0;
+}

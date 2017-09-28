@@ -1,12 +1,310 @@
 @import "https://use.fontawesome.com/972bb54a90.css";
+/**
+ * Header Orange
+ *
+ * @color 
+ * @section QII Brand
+ */
+/**
+ * Highlight Orange
+ *
+ * @color 
+ * @section QII Brand
+ */
+/**
+* ACC Blue
+*
+* @color 
+* @section QII Brand
+*/
+ /**
+* Warm Grey
+*
+* @color 
+* @section QII Brand
+*/
+ /**
+* Warm Light Grey
+*
+* @color 
+* @section QII Alternate Colors
+*/
+ /**
+* Warm Dark Grey
+*
+* @color 
+* @section QII Alternate Colors
+*/
+/**
+* Off White
+*
+* @color 
+* @section QII Alternate Colors
+*/
+/**
+* Off Black
+*
+* @color 
+* @section QII Alternate Colors
+*/
+/**
+* Soft Blue
+*
+* @color 
+* @section QII Alternate Colors
+*/
+ /**
+* Soft Grey
+*
+* @color 
+* @section QII Alternate Colors
+*/
+/**
+ * Error Red
+ *
+ * @color 
+ * @section States      
+ */
+/**
+* Scrub Teal 
+*
+* @color 
+* @section Scrub Teal	
+*/
+/**
+* Scrub Light Teal 
+*
+* @color 
+* @section Scrub Teal		
+*/
+/**
+ * Scrub Dark Teal 
+ *
+ * @color
+ * @section Scrub Teal	 	
+ */
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Muli:200,300,400");
+h1, h2, h3, h4, h5, h6, p, td, th {
+  -webkit-transition: line-height 1s;
+  /* Safari */
+  transition: line-height 1s;
+  -webkit-transition: margin 1s;
+  /* Safari */
+  transition: margin 1s; }
+
+/**
+ * Set the Lato font face with an optional font weight.
+ *
+ * @mixin
+ * @section Fonts
+ * @param $weight
+ *  The font weight to be used.
+ * @example
+ *  @include lato();
+ *  @include lato(300);
+ */
+/**
+ * Set the Muli font face with an optional font weight.
+ *
+ * @mixin
+ * @section Fonts
+ * @param $weight
+ *  The font weight to be used.
+ * @example
+ *  @include monospace();
+ *  @include monospace(300);
+ */
+/**
+
+ * @atom Lato, Verdana, Helvetica, sans-serif
+ * @section Fonts
+ * @markup 
+ 	<div class="container"><div class="alphabet-display row font-normal">
+	<div class="ms12 col-md-4 col-sm-6 col-lg-3 font--dropcase_2x">La</div>
+	<div class="col-md-8 col-sm-6 col-lg-9 font--example">
+ 	<h3>Primary Navigation & Body Copy</h3>
+	<div class="font--lowercase ms4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+	<div class="font--uppercase ms4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+	<div class="font--numbers ms4">0 1 2 3 4 5 6 7 8 9</div>
+	<div class="font--lowercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+	<div class="font--uppercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+	<div class="font--numbers ms2">0 1 2 3 4 5 6 7 8 9</div>
+	</div> 
+ */
+.font-normal {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-weight: 400; }
+
+/**
+ * @atom Muli, Verdana, Helvetica, sans-serif;
+ * @section Fonts
+ * @markup 
+ 	<div class="container"><div class="alphabet-display row font-display">
+	<div class="ms12 col-md-4 col-sm-6 col-lg-3 font--dropcase_2x">Mu</div>
+	<div class="col-md-8 col-sm-6 col-lg-9 font--example">
+ 	<h3>Headers & Secondary Navs</h3>
+	<div class="font--lowercase ms4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+	<div class="font--uppercase ms4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+	<div class="font--numbers ms4">0 1 2 3 4 5 6 7 8 9</div>
+	<div class="font--lowercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+	<div class="font--uppercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+	<div class="font--numbers ms2">0 1 2 3 4 5 6 7 8 9</div>
+	</div> 
+ */
+.font-display {
+  font-family: 'Muli', Verdana, Helvetica, sans-serif;
+  font-weight: 200; }
+
+.alphabet-display .font--name {
+  color: #a1a0a4; }
+.alphabet-display .font--dropcase_2x {
+  color: #e87d1e; }
+.alphabet-display .font--lowercase {
+  text-transform: lowercase; }
+.alphabet-display .font--uppercase {
+  text-transform: uppercase; }
+.alphabet-display .ms12 {
+  font-size: 10.5625em;
+  line-height: 1.13609em;
+  margin-top: 0em;
+  margin-bottom: 0em; }
+@media only screen and (max-width: 1024px) and (max-height: 576px) {
+  .alphabet-display .ms12 {
+    line-height: 1.02249em; } }
+@media only screen and (max-width: 1024px) and (max-height: 320px) {
+  .alphabet-display .ms12 {
+    line-height: 1em; } }
+
+.alphabet-display .ms6 {
+  font-size: 4.125em;
+  line-height: 1.09091em;
+  margin-top: 0em;
+  margin-bottom: 0em; }
+@media only screen and (max-width: 1024px) and (max-height: 576px) {
+  .alphabet-display .ms6 {
+    line-height: 1em; } }
+@media only screen and (max-width: 1024px) and (max-height: 320px) {
+  .alphabet-display .ms6 {
+    line-height: 1em; } }
+
+.alphabet-display .ms4 {
+  font-size: 2.5625em;
+  line-height: 1.17073em;
+  margin-top: 0em;
+  margin-bottom: 0em; }
+@media only screen and (max-width: 1024px) and (max-height: 576px) {
+  .alphabet-display .ms4 {
+    line-height: 1.05366em; } }
+@media only screen and (max-width: 1024px) and (max-height: 320px) {
+  .alphabet-display .ms4 {
+    line-height: 1em; } }
+
+.alphabet-display .ms2 {
+  font-size: 1.625em;
+  line-height: 1.84615em;
+  margin-top: 0em;
+  margin-bottom: 0em; }
+@media only screen and (max-width: 1024px) and (max-height: 576px) {
+  .alphabet-display .ms2 {
+    line-height: 1.66154em; } }
+@media only screen and (max-width: 1024px) and (max-height: 320px) {
+  .alphabet-display .ms2 {
+    line-height: 1.56923em; } }
+
+.alphabet-display .ms1 {
+  font-size: 1.25em;
+  line-height: 1.2em;
+  margin-top: 0em;
+  margin-bottom: 0em; }
+@media only screen and (max-width: 1024px) and (max-height: 576px) {
+  .alphabet-display .ms1 {
+    line-height: 1.08em; } }
+@media only screen and (max-width: 1024px) and (max-height: 320px) {
+  .alphabet-display .ms1 {
+    line-height: 1.02em; } }
+
+.alphabet-display .ms {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 0em;
+  margin-bottom: 0em; }
+@media only screen and (max-width: 1024px) and (max-height: 576px) {
+  .alphabet-display .ms {
+    line-height: 1.35em; } }
+@media only screen and (max-width: 1024px) and (max-height: 320px) {
+  .alphabet-display .ms {
+    line-height: 1.275em; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+img {
+  display: block; }
+
+/* Added by Thomas Taylor, 3/31/2015 */
+/**
+* Used for the removal of floats when needed to correct flow of document
+*
+* @nuclide ClearFix
+* @section Helpers > fixes
+*/
+.clearfix {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */ }
+  .clearfix:before {
+    content: "";
+    display: table; }
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* Smartphone resets and enhancements */
+html {
+  -webkit-font-smoothing: antialiased;
+  /*-webkit-backface-visibility: hidden; /* this breaks the sticky widget on article and landing pages */
+  /*-webkit-perspective: 1000; */ }
+
+footer {
+  /* enables on GPU processing, per http://davidwalsh.name/translate3d */
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0); }
+
+a:link, a:hover, a:active {
+  -webkit-tap-highlight-color: rbga(0, 0, 0, 0);
+  outline: none;
+  /* prevents pink highlight color on tap */ }
+
+span {
+  -webkit-transform: translateZ(0);
+  /* enables on GPU processing */ }
+
+/**
+ * Emulating Clear Fix
+ *
+ * @nuclide #layout .wrapper
+ * @section Helpers > fixes
+ * @deprecated
+ */
+#layout .wrapper {
+  border-bottom: solid 20px #fff;
+  *zoom: 1; }
+  #layout .wrapper:before {
+    content: "";
+    display: table; }
+  #layout .wrapper:after {
+    content: "";
+    display: table;
+    clear: both; }
+
 /*!
  * Bootstrap v4.0.0-beta (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i");
-@import url("https://fonts.googleapis.com/css?family=Muli:200,300,400");
 @media print {
   *,
   *::before,
@@ -6230,240 +6528,15 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important; }
 
-/**
- * Header Orange
- *
- * @color 
- * @section QII Brand
- */
-/**
- * Highlight Orange
- *
- * @color 
- * @section QII Brand
- */
-/**
-* ACC Blue
-*
-* @color 
-* @section QII Brand
-*/
- /**
-* Warm Grey
-*
-* @color 
-* @section QII Brand
-*/
- /**
-* Warm Light Grey
-*
-* @color 
-* @section QII Alternate Colors
-*/
- /**
-* Warm Dark Grey
-*
-* @color 
-* @section QII Alternate Colors
-*/
-/**
-* Off White
-*
-* @color 
-* @section QII Alternate Colors
-*/
-/**
-* Off Black
-*
-* @color 
-* @section QII Alternate Colors
-*/
-/**
-* Soft Blue
-*
-* @color 
-* @section QII Alternate Colors
-*/
- /**
-* Soft Grey
-*
-* @color 
-* @section QII Alternate Colors
-*/
-/**
- * Error Red
- *
- * @color 
- * @section States      
- */
-/**
-* Scrub Teal 
-*
-* @color 
-* @section Scrub Teal	
-*/
-/**
-* Scrub Light Teal 
-*
-* @color 
-* @section Scrub Teal		
-*/
-/**
- * Scrub Dark Teal 
- *
- * @color
- * @section Scrub Teal	 	
- */
-h1, h2, h3, h4, h5, h6, p, td, th {
-  -webkit-transition: line-height 1s;
-  /* Safari */
-  transition: line-height 1s;
-  -webkit-transition: margin 1s;
-  /* Safari */
-  transition: margin 1s; }
+.dropdown:hover > .dropdown-menu {
+  display: block; }
 
-/**
- * Set the Lato font face with an optional font weight.
- *
- * @mixin
- * @section Fonts
- * @param $weight
- *  The font weight to be used.
- * @example
- *  @include lato();
- *  @include lato(300);
- */
-/**
- * Set the Muli font face with an optional font weight.
- *
- * @mixin
- * @section Fonts
- * @param $weight
- *  The font weight to be used.
- * @example
- *  @include monospace();
- *  @include monospace(300);
- */
-/**
+.dropdown-menu {
+  background-color: #fafafa; }
 
- * @atom Lato, Verdana, Helvetica, sans-serif
- * @section Fonts
- * @markup 
- 	<div class="container"><div class="alphabet-display row font-normal">
-	<div class="ms12 col-md-4 col-sm-6 col-lg-3 font--dropcase_2x">La</div>
-	<div class="col-md-8 col-sm-6 col-lg-9 font--example">
- 	<h3>Primary Navigation & Body Copy</h3>
-	<div class="font--lowercase ms4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-	<div class="font--uppercase ms4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-	<div class="font--numbers ms4">0 1 2 3 4 5 6 7 8 9</div>
-	<div class="font--lowercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-	<div class="font--uppercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-	<div class="font--numbers ms2">0 1 2 3 4 5 6 7 8 9</div>
-	</div> 
- */
-.font-normal {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-weight: 400; }
-
-/**
- * @atom Muli, Verdana, Helvetica, sans-serif;
- * @section Fonts
- * @markup 
- 	<div class="container"><div class="alphabet-display row font-display">
-	<div class="ms12 col-md-4 col-sm-6 col-lg-3 font--dropcase_2x">Mu</div>
-	<div class="col-md-8 col-sm-6 col-lg-9 font--example">
- 	<h3>Headers & Secondary Navs</h3>
-	<div class="font--lowercase ms4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-	<div class="font--uppercase ms4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-	<div class="font--numbers ms4">0 1 2 3 4 5 6 7 8 9</div>
-	<div class="font--lowercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-	<div class="font--uppercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-	<div class="font--numbers ms2">0 1 2 3 4 5 6 7 8 9</div>
-	</div> 
- */
-.font-display {
-  font-family: 'Muli', Verdana, Helvetica, sans-serif;
-  font-weight: 200; }
-
-.alphabet-display .font--name {
-  color: #a1a0a4; }
-.alphabet-display .font--dropcase_2x {
-  color: #e87d1e; }
-.alphabet-display .font--lowercase {
-  text-transform: lowercase; }
-.alphabet-display .font--uppercase {
-  text-transform: uppercase; }
-.alphabet-display .ms12 {
-  font-size: 10.5625em;
-  line-height: 1.13609em;
-  margin-top: 0em;
-  margin-bottom: 0em; }
-@media only screen and (max-width: 1024px) and (max-height: 576px) {
-  .alphabet-display .ms12 {
-    line-height: 1.02249em; } }
-@media only screen and (max-width: 1024px) and (max-height: 320px) {
-  .alphabet-display .ms12 {
-    line-height: 1em; } }
-
-.alphabet-display .ms6 {
-  font-size: 4.125em;
-  line-height: 1.09091em;
-  margin-top: 0em;
-  margin-bottom: 0em; }
-@media only screen and (max-width: 1024px) and (max-height: 576px) {
-  .alphabet-display .ms6 {
-    line-height: 1em; } }
-@media only screen and (max-width: 1024px) and (max-height: 320px) {
-  .alphabet-display .ms6 {
-    line-height: 1em; } }
-
-.alphabet-display .ms4 {
-  font-size: 2.5625em;
-  line-height: 1.17073em;
-  margin-top: 0em;
-  margin-bottom: 0em; }
-@media only screen and (max-width: 1024px) and (max-height: 576px) {
-  .alphabet-display .ms4 {
-    line-height: 1.05366em; } }
-@media only screen and (max-width: 1024px) and (max-height: 320px) {
-  .alphabet-display .ms4 {
-    line-height: 1em; } }
-
-.alphabet-display .ms2 {
-  font-size: 1.625em;
-  line-height: 1.84615em;
-  margin-top: 0em;
-  margin-bottom: 0em; }
-@media only screen and (max-width: 1024px) and (max-height: 576px) {
-  .alphabet-display .ms2 {
-    line-height: 1.66154em; } }
-@media only screen and (max-width: 1024px) and (max-height: 320px) {
-  .alphabet-display .ms2 {
-    line-height: 1.56923em; } }
-
-.alphabet-display .ms1 {
-  font-size: 1.25em;
-  line-height: 1.2em;
-  margin-top: 0em;
-  margin-bottom: 0em; }
-@media only screen and (max-width: 1024px) and (max-height: 576px) {
-  .alphabet-display .ms1 {
-    line-height: 1.08em; } }
-@media only screen and (max-width: 1024px) and (max-height: 320px) {
-  .alphabet-display .ms1 {
-    line-height: 1.02em; } }
-
-.alphabet-display .ms {
-  font-size: 1em;
-  line-height: 1.5em;
-  margin-top: 0em;
-  margin-bottom: 0em; }
-@media only screen and (max-width: 1024px) and (max-height: 576px) {
-  .alphabet-display .ms {
-    line-height: 1.35em; } }
-@media only screen and (max-width: 1024px) and (max-height: 320px) {
-  .alphabet-display .ms {
-    line-height: 1.275em; } }
+.dropdown-divider {
+  border-color: #ffc425;
+  margin: 0; }
 
 /**
  * I'm defining the style information for a
@@ -6488,69 +6561,6 @@ h1, h2, h3, h4, h5, h6, p, td, th {
  */
 .button {
   /* leave empty */ }
-
-* {
-  margin: 0;
-  padding: 0; }
-
-img {
-  display: block; }
-
-/* Added by Thomas Taylor, 3/31/2015 */
-/**
-* Used for the removal of floats when needed to correct flow of document
-*
-* @nuclide ClearFix
-* @section Helpers > fixes
-*/
-.clearfix {
-  zoom: 1;
-  /* For IE 6/7 (trigger hasLayout) */ }
-  .clearfix:before {
-    content: "";
-    display: table; }
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both; }
-
-/* Smartphone resets and enhancements */
-html {
-  -webkit-font-smoothing: antialiased;
-  /*-webkit-backface-visibility: hidden; /* this breaks the sticky widget on article and landing pages */
-  /*-webkit-perspective: 1000; */ }
-
-footer {
-  /* enables on GPU processing, per http://davidwalsh.name/translate3d */
-  transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0); }
-
-a:link, a:hover, a:active {
-  -webkit-tap-highlight-color: rbga(0, 0, 0, 0);
-  outline: none;
-  /* prevents pink highlight color on tap */ }
-
-span {
-  -webkit-transform: translateZ(0);
-  /* enables on GPU processing */ }
-
-/**
- * Emulating Clear Fix
- *
- * @nuclide #layout .wrapper
- * @section Helpers > fixes
- * @deprecated
- */
-#layout .wrapper {
-  border-bottom: solid 20px #fff;
-  *zoom: 1; }
-  #layout .wrapper:before {
-    content: "";
-    display: table; }
-  #layout .wrapper:after {
-    content: "";
-    display: table;
-    clear: both; }
 
 .hidden {
   display: none;
@@ -6602,8 +6612,6 @@ a:hover, a:active {
 
 #layout a:hover, #layout a:active {
   text-decoration: underline; }
-#layout a.button:hover, #layout a.button:active {
-  text-decoration: none; }
 
 h1,
 h2,
@@ -6664,7 +6672,7 @@ input {
 :-ms-input-placeholder {
   color: #08a; }
 
-.button,
+.button, .btn,
 #button-login-register,
 input[type="submit"],
 input[type="button"],
@@ -6699,7 +6707,7 @@ button,
   /* IE10+ */
   background: linear-gradient(to bottom, #05aee5 0%, #0283ab 100%);
   /* W3C */ }
-  .button:focus, .button:active input#button-login-register:focus, .button:active,
+  .button:focus, .button:active input#button-login-register:focus, .button:active, .btn:focus, .btn:active input#button-login-register:focus, .btn:active,
   #button-login-register:focus,
   #button-login-register:active input#button-login-register:focus,
   #button-login-register:active,
@@ -6850,11 +6858,21 @@ address {
 *        <li class="nav-item">
 *          <a class="nav-link" href="#">@{lipsum:1:words}</a>
 *        </li>
-*        <li class="nav-item">
-*          <a class="nav-link disabled" href="#">@{lipsum:1:words}</a>
+*        <li class="nav-item dropdown">
+*          <a class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#" data-delay="1000" data-close-others="false">@{lipsum:1:words}</a>
+*          <div class="dropdown-menu">
+*              <a class="dropdown-item" href="#">@{lipsum:2:words}</a>
+*              <a class="dropdown-item" href="#">@{lipsum:2:words}</a>
+*              <a class="dropdown-item" href="#">@{lipsum:3:words}</a>
+*              <div class="dropdown-divider"></div>
+*              <a class="dropdown-item" href="#">@{lipsum:3:words}</a>
+*            </div>
 *        </li>
 *        <li class="nav-item alt primary">
 *          <a class="nav-link disabled" href="#">Login</a>
+*        </li>
+*        <li class="nav-item alt secondary">
+*          <a class="nav-link disabled" href="#">Log Out</a>
 *        </li>
 *      </ul>
 *  </nav>
@@ -6867,6 +6885,8 @@ address {
   border-top: #ffc425 4px solid; }
   #nav-primary .nav {
     width: 100%; }
+  #nav-primary .nav-item:hover {
+    background-color: #6f6b6f; }
   #nav-primary .nav-item + .nav-item {
     border: #fafafa dotted 1px; }
   #nav-primary .nav-item.alt.primary {
@@ -6886,23 +6906,57 @@ address {
     /* IE10+ */
     background: linear-gradient(to bottom, #05aee5 0%, #0283ab 100%);
     /* W3C */ }
+    #nav-primary .nav-item.alt.primary:hover {
+      background: #0283ab;
+      /* Old browsers */
+      /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1YWVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjgzYWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+      background: -moz-linear-gradient(top, #0283ab 0%, #0088aa 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0283ab), color-stop(100%, #0088aa));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, #0283ab 0%, #0088aa 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, #0283ab 0%, #0088aa 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, #0283ab 0%, #0088aa 100%);
+      /* IE10+ */
+      background: linear-gradient(to bottom, #0283ab 0%, #0088aa 100%);
+      /* W3C */ }
   #nav-primary .nav-item.alt.secondary {
     background: #0283ab;
     /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1YWVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjgzYWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(top, #a1a0a4 0%, #668589 100%);
+    background: -moz-linear-gradient(top, #a1a0a4 0%, #6f6b6f 100%);
     /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a1a0a4), color-stop(100%, #668589));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a1a0a4), color-stop(100%, #6f6b6f));
     /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #a1a0a4 0%, #668589 100%);
+    background: -webkit-linear-gradient(top, #a1a0a4 0%, #6f6b6f 100%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #a1a0a4 0%, #668589 100%);
+    background: -o-linear-gradient(top, #a1a0a4 0%, #6f6b6f 100%);
     /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #a1a0a4 0%, #668589 100%);
+    background: -ms-linear-gradient(top, #a1a0a4 0%, #6f6b6f 100%);
     /* IE10+ */
-    background: linear-gradient(to bottom, #a1a0a4 0%, #668589 100%);
+    background: linear-gradient(to bottom, #a1a0a4 0%, #6f6b6f 100%);
     /* W3C */ }
+    #nav-primary .nav-item.alt.secondary:hover {
+      background: #0283ab;
+      /* Old browsers */
+      /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1YWVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjgzYWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+      background: -moz-linear-gradient(top, #6f6b6f 0%, #a1a0a4 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6f6b6f), color-stop(100%, #a1a0a4));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, #6f6b6f 0%, #a1a0a4 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, #6f6b6f 0%, #a1a0a4 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, #6f6b6f 0%, #a1a0a4 100%);
+      /* IE10+ */
+      background: linear-gradient(to bottom, #6f6b6f 0%, #a1a0a4 100%);
+      /* W3C */ }
   #nav-primary .nav-link {
     text-align: left;
     padding-bottom: 10px;
@@ -6916,155 +6970,25 @@ address {
       border: none transparent 0; }
     #nav-primary .nav-link {
       text-align: center; } }
+  #nav-primary .dropdown-toggle::after {
+    border: none 0 transparent; }
+  #nav-primary .dropdown-menu {
+    border-radius: 0px;
+    background-color: #eceaea;
+    padding: 0;
+    margin: 0; }
+  #nav-primary .dropdown-item {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    padding: .5em 1em;
+    color: #a1a0a4; }
+    #nav-primary .dropdown-item:hover {
+      background-color: #a1a0a4;
+      color: white; }
+  #nav-primary .dropdown-divider {
+    border: 1px dotted #a4cded; }
 
-/**
-* TODO Refactor
-#nav-primary {
-    position: relative;
-    background: #A5CDED;
-    ul {
-        margin: 2.75em auto 0;
-        max-width: 1020px;
-        ul {
-            margin-top: 0;
-            max-height: 0;
-            overflow: hidden;
-        }
-    }
-    li {
-        list-style-type: none;
-        float: left;
-        &.current:before {
-            margin-left: -4px;
-            height: 0;
-            width: 0;
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 50%;
-            content: "";
-            
-            border-color: rgba(0, 0, 0, 0) #A1A0A4;
-            border-style: solid;
-            border-width: 7px 7px 0 7px;
-        }
-    }
-    a {
-        padding: 0 3%;
-        display: block;
-        font-weight: 600;
-        font-size: 1.125em;
-        line-height: 44px;
-        color: #fff;
-        text-decoration: none;
-        text-transform: uppercase;
-        background: #a1a0a4;
-        border-bottom: dotted 1px #fff;
-    }
-}
-#nav-primary .nav-utility li:first-child a {
-    color: #fff;
-    background: #A1A0A4;
-    border-top: dotted 1px #fff;
-}
-
-.initiative #nav-primary .nav-utility li:first-child a {
-    color: #fff;
-    background: #a1a0a4;
-    border-top: dotted 1px #fff;
-}
-*/
-/**
-TO DO DROP DOWNS
-#nav-primary {
-    ul ul {
-        border: 0;
-    }
-    li li a {
-        padding-left: 6%;
-        font-size: 1em;
-        color: #888;
-        text-transform: none;
-        background: #E7E7E3;
-    }
-}
-
-
-.initiative #nav-primary {
-    >ul {
-        height: 0;
-    }
-    .nav-utility ul li {
-        display: none;
-        &:first-child {
-            display: block;
-        }
-    }
-}
-*/
-/**
-To Do Refactor DESK TOP DESIGN FOR PRIMARY NAV
-#nav-primary,
-    #page-nav {
-        max-height: 10000px;
-        overflow: visible;
-    }
-    #nav-primary {
-        position: static;
-        background: #a1a0a4;
-        ul {
-            margin-top: 0;
-            text-align: center;
-            border-top: solid 4px #ffc425;
-        }
-        li {
-            display: inline-block;
-            float: none;
-            position: relative;
-        }
-        a {
-            padding: 0 16px;
-            display: inline-block;
-            font-size: 1.05em;
-            font-weight: bold;
-            background: transparent;
-            border: 0;
-        }
-        li:last-child a {
-            display: inline-block;
-            float: none;
-            position: relative;
-        }
-    }
-
-
-
-    -- Sub Nav --
-    #nav-primary {
-        ul ul {
-            max-height: 0;
-            position: absolute;
-            left: -9999px;
-            overflow: hidden;
-            text-align: left;
-            transition: max-height 1s ease-out;
-            -webkit-transition: max-height 1s ease-out;
-            -moz-transition: max-height 1s ease-out;
-        }
-        li {
-            &:hover ul,
-            &.bfHover ul {
-                max-height: 9999px;
-                top: 44px;
-                left: 0;
-                z-index: 99;
-            }
-            li a {
-                width: 10em;
-                display: block;
-            }
-        }
-    }*/
 /**
 * Utiltiy Nav at the top of the page. These are nav items are highly specialized and have been cherry picked out of site tree structure to give them global importance.
 *
@@ -7101,7 +7025,10 @@ To Do Refactor DESK TOP DESIGN FOR PRIMARY NAV
     border: #fafafa dotted 1px; }
   @media only screen and (min-width: 768px) {
     #nav-utility {
+      font-weight: 400;
       background-color: #fff; }
+      #nav-utility .nav-link {
+        color: #6f6b6f; }
       #nav-utility .nav-link:after {
         padding-left: 1em;
         content: '|';
@@ -7111,6 +7038,7 @@ To Do Refactor DESK TOP DESIGN FOR PRIMARY NAV
       #nav-utility .nav-item + .nav-item {
         border: transparent none 0; } }
   #nav-utility.mobile {
+    font-weight: 400;
     background-color: #d6d4d4; }
     #nav-utility.mobile .nav-item {
       width: auto; }
