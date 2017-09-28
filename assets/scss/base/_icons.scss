@@ -3,11 +3,54 @@
 }
 
 /**
- * @icon .lock
+ * @icon lock
  * @markup
- *  <i class="lock"></i>
+ *  <i class="fa fa-lock"></i>
  */
-.lock {
-  @include icon-lock;
-  padding-right: 18px;
-}
+.fa-lock {
+ }
+
+/**
+ * @icon search
+ * @markup
+ *  <i class="fa fa-search"></i>
+ */
+.fa-search {
+ }
+
+/**
+ * @icon pdf
+ * @markup
+ *  <i class="fa fa-file-pdf-o"></i>
+ */
+.fa-file-pdf-o {
+ }
+ /**
+ * @icon external link
+ * @markup
+ *  <i class="fa fa-external-link-square"></i>
+ */
+.fa-external-link-square {
+ }
+
+/**
+ * @icon file
+ * @markup
+ *  <i class="fa fa-file"></i>
+ */
+.fa-file {
+ }
+/**
+ * @icon chevron
+ * @markup
+ *  <i class="fa fa-chevron-right"></i>
+ */
+.fa-chevron-right {
+ }
+/**
+ * @icon Navigate
+ * @markup
+ *  <i class="fa fa-arrow-circle-right"></i>
+ */
+.fa-arrow-circle-right {
+ }

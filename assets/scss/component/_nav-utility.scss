@@ -2,10 +2,12 @@
 * Utiltiy Nav at the top of the page. These are nav items are highly specialized and have been cherry picked out of site tree structure to give them global importance.
 *
 * @molecule  Utiltiy Nav 
-* @section Nav > Utiltiy
+* @section Nav > Desktop
+* @modifiers 
+*  .mobile - decorates the nav to look like mobile
 * @markup 
 *  <nav id="nav-utility">
-*      <ul class="nav">
+*      <ul class="nav flex-column flex-md-row">
 *        <li class="nav-item">
 *          <a class="nav-link active" href="#">@{lipsum:1:words}</a>
 *        </li>
@@ -20,55 +22,49 @@
 */
 
 #nav-utility{
-	@include font(700);
+    // Phone Mode
+    background-color:$warm-grey-light;
+    @include font(700);
     font-size: ms(1);
-	.nav-item{
-		.nav-link:after{
-			padding-left: 1em;
-			content: '|';
-			color: $light-orange;
-
-		}
-		&:last-child .nav-link:after{
-			content: '';
-		}
-	}
-	.nav-link{
-		padding-right:1em;
-		color: $off-black
-	}
+    .nav-link{
+        padding-right:1em;
+        color: $off-black
+    }
+    .nav-item{
+        text-align: center;
+    
+    }
+    .nav-item + .nav-item{
+        border:$off-white dotted 1px;
+    }
+   
+    // Tablet Up Mode
+    @include bp(md){
+     background-color:#fff;
+     // pipes between nav items
+        .nav-link:after{
+            padding-left: 1em;
+            content: '|';
+            color: $light-orange;
+            }
+        .nav-item:last-child .nav-link:after{
+                content: '';
+            }
+        .nav-item + .nav-item{
+            border:transparent none 0;
+        }
+    }
+    // Phone Decrative Override
+    &.mobile{background-color:$warm-grey-light;
+            @extend .flex-column;
+            @extend .nav-fill;
+            .nav-item{
+                width:auto;
+                
+            }
+            .nav-item + .nav-item{}
+            .nav-link{}
+            .nav-link:after{ padding-left:0; content: '';}
+        }
 }
 
-/**
-TO DO DESKTOP UTILITY
-    .nav-utility a {
-        padding: 0 16px 0 0;
-        font-weight: 600;
-        font-size: 0.875em;
-        color: #666;
-        background: transparent;
-    }
-    .nav-utility li:first-child {
-        margin-top: 0;
-        width: auto;
-        top: 0;
-    }
-    .nav-utility li:first-child a,
-    .initiative .nav-utility li:first-child a {
-        color: #666;
-        background: transparent;
-    }
-    .nav-utility li:last-child a {
-        padding-right: 0;
-    }
-    .nav-utility {
-        a:after {
-            padding-left: 16px;
-            content: '|';
-            color: #ffc425;
-        }
-        li:last-child a:after {
-            content: '';
-        }
-    }
-*/

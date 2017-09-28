@@ -218,13 +218,13 @@ address {
 
 /* Nav */
 @import "component/box";
-@import "component/mobile-menu-toggle";
 @import "component/user-status-container";
 @import "component/nav-basic";
 @import "component/nav-primary";
 @import "component/nav-utility";
+@import "component/mobile-menu-toggle";
 
-
+@import "structure/mobile-menu-toggle-container";
 @import "structure/header";
 
 #page-nav {

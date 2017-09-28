@@ -2,7 +2,7 @@
 * Primary Nav at the top of the page.
 *
 * @molecule  Nav Primary
-* @section Nav > Primary
+* @section Nav > Desktop
 * @modifiers
 *  .active for use on marking when on page
 *  .disabled used to show when it is un-navigatable
@@ -11,7 +11,7 @@
 *  .alt.secondary used to convert the standout button to the alternate flow
 * @markup 
 *  <nav id="nav-primary">
-*      <ul class="nav nav-fill">
+*      <ul class="nav nav-fill flex-column flex-md-row">
 *        <li class="nav-item">
 *          <a class="nav-link active" href="#">@{lipsum:1:words}</a>
 *        </li>
@@ -32,15 +32,20 @@
 */
 
 #nav-primary{
+
     @include font(700);
     font-size: ms(2);
     background: $warm-grey;
     border-top: $light-orange 4px solid;
+
     .nav{
         width:100%;
     }
     .nav-item{
-        
+        +  .nav-item{
+            border:$off-white dotted 1px;
+            
+        }
         &.alt{
 
             &.primary{ @include teal-gradient;}
@@ -48,6 +53,7 @@
         }
     }
     .nav-link{
+        text-align: left;
         padding-bottom: 10px;
         padding-top: 10px;
         text-transform: uppercase;
@@ -55,6 +61,13 @@
         &:hover{
             color:#fff;
         }
+    }
+    @include bp(md){
+        .nav-item + .nav-item{ border: none transparent 0;}
+    }
+    &.mobile{
+        @extend .flex-column;
+       
     }
 }
 

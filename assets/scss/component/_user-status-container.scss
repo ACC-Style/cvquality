@@ -6,32 +6,34 @@
 * @section Header > Login
 * @markup
 *   <div class="user-status-container">
-*       <span class="welcome">
+*       <div class="user">
+*           <span class="welcome">
 *           Welcome
-*        </span>
-*       <span class="username">
+*         </span>
+*         <span class="username">
 *           [User Name]
-*        </span>
-*       <span class="register">
-*           <a title="Register" href="javascript:__doPostBack('ctl00$qiiLoginStatus$lnkLogout','')">Register</a>
-*       </span>
-*       <ul class="acounts">
-*       <li class="ACRED acount">
-*           <a href="" target="_blank">ACRED</a>
+*         </span>
+*        </div>
+*       <ul class="nav-user-status nav">
+*       <li class="acred acount nav-item">
+*           <a href="" class="nav-link" target="_blank">ACRED</a>
 *       </li>
-*       <li class="NCDR acount">
-*           <a href="" target="_blank">NCDR</a>
+*       <li class="ncdr acount nav-item">
+*           <a href="" class="nav-link" target="_blank">NCDR</a>
 *       </li>
-*       <li class="QII acount">
-*           <a href="" target="_blank">QII</a>
+*       <li class="qii acount nav-item">
+*           <a href="" class="nav-link" target="_blank">QII</a>
 *       </li>
-*       <li class="ACC acount">
-*           <a href="" target="_blank">My ACC</a>
+*       <li class="acc acount nav-item">
+*           <a href="" class="nav-link" title="My ACC Profile"  target="_blank">My ACC</a>
+*       </li>
+*       <li class="register nav-item action">
+*           <a class="nav-link" title="Register" href="javascript:__doPostBack('ctl00$qiiLoginStatus$lnkLogout','')">Register</a>
+*       </li>
+*       <li class="logout nav-item action">
+*           <a class="nav-link" title="Logout" href="javascript:__doPostBack('ctl00$qiiLoginStatus$lnkLogout','')">Logout</a>
 *       </li>
 *       </ul>
-*       <span class="logout">
-*           <a title="Logout" href="javascript:__doPostBack('ctl00$qiiLoginStatus$lnkLogout','')">Logout</a>
-*       </span>
 *   </div>
 */
 
@@ -39,12 +41,41 @@
     font-size:ms(-2);
     color: $scrubteal;
     line-height: 1.25em;
-    span{
-    	display:inline-block;
-    	float:left;
+    .user{
+        text-align:right;
+        padding: 0.25rem .25rem;
+        span{ 
+            color:$warm-grey;
+        }
     }
-    .accounts{
-        .account{}
-    }
+    
 }
 
+.nav-user-status{
+    text-align: right;
+    @extend .justify-content-end;
+    .user + &{margin-top:-.5rem;}
+    .nav-link{
+         padding: 0.25rem .25rem;
+         &:after{
+            content:"|";
+            padding-left:.25rem;
+            color:$acc-blue;
+         }
+    }
+    // remove the last bar
+    .nav-item:last-child .nav-link:after{
+            content:'';
+            padding-left:0;
+        }
+    .account{
+        text-transform: uppercase;
+    }
+    .action{
+        font-weight: 700;
+        text-transform: uppercase;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
