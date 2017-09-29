@@ -1,6 +1,14 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+       connect: {
+          server: {
+            options: {
+              port: 8000,
+              base: 'docs'
+            }
+          }
+        },
         sass: {
             dist: {
                 files: [{
@@ -21,6 +29,12 @@ module.exports = function(grunt) {
         },
         exec: {
             echo_something: 'npm run styleguide'
+        },
+        livereload  : {
+            options   : {
+              base    : 'docs',
+            },
+            files     : ['docs/**/*','docs/*.html']
         },
         watch: {
             css: {
@@ -45,9 +59,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-livereload');
     grunt.loadNpmTasks('grunt-exec');
+    grunt.loadNpmTasks('grunt-contrib-connect');
     // grunt.loadNpmTasks('@micahgodbolt/grunt-phantomcss');
 
 
-    grunt.registerTask('default', ['watch']);
+    grunt.registerTask('default', ['connect','livereload','watch']);
 }

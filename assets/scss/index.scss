@@ -19,42 +19,19 @@ $baseline-modifier:1.5;
 //@import "base/icons";
 
 
+ACC-Bristol_Foundation6
+ACC-Style
 
-.notice-box {
-    color: #9e1823;
-}
 
 body {
-    @include font;
     @include lightblue-gradient;
-    color: #333;
-    font-size: 16px;
-    line-height: 1.4em;
 }
 
-ul {
-    margin: 0 0 1em 0;
-    padding: 0;
-    list-style-type: none;
-}
 
-a {
-    &:hover,
-    &:active {
-        outline: none;
-    }
-}
 
-#layout a {
-    &:hover,
-    &:active {
-        text-decoration: underline;
-    }
-}
+@import "base/typography";
 
-h1,
-h2,
-h3,
+
 #nav-parimary,
 #page-nav,
 #button-nav,
@@ -132,33 +109,7 @@ input {
     color: #08a;
 }
 
-.button,.btn,
-#button-login-register,
-input[type="submit"],
-input[type="button"],
-button,
-.cs-box h2,
-#cs-button,
-#view-results .comparison-rep {
 
-    padding: 6px 16px;
-    display: inline-block;
-    font-weight: 500;
-    font-size: 0.9375em;
-    color: #fff;
-    cursor: pointer;
-    text-decoration: none;
-    border: 0;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    @include teal-gradient;
-    &:focus,
-    &:active input#button-login-register:focus,
-    &:active {
-        background: $scrubteal-light;
-    }
-}
 
 
 address {
@@ -214,6 +165,7 @@ address {
 
 /* Nav */
 @import "component/box";
+@import "component/button";
 @import "component/user-status-container";
 @import "component/nav-basic";
 @import "component/nav-primary";

@@ -85,7 +85,7 @@
  * @section Scrub Teal	 	
  */
 @import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i");
-@import url("https://fonts.googleapis.com/css?family=Muli:200,300,400");
+@import url("https://fonts.googleapis.com/css?family=Muli:200,400,700");
 h1, h2, h3, h4, h5, h6, p, td, th {
   -webkit-transition: line-height 1s;
   /* Safari */
@@ -167,19 +167,19 @@ h1, h2, h3, h4, h5, h6, p, td, th {
   text-transform: uppercase; }
 .alphabet-display .ms12 {
   font-size: 10.5625em;
-  line-height: 1.13609em;
+  line-height: 1.1360946746em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
   .alphabet-display .ms12 {
-    line-height: 1.02249em; } }
+    line-height: 1.0224852071em; } }
 @media only screen and (max-width: 1024px) and (max-height: 320px) {
   .alphabet-display .ms12 {
     line-height: 1em; } }
 
 .alphabet-display .ms6 {
   font-size: 4.125em;
-  line-height: 1.09091em;
+  line-height: 1.0909090909em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
@@ -191,27 +191,27 @@ h1, h2, h3, h4, h5, h6, p, td, th {
 
 .alphabet-display .ms4 {
   font-size: 2.5625em;
-  line-height: 1.17073em;
+  line-height: 1.1707317073em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
   .alphabet-display .ms4 {
-    line-height: 1.05366em; } }
+    line-height: 1.0536585366em; } }
 @media only screen and (max-width: 1024px) and (max-height: 320px) {
   .alphabet-display .ms4 {
     line-height: 1em; } }
 
 .alphabet-display .ms2 {
   font-size: 1.625em;
-  line-height: 1.84615em;
+  line-height: 1.8461538462em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
   .alphabet-display .ms2 {
-    line-height: 1.66154em; } }
+    line-height: 1.6615384615em; } }
 @media only screen and (max-width: 1024px) and (max-height: 320px) {
   .alphabet-display .ms2 {
-    line-height: 1.56923em; } }
+    line-height: 1.5692307692em; } }
 
 .alphabet-display .ms1 {
   font-size: 1.25em;
@@ -367,7 +367,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 *,
 *::before,
@@ -854,48 +854,48 @@ pre {
   max-width: none; }
 
 .col-1 {
-  flex: 0 0 8.33333%;
-  max-width: 8.33333%; }
+  flex: 0 0 8.3333333333%;
+  max-width: 8.3333333333%; }
 
 .col-2 {
-  flex: 0 0 16.66667%;
-  max-width: 16.66667%; }
+  flex: 0 0 16.6666666667%;
+  max-width: 16.6666666667%; }
 
 .col-3 {
   flex: 0 0 25%;
   max-width: 25%; }
 
 .col-4 {
-  flex: 0 0 33.33333%;
-  max-width: 33.33333%; }
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%; }
 
 .col-5 {
-  flex: 0 0 41.66667%;
-  max-width: 41.66667%; }
+  flex: 0 0 41.6666666667%;
+  max-width: 41.6666666667%; }
 
 .col-6 {
   flex: 0 0 50%;
   max-width: 50%; }
 
 .col-7 {
-  flex: 0 0 58.33333%;
-  max-width: 58.33333%; }
+  flex: 0 0 58.3333333333%;
+  max-width: 58.3333333333%; }
 
 .col-8 {
-  flex: 0 0 66.66667%;
-  max-width: 66.66667%; }
+  flex: 0 0 66.6666666667%;
+  max-width: 66.6666666667%; }
 
 .col-9 {
   flex: 0 0 75%;
   max-width: 75%; }
 
 .col-10 {
-  flex: 0 0 83.33333%;
-  max-width: 83.33333%; }
+  flex: 0 0 83.3333333333%;
+  max-width: 83.3333333333%; }
 
 .col-11 {
-  flex: 0 0 91.66667%;
-  max-width: 91.66667%; }
+  flex: 0 0 91.6666666667%;
+  max-width: 91.6666666667%; }
 
 .col-12 {
   flex: 0 0 100%;
@@ -949,48 +949,48 @@ pre {
     max-width: none; }
 
   .col-sm-1 {
-    flex: 0 0 8.33333%;
-    max-width: 8.33333%; }
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%; }
 
   .col-sm-2 {
-    flex: 0 0 16.66667%;
-    max-width: 16.66667%; }
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%; }
 
   .col-sm-3 {
     flex: 0 0 25%;
     max-width: 25%; }
 
   .col-sm-4 {
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%; }
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
 
   .col-sm-5 {
-    flex: 0 0 41.66667%;
-    max-width: 41.66667%; }
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%; }
 
   .col-sm-6 {
     flex: 0 0 50%;
     max-width: 50%; }
 
   .col-sm-7 {
-    flex: 0 0 58.33333%;
-    max-width: 58.33333%; }
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%; }
 
   .col-sm-8 {
-    flex: 0 0 66.66667%;
-    max-width: 66.66667%; }
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%; }
 
   .col-sm-9 {
     flex: 0 0 75%;
     max-width: 75%; }
 
   .col-sm-10 {
-    flex: 0 0 83.33333%;
-    max-width: 83.33333%; }
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%; }
 
   .col-sm-11 {
-    flex: 0 0 91.66667%;
-    max-width: 91.66667%; }
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%; }
 
   .col-sm-12 {
     flex: 0 0 100%;
@@ -1043,48 +1043,48 @@ pre {
     max-width: none; }
 
   .col-md-1 {
-    flex: 0 0 8.33333%;
-    max-width: 8.33333%; }
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%; }
 
   .col-md-2 {
-    flex: 0 0 16.66667%;
-    max-width: 16.66667%; }
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%; }
 
   .col-md-3 {
     flex: 0 0 25%;
     max-width: 25%; }
 
   .col-md-4 {
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%; }
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
 
   .col-md-5 {
-    flex: 0 0 41.66667%;
-    max-width: 41.66667%; }
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%; }
 
   .col-md-6 {
     flex: 0 0 50%;
     max-width: 50%; }
 
   .col-md-7 {
-    flex: 0 0 58.33333%;
-    max-width: 58.33333%; }
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%; }
 
   .col-md-8 {
-    flex: 0 0 66.66667%;
-    max-width: 66.66667%; }
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%; }
 
   .col-md-9 {
     flex: 0 0 75%;
     max-width: 75%; }
 
   .col-md-10 {
-    flex: 0 0 83.33333%;
-    max-width: 83.33333%; }
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%; }
 
   .col-md-11 {
-    flex: 0 0 91.66667%;
-    max-width: 91.66667%; }
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%; }
 
   .col-md-12 {
     flex: 0 0 100%;
@@ -1137,48 +1137,48 @@ pre {
     max-width: none; }
 
   .col-lg-1 {
-    flex: 0 0 8.33333%;
-    max-width: 8.33333%; }
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%; }
 
   .col-lg-2 {
-    flex: 0 0 16.66667%;
-    max-width: 16.66667%; }
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%; }
 
   .col-lg-3 {
     flex: 0 0 25%;
     max-width: 25%; }
 
   .col-lg-4 {
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%; }
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
 
   .col-lg-5 {
-    flex: 0 0 41.66667%;
-    max-width: 41.66667%; }
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%; }
 
   .col-lg-6 {
     flex: 0 0 50%;
     max-width: 50%; }
 
   .col-lg-7 {
-    flex: 0 0 58.33333%;
-    max-width: 58.33333%; }
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%; }
 
   .col-lg-8 {
-    flex: 0 0 66.66667%;
-    max-width: 66.66667%; }
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%; }
 
   .col-lg-9 {
     flex: 0 0 75%;
     max-width: 75%; }
 
   .col-lg-10 {
-    flex: 0 0 83.33333%;
-    max-width: 83.33333%; }
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%; }
 
   .col-lg-11 {
-    flex: 0 0 91.66667%;
-    max-width: 91.66667%; }
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%; }
 
   .col-lg-12 {
     flex: 0 0 100%;
@@ -1231,48 +1231,48 @@ pre {
     max-width: none; }
 
   .col-xl-1 {
-    flex: 0 0 8.33333%;
-    max-width: 8.33333%; }
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%; }
 
   .col-xl-2 {
-    flex: 0 0 16.66667%;
-    max-width: 16.66667%; }
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%; }
 
   .col-xl-3 {
     flex: 0 0 25%;
     max-width: 25%; }
 
   .col-xl-4 {
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%; }
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
 
   .col-xl-5 {
-    flex: 0 0 41.66667%;
-    max-width: 41.66667%; }
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%; }
 
   .col-xl-6 {
     flex: 0 0 50%;
     max-width: 50%; }
 
   .col-xl-7 {
-    flex: 0 0 58.33333%;
-    max-width: 58.33333%; }
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%; }
 
   .col-xl-8 {
-    flex: 0 0 66.66667%;
-    max-width: 66.66667%; }
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%; }
 
   .col-xl-9 {
     flex: 0 0 75%;
     max-width: 75%; }
 
   .col-xl-10 {
-    flex: 0 0 83.33333%;
-    max-width: 83.33333%; }
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%; }
 
   .col-xl-11 {
-    flex: 0 0 91.66667%;
-    max-width: 91.66667%; }
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%; }
 
   .col-xl-12 {
     flex: 0 0 100%;
@@ -1548,15 +1548,27 @@ select.form-control:focus::-ms-value {
   border-width: 1px 0; }
   .form-control-plaintext.form-control-sm, .input-group-sm > .form-control-plaintext.form-control,
   .input-group-sm > .form-control-plaintext.input-group-addon,
-  .input-group-sm > .input-group-btn > .form-control-plaintext.btn, .form-control-plaintext.form-control-lg, .input-group-lg > .form-control-plaintext.form-control,
+  .input-group-sm > .input-group-btn > .form-control-plaintext.btn,
+  .input-group-sm > .input-group-btn > .form-control-plaintext.button,
+  .input-group-sm > .input-group-btn > input.form-control-plaintext[type="submit"],
+  .input-group-sm > .input-group-btn > input.form-control-plaintext[type="button"],
+  .input-group-sm > .input-group-btn > button.form-control-plaintext, .form-control-plaintext.form-control-lg, .input-group-lg > .form-control-plaintext.form-control,
   .input-group-lg > .form-control-plaintext.input-group-addon,
-  .input-group-lg > .input-group-btn > .form-control-plaintext.btn {
+  .input-group-lg > .input-group-btn > .form-control-plaintext.btn,
+  .input-group-lg > .input-group-btn > .form-control-plaintext.button,
+  .input-group-lg > .input-group-btn > input.form-control-plaintext[type="submit"],
+  .input-group-lg > .input-group-btn > input.form-control-plaintext[type="button"],
+  .input-group-lg > .input-group-btn > button.form-control-plaintext {
     padding-right: 0;
     padding-left: 0; }
 
 .form-control-sm, .input-group-sm > .form-control,
 .input-group-sm > .input-group-addon,
-.input-group-sm > .input-group-btn > .btn {
+.input-group-sm > .input-group-btn > .btn,
+.input-group-sm > .input-group-btn > .button,
+.input-group-sm > .input-group-btn > input[type="submit"],
+.input-group-sm > .input-group-btn > input[type="button"],
+.input-group-sm > .input-group-btn > button {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -1564,12 +1576,17 @@ select.form-control:focus::-ms-value {
 
 select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]),
 .input-group-sm > select.input-group-addon:not([size]):not([multiple]),
-.input-group-sm > .input-group-btn > select.btn:not([size]):not([multiple]) {
+.input-group-sm > .input-group-btn > select.btn:not([size]):not([multiple]),
+.input-group-sm > .input-group-btn > select.button:not([size]):not([multiple]) {
   height: calc(1.8125rem + 2px); }
 
 .form-control-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
-.input-group-lg > .input-group-btn > .btn {
+.input-group-lg > .input-group-btn > .btn,
+.input-group-lg > .input-group-btn > .button,
+.input-group-lg > .input-group-btn > input[type="submit"],
+.input-group-lg > .input-group-btn > input[type="button"],
+.input-group-lg > .input-group-btn > button {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -1577,7 +1594,8 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 
 select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.form-control:not([size]):not([multiple]),
 .input-group-lg > select.input-group-addon:not([size]):not([multiple]),
-.input-group-lg > .input-group-btn > select.btn:not([size]):not([multiple]) {
+.input-group-lg > .input-group-btn > select.btn:not([size]):not([multiple]),
+.input-group-lg > .input-group-btn > select.button:not([size]):not([multiple]) {
   height: calc(2.3125rem + 2px); }
 
 .form-group {
@@ -1642,20 +1660,19 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   background-color: rgba(220, 53, 69, 0.8);
   border-radius: .2rem; }
 
-.was-validated .form-control:valid, .form-control.is-valid, .was-validated
-.custom-select:valid,
+.was-validated .form-control:valid, .form-control.is-valid,
+.was-validated .custom-select:valid,
 .custom-select.is-valid {
   border-color: #28a745; }
-  .was-validated .form-control:valid:focus, .form-control.is-valid:focus, .was-validated
-  .custom-select:valid:focus,
+  .was-validated .form-control:valid:focus, .form-control.is-valid:focus,
+  .was-validated .custom-select:valid:focus,
   .custom-select.is-valid:focus {
     box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25); }
   .was-validated .form-control:valid ~ .invalid-feedback,
   .was-validated .form-control:valid ~ .invalid-tooltip, .form-control.is-valid ~ .invalid-feedback,
-  .form-control.is-valid ~ .invalid-tooltip, .was-validated
-  .custom-select:valid ~ .invalid-feedback,
-  .was-validated
-  .custom-select:valid ~ .invalid-tooltip,
+  .form-control.is-valid ~ .invalid-tooltip,
+  .was-validated .custom-select:valid ~ .invalid-feedback,
+  .was-validated .custom-select:valid ~ .invalid-tooltip,
   .custom-select.is-valid ~ .invalid-feedback,
   .custom-select.is-valid ~ .invalid-tooltip {
     display: block; }
@@ -1675,20 +1692,19 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .was-validated .custom-file-input:valid:focus, .custom-file-input.is-valid:focus {
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25); }
 
-.was-validated .form-control:invalid, .form-control.is-invalid, .was-validated
-.custom-select:invalid,
+.was-validated .form-control:invalid, .form-control.is-invalid,
+.was-validated .custom-select:invalid,
 .custom-select.is-invalid {
   border-color: #dc3545; }
-  .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus, .was-validated
-  .custom-select:invalid:focus,
+  .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus,
+  .was-validated .custom-select:invalid:focus,
   .custom-select.is-invalid:focus {
     box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25); }
   .was-validated .form-control:invalid ~ .invalid-feedback,
   .was-validated .form-control:invalid ~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback,
-  .form-control.is-invalid ~ .invalid-tooltip, .was-validated
-  .custom-select:invalid ~ .invalid-feedback,
-  .was-validated
-  .custom-select:invalid ~ .invalid-tooltip,
+  .form-control.is-invalid ~ .invalid-tooltip,
+  .was-validated .custom-select:invalid ~ .invalid-feedback,
+  .was-validated .custom-select:invalid ~ .invalid-tooltip,
   .custom-select.is-invalid ~ .invalid-feedback,
   .custom-select.is-invalid ~ .invalid-tooltip {
     display: block; }
@@ -1764,7 +1780,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
     .form-inline .has-feedback .form-control-feedback {
       top: 0; } }
 
-.btn {
+.btn, .button, button.button, input[type="submit"], input[type="button"], button {
   display: inline-block;
   font-weight: normal;
   text-align: center;
@@ -1777,18 +1793,19 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   line-height: 1.25;
   border-radius: 0.25rem;
   transition: all 0.15s ease-in-out; }
-  .btn:focus, .btn:hover {
+  .btn:focus, .button:focus, input[type="submit"]:focus, input[type="button"]:focus, button:focus, .btn:hover, .button:hover, input[type="submit"]:hover, input[type="button"]:hover, button:hover {
     text-decoration: none; }
-  .btn:focus, .btn.focus {
+  .btn:focus, .button:focus, input[type="submit"]:focus, input[type="button"]:focus, button:focus, .btn.focus, .focus.button, input.focus[type="submit"], input.focus[type="button"], button.focus {
     outline: 0;
     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); }
-  .btn.disabled, .btn:disabled {
+  .btn.disabled, .disabled.button, input.disabled[type="submit"], input.disabled[type="button"], button.disabled, .btn:disabled, .button:disabled, input[type="submit"]:disabled, input[type="button"]:disabled, button:disabled {
     opacity: .65; }
-  .btn:active, .btn.active {
+  .btn:active, .button:active, input[type="submit"]:active, input[type="button"]:active, button:active, .btn.active, .active.button, input.active[type="submit"], input.active[type="button"], button.active {
     background-image: none; }
 
-a.btn.disabled,
-fieldset[disabled] a.btn {
+a.btn.disabled, a.disabled.button,
+fieldset[disabled] a.btn,
+fieldset[disabled] a.button {
   pointer-events: none; }
 
 .btn-primary {
@@ -2107,13 +2124,13 @@ fieldset[disabled] a.btn {
     .btn-link:disabled:focus, .btn-link:disabled:hover {
       text-decoration: none; }
 
-.btn-lg, .btn-group-lg > .btn {
+.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .button, .btn-group-lg > input[type="submit"], .btn-group-lg > input[type="button"], .btn-group-lg > button {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem; }
 
-.btn-sm, .btn-group-sm > .btn {
+.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .button, .btn-group-sm > input[type="submit"], .btn-group-sm > input[type="button"], .btn-group-sm > button {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -2245,26 +2262,88 @@ tbody.collapse.show {
   position: relative;
   display: inline-flex;
   vertical-align: middle; }
-  .btn-group > .btn,
-  .btn-group-vertical > .btn {
+  .btn-group > .btn, .btn-group > .button, .btn-group > input[type="submit"], .btn-group > input[type="button"], .btn-group > button,
+  .btn-group-vertical > .btn,
+  .btn-group-vertical > .button,
+  .btn-group-vertical > input[type="submit"],
+  .btn-group-vertical > input[type="button"],
+  .btn-group-vertical > button {
     position: relative;
     flex: 0 1 auto;
     margin-bottom: 0; }
-    .btn-group > .btn:hover,
-    .btn-group-vertical > .btn:hover {
+    .btn-group > .btn:hover, .btn-group > .button:hover, .btn-group > input[type="submit"]:hover, .btn-group > input[type="button"]:hover, .btn-group > button:hover,
+    .btn-group-vertical > .btn:hover,
+    .btn-group-vertical > .button:hover,
+    .btn-group-vertical > input[type="submit"]:hover,
+    .btn-group-vertical > input[type="button"]:hover,
+    .btn-group-vertical > button:hover {
       z-index: 2; }
-    .btn-group > .btn:focus, .btn-group > .btn:active, .btn-group > .btn.active,
+    .btn-group > .btn:focus, .btn-group > .button:focus, .btn-group > input[type="submit"]:focus, .btn-group > input[type="button"]:focus, .btn-group > button:focus, .btn-group > .btn:active, .btn-group > .button:active, .btn-group > input[type="submit"]:active, .btn-group > input[type="button"]:active, .btn-group > button:active, .btn-group > .btn.active, .btn-group > .active.button, .btn-group > input.active[type="submit"], .btn-group > input.active[type="button"], .btn-group > button.active,
     .btn-group-vertical > .btn:focus,
+    .btn-group-vertical > .button:focus,
+    .btn-group-vertical > input[type="submit"]:focus,
+    .btn-group-vertical > input[type="button"]:focus,
+    .btn-group-vertical > button:focus,
     .btn-group-vertical > .btn:active,
-    .btn-group-vertical > .btn.active {
+    .btn-group-vertical > .button:active,
+    .btn-group-vertical > input[type="submit"]:active,
+    .btn-group-vertical > input[type="button"]:active,
+    .btn-group-vertical > button:active,
+    .btn-group-vertical > .btn.active,
+    .btn-group-vertical > .active.button,
+    .btn-group-vertical > input.active[type="submit"],
+    .btn-group-vertical > input.active[type="button"],
+    .btn-group-vertical > button.active {
       z-index: 2; }
-  .btn-group .btn + .btn,
+  .btn-group .btn + .btn, .btn-group .button + .btn, .btn-group input[type="submit"] + .btn, .btn-group input[type="button"] + .btn, .btn-group button + .btn, .btn-group .btn + .button, .btn-group .button + .button, .btn-group input[type="submit"] + .button, .btn-group input[type="button"] + .button, .btn-group button + .button, .btn-group button + button.button, .btn-group .btn + input[type="submit"], .btn-group .button + input[type="submit"], .btn-group input[type="submit"] + input[type="submit"], .btn-group input[type="button"] + input[type="submit"], .btn-group button + input[type="submit"], .btn-group .btn + input[type="button"], .btn-group .button + input[type="button"], .btn-group input[type="submit"] + input[type="button"], .btn-group input[type="button"] + input[type="button"], .btn-group button + input[type="button"], .btn-group .btn + button, .btn-group .button + button, .btn-group button.button + button, .btn-group input[type="submit"] + button, .btn-group input[type="button"] + button, .btn-group button + button,
   .btn-group .btn + .btn-group,
+  .btn-group .button + .btn-group,
+  .btn-group input[type="submit"] + .btn-group,
+  .btn-group input[type="button"] + .btn-group,
+  .btn-group button + .btn-group,
   .btn-group .btn-group + .btn,
+  .btn-group .btn-group + .button,
+  .btn-group .btn-group + input[type="submit"],
+  .btn-group .btn-group + input[type="button"],
+  .btn-group .btn-group + button,
   .btn-group .btn-group + .btn-group,
   .btn-group-vertical .btn + .btn,
+  .btn-group-vertical .button + .btn,
+  .btn-group-vertical input[type="submit"] + .btn,
+  .btn-group-vertical input[type="button"] + .btn,
+  .btn-group-vertical button + .btn,
+  .btn-group-vertical .btn + .button,
+  .btn-group-vertical .button + .button,
+  .btn-group-vertical input[type="submit"] + .button,
+  .btn-group-vertical input[type="button"] + .button,
+  .btn-group-vertical button + .button,
+  .btn-group-vertical button + button.button,
+  .btn-group-vertical .btn + input[type="submit"],
+  .btn-group-vertical .button + input[type="submit"],
+  .btn-group-vertical input[type="submit"] + input[type="submit"],
+  .btn-group-vertical input[type="button"] + input[type="submit"],
+  .btn-group-vertical button + input[type="submit"],
+  .btn-group-vertical .btn + input[type="button"],
+  .btn-group-vertical .button + input[type="button"],
+  .btn-group-vertical input[type="submit"] + input[type="button"],
+  .btn-group-vertical input[type="button"] + input[type="button"],
+  .btn-group-vertical button + input[type="button"],
+  .btn-group-vertical .btn + button,
+  .btn-group-vertical .button + button,
+  .btn-group-vertical button.button + button,
+  .btn-group-vertical input[type="submit"] + button,
+  .btn-group-vertical input[type="button"] + button,
+  .btn-group-vertical button + button,
   .btn-group-vertical .btn + .btn-group,
+  .btn-group-vertical .button + .btn-group,
+  .btn-group-vertical input[type="submit"] + .btn-group,
+  .btn-group-vertical input[type="button"] + .btn-group,
+  .btn-group-vertical button + .btn-group,
   .btn-group-vertical .btn-group + .btn,
+  .btn-group-vertical .btn-group + .button,
+  .btn-group-vertical .btn-group + input[type="submit"],
+  .btn-group-vertical .btn-group + input[type="button"],
+  .btn-group-vertical .btn-group + button,
   .btn-group-vertical .btn-group + .btn-group {
     margin-left: -1px; }
 
@@ -2275,16 +2354,16 @@ tbody.collapse.show {
   .btn-toolbar .input-group {
     width: auto; }
 
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > .button:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > input[type="submit"]:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > input[type="button"]:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > button:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0; }
 
-.btn-group > .btn:first-child {
+.btn-group > .btn:first-child, .btn-group > .button:first-child, .btn-group > input[type="submit"]:first-child, .btn-group > input[type="button"]:first-child, .btn-group > button:first-child {
   margin-left: 0; }
-  .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+  .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > .button:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > input[type="submit"]:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > input[type="button"]:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > button:first-child:not(:last-child):not(.dropdown-toggle) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0; }
 
-.btn-group > .btn:last-child:not(:first-child),
+.btn-group > .btn:last-child:not(:first-child), .btn-group > .button:last-child:not(:first-child), .btn-group > input[type="submit"]:last-child:not(:first-child), .btn-group > input[type="button"]:last-child:not(:first-child), .btn-group > button:last-child:not(:first-child),
 .btn-group > .dropdown-toggle:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
@@ -2292,29 +2371,29 @@ tbody.collapse.show {
 .btn-group > .btn-group {
   float: left; }
 
-.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .btn-group > .btn-group:not(:first-child):not(:last-child) > .button, .btn-group > .btn-group:not(:first-child):not(:last-child) > input[type="submit"], .btn-group > .btn-group:not(:first-child):not(:last-child) > input[type="button"], .btn-group > .btn-group:not(:first-child):not(:last-child) > button {
   border-radius: 0; }
 
-.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child,
+.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, .btn-group > .btn-group:first-child:not(:last-child) > .button:last-child, .btn-group > .btn-group:first-child:not(:last-child) > input[type="submit"]:last-child, .btn-group > .btn-group:first-child:not(:last-child) > input[type="button"]:last-child, .btn-group > .btn-group:first-child:not(:last-child) > button:last-child,
 .btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child {
+.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child, .btn-group > .btn-group:last-child:not(:first-child) > .button:first-child, .btn-group > .btn-group:last-child:not(:first-child) > input[type="submit"]:first-child, .btn-group > .btn-group:last-child:not(:first-child) > input[type="button"]:first-child, .btn-group > .btn-group:last-child:not(:first-child) > button:first-child {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
 
-.btn + .dropdown-toggle-split {
+.btn + .dropdown-toggle-split, .button + .dropdown-toggle-split, input[type="submit"] + .dropdown-toggle-split, input[type="button"] + .dropdown-toggle-split, button + .dropdown-toggle-split {
   padding-right: 0.5625rem;
   padding-left: 0.5625rem; }
-  .btn + .dropdown-toggle-split::after {
+  .btn + .dropdown-toggle-split::after, .button + .dropdown-toggle-split::after, input[type="submit"] + .dropdown-toggle-split::after, input[type="button"] + .dropdown-toggle-split::after, button + .dropdown-toggle-split::after {
     margin-left: 0; }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .button + .dropdown-toggle-split, .btn-group-sm > input[type="submit"] + .dropdown-toggle-split, .btn-group-sm > input[type="button"] + .dropdown-toggle-split, .btn-group-sm > button + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem; }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .button + .dropdown-toggle-split, .btn-group-lg > input[type="submit"] + .dropdown-toggle-split, .btn-group-lg > input[type="button"] + .dropdown-toggle-split, .btn-group-lg > button + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem; }
 
@@ -2323,41 +2402,61 @@ tbody.collapse.show {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center; }
-  .btn-group-vertical .btn,
+  .btn-group-vertical .btn, .btn-group-vertical .button, .btn-group-vertical input[type="submit"], .btn-group-vertical input[type="button"], .btn-group-vertical button,
   .btn-group-vertical .btn-group {
     width: 100%; }
-  .btn-group-vertical > .btn + .btn,
+  .btn-group-vertical > .btn + .btn, .btn-group-vertical > .button + .btn, .btn-group-vertical > input[type="submit"] + .btn, .btn-group-vertical > input[type="button"] + .btn, .btn-group-vertical > button + .btn, .btn-group-vertical > .btn + .button, .btn-group-vertical > .button + .button, .btn-group-vertical > input[type="submit"] + .button, .btn-group-vertical > input[type="button"] + .button, .btn-group-vertical > button + .button, .btn-group-vertical > button + button.button, .btn-group-vertical > .btn + input[type="submit"], .btn-group-vertical > .button + input[type="submit"], .btn-group-vertical > input[type="submit"] + input[type="submit"], .btn-group-vertical > input[type="button"] + input[type="submit"], .btn-group-vertical > button + input[type="submit"], .btn-group-vertical > .btn + input[type="button"], .btn-group-vertical > .button + input[type="button"], .btn-group-vertical > input[type="submit"] + input[type="button"], .btn-group-vertical > input[type="button"] + input[type="button"], .btn-group-vertical > button + input[type="button"], .btn-group-vertical > .btn + button, .btn-group-vertical > .button + button, .btn-group-vertical > button.button + button, .btn-group-vertical > input[type="submit"] + button, .btn-group-vertical > input[type="button"] + button, .btn-group-vertical > button + button,
   .btn-group-vertical > .btn + .btn-group,
+  .btn-group-vertical > .button + .btn-group,
+  .btn-group-vertical > input[type="submit"] + .btn-group,
+  .btn-group-vertical > input[type="button"] + .btn-group,
+  .btn-group-vertical > button + .btn-group,
   .btn-group-vertical > .btn-group + .btn,
+  .btn-group-vertical > .btn-group + .button,
+  .btn-group-vertical > .btn-group + input[type="submit"],
+  .btn-group-vertical > .btn-group + input[type="button"],
+  .btn-group-vertical > .btn-group + button,
   .btn-group-vertical > .btn-group + .btn-group {
     margin-top: -1px;
     margin-left: 0; }
 
-.btn-group-vertical > .btn:not(:first-child):not(:last-child) {
+.btn-group-vertical > .btn:not(:first-child):not(:last-child), .btn-group-vertical > .button:not(:first-child):not(:last-child), .btn-group-vertical > input[type="submit"]:not(:first-child):not(:last-child), .btn-group-vertical > input[type="button"]:not(:first-child):not(:last-child), .btn-group-vertical > button:not(:first-child):not(:last-child) {
   border-radius: 0; }
-.btn-group-vertical > .btn:first-child:not(:last-child) {
+.btn-group-vertical > .btn:first-child:not(:last-child), .btn-group-vertical > .button:first-child:not(:last-child), .btn-group-vertical > input[type="submit"]:first-child:not(:last-child), .btn-group-vertical > input[type="button"]:first-child:not(:last-child), .btn-group-vertical > button:first-child:not(:last-child) {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0; }
-.btn-group-vertical > .btn:last-child:not(:first-child) {
+.btn-group-vertical > .btn:last-child:not(:first-child), .btn-group-vertical > .button:last-child:not(:first-child), .btn-group-vertical > input[type="submit"]:last-child:not(:first-child), .btn-group-vertical > input[type="button"]:last-child:not(:first-child), .btn-group-vertical > button:last-child:not(:first-child) {
   border-top-left-radius: 0;
   border-top-right-radius: 0; }
 
-.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn {
+.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .button, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > input[type="submit"], .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > input[type="button"], .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > button {
   border-radius: 0; }
 
-.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child,
+.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > .button:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > input[type="submit"]:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > input[type="button"]:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > button:last-child,
 .btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0; }
 
-.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child {
+.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > .button:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > input[type="submit"]:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > input[type="button"]:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > button:first-child {
   border-top-left-radius: 0;
   border-top-right-radius: 0; }
 
-[data-toggle="buttons"] > .btn input[type="radio"],
+[data-toggle="buttons"] > .btn input[type="radio"], [data-toggle="buttons"] > .button input[type="radio"], [data-toggle="buttons"] > input[type="submit"] input[type="radio"], [data-toggle="buttons"] > input[type="button"] input[type="radio"], [data-toggle="buttons"] > button input[type="radio"],
 [data-toggle="buttons"] > .btn input[type="checkbox"],
+[data-toggle="buttons"] > .button input[type="checkbox"],
+[data-toggle="buttons"] > input[type="submit"] input[type="checkbox"],
+[data-toggle="buttons"] > input[type="button"] input[type="checkbox"],
+[data-toggle="buttons"] > button input[type="checkbox"],
 [data-toggle="buttons"] > .btn-group > .btn input[type="radio"],
-[data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"] {
+[data-toggle="buttons"] > .btn-group > .button input[type="radio"],
+[data-toggle="buttons"] > .btn-group > input[type="submit"] input[type="radio"],
+[data-toggle="buttons"] > .btn-group > input[type="button"] input[type="radio"],
+[data-toggle="buttons"] > .btn-group > button input[type="radio"],
+[data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"],
+[data-toggle="buttons"] > .btn-group > .button input[type="checkbox"],
+[data-toggle="buttons"] > .btn-group > input[type="submit"] input[type="checkbox"],
+[data-toggle="buttons"] > .btn-group > input[type="button"] input[type="checkbox"],
+[data-toggle="buttons"] > .btn-group > button input[type="checkbox"] {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none; }
@@ -2403,13 +2502,21 @@ tbody.collapse.show {
   border-radius: 0.25rem; }
   .input-group-addon.form-control-sm,
   .input-group-sm > .input-group-addon,
-  .input-group-sm > .input-group-btn > .input-group-addon.btn {
+  .input-group-sm > .input-group-btn > .input-group-addon.btn,
+  .input-group-sm > .input-group-btn > .input-group-addon.button,
+  .input-group-sm > .input-group-btn > input.input-group-addon[type="submit"],
+  .input-group-sm > .input-group-btn > input.input-group-addon[type="button"],
+  .input-group-sm > .input-group-btn > button.input-group-addon {
     padding: 0.25rem 0.5rem;
     font-size: 0.875rem;
     border-radius: 0.2rem; }
   .input-group-addon.form-control-lg,
   .input-group-lg > .input-group-addon,
-  .input-group-lg > .input-group-btn > .input-group-addon.btn {
+  .input-group-lg > .input-group-btn > .input-group-addon.btn,
+  .input-group-lg > .input-group-btn > .input-group-addon.button,
+  .input-group-lg > .input-group-btn > input.input-group-addon[type="submit"],
+  .input-group-lg > .input-group-btn > input.input-group-addon[type="button"],
+  .input-group-lg > .input-group-btn > button.input-group-addon {
     padding: 0.5rem 1rem;
     font-size: 1.25rem;
     border-radius: 0.3rem; }
@@ -2420,10 +2527,26 @@ tbody.collapse.show {
 .input-group .form-control:not(:last-child),
 .input-group-addon:not(:last-child),
 .input-group-btn:not(:last-child) > .btn,
+.input-group-btn:not(:last-child) > .button,
+.input-group-btn:not(:last-child) > input[type="submit"],
+.input-group-btn:not(:last-child) > input[type="button"],
+.input-group-btn:not(:last-child) > button,
 .input-group-btn:not(:last-child) > .btn-group > .btn,
+.input-group-btn:not(:last-child) > .btn-group > .button,
+.input-group-btn:not(:last-child) > .btn-group > input[type="submit"],
+.input-group-btn:not(:last-child) > .btn-group > input[type="button"],
+.input-group-btn:not(:last-child) > .btn-group > button,
 .input-group-btn:not(:last-child) > .dropdown-toggle,
 .input-group-btn:not(:first-child) > .btn:not(:last-child):not(.dropdown-toggle),
-.input-group-btn:not(:first-child) > .btn-group:not(:last-child) > .btn {
+.input-group-btn:not(:first-child) > .button:not(:last-child):not(.dropdown-toggle),
+.input-group-btn:not(:first-child) > input[type="submit"]:not(:last-child):not(.dropdown-toggle),
+.input-group-btn:not(:first-child) > input[type="button"]:not(:last-child):not(.dropdown-toggle),
+.input-group-btn:not(:first-child) > button:not(:last-child):not(.dropdown-toggle),
+.input-group-btn:not(:first-child) > .btn-group:not(:last-child) > .btn,
+.input-group-btn:not(:first-child) > .btn-group:not(:last-child) > .button,
+.input-group-btn:not(:first-child) > .btn-group:not(:last-child) > input[type="submit"],
+.input-group-btn:not(:first-child) > .btn-group:not(:last-child) > input[type="button"],
+.input-group-btn:not(:first-child) > .btn-group:not(:last-child) > button {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
@@ -2433,10 +2556,26 @@ tbody.collapse.show {
 .input-group .form-control:not(:first-child),
 .input-group-addon:not(:first-child),
 .input-group-btn:not(:first-child) > .btn,
+.input-group-btn:not(:first-child) > .button,
+.input-group-btn:not(:first-child) > input[type="submit"],
+.input-group-btn:not(:first-child) > input[type="button"],
+.input-group-btn:not(:first-child) > button,
 .input-group-btn:not(:first-child) > .btn-group > .btn,
+.input-group-btn:not(:first-child) > .btn-group > .button,
+.input-group-btn:not(:first-child) > .btn-group > input[type="submit"],
+.input-group-btn:not(:first-child) > .btn-group > input[type="button"],
+.input-group-btn:not(:first-child) > .btn-group > button,
 .input-group-btn:not(:first-child) > .dropdown-toggle,
 .input-group-btn:not(:last-child) > .btn:not(:first-child),
-.input-group-btn:not(:last-child) > .btn-group:not(:first-child) > .btn {
+.input-group-btn:not(:last-child) > .button:not(:first-child),
+.input-group-btn:not(:last-child) > input[type="submit"]:not(:first-child),
+.input-group-btn:not(:last-child) > input[type="button"]:not(:first-child),
+.input-group-btn:not(:last-child) > button:not(:first-child),
+.input-group-btn:not(:last-child) > .btn-group:not(:first-child) > .btn,
+.input-group-btn:not(:last-child) > .btn-group:not(:first-child) > .button,
+.input-group-btn:not(:last-child) > .btn-group:not(:first-child) > input[type="submit"],
+.input-group-btn:not(:last-child) > .btn-group:not(:first-child) > input[type="button"],
+.input-group-btn:not(:last-child) > .btn-group:not(:first-child) > button {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
 
@@ -2447,20 +2586,20 @@ tbody.collapse.show {
   position: relative;
   font-size: 0;
   white-space: nowrap; }
-  .input-group-btn > .btn {
+  .input-group-btn > .btn, .input-group-btn > .button, .input-group-btn > input[type="submit"], .input-group-btn > input[type="button"], .input-group-btn > button {
     position: relative; }
-    .input-group-btn > .btn + .btn {
+    .input-group-btn > .btn + .btn, .input-group-btn > .button + .btn, .input-group-btn > input[type="submit"] + .btn, .input-group-btn > input[type="button"] + .btn, .input-group-btn > button + .btn, .input-group-btn > .btn + .button, .input-group-btn > .button + .button, .input-group-btn > input[type="submit"] + .button, .input-group-btn > input[type="button"] + .button, .input-group-btn > button + .button, .input-group-btn > button + button.button, .input-group-btn > .btn + input[type="submit"], .input-group-btn > .button + input[type="submit"], .input-group-btn > input[type="submit"] + input[type="submit"], .input-group-btn > input[type="button"] + input[type="submit"], .input-group-btn > button + input[type="submit"], .input-group-btn > .btn + input[type="button"], .input-group-btn > .button + input[type="button"], .input-group-btn > input[type="submit"] + input[type="button"], .input-group-btn > input[type="button"] + input[type="button"], .input-group-btn > button + input[type="button"], .input-group-btn > .btn + button, .input-group-btn > .button + button, .input-group-btn > button.button + button, .input-group-btn > input[type="submit"] + button, .input-group-btn > input[type="button"] + button, .input-group-btn > button + button {
       margin-left: -1px; }
-    .input-group-btn > .btn:focus, .input-group-btn > .btn:active, .input-group-btn > .btn:hover {
+    .input-group-btn > .btn:focus, .input-group-btn > .button:focus, .input-group-btn > input[type="submit"]:focus, .input-group-btn > input[type="button"]:focus, .input-group-btn > button:focus, .input-group-btn > .btn:active, .input-group-btn > .button:active, .input-group-btn > input[type="submit"]:active, .input-group-btn > input[type="button"]:active, .input-group-btn > button:active, .input-group-btn > .btn:hover, .input-group-btn > .button:hover, .input-group-btn > input[type="submit"]:hover, .input-group-btn > input[type="button"]:hover, .input-group-btn > button:hover {
       z-index: 3; }
-  .input-group-btn:not(:last-child) > .btn,
+  .input-group-btn:not(:last-child) > .btn, .input-group-btn:not(:last-child) > .button, .input-group-btn:not(:last-child) > input[type="submit"], .input-group-btn:not(:last-child) > input[type="button"], .input-group-btn:not(:last-child) > button,
   .input-group-btn:not(:last-child) > .btn-group {
     margin-right: -1px; }
-  .input-group-btn:not(:first-child) > .btn,
+  .input-group-btn:not(:first-child) > .btn, .input-group-btn:not(:first-child) > .button, .input-group-btn:not(:first-child) > input[type="submit"], .input-group-btn:not(:first-child) > input[type="button"], .input-group-btn:not(:first-child) > button,
   .input-group-btn:not(:first-child) > .btn-group {
     z-index: 2;
     margin-left: -1px; }
-    .input-group-btn:not(:first-child) > .btn:focus, .input-group-btn:not(:first-child) > .btn:active, .input-group-btn:not(:first-child) > .btn:hover,
+    .input-group-btn:not(:first-child) > .btn:focus, .input-group-btn:not(:first-child) > .button:focus, .input-group-btn:not(:first-child) > input[type="submit"]:focus, .input-group-btn:not(:first-child) > input[type="button"]:focus, .input-group-btn:not(:first-child) > button:focus, .input-group-btn:not(:first-child) > .btn:active, .input-group-btn:not(:first-child) > .button:active, .input-group-btn:not(:first-child) > input[type="submit"]:active, .input-group-btn:not(:first-child) > input[type="button"]:active, .input-group-btn:not(:first-child) > button:active, .input-group-btn:not(:first-child) > .btn:hover, .input-group-btn:not(:first-child) > .button:hover, .input-group-btn:not(:first-child) > input[type="submit"]:hover, .input-group-btn:not(:first-child) > input[type="button"]:hover, .input-group-btn:not(:first-child) > button:hover,
     .input-group-btn:not(:first-child) > .btn-group:focus,
     .input-group-btn:not(:first-child) > .btn-group:active,
     .input-group-btn:not(:first-child) > .btn-group:hover {
@@ -3144,7 +3283,7 @@ tbody.collapse.show {
   .badge:empty {
     display: none; }
 
-.btn .badge {
+.btn .badge, .button .badge, input[type="submit"] .badge, input[type="button"] .badge, button .badge {
   position: relative;
   top: -1px; }
 
@@ -4332,7 +4471,7 @@ a.bg-dark:focus, a.bg-dark:hover {
     border: 0; }
 
 .embed-responsive-21by9::before {
-  padding-top: 42.85714%; }
+  padding-top: 42.8571428571%; }
 
 .embed-responsive-16by9::before {
   padding-top: 56.25%; }
@@ -6548,7 +6687,7 @@ a.text-dark:focus, a.text-dark:hover {
  * @markup
  *    <button class="btn">a.btn</button>
  */
-.btn {
+.btn, .button, button.button, input[type="submit"], input[type="button"], button {
   /* leave empty */ }
 
 /**
@@ -6592,7 +6731,7 @@ a.text-dark:focus, a.text-dark:hover {
 *        </h5>
 *            </div>          <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
 *              <div class="card-block">
-*                <div class="row">
+*                <div class=" ">
 *                  <div class="col-sm-6">
 *                    <img src="https://dummyimage.com/200x200/563d7c/fff" alt="" class="img-thumbnail img-fluid">
 *                  </div>
@@ -6616,7 +6755,7 @@ a.text-dark:focus, a.text-dark:hover {
 *            </div>
 *            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
 *              <div class="card-block">
-*                <div class="row">
+*                <div class=" ">
 *                  <div class="col-sm-6">
 *                    <img src="https://dummyimage.com/200x200/563d7c/fff" alt="" class="img-thumbnail img-fluid">
 *                  </div>
@@ -6639,7 +6778,7 @@ a.text-dark:focus, a.text-dark:hover {
 *        </h5>
 *            </div>
 *            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
-*              <div class="card-block">              <div class="row">
+*              <div class="card-block">              <div class=" ">
 *                  <div class="col-sm-6">
 *                    <img src="https://dummyimage.com/200x200/563d7c/fff" alt="" class="img-thumbnail img-fluid">
 *                  </div>
@@ -6728,7 +6867,7 @@ a.text-dark:focus, a.text-dark:hover {
 *        <div class="progress">
 *          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
 *        </div>      <h3>Buttons</h3>
-*        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->      <div class="row">
+*        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->      <div class=" ">
 *          <div class="col-sm-6">
 *            <p><button type="button" class="btn btn-primary btn-sm">Primary</button></p>
 *            <p><button type="button" class="btn btn-primary">Primary</button></p>
@@ -6802,7 +6941,7 @@ a.text-dark:focus, a.text-dark:hover {
 *        <a href="#" data-toggle="tooltip" title="" data-original-title="Some tooltip text!">Tooltip on top</a>      <br><br>      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" data-html="true" title="" data-original-title="<img src=https://dummyimage.com/100x80/563d7c/fff alt= class=img-thumbnail img-fluid><h4>Tooltip</h4> <u>with</u> <b>HTML</b>">
 *    HTML Tooltip on right
 *  </button>    </div>
-*   <div class="row">
+*   <div class=" ">
 *       <h3>Breadcrumb</h3>
 *       <nav class="breadcrumb">
 *           <a class="breadcrumb-item" href="#">Home</a>
@@ -7076,7 +7215,7 @@ a.text-dark:focus, a.text-dark:hover {
 *       </nav>
 *       <h3>Forms</h3>
 *       <form lpformnum="1">
-*           <div class="row">
+*           <div class=" ">
 *               <div class="col">
 *                   <div class="form-group">
 *                       <label for="exampleInputEmail1">Email address</label>
@@ -7440,7 +7579,7 @@ a.text-dark:focus, a.text-dark:hover {
 *       </nav>
 *       <h3>Forms</h3>
 *       <form lpformnum="1">
-*           <div class="row">
+*           <div class=" ">
 *               <div class="col">
 *                   <div class="form-group">
 *                       <label for="exampleInputEmail1">Email address</label>
@@ -7545,12 +7684,9 @@ a.text-dark:focus, a.text-dark:hover {
   font-size: 120%;
   color: #a00; }
 
-.notice-box {
-  color: #9e1823; }
-
+ACC-Bristol_Foundation6
+ACC-Style
 body {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-weight: 400;
   background: #a4cded;
   /* Old browsers */
   background-attachment: fixed;
@@ -7567,10 +7703,14 @@ body {
   background-image: linear-gradient(to bottom, #fafafa 1%, #a4cded 100%);
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=' $off-white', endColorstr='$soft-blue', GradientType=0);
-  /* IE6-9 */
+  /* IE6-9 */ }
+
+html, body {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-weight: 400;
   color: #333;
-  font-size: 16px;
-  line-height: 1.4em; }
+  font-size: 1rem;
+  line-height: 1.4rem; }
 
 ul {
   margin: 0 0 1em 0;
@@ -7580,12 +7720,46 @@ ul {
 a:hover, a:active {
   outline: none; }
 
-#layout a:hover, #layout a:active {
+#layout a:hover, #layout a:active, .SG-layout a:hover, .SG-layout a:active {
   text-decoration: underline; }
 
-h1,
-h2,
-h3,
+/**
+* @atom Headers
+* @section Typography > Headers
+* @modifiers
+*  .display-[x] Produces large display sized text where x is a number 1 through 4
+* @markup
+*  <h1>@{lipsum:4:words}</h1>
+*  <h2>@{lipsum:4:words}<a href="">@{lipsum:1:words}</a></h2>
+*  <h3>@{lipsum:4:words}</h3>
+*  <h4>@{lipsum:4:words}</h4>
+*  <h5>@{lipsum:4:words}</h5>
+*/
+h1 a, h2 a, h3 a {
+  color: #0283ab;
+  text-decoration: none; }
+  h1 a:hover, h2 a:hover, h3 a:hover {
+    color: #004176;
+    text-decoration: underline; }
+
+h1 {
+  font-family: 'Muli', Verdana, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: #e87d1e; }
+
+h2 {
+  font-family: 'Muli', Verdana, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  color: #6f6b6f; }
+
+h3 {
+  font-family: 'Muli', Verdana, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #e87d1e; }
+
 #nav-parimary,
 #page-nav,
 #button-nav,
@@ -7642,65 +7816,6 @@ input {
 :-ms-input-placeholder {
   color: #08a; }
 
-.button, .btn,
-#button-login-register,
-input[type="submit"],
-input[type="button"],
-button,
-.cs-box h2,
-#cs-button,
-#view-results .comparison-rep {
-  padding: 6px 16px;
-  display: inline-block;
-  font-weight: 500;
-  font-size: 0.9375em;
-  color: #fff;
-  cursor: pointer;
-  text-decoration: none;
-  border: 0;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  background: #0283ab;
-  /* Old browsers */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1YWVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjgzYWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-linear-gradient(top, #05aee5 0%, #0283ab 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #05aee5), color-stop(100%, #0283ab));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #05aee5 0%, #0283ab 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #05aee5 0%, #0283ab 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #05aee5 0%, #0283ab 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, #05aee5 0%, #0283ab 100%);
-  /* W3C */ }
-  .button:focus, .button:active input#button-login-register:focus, .button:active, .btn:focus, .btn:active input#button-login-register:focus, .btn:active,
-  #button-login-register:focus,
-  #button-login-register:active input#button-login-register:focus,
-  #button-login-register:active,
-  input[type="submit"]:focus,
-  input[type="submit"]:active input#button-login-register:focus,
-  input[type="submit"]:active,
-  input[type="button"]:focus,
-  input[type="button"]:active input#button-login-register:focus,
-  input[type="button"]:active,
-  button:focus,
-  button:active input#button-login-register:focus,
-  button:active,
-  .cs-box h2:focus,
-  .cs-box h2:active input#button-login-register:focus,
-  .cs-box h2:active,
-  #cs-button:focus,
-  #cs-button:active input#button-login-register:focus,
-  #cs-button:active,
-  #view-results .comparison-rep:focus,
-  #view-results .comparison-rep:active input#button-login-register:focus,
-  #view-results .comparison-rep:active {
-    background: #05aee5; }
-
 address {
   font-style: normal; }
 
@@ -7736,6 +7851,9 @@ address {
     clear: both; }
 
 /* Nav */
+.notice-box {
+  color: #9e1823; }
+
 /**
 * User Status Container contains system feed back on what systems you may or may not be logged into. 
 *
@@ -9606,7 +9724,7 @@ main .forgot-pswd #fp-email {
 
 /* Customer Service Toggle */
 .cs-box h2:before {
-  background: url("../images/2013-icn-customer-service.png") no-repeat scroll center -4px transparent;
+  background: url("../images/2013-icn-customer-service.png") no-repeat scroll center -4px rgba(0, 0, 0, 0);
   content: " , ";
   display: block;
   height: 40px;

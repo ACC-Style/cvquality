@@ -1,0 +1,71 @@
+html, body {
+    @include font;
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+ul {
+    margin: 0 0 1em 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    &:hover,
+    &:active {
+        outline: none;
+    }
+}
+#layout, .SG-layout{
+	a {
+	    &:hover,
+	    &:active {
+	        text-decoration: underline;
+	    }
+	}
+
+}
+
+/**
+* @atom Headers
+* @section Typography > Headers
+* @modifiers
+*  .display-[x] Produces large display sized text where x is a number 1 through 4
+* @markup
+*  <h1>@{lipsum:4:words}</h1>
+*  <h2>@{lipsum:4:words} <a href="">@{lipsum:1:words}</a></h2>
+*  <h3>@{lipsum:4:words}</h3>
+*  <h4>@{lipsum:4:words}</h4>
+*  <h5>@{lipsum:4:words}</h5>
+*/
+%header-link{
+    a{
+        color:$scrubteal;
+        text-decoration: none;
+        &:hover{
+            color:$acc-blue;
+            text-decoration: underline
+        }
+    }
+}
+
+h1{
+    @extend %header-link;
+    @include font-display(700);
+    font-size:ms(4);
+    color:$dark-orange;
+}
+h2{
+    @extend %header-link;
+    @include font-display("bold");
+    font-size:ms(3);
+    color:$warm-grey-dark;
+}
+h3{
+    @extend %header-link;
+    @include font-display("regular");
+    font-size:ms(2);
+    color:$dark-orange;
+}
+

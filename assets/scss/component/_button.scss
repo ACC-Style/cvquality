@@ -1,0 +1,39 @@
+
+.button,button.button,input[type="submit"],input[type="button"],button{@extend .btn;}
+
+// .button,.btn,
+// #button-login-register,
+// input[type="submit"],
+// input[type="button"],
+// button,
+// .cs-box h2,
+// #cs-button,
+// #view-results .comparison-rep {
+//     padding: 6px 16px;
+//     display: inline-block;
+//     font-weight: 500;
+//     font-size: 0.9375em;
+//     cursor: pointer;
+//     text-decoration: none;
+//     border: 0;
+//     border-radius: 5px;
+//     -moz-border-radius: 5px;
+//     -webkit-border-radius: 5px;
+// }
+
+// .btn.primary,.button,
+// #button-login-register,
+// input[type="submit"],
+// input[type="button"],
+// button,
+// .cs-box h2,
+// #cs-button,
+// #view-results .comparison-rep {
+//     color: #fff;
+//     @include teal-gradient;
+//     &:focus,
+//     &:active input#button-login-register:focus,
+//     &:active,&:hover {
+//         background: $scrubteal-light;
+//     }
+// }

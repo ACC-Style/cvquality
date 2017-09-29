@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i");
-@import url("https://fonts.googleapis.com/css?family=Muli:200,300,400");
+@import url("https://fonts.googleapis.com/css?family=Muli:200,400,700");
 
 /**
  * Set the Lato font face with an optional font weight.
@@ -13,6 +13,10 @@
  *  @include lato(300);
  */
 @mixin font ( $weight : 400) {
+	@if ($weight == bold){$weight:700;}
+	@else if ($weight == regular){$weight:400;}
+	@else if ($weight == light){$weight:200;}
+	@else{$weight:$weight;}
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-weight: $weight;
 }
@@ -29,8 +33,12 @@
  *  @include monospace(300);
  */
 @mixin font-display ($weight : 200) {
-  font-family:  'Muli', Verdana, Helvetica, sans-serif;
-  font-weight: $weight;
+	@if ($weight == bold){$weight:700;}
+	@else if ($weight == regular){$weight:400;}
+	@else if ($weight == light){$weight:200;}
+	@else{$weight:$weight;}
+	font-family:  'Muli', Verdana, Helvetica, sans-serif;
+	font-weight: $weight;
 }
 
 
