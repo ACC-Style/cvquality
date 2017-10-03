@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,mBAAmB;EACf,UAAU,EAAE,CAAC;EACb,QAAQ,EAAE,MAAM",
-"sources": ["../../scss/component/-nav-sub.scss"],
-"names": [],
-"file": "-nav-sub.css"
-}
