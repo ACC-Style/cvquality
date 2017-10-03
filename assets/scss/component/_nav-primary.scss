@@ -2,7 +2,7 @@
 * Primary Nav at the top of the page.
 *
 * @molecule  Nav Primary
-* @section Nav > Desktop
+* @section Nav 
 * @modifiers
 *  .active for use on marking when on page
 *  .disabled used to show when it is un-navigatable
@@ -42,7 +42,7 @@
 */
 
 #nav-primary{
-
+    @extend %nav-basic;
     @include font(700);
     font-size: ms(2);
     background: $warm-grey;
@@ -111,4 +111,16 @@
         border: 1px dotted $soft-blue;
         }
 }
+
+
+// need to build some dynamics or mech to to replace the toggle open and close of movbile app.
+// 
+// .nav-active #nav-primary {
+//     max-height: 600px;
+//     width: 100%;
+// }
+// .nav-active #page-nav {
+//     max-height: 1000px;
+//     width: 100%;
+// }
 

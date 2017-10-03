@@ -1,7 +1,77 @@
+$white:  #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:  #000 !default;
+
+$grays: (
+  100: $gray-100,
+  200: $gray-200,
+  300: $gray-300,
+  400: $gray-400,
+  500: $gray-500,
+  600: $gray-600,
+  700: $gray-700,
+  800: $gray-800,
+  900: $gray-900
+) !default;
+
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     $error-color;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:   $scrubteal;
+$cyan:    #17a2b8 !default;
+
+$theme-colors: (
+  primary: $scrubteal,
+  secondary: $warm-grey-light,
+  success: $green,
+  info: $cyan,
+  warning: $yellow,
+  danger: $red,
+  light: $warm-grey-light,
+  dark:  $warm-grey-dark
+);
+
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
   md: 768px,
   lg: 1024px,
   xl: 1200px
-) 
+); 
+
+$grid-gutter-width: 20px;
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif: 'Lato', Verdana, Helvetica, sans-serif;
+$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:       $font-family-sans-serif !default;
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$line-height-base: $baseline-modifier;
+
+$h1-font-size: ms(4);
+$h2-font-size: ms(3);
+$h3-font-size: ms(2);
+$h4-font-size: ms(1);
+$h5-font-size: ms(1);
+$h6-font-size: ms(0);
+
+$headings-font-family: 'Muli', Verdana, Helvetica, sans-serif;

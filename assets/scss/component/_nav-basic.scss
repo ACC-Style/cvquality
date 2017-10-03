@@ -1,0 +1,11 @@
+// Unstyle ul, ol for nav use
+%nav-basic,.nav{
+&, ul{	list-style: none;
+	margin:0;
+	padding:0;}
+	li, ul li {
+		list-style-type: none;
+		margin:0;
+		padding:0;
+	}
+}

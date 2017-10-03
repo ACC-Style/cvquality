@@ -1,37 +1,17 @@
-html, body {
-    @include font;
-    color: #333;
-    font-size: 1rem;
-    line-height: 1.4rem;
-}
-
-ul {
-    margin: 0 0 1em 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-a {
-    &:hover,
-    &:active {
-        outline: none;
+    html,
+    body {
+        @include font;
+        color: #333;
+        font-size: 1rem;
+        line-height: 1.4rem;
     }
-}
-#layout, .SG-layout{
-	a {
-	    &:hover,
-	    &:active {
-	        text-decoration: underline;
-	    }
-	}
-
-}
 
 /**
 * @atom Headers
 * @section Typography > Headers
 * @modifiers
 *  .display-[x] Produces large display sized text where x is a number 1 through 4
+*  a.tag  Produces the header tag in the dark teal color of the site with an underline on hover. 
 * @markup
 *  <h1>@{lipsum:4:words}</h1>
 *  <h2>@{lipsum:4:words} <a href="">@{lipsum:1:words}</a></h2>
@@ -39,33 +19,109 @@ a {
 *  <h4>@{lipsum:4:words}</h4>
 *  <h5>@{lipsum:4:words}</h5>
 */
-%header-link{
-    a{
-        color:$scrubteal;
-        text-decoration: none;
-        &:hover{
-            color:$acc-blue;
-            text-decoration: underline
+
+    %header-link {
+        a {
+            color: $scrubteal;
+            text-decoration: none;
+            &:hover {
+                color: $scrubteal-dark;
+                text-decoration: underline
+            }
         }
     }
+
+    h1 {
+        @extend %header-link;
+        @include font-display(700);
+        color: $dark-orange;
+    }
+
+    h2 {
+        @extend %header-link;
+        @include font-display("bold");
+        color: $warm-grey-dark;
+    }
+
+    h3 {
+        @extend %header-link;
+        @include font-display("regular");
+        color: $dark-orange;
+    }
+
+
+
+
+    ul {
+        margin: 0 0 1em 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    a {
+        &:hover,
+        &:active {
+            outline: none;
+        }
+    }
+// style all typograpy content inside of the containing div to remove scope from the rest of the design. 
+
+        a {
+            color: $scrubteal;
+            &.more {
+                @include font(bold);
+                display: inline-block;
+                text-decoration: none;
+            }
+            &:hover,
+            &:active {
+                text-decoration: underline;
+            }
+        }
+        p {
+            margin: 0 0 1em 0;
+        }
+        ol,
+        ul {
+            margin-bottom: 1em;
+            ol,
+            ul {
+                margin-top: 0.25em;
+                margin-bottom: 0.5em;
+                margin-left: 1.25em;
+            }
+        }
+        ol li{
+            margin-left: 20px;
+            list-style-type: decimal;
+        }
+         ul li {
+            margin-left: 20px;
+            list-style-type: disc;
+        }
+         // Alternate Typography. 
+        address {
+            font-style: normal;
+        }
+        img,a img {
+            height: auto;
+            max-width: 100%;
+        }
+
+     .login-box ul li {
+        /* per http://jira.beaconfire.us/browse/ACCQII-457 */
+        min-height: 30px;
+        list-style-type: none;
+    }
+    .login-box li input {
+    float: left;
 }
 
-h1{
-    @extend %header-link;
-    @include font-display(700);
-    font-size:ms(4);
-    color:$dark-orange;
+hr {
+    margin-bottom: 1em;
+    border: solid 1px $warm-grey-light;
+    border-width: 1px 0 0;
 }
-h2{
-    @extend %header-link;
-    @include font-display("bold");
-    font-size:ms(3);
-    color:$warm-grey-dark;
+.border-dashed {
+    border: 3px $off-black dashed !important;
 }
-h3{
-    @extend %header-link;
-    @include font-display("regular");
-    font-size:ms(2);
-    color:$dark-orange;
-}
-

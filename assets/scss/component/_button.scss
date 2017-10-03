@@ -1,39 +1,71 @@
+/**
+ * buttons are highly flexable and can be decorated by the modifiers to change size and color
+ *
+ * @atom .btn\.button\button
+ * @section Bootstrap
+ * @markup
+ *  <button class="btn">.btn are defaultly grey</button>
+ *  <button class="button">.button are defaultly blue</button>
+ */
+.btn { /* leave empty */ }
 
-.button,button.button,input[type="submit"],input[type="button"],button{@extend .btn;}
+input[type="submit"], input[type="button"], button,.button{
+	@extend .btn;
+}
+.btn-secondary{
+	@include warmgrey-gradient;
+	&:visited{color:$off-black;}
 
-// .button,.btn,
-// #button-login-register,
-// input[type="submit"],
-// input[type="button"],
-// button,
-// .cs-box h2,
-// #cs-button,
-// #view-results .comparison-rep {
-//     padding: 6px 16px;
-//     display: inline-block;
-//     font-weight: 500;
-//     font-size: 0.9375em;
-//     cursor: pointer;
-//     text-decoration: none;
-//     border: 0;
-//     border-radius: 5px;
-//     -moz-border-radius: 5px;
-//     -webkit-border-radius: 5px;
-// }
+	&:hover{@include warmgrey-gradient-reverse;}
+}
 
-// .btn.primary,.button,
-// #button-login-register,
-// input[type="submit"],
-// input[type="button"],
-// button,
-// .cs-box h2,
-// #cs-button,
-// #view-results .comparison-rep {
-//     color: #fff;
-//     @include teal-gradient;
-//     &:focus,
-//     &:active input#button-login-register:focus,
-//     &:active,&:hover {
-//         background: $scrubteal-light;
-//     }
-// }
+.btn-primary {
+	@include teal-gradient;
+	&:visited{color:$off-white;}
+	&:hover{@include teal-gradient-reverse;}
+}
+
+
+
+
+
+
+
+
+
+
+/*
+* Links will auto decorate with an icon of the corresponding file type
+*
+* @atom File Links
+* @markup
+*  <a class="link" href="abc.pdf">A link that is a Pdf Document</a><br/>
+*  <a class="link" href="abc.doc">A link that is a Word Document</a><br/>
+*  <a class="link" href="https://www.abc.ppt">An External link that is a Power Point Document</a><br/>
+* @modifiers
+*  .pdf Portable Document Format
+*  .doc Word Documents
+*  .txt Text Documents
+*  .ppt Power Points
+*  _blacnk External Link icons will appear after any link that has target blank, or the href begins with http, or https
+ */
+
+a.link{
+	@extend .icon-before;
+	&[href$=".pdf"]:before{
+		content: "\f1c1";	
+	}
+	&[href$=".doc"]:before,&[href$=".docx"]:before,&[href$=".txt"]:before{
+		    content: "\f016";	
+	}
+	&[href$=".ppt"]:before,&[href$=".pptx"]:before{
+		 content: "\f080";
+	}
+	&[href$=".csv"]:before,&[href$=".xls"]:before,&[href$=".xlsx"]:before{
+		content: "\f0ce";	
+	}
+	&[target=_blank]:after,&[href^="http"]:after,&[href^="https"]:after{
+		@extend .icon-after;
+		content:"\f14c";
+	}
+}

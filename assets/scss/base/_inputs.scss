@@ -1,0 +1,73 @@
+
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+label {
+    font-weight: bold;
+    font-size: 0.875em;
+}
+
+
+
+
+select,
+textarea {
+    border: solid 1px #aaa;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+input {
+    &:required,
+    &:invalid {
+        box-shadow: none;
+    }
+    padding: 7px;
+    font-size: 0.875em;
+    &[type="text"],
+    &[type="password"] {
+        border: solid 1px #aaa;
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+    }
+    &[type="checkbox"],
+    &[type="radio"] {
+        border: 0;
+    }
+}
+
+::-webkit-input-placeholder,
+ :-moz-placeholder,
+ ::-moz-placeholder,
+ :-ms-input-placeholder {
+    color: #08a;
+}
+
+
+
+.input.RadAutoCompleteBox {
+    .racTokenList {
+        background-image: url(../images/icon-search.png);
+        background-position: right;
+        background-repeat: no-repeat;
+        padding: 7px 30px 7px 7px;
+        font-size: 0.875em;
+    }
+    .racToken {
+        white-space: normal;
+    }
+    .racRemoveTokenLink {
+        text-decoration: none;
+        &:before {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}

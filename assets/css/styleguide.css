@@ -4,4 +4,7 @@ body {
 .SG-row {
   position: relative; }
 
+.SG-table .SG-table__cell {
+  margin: 0; }
+
 /*# sourceMappingURL=styleguide.css.map */

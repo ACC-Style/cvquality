@@ -1,5 +1,52 @@
-
-
+/**
+ * Footer of CV Qaulity combines, footer-nav, socail-nav, and logos to make a renforcing page structure.
+ * @structure Footer Nav
+ *
+ * @markup
+ *  <footer id="site-footer" role="contentinfo">
+ *      <div class="wrapper">
+ *          <ul id="footer-nav">
+ *              <li>
+ *                  <h2>Quality Improvement for Institutions:</h2>
+ *                  <ul>
+ *                      <li><a id="msFooter_rptQii_hypLnk_0" href="/home" target="_top">Home</a></li>
+ *                      <li><a id="msFooter_rptQii_hypLnk_1" href="/About-QII" target="_top">About</a></li>
+ *                      <li><a id="msFooter_rptQii_hypLnk_2" href="/Get-Started" target="_top">Get Started</a></li>
+ *                      <li><a id="msFooter_rptQii_hypLnk_3" href="/News" target="_top">News</a></li>
+ *                  </ul>
+ *                  <ul>
+ *                      <li><a href="http://www.acc.org/footer-pages/terms-and-conditions">Terms &amp; Conditions</a></li>
+ *                      <li><a href="http://www.acc.org/footer-pages/privacy-policy">Privacy Policy</a></li>
+ *                      <li><a href="http://www.acc.org/footer-pages/registered-user-agreement">Registered User Agreement</a></li>
+ *                  </ul>
+ *              </li>
+ *              <li>
+ *                  <h2>Offerings:</h2>
+ *                  <ul>
+ *                      <li><a id="msFooter_rptOfferings_hypLnk_0" href="/NCDR-Home" target="_top">NCDR</a></li>
+ *                      <li>
+ *                          <a id="msFooter_rptOfferings_hypLnk_1" href="/Initiatives" target="_top">Initiatives</a>
+ *                      </li>
+ *                      <li><a id="msFooter_rptOfferings_hypLnk_2" href="/qi-communications-kit" target="_top">QI  Participation Kit</a></li>
+ *                      <li><a id="msFooter_rptOfferings_hypLnk_3" href="/Clinical-Toolkits" target="_top">Clinical Toolkits</a></li>
+ *                  </ul>
+ *              </li>
+ *              <li>
+ *                  <h2>ACC Sites:</h2>
+ *                  <ul>
+ *                      <li><a id="msFooter_rptAccSites_hypLnk_1" href="http://www.acc.org" target="_blank">ACC</a></li>
+ *                      <li><a id="msFooter_rptAccSites_hypLnk_2" href="http://www.acc.org/footer-pages/media-center" target="_blank">ACC Media</a></li>
+ *                      <li><a id="msFooter_rptAccSites_hypLnk_3" href="https://www.cardiosmart.org/" target="_blank">CardioSmart</a></li>
+ *                  </ul>
+ *              </li>
+ *          </ul>
+ *          @{include:.social-buttons}
+ *          @{include: .vcard}
+ *         
+ *      </div>
+ *      <!-- wrapper -->
+ *  </footer>
+ */
 #site-footer {
 	clear: both;
 	.wrapper {
@@ -75,91 +122,9 @@
 
 }
 
-/**
-* Social engagement buttons.
-* 
-*	
-* @molecule Social Buttons
-* @section Footer > Social Buttons
-* @markup 
- <section id="social" class="social-buttons">
-  <h1>Stay Connected</h1>
-	<ul>
-	<li class="twitter"><a id="msFooter_lnkTwitter" href="https://twitter.com/accintouch" target="_blank"><i class="fa fa-twitter"></i></a></li>
-	<li class="facebook"><a id="msFooter_lnkFacebook" href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank"><i class="fa fa-facebook"></i></a></li>
-	<li class="linkedin"><a id="msFooter_lnkLinkedIn" href="http://www.linkedin.com/groups/American-College-Cardiology-732607?trk=myg_ugrp_ovr" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-	<li class="youtube"><a id="msFooter_lnkYoutube" href="http://www.youtube.com/user/ACCinTouch" target="_blank"><i class="fa fa-youtube"></i></a></li>
-	</ul>
-  </section>
-* 
-**/
-.social-buttons {
-	margin-top: 1em;
-	padding: 2.5em 3% 1em;
-	clear: left;
-	h1 {
-		margin-bottom: 0.75em;
-		padding: 0;
-		font-size: 0.875em;
-		/* 14px */
-		text-transform: uppercase;
-		color:  $off-white;
-	}
-	i{
-		color: $off-white;
-	    font-size: 20px;
-	    margin: 10px;
-	    text-align: center;
-	}
-	li {
-		margin: 0 8px 0 0;
-		padding-left: 0;
-		float: left;
-		list-style-type: none;
-		a {
-			height: 40px;
-			width: 40px;
-			display: block;
-			text-align: center;
-		}
-		&.twitter a {
-			background-color: #78cdf0;
-		}
-		&.facebook a {
-			background-color: #537bbd;
-		}
-		&.youtube a {
-			background-color: #e9654b;
-		}
-		&.linkedin a {
-			background-color: #2085c7;
-		}
-	}
-}
 
 
-#site-footer address {
-	margin-top: 1em;
-	padding: 12px 3% 0;
-	clear: both;
-	h2 {
-		font-weight: normal;
-		font-size: 1em;
-		font-family: 'Lato', sans-serif;
-	}
-	img {
-		display: none;
-	}
-	a {
-		color: #000;
-		text-decoration: none;
-	}
-}
 
-address abbr[title] {
-	text-decoration: none;
-	border: 0;
-}
 
 @include bp(md) {
  /* Footer */

@@ -1,0 +1,9 @@
+#page-nav,.nav-sub {
+    @extend %nav-basic;
+    max-height: 0;
+    overflow: hidden;
+    /*Taken out in ACCQIISP-9*/
+    /*transition:max-height 1s ease-out;
+  -webkit-transition:max-height 1s ease-out;
+  -moz-transition:max-height 1s ease-out;*/
+}

@@ -3,7 +3,7 @@
 *
 *
 * @molecule User Status Container
-* @section Header > Login
+* @section Nav 
 * @markup
 *   <div class="user-status-container">
 *       <div class="user">
@@ -52,6 +52,7 @@
 }
 
 .nav-user-status{
+    @extend %nav-basic;
     text-align: right;
     @extend .justify-content-end;
     .user + &{margin-top:-.5rem;}

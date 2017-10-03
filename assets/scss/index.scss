@@ -1,26 +1,16 @@
-$ms-base: 16px;
-$ms-ratio: 1.125;
-$baseline-modifier:1.5;
-@import "https://use.fontawesome.com/972bb54a90.css";
-@import "vendor/modular-scale";
-@import "helpers/mixens";
-@import "helpers/flex";
-@import "helpers/breakpoints";
-@import "base/colors";
-@import "base/modular-scale-typography";
-@import "base/fonts";
-@import "helpers/fixes";
+@import "setup";
 
+@import "https://use.fontawesome.com/972bb54a90.css";
+
+@import "helpers/flex";
+@import "base/modular-scale-typography";
+@import "helpers/fixes";
+@import "base/fonts.kitchensink";
 @import "vendor/bootstrap.override/custom";
 @import "vendor/bootstrap/bootstrap";
 @import "vendor/bootstrap.override/dropdown.override";
 @import "vendor/bootstrap/kitchensink";
 @import "helpers/states";
-//@import "base/icons";
-
-
-ACC-Bristol_Foundation6
-ACC-Style
 
 
 body {
@@ -30,112 +20,18 @@ body {
 
 
 @import "base/typography";
-
-
-#nav-parimary,
-#page-nav,
-#button-nav,
-.breadcrumbs {
-    @include font-display;
-}
-
-.border-dashed {
-    border: 3px #000 dashed !important;
-}
-
-p {
-    margin: 0 0 1em 0;
-    /*ACCQII-298*/
-}
-
-a {
-    color: #08a;
-    &.more {
-        display: inline-block;
-        font-weight: 600;
-        text-decoration: none;
-    }
-}
+@import "base/inputs";
 
 
 
 
-fieldset {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
-label {
-    font-weight: bold;
-    font-size: 0.875em;
-}
 
 
 
 
-select,
-textarea {
-    border: solid 1px #aaa;
-    border-radius: 3px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-}
-
-input {
-    &:required,
-    &:invalid {
-        box-shadow: none;
-    }
-    padding: 7px;
-    font-size: 0.875em;
-    &[type="text"],
-    &[type="password"] {
-        border: solid 1px #aaa;
-        border-radius: 3px;
-        -moz-border-radius: 3px;
-        -webkit-border-radius: 3px;
-    }
-    &[type="checkbox"],
-    &[type="radio"] {
-        border: 0;
-    }
-}
-
-::-webkit-input-placeholder,
- :-moz-placeholder,
- ::-moz-placeholder,
- :-ms-input-placeholder {
-    color: #08a;
-}
 
 
 
-
-address {
-    font-style: normal;
-}
-
-.input.RadAutoCompleteBox {
-    .racTokenList {
-        background-image: url(../images/icon-search.png);
-        background-position: right;
-        background-repeat: no-repeat;
-        padding: 7px 30px 7px 7px;
-        font-size: 0.875em;
-    }
-    .racToken {
-        white-space: normal;
-    }
-    .racRemoveTokenLink {
-        text-decoration: none;
-        &:before {
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-    }
-}
 
 .wrapper {
     margin: 0 auto;
@@ -163,65 +59,32 @@ address {
 
 
 
-/* Nav */
+
 @import "component/box";
 @import "component/button";
 @import "component/user-status-container";
 @import "component/nav-basic";
 @import "component/nav-primary";
 @import "component/nav-utility";
+@import "component/nav-sub";
 @import "component/mobile-menu-toggle";
 
 @import "structure/mobile-menu-toggle-container";
 @import "structure/header";
 
-#page-nav {
-    max-height: 0;
-    overflow: hidden;
-    /*Taken out in ACCQIISP-9*/
-    /*transition:max-height 1s ease-out;
-  -webkit-transition:max-height 1s ease-out;
-  -moz-transition:max-height 1s ease-out;*/
-}
-
-.nav-active #nav-primary {
-    max-height: 600px;
-    width: 100%;
-}
-.nav-active #page-nav {
-    max-height: 1000px;
-    width: 100%;
-}
-.breadcrumbs {
-    display: none;
-}
 
 
 
 
 
-.nav-utility {
-    /*display:none;*/
-    /* hidden in mobile per ML */
-}
 
-#nav-primary {
-    .nav-utility a {
-        color: #555;
-        background: #ccc;
-    }
-    .utility-list-moved a {
-        background: #c7c7c7;
-        color: #646464;
-    }
-}
 
-.layout-initiative .utility-list-moved li {
-    display: none;
-    &:first-child {
-        display: block;
-    }
-}
+// .layout-initiative .utility-list-moved li {
+//     display: none;
+//     &:first-child {
+//         display: block;
+//     }
+// }
 
 
 
@@ -271,152 +134,59 @@ address {
 /* Content */
 
 
+// Rmove extra padding rules
+// #colone,
+// main {
+//     h1 {
+//         padding: 0.75em 3% 0.25em;
+//         font-weight: 600;
+//         line-height: 1em;
+//         color: #e87d1e;
+//     }
+//     section h1,
+//     #introduction h1,
+//     #introduction2 h1 {
+//         padding-left: 0;
+//     }
+//     h2 {
+//         font-weight: 600;
+//         font-size: 1.375em;
+//         line-height: 1.25em;
+//         color: #666;
+//     }
+//     h3 {
+//         font-weight: normal;
+//         font-size: 1.375em;
+//         color: #e87d1e;
+//         margin: 1em 0 0.5em 0;
+//         /*ACCQII-298*/
+//     }
+//     h1 a,
+//     h2 a,
+//     h3 a {
+//         text-decoration: none;
+//     }
+// }
 
-#colone,
-main {
-    h1 {
-        padding: 0.75em 3% 0.25em;
-        font-weight: 600;
-        line-height: 1em;
-        color: #e87d1e;
-    }
-    section h1,
-    #introduction h1,
-    #introduction2 h1 {
-        padding-left: 0;
-    }
-    h2 {
-        font-weight: 600;
-        font-size: 1.375em;
-        line-height: 1.25em;
-        color: #666;
-    }
-    h3 {
-        font-weight: normal;
-        font-size: 1.375em;
-        color: #e87d1e;
-        margin: 1em 0 0.5em 0;
-        /*ACCQII-298*/
-    }
-    h1 a,
-    h2 a,
-    h3 a {
-        text-decoration: none;
-    }
-}
+// #main-content {
+//     h2,
+//     h3 {
+//         margin: 1em 0 0.5em 0;
+//         /*ACCQII-289*/
+//     }
+//     padding: 0 3%;
+//     width: 94%;
+// }
 
-#main-content {
-    h2,
-    h3 {
-        margin: 1em 0 0.5em 0;
-        /*ACCQII-289*/
-    }
-    padding: 0 3%;
-    width: 94%;
-}
 
-.pionly,
-#layout.layout-listing #colone {
-    padding: 0 3%;
-    width: 94%;
-}
 
-#main-content {
-    #main-content {
-        padding: 0;
-        width: auto;
-    }
-    p,
-    ol,
-    ul {
-        margin-bottom: 1em;
-    }
-}
 
-#colone {
-    ol,
-    ul {
-        margin-bottom: 1em;
-    }
-}
+@import "component/video-player";
 
-#main-content {
-    ol ol,
-    ul ul {
-        margin-top: 0.25em;
-        margin-bottom: 0.5em;
-        margin-left: 1.25em;
-    }
-}
 
-#colone {
-    ol ol,
-    ul ul {
-        margin-top: 0.25em;
-        margin-bottom: 0.5em;
-        margin-left: 1.25em;
-    }
-}
 
-#main-content ol li,
-#colone ol li {
-    margin-left: 20px;
-    list-style-type: decimal;
-}
 
-#main-content ul li {
-    margin-left: 20px;
-    list-style-type: disc;
-}
 
-#colone {
-    ul li {
-        margin-left: 20px;
-        list-style-type: disc;
-    }
-    .login-box ul li {
-        /* per http://jira.beaconfire.us/browse/ACCQII-457 */
-        min-height: 30px;
-        list-style-type: none;
-    }
-}
-
-.login-box li input {
-    float: left;
-}
-
-#main-content img,
-#colone a img {
-    height: auto;
-    max-width: 100%;
-}
-
-#main-content {
-    table {
-        font-size: 0.875em;
-    }
-    .video-wrapper {
-        margin-bottom: 1em;
-        position: relative;
-        padding-bottom: 56.25%;
-        /* 16:9 */
-        padding-top: 25px;
-        height: 0;
-        iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100% !important;
-            height: 100% !important;
-        }
-    }
-}
-
-hr {
-    margin-bottom: 1em;
-    border: solid 1px #e6e5e6;
-    border-width: 1px 0 0;
-}
 
 #layout.layout-listing #colone h1 {
     margin-bottom: 0.5em;
@@ -632,6 +402,8 @@ ul.generic-list {
 }
 
 /* Footer */
+@import "component/address";
+@import "component/nav-social-buttons";
 @import "structure/footer";
 
 /* Main */
