@@ -1,17 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Muli:200,400,700");
 
-/**
- * Set the Lato font face with an optional font weight.
- *
- * @mixin
- * @section Fonts
- * @param $weight
- *  The font weight to be used.
- * @example
- *  @include lato();
- *  @include lato(300);
- */
+
 @mixin font ( $weight : 400) {
 	@if ($weight == bold){$weight:700;}
 	@else if ($weight == regular){$weight:400;}
@@ -22,7 +12,7 @@
 }
 
 /**
- * Set the Muli font face with an optional font weight.
+ * used in css to set the font and weight.
  *
  * @mixin
  * @section Fonts

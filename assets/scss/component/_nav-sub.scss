@@ -7,3 +7,103 @@
   -webkit-transition:max-height 1s ease-out;
   -moz-transition:max-height 1s ease-out;*/
 }
+/* Internal Nav */
+
+#page-nav {
+    h2 {
+        padding: 16px 1em 16px 1em;
+        border-bottom: solid 1px #e87d1e;
+        img {
+            max-width: 100%;
+        }
+    }
+    ul {
+        padding: 0.5em 0 0.5em;
+        background: #f8f8f6;
+        ul {
+            margin-top: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            max-height: 0;
+            overflow: hidden;
+            background: #e7e7e3;
+            transition: 0.7s ease-in;
+            -moz-transition: 0.7s ease-in;
+            -webkit-transition: 0.7s ease-in;
+            ul {
+                margin-left: -3.5em;
+                padding: 0 0 0 4em;
+                background: #dbdbda;
+            }
+        }
+    }
+    li {
+        position: relative;
+        font-weight: 600;
+        list-style-type: none;
+        a {
+            margin-left: 1.5em;
+            padding: 3px 10px 3px 0;
+            display: block;
+            line-height: 1.3em;
+            color: #888;
+            text-decoration: none;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        &.current>a,
+        &.active>a {
+            color: #e87d1e;
+        }
+        &.parent:before {
+            content: "";
+            border-color: transparent #888;
+            border-style: solid;
+            border-width: 3px 0 3px 5px;
+            display: block;
+            height: 0;
+            width: 0;
+            left: 12px;
+            top: 0.6em;
+            position: absolute;
+            cursor: pointer;
+            transition: 0.5s ease-out;
+            -moz-transition: 0.5s ease-out;
+            -webkit-transition: 0.5s ease-out;
+        }
+        li li:before {
+            display: none;
+        }
+        &.current:before {
+            cursor: pointer;
+            border-color: transparent #e87d1e;
+            /*  transform:rotate(90deg);
+        -moz-transform:rotate(90deg);*/
+        }
+        li {
+            font-size: 0.875em;
+        }
+        &.parent li.parent:before {
+            left: 28px;
+        }
+        li {
+            a {
+                margin-left: 3em;
+            }
+            li {
+                font-size: 1em;
+            }
+        }
+        &.pagenav-active {
+            >ul {
+                max-height: 400px;
+            }
+            &:before {
+                transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+            }
+        }
+    }
+}

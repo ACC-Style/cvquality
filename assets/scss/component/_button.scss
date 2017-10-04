@@ -2,12 +2,112 @@
  * buttons are highly flexable and can be decorated by the modifiers to change size and color
  *
  * @atom .btn\.button\button
- * @section Bootstrap
+ * @section Buttons & Links
  * @markup
- *  <button class="btn">.btn are defaultly grey</button>
- *  <button class="button">.button are defaultly blue</button>
+ *  <div class="row">
+ *    <div class="col-sm-4"><a class="btn">"A" tag decorated with .btn</a></div>
+ *    <div class="col-sm-4"><a class="button">"A" tag decorated with .button</a></div>
+ *    <div class="col-sm-4"><button> "BUTTON" tag</button></div>
+ *  </div>
+ *      <h3>Buttons</h3>
+ *      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+ *      <div class="row">
+ *          <div class="col-sm-6">
+ *              <p>
+ *                  <button type="button" class="btn btn-primary btn-sm">Primary</button>
+ *              </p>
+ *              <p>
+ *                  <button type="button" class="btn btn-primary">Primary</button>
+ *              </p>
+ *              <p>
+ *                  <button type="button" class="btn btn-primary btn-lg">Primary</button>
+ *              </p>
+ *              <p>
+ *                  <button type="button" class="btn btn-secondary btn-sm">Secondary</button>
+ *              </p>
+ *              <p>
+ *                  <button type="button" class="btn btn-secondary">Secondary</button>
+ *              </p>
+ *              <p>
+ *                  <button type="button" class="btn btn-secondary btn-lg">Secondary</button>
+ *              </p>
+ *              <p>
+ *                  <button type="button" class="btn btn-link">Link</button>
+ *              </p>
+ *          </div>
+ *          <!-- .col -->
+ *          <div class="col-sm-6">
+ *              <p>
+ *                  <button type="button" class="btn btn-outline-primary btn-sm">Primary Outline</button>
+ *              </p>
+ *              <p>
+ *                  <button type="button" class="btn btn-outline-primary">Primary Outline</button>
+ *              </p>
+ *              <p>
+ *                  <button type="button" class="btn btn-outline-primary btn-lg">Primary Outline</button>
+ *              </p>
+ *              <p>
+ *                  <button type="button" class="btn btn-outline-secondary btn-sm">Secondary Outline</button>
+ *              </p>
+ *              <p>
+ *                  <button type="button" class="btn btn-outline-secondary">Secondary Outline</button>
+ *              </p>
+ *              <p>
+ *                  <button type="button" class="btn btn-outline-secondary btn-lg">Secondary Outline</button>
+ *              </p>
+ *          </div>
+ *          <!-- .col -->
+ *      </div>
+ *      <!-- .row -->
+ *      <h3>Button Group</h3>
+ *      <p></p>
+ *      <div class="btn-group btn-group-sm" role="group" aria-label="Button group with nested dropdown">
+ *          <button type="button" class="btn btn-secondary">1</button>
+ *          <button type="button" class="btn btn-secondary">2</button>
+ *          <div class="btn-group" role="group">
+ *              <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown </button>
+ *              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1"><a class="dropdown-item" href="#">Dropdown link</a><a class="dropdown-item" href="#">Dropdown link</a></div>
+ *          </div>
+ *      </div>
+ *      <p></p>
+ *      <p></p>
+ *      <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+ *          <button type="button" class="btn btn-secondary">1</button>
+ *          <button type="button" class="btn btn-secondary">2</button>
+ *          <div class="btn-group" role="group">
+ *              <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown </button>
+ *              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1"><a class="dropdown-item" href="#">Dropdown link</a><a class="dropdown-item" href="#">Dropdown link</a></div>
+ *          </div>
+ *      </div>
  */
-.btn { /* leave empty */ }
+.btn { 
+	@include warmgrey-gradient;
+	&:visited{color:$off-black;}
+	&:hover{@include warmgrey-gradient-reverse;}
+}
+.btn.btn-link{
+	background:none transparent;
+	border:none transparent 0px;
+}
+.btn.btn-outline-primary,.btn.btn-outline-secondary{
+	background:none transparent;
+}
+.btn.btn-outline-primary{
+	border-color:$scrubteal;
+	color:$scrubteal;
+	&:visited,&:hover{
+		border-color:$scrubteal-dark;
+		color:$scrubteal-dark;
+	}
+}
+.btn.btn-outline-secondary{
+	border-color:$warm-grey-dark;
+	color:$warm-grey-dark;
+	&:visited,&:hover{
+		border-color:$off-black;
+		color:$off-black;
+	}
+}
 
 input[type="submit"], input[type="button"], button,.button{
 	@extend .btn;
@@ -38,6 +138,7 @@ input[type="submit"], input[type="button"], button,.button{
 * Links will auto decorate with an icon of the corresponding file type
 *
 * @atom File Links
+* @section Buttons & Links
 * @markup
 *  <a class="link" href="abc.pdf">A link that is a Pdf Document</a><br/>
 *  <a class="link" href="abc.doc">A link that is a Word Document</a><br/>

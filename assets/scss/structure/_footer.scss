@@ -3,165 +3,46 @@
  * @structure Footer Nav
  *
  * @markup
- *  <footer id="site-footer" role="contentinfo">
- *      <div class="wrapper">
- *          <ul id="footer-nav">
- *              <li>
- *                  <h2>Quality Improvement for Institutions:</h2>
- *                  <ul>
- *                      <li><a id="msFooter_rptQii_hypLnk_0" href="/home" target="_top">Home</a></li>
- *                      <li><a id="msFooter_rptQii_hypLnk_1" href="/About-QII" target="_top">About</a></li>
- *                      <li><a id="msFooter_rptQii_hypLnk_2" href="/Get-Started" target="_top">Get Started</a></li>
- *                      <li><a id="msFooter_rptQii_hypLnk_3" href="/News" target="_top">News</a></li>
- *                  </ul>
- *                  <ul>
- *                      <li><a href="http://www.acc.org/footer-pages/terms-and-conditions">Terms &amp; Conditions</a></li>
- *                      <li><a href="http://www.acc.org/footer-pages/privacy-policy">Privacy Policy</a></li>
- *                      <li><a href="http://www.acc.org/footer-pages/registered-user-agreement">Registered User Agreement</a></li>
- *                  </ul>
- *              </li>
- *              <li>
- *                  <h2>Offerings:</h2>
- *                  <ul>
- *                      <li><a id="msFooter_rptOfferings_hypLnk_0" href="/NCDR-Home" target="_top">NCDR</a></li>
- *                      <li>
- *                          <a id="msFooter_rptOfferings_hypLnk_1" href="/Initiatives" target="_top">Initiatives</a>
- *                      </li>
- *                      <li><a id="msFooter_rptOfferings_hypLnk_2" href="/qi-communications-kit" target="_top">QI  Participation Kit</a></li>
- *                      <li><a id="msFooter_rptOfferings_hypLnk_3" href="/Clinical-Toolkits" target="_top">Clinical Toolkits</a></li>
- *                  </ul>
- *              </li>
- *              <li>
- *                  <h2>ACC Sites:</h2>
- *                  <ul>
- *                      <li><a id="msFooter_rptAccSites_hypLnk_1" href="http://www.acc.org" target="_blank">ACC</a></li>
- *                      <li><a id="msFooter_rptAccSites_hypLnk_2" href="http://www.acc.org/footer-pages/media-center" target="_blank">ACC Media</a></li>
- *                      <li><a id="msFooter_rptAccSites_hypLnk_3" href="https://www.cardiosmart.org/" target="_blank">CardioSmart</a></li>
- *                  </ul>
- *              </li>
- *          </ul>
- *          @{include:.social-buttons}
- *          @{include: .vcard}
- *         
- *      </div>
- *      <!-- wrapper -->
+ *  <footer id="footer" role="contentinfo">
+ *     <div class="wrapper container-fluid">
+ *         <div class="row">
+ *             <div class="col-md-3">
+ *                 @{include:address.vcard}
+ *             </div>
+ *             <div class="col-md-5">
+ *             <div class="row">
+ *             @{include:#footer-sitemap}
+ *             </div>
+ *             </div>
+ *             <div class="col-md-4">
+ *                 @{include:.social-buttons}
+ *             </div>
+ *         </div>
+ *     </div>
+ *     <!-- wrapper -->
  *  </footer>
+ *
  */
-#site-footer {
+#footer {
 	clear: both;
+	padding: 10px 0 30px;
+	position: relative;
+	overflow: visible;
+	color: $off-black;
+	background: $warm-grey;
 	.wrapper {
-		padding: 10px 0 40px;
-		position: relative;
-		overflow: auto;
-		color: #000;
-		background: $warm-grey;
+		background:transparent;		
+	}
+	@include bp(md) {
+		padding-top: 12px;
+		padding-bottom: 30px;
 	}
 }
 
-#footer-nav {
-	padding: 0 3%;
-	@include bp(md){
-        margin-right: 3%;
-        margin-left: 245px;
-        float: left;
-        border-left: solid 1px #ddd;       
-	}
-	@include bp(lg){
-        margin-left: 172px;
-        margin-right: 227px;
-        border-right: solid 1px #ddd;
-	}
-	li {
-		margin-right: 20px;
-		max-width: 254px;
-		float: left;
-		list-style-type: none;
-		@include bp(lg){
-			li {
-            margin-right: 3%;
-            width: 47%;
-            max-width: auto;
-            float: left;
-            li {
-                float: none;
-                width: auto;
-            }
-        }
-        }
-
-		&:last-child {
-			margin-right: 0;
-		}
-	}
-	h2 {
-		/* allows for vertical align bottomw without extra DOM*/ 
-		display: table-cell;
-		height: 3em;
-		vertical-align: bottom;
-		font-size: 0.875em;
-		/* 14px; */
-		line-height: 1.4em;
-	}
-	a {
-		font-size: 0.875em;
-		/* 14px */
-		color: #fff;
-		text-decoration: none;
-		text-transform: uppercase;
-	}
-	li li {
-		margin: 0;
-		float: none;
-		li a {
-			padding-left: 16px;
-			color: #000;
-			text-transform: none;
-		}
-	}
-	
-
-}
 
 
 
 
 
-@include bp(md) {
- /* Footer */
-    #site-footer .wrapper {
-        padding-bottom: 10px;
-        border-top: solid 12px #a1a0a4;
-        border-bottom: solid 20px #a1a0a4;
-    }
-   
-    #site-footer {
-        address {
-            width: 200px;
-            margin-top: 0;
-            padding: 0;
-            position: absolute;
-            top: 100px;
-            left: 3%;
-            h2 {
-                display: none;
-            }
-            img {
-                margin: 0 10px 1em 0;
-                float: left;
-                display: block;
-            }
-        }
-        h1 {
-            padding: 0;
-        }
-    }
-    
-}
 
-@include bp(lg){
-	 ul#footer-nav {
-        margin-left: 172px;
-        margin-right: 227px;
-        border-right: solid 1px #ddd;
-    }
-}
+

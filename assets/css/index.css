@@ -86,18 +86,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Muli:200,400,700");
 /**
- * Set the Lato font face with an optional font weight.
- *
- * @mixin
- * @section Fonts
- * @param $weight
- *  The font weight to be used.
- * @example
- *  @include lato();
- *  @include lato(300);
- */
-/**
- * Set the Muli font face with an optional font weight.
+ * used in css to set the font and weight.
  *
  * @mixin
  * @section Fonts
@@ -133,36 +122,43 @@
 
 /**
  * @icon lock
+ * @section Fonts & Branding
  * @markup
  *  <i class="fa fa-lock"></i>
  */
 /**
  * @icon search
+ * @section Fonts & Branding
  * @markup
  *  <i class="fa fa-search"></i>
  */
 /**
  * @icon pdf
+ * @section Fonts & Branding
  * @markup
  *  <i class="fa fa-file-pdf-o"></i>
  */
 /**
 * @icon external link
+* @section Fonts & Branding
 * @markup
 *  <i class="fa fa-external-link-square"></i>
 */
 /**
  * @icon file
+ * @section Fonts & Branding
  * @markup
  *  <i class="fa fa-file"></i>
  */
 /**
  * @icon chevron
+ * @section Fonts & Branding
  * @markup
  *  <i class="fa fa-chevron-right"></i>
  */
 /**
  * @icon Navigate
+ * @section Fonts & Branding
  * @markup
  *  <i class="fa fa-arrow-circle-right"></i>
  */
@@ -240,19 +236,19 @@ span {
 /**
 
  * @atom Lato, Verdana, Helvetica, sans-serif
- * @section Fonts
+ * @section Fonts & Branding
  * @markup 
- 	<div class="container"><div class="alphabet-display row font-normal">
-	<div class="ms12 col-md-4 col-sm-6 col-lg-3 font--dropcase_2x">La</div>
-	<div class="col-md-8 col-sm-6 col-lg-9 font--example">
- 	<h3>Primary Navigation & Body Copy</h3>
-	<div class="font--lowercase ms4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-	<div class="font--uppercase ms4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-	<div class="font--numbers ms4">0 1 2 3 4 5 6 7 8 9</div>
-	<div class="font--lowercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-	<div class="font--uppercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-	<div class="font--numbers ms2">0 1 2 3 4 5 6 7 8 9</div>
-	</div> 
+ * 	<div class="container"><div class="alphabet-display row font-normal">
+ *	<div class="ms12 col-md-4 col-sm-6 col-lg-3 font--dropcase_2x">La</div>
+ *	<div class="col-md-8 col-sm-6 col-lg-9 font--example">
+ * 	<h3>Primary Navigation & Body Copy</h3>
+ *	<div class="font--lowercase ms4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+ *	<div class="font--uppercase ms4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+ *	<div class="font--numbers ms4">0 1 2 3 4 5 6 7 8 9</div>
+ *	<div class="font--lowercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+ *	<div class="font--uppercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+ *	<div class="font--numbers ms2">0 1 2 3 4 5 6 7 8 9</div>
+ *	</div> 
  */
 .font-display {
   font-family: 'Muli', Verdana, Helvetica, sans-serif;
@@ -260,19 +256,19 @@ span {
 
 /**
  * @atom Muli, Verdana, Helvetica, sans-serif;
- * @section Fonts
+ * @section Fonts & Branding
  * @markup 
- 	<div class="container"><div class="alphabet-display row font-display">
-	<div class="ms12 col-md-4 col-sm-6 col-lg-3 font--dropcase_2x">Mu</div>
-	<div class="col-md-8 col-sm-6 col-lg-9 font--example">
- 	<h3>Headers & Secondary Navs</h3>
-	<div class="font--lowercase ms4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-	<div class="font--uppercase ms4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-	<div class="font--numbers ms4">0 1 2 3 4 5 6 7 8 9</div>
-	<div class="font--lowercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-	<div class="font--uppercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-	<div class="font--numbers ms2">0 1 2 3 4 5 6 7 8 9</div>
-	</div> 
+ * 	<div class="container"><div class="alphabet-display row font-display">
+ *	<div class="ms12 col-md-4 col-sm-6 col-lg-3 font--dropcase_2x">Mu</div>
+ *	<div class="col-md-8 col-sm-6 col-lg-9 font--example">
+ * 	<h3>Headers & Secondary Navs</h3>
+ *	<div class="font--lowercase ms4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+ *	<div class="font--uppercase ms4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+ *	<div class="font--numbers ms4">0 1 2 3 4 5 6 7 8 9</div>
+ *	<div class="font--lowercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+ *	<div class="font--uppercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+ *	<div class="font--numbers ms2">0 1 2 3 4 5 6 7 8 9</div>
+ *	</div> 
  */
 .font-normal {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
@@ -288,19 +284,19 @@ span {
   text-transform: uppercase; }
 .alphabet-display .ms12 {
   font-size: 10.5625em;
-  line-height: 1.13609em;
+  line-height: 1.1360946746em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
   .alphabet-display .ms12 {
-    line-height: 1.02249em; } }
+    line-height: 1.0224852071em; } }
 @media only screen and (max-width: 1024px) and (max-height: 320px) {
   .alphabet-display .ms12 {
     line-height: 1em; } }
 
 .alphabet-display .ms6 {
   font-size: 4.125em;
-  line-height: 1.09091em;
+  line-height: 1.0909090909em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
@@ -312,27 +308,27 @@ span {
 
 .alphabet-display .ms4 {
   font-size: 2.5625em;
-  line-height: 1.17073em;
+  line-height: 1.1707317073em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
   .alphabet-display .ms4 {
-    line-height: 1.05366em; } }
+    line-height: 1.0536585366em; } }
 @media only screen and (max-width: 1024px) and (max-height: 320px) {
   .alphabet-display .ms4 {
     line-height: 1em; } }
 
 .alphabet-display .ms2 {
   font-size: 1.625em;
-  line-height: 1.84615em;
+  line-height: 1.8461538462em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
   .alphabet-display .ms2 {
-    line-height: 1.66154em; } }
+    line-height: 1.6615384615em; } }
 @media only screen and (max-width: 1024px) and (max-height: 320px) {
   .alphabet-display .ms2 {
-    line-height: 1.56923em; } }
+    line-height: 1.5692307692em; } }
 
 .alphabet-display .ms1 {
   font-size: 1.25em;
@@ -425,7 +421,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 *,
 *::before,
@@ -912,48 +908,48 @@ pre {
   max-width: none; }
 
 .col-1 {
-  flex: 0 0 8.33333%;
-  max-width: 8.33333%; }
+  flex: 0 0 8.3333333333%;
+  max-width: 8.3333333333%; }
 
 .col-2 {
-  flex: 0 0 16.66667%;
-  max-width: 16.66667%; }
+  flex: 0 0 16.6666666667%;
+  max-width: 16.6666666667%; }
 
 .col-3 {
   flex: 0 0 25%;
   max-width: 25%; }
 
 .col-4 {
-  flex: 0 0 33.33333%;
-  max-width: 33.33333%; }
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%; }
 
 .col-5 {
-  flex: 0 0 41.66667%;
-  max-width: 41.66667%; }
+  flex: 0 0 41.6666666667%;
+  max-width: 41.6666666667%; }
 
 .col-6 {
   flex: 0 0 50%;
   max-width: 50%; }
 
 .col-7 {
-  flex: 0 0 58.33333%;
-  max-width: 58.33333%; }
+  flex: 0 0 58.3333333333%;
+  max-width: 58.3333333333%; }
 
 .col-8 {
-  flex: 0 0 66.66667%;
-  max-width: 66.66667%; }
+  flex: 0 0 66.6666666667%;
+  max-width: 66.6666666667%; }
 
 .col-9 {
   flex: 0 0 75%;
   max-width: 75%; }
 
 .col-10 {
-  flex: 0 0 83.33333%;
-  max-width: 83.33333%; }
+  flex: 0 0 83.3333333333%;
+  max-width: 83.3333333333%; }
 
 .col-11 {
-  flex: 0 0 91.66667%;
-  max-width: 91.66667%; }
+  flex: 0 0 91.6666666667%;
+  max-width: 91.6666666667%; }
 
 .col-12 {
   flex: 0 0 100%;
@@ -1007,48 +1003,48 @@ pre {
     max-width: none; }
 
   .col-sm-1 {
-    flex: 0 0 8.33333%;
-    max-width: 8.33333%; }
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%; }
 
   .col-sm-2 {
-    flex: 0 0 16.66667%;
-    max-width: 16.66667%; }
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%; }
 
   .col-sm-3 {
     flex: 0 0 25%;
     max-width: 25%; }
 
   .col-sm-4 {
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%; }
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
 
   .col-sm-5 {
-    flex: 0 0 41.66667%;
-    max-width: 41.66667%; }
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%; }
 
   .col-sm-6 {
     flex: 0 0 50%;
     max-width: 50%; }
 
   .col-sm-7 {
-    flex: 0 0 58.33333%;
-    max-width: 58.33333%; }
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%; }
 
   .col-sm-8 {
-    flex: 0 0 66.66667%;
-    max-width: 66.66667%; }
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%; }
 
   .col-sm-9 {
     flex: 0 0 75%;
     max-width: 75%; }
 
   .col-sm-10 {
-    flex: 0 0 83.33333%;
-    max-width: 83.33333%; }
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%; }
 
   .col-sm-11 {
-    flex: 0 0 91.66667%;
-    max-width: 91.66667%; }
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%; }
 
   .col-sm-12 {
     flex: 0 0 100%;
@@ -1101,48 +1097,48 @@ pre {
     max-width: none; }
 
   .col-md-1 {
-    flex: 0 0 8.33333%;
-    max-width: 8.33333%; }
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%; }
 
   .col-md-2 {
-    flex: 0 0 16.66667%;
-    max-width: 16.66667%; }
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%; }
 
   .col-md-3 {
     flex: 0 0 25%;
     max-width: 25%; }
 
   .col-md-4 {
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%; }
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
 
   .col-md-5 {
-    flex: 0 0 41.66667%;
-    max-width: 41.66667%; }
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%; }
 
   .col-md-6 {
     flex: 0 0 50%;
     max-width: 50%; }
 
   .col-md-7 {
-    flex: 0 0 58.33333%;
-    max-width: 58.33333%; }
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%; }
 
   .col-md-8 {
-    flex: 0 0 66.66667%;
-    max-width: 66.66667%; }
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%; }
 
   .col-md-9 {
     flex: 0 0 75%;
     max-width: 75%; }
 
   .col-md-10 {
-    flex: 0 0 83.33333%;
-    max-width: 83.33333%; }
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%; }
 
   .col-md-11 {
-    flex: 0 0 91.66667%;
-    max-width: 91.66667%; }
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%; }
 
   .col-md-12 {
     flex: 0 0 100%;
@@ -1195,48 +1191,48 @@ pre {
     max-width: none; }
 
   .col-lg-1 {
-    flex: 0 0 8.33333%;
-    max-width: 8.33333%; }
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%; }
 
   .col-lg-2 {
-    flex: 0 0 16.66667%;
-    max-width: 16.66667%; }
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%; }
 
   .col-lg-3 {
     flex: 0 0 25%;
     max-width: 25%; }
 
   .col-lg-4 {
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%; }
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
 
   .col-lg-5 {
-    flex: 0 0 41.66667%;
-    max-width: 41.66667%; }
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%; }
 
   .col-lg-6 {
     flex: 0 0 50%;
     max-width: 50%; }
 
   .col-lg-7 {
-    flex: 0 0 58.33333%;
-    max-width: 58.33333%; }
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%; }
 
   .col-lg-8 {
-    flex: 0 0 66.66667%;
-    max-width: 66.66667%; }
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%; }
 
   .col-lg-9 {
     flex: 0 0 75%;
     max-width: 75%; }
 
   .col-lg-10 {
-    flex: 0 0 83.33333%;
-    max-width: 83.33333%; }
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%; }
 
   .col-lg-11 {
-    flex: 0 0 91.66667%;
-    max-width: 91.66667%; }
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%; }
 
   .col-lg-12 {
     flex: 0 0 100%;
@@ -1289,48 +1285,48 @@ pre {
     max-width: none; }
 
   .col-xl-1 {
-    flex: 0 0 8.33333%;
-    max-width: 8.33333%; }
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%; }
 
   .col-xl-2 {
-    flex: 0 0 16.66667%;
-    max-width: 16.66667%; }
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%; }
 
   .col-xl-3 {
     flex: 0 0 25%;
     max-width: 25%; }
 
   .col-xl-4 {
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%; }
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
 
   .col-xl-5 {
-    flex: 0 0 41.66667%;
-    max-width: 41.66667%; }
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%; }
 
   .col-xl-6 {
     flex: 0 0 50%;
     max-width: 50%; }
 
   .col-xl-7 {
-    flex: 0 0 58.33333%;
-    max-width: 58.33333%; }
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%; }
 
   .col-xl-8 {
-    flex: 0 0 66.66667%;
-    max-width: 66.66667%; }
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%; }
 
   .col-xl-9 {
     flex: 0 0 75%;
     max-width: 75%; }
 
   .col-xl-10 {
-    flex: 0 0 83.33333%;
-    max-width: 83.33333%; }
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%; }
 
   .col-xl-11 {
-    flex: 0 0 91.66667%;
-    max-width: 91.66667%; }
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%; }
 
   .col-xl-12 {
     flex: 0 0 100%;
@@ -1718,20 +1714,19 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   background-color: rgba(153, 0, 0, 0.8);
   border-radius: .2rem; }
 
-.was-validated .form-control:valid, .form-control.is-valid, .was-validated
-.custom-select:valid,
+.was-validated .form-control:valid, .form-control.is-valid,
+.was-validated .custom-select:valid,
 .custom-select.is-valid {
   border-color: #28a745; }
-  .was-validated .form-control:valid:focus, .form-control.is-valid:focus, .was-validated
-  .custom-select:valid:focus,
+  .was-validated .form-control:valid:focus, .form-control.is-valid:focus,
+  .was-validated .custom-select:valid:focus,
   .custom-select.is-valid:focus {
     box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25); }
   .was-validated .form-control:valid ~ .invalid-feedback,
   .was-validated .form-control:valid ~ .invalid-tooltip, .form-control.is-valid ~ .invalid-feedback,
-  .form-control.is-valid ~ .invalid-tooltip, .was-validated
-  .custom-select:valid ~ .invalid-feedback,
-  .was-validated
-  .custom-select:valid ~ .invalid-tooltip,
+  .form-control.is-valid ~ .invalid-tooltip,
+  .was-validated .custom-select:valid ~ .invalid-feedback,
+  .was-validated .custom-select:valid ~ .invalid-tooltip,
   .custom-select.is-valid ~ .invalid-feedback,
   .custom-select.is-valid ~ .invalid-tooltip {
     display: block; }
@@ -1751,20 +1746,19 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .was-validated .custom-file-input:valid:focus, .custom-file-input.is-valid:focus {
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25); }
 
-.was-validated .form-control:invalid, .form-control.is-invalid, .was-validated
-.custom-select:invalid,
+.was-validated .form-control:invalid, .form-control.is-invalid,
+.was-validated .custom-select:invalid,
 .custom-select.is-invalid {
   border-color: #990000; }
-  .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus, .was-validated
-  .custom-select:invalid:focus,
+  .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus,
+  .was-validated .custom-select:invalid:focus,
   .custom-select.is-invalid:focus {
     box-shadow: 0 0 0 0.2rem rgba(153, 0, 0, 0.25); }
   .was-validated .form-control:invalid ~ .invalid-feedback,
   .was-validated .form-control:invalid ~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback,
-  .form-control.is-invalid ~ .invalid-tooltip, .was-validated
-  .custom-select:invalid ~ .invalid-feedback,
-  .was-validated
-  .custom-select:invalid ~ .invalid-tooltip,
+  .form-control.is-invalid ~ .invalid-tooltip,
+  .was-validated .custom-select:invalid ~ .invalid-feedback,
+  .was-validated .custom-select:invalid ~ .invalid-tooltip,
   .custom-select.is-invalid ~ .invalid-feedback,
   .custom-select.is-invalid ~ .invalid-tooltip {
     display: block; }
@@ -3242,10 +3236,10 @@ tbody.collapse.show {
       width: 100%; } }
 
 .breadcrumb {
-  padding: 0.75rem 1rem;
+  padding: 0.25rem 0.5rem;
   margin-bottom: 1rem;
   list-style: none;
-  background-color: #e9ecef;
+  background-color: #fff;
   border-radius: 0.25rem; }
   .breadcrumb::after {
     display: block;
@@ -3258,14 +3252,14 @@ tbody.collapse.show {
     display: inline-block;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
-    color: #868e96;
-    content: "/"; }
+    color: #a1a0a4;
+    content: ""; }
   .breadcrumb-item + .breadcrumb-item:hover::before {
     text-decoration: underline; }
   .breadcrumb-item + .breadcrumb-item:hover::before {
     text-decoration: none; }
   .breadcrumb-item.active {
-    color: #868e96; }
+    color: #6f6b6f; }
 
 .pagination {
   display: flex;
@@ -3531,14 +3525,14 @@ tbody.collapse.show {
   font-size: 0.75rem;
   line-height: 1rem;
   text-align: center;
-  background-color: #e9ecef;
+  background-color: #d6d4d4;
   border-radius: 0.25rem; }
 
 .progress-bar {
   height: 1rem;
   line-height: 1rem;
   color: #fff;
-  background-color: #0088aa;
+  background-color: #e87d1e;
   transition: width 0.6s ease; }
 
 .progress-bar-striped {
@@ -4530,7 +4524,7 @@ a.bg-dark:focus, a.bg-dark:hover {
     border: 0; }
 
 .embed-responsive-21by9::before {
-  padding-top: 42.85714%; }
+  padding-top: 42.8571428571%; }
 
 .embed-responsive-16by9::before {
   padding-top: 56.25%; }
@@ -6742,983 +6736,340 @@ a.text-dark:focus, a.text-dark:hover {
 * @section Bootstrap
 * @markup
 *  <div class="">
-*   <h3>Alert</h3>
-*        <div class="alert alert-warning" role="alert">
-*          <strong>Alert!</strong> This is a Bootstrap alert box
-*        </div>      <h3>Badge</h3>
-*        <p>Example heading <span class="badge badge-default">badge</span></p>      <p>Example heading <span class="badge badge-primary">.badge-primary</span></p>      <h3>Popover</h3>      <a tabindex="0" class="btn btn-lg btn-primary" role="button" data-toggle="popover" data-trigger="focus" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="Dismissible popover">Popover on click</a>      <br><br><br>
-*        <button type="button" class="btn btn-lg btn-primary" data-toggle="popover" data-trigger="hover" data-delay="300" title="" data-content="Popover description text" data-original-title="Popover title">Popover on hover</button>      <h3>Card</h3>
-*        <div class="card" style="width: 20rem;">
-*          <img class="card-img-top w-100" src="https://dummyimage.com/600x400/563d7c/fff" alt="Card image cap">
+*      <h3>Alert</h3>
+*      <div class="alert alert-warning" role="alert"><strong>Alert!</strong>This is a Bootstrap alert box </div>
+*      <h3>Badge</h3>
+*      <p>Example heading <span class="badge badge-default">badge</span></p>
+*      <p>Example heading <span class="badge badge-primary">.badge-primary</span></p>
+*      <h3>Popover</h3><a tabindex="0" class="btn btn-lg btn-primary" role="button" data-toggle="popover" data-trigger="focus" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="Dismissible popover">Popover on click</a>
+*      <br>
+*      <br>
+*      <br>
+*      <button type="button" class="btn btn-lg btn-primary" data-toggle="popover" data-trigger="hover" data-delay="300" title="" data-content="Popover description text" data-original-title="Popover title">Popover on hover</button>
+*      <h3>Card</h3>
+*      <div class="card" style="width: 20rem;"><img class="card-img-top w-100" src="https://dummyimage.com/600x400/563d7c/fff" alt="Card image cap">
 *          <div class="card-block">
-*            <h4 class="card-title">Card title</h4>
-*            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-*            <a href="#" class="btn btn-primary">Go somewhere</a>
-*          </div>
-*        </div>      <h3>Collapse - Accordian</h3>
-*        <div id="accordion" role="tablist" aria-multiselectable="true">
+*              <h4 class="card-title">Card title</h4>
+*              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+*              <a href="#" class="btn btn-primary">Go somewhere</a></div>
+*      </div>
+*      <h3>Collapse - Accordian</h3>
+*      <div id="accordion" role="tablist" aria-multiselectable="true">
 *          <div class="card">
-*            <div class="card-header" role="tab" id="headingOne">
-*              <h5 class="mb-0">
-*          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-*            Accordian Group Item #1
-*          </a>
-*        </h5>
-*            </div>          <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
-*              <div class="card-block">
-*                <div class=" ">
-*                  <div class="col-sm-6">
-*                    <img src="https://dummyimage.com/200x200/563d7c/fff" alt="" class="img-thumbnail img-fluid">
+*              <div class="card-header" role="tab" id="headingOne">
+*                  <h5 class="mb-0"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Accordian Group Item #1 </a></h5></div>
+*              <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+*                  <div class="card-block">
+*                      <div class=" ">
+*                          <div class="col-sm-6"><img src="https://dummyimage.com/200x200/563d7c/fff" alt="" class="img-thumbnail img-fluid"></div>
+*                          <!-- /.col -->
+*                          <div class="col-sm-6">
+*                              <h2>Accordian Group Heading</h2>Accordian content description text. </div>
+*                          <!-- /.col -->
+*                      </div>
+*                      <!-- /.row -->
 *                  </div>
-*                  <!-- /.col -->
-*                  <div class="col-sm-6">
-*                    <h2>Accordian Group Heading</h2> Accordian content description text.
-*                  </div>
-*                  <!-- /.col -->
-*                </div>
-*                <!-- /.row -->
 *              </div>
-*            </div>
 *          </div>
 *          <div class="card">
-*            <div class="card-header" role="tab" id="headingTwo">
-*              <h5 class="mb-0">
-*          <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-*            Accordian Group Item #2
-*          </a>
-*        </h5>
-*            </div>
-*            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-*              <div class="card-block">
-*                <div class=" ">
-*                  <div class="col-sm-6">
-*                    <img src="https://dummyimage.com/200x200/563d7c/fff" alt="" class="img-thumbnail img-fluid">
+*              <div class="card-header" role="tab" id="headingTwo">
+*                  <h5 class="mb-0"><a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Accordian Group Item #2 </a></h5></div>
+*              <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+*                  <div class="card-block">
+*                      <div class=" ">
+*                          <div class="col-sm-6"><img src="https://dummyimage.com/200x200/563d7c/fff" alt="" class="img-thumbnail img-fluid"></div>
+*                          <!-- /.col -->
+*                          <div class="col-sm-6">
+*                              <h2>Accordian Group Heading</h2>Accordian content description text. </div>
+*                          <!-- /.col -->
+*                      </div>
+*                      <!-- /.row -->
 *                  </div>
-*                  <!-- /.col -->
-*                  <div class="col-sm-6">
-*                    <h2>Accordian Group Heading</h2> Accordian content description text.
-*                  </div>
-*                  <!-- /.col -->
-*                </div>
-*                <!-- /.row -->
 *              </div>
-*            </div>
 *          </div>
 *          <div class="card">
-*            <div class="card-header" role="tab" id="headingThree">
-*              <h5 class="mb-0">
-*          <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-*            Accordian Group Item #3
-*          </a>
-*        </h5>
-*            </div>
-*            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
-*              <div class="card-block">              <div class=" ">
-*                  <div class="col-sm-6">
-*                    <img src="https://dummyimage.com/200x200/563d7c/fff" alt="" class="img-thumbnail img-fluid">
+*              <div class="card-header" role="tab" id="headingThree">
+*                  <h5 class="mb-0"><a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Accordian Group Item #3 </a></h5></div>
+*              <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+*                  <div class="card-block">
+*                      <div class=" ">
+*                          <div class="col-sm-6"><img src="https://dummyimage.com/200x200/563d7c/fff" alt="" class="img-thumbnail img-fluid"></div>
+*                          <!-- /.col -->
+*                          <div class="col-sm-6">
+*                              <h2>Accordian Group Heading</h2>Accordian content description text. </div>
+*                          <!-- /.col -->
+*                      </div>
+*                      <!-- /.row -->
 *                  </div>
-*                  <!-- /.col -->
-*                  <div class="col-sm-6">
-*                    <h2>Accordian Group Heading</h2> Accordian content description text.
-*                  </div>
-*                  <!-- /.col -->
-*                </div>
-*                <!-- /.row -->            </div>
-*            </div>
+*              </div>
 *          </div>
-*        </div>      <h3>Input group</h3>      <div class="input-group">
-*          <input type="text" class="form-control" placeholder="Search Products">
-*          <span class="input-group-btn">
-*          <button class="btn btn-primary" type="button">Search</button>
-*        </span>
-*        </div>      <br>      <div class="input-group input-group-lg">
-*          <input type="email" class="form-control" placeholder="Email Address">
-*          <span class="input-group-btn">
-*          <button class="btn btn-primary" type="button">Subscribe</button>
-*        </span>
-*        </div>      <h3>List group with Custom Content</h3>
-*        <div class="list-group">
+*      </div>
+*      <h3>Input group</h3>
+*      <div class="input-group">
+*          <input type="text" class="form-control" placeholder="Search Products"><span class="input-group-btn"><button class="btn btn-primary" type="button">Search</button></span></div>
+*      <br>
+*      <div class="input-group input-group-lg">
+*          <input type="email" class="form-control" placeholder="Email Address"><span class="input-group-btn"><button class="btn btn-primary" type="button">Subscribe</button></span></div>
+*      <h3>List group with Custom Content</h3>
+*      <div class="list-group">
 *          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
-*            <div class="d-flex w-100 justify-content-between">
-*              <h5 class="mb-1">Don't Make Me Think</h5>
-*              <small>20 Comments</small>
-*            </div>
-*            <p class="mb-1">Description text gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-*            <small>Category: Design</small>
-*          </a>
+*              <div class="d-flex w-100 justify-content-between">
+*                  <h5 class="mb-1">Don't Make Me Think</h5>
+*                  <small>20 Comments</small></div>
+*              <p class="mb-1">Description text gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small>Category: Design</small></a>
 *          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-*            <div class="d-flex w-100 justify-content-between">
-*              <h5 class="mb-1">Thinking with Type</h5>
-*              <small class="text-muted">3 Comments</small>
-*            </div>
-*            <p class="mb-1">Description text gravida at eget metus. Maecenas sed diam eget risus varius blandit</p>
-*            <small class="text-muted">Category: Design</small>
-*          </a>
+*              <div class="d-flex w-100 justify-content-between">
+*                  <h5 class="mb-1">Thinking with Type</h5><small class="text-muted">3 Comments</small></div>
+*              <p class="mb-1">Description text gravida at eget metus. Maecenas sed diam eget risus varius blandit</p><small class="text-muted">Category: Design</small></a>
 *          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-*            <div class="d-flex w-100 justify-content-between">
-*              <h5 class="mb-1">Design of Everyday Things</h5>
-*              <small class="text-muted">3 Comments</small>
-*            </div>
-*            <p class="mb-1">Description text gravida at eget metus. Maecenas sed diam eget risus varius blandit</p>
-*            <small class="text-muted">Category: Design</small>
-*          </a>
-*        </div>      <h3>Pills Nav</h3>
-*        <ul class="nav nav-pills">
-*          <li class="nav-item">
-*            <a class="nav-link active" href="#">Active</a>
+*              <div class="d-flex w-100 justify-content-between">
+*                  <h5 class="mb-1">Design of Everyday Things</h5><small class="text-muted">3 Comments</small></div>
+*              <p class="mb-1">Description text gravida at eget metus. Maecenas sed diam eget risus varius blandit</p><small class="text-muted">Category: Design</small></a>
+*      </div>
+*      <h3>Pills Nav</h3>
+*      <ul class="nav nav-pills">
+*          <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
+*          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+*              <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+*                  <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a></div>
 *          </li>
-*          <li class="nav-item dropdown">
-*            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-*            <div class="dropdown-menu">
-*              <a class="dropdown-item" href="#">Action</a>
-*              <a class="dropdown-item" href="#">Another action</a>
-*              <a class="dropdown-item" href="#">Something else here</a>
-*              <div class="dropdown-divider"></div>
-*              <a class="dropdown-item" href="#">Separated link</a>
-*            </div>
-*          </li>
-*          <li class="nav-item">
-*            <a class="nav-link" href="#">Link</a>
-*          </li>
-*          <li class="nav-item">
-*            <a class="nav-link disabled" href="#">Disabled</a>
-*          </li>
-*        </ul>      <h3>Fill and Justify Pills Nav</h3>      <div class=" ">
+*          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+*          <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+*      </ul>
+*      <h3>Fill and Justify Pills Nav</h3>
+*      <div class=" ">
 *          <ul class="nav nav-pills nav-fill">
-*            <li class="nav-item">
-*              <a class="nav-link active" href="#">Active</a>
-*            </li>
-*            <li class="nav-item">
-*              <a class="nav-link" href="#">Longer nav link</a>
-*            </li>
-*            <li class="nav-item">
-*              <a class="nav-link" href="#">Link</a>
-*            </li>
-*            <li class="nav-item">
-*              <a class="nav-link disabled" href="#">Disabled</a>
-*            </li>
+*              <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
+*              <li class="nav-item"><a class="nav-link" href="#">Longer nav link</a></li>
+*              <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+*              <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
 *          </ul>
-*        </div>      <h3>Progress</h3>
-*        <div class="progress">
-*          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
-*        </div>      <h3>Buttons</h3>
-*        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->      <div class=" ">
-*          <div class="col-sm-6">
-*            <p><button type="button" class="btn btn-primary btn-sm">Primary</button></p>
-*            <p><button type="button" class="btn btn-primary">Primary</button></p>
-*            <p><button type="button" class="btn btn-primary btn-lg">Primary</button></p>          <p><button type="button" class="btn btn-secondary btn-sm">Secondary</button></p>
-*            <p><button type="button" class="btn btn-secondary">Secondary</button></p>
-*            <p><button type="button" class="btn btn-secondary btn-lg">Secondary</button></p>
-*            <p><button type="button" class="btn btn-link">Link</button></p>
+*      </div>
+*      <div class="btn-group btn-group-lg" role="group" aria-label="Button group with nested dropdown">
+*          <button type="button" class="btn btn-secondary">1</button>
+*          <button type="button" class="btn btn-secondary">2</button>
+*          <div class="btn-group" role="group">
+*              <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown </button>
+*              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1"><a class="dropdown-item" href="#">Dropdown link</a><a class="dropdown-item" href="#">Dropdown link</a></div>
 *          </div>
-*          <!-- .col -->
-*          <div class="col-sm-6">
-*            <p><button type="button" class="btn btn-outline-primary btn-sm">Primary Outline</button></p>
-*            <p><button type="button" class="btn btn-outline-primary">Primary Outline</button></p>
-*            <p><button type="button" class="btn btn-outline-primary btn-lg">Primary Outline</button></p>          <p><button type="button" class="btn btn-outline-secondary btn-sm">Secondary Outline</button></p>
-*            <p><button type="button" class="btn btn-outline-secondary">Secondary Outline</button></p>
-*            <p><button type="button" class="btn btn-outline-secondary btn-lg">Secondary Outline</button></p>        </div>
-*          <!-- .col -->
-*        </div>
-*        <!-- .row -->      <h3>Button Group</h3>      <p>
-*          </p><div class="btn-group btn-group-sm" role="group" aria-label="Button group with nested dropdown">
-*            <button type="button" class="btn btn-secondary">1</button>
-*            <button type="button" class="btn btn-secondary">2</button>          <div class="btn-group" role="group">
-*              <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-*        Dropdown
-*      </button>
-*              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-*                <a class="dropdown-item" href="#">Dropdown link</a>
-*                <a class="dropdown-item" href="#">Dropdown link</a>
+*      </div>
+*      <p></p>
+*      <h3>Collapse</h3>
+*      <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Link with href </a>
+*          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Button with data-target </button>
+*      </p>
+*      <div class="collapse" id="collapseExample">
+*          <div class="card card-block">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. </div>
+*      </div>
+*      <h3>Tooltips</h3><a href="#" data-toggle="tooltip" title="" data-original-title="Some tooltip text!">Tooltip on top</a>
+*      <br>
+*      <br>
+*      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" data-html="true" title="" data-original-title="<img src=https://dummyimage.com/100x80/563d7c/fff alt= class=img-thumbnail img-fluid><h4>Tooltip</h4> <u>with</u> <b>HTML</b>">HTML Tooltip on right </button>
+*  </div>
+*  <div class=" ">
+*      <h3>Breadcrumb</h3>
+*      <nav class="breadcrumb"><a class="breadcrumb-item" href="#">Home</a><a class="breadcrumb-item" href="#">Library</a><span class="breadcrumb-item active">Breadcrumb</span></nav>
+*      <h3>Carousel</h3>
+*      <div id="carousel-name" class="carousel slide" data-ride="carousel">
+*          <ol class="carousel-indicators">
+*              <li data-target="#carousel-name" data-slide-to="0" class="active"></li>
+*              <li data-target="#carousel-name" data-slide-to="1" class=""></li>
+*              <li data-target="#carousel-name" data-slide-to="2" class=""></li>
+*          </ol>
+*          <div class="carousel-inner" role="listbox">
+*              <div class="carousel-item active"><img class="d-block img-fluid" src="https://dummyimage.com/900x340/563d7c/fff&amp;text=+" alt="First slide">
+*                  <div class="carousel-caption d-none d-md-block">
+*                      <h3>Carousel Slider Title</h3>
+*                      <p>Description text to further describe the content of the slide image</p><a href="" class="btn btn-primary">Call to Action</a></div>
 *              </div>
-*            </div>
-*          </div>
-*        <p></p>      <p>
-*          </p><div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-*            <button type="button" class="btn btn-secondary">1</button>
-*            <button type="button" class="btn btn-secondary">2</button>          <div class="btn-group" role="group">
-*              <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-*        Dropdown
-*      </button>
-*              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-*                <a class="dropdown-item" href="#">Dropdown link</a>
-*                <a class="dropdown-item" href="#">Dropdown link</a>
+*              <div class="carousel-item"><img class="d-block img-fluid" src="https://dummyimage.com/900x340/563d7c/fff&amp;text=+" alt="Second slide">
+*                  <div class="carousel-caption d-none d-md-block">
+*                      <h3>Carousel Slider Title</h3>
+*                      <p>Description text to further describe the content of the slide image</p><a href="" class="btn btn-primary">Call to Action</a></div>
 *              </div>
-*            </div>
-*          </div>
-*        <p></p>      <p>
-*          </p><div class="btn-group btn-group-lg" role="group" aria-label="Button group with nested dropdown">
-*            <button type="button" class="btn btn-secondary">1</button>
-*            <button type="button" class="btn btn-secondary">2</button>          <div class="btn-group" role="group">
-*              <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-*        Dropdown
-*      </button>
-*              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-*                <a class="dropdown-item" href="#">Dropdown link</a>
-*                <a class="dropdown-item" href="#">Dropdown link</a>
+*              <div class="carousel-item"><img class="d-block img-fluid" src="https://dummyimage.com/900x340/563d7c/fff&amp;text=+" alt="Third slide">
+*                  <div class="carousel-caption d-none d-md-block">
+*                      <h3>Carousel Slider Title</h3>
+*                      <p>Description text to further describe the content of the slide image</p><a href="" class="btn btn-primary">Call to Action</a></div>
 *              </div>
-*            </div>
+*          </div><a class="carousel-control-prev" href="#carousel-name" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-name" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a></div>
+*      <h3>Dropdowns</h3>
+*      <div class="btn-toolbar" role="toolbar">
+*          <div class="btn-group">
+*              <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Large button </button>
+*              <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+*                  <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a></div>
 *          </div>
-*        <p></p>      <h3>Collapse</h3>
-*        <p>
-*          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-*      Link with href
-*    </a>
-*          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-*      Button with data-target
-*    </button>
-*        </p>
-*        <div class="collapse" id="collapseExample">
-*          <div class="card card-block">
-*            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+*          <!-- /btn-group -->
+*          <div class="btn-group ml-2">
+*              <button type="button" class="btn btn-lg btn-secondary">Large split button</button>
+*              <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+*              <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+*                  <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a></div>
 *          </div>
-*        </div>      <h3>Tooltips</h3>
-*        <a href="#" data-toggle="tooltip" title="" data-original-title="Some tooltip text!">Tooltip on top</a>      <br><br>      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" data-html="true" title="" data-original-title="<img src=https://dummyimage.com/100x80/563d7c/fff alt= class=img-thumbnail img-fluid><h4>Tooltip</h4> <u>with</u> <b>HTML</b>">
-*    HTML Tooltip on right
-*  </button>    </div>
-*   <div class=" ">
-*       <h3>Breadcrumb</h3>
-*       <nav class="breadcrumb">
-*           <a class="breadcrumb-item" href="#">Home</a>
-*           <a class="breadcrumb-item" href="#">Library</a>
-*           <span class="breadcrumb-item active">Breadcrumb</span>
-*       </nav>
-*       <h3>Carousel</h3>
-*       <div id="carousel-name" class="carousel slide" data-ride="carousel">
-*           <ol class="carousel-indicators">
-*               <li data-target="#carousel-name" data-slide-to="0" class="active"></li>
-*               <li data-target="#carousel-name" data-slide-to="1" class=""></li>
-*               <li data-target="#carousel-name" data-slide-to="2" class=""></li>
-*           </ol>
-*           <div class="carousel-inner" role="listbox">
-*               <div class="carousel-item active">
-*                   <img class="d-block img-fluid" src="https://dummyimage.com/900x340/563d7c/fff&amp;text=+" alt="First slide">
-*                   <div class="carousel-caption d-none d-md-block">
-*                       <h3>Carousel Slider Title</h3>
-*                       <p>Description text to further describe the content of the slide image</p>
-*                       <a href="" class="btn btn-primary">Call to Action</a>
-*                   </div>
-*               </div>
-*               <div class="carousel-item">
-*                   <img class="d-block img-fluid" src="https://dummyimage.com/900x340/563d7c/fff&amp;text=+" alt="Second slide">
-*                   <div class="carousel-caption d-none d-md-block">
-*                       <h3>Carousel Slider Title</h3>
-*                       <p>Description text to further describe the content of the slide image</p>
-*                       <a href="" class="btn btn-primary">Call to Action</a>
-*                   </div>
-*               </div>
-*               <div class="carousel-item">
-*                   <img class="d-block img-fluid" src="https://dummyimage.com/900x340/563d7c/fff&amp;text=+" alt="Third slide">
-*                   <div class="carousel-caption d-none d-md-block">
-*                       <h3>Carousel Slider Title</h3>
-*                       <p>Description text to further describe the content of the slide image</p>
-*                       <a href="" class="btn btn-primary">Call to Action</a>
-*                   </div>
-*               </div>
-*           </div>
-*           <a class="carousel-control-prev" href="#carousel-name" role="button" data-slide="prev">
-*             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-*             <span class="sr-only">Previous</span>
-*           </a>
-*           <a class="carousel-control-next" href="#carousel-name" role="button" data-slide="next">
-*             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-*             <span class="sr-only">Next</span>
-*           </a>
-*       </div>
-*       <h3>Dropdowns</h3>
-*       <div class="btn-toolbar" role="toolbar">
-*           <div class="btn-group">
-*               <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-*                   Large button
-*               </button>
-*               <div class="dropdown-menu">
-*                   <a class="dropdown-item" href="#">Action</a>
-*                   <a class="dropdown-item" href="#">Another action</a>
-*                   <a class="dropdown-item" href="#">Something else here</a>
-*                   <div class="dropdown-divider"></div>
-*                   <a class="dropdown-item" href="#">Separated link</a>
-*               </div>
-*           </div>
-*           <!-- /btn-group -->
-*           <div class="btn-group ml-2">
-*               <button type="button" class="btn btn-lg btn-secondary">Large split button</button>
-*               <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-*                   <span class="sr-only">Toggle Dropdown</span>
-*               </button>
-*               <div class="dropdown-menu">
-*                   <a class="dropdown-item" href="#">Action</a>
-*                   <a class="dropdown-item" href="#">Another action</a>
-*                   <a class="dropdown-item" href="#">Something else here</a>
-*                   <div class="dropdown-divider"></div>
-*                   <a class="dropdown-item" href="#">Separated link</a>
-*               </div>
-*           </div>
-*           <!-- /btn-group -->
-*       </div>
-*       <!-- /btn-toolbar -->
-*       <br>
-*       <br>
-*       <div class="btn-toolbar" role="toolbar">
-*           <div class="btn-group">
-*               <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-*                   Small button
-*               </button>
-*               <div class="dropdown-menu">
-*                   <a class="dropdown-item" href="#">Action</a>
-*                   <a class="dropdown-item" href="#">Another action</a>
-*                   <a class="dropdown-item" href="#">Something else here</a>
-*                   <div class="dropdown-divider"></div>
-*                   <a class="dropdown-item" href="#">Separated link</a>
-*               </div>
-*           </div>
-*           <!-- /btn-group -->
-*           <div class="btn-group ml-2">
-*               <button type="button" class="btn btn-sm btn-secondary">Small split button</button>
-*               <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-*                   <span class="sr-only">Toggle Dropdown</span>
-*               </button>
-*               <div class="dropdown-menu">
-*                   <a class="dropdown-item" href="#">Action</a>
-*                   <a class="dropdown-item" href="#">Another action</a>
-*                   <a class="dropdown-item" href="#">Something else here</a>
-*                   <div class="dropdown-divider"></div>
-*                   <a class="dropdown-item" href="#">Separated link</a>
-*               </div>
-*           </div>
-*           <!-- /btn-group -->
-*       </div>
-*       <!-- /btn-toolbar -->
-*       <h3>Modal</h3>
-*       <!-- Button trigger modal -->
-*       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-*           Launch demo modal
-*       </button>
-*       <!-- Modal -->
-*       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-*           <div class="modal-dialog" role="document">
-*               <div class="modal-content">
-*                   <div class="modal-header">
-*                       <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-*                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-*                           <span aria-hidden="true">├ù</span>
-*                       </button>
-*                   </div>
-*                   <div class="modal-body">
-*                       <h2>Modal body heading</h2>
-*                       <p>Modal body text description</p>
-*                   </div>
-*                   <div class="modal-footer">
-*                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-*                       <button type="button" class="btn btn-primary">Save changes</button>
-*                   </div>
-*               </div>
-*           </div>
-*       </div>
-*       <h3>Navbar</h3>
-*       <nav class="navbar navbar-toggleable-md navbar-dark bg-primary">
-*           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-*               <span class="navbar-toggler-icon"></span>
-*           </button>
-*           <a class="navbar-brand" href="#">Navbar</a>
-*           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-*               <ul class="navbar-nav">
-*                   <li class="nav-item active">
-*                       <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-*                   </li>
-*                   <li class="nav-item">
-*                       <a class="nav-link" href="#">Features</a>
-*                   </li>
-*                   <li class="nav-item">
-*                       <a class="nav-link" href="#">Pricing</a>
-*                   </li>
-*                   <li class="nav-item dropdown">
-*                       <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-*             Dropdown link
-*           </a>
-*                       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-*                           <a class="dropdown-item" href="#">Action</a>
-*                           <a class="dropdown-item" href="#">Another action</a>
-*                           <a class="dropdown-item" href="#">Something else here</a>
-*                       </div>
-*                   </li>
-*               </ul>
-*           </div>
-*       </nav>
-*       <h3>Jumbotron</h3>
-*       <div class="jumbotron">
-*           <h1 class="display-3">Jumbotron</h1>
-*           <p class="lead">A component for calling extra attention to featured content or information.</p>
-*           <hr class="my-4">
-*           <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-*           <p class="lead">
-*               <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-*           </p>
-*       </div>
-*       <h3>List group</h3>
-*       <ul class="list-group">
-*           <li class="list-group-item justify-content-between">
-*               List group item #1
-*               <span class="badge badge-default badge-pill">14</span>
-*           </li>
-*           <li class="list-group-item justify-content-between">
-*               List group item #2
-*               <span class="badge badge-default badge-pill">2</span>
-*           </li>
-*           <li class="list-group-item justify-content-between">
-*               List group item #3
-*               <span class="badge badge-warning badge-pill">1</span>
-*           </li>
-*       </ul>
-*       <h3>Base Nav</h3>
-*       <ul class="nav">
-*           <li class="nav-item">
-*               <a class="nav-link active" href="#">Active</a>
-*           </li>
-*           <li class="nav-item">
-*               <a class="nav-link" href="#">Link</a>
-*           </li>
-*           <li class="nav-item">
-*               <a class="nav-link" href="#">Link</a>
-*           </li>
-*           <li class="nav-item">
-*               <a class="nav-link disabled" href="#">Disabled</a>
-*           </li>
-*       </ul>
-*       <h3>Tabs Nav</h3>
-*       <ul class="nav nav-tabs">
-*           <li class="nav-item">
-*               <a class="nav-link active" href="#tab-1" data-toggle="tab">Active</a>
-*           </li>
-*           <li class="nav-item dropdown">
-*               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-*               <div class="dropdown-menu">
-*                   <a class="dropdown-item" href="#tab-2" data-toggle="tab">Tab 2</a>
-*                   <a class="dropdown-item" href="#tab-3" data-toggle="tab">Tab 3</a>
-*                   <div class="dropdown-divider"></div>
-*                   <a class="dropdown-item" href="#tab-4" data-toggle="tab">Tab 4</a>
-*               </div>
-*           </li>
-*           <li class="nav-item">
-*               <a class="nav-link" href="#">Link</a>
-*           </li>
-*           <li class="nav-item">
-*               <a class="nav-link disabled" href="#">Disabled</a>
-*           </li>
-*       </ul>
-*       <br>
-*       <!-- Tab panes -->
-*       <div class="tab-content">
-*           <div class="tab-pane active" id="tab-1" role="tabpanel">
-*               <h5>Tab #1 Content</h5>
-*               <p>Tab main content.</p>
-*           </div>
-*           <div class="tab-pane" id="tab-2" role="tabpanel">Tab #2 content</div>
-*           <div class="tab-pane" id="tab-3" role="tabpanel">Tab #3 content</div>
-*           <div class="tab-pane" id="tab-4" role="tabpanel">Tab #4 content</div>
-*       </div>
-*       <h3>Pagination</h3>
-*       <nav aria-label="...">
-*           <ul class="pagination">
-*               <li class="page-item disabled">
-*                   <span class="page-link">Previous</span>
-*               </li>
-*               <li class="page-item"><a class="page-link" href="#">1</a></li>
-*               <li class="page-item active">
-*                   <span class="page-link">
-*           2
-*           <span class="sr-only">(current)</span>
-*                   </span>
-*               </li>
-*               <li class="page-item"><a class="page-link" href="#">3</a></li>
-*               <li class="page-item">
-*                   <a class="page-link" href="#">Next</a>
-*               </li>
-*           </ul>
-*       </nav>
-*       <nav aria-label="...">
-*           <ul class="pagination pagination-lg">
-*               <li class="page-item disabled">
-*                   <a class="page-link" href="#" tabindex="-1">Previous</a>
-*               </li>
-*               <li class="page-item"><a class="page-link" href="#">1</a></li>
-*               <li class="page-item"><a class="page-link" href="#">2</a></li>
-*               <li class="page-item"><a class="page-link" href="#">3</a></li>
-*               <li class="page-item">
-*                   <a class="page-link" href="#">Next</a>
-*               </li>
-*           </ul>
-*       </nav>
-*       <h3>Forms</h3>
-*       <form lpformnum="1">
-*           <div class=" ">
-*               <div class="col">
-*                   <div class="form-group">
-*                       <label for="exampleInputEmail1">Email address</label>
-*                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
-*                       <small id="emailHelp" class="form-text text-muted">No Spam.</small>
-*                   </div>
-*                   <div class="form-group">
-*                       <label for="exampleSelect1">Example select</label>
-*                       <select class="form-control" id="exampleSelect1">
-*                           <option>1</option>
-*                           <option>2</option>
-*                           <option>3</option>
-*                       </select>
-*                   </div>
-*                   <fieldset class="form-group">
-*                       <legend>Radio buttons</legend>
-*                       <div class="form-check">
-*                           <label class="form-check-label">
-*                               <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked=""> Option one
-*                           </label>
-*                       </div>
-*                       <div class="form-check disabled">
-*                           <label class="form-check-label">
-*                               <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled=""> Option two - disabled
-*                           </label>
-*                       </div>
-*                   </fieldset>
-*               </div>
-*               <!-- /.col -->
-*               <div class="col">
-*                   <div class="form-group">
-*                       <label for="exampleInputPassword1">Password</label>
-*                       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
-*                       <small id="emailHelp" class="form-text text-muted"><a href="">Forgot Password?</a> / <a href="">Sign Up</a></small>
-*                   </div>
-*                   <div class="form-group">
-*                       <label for="exampleSelect2">Multiple select</label>
-*                       <select multiple="" class="form-control" id="exampleSelect2">
-*                           <option>1</option>
-*                           <option>2</option>
-*                           <option>3</option>
-*                       </select>
-*                   </div>
-*                   <div class="form-check">
-*                       <label class="form-check-label">
-*                           <input type="checkbox" class="form-check-input"> Checkbox
-*                       </label>
-*                   </div>
-*                   <div class="form-check">
-*                       <label class="form-check-label">
-*                           <input type="checkbox" class="form-check-input" disabled=""> Checkbox - disabled
-*                       </label>
-*                   </div>
-*               </div>
-*               <!-- /.col -->
-*           </div>
-*           <!-- /.row -->
-*           <div class="form-group">
-*               <label for="exampleTextarea">Textarea</label>
-*               <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-*           </div>
-*           <div class="form-group">
-*               <label for="exampleInputFile">File input</label>
-*               <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
-*               <small id="fileHelp" class="form-text text-muted">Help message</small>
-*           </div>
-*           <button type="submit" class="btn btn-primary">Submit</button>
-*       </form>
-*       <h3>Scrollspy</h3>
-*       <div class="bd-example">
-*           <nav id="navbar-example2" class="navbar navbar-light bg-faded">
-*               <a class="navbar-brand" href="#">Scrollspy</a>
-*               <ul class="nav nav-pills">
-*                   <li class="nav-item"><a class="nav-link" href="#description">Description</a></li>
-*                   <li class="nav-item"><a class="nav-link active" href="#use">Use Cases</a></li>
-*               </ul>
-*           </nav>
-*           <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example">
-*               <h4 id="Description">Description</h4>
-*               <p>The ScrollSpy plugin auto updates nav targets as you scroll the area below the navbar. Also works in dropdowns as well.</p>
-*               <h4 id="use">Use Cases</h4>
-*               <ul>
-*                   <li>For long pages of documentation</li>
-*                   <li>One page website with sticky top navbar</li>
-*                   <li>A grid of images for a portfolio that identifies categories as you scroll down the page. For example: print, web, photography, etc.</li>
-*               </ul>
-*           </div>
-*       </div>
-*   </div>
-*   <div class="col-sm-6">
-*       <h3>Breadcrumb</h3>
-*       <nav class="breadcrumb">
-*           <a class="breadcrumb-item" href="#">Home</a>
-*           <a class="breadcrumb-item" href="#">Library</a>
-*           <span class="breadcrumb-item active">Breadcrumb</span>
-*       </nav>
-*       <h3>Carousel</h3>
-*       <div id="carousel-name" class="carousel slide" data-ride="carousel">
-*           <ol class="carousel-indicators">
-*               <li data-target="#carousel-name" data-slide-to="0" class="active"></li>
-*               <li data-target="#carousel-name" data-slide-to="1" class=""></li>
-*               <li data-target="#carousel-name" data-slide-to="2" class=""></li>
-*           </ol>
-*           <div class="carousel-inner" role="listbox">
-*               <div class="carousel-item active">
-*                   <img class="d-block img-fluid" src="https://dummyimage.com/900x340/563d7c/fff&amp;text=+" alt="First slide">
-*                   <div class="carousel-caption d-none d-md-block">
-*                       <h3>Carousel Slider Title</h3>
-*                       <p>Description text to further describe the content of the slide image</p>
-*                       <a href="" class="btn btn-primary">Call to Action</a>
-*                   </div>
-*               </div>
-*               <div class="carousel-item">
-*                   <img class="d-block img-fluid" src="https://dummyimage.com/900x340/563d7c/fff&amp;text=+" alt="Second slide">
-*                   <div class="carousel-caption d-none d-md-block">
-*                       <h3>Carousel Slider Title</h3>
-*                       <p>Description text to further describe the content of the slide image</p>
-*                       <a href="" class="btn btn-primary">Call to Action</a>
-*                   </div>
-*               </div>
-*               <div class="carousel-item">
-*                   <img class="d-block img-fluid" src="https://dummyimage.com/900x340/563d7c/fff&amp;text=+" alt="Third slide">
-*                   <div class="carousel-caption d-none d-md-block">
-*                       <h3>Carousel Slider Title</h3>
-*                       <p>Description text to further describe the content of the slide image</p>
-*                       <a href="" class="btn btn-primary">Call to Action</a>
-*                   </div>
-*               </div>
-*           </div>
-*           <a class="carousel-control-prev" href="#carousel-name" role="button" data-slide="prev">
-*             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-*             <span class="sr-only">Previous</span>
-*           </a>
-*           <a class="carousel-control-next" href="#carousel-name" role="button" data-slide="next">
-*             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-*             <span class="sr-only">Next</span>
-*           </a>
-*       </div>
-*       <h3>Dropdowns</h3>
-*       <div class="btn-toolbar" role="toolbar">
-*           <div class="btn-group">
-*               <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-*                   Large button
-*               </button>
-*               <div class="dropdown-menu">
-*                   <a class="dropdown-item" href="#">Action</a>
-*                   <a class="dropdown-item" href="#">Another action</a>
-*                   <a class="dropdown-item" href="#">Something else here</a>
-*                   <div class="dropdown-divider"></div>
-*                   <a class="dropdown-item" href="#">Separated link</a>
-*               </div>
-*           </div>
-*           <!-- /btn-group -->
-*           <div class="btn-group ml-2">
-*               <button type="button" class="btn btn-lg btn-secondary">Large split button</button>
-*               <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-*                   <span class="sr-only">Toggle Dropdown</span>
-*               </button>
-*               <div class="dropdown-menu">
-*                   <a class="dropdown-item" href="#">Action</a>
-*                   <a class="dropdown-item" href="#">Another action</a>
-*                   <a class="dropdown-item" href="#">Something else here</a>
-*                   <div class="dropdown-divider"></div>
-*                   <a class="dropdown-item" href="#">Separated link</a>
-*               </div>
-*           </div>
-*           <!-- /btn-group -->
-*       </div>
-*       <!-- /btn-toolbar -->
-*       <br>
-*       <br>
-*       <div class="btn-toolbar" role="toolbar">
-*           <div class="btn-group">
-*               <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-*                   Small button
-*               </button>
-*               <div class="dropdown-menu">
-*                   <a class="dropdown-item" href="#">Action</a>
-*                   <a class="dropdown-item" href="#">Another action</a>
-*                   <a class="dropdown-item" href="#">Something else here</a>
-*                   <div class="dropdown-divider"></div>
-*                   <a class="dropdown-item" href="#">Separated link</a>
-*               </div>
-*           </div>
-*           <!-- /btn-group -->
-*           <div class="btn-group ml-2">
-*               <button type="button" class="btn btn-sm btn-secondary">Small split button</button>
-*               <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-*                   <span class="sr-only">Toggle Dropdown</span>
-*               </button>
-*               <div class="dropdown-menu">
-*                   <a class="dropdown-item" href="#">Action</a>
-*                   <a class="dropdown-item" href="#">Another action</a>
-*                   <a class="dropdown-item" href="#">Something else here</a>
-*                   <div class="dropdown-divider"></div>
-*                   <a class="dropdown-item" href="#">Separated link</a>
-*               </div>
-*           </div>
-*           <!-- /btn-group -->
-*       </div>
-*       <!-- /btn-toolbar -->
-*       <h3>Modal</h3>
-*       <!-- Button trigger modal -->
-*       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-*           Launch demo modal
-*       </button>
-*       <!-- Modal -->
-*       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-*           <div class="modal-dialog" role="document">
-*               <div class="modal-content">
-*                   <div class="modal-header">
-*                       <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-*                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-*                           <span aria-hidden="true">├ù</span>
-*                       </button>
-*                   </div>
-*                   <div class="modal-body">
-*                       <h2>Modal body heading</h2>
-*                       <p>Modal body text description</p>
-*                   </div>
-*                   <div class="modal-footer">
-*                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-*                       <button type="button" class="btn btn-primary">Save changes</button>
-*                   </div>
-*               </div>
-*           </div>
-*       </div>
-*       <h3>Navbar</h3>
-*       <nav class="navbar navbar-toggleable-md navbar-dark bg-primary">
-*           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-*               <span class="navbar-toggler-icon"></span>
-*           </button>
-*           <a class="navbar-brand" href="#">Navbar</a>
-*           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-*               <ul class="navbar-nav">
-*                   <li class="nav-item active">
-*                       <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-*                   </li>
-*                   <li class="nav-item">
-*                       <a class="nav-link" href="#">Features</a>
-*                   </li>
-*                   <li class="nav-item">
-*                       <a class="nav-link" href="#">Pricing</a>
-*                   </li>
-*                   <li class="nav-item dropdown">
-*                       <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-*             Dropdown link
-*           </a>
-*                       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-*                           <a class="dropdown-item" href="#">Action</a>
-*                           <a class="dropdown-item" href="#">Another action</a>
-*                           <a class="dropdown-item" href="#">Something else here</a>
-*                       </div>
-*                   </li>
-*               </ul>
-*           </div>
-*       </nav>
-*       <h3>Jumbotron</h3>
-*       <div class="jumbotron">
-*           <h1 class="display-3">Jumbotron</h1>
-*           <p class="lead">A component for calling extra attention to featured content or information.</p>
-*           <hr class="my-4">
-*           <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-*           <p class="lead">
-*               <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-*           </p>
-*       </div>
-*       <h3>List group</h3>
-*       <ul class="list-group">
-*           <li class="list-group-item justify-content-between">
-*               List group item #1
-*               <span class="badge badge-default badge-pill">14</span>
-*           </li>
-*           <li class="list-group-item justify-content-between">
-*               List group item #2
-*               <span class="badge badge-default badge-pill">2</span>
-*           </li>
-*           <li class="list-group-item justify-content-between">
-*               List group item #3
-*               <span class="badge badge-warning badge-pill">1</span>
-*           </li>
-*       </ul>
-*       <h3>Base Nav</h3>
-*       <ul class="nav">
-*           <li class="nav-item">
-*               <a class="nav-link active" href="#">Active</a>
-*           </li>
-*           <li class="nav-item">
-*               <a class="nav-link" href="#">Link</a>
-*           </li>
-*           <li class="nav-item">
-*               <a class="nav-link" href="#">Link</a>
-*           </li>
-*           <li class="nav-item">
-*               <a class="nav-link disabled" href="#">Disabled</a>
-*           </li>
-*       </ul>
-*       <h3>Tabs Nav</h3>
-*       <ul class="nav nav-tabs">
-*           <li class="nav-item">
-*               <a class="nav-link active" href="#tab-1" data-toggle="tab">Active</a>
-*           </li>
-*           <li class="nav-item dropdown">
-*               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-*               <div class="dropdown-menu">
-*                   <a class="dropdown-item" href="#tab-2" data-toggle="tab">Tab 2</a>
-*                   <a class="dropdown-item" href="#tab-3" data-toggle="tab">Tab 3</a>
-*                   <div class="dropdown-divider"></div>
-*                   <a class="dropdown-item" href="#tab-4" data-toggle="tab">Tab 4</a>
-*               </div>
-*           </li>
-*           <li class="nav-item">
-*               <a class="nav-link" href="#">Link</a>
-*           </li>
-*           <li class="nav-item">
-*               <a class="nav-link disabled" href="#">Disabled</a>
-*           </li>
-*       </ul>
-*       <br>
-*       <!-- Tab panes -->
-*       <div class="tab-content">
-*           <div class="tab-pane active" id="tab-1" role="tabpanel">
-*               <h5>Tab #1 Content</h5>
-*               <p>Tab main content.</p>
-*           </div>
-*           <div class="tab-pane" id="tab-2" role="tabpanel">Tab #2 content</div>
-*           <div class="tab-pane" id="tab-3" role="tabpanel">Tab #3 content</div>
-*           <div class="tab-pane" id="tab-4" role="tabpanel">Tab #4 content</div>
-*       </div>
-*       <h3>Pagination</h3>
-*       <nav aria-label="...">
-*           <ul class="pagination">
-*               <li class="page-item disabled">
-*                   <span class="page-link">Previous</span>
-*               </li>
-*               <li class="page-item"><a class="page-link" href="#">1</a></li>
-*               <li class="page-item active">
-*                   <span class="page-link">
-*           2
-*           <span class="sr-only">(current)</span>
-*                   </span>
-*               </li>
-*               <li class="page-item"><a class="page-link" href="#">3</a></li>
-*               <li class="page-item">
-*                   <a class="page-link" href="#">Next</a>
-*               </li>
-*           </ul>
-*       </nav>
-*       <nav aria-label="...">
-*           <ul class="pagination pagination-lg">
-*               <li class="page-item disabled">
-*                   <a class="page-link" href="#" tabindex="-1">Previous</a>
-*               </li>
-*               <li class="page-item"><a class="page-link" href="#">1</a></li>
-*               <li class="page-item"><a class="page-link" href="#">2</a></li>
-*               <li class="page-item"><a class="page-link" href="#">3</a></li>
-*               <li class="page-item">
-*                   <a class="page-link" href="#">Next</a>
-*               </li>
-*           </ul>
-*       </nav>
-*       <h3>Forms</h3>
-*       <form lpformnum="1">
-*           <div class=" ">
-*               <div class="col">
-*                   <div class="form-group">
-*                       <label for="exampleInputEmail1">Email address</label>
-*                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
-*                       <small id="emailHelp" class="form-text text-muted">No Spam.</small>
-*                   </div>
-*                   <div class="form-group">
-*                       <label for="exampleSelect1">Example select</label>
-*                       <select class="form-control" id="exampleSelect1">
-*                           <option>1</option>
-*                           <option>2</option>
-*                           <option>3</option>
-*                       </select>
-*                   </div>
-*                   <fieldset class="form-group">
-*                       <legend>Radio buttons</legend>
-*                       <div class="form-check">
-*                           <label class="form-check-label">
-*                               <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked=""> Option one
-*                           </label>
-*                       </div>
-*                       <div class="form-check disabled">
-*                           <label class="form-check-label">
-*                               <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled=""> Option two - disabled
-*                           </label>
-*                       </div>
-*                   </fieldset>
-*               </div>
-*               <!-- /.col -->
-*               <div class="col">
-*                   <div class="form-group">
-*                       <label for="exampleInputPassword1">Password</label>
-*                       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
-*                       <small id="emailHelp" class="form-text text-muted"><a href="">Forgot Password?</a> / <a href="">Sign Up</a></small>
-*                   </div>
-*                   <div class="form-group">
-*                       <label for="exampleSelect2">Multiple select</label>
-*                       <select multiple="" class="form-control" id="exampleSelect2">
-*                           <option>1</option>
-*                           <option>2</option>
-*                           <option>3</option>
-*                       </select>
-*                   </div>
-*                   <div class="form-check">
-*                       <label class="form-check-label">
-*                           <input type="checkbox" class="form-check-input"> Checkbox
-*                       </label>
-*                   </div>
-*                   <div class="form-check">
-*                       <label class="form-check-label">
-*                           <input type="checkbox" class="form-check-input" disabled=""> Checkbox - disabled
-*                       </label>
-*                   </div>
-*               </div>
-*               <!-- /.col -->
-*           </div>
-*           <!-- /.row -->
-*           <div class="form-group">
-*               <label for="exampleTextarea">Textarea</label>
-*               <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-*           </div>
-*           <div class="form-group">
-*               <label for="exampleInputFile">File input</label>
-*               <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
-*               <small id="fileHelp" class="form-text text-muted">Help message</small>
-*           </div>
-*           <button type="submit" class="btn btn-primary">Submit</button>
-*       </form>
-*       <h3>Scrollspy</h3>
-*       <div class="bd-example">
-*           <nav id="navbar-example2" class="navbar navbar-light bg-faded">
-*               <a class="navbar-brand" href="#">Scrollspy</a>
-*               <ul class="nav nav-pills">
-*                   <li class="nav-item"><a class="nav-link" href="#description">Description</a></li>
-*                   <li class="nav-item"><a class="nav-link active" href="#use">Use Cases</a></li>
-*               </ul>
-*           </nav>
-*           <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example">
-*               <h4 id="Description">Description</h4>
-*               <p>The ScrollSpy plugin auto updates nav targets as you scroll the area below the navbar. Also works in dropdowns as well.</p>
-*               <h4 id="use">Use Cases</h4>
-*               <ul>
-*                   <li>For long pages of documentation</li>
-*                   <li>One page website with sticky top navbar</li>
-*                   <li>A grid of images for a portfolio that identifies categories as you scroll down the page. For example: print, web, photography, etc.</li>
-*               </ul>
-*           </div>
-*       </div>
-*   </div>
+*          <!-- /btn-group -->
+*      </div>
+*      <!-- /btn-toolbar -->
+*      <br>
+*      <br>
+*      <div class="btn-toolbar" role="toolbar">
+*          <div class="btn-group">
+*              <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Small button </button>
+*              <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+*                  <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a></div>
+*          </div>
+*          <!-- /btn-group -->
+*          <div class="btn-group ml-2">
+*              <button type="button" class="btn btn-sm btn-secondary">Small split button</button>
+*              <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+*              <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+*                  <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a></div>
+*          </div>
+*          <!-- /btn-group -->
+*      </div>
+*      <!-- /btn-toolbar -->
+*      <h3>Modal</h3>
+*      <!-- Button trigger modal -->
+*      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Launch demo modal </button>
+*      <!-- Modal -->
+*      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+*          <div class="modal-dialog" role="document">
+*              <div class="modal-content">
+*                  <div class="modal-header">
+*                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+*                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">├ù</span></button>
+*                  </div>
+*                  <div class="modal-body">
+*                      <h2>Modal body heading</h2>
+*                      <p>Modal body text description</p>
+*                  </div>
+*                  <div class="modal-footer">
+*                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+*                      <button type="button" class="btn btn-primary">Save changes</button>
+*                  </div>
+*              </div>
+*          </div>
+*      </div>
+*      <h3>Navbar</h3>
+*      <nav class="navbar navbar-toggleable-md navbar-dark bg-primary">
+*          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand" href="#">Navbar</a>
+*          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+*              <ul class="navbar-nav">
+*                  <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
+*                  <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+*                  <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+*                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown link </a>
+*                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+*                  </li>
+*              </ul>
+*          </div>
+*      </nav>
+*      <h3>Jumbotron</h3>
+*      <div class="jumbotron">
+*          <h1 class="display-3">Jumbotron</h1>
+*          <p class="lead">A component for calling extra attention to featured content or information.</p>
+*          <hr class="my-4">
+*          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+*          <p class="lead"><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+*      </div>
+*      <h3>List group</h3>
+*      <ul class="list-group">
+*          <li class="list-group-item justify-content-between">List group item #1 <span class="badge badge-default badge-pill">14</span></li>
+*          <li class="list-group-item justify-content-between">List group item #2 <span class="badge badge-default badge-pill">2</span></li>
+*          <li class="list-group-item justify-content-between">List group item #3 <span class="badge badge-warning badge-pill">1</span></li>
+*      </ul>
+*      <h3>Base Nav</h3>
+*      <ul class="nav">
+*          <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
+*          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+*          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+*          <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+*      </ul>
+*      <h3>Tabs Nav</h3>
+*      <ul class="nav nav-tabs">
+*          <li class="nav-item"><a class="nav-link active" href="#tab-1" data-toggle="tab">Active</a></li>
+*          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+*              <div class="dropdown-menu"><a class="dropdown-item" href="#tab-2" data-toggle="tab">Tab 2</a><a class="dropdown-item" href="#tab-3" data-toggle="tab">Tab 3</a>
+*                  <div class="dropdown-divider"></div><a class="dropdown-item" href="#tab-4" data-toggle="tab">Tab 4</a></div>
+*          </li>
+*          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+*          <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+*      </ul>
+*      <br>
+*      <!-- Tab panes -->
+*      <div class="tab-content">
+*          <div class="tab-pane active" id="tab-1" role="tabpanel">
+*              <h5>Tab #1 Content</h5>
+*              <p>Tab main content.</p>
+*          </div>
+*          <div class="tab-pane" id="tab-2" role="tabpanel">Tab #2 content</div>
+*          <div class="tab-pane" id="tab-3" role="tabpanel">Tab #3 content</div>
+*          <div class="tab-pane" id="tab-4" role="tabpanel">Tab #4 content</div>
+*      </div>
+*      <h3>Forms</h3>
+*      <form lpformnum="1">
+*          <div class=" ">
+*              <div class="col">
+*                  <div class="form-group">
+*                      <label for="exampleInputEmail1">Email address</label>
+*                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;"><small id="emailHelp" class="form-text text-muted">No Spam.</small></div>
+*                  <div class="form-group">
+*                      <label for="exampleSelect1">Example select</label>
+*                      <select class="form-control" id="exampleSelect1">
+*                          <option>1</option>
+*                          <option>2</option>
+*                          <option>3</option>
+*                      </select>
+*                  </div>
+*                  <fieldset class="form-group">
+*                      <legend>Radio buttons</legend>
+*                      <div class="form-check">
+*                          <label class="form-check-label">
+*                              <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">Option one </label>
+*                      </div>
+*                      <div class="form-check disabled">
+*                          <label class="form-check-label">
+*                              <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled="">Option two - disabled </label>
+*                      </div>
+*                  </fieldset>
+*              </div>
+*              <!-- /.col -->
+*              <div class="col">
+*                  <div class="form-group">
+*                      <label for="exampleInputPassword1">Password</label>
+*                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;"><small id="emailHelp" class="form-text text-muted"><a href="">Forgot Password?</a>/ <a href="">Sign Up</a></small></div>
+*                  <div class="form-group">
+*                      <label for="exampleSelect2">Multiple select</label>
+*                      <select multiple="" class="form-control" id="exampleSelect2">
+*                          <option>1</option>
+*                          <option>2</option>
+*                          <option>3</option>
+*                      </select>
+*                  </div>
+*                  <div class="form-check">
+*                      <label class="form-check-label">
+*                          <input type="checkbox" class="form-check-input">Checkbox </label>
+*                  </div>
+*                  <div class="form-check">
+*                      <label class="form-check-label">
+*                          <input type="checkbox" class="form-check-input" disabled="">Checkbox - disabled </label>
+*                  </div>
+*              </div>
+*              <!-- /.col -->
+*          </div>
+*          <!-- /.row -->
+*          <div class="form-group">
+*              <label for="exampleTextarea">Textarea</label>
+*              <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+*          </div>
+*          <div class="form-group">
+*              <label for="exampleInputFile">File input</label>
+*              <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp"><small id="fileHelp" class="form-text text-muted">Help message</small></div>
+*          <button type="submit" class="btn btn-primary">Submit</button>
+*      </form>
+*  </div>
 *
 **/
-.hidden {
-  display: none;
-  visibility: hidden; }
-
-.error {
-  color: #990000; }
-
-.note span,
-.required,
-.asterisk {
-  font-size: 120%;
-  color: #a00; }
-
 body {
   background: #a4cded;
   /* Old browsers */
@@ -7747,8 +7098,8 @@ body {
   line-height: 1.4rem; }
 
 /**
-* @atom Headers
-* @section Typography > Headers
+* @atom Headline Tags
+* @section Typography
 * @modifiers
 *  .display-[x] Produces large display sized text where x is a number 1 through 4
 *  a.tag  Produces the header tag in the dark teal color of the site with an underline on hover. 
@@ -7763,7 +7114,7 @@ h1 a, h2 a, h3 a {
   color: #0088aa;
   text-decoration: none; }
   h1 a:hover, h2 a:hover, h3 a:hover {
-    color: #0283ab;
+    color: #047294;
     text-decoration: underline; }
 
 h1 {
@@ -7842,7 +7193,7 @@ hr {
   border-width: 1px 0 0; }
 
 .border-dashed {
-  border: 3px #666 dashed !important; }
+  border: 3px #2f2f2f dashed !important; }
 
 fieldset {
   margin: 0;
@@ -7894,21 +7245,106 @@ input {
     top: 0;
     right: 0; }
 
-.wrapper {
-  margin: 0 auto;
-  max-width: 1020px;
-  background: #fff; }
+/**
+* Collapse page content with header.
+*
+* @structure Accordion
+* @markup
+*   <div class="accordion" role="tablist">
+*     <div class="card">
+*       <div class="card-header" role="tab" id="headingOne">
+*         <h5 class="mb-0">
+*           <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+*             Collapsible Group Item #1
+*           </a>
+*         </h5>
+*       </div> 
+*       <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+*         <div class="card-body">
+*           Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+*         </div>
+*       </div>
+*     </div>
+*   </div>
+*
+*/
+/**
+* Breadcrumbs 
+*
+* @molecule Breadcrumb
+* @markup
+*  <nav class="breadcrumb">
+*   <a class="breadcrumb-item" href="#">Home</a>
+*   <a class="breadcrumb-item" href="#">Library</a>
+*   <span class="breadcrumb-item active">Breadcrumb</span>
+*  </nav>
+*/
+.breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  margin-right: .5em;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+  width: 1.28571429em;
+  text-align: center; }
 
-#layout .wrapper {
-  border-bottom: solid 20px #fff;
-  *zoom: 1; }
-  #layout .wrapper:before {
-    content: "";
-    display: table; }
-  #layout .wrapper:after {
-    content: "";
-    display: table;
-    clear: both; }
+/**
+* Navigaion between dynamic or category collected pages when the collection is above the count of 10.
+*
+* @molecule Pagination
+* @section Navigation 
+* @modifiers
+*  .active highlights the page user is on in the collection
+*  .disabled disables the button when it can't be used.
+* @markup
+*  <nav aria-label
+*    <ul class="pagination pagination-sm">
+*      <li class="page-item disabled">
+*        <a class="page-link" href="#" tab-index="-1"><span aria-hidden="true"><i class="fa fa-chevron-left" aria-hidden="true"></i></span><span class="sr-only">Previous</span></a>
+*      </li>
+*      <li class="page-item"><a class="page-link" href="#">1</a></li>
+*      <li class="page-item"><a class="page-link" href="#">2</a></li>
+*      <li class="page-item"><a class="page-link" href="#">3</a></li>
+*      <li class="page-item">
+*        <a class="page-link" href="#"><span aria-hidden="true"><i class="fa fa-chevron-right" aria-hidden="true"></i></span><span class="sr-only">Next</span></a>
+*      </li>
+*    </ul>
+*  </nav>
+*/
+.pagination {
+  padding-top: 0.5em;
+  padding-bottom: 1.5em;
+  overflow: auto;
+  text-align: center; }
+
+/**
+* show the completion or loading progress of a task or system.
+*
+* @molecule Progress Bar
+* @section Feed Back UI
+* @modifiers
+*  progress-bar-striped decorate the bar with a diagonal stripe to the progress bar
+*  progress-bar-animated animate the strips to show action
+*  progress-bar-primary color the bar to blue
+*  progress-bar-secondary color the bar to dark grey
+* @markup
+*  <div class="progress">
+*    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+*  </div><br/>
+*  <div class="progress">
+*    <div class="progress-bar progress-bar-primary progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+*  </div><br/>
+*  <div class="progress">
+*    <div class="progress-bar progress-bar-secondary progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+*  </div>
+*/
+.progress-bar.progress-bar-primary {
+  background-color: #0088aa; }
+.progress-bar.progress-bar-secondary {
+  background-color: #6f6b6f; }
 
 .notice-box {
   color: #9e1823; }
@@ -7917,13 +7353,141 @@ input {
  * buttons are highly flexable and can be decorated by the modifiers to change size and color
  *
  * @atom .btn\.button\button
- * @section Bootstrap
+ * @section Buttons & Links
  * @markup
- *  <button class="btn">.btn are defaultly grey</button>
- *  <button class="button">.button are defaultly blue</button>
+ *  <div class="row">
+ *    <div class="col-sm-4"><a class="btn">"A" tag decorated with .btn</a></div>
+ *    <div class="col-sm-4"><a class="button">"A" tag decorated with .button</a></div>
+ *    <div class="col-sm-4"><button> "BUTTON" tag</button></div>
+ *  </div>
+ *      <h3>Buttons</h3>
+ *      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+ *      <div class="row">
+ *          <div class="col-sm-6">
+ *              <p>
+ *                  <button type="button" class="btn btn-primary btn-sm">Primary</button>
+ *              </p>
+ *              <p>
+ *                  <button type="button" class="btn btn-primary">Primary</button>
+ *              </p>
+ *              <p>
+ *                  <button type="button" class="btn btn-primary btn-lg">Primary</button>
+ *              </p>
+ *              <p>
+ *                  <button type="button" class="btn btn-secondary btn-sm">Secondary</button>
+ *              </p>
+ *              <p>
+ *                  <button type="button" class="btn btn-secondary">Secondary</button>
+ *              </p>
+ *              <p>
+ *                  <button type="button" class="btn btn-secondary btn-lg">Secondary</button>
+ *              </p>
+ *              <p>
+ *                  <button type="button" class="btn btn-link">Link</button>
+ *              </p>
+ *          </div>
+ *          <!-- .col -->
+ *          <div class="col-sm-6">
+ *              <p>
+ *                  <button type="button" class="btn btn-outline-primary btn-sm">Primary Outline</button>
+ *              </p>
+ *              <p>
+ *                  <button type="button" class="btn btn-outline-primary">Primary Outline</button>
+ *              </p>
+ *              <p>
+ *                  <button type="button" class="btn btn-outline-primary btn-lg">Primary Outline</button>
+ *              </p>
+ *              <p>
+ *                  <button type="button" class="btn btn-outline-secondary btn-sm">Secondary Outline</button>
+ *              </p>
+ *              <p>
+ *                  <button type="button" class="btn btn-outline-secondary">Secondary Outline</button>
+ *              </p>
+ *              <p>
+ *                  <button type="button" class="btn btn-outline-secondary btn-lg">Secondary Outline</button>
+ *              </p>
+ *          </div>
+ *          <!-- .col -->
+ *      </div>
+ *      <!-- .row -->
+ *      <h3>Button Group</h3>
+ *      <p></p>
+ *      <div class="btn-group btn-group-sm" role="group" aria-label="Button group with nested dropdown">
+ *          <button type="button" class="btn btn-secondary">1</button>
+ *          <button type="button" class="btn btn-secondary">2</button>
+ *          <div class="btn-group" role="group">
+ *              <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown </button>
+ *              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1"><a class="dropdown-item" href="#">Dropdown link</a><a class="dropdown-item" href="#">Dropdown link</a></div>
+ *          </div>
+ *      </div>
+ *      <p></p>
+ *      <p></p>
+ *      <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+ *          <button type="button" class="btn btn-secondary">1</button>
+ *          <button type="button" class="btn btn-secondary">2</button>
+ *          <div class="btn-group" role="group">
+ *              <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown </button>
+ *              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1"><a class="dropdown-item" href="#">Dropdown link</a><a class="dropdown-item" href="#">Dropdown link</a></div>
+ *          </div>
+ *      </div>
  */
 .btn, input[type="submit"], input[type="button"], button, .button {
-  /* leave empty */ }
+  background: #a1a0a4;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1YWVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjgzYWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #d6d4d4 0%, #a1a0a4 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a1a0a4), color-stop(100%, #a1a0a4));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #d6d4d4 0%, #a1a0a4 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #d6d4d4 0%, #a1a0a4 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #d6d4d4 0%, #a1a0a4 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #d6d4d4 0%, #a1a0a4 100%);
+  /* W3C */ }
+  .btn:visited, input[type="submit"]:visited, input[type="button"]:visited, button:visited, .button:visited {
+    color: #2f2f2f; }
+  .btn:hover, input[type="submit"]:hover, input[type="button"]:hover, button:hover, .button:hover {
+    background: #a1a0a4;
+    /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1YWVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjgzYWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #a1a0a4 0%, #d6d4d4 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a1a0a4), color-stop(100%, #d6d4d4));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #a1a0a4 0%, #d6d4d4 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #a1a0a4 0%, #d6d4d4 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #a1a0a4 0%, #d6d4d4 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #a1a0a4 0%, #d6d4d4 100%);
+    /* W3C */ }
+
+.btn.btn-link, input.btn-link[type="submit"], input.btn-link[type="button"], button.btn-link, .btn-link.button {
+  background: none transparent;
+  border: none transparent 0px; }
+
+.btn.btn-outline-primary, input.btn-outline-primary[type="submit"], input.btn-outline-primary[type="button"], button.btn-outline-primary, .btn-outline-primary.button, .btn.btn-outline-secondary, input.btn-outline-secondary[type="submit"], input.btn-outline-secondary[type="button"], button.btn-outline-secondary, .btn-outline-secondary.button {
+  background: none transparent; }
+
+.btn.btn-outline-primary, input.btn-outline-primary[type="submit"], input.btn-outline-primary[type="button"], button.btn-outline-primary, .btn-outline-primary.button {
+  border-color: #0088aa;
+  color: #0088aa; }
+  .btn.btn-outline-primary:visited, input.btn-outline-primary[type="submit"]:visited, input.btn-outline-primary[type="button"]:visited, button.btn-outline-primary:visited, .btn-outline-primary.button:visited, .btn.btn-outline-primary:hover, input.btn-outline-primary[type="submit"]:hover, input.btn-outline-primary[type="button"]:hover, button.btn-outline-primary:hover, .btn-outline-primary.button:hover {
+    border-color: #047294;
+    color: #047294; }
+
+.btn.btn-outline-secondary, input.btn-outline-secondary[type="submit"], input.btn-outline-secondary[type="button"], button.btn-outline-secondary, .btn-outline-secondary.button {
+  border-color: #6f6b6f;
+  color: #6f6b6f; }
+  .btn.btn-outline-secondary:visited, input.btn-outline-secondary[type="submit"]:visited, input.btn-outline-secondary[type="button"]:visited, button.btn-outline-secondary:visited, .btn-outline-secondary.button:visited, .btn.btn-outline-secondary:hover, input.btn-outline-secondary[type="submit"]:hover, input.btn-outline-secondary[type="button"]:hover, button.btn-outline-secondary:hover, .btn-outline-secondary.button:hover {
+    border-color: #2f2f2f;
+    color: #2f2f2f; }
 
 .btn-secondary {
   background: #a1a0a4;
@@ -7943,7 +7507,7 @@ input {
   background: linear-gradient(to bottom, #d6d4d4 0%, #a1a0a4 100%);
   /* W3C */ }
   .btn-secondary:visited {
-    color: #666; }
+    color: #2f2f2f; }
   .btn-secondary:hover {
     background: #a1a0a4;
     /* Old browsers */
@@ -7963,46 +7527,47 @@ input {
     /* W3C */ }
 
 .btn-primary {
-  background: #0283ab;
+  background: #047294;
   /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1YWVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjgzYWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-linear-gradient(top, #05aee5 0%, #0283ab 100%);
+  background: -moz-linear-gradient(top, #05aee5 0%, #047294 100%);
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #05aee5), color-stop(100%, #0283ab));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #05aee5), color-stop(100%, #047294));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #05aee5 0%, #0283ab 100%);
+  background: -webkit-linear-gradient(top, #05aee5 0%, #047294 100%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #05aee5 0%, #0283ab 100%);
+  background: -o-linear-gradient(top, #05aee5 0%, #047294 100%);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #05aee5 0%, #0283ab 100%);
+  background: -ms-linear-gradient(top, #05aee5 0%, #047294 100%);
   /* IE10+ */
-  background: linear-gradient(to bottom, #05aee5 0%, #0283ab 100%);
+  background: linear-gradient(to bottom, #05aee5 0%, #047294 100%);
   /* W3C */ }
   .btn-primary:visited {
     color: #fafafa; }
   .btn-primary:hover {
-    background: #0283ab;
+    background: #047294;
     /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1YWVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjgzYWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(top, #0283ab 0%, #0088aa 100%);
+    background: -moz-linear-gradient(top, #047294 0%, #0088aa 100%);
     /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0283ab), color-stop(100%, #0088aa));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #047294), color-stop(100%, #0088aa));
     /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #0283ab 0%, #0088aa 100%);
+    background: -webkit-linear-gradient(top, #047294 0%, #0088aa 100%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #0283ab 0%, #0088aa 100%);
+    background: -o-linear-gradient(top, #047294 0%, #0088aa 100%);
     /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #0283ab 0%, #0088aa 100%);
+    background: -ms-linear-gradient(top, #047294 0%, #0088aa 100%);
     /* IE10+ */
-    background: linear-gradient(to bottom, #0283ab 0%, #0088aa 100%);
+    background: linear-gradient(to bottom, #047294 0%, #0088aa 100%);
     /* W3C */ }
 
 /*
 * Links will auto decorate with an icon of the corresponding file type
 *
 * @atom File Links
+* @section Buttons & Links
 * @markup
 *  <a class="link" href="abc.pdf">A link that is a Pdf Document</a><br/>
 *  <a class="link" href="abc.doc">A link that is a Word Document</a><br/>
@@ -8094,11 +7659,11 @@ a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:a
     .nav-user-status .action:hover {
       text-decoration: underline; }
 
-.nav-user-status, #nav-primary, #nav-utility, #page-nav, .nav-sub, .social-buttons, .nav-user-status ul, #nav-primary ul, #nav-utility ul, #page-nav ul, .nav-sub ul, .social-buttons ul, .nav, .nav ul {
+.pagination, .nav-user-status, #nav-primary, #nav-utility, #page-nav, .nav-sub, .social-buttons, .pagination ul, .nav-user-status ul, #nav-primary ul, #nav-utility ul, #page-nav ul, .nav-sub ul, .social-buttons ul, .nav, .nav ul, .navbar-nav, .navbar-nav ul {
   list-style: none;
   margin: 0;
   padding: 0; }
-.nav-user-status li, #nav-primary li, #nav-utility li, #page-nav li, .nav-sub li, .social-buttons li, .nav-user-status ul li, #nav-primary ul li, #nav-utility ul li, #page-nav ul li, .nav-sub ul li, .social-buttons ul li, .nav li, .nav ul li {
+.pagination li, .nav-user-status li, #nav-primary li, #nav-utility li, #page-nav li, .nav-sub li, .social-buttons li, .pagination ul li, .nav-user-status ul li, #nav-primary ul li, #nav-utility ul li, #page-nav ul li, .nav-sub ul li, .social-buttons ul li, .nav li, .nav ul li, .navbar-nav li, .navbar-nav ul li {
   list-style-type: none;
   margin: 0;
   padding: 0; }
@@ -8158,38 +7723,38 @@ a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:a
   #nav-primary .nav-item + .nav-item {
     border: #fafafa dotted 1px; }
   #nav-primary .nav-item.alt.primary {
-    background: #0283ab;
+    background: #047294;
     /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1YWVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjgzYWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(top, #05aee5 0%, #0283ab 100%);
+    background: -moz-linear-gradient(top, #05aee5 0%, #047294 100%);
     /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #05aee5), color-stop(100%, #0283ab));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #05aee5), color-stop(100%, #047294));
     /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #05aee5 0%, #0283ab 100%);
+    background: -webkit-linear-gradient(top, #05aee5 0%, #047294 100%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #05aee5 0%, #0283ab 100%);
+    background: -o-linear-gradient(top, #05aee5 0%, #047294 100%);
     /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #05aee5 0%, #0283ab 100%);
+    background: -ms-linear-gradient(top, #05aee5 0%, #047294 100%);
     /* IE10+ */
-    background: linear-gradient(to bottom, #05aee5 0%, #0283ab 100%);
+    background: linear-gradient(to bottom, #05aee5 0%, #047294 100%);
     /* W3C */ }
     #nav-primary .nav-item.alt.primary:hover {
-      background: #0283ab;
+      background: #047294;
       /* Old browsers */
       /* IE9 SVG, needs conditional override of 'filter' to 'none' */
       background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1YWVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjgzYWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-      background: -moz-linear-gradient(top, #0283ab 0%, #0088aa 100%);
+      background: -moz-linear-gradient(top, #047294 0%, #0088aa 100%);
       /* FF3.6+ */
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0283ab), color-stop(100%, #0088aa));
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #047294), color-stop(100%, #0088aa));
       /* Chrome,Safari4+ */
-      background: -webkit-linear-gradient(top, #0283ab 0%, #0088aa 100%);
+      background: -webkit-linear-gradient(top, #047294 0%, #0088aa 100%);
       /* Chrome10+,Safari5.1+ */
-      background: -o-linear-gradient(top, #0283ab 0%, #0088aa 100%);
+      background: -o-linear-gradient(top, #047294 0%, #0088aa 100%);
       /* Opera 11.10+ */
-      background: -ms-linear-gradient(top, #0283ab 0%, #0088aa 100%);
+      background: -ms-linear-gradient(top, #047294 0%, #0088aa 100%);
       /* IE10+ */
-      background: linear-gradient(to bottom, #0283ab 0%, #0088aa 100%);
+      background: linear-gradient(to bottom, #047294 0%, #0088aa 100%);
       /* W3C */ }
   #nav-primary .nav-item.alt.secondary {
     background: #a1a0a4;
@@ -8286,7 +7851,7 @@ a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:a
   font-size: 18px; }
   #nav-utility .nav-link {
     padding-right: 1em;
-    color: #666; }
+    color: #2f2f2f; }
   #nav-utility .nav-item {
     text-align: center; }
   #nav-utility .nav-item + .nav-item {
@@ -8321,217 +7886,6 @@ a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:a
   /*transition:max-height 1s ease-out;
 -webkit-transition:max-height 1s ease-out;
 -moz-transition:max-height 1s ease-out;*/ }
-
-/**
- * Toggle Button for the menu on mobile
- *
- * @atom Mobile Toggle
- * @section Mobile
- * @markup
- *   <div class="mobile-menu-toggle"><span class="text">Menu</span> <i class="fa fa-bars"></i></div>
- */
-.mobile-menu-toggle {
-  text-transform: uppercase;
-  cursor: pointer;
-  text-align: right;
-  display: block;
-  position: relative; }
-  .mobile-menu-toggle .text {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 1.25rem;
-    color: #0088aa;
-    display: inline-block;
-    vertical-align: top;
-    padding: .5rem .25rem; }
-  .mobile-menu-toggle i.fa {
-    color: #a1a0a4;
-    font-size: 2.125rem;
-    margin: .125rem; }
-
-/**
- * Container for the Menu Toggle for the Mobile Nav.
- * ~Inline Style should be removed. Currently used so it will show on all screen dimensions~
- *
- * @molecule Mobile Menu Toggle
- * @section Nav > Mobile
- * @markup
- *  <div class="mobile-menu-toggle-container" style="display:block;">
- *      <div class="row no-gutters">
- *          <div class="col-sm-8">
- *              @{include:.user-status-container}
- *          </div>
- *          <div class="col-sm-4">
- *               @{include:.mobile-menu-toggle}
- *          </div>
- *      </div>
- *  </div>
- */
-.mobile-menu-toggle-container {
-  position: relative;
-  display: none;
-  padding: .25rem .75rem;
-  height: 2.75rem;
-  width: 100%;
-  /* displays shadow above next sibling tag */
-  background: #ffffff;
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlY2VhZWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-linear-gradient(top, #ffffff 0%, #eceaea 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #eceaea));
-  background: -webkit-linear-gradient(top, #ffffff 0%, #eceaea 100%);
-  background: -o-linear-gradient(top, #ffffff 0%, #eceaea 100%);
-  background: -ms-linear-gradient(top, #ffffff 0%, #eceaea 100%);
-  background: linear-gradient(to bottom, #ffffff 0%, #eceaea 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr=' $soft-grey', GradientType=0);
-  box-shadow: 0px 3px 3px #999;
-  -webkit-box-shadow: 0px 3px 3px #999;
-  -moz-box-shadow: 0px 3px 3px #999; }
-  .mobile-menu-toggle-container .user-status-container {
-    height: 2.25rem;
-    padding: .5rem 0; }
-    .mobile-menu-toggle-container .user-status-container .user {
-      display: none; }
-    .mobile-menu-toggle-container .user-status-container .nav-user-status .acount {
-      display: none; }
-    .mobile-menu-toggle-container .user-status-container .user + .nav-user-status {
-      margin-top: 0rem; }
-  @media only screen and (min-width: 576px) {
-    .mobile-menu-toggle-container {
-      display: block; } }
-
-/* Header */
-#site-logo img {
-  max-width: 100%; }
-
-#header .nav-utility {
-  display: none; }
-
-#site-search {
-  padding: 0.5em 3%;
-  background: #a1a0a4;
-  border-bottom: dotted 1px #fff; }
-
-.initiative #site-search {
-  background: #a1a0a4; }
-
-#site-search label {
-  position: absolute;
-  left: -9999px; }
-#site-search input#keyword {
-  width: 70%; }
-
-/* Secondary Nav Level */
-/* Mobile hide/show disabled per ML 
-#nav-primary ul ul {
-  max-height: 0;
-  overflow: hidden;
-  border:0;
-  transition:max-height 1s ease-out;
-  -webkit-transition:max-height 1s ease-out;
-  -moz-transition:max-height 1s ease-out;
-}
-#nav-primary ul li.active.parent ul {
-  max-height: 500px;
-} */
-/* Turned off per ML 
-#nav-primary li.active.parent:before {
-    right: 2%;
-    top: -10px;
-    transform: rotate(45deg);
-}
-#nav-primary li.parent:before {
-    color: #FFFFFF;
-    content: "+";
-    cursor: pointer;
-    display: block;
-    font-size: 2.5em;
-    height: 44px;
-    line-height: 44px;
-    position: absolute;
-    right: 3%;
-    text-align: right;
-    top: 0;
-    width: 44px;
-}
-
-
-
-/* Content */
-.video-wrapper {
-  margin-bottom: 1em;
-  position: relative;
-  padding-bottom: 56.25%;
-  /* 16:9 */
-  padding-top: 25px;
-  height: 0; }
-  .video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important; }
-
-#layout.layout-listing #colone h1 {
-  margin-bottom: 0.5em;
-  padding-right: 0;
-  padding-left: 0; }
-
-ul.generic-list {
-  /*.layout-listing #colone ul.generic-list,*/
-  margin-top: 1em; }
-  ul.generic-list li {
-    /*.layout-listing #colone ul.generic-list li, */
-    margin: 0 0 1em !important;
-    overflow: auto;
-    list-style-type: none !important; }
-    ul.generic-list li img {
-      /*.layout-listing ul.generic-list li img, */
-      margin: 0 14px 6px 0;
-      float: left; }
-
-.pagination {
-  padding-top: 0.5em;
-  padding-bottom: 1.5em;
-  overflow: auto;
-  text-align: center; }
-
-.layout-listing #colone .pagination ul {
-  display: inline; }
-.layout-listing #colone .pagination li {
-  display: inline;
-  margin-left: 0px; }
-.layout-listing #colone .pagination a {
-  margin-right: 9px;
-  padding: 8px 14px;
-  display: inline-block;
-  color: #fff;
-  background: #0283ab;
-  /* Old browsers */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1YWVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjgzYWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-linear-gradient(top, #05aee5 0%, #0283ab 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #05aee5), color-stop(100%, #0283ab));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #05aee5 0%, #0283ab 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #05aee5 0%, #0283ab 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #05aee5 0%, #0283ab 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, #05aee5 0%, #0283ab 100%);
-  /* W3C */
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px; }
-.layout-listing #colone .pagination .current a {
-  color: #08a;
-  cursor: default;
-  background: #e7e7e7; }
-
-.pagination a,
-.pagination span {
-  cursor: pointer; }
 
 /* Internal Nav */
 #page-nav h2 {
@@ -8608,6 +7962,432 @@ ul.generic-list {
     -moz-transform: rotate(90deg);
     -webkit-transform: rotate(90deg); }
 
+/**
+ * Toggle Button for the menu on mobile
+ *
+ * @atom Mobile Toggle
+ * @section Mobile
+ * @markup
+ *   <div class="mobile-menu-toggle"><span class="text">Menu</span> <i class="fa fa-bars"></i></div>
+ */
+.mobile-menu-toggle {
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: right;
+  display: block;
+  position: relative; }
+  .mobile-menu-toggle .text {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #0088aa;
+    display: inline-block;
+    vertical-align: top;
+    padding: .5rem .25rem; }
+  .mobile-menu-toggle i.fa {
+    color: #a1a0a4;
+    font-size: 2.125rem;
+    margin: .125rem; }
+
+.video-wrapper {
+  margin-bottom: 1em;
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0; }
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important; }
+
+/**
+* listing of blocks of information to be semanitic are wrapped in a ul.nobullet 
+*
+* @molecule List with No Bullets
+* @section Typography
+* @markup
+*  <div class="SG-button">
+*    <i class="SG-ico SG-ico--question"></i>
+*  </div>
+*  <div class="SG-button SG-button--ico">
+*    <i class="SG-ico SG-ico--question"></i>
+*    With text
+*  </div>
+*/
+.nobullets {
+  /*.layout-listing #colone ul.generic-list,*/
+  margin-top: 1em; }
+  .nobullets li {
+    /*.layout-listing #colone ul.generic-list li, */
+    margin: 0 0 1em !important;
+    overflow: auto;
+    list-style-type: none !important; }
+    .nobullets li img {
+      /*.layout-listing ul.generic-list li img, */
+      margin: 0 14px 6px 0;
+      float: left; }
+
+/* Footer */
+/**
+ * Address blocks are well formated microformat to optimum usage in browsers.
+ * @molecule address.vcard
+ *
+ * @markup
+ *  <address class="vcard">
+ *     <!-- http://microformats.org/wiki/hcard -->
+ *     <a class="fn org url" href="http://www.acc.org" target="_blank">
+ *         <img alt="" src="/Assets/images/acc-logo-footer.png" id="msFooter_imgFooter">
+ *     </a>
+ *     <h2><a class="fn org ur
+ *         l" href="http://www.acc.org" target="_blank">American College of Cardiology</a></h2>
+ *     <span class="adr">
+ *         <span class="street-address">2400 N St. NW</span>
+ *         <span class="locality">Washington</span>,
+ *          <span class="country-name"><abbr title="District of Colombia">DC</abbr></span> 
+ *          <span class="postal-code hidden"></span>
+ *     </span>
+ *     <!-- end .adr -->
+ *     <a href="mailto:" class="email hidden"></a>
+ *     <abbr tel="+18002574737" class="tel">(800) 257-4737</abbr>
+ *     <a href="mailto:cvquality@acc.org">cvquality@acc.org</a>
+ *  </address>
+*/
+address.vcard {
+  padding: 0 1em;
+  max-width: 16em; }
+  address.vcard, address.vcard h2 {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #2f2f2f; }
+  address.vcard a {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%; }
+  address.vcard abbr[title] {
+    text-decoration: none;
+    border: 0; }
+  address.vcard .adr {
+    display: block; }
+    address.vcard .adr span {
+      display: inline-block; }
+    address.vcard .adr span.street-address {
+      width: 100%; }
+  address.vcard a img {
+    margin: 0 .75em .25em;
+    display: block; }
+
+/**
+* Social engagement buttons.
+* 
+*	
+* @molecule Social Buttons
+* @section Nav 
+* @markup 
+*  <section id="social" class="social-buttons">
+*    <h2>Stay Connected</h2>
+*    <ul class="nav nav-social-button">
+*    <li class="nav-item twitter"><a id="msFooter_lnkTwitter" class="nav-link" href="https://twitter.com/accintouch" target="_blank"><i class="fa fa-twitter"></i></a></li>
+*    <li class="nav-item facebook"><a id="msFooter_lnkFacebook" class="nav-link" href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank"><i class="fa fa-facebook"></i></a></li>
+*    <li class="nav-item linkedin"><a id="msFooter_lnkLinkedIn" class="nav-link" href="http://www.linkedin.com/groups/American-College-Cardiology-732607?trk=myg_ugrp_ovr" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+*    <li class="nav-item youtube"><a id="msFooter_lnkYoutube" class="nav-link" href="http://www.youtube.com/user/ACCinTouch" target="_blank"><i class="fa fa-youtube"></i></a></li>
+*    </ul>
+*  </section>
+* 
+**/
+.social-buttons {
+  padding: 0 1em;
+  clear: left; }
+  @media only screen and (min-width: 768px) {
+    .social-buttons {
+      margin-top: 2rem; } }
+  .social-buttons h2 {
+    margin-bottom: 0.75em;
+    padding: 0;
+    font-size: 0.875em;
+    /* 14px */
+    text-transform: uppercase;
+    color: #fafafa; }
+  .social-buttons i {
+    color: #fafafa;
+    font-size: 20px;
+    margin: 10px;
+    text-align: center; }
+  .social-buttons .nav-social-button .nav-item {
+    margin: 0 8px 0;
+    padding: 0;
+    float: left; }
+    .social-buttons .nav-social-button .nav-item.twitter a {
+      background-color: #78cdf0; }
+    .social-buttons .nav-social-button .nav-item.facebook a {
+      background-color: #537bbd; }
+    .social-buttons .nav-social-button .nav-item.youtube a {
+      background-color: #e9654b; }
+    .social-buttons .nav-social-button .nav-item.linkedin a {
+      background-color: #2085c7; }
+    .social-buttons .nav-social-button .nav-item:first-child {
+      margin-left: 0; }
+    .social-buttons .nav-social-button .nav-item:last-child {
+      margin-right: 0; }
+  .social-buttons .nav-social-button .nav-link {
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    display: block;
+    text-align: center; }
+
+/**
+* Navigation in the footer
+*
+* @molecule footer-nav
+* @section Navigation
+* @markup
+*  <ul id="footer-sitemap">
+*      <li class="nav-footer">
+*          <h2>Quality Improvement for Institutions:</h2>
+*          <ul class="nav flex-column">
+*              <li class="nav-item"><a class="nav-link" id="msFooter_rptQii_hypLnk_0" href="/home" target="_top">Home</a></li>
+*              <li class="nav-item"><a class="nav-link" id="msFooter_rptQii_hypLnk_1" href="/About-QII" target="_top">About</a></li>
+*              <li class="nav-item"><a class="nav-link" id="msFooter_rptQii_hypLnk_2" href="/Get-Started" target="_top">Get Started</a></li>
+*              <li class="nav-item"><a class="nav-link" id="msFooter_rptQii_hypLnk_3" href="/News" target="_top">News</a></li>
+*          </ul>
+*          <ul class="nav flex-column">
+*              <li class="nav-item"><a class="nav-link" href="http://www.acc.org/footer-pages/terms-and-conditions">Terms &amp; Conditions</a></li>
+*              <li class="nav-item"><a class="nav-link" href="http://www.acc.org/footer-pages/privacy-policy">Privacy Policy</a></li>
+*              <li class="nav-item"><a class="nav-link" href="http://www.acc.org/footer-pages/registered-user-agreement">Registered User Agreement</a></li>
+*          </ul>
+*      </li>
+*      <li class="nav-footer">
+*          <h2>Offerings:</h2>
+*          <ul class="nav flex-column">
+*              <li class="nav-item"><a class="nav-link" id="msFooter_rptOfferings_hypLnk_0" href="/NCDR-Home" target="_top">NCDR</a></li>
+*              <li class="nav-item"><a class="nav-link" id="msFooter_rptOfferings_hypLnk_1" href="/Initiatives" target="_top">Initiatives</a></li>
+*              <li class="nav-item"><a class="nav-link" id="msFooter_rptOfferings_hypLnk_2" href="/qi-communications-kit" target="_top">QI  Participation Kit</a></li>
+*              <li class="nav-item"><a class="nav-link" id="msFooter_rptOfferings_hypLnk_3" href="/Clinical-Toolkits" target="_top">Clinical Toolkits</a></li>
+*          </ul>
+*      </li>
+*      <li class="nav-footer">
+*          <h2>ACC Sites:</h2>
+*          <ul class="nav flex-column">
+*              <li class="nav-item"><a class="nav-link" id="msFooter_rptAccSites_hypLnk_1" href="http://www.acc.org" target="_blank">ACC</a></li>
+*              <li class="nav-item"><a class="nav-link" id="msFooter_rptAccSites_hypLnk_2" href="http://www.acc.org/footer-pages/media-center" target="_blank">ACC Media</a></li>
+*              <li class="nav-item"><a class="nav-link" id="msFooter_rptAccSites_hypLnk_3" href="https://www.cardiosmart.org/" target="_blank">CardioSmart</a></li>
+*          </ul>
+*      </li>
+*  </ul>
+*/
+@media only screen and (min-width: 1024px) {
+  #footer-sitemap {
+    border-right: solid 1px #ddd;
+    border-left: solid 1px #ddd; } }
+
+.nav-footer {
+  maring: 0;
+  float: left;
+  list-style-type: none; }
+  .nav-footer h2 {
+    /* allows for vertical align bottomw without extra DOM*/
+    display: table-cell;
+    height: 3rem;
+    vertical-align: bottom;
+    font-size: 14px;
+    line-height: 1.4em;
+    color: #2f2f2f; }
+  .nav-footer .nav-link {
+    padding: .25em 0;
+    font-size: 13px;
+    color: #2f2f2f;
+    text-decoration: none;
+    text-transform: uppercase; }
+    #footer .nav-footer .nav-link {
+      color: #fafafa; }
+    .nav-footer .nav-link:hover {
+      text-decoration: underline; }
+
+/**
+ * Footer of CV Qaulity combines, footer-nav, socail-nav, and logos to make a renforcing page structure.
+ * @structure Footer Nav
+ *
+ * @markup
+ *  <footer id="footer" role="contentinfo">
+ *     <div class="wrapper container-fluid">
+ *         <div class="row">
+ *             <div class="col-md-3">
+ *                 @{include:address.vcard}
+ *             </div>
+ *             <div class="col-md-5">
+ *             <div class="row">
+ *             @{include:#footer-sitemap}
+ *             </div>
+ *             </div>
+ *             <div class="col-md-4">
+ *                 @{include:.social-buttons}
+ *             </div>
+ *         </div>
+ *     </div>
+ *     <!-- wrapper -->
+ *  </footer>
+ *
+ */
+#footer {
+  clear: both;
+  padding: 10px 0 30px;
+  position: relative;
+  overflow: visible;
+  color: #2f2f2f;
+  background: #a1a0a4; }
+  #footer .wrapper {
+    background: transparent; }
+  @media only screen and (min-width: 768px) {
+    #footer {
+      padding-top: 12px;
+      padding-bottom: 30px; } }
+
+/* Header */
+#site-logo img {
+  max-width: 100%; }
+
+#header .nav-utility {
+  display: none; }
+
+#site-search {
+  padding: 0.5em 3%;
+  background: #a1a0a4;
+  border-bottom: dotted 1px #fff; }
+
+.initiative #site-search {
+  background: #a1a0a4; }
+
+#site-search label {
+  position: absolute;
+  left: -9999px; }
+#site-search input#keyword {
+  width: 70%; }
+
+/**
+ * Container for the Menu Toggle for the Mobile Nav. ~Inline Style should be removed. Currently used so it will show on all screen dimensions~
+ *
+ * @structure Mobile Menu Toggle
+ * @section Nav > Mobile
+ * @markup
+ *  <div class="mobile-menu-toggle-container" style="display:block;">
+ *      <div class="row no-gutters">
+ *          <div class="col-sm-8">
+ *              @{include:.user-status-container}
+ *          </div>
+ *          <div class="col-sm-4">
+ *               @{include:.mobile-menu-toggle}
+ *          </div>
+ *      </div>
+ *  </div>
+ */
+.mobile-menu-toggle-container {
+  position: relative;
+  display: none;
+  padding: .25rem .75rem;
+  height: 2.75rem;
+  width: 100%;
+  /* displays shadow above next sibling tag */
+  background: #ffffff;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlY2VhZWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #ffffff 0%, #eceaea 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #eceaea));
+  background: -webkit-linear-gradient(top, #ffffff 0%, #eceaea 100%);
+  background: -o-linear-gradient(top, #ffffff 0%, #eceaea 100%);
+  background: -ms-linear-gradient(top, #ffffff 0%, #eceaea 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #eceaea 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr=' $soft-grey', GradientType=0);
+  box-shadow: 0px 3px 3px #999;
+  -webkit-box-shadow: 0px 3px 3px #999;
+  -moz-box-shadow: 0px 3px 3px #999; }
+  .mobile-menu-toggle-container .user-status-container {
+    height: 2.25rem;
+    padding: .5rem 0; }
+    .mobile-menu-toggle-container .user-status-container .user {
+      display: none; }
+    .mobile-menu-toggle-container .user-status-container .nav-user-status .acount {
+      display: none; }
+    .mobile-menu-toggle-container .user-status-container .user + .nav-user-status {
+      margin-top: 0rem; }
+  @media only screen and (min-width: 576px) {
+    .mobile-menu-toggle-container {
+      display: block; } }
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important; }
+
+.error {
+  color: #990000; }
+
+.note span,
+.required,
+.asterisk {
+  font-size: 120%;
+  color: #a00; }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1020px;
+  background: #fff; }
+
+#layout .wrapper {
+  border-bottom: solid 20px #fff;
+  *zoom: 1; }
+  #layout .wrapper:before {
+    content: "";
+    display: table; }
+  #layout .wrapper:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* Secondary Nav Level */
+/* Mobile hide/show disabled per ML 
+#nav-primary ul ul {
+  max-height: 0;
+  overflow: hidden;
+  border:0;
+  transition:max-height 1s ease-out;
+  -webkit-transition:max-height 1s ease-out;
+  -moz-transition:max-height 1s ease-out;
+}
+#nav-primary ul li.active.parent ul {
+  max-height: 500px;
+} */
+/* Turned off per ML 
+#nav-primary li.active.parent:before {
+    right: 2%;
+    top: -10px;
+    transform: rotate(45deg);
+}
+#nav-primary li.parent:before {
+    color: #FFFFFF;
+    content: "+";
+    cursor: pointer;
+    display: block;
+    font-size: 2.5em;
+    height: 44px;
+    line-height: 44px;
+    position: absolute;
+    right: 3%;
+    text-align: right;
+    top: 0;
+    width: 44px;
+}
+
+
+
+/* Content */
+#layout.layout-listing #colone h1 {
+  margin-bottom: 0.5em;
+  padding-right: 0;
+  padding-left: 0; }
+
 /* #page-nav li.current > ul {
   max-height:400px;
 } */
@@ -8645,240 +8425,6 @@ ul.generic-list {
 #Adslot-3 {
   margin-bottom: 1em !important; }
 
-/* Footer */
-/**
- * address blocks are w well formated microformat to optimum usage in browswers.
- * @molecule address
- *
- * @markup
-*    <address class="vcard">
-*       <!-- http://microformats.org/wiki/hcard -->
-*       <a class="fn org url" href="http://www.acc.org" target="_blank">
-*           <img alt="" src="/Assets/images/acc-logo-footer.png" id="msFooter_imgFooter">
-*       </a>
-*       <h2><a class="fn org ur
-*           l" href="http://www.acc.org" target="_blank">American College of Cardiology</a></h2>
-*       <span class="adr">
-*           <span class="street-address">2400 N St. NW</span>
-*            <br>
-*           <span class="locality">Washington</span>, <span class="country-name"><abbr title="District of Colombia">DC</abbr></span> <span class="postal-code"></span>
-*       </span>
-*       <!-- end .adr -->
-*       <br>
-*       <a href="mailto:" class="email"></a>
-*       <abbr tel="+18002574737" class="tel">(800) 257-4737</abbr>
-*       <a href="mailto:cvquality@acc.org">cvquality@acc.org</a>
-*   </address>
-*/
-.vcard {
-  margin-top: 1em;
-  padding: 12px 3% 0;
-  clear: both; }
-  .vcard h2 {
-    font-weight: normal;
-    font-size: 1em;
-    font-family: 'Lato', sans-serif; }
-  .vcard img {
-    display: none; }
-  .vcard a {
-    color: #000;
-    text-decoration: none; }
-  .vcard abbr[title] {
-    text-decoration: none;
-    border: 0; }
-
-/**
-* Social engagement buttons.
-* 
-*	
-* @molecule Social Buttons
-* @section Nav 
-* @markup 
- <section id="social" class="social-buttons">
-  <h1>Stay Connected</h1>
-	<ul class="nav">
-	<li class="nav-item twitter"><a id="msFooter_lnkTwitter" class="nav-link" href="https://twitter.com/accintouch" target="_blank"><i class="fa fa-twitter"></i></a></li>
-	<li class="nav-item facebook"><a id="msFooter_lnkFacebook" class="nav-link" href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank"><i class="fa fa-facebook"></i></a></li>
-	<li class="nav-item linkedin"><a id="msFooter_lnkLinkedIn" class="nav-link" href="http://www.linkedin.com/groups/American-College-Cardiology-732607?trk=myg_ugrp_ovr" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-	<li class="nav-item youtube"><a id="msFooter_lnkYoutube" class="nav-link" href="http://www.youtube.com/user/ACCinTouch" target="_blank"><i class="fa fa-youtube"></i></a></li>
-	</ul>
-  </section>
-* 
-**/
-.social-buttons {
-  margin-top: 1em;
-  padding: 2.5em 3% 1em;
-  clear: left; }
-  .social-buttons h1 {
-    margin-bottom: 0.75em;
-    padding: 0;
-    font-size: 0.875em;
-    /* 14px */
-    text-transform: uppercase;
-    color: #fafafa; }
-  .social-buttons i {
-    color: #fafafa;
-    font-size: 20px;
-    margin: 10px;
-    text-align: center; }
-  .social-buttons .nav-item {
-    margin: 0 8px 0 0;
-    padding: 0;
-    float: left;
-    margin-left: 10px; }
-    .social-buttons .nav-item.twitter a {
-      background-color: #78cdf0; }
-    .social-buttons .nav-item.facebook a {
-      background-color: #537bbd; }
-    .social-buttons .nav-item.youtube a {
-      background-color: #e9654b; }
-    .social-buttons .nav-item.linkedin a {
-      background-color: #2085c7; }
-    .social-buttons .nav-item:last-child {
-      margin-left: 0; }
-  .social-buttons .nav-link {
-    height: 40px;
-    width: 40px;
-    padding: 0;
-    display: block;
-    text-align: center; }
-
-/**
- * Footer of CV Qaulity combines, footer-nav, socail-nav, and logos to make a renforcing page structure.
- * @structure Footer Nav
- *
- * @markup
- *  <footer id="site-footer" role="contentinfo">
- *      <div class="wrapper">
- *          <ul id="footer-nav">
- *              <li>
- *                  <h2>Quality Improvement for Institutions:</h2>
- *                  <ul>
- *                      <li><a id="msFooter_rptQii_hypLnk_0" href="/home" target="_top">Home</a></li>
- *                      <li><a id="msFooter_rptQii_hypLnk_1" href="/About-QII" target="_top">About</a></li>
- *                      <li><a id="msFooter_rptQii_hypLnk_2" href="/Get-Started" target="_top">Get Started</a></li>
- *                      <li><a id="msFooter_rptQii_hypLnk_3" href="/News" target="_top">News</a></li>
- *                  </ul>
- *                  <ul>
- *                      <li><a href="http://www.acc.org/footer-pages/terms-and-conditions">Terms &amp; Conditions</a></li>
- *                      <li><a href="http://www.acc.org/footer-pages/privacy-policy">Privacy Policy</a></li>
- *                      <li><a href="http://www.acc.org/footer-pages/registered-user-agreement">Registered User Agreement</a></li>
- *                  </ul>
- *              </li>
- *              <li>
- *                  <h2>Offerings:</h2>
- *                  <ul>
- *                      <li><a id="msFooter_rptOfferings_hypLnk_0" href="/NCDR-Home" target="_top">NCDR</a></li>
- *                      <li>
- *                          <a id="msFooter_rptOfferings_hypLnk_1" href="/Initiatives" target="_top">Initiatives</a>
- *                      </li>
- *                      <li><a id="msFooter_rptOfferings_hypLnk_2" href="/qi-communications-kit" target="_top">QI  Participation Kit</a></li>
- *                      <li><a id="msFooter_rptOfferings_hypLnk_3" href="/Clinical-Toolkits" target="_top">Clinical Toolkits</a></li>
- *                  </ul>
- *              </li>
- *              <li>
- *                  <h2>ACC Sites:</h2>
- *                  <ul>
- *                      <li><a id="msFooter_rptAccSites_hypLnk_1" href="http://www.acc.org" target="_blank">ACC</a></li>
- *                      <li><a id="msFooter_rptAccSites_hypLnk_2" href="http://www.acc.org/footer-pages/media-center" target="_blank">ACC Media</a></li>
- *                      <li><a id="msFooter_rptAccSites_hypLnk_3" href="https://www.cardiosmart.org/" target="_blank">CardioSmart</a></li>
- *                  </ul>
- *              </li>
- *          </ul>
- *          @{include:.social-buttons}
- *          @{include: address}
- *         
- *      </div>
- *      <!-- wrapper -->
- *  </footer>
- */
-#site-footer {
-  clear: both; }
-  #site-footer .wrapper {
-    padding: 10px 0 40px;
-    position: relative;
-    overflow: auto;
-    color: #000;
-    background: #a1a0a4; }
-
-#footer-nav {
-  padding: 0 3%; }
-  @media only screen and (min-width: 768px) {
-    #footer-nav {
-      margin-right: 3%;
-      margin-left: 245px;
-      float: left;
-      border-left: solid 1px #ddd; } }
-  @media only screen and (min-width: 1024px) {
-    #footer-nav {
-      margin-left: 172px;
-      margin-right: 227px;
-      border-right: solid 1px #ddd; } }
-  #footer-nav li {
-    margin-right: 20px;
-    max-width: 254px;
-    float: left;
-    list-style-type: none; }
-    @media only screen and (min-width: 1024px) {
-      #footer-nav li li {
-        margin-right: 3%;
-        width: 47%;
-        max-width: auto;
-        float: left; }
-        #footer-nav li li li {
-          float: none;
-          width: auto; } }
-    #footer-nav li:last-child {
-      margin-right: 0; }
-  #footer-nav h2 {
-    /* allows for vertical align bottomw without extra DOM*/
-    display: table-cell;
-    height: 3em;
-    vertical-align: bottom;
-    font-size: 0.875em;
-    /* 14px; */
-    line-height: 1.4em; }
-  #footer-nav a {
-    font-size: 0.875em;
-    /* 14px */
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase; }
-  #footer-nav li li {
-    margin: 0;
-    float: none; }
-    #footer-nav li li li a {
-      padding-left: 16px;
-      color: #000;
-      text-transform: none; }
-
-@media only screen and (min-width: 768px) {
-  /* Footer */
-  #site-footer .wrapper {
-    padding-bottom: 10px;
-    border-top: solid 12px #a1a0a4;
-    border-bottom: solid 20px #a1a0a4; }
-
-  #site-footer address {
-    width: 200px;
-    margin-top: 0;
-    padding: 0;
-    position: absolute;
-    top: 100px;
-    left: 3%; }
-    #site-footer address h2 {
-      display: none; }
-    #site-footer address img {
-      margin: 0 10px 1em 0;
-      float: left;
-      display: block; }
-  #site-footer h1 {
-    padding: 0; } }
-@media only screen and (min-width: 1024px) {
-  ul#footer-nav {
-    margin-left: 172px;
-    margin-right: 227px;
-    border-right: solid 1px #ddd; } }
 /* Main */
 .layout-subpage h1 {
   margin-bottom: 0.25em;
@@ -9224,22 +8770,6 @@ progress {
   margin-left: 60px; }
 
 /* for ie9 and below per http://css-tricks.com/html5-progress-element/ */
-.progress-bar {
-  background-color: #28D22B;
-  border-radius: 2px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25) inset;
-  width: 250px;
-  height: 20px !important;
-  position: relative;
-  display: block;
-  border: solid 1px #aaa; }
-  .progress-bar > span {
-    /* background-color: blue; */
-    border-radius: 2px;
-    display: block;
-    text-indent: -9999px;
-    display: none; }
-
 .waiting-icon {
   visibility: hidden;
   display: inline; }
@@ -9845,7 +9375,7 @@ main .forgot-pswd #fp-email {
 
 /* Customer Service Toggle */
 .cs-box h2:before {
-  background: url("../images/2013-icn-customer-service.png") no-repeat scroll center -4px transparent;
+  background: url("../images/2013-icn-customer-service.png") no-repeat scroll center -4px rgba(0, 0, 0, 0);
   content: " , ";
   display: block;
   height: 40px;
@@ -10287,9 +9817,6 @@ table.dataTable thead .sorting_desc {
       display: inline-block; }
 
   /* Content */
-  .breadcrumbs {
-    display: block; }
-
   #layout .wrapper {
     position: relative;
     overflow: auto; }
@@ -10409,186 +9936,8 @@ main fieldset li.zip {
 main li.zip label {
   width:120px;
 } */
-  .share-your-story-form #content_0_lblSupportingDocumentation {
-    /* share story form */
-    height: 100px; }
-  .share-your-story-form input + input {
-    margin-top: 0.675em; }
-  .share-your-story-form ::-webkit-input-placeholder,
-  .share-your-story-form :-moz-placeholder,
-  .share-your-story-form ::-moz-placeholder,
-  .share-your-story-form :-ms-input-placeholder {
-    color: #666; }
-
-  /*ACCQII-337*/
-  /*ACCQII-337*/
-  /*ACCQII-337*/
-  /*ACCQII-337*/
-  #titleContent p {
-    padding-left: 3%; }
-
-  .facility .RadComboBox {
-    /*ACCQII-303*/
-    width: 100% !important;
-    max-width: 400px; }
-
-  .enrollment-form h2 {
-    text-indent: 30%; }
-  .enrollment-form .facility li:last-child h2 {
-    font-weight: 400 !important;
-    font-size: 1em !important;
-    color: #333;
-    text-indent: 0; }
-
-  .tooltip {
-    margin: 4px 0 1em 31%;
-    width: 60%; }
-
-  .tooltip-icon,
-  .form .tooltip-icon {
-    position: absolute;
-    top: 0;
-    left: 94%; }
-
-  #recaptcha_area,
-  #recaptcha_table {
-    margin-left: 30%; }
-
-  .recaptchatable .recaptcha_input_area #recaptcha_response_field {
-    /*ACCQII-282*/
-    margin-top: -10px !important; }
-
-  .enrollment-form input[type="submit"] {
-    margin-left: 30%; }
-
-  .submission-failure {
-    color: red; }
-
-  .validation-summary {
-    margin-left: 30%; }
-    .validation-summary li {
-      list-style-type: none; }
-
-  #MissingInformationGroupValidationSummary {
-    padding: 5px 10px 0 !important; }
-
-  #content_0_accountInformation_txtPassword {
-    width: 60% !important; }
-
-  /* Revised Login Styles for HTML changes made Oct 2013 */
-  main .login-box label {
-    width: auto; }
-
-  #PnlRegistration .cursorh {
-    position: absolute;
-    top: 5px;
-    right: 1%;
-    left: auto; }
-  #PnlRegistration .validation {
-    width: 62% !important;
-    position: absolute;
-    top: 34px;
-    left: 147px;
-    font-size: 0.875em;
-    text-align: left; }
-
-  #scorecard-request input#content_0_emailSubmission_txtBxEmail {
-    width: 60%; }
-
-  /* Projects Page */
-  .layout-projectspage #introduction {
-    clear: none; }
-
-  .loggedin .layout-initiative #introduction {
-    width: 94%;
-    /*ACCQII-262*/ }
-
-  .layout-projectspage .project-feature {
-    float: left; }
-
-  #layout .twocol li,
-  .layout-projectspage .project-feature li {
-    margin: 1em 4% 1em 0 !important;
-    width: 45%;
-    float: left; }
-
-  /* Homepage */
-  #homepage-primary {
-    float: left;
-    position: relative; }
-
-  #introduction,
-  #ncdr {
-    width: 59%;
-    float: left;
-    clear: left; }
-
-  .layout-subpage #introduction,
-  .layout-subpage #ncdr {
-    clear: none; }
-
-  .activate-now,
-  #ncdr-login {
-    padding-left: 3.5%;
-    padding-right: 3.5%;
-    width: 25%;
-    float: right;
-    clear: right; }
-
-  .activate-now {
-    margin-top: 1em; }
-    .activate-now h2 {
-      position: relative;
-      font-size: 1.25em !important; }
-      .activate-now h2:before {
-        margin-top: -14px;
-        content: "";
-        border-color: transparent #f5f5f5;
-        border-style: solid;
-        border-width: 14px 0 14px 16px;
-        display: block;
-        height: 0;
-        width: 0;
-        left: -15%;
-        top: 50%;
-        position: absolute;
-        transition: 0.5s ease-out;
-        -moz-transition: 0.5s ease-out; }
-
-  #ncdr-login {
-    position: absolute;
-    right: 0;
-    bottom: 1.5em; }
-
-  #home-secondary section {
-    width: 46%;
-    clear: none; }
-
-  .layout-subpage #projects {
-    clear: none; }
-
-  #home-secondary section:first-child {
-    margin-right: 7.5%; }
-
   /* Login */
   /* Registration Form */
-  .my-login .content {
-    position: relative; }
-  .my-login .primary {
-    margin-left: 260px;
-    padding-left: 0;
-    width: auto;
-    max-width: 525px;
-    float: none;
-    clear: both;
-    min-height: 655px; }
-  .my-login .secondary {
-    width: 230px;
-    position: absolute;
-    left: 25px; }
-    .my-login .secondary .secondary {
-      position: static; }
-
   /*top:4.5em; */
   .login-box .actions {
     padding-left: 30%; }
@@ -10786,12 +10135,6 @@ ul.tab-controls {
 
 /* BEGIN RESPONSIVE */
 /*/////////////////////////////////////////////////////////////////////////////////////////////////// */
-@media screen and (min-width: 820px) {
-  ul#footer-nav > li {
-    margin-right: 2.5%;
-    width: 36.5%; }
-    ul#footer-nav > li:last-child {
-      width: 20%; } }
 @media screen and (min-width: 900px) {
   #saHeader_msLogin_lnkLogin {
     margin: 0;
@@ -10802,36 +10145,15 @@ ul.tab-controls {
     /* size reduced per http://jira.beaconfire.us/browse/ACCQII-391 */
     text-decoration: none; }
 
-  #nav-primary a {
-    padding: 0 40px; }
-
   .logged-in div,
   .logged-in p {
     display: block;
     text-align: right; }
 
-  #site-footer address {
-    top: 10px;
-    left: 3%;
-    width: 140px; }
-    #site-footer address img {
-      float: none; }
-
   .leaderboard {
     padding-top: 1em;
     display: block;
     clear: both; }
-
-  .sidebar {
-    width: 195px;
-    display: block;
-    position: absolute;
-    top: 1em;
-    right: 1%; }
-    .sidebar img {
-      margin: 0.5em auto; }
-    .sidebar #msSideBar_msRightAds_pnlAdvertisement {
-      margin-top: 1em; }
 
   #responsiveAds {
     display: none; }
@@ -11044,12 +10366,6 @@ main .login-box label {
   white-space: nowrap;
   float: left; }
 
-nav#nav-primary ul.primary-nav ul li a {
-  /* ACCNCDR-65 */
-  line-height: 1.5em;
-  padding-bottom: 10px;
-  padding-top: 10px; }
-
 @media screen and (max-width: 900px) {
   .logged-in-home #introduction {
     float: none;
@@ -11201,77 +10517,11 @@ nav#nav-primary ul.primary-nav ul li a {
 
   .activate-now {
     margin-left: 0; } }
-#nav-primary #msTopNav_rptPrimary_hypLnkLogin {
-  background: #0283ab;
-  /* Old browsers */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1YWVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjgzYWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-linear-gradient(top, #05aee5 0%, #0283ab 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #05aee5), color-stop(100%, #0283ab));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #05aee5 0%, #0283ab 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #05aee5 0%, #0283ab 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #05aee5 0%, #0283ab 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, #05aee5 0%, #0283ab 100%);
-  /* W3C */
-  width: 215px;
-  box-sizing: border-box; }
-#nav-primary #msTopNav_rptPrimary_lnkBtnLogout {
-  background: linear-gradient(to bottom, #A1A0A4 0%, #868589 100%);
-  width: 215px;
-  box-sizing: border-box; }
-#nav-primary .primary-nav > .Login {
-  background: #0283ab;
-  /* Old browsers */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1YWVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjgzYWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-linear-gradient(top, #05aee5 0%, #0283ab 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #05aee5), color-stop(100%, #0283ab));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #05aee5 0%, #0283ab 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #05aee5 0%, #0283ab 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #05aee5 0%, #0283ab 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, #05aee5 0%, #0283ab 100%);
-  /* W3C */
-  width: 215px;
-  box-sizing: border-box; }
-#nav-primary .primary-nav > .LogOut {
-  background: linear-gradient(to bottom, #A1A0A4 0%, #868589 100%);
-  width: 215px;
-  box-sizing: border-box; }
-#nav-primary .primary-nav > li:last-child {
-  float: right; }
-
-/*for login css*/
-/*end of login css*/
-@media screen and (min-width: 900px) {
-  #nav-primary a {
-    padding: 0 1em; } }
-@media screen and (max-width: 900px) {
-  #nav-primary .primary-nav > li:last-child {
-    float: none; }
-  #nav-primary #msTopNav_rptPrimary_hypLnkLogin,
-  #nav-primary #msTopNav_rptPrimary_lnkBtnLogout {
-    width: auto;
-    box-sizing: content-box; } }
 @media screen and (max-width: 960px) and (min-width: 900px) {
   #software-vendors {
     width: 100%; }
     #software-vendors td {
       font-size: 0.875em; } }
-#breadCrumbsNav {
-  height: 0;
-  margin: 0;
-  padding: 0; }
-
 .RadSiteMap .rsmLink {
   padding: 4px 0px !important;
   font-size: 1em;

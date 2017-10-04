@@ -1,0 +1,30 @@
+/**
+* listing of blocks of information to be semanitic are wrapped in a ul.nobullet 
+*
+* @molecule List with No Bullets
+* @section Typography
+* @markup
+*  <div class="SG-button">
+*    <i class="SG-ico SG-ico--question"></i>
+*  </div>
+*  <div class="SG-button SG-button--ico">
+*    <i class="SG-ico SG-ico--question"></i>
+*    With text
+*  </div>
+*/
+
+.nobullets {
+    /*.layout-listing #colone ul.generic-list,*/
+    margin-top: 1em;
+    li {
+        /*.layout-listing #colone ul.generic-list li, */
+        margin: 0 0 1em !important;
+        overflow: auto;
+        list-style-type: none !important;
+        img {
+            /*.layout-listing ul.generic-list li img, */
+            margin: 0 14px 6px 0;
+            float: left;
+        }
+    }
+}

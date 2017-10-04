@@ -1,49 +1,59 @@
 /**
- * address blocks are w well formated microformat to optimum usage in browswers.
- * @molecule address
+ * Address blocks are well formated microformat to optimum usage in browsers.
+ * @molecule address.vcard
  *
  * @markup
-*    <address class="vcard">
-*       <!-- http://microformats.org/wiki/hcard -->
-*       <a class="fn org url" href="http://www.acc.org" target="_blank">
-*           <img alt="" src="/Assets/images/acc-logo-footer.png" id="msFooter_imgFooter">
-*       </a>
-*       <h2><a class="fn org ur
-*           l" href="http://www.acc.org" target="_blank">American College of Cardiology</a></h2>
-*       <span class="adr">
-*           <span class="street-address">2400 N St. NW</span>
-*            <br>
-*           <span class="locality">Washington</span>, <span class="country-name"><abbr title="District of Colombia">DC</abbr></span> <span class="postal-code"></span>
-*       </span>
-*       <!-- end .adr -->
-*       <br>
-*       <a href="mailto:" class="email"></a>
-*       <abbr tel="+18002574737" class="tel">(800) 257-4737</abbr>
-*       <a href="mailto:cvquality@acc.org">cvquality@acc.org</a>
-*   </address>
+ *  <address class="vcard">
+ *     <!-- http://microformats.org/wiki/hcard -->
+ *     <a class="fn org url" href="http://www.acc.org" target="_blank">
+ *         <img alt="" src="/Assets/images/acc-logo-footer.png" id="msFooter_imgFooter">
+ *     </a>
+ *     <h2><a class="fn org ur
+ *         l" href="http://www.acc.org" target="_blank">American College of Cardiology</a></h2>
+ *     <span class="adr">
+ *         <span class="street-address">2400 N St. NW</span>
+ *         <span class="locality">Washington</span>,
+ *          <span class="country-name"><abbr title="District of Colombia">DC</abbr></span> 
+ *          <span class="postal-code hidden"></span>
+ *     </span>
+ *     <!-- end .adr -->
+ *     <a href="mailto:" class="email hidden"></a>
+ *     <abbr tel="+18002574737" class="tel">(800) 257-4737</abbr>
+ *     <a href="mailto:cvquality@acc.org">cvquality@acc.org</a>
+ *  </address>
 */
 
-.vcard {
-    margin-top: 1em;
-    padding: 12px 3% 0;
-    clear: both;
-    h2 {
-        font-weight: normal;
-        font-size: 1em;
-        font-family: 'Lato', sans-serif;
-    }
-    img {
-        display: none;
+address.vcard {
+    padding:0 1em;
+    max-width:16em;
+    &, h2 {
+        @include font(normal);
+        font-size: ms(0);
+        color: $off-black;
     }
     a {
         color: #000;
         text-decoration: none;
+        display: inline-block;
+        width:100%;
     }
      abbr[title] {
         text-decoration: none;
         border: 0;
     }
+    .adr{display:block;
+        span{display:inline-block;}
+        span.street-address{width:100%;}
+
+    }
+    a img {
+        margin: 0 .75em .25em;
+        display: block;
+    }
 }
 
 
-#site-footer address{}
+#site-footer address{
+
+    
+}
