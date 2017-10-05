@@ -238,7 +238,7 @@ span {
  * @atom Lato, Verdana, Helvetica, sans-serif
  * @section Fonts & Branding
  * @markup 
- * 	<div class="container"><div class="alphabet-display row font-normal">
+ * 	<div class="container-fluid"><div class="alphabet-display row font-normal">
  *	<div class="ms12 col-md-4 col-sm-6 col-lg-3 font--dropcase_2x">La</div>
  *	<div class="col-md-8 col-sm-6 col-lg-9 font--example">
  * 	<h3>Primary Navigation & Body Copy</h3>
@@ -258,7 +258,7 @@ span {
  * @atom Muli, Verdana, Helvetica, sans-serif;
  * @section Fonts & Branding
  * @markup 
- * 	<div class="container"><div class="alphabet-display row font-display">
+ * 	<div class="container-fluid"><div class="alphabet-display row font-display">
  *	<div class="ms12 col-md-4 col-sm-6 col-lg-3 font--dropcase_2x">Mu</div>
  *	<div class="col-md-8 col-sm-6 col-lg-9 font--example">
  * 	<h3>Headers & Secondary Navs</h3>
@@ -284,19 +284,19 @@ span {
   text-transform: uppercase; }
 .alphabet-display .ms12 {
   font-size: 10.5625em;
-  line-height: 1.1360946746em;
+  line-height: 1.13609em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
   .alphabet-display .ms12 {
-    line-height: 1.0224852071em; } }
+    line-height: 1.02249em; } }
 @media only screen and (max-width: 1024px) and (max-height: 320px) {
   .alphabet-display .ms12 {
     line-height: 1em; } }
 
 .alphabet-display .ms6 {
   font-size: 4.125em;
-  line-height: 1.0909090909em;
+  line-height: 1.09091em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
@@ -308,27 +308,27 @@ span {
 
 .alphabet-display .ms4 {
   font-size: 2.5625em;
-  line-height: 1.1707317073em;
+  line-height: 1.17073em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
   .alphabet-display .ms4 {
-    line-height: 1.0536585366em; } }
+    line-height: 1.05366em; } }
 @media only screen and (max-width: 1024px) and (max-height: 320px) {
   .alphabet-display .ms4 {
     line-height: 1em; } }
 
 .alphabet-display .ms2 {
   font-size: 1.625em;
-  line-height: 1.8461538462em;
+  line-height: 1.84615em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
   .alphabet-display .ms2 {
-    line-height: 1.6615384615em; } }
+    line-height: 1.66154em; } }
 @media only screen and (max-width: 1024px) and (max-height: 320px) {
   .alphabet-display .ms2 {
-    line-height: 1.5692307692em; } }
+    line-height: 1.56923em; } }
 
 .alphabet-display .ms1 {
   font-size: 1.25em;
@@ -421,7 +421,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 *,
 *::before,
@@ -908,48 +908,48 @@ pre {
   max-width: none; }
 
 .col-1 {
-  flex: 0 0 8.3333333333%;
-  max-width: 8.3333333333%; }
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%; }
 
 .col-2 {
-  flex: 0 0 16.6666666667%;
-  max-width: 16.6666666667%; }
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%; }
 
 .col-3 {
   flex: 0 0 25%;
   max-width: 25%; }
 
 .col-4 {
-  flex: 0 0 33.3333333333%;
-  max-width: 33.3333333333%; }
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%; }
 
 .col-5 {
-  flex: 0 0 41.6666666667%;
-  max-width: 41.6666666667%; }
+  flex: 0 0 41.66667%;
+  max-width: 41.66667%; }
 
 .col-6 {
   flex: 0 0 50%;
   max-width: 50%; }
 
 .col-7 {
-  flex: 0 0 58.3333333333%;
-  max-width: 58.3333333333%; }
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%; }
 
 .col-8 {
-  flex: 0 0 66.6666666667%;
-  max-width: 66.6666666667%; }
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%; }
 
 .col-9 {
   flex: 0 0 75%;
   max-width: 75%; }
 
 .col-10 {
-  flex: 0 0 83.3333333333%;
-  max-width: 83.3333333333%; }
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%; }
 
 .col-11 {
-  flex: 0 0 91.6666666667%;
-  max-width: 91.6666666667%; }
+  flex: 0 0 91.66667%;
+  max-width: 91.66667%; }
 
 .col-12 {
   flex: 0 0 100%;
@@ -1003,48 +1003,48 @@ pre {
     max-width: none; }
 
   .col-sm-1 {
-    flex: 0 0 8.3333333333%;
-    max-width: 8.3333333333%; }
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%; }
 
   .col-sm-2 {
-    flex: 0 0 16.6666666667%;
-    max-width: 16.6666666667%; }
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%; }
 
   .col-sm-3 {
     flex: 0 0 25%;
     max-width: 25%; }
 
   .col-sm-4 {
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%; }
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%; }
 
   .col-sm-5 {
-    flex: 0 0 41.6666666667%;
-    max-width: 41.6666666667%; }
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%; }
 
   .col-sm-6 {
     flex: 0 0 50%;
     max-width: 50%; }
 
   .col-sm-7 {
-    flex: 0 0 58.3333333333%;
-    max-width: 58.3333333333%; }
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%; }
 
   .col-sm-8 {
-    flex: 0 0 66.6666666667%;
-    max-width: 66.6666666667%; }
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%; }
 
   .col-sm-9 {
     flex: 0 0 75%;
     max-width: 75%; }
 
   .col-sm-10 {
-    flex: 0 0 83.3333333333%;
-    max-width: 83.3333333333%; }
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%; }
 
   .col-sm-11 {
-    flex: 0 0 91.6666666667%;
-    max-width: 91.6666666667%; }
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%; }
 
   .col-sm-12 {
     flex: 0 0 100%;
@@ -1097,48 +1097,48 @@ pre {
     max-width: none; }
 
   .col-md-1 {
-    flex: 0 0 8.3333333333%;
-    max-width: 8.3333333333%; }
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%; }
 
   .col-md-2 {
-    flex: 0 0 16.6666666667%;
-    max-width: 16.6666666667%; }
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%; }
 
   .col-md-3 {
     flex: 0 0 25%;
     max-width: 25%; }
 
   .col-md-4 {
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%; }
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%; }
 
   .col-md-5 {
-    flex: 0 0 41.6666666667%;
-    max-width: 41.6666666667%; }
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%; }
 
   .col-md-6 {
     flex: 0 0 50%;
     max-width: 50%; }
 
   .col-md-7 {
-    flex: 0 0 58.3333333333%;
-    max-width: 58.3333333333%; }
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%; }
 
   .col-md-8 {
-    flex: 0 0 66.6666666667%;
-    max-width: 66.6666666667%; }
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%; }
 
   .col-md-9 {
     flex: 0 0 75%;
     max-width: 75%; }
 
   .col-md-10 {
-    flex: 0 0 83.3333333333%;
-    max-width: 83.3333333333%; }
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%; }
 
   .col-md-11 {
-    flex: 0 0 91.6666666667%;
-    max-width: 91.6666666667%; }
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%; }
 
   .col-md-12 {
     flex: 0 0 100%;
@@ -1191,48 +1191,48 @@ pre {
     max-width: none; }
 
   .col-lg-1 {
-    flex: 0 0 8.3333333333%;
-    max-width: 8.3333333333%; }
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%; }
 
   .col-lg-2 {
-    flex: 0 0 16.6666666667%;
-    max-width: 16.6666666667%; }
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%; }
 
   .col-lg-3 {
     flex: 0 0 25%;
     max-width: 25%; }
 
   .col-lg-4 {
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%; }
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%; }
 
   .col-lg-5 {
-    flex: 0 0 41.6666666667%;
-    max-width: 41.6666666667%; }
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%; }
 
   .col-lg-6 {
     flex: 0 0 50%;
     max-width: 50%; }
 
   .col-lg-7 {
-    flex: 0 0 58.3333333333%;
-    max-width: 58.3333333333%; }
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%; }
 
   .col-lg-8 {
-    flex: 0 0 66.6666666667%;
-    max-width: 66.6666666667%; }
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%; }
 
   .col-lg-9 {
     flex: 0 0 75%;
     max-width: 75%; }
 
   .col-lg-10 {
-    flex: 0 0 83.3333333333%;
-    max-width: 83.3333333333%; }
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%; }
 
   .col-lg-11 {
-    flex: 0 0 91.6666666667%;
-    max-width: 91.6666666667%; }
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%; }
 
   .col-lg-12 {
     flex: 0 0 100%;
@@ -1285,48 +1285,48 @@ pre {
     max-width: none; }
 
   .col-xl-1 {
-    flex: 0 0 8.3333333333%;
-    max-width: 8.3333333333%; }
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%; }
 
   .col-xl-2 {
-    flex: 0 0 16.6666666667%;
-    max-width: 16.6666666667%; }
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%; }
 
   .col-xl-3 {
     flex: 0 0 25%;
     max-width: 25%; }
 
   .col-xl-4 {
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%; }
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%; }
 
   .col-xl-5 {
-    flex: 0 0 41.6666666667%;
-    max-width: 41.6666666667%; }
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%; }
 
   .col-xl-6 {
     flex: 0 0 50%;
     max-width: 50%; }
 
   .col-xl-7 {
-    flex: 0 0 58.3333333333%;
-    max-width: 58.3333333333%; }
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%; }
 
   .col-xl-8 {
-    flex: 0 0 66.6666666667%;
-    max-width: 66.6666666667%; }
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%; }
 
   .col-xl-9 {
     flex: 0 0 75%;
     max-width: 75%; }
 
   .col-xl-10 {
-    flex: 0 0 83.3333333333%;
-    max-width: 83.3333333333%; }
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%; }
 
   .col-xl-11 {
-    flex: 0 0 91.6666666667%;
-    max-width: 91.6666666667%; }
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%; }
 
   .col-xl-12 {
     flex: 0 0 100%;
@@ -1714,19 +1714,20 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   background-color: rgba(153, 0, 0, 0.8);
   border-radius: .2rem; }
 
-.was-validated .form-control:valid, .form-control.is-valid,
-.was-validated .custom-select:valid,
+.was-validated .form-control:valid, .form-control.is-valid, .was-validated
+.custom-select:valid,
 .custom-select.is-valid {
   border-color: #28a745; }
-  .was-validated .form-control:valid:focus, .form-control.is-valid:focus,
-  .was-validated .custom-select:valid:focus,
+  .was-validated .form-control:valid:focus, .form-control.is-valid:focus, .was-validated
+  .custom-select:valid:focus,
   .custom-select.is-valid:focus {
     box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25); }
   .was-validated .form-control:valid ~ .invalid-feedback,
   .was-validated .form-control:valid ~ .invalid-tooltip, .form-control.is-valid ~ .invalid-feedback,
-  .form-control.is-valid ~ .invalid-tooltip,
-  .was-validated .custom-select:valid ~ .invalid-feedback,
-  .was-validated .custom-select:valid ~ .invalid-tooltip,
+  .form-control.is-valid ~ .invalid-tooltip, .was-validated
+  .custom-select:valid ~ .invalid-feedback,
+  .was-validated
+  .custom-select:valid ~ .invalid-tooltip,
   .custom-select.is-valid ~ .invalid-feedback,
   .custom-select.is-valid ~ .invalid-tooltip {
     display: block; }
@@ -1746,19 +1747,20 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .was-validated .custom-file-input:valid:focus, .custom-file-input.is-valid:focus {
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25); }
 
-.was-validated .form-control:invalid, .form-control.is-invalid,
-.was-validated .custom-select:invalid,
+.was-validated .form-control:invalid, .form-control.is-invalid, .was-validated
+.custom-select:invalid,
 .custom-select.is-invalid {
   border-color: #990000; }
-  .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus,
-  .was-validated .custom-select:invalid:focus,
+  .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus, .was-validated
+  .custom-select:invalid:focus,
   .custom-select.is-invalid:focus {
     box-shadow: 0 0 0 0.2rem rgba(153, 0, 0, 0.25); }
   .was-validated .form-control:invalid ~ .invalid-feedback,
   .was-validated .form-control:invalid ~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback,
-  .form-control.is-invalid ~ .invalid-tooltip,
-  .was-validated .custom-select:invalid ~ .invalid-feedback,
-  .was-validated .custom-select:invalid ~ .invalid-tooltip,
+  .form-control.is-invalid ~ .invalid-tooltip, .was-validated
+  .custom-select:invalid ~ .invalid-feedback,
+  .was-validated
+  .custom-select:invalid ~ .invalid-tooltip,
   .custom-select.is-invalid ~ .invalid-feedback,
   .custom-select.is-invalid ~ .invalid-tooltip {
     display: block; }
@@ -4524,7 +4526,7 @@ a.bg-dark:focus, a.bg-dark:hover {
     border: 0; }
 
 .embed-responsive-21by9::before {
-  padding-top: 42.8571428571%; }
+  padding-top: 42.85714%; }
 
 .embed-responsive-16by9::before {
   padding-top: 56.25%; }
@@ -7272,6 +7274,7 @@ input {
 * Breadcrumbs 
 *
 * @molecule Breadcrumb
+* @section Nav > Utility 
 * @markup
 *  <nav class="breadcrumb">
 *   <a class="breadcrumb-item" href="#">Home</a>
@@ -7295,7 +7298,7 @@ input {
 * Navigaion between dynamic or category collected pages when the collection is above the count of 10.
 *
 * @molecule Pagination
-* @section Navigation 
+* @section Nav > Utility 
 * @modifiers
 *  .active highlights the page user is on in the collection
 *  .disabled disables the button when it can't be used.
@@ -7594,8 +7597,8 @@ a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:a
 * User Status Container contains system feed back on what systems you may or may not be logged into. 
 *
 *
-* @molecule User Status Container
-* @section Nav 
+* @molecule User Status
+* @section Nav > Utility
 * @markup
 *   <div class="user-status-container">
 *       <div class="user">
@@ -7672,7 +7675,7 @@ a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:a
 * Primary Nav at the top of the page.
 *
 * @molecule  Nav Primary
-* @section Nav 
+* @section Nav > Page
 * @modifiers
 *  .active for use on marking when on page
 *  .disabled used to show when it is un-navigatable
@@ -7826,7 +7829,7 @@ a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:a
 * Utiltiy Nav at the top of the page. These are nav items are highly specialized and have been cherry picked out of site tree structure to give them global importance.
 *
 * @molecule  Utiltiy Nav 
-* @section Nav
+* @section Nav > Utility
 * @modifiers 
 *  .mobile - decorates the nav to look like mobile
 * @markup 
@@ -8009,23 +8012,36 @@ a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:a
 * @molecule List with No Bullets
 * @section Typography
 * @markup
-*  <div class="SG-button">
-*    <i class="SG-ico SG-ico--question"></i>
-*  </div>
-*  <div class="SG-button SG-button--ico">
-*    <i class="SG-ico SG-ico--question"></i>
-*    With text
-*  </div>
+*    <ul class="no-bullets">
+*        <li>
+*        <h2>
+*        <a href="/Clinical-Toolkits/QI-Toolkit">QI Toolkit</a>
+*        </h2>
+*        <p>
+*        Implement quality patient care at your facility with checklists, reminders, and other tools to address common quality improvement issues.
+*        <a class="more" href="/Clinical-Toolkits/QII-Toolkit"></a>
+*        </p>
+*        </li>
+*        <li>
+*        <h2>
+*        <a href="/clinical-toolkits/public-reporting-toolkit">Public Reporting Toolkit</a>
+*        </h2>
+*        <p id="content_1_genList_rptListings_qiiGenLisItem_1_genericP_1">
+*        Implement best practices for improving data collection processes, overall data quality through better registry data capture, and performance on publicly reported metrics.
+*        <a class="more" href="/clinical-toolkits/public-reporting-toolkit">More..</a>
+*        </p>
+*        </li>
+*    </ul>
 */
-.nobullets {
+.no-bullets {
   /*.layout-listing #colone ul.generic-list,*/
   margin-top: 1em; }
-  .nobullets li {
+  .no-bullets li {
     /*.layout-listing #colone ul.generic-list li, */
-    margin: 0 0 1em !important;
+    margin: 0 0 1em;
     overflow: auto;
-    list-style-type: none !important; }
-    .nobullets li img {
+    list-style-type: none; }
+    .no-bullets li img {
       /*.layout-listing ul.generic-list li img, */
       margin: 0 14px 6px 0;
       float: left; }
@@ -8033,7 +8049,7 @@ a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:a
 /* Footer */
 /**
  * Address blocks are well formated microformat to optimum usage in browsers.
- * @molecule address.vcard
+ * @structure address.vcard
  *
  * @markup
  *  <address class="vcard">
@@ -8086,7 +8102,7 @@ address.vcard {
 * 
 *	
 * @molecule Social Buttons
-* @section Nav 
+* @section Nav > Utility
 * @markup 
 *  <section id="social" class="social-buttons">
 *    <h2>Stay Connected</h2>
@@ -8143,8 +8159,9 @@ address.vcard {
 /**
 * Navigation in the footer
 *
-* @molecule footer-nav
-* @section Navigation
+* @molecule  Nav Footer
+* @section Nav > Page
+* @depracated
 * @markup
 *  <ul id="footer-sitemap">
 *      <li class="nav-footer">
@@ -9375,7 +9392,7 @@ main .forgot-pswd #fp-email {
 
 /* Customer Service Toggle */
 .cs-box h2:before {
-  background: url("../images/2013-icn-customer-service.png") no-repeat scroll center -4px rgba(0, 0, 0, 0);
+  background: url("../images/2013-icn-customer-service.png") no-repeat scroll center -4px transparent;
   content: " , ";
   display: block;
   height: 40px;

@@ -1,3 +1,33 @@
+@import "setup";
 body{background: white !important;}
 .SG-row{position:relative;}
+.SG-row .SG-row{ margin:0;}
 .SG-table .SG-table__cell {margin:0;}
+.SG-layout{max-width: 100%;}
+
+.SG-header{ 
+	padding:0;
+	.SG-logo{
+		margin-top: 0;
+		padding:11px 16px 0px;
+	    display: block;
+	    width: 100%;
+	    color: white;
+	    background-color: $acc-blue;
+		}
+	.SG-nav{
+	    margin: 0;
+	    left: 0;
+	    text-align: left;
+	    top: auto;
+	    bottom: 0;
+	}
+	.SG-nav-icons{    margin-right: 25px;}
+}
+
+.SG-component {
+	margin-bottom: 50px;
+	.SG-component__preview{
+		margin-top:20px;
+
+	}}
