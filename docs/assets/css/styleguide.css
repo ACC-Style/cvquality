@@ -189,9 +189,13 @@ body {
     left: 0;
     text-align: left;
     top: auto;
-    bottom: 0; }
+    bottom: 0;
+    width: 75%;
+    display: inline-block; }
   .SG-header .SG-nav-icons {
-    margin-right: 25px; }
+    padding-right: 25px;
+    width: 75%;
+    display: inline-block; }
 
 .SG-component {
   margin-bottom: 50px; }

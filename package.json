@@ -24,14 +24,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MattWatier/QII-Documentation.git"
+    "url": "git+https://github.com/ACC-Style/cvquality"
   },
   "author": "Matt Watier",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MattWatier/QII-Documentation/issues"
+    "url": "https://github.com/ACC-Style/cvquality/issues"
   },
-  "homepage": "https://github.com/MattWatier/QII-Documentation#readme",
+  "homepage": "https://github.com/ACC-Style/cvquality#readme",
   "directories": {
     "doc": "docs"
   }

@@ -1,3 +1,87 @@
-.notice-box {
-    color: #9e1823;
+.card {
+	border-radius:0;
+	h1,h2,h3,h4,h5,h6{color:$off-black;}
+
 }
+/**
+ * Notice cards are stylized cards with a soft blue background to stand out from surrounding text
+ *
+ * @molecule Notice 
+ * @section Card 
+ * @modifiers
+ *  .position-right-[size] floats the card to the right so text will wrap around the left when the veiw port is above the size.
+ *  .position-right-lg the float appears large up.
+ *  .position-right-md the float appears medium up.
+ *  .position-right-sm the float appears small up.
+ *  .position-left-[size] floats the card to the left so text will wrap around the right when the veiw port is above the size.
+ * @markup
+ *  <div class="card notice"><div class="card-body"><h1>Notice Title</h1></div></div>
+ *
+ */
+.card.notice{
+	 background-color: $soft-blue;
+}
+.card.info{
+	 background-color: $soft-grey;
+}
+/**
+ * Events are containers for Event Data Type 
+ *
+ * @molecule Event 
+ * @section Card 
+ * @modifiers
+ *  .compressed arranges the container to take up less room.
+ * @markup
+ *  <div class="card event"><H1 class="card-body">Event TBD</H1></div>
+ *
+ */	
+
+.card.event{}
+
+/**
+ * Testemonials are containers for Testemonial Data Type 
+ *
+ * @molecule Testimonial 
+ * @section Card 
+ * @modifiers
+ *  .horizontal - alignment of image to the right of the testimonial
+ *  .veriticle - alignment of image above the testimonial
+ * @markup
+ *  <div class="row"><div class="col-sm-6"><div class="card testimonial">
+ *    <img class="card-img-top" src="@{image:200:300}"/>
+ *    <div class="card-body">
+ *      <blockquote class="blockquote mb-0">
+ *        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+ *        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+ *      </blockquote>
+ *    </div>
+ *  </div></div></div>
+ *
+ */
+
+ .card.testimonial{
+ 	.blockquote p{
+		&:before,&:after{
+			display: inline-block;
+			font: normal normal normal 14px/1 FontAwesome;
+			font-size: inherit;
+			text-rendering: auto;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			transform: translate(0, 0);
+			width: 1.28571429em;
+			text-align: center;
+		}
+		&:before{
+			margin-right: .5em;
+			content:"\f10d";
+		}
+		&:after{
+			margin-left: .5em;
+			content:"\f10e";
+		}
+		+ footer{margin-top:-1em; text-align:right;}
+
+ 	}
+
+ }

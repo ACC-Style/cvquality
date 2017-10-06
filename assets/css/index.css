@@ -6939,7 +6939,7 @@ a.text-dark:focus, a.text-dark:hover {
 *              <div class="modal-content">
 *                  <div class="modal-header">
 *                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-*                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">├ù</span></button>
+*                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
 *                  </div>
 *                  <div class="modal-body">
 *                      <h2>Modal body heading</h2>
@@ -7349,8 +7349,82 @@ input {
 .progress-bar.progress-bar-secondary {
   background-color: #6f6b6f; }
 
-.notice-box {
-  color: #9e1823; }
+.card {
+  border-radius: 0; }
+  .card h1, .card h2, .card h3, .card h4, .card h5, .card h6 {
+    color: #2f2f2f; }
+
+/**
+ * Notice cards are stylized cards with a soft blue background to stand out from surrounding text
+ *
+ * @molecule Notice 
+ * @section Card 
+ * @modifiers
+ *  .position-right-[size] floats the card to the right so text will wrap around the left when the veiw port is above the size.
+ *  .position-right-lg the float appears large up.
+ *  .position-right-md the float appears medium up.
+ *  .position-right-sm the float appears small up.
+ *  .position-left-[size] floats the card to the left so text will wrap around the right when the veiw port is above the size.
+ * @markup
+ *  <div class="card notice"><div class="card-body"><h1>Notice Title</h1></div></div>
+ *
+ */
+.card.notice {
+  background-color: #a4cded; }
+
+.card.info {
+  background-color: #eceaea; }
+
+/**
+ * Events are containers for Event Data Type 
+ *
+ * @molecule Event 
+ * @section Card 
+ * @modifiers
+ *  .compressed arranges the container to take up less room.
+ * @markup
+ *  <div class="card event"><H1 class="card-body">Event TBD</H1></div>
+ *
+ */
+/**
+ * Testemonials are containers for Testemonial Data Type 
+ *
+ * @molecule Testimonial 
+ * @section Card 
+ * @modifiers
+ *  .horizontal - alignment of image to the right of the testimonial
+ *  .veriticle - alignment of image above the testimonial
+ * @markup
+ *  <div class="row"><div class="col-sm-6"><div class="card testimonial">
+ *    <img class="card-img-top" src="@{image:200:300}"/>
+ *    <div class="card-body">
+ *      <blockquote class="blockquote mb-0">
+ *        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+ *        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+ *      </blockquote>
+ *    </div>
+ *  </div></div></div>
+ *
+ */
+.card.testimonial .blockquote p:before, .card.testimonial .blockquote p:after {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+  width: 1.28571429em;
+  text-align: center; }
+.card.testimonial .blockquote p:before {
+  margin-right: .5em;
+  content: "\f10d"; }
+.card.testimonial .blockquote p:after {
+  margin-left: .5em;
+  content: "\f10e"; }
+.card.testimonial .blockquote p + footer {
+  margin-top: -1em;
+  text-align: right; }
 
 /**
  * buttons are highly flexable and can be decorated by the modifiers to change size and color
@@ -7882,9 +7956,37 @@ a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:a
       padding-left: 0;
       content: ''; }
 
+/**
+ * Sub nav is the secondary nav that shows on the desktop design on the right side.  
+ *
+ * @molecule Nav Sub (Sidebar Nav) 
+ * @section Nav > Page 
+ * @markup
+ *  <div id="page-nav">
+ *      <h2>@{lipsum:3:words}</h2>
+ *      <ul class="nav flex-column">
+ *          <li class="nav-item parent active">
+ *             <a class="nav-link" >@{lipsum:1:words}</a>
+ *                  <ul class="nav flex-column"">
+ *                  <li class="nav-item"><a class="nav-link" href="">@{lipsum:2:words}</a></li>
+ *                  <li class="nav-item"><a class="nav-link" href="">@{lipsum:2:words}</a></li>
+ *                  <li class="nav-item parent active">
+ *                      <a class="nav-link" >@{lipsum:1:words}</a>
+ *                       <ul class="nav flex-column"">
+ *                           <li class="nav-item "><a class="nav-link" href="">@{lipsum:2:words}</a></li>
+ *                           <li class="nav-item current"><a class="nav-link" href="">@{lipsum:2:words}</a></li>
+ *                           <li class="nav-item"><a class="nav-link" href="">@{lipsum:2:words}</a></li>
+ *                       </ul>
+ *                  </li>
+ *              </ul>
+ *          </li>
+ *          <li class="nav-item"><a class="nav-link" href="">@{lipsum:2:words}</a></li>
+ *          <li class="nav-item"><a class="nav-link" href="">@{lipsum:2:words}</a></li>
+ *      </ul>
+ *  </div>
+ *
+ */
 #page-nav, .nav-sub {
-  max-height: 0;
-  overflow: hidden;
   /*Taken out in ACCQIISP-9*/
   /*transition:max-height 1s ease-out;
 -webkit-transition:max-height 1s ease-out;
@@ -7898,21 +8000,23 @@ a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:a
     max-width: 100%; }
 #page-nav ul {
   padding: 0.5em 0 0.5em;
-  background: #f8f8f6; }
+  background: #eceaea; }
   #page-nav ul ul {
     margin-top: 0;
     padding-top: 0;
     padding-bottom: 0;
     max-height: 0;
     overflow: hidden;
-    background: #e7e7e3;
+    background: #e1dfdf;
     transition: 0.7s ease-in;
     -moz-transition: 0.7s ease-in;
     -webkit-transition: 0.7s ease-in; }
+    #page-nav ul ul li:hover {
+      background: #e1dfdf; }
     #page-nav ul ul ul {
       margin-left: -3.5em;
       padding: 0 0 0 4em;
-      background: #dbdbda; }
+      background: #d6d4d4; }
 #page-nav li {
   position: relative;
   font-weight: 600;
@@ -7922,15 +8026,18 @@ a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:a
     padding: 3px 10px 3px 0;
     display: block;
     line-height: 1.3em;
-    color: #888;
+    color: #6f6b6f;
     text-decoration: none; }
     #page-nav li a:hover {
       text-decoration: none; }
-  #page-nav li.current > a, #page-nav li.active > a {
+  #page-nav li.active > a {
     color: #e87d1e; }
+  #page-nav li.current > a {
+    background-color: #ffc425;
+    color: #2f2f2f; }
   #page-nav li.parent:before {
     content: "";
-    border-color: transparent #888;
+    border-color: transparent #6f6b6f;
     border-style: solid;
     border-width: 3px 0 3px 5px;
     display: block;
@@ -7949,7 +8056,7 @@ a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:a
     cursor: pointer;
     border-color: transparent #e87d1e;
     /*  transform:rotate(90deg);
--moz-transform:rotate(90deg);*/ }
+    -moz-transform:rotate(90deg);*/ }
   #page-nav li li {
     font-size: 0.875em; }
   #page-nav li.parent li.parent:before {
@@ -7958,9 +8065,9 @@ a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:a
     margin-left: 3em; }
   #page-nav li li li {
     font-size: 1em; }
-  #page-nav li.pagenav-active > ul {
+  #page-nav li.active > ul {
     max-height: 400px; }
-  #page-nav li.pagenav-active:before {
+  #page-nav li.active:before {
     transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -webkit-transform: rotate(90deg); }
@@ -8033,15 +8140,15 @@ a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:a
 *        </li>
 *    </ul>
 */
-.no-bullets {
+ul.no-bullets {
   /*.layout-listing #colone ul.generic-list,*/
   margin-top: 1em; }
-  .no-bullets li {
+  ul.no-bullets li {
     /*.layout-listing #colone ul.generic-list li, */
     margin: 0 0 1em;
     overflow: auto;
     list-style-type: none; }
-    .no-bullets li img {
+    ul.no-bullets li img {
       /*.layout-listing ul.generic-list li img, */
       margin: 0 14px 6px 0;
       float: left; }
@@ -8161,7 +8268,6 @@ address.vcard {
 *
 * @molecule  Nav Footer
 * @section Nav > Page
-* @depracated
 * @markup
 *  <ul id="footer-sitemap">
 *      <li class="nav-footer">
