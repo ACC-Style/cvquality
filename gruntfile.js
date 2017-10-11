@@ -20,6 +20,22 @@ module.exports = function(grunt) {
                 }]
             }
         },
+        cssmin: { 
+          options: {
+               compress: true,
+               yuicompress: true,
+               optimization: 2
+            },
+          target: {
+            files: [{
+              expand: true,
+              cwd: 'assets/css',
+              src: ['*.css', '!*.min.css'],
+              dest: 'assets/css',
+              ext: '.min.css'
+            }]
+          }
+        },
         copy: {
             main: {
                 expand: true,
@@ -39,7 +55,7 @@ module.exports = function(grunt) {
         watch: {
             css: {
                 files: 'assets/scss/**/*.scss',
-                tasks: ['sass','copy', 'exec']
+                tasks: ['sass','cssmin','copy', 'exec']
             }
         }
   //       phantomcss: {
@@ -62,8 +78,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-livereload');
     grunt.loadNpmTasks('grunt-exec');
     grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
     // grunt.loadNpmTasks('@micahgodbolt/grunt-phantomcss');
 
 
-    grunt.registerTask('default', ['connect','livereload','watch']);
+    grunt.registerTask('default', ['connect','livereload','sass','watch']);
 }

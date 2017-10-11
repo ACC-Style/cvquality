@@ -62,6 +62,7 @@
         background: $soft-grey;
         >li a:hover{ background:mix($soft-grey,white);}
         ul {
+            font-size: ms(0);
             max-height: 0;
             overflow: hidden;
             background: mix($soft-grey, $warm-grey-light);
@@ -75,10 +76,10 @@
     li {
         display: block;
         cursor: pointer;
-        line-height: $tight;
+        line-height: $normal;
+        li{line-height: $tight;}
         a {
             display: block;
-            line-height: 1.3em;
             color: $warm-grey-dark;
             text-decoration: none;
             &:hover {

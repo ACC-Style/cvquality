@@ -15,7 +15,7 @@
  *  .position-right-sm the float appears small up.
  *  .position-left-[size] floats the card to the left so text will wrap around the right when the veiw port is above the size.
  * @markup
- *  <div><div class="card notice position-right-md"><div class="card-body"><h1>Notice Block</h1><p>@{lipsum:10:words}</p><a class="btn btn-secondary btn-block">Action</a></div></div><div>@{lipsum:3:paragraphs}</div></div>
+ *  <div class="card notice position-right-md"><div class="card-body"><h1>Notice Block</h1><p>@{lipsum:10:words}</p><a class="btn btn-secondary btn-block">Action</a></div></div>
  *
  */
 .card.notice{

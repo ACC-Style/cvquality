@@ -3,8 +3,8 @@
     "files": ["assets/scss/**/*.scss"],
     "target": "docs",
     "css": [
-    "assets/css/index.css",
-    "assets/css/styleguide.css"],
+    "assets/css/index.min.css",
+    "assets/css/styleguide.min.css"],
     "scripts": [
         "https://code.jquery.com/jquery-3.2.1.slim.min.js",
         "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js",
