@@ -1,7 +1,7 @@
 /**
  * Sub nav is the secondary nav that shows on the desktop design on the right side.  
  *
- * @molecule Nav Sub (Sidebar Nav) 
+ * @structure Nav Sub (Sidebar Nav) 
  * @section Nav > Page 
  * @markup
  *  <div class="nav-subpage">
@@ -89,7 +89,7 @@
         &.active>a {
             color: $dark-orange;
         }
-        &.current>a{
+        &.current>a,&.current>a:hover{
             background-color:$light-orange;
             color:$off-black;
         }

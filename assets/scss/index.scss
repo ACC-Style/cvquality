@@ -27,8 +27,9 @@ body {
 @import "vendor/bootstrap.override/pagination.override";
 @import "vendor/bootstrap.override/progress-bar.override";
 
+@import "base/list-nobullets";
 
-@import "component/box";
+@import "component/card";
 @import "component/button";
 @import "component/user-status-container";
 @import "component/nav-basic";
@@ -37,7 +38,6 @@ body {
 @import "component/nav-sub";
 @import "component/mobile-menu-toggle";
 @import "component/video-player";
-@import "component/list-nobullets";
 
 /* Footer */
 @import "component/address";

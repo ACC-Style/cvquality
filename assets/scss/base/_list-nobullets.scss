@@ -1,0 +1,43 @@
+/**
+* listing of blocks of information to be semanitic are wrapped in a ul.nobullet 
+*
+* @molecule List with No Bullets
+* @section Typography
+* @markup
+*  <ul class="no-bullets">
+*      <li>
+*      <h2>
+*      <a href="/Clinical-Toolkits/QI-Toolkit">QI Toolkit</a>
+*      </h2>
+*      <p>
+*      Implement quality patient care at your facility with checklists, reminders, and other tools to address common quality improvement issues.
+*      <a class="more" href="/Clinical-Toolkits/QII-Toolkit"></a>
+*      </p>
+*      </li>
+*      <li>
+*      <h2>
+*      <a href="/clinical-toolkits/public-reporting-toolkit">Public Reporting Toolkit</a>
+*      </h2>
+*      <p id="content_1_genList_rptListings_qiiGenLisItem_1_genericP_1">
+*      Implement best practices for improving data collection processes, overall data quality through better registry data capture, and performance on publicly reported metrics.
+*      <a class="more" href="/clinical-toolkits/public-reporting-toolkit">More..</a>
+*      </p>
+*      </li>
+*  </ul>
+*/
+
+ul.no-bullets{
+    /*.layout-listing #colone ul.generic-list,*/
+    margin-top: 1em;
+    li {
+        /*.layout-listing #colone ul.generic-list li, */
+        margin: 0 0 1em;
+        overflow: auto;
+        list-style-type: none;
+        img {
+            /*.layout-listing ul.generic-list li img, */
+            margin: 0 14px 6px 0;
+            float: left;
+        }
+    }
+}

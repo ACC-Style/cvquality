@@ -15,12 +15,45 @@
  *  .position-right-sm the float appears small up.
  *  .position-left-[size] floats the card to the left so text will wrap around the right when the veiw port is above the size.
  * @markup
- *  <div class="card notice"><div class="card-body"><h1>Notice Title</h1></div></div>
+ *  <div><div class="card notice position-right-md"><div class="card-body"><h1>Notice Block</h1><p>@{lipsum:10:words}</p><a class="btn btn-secondary btn-block">Action</a></div></div><div>@{lipsum:3:paragraphs}</div></div>
  *
  */
 .card.notice{
 	 background-color: $soft-blue;
+	 border-color:$soft-blue;
 }
+.card{
+	float:none;
+	width:100%;
+	width:100%;
+	transition:width 1s ease-out;
+	-webkit-transition:width 1s ease-out;
+	-moz-transition:width 1s ease-out;
+
+	&.position-right{
+		float: right; clear:right; width:45%;margin-left:5%;margin-bottom:1em;
+	}
+	&.position-left{
+		float: left; clear:left; width:45%;margin-right:5%;margin-bottom:1em;
+	}
+	@include bp(sm){
+		&.position-right,&.position-right-sm{float: right; clear:right; width:40%; margin-left:1.5em;margin-bottom:1em;}
+		&.position-left,&.position-left-sm{float: left; clear:left; width:40%;margin-right:1.5em;margin-bottom:1em;}
+
+	}
+	@include bp(md){
+		&.position-right,&.position-right-sm,&.position-right-md{float: right; clear:right; width:33%; margin-left:1.5em;margin-bottom:1em;}
+
+		&.position-left,&.position-left-sm,&.position-left-md{float: left; clear:left; width:33%;margin-right:1.5em;margin-bottom:1em;}
+	}
+	@include bp(lg){
+		&.position-right,&.position-right-sm,&.position-right-md,&.position-right-lg{float: right; clear:right; width:20%; margin-left:1.5em;margin-bottom:1em;}
+		&.position-left,&.position-left-sm,&.position-left-md,&.position-left-lg{float: left; clear:left; width:20%;margin-right:1.5em;margin-bottom:1em;}
+	}
+
+	
+}
+
 .card.info{
 	 background-color: $soft-grey;
 }

@@ -283,20 +283,20 @@ span {
 .alphabet-display .font--uppercase {
   text-transform: uppercase; }
 .alphabet-display .ms12 {
-  font-size: 10.57143em;
-  line-height: 1.13514em;
+  font-size: 10.5714285714em;
+  line-height: 1.1351351351em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
   .alphabet-display .ms12 {
-    line-height: 1.02162em; } }
+    line-height: 1.0216216216em; } }
 @media only screen and (max-width: 1024px) and (max-height: 320px) {
   .alphabet-display .ms12 {
     line-height: 1em; } }
 
 .alphabet-display .ms6 {
-  font-size: 4.14286em;
-  line-height: 1.08621em;
+  font-size: 4.1428571429em;
+  line-height: 1.0862068966em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
@@ -307,8 +307,8 @@ span {
     line-height: 1em; } }
 
 .alphabet-display .ms4 {
-  font-size: 2.57143em;
-  line-height: 1.16667em;
+  font-size: 2.5714285714em;
+  line-height: 1.1666666667em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
@@ -319,20 +319,20 @@ span {
     line-height: 1em; } }
 
 .alphabet-display .ms2 {
-  font-size: 1.57143em;
-  line-height: 1.90909em;
+  font-size: 1.5714285714em;
+  line-height: 1.9090909091em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
   .alphabet-display .ms2 {
-    line-height: 1.71818em; } }
+    line-height: 1.7181818182em; } }
 @media only screen and (max-width: 1024px) and (max-height: 320px) {
   .alphabet-display .ms2 {
-    line-height: 1.62273em; } }
+    line-height: 1.6227272727em; } }
 
 .alphabet-display .ms1 {
-  font-size: 1.28571em;
-  line-height: 1.16667em;
+  font-size: 1.2857142857em;
+  line-height: 1.1666666667em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
@@ -421,7 +421,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 *,
 *::before,
@@ -908,48 +908,48 @@ pre {
   max-width: none; }
 
 .col-1 {
-  flex: 0 0 8.33333%;
-  max-width: 8.33333%; }
+  flex: 0 0 8.3333333333%;
+  max-width: 8.3333333333%; }
 
 .col-2 {
-  flex: 0 0 16.66667%;
-  max-width: 16.66667%; }
+  flex: 0 0 16.6666666667%;
+  max-width: 16.6666666667%; }
 
 .col-3 {
   flex: 0 0 25%;
   max-width: 25%; }
 
 .col-4 {
-  flex: 0 0 33.33333%;
-  max-width: 33.33333%; }
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%; }
 
 .col-5 {
-  flex: 0 0 41.66667%;
-  max-width: 41.66667%; }
+  flex: 0 0 41.6666666667%;
+  max-width: 41.6666666667%; }
 
 .col-6 {
   flex: 0 0 50%;
   max-width: 50%; }
 
 .col-7 {
-  flex: 0 0 58.33333%;
-  max-width: 58.33333%; }
+  flex: 0 0 58.3333333333%;
+  max-width: 58.3333333333%; }
 
 .col-8 {
-  flex: 0 0 66.66667%;
-  max-width: 66.66667%; }
+  flex: 0 0 66.6666666667%;
+  max-width: 66.6666666667%; }
 
 .col-9 {
   flex: 0 0 75%;
   max-width: 75%; }
 
 .col-10 {
-  flex: 0 0 83.33333%;
-  max-width: 83.33333%; }
+  flex: 0 0 83.3333333333%;
+  max-width: 83.3333333333%; }
 
 .col-11 {
-  flex: 0 0 91.66667%;
-  max-width: 91.66667%; }
+  flex: 0 0 91.6666666667%;
+  max-width: 91.6666666667%; }
 
 .col-12 {
   flex: 0 0 100%;
@@ -1003,48 +1003,48 @@ pre {
     max-width: none; }
 
   .col-sm-1 {
-    flex: 0 0 8.33333%;
-    max-width: 8.33333%; }
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%; }
 
   .col-sm-2 {
-    flex: 0 0 16.66667%;
-    max-width: 16.66667%; }
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%; }
 
   .col-sm-3 {
     flex: 0 0 25%;
     max-width: 25%; }
 
   .col-sm-4 {
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%; }
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
 
   .col-sm-5 {
-    flex: 0 0 41.66667%;
-    max-width: 41.66667%; }
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%; }
 
   .col-sm-6 {
     flex: 0 0 50%;
     max-width: 50%; }
 
   .col-sm-7 {
-    flex: 0 0 58.33333%;
-    max-width: 58.33333%; }
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%; }
 
   .col-sm-8 {
-    flex: 0 0 66.66667%;
-    max-width: 66.66667%; }
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%; }
 
   .col-sm-9 {
     flex: 0 0 75%;
     max-width: 75%; }
 
   .col-sm-10 {
-    flex: 0 0 83.33333%;
-    max-width: 83.33333%; }
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%; }
 
   .col-sm-11 {
-    flex: 0 0 91.66667%;
-    max-width: 91.66667%; }
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%; }
 
   .col-sm-12 {
     flex: 0 0 100%;
@@ -1097,48 +1097,48 @@ pre {
     max-width: none; }
 
   .col-md-1 {
-    flex: 0 0 8.33333%;
-    max-width: 8.33333%; }
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%; }
 
   .col-md-2 {
-    flex: 0 0 16.66667%;
-    max-width: 16.66667%; }
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%; }
 
   .col-md-3 {
     flex: 0 0 25%;
     max-width: 25%; }
 
   .col-md-4 {
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%; }
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
 
   .col-md-5 {
-    flex: 0 0 41.66667%;
-    max-width: 41.66667%; }
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%; }
 
   .col-md-6 {
     flex: 0 0 50%;
     max-width: 50%; }
 
   .col-md-7 {
-    flex: 0 0 58.33333%;
-    max-width: 58.33333%; }
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%; }
 
   .col-md-8 {
-    flex: 0 0 66.66667%;
-    max-width: 66.66667%; }
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%; }
 
   .col-md-9 {
     flex: 0 0 75%;
     max-width: 75%; }
 
   .col-md-10 {
-    flex: 0 0 83.33333%;
-    max-width: 83.33333%; }
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%; }
 
   .col-md-11 {
-    flex: 0 0 91.66667%;
-    max-width: 91.66667%; }
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%; }
 
   .col-md-12 {
     flex: 0 0 100%;
@@ -1191,48 +1191,48 @@ pre {
     max-width: none; }
 
   .col-lg-1 {
-    flex: 0 0 8.33333%;
-    max-width: 8.33333%; }
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%; }
 
   .col-lg-2 {
-    flex: 0 0 16.66667%;
-    max-width: 16.66667%; }
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%; }
 
   .col-lg-3 {
     flex: 0 0 25%;
     max-width: 25%; }
 
   .col-lg-4 {
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%; }
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
 
   .col-lg-5 {
-    flex: 0 0 41.66667%;
-    max-width: 41.66667%; }
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%; }
 
   .col-lg-6 {
     flex: 0 0 50%;
     max-width: 50%; }
 
   .col-lg-7 {
-    flex: 0 0 58.33333%;
-    max-width: 58.33333%; }
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%; }
 
   .col-lg-8 {
-    flex: 0 0 66.66667%;
-    max-width: 66.66667%; }
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%; }
 
   .col-lg-9 {
     flex: 0 0 75%;
     max-width: 75%; }
 
   .col-lg-10 {
-    flex: 0 0 83.33333%;
-    max-width: 83.33333%; }
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%; }
 
   .col-lg-11 {
-    flex: 0 0 91.66667%;
-    max-width: 91.66667%; }
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%; }
 
   .col-lg-12 {
     flex: 0 0 100%;
@@ -1285,48 +1285,48 @@ pre {
     max-width: none; }
 
   .col-xl-1 {
-    flex: 0 0 8.33333%;
-    max-width: 8.33333%; }
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%; }
 
   .col-xl-2 {
-    flex: 0 0 16.66667%;
-    max-width: 16.66667%; }
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%; }
 
   .col-xl-3 {
     flex: 0 0 25%;
     max-width: 25%; }
 
   .col-xl-4 {
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%; }
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
 
   .col-xl-5 {
-    flex: 0 0 41.66667%;
-    max-width: 41.66667%; }
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%; }
 
   .col-xl-6 {
     flex: 0 0 50%;
     max-width: 50%; }
 
   .col-xl-7 {
-    flex: 0 0 58.33333%;
-    max-width: 58.33333%; }
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%; }
 
   .col-xl-8 {
-    flex: 0 0 66.66667%;
-    max-width: 66.66667%; }
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%; }
 
   .col-xl-9 {
     flex: 0 0 75%;
     max-width: 75%; }
 
   .col-xl-10 {
-    flex: 0 0 83.33333%;
-    max-width: 83.33333%; }
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%; }
 
   .col-xl-11 {
-    flex: 0 0 91.66667%;
-    max-width: 91.66667%; }
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%; }
 
   .col-xl-12 {
     flex: 0 0 100%;
@@ -1714,20 +1714,19 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   background-color: rgba(153, 0, 0, 0.8);
   border-radius: .2rem; }
 
-.was-validated .form-control:valid, .form-control.is-valid, .was-validated
-.custom-select:valid,
+.was-validated .form-control:valid, .form-control.is-valid,
+.was-validated .custom-select:valid,
 .custom-select.is-valid {
   border-color: #28a745; }
-  .was-validated .form-control:valid:focus, .form-control.is-valid:focus, .was-validated
-  .custom-select:valid:focus,
+  .was-validated .form-control:valid:focus, .form-control.is-valid:focus,
+  .was-validated .custom-select:valid:focus,
   .custom-select.is-valid:focus {
     box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25); }
   .was-validated .form-control:valid ~ .invalid-feedback,
   .was-validated .form-control:valid ~ .invalid-tooltip, .form-control.is-valid ~ .invalid-feedback,
-  .form-control.is-valid ~ .invalid-tooltip, .was-validated
-  .custom-select:valid ~ .invalid-feedback,
-  .was-validated
-  .custom-select:valid ~ .invalid-tooltip,
+  .form-control.is-valid ~ .invalid-tooltip,
+  .was-validated .custom-select:valid ~ .invalid-feedback,
+  .was-validated .custom-select:valid ~ .invalid-tooltip,
   .custom-select.is-valid ~ .invalid-feedback,
   .custom-select.is-valid ~ .invalid-tooltip {
     display: block; }
@@ -1747,20 +1746,19 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .was-validated .custom-file-input:valid:focus, .custom-file-input.is-valid:focus {
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25); }
 
-.was-validated .form-control:invalid, .form-control.is-invalid, .was-validated
-.custom-select:invalid,
+.was-validated .form-control:invalid, .form-control.is-invalid,
+.was-validated .custom-select:invalid,
 .custom-select.is-invalid {
   border-color: #990000; }
-  .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus, .was-validated
-  .custom-select:invalid:focus,
+  .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus,
+  .was-validated .custom-select:invalid:focus,
   .custom-select.is-invalid:focus {
     box-shadow: 0 0 0 0.2rem rgba(153, 0, 0, 0.25); }
   .was-validated .form-control:invalid ~ .invalid-feedback,
   .was-validated .form-control:invalid ~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback,
-  .form-control.is-invalid ~ .invalid-tooltip, .was-validated
-  .custom-select:invalid ~ .invalid-feedback,
-  .was-validated
-  .custom-select:invalid ~ .invalid-tooltip,
+  .form-control.is-invalid ~ .invalid-tooltip,
+  .was-validated .custom-select:invalid ~ .invalid-feedback,
+  .was-validated .custom-select:invalid ~ .invalid-tooltip,
   .custom-select.is-invalid ~ .invalid-feedback,
   .custom-select.is-invalid ~ .invalid-tooltip {
     display: block; }
@@ -4526,7 +4524,7 @@ a.bg-dark:focus, a.bg-dark:hover {
     border: 0; }
 
 .embed-responsive-21by9::before {
-  padding-top: 42.85714%; }
+  padding-top: 42.8571428571%; }
 
 .embed-responsive-16by9::before {
   padding-top: 56.25%; }
@@ -7273,7 +7271,7 @@ input {
 /**
 * Breadcrumbs 
 *
-* @molecule Breadcrumb
+* @structure Breadcrumb
 * @section Nav > Utility 
 * @markup
 *  <nav class="breadcrumb">
@@ -7297,7 +7295,7 @@ input {
 /**
 * Navigaion between dynamic or category collected pages when the collection is above the count of 10.
 *
-* @molecule Pagination
+* @structure Pagination
 * @section Nav > Utility 
 * @modifiers
 *  .active highlights the page user is on in the collection
@@ -7349,6 +7347,46 @@ input {
 .progress-bar.progress-bar-secondary {
   background-color: #6f6b6f; }
 
+/**
+* listing of blocks of information to be semanitic are wrapped in a ul.nobullet 
+*
+* @molecule List with No Bullets
+* @section Typography
+* @markup
+*  <ul class="no-bullets">
+*      <li>
+*      <h2>
+*      <a href="/Clinical-Toolkits/QI-Toolkit">QI Toolkit</a>
+*      </h2>
+*      <p>
+*      Implement quality patient care at your facility with checklists, reminders, and other tools to address common quality improvement issues.
+*      <a class="more" href="/Clinical-Toolkits/QII-Toolkit"></a>
+*      </p>
+*      </li>
+*      <li>
+*      <h2>
+*      <a href="/clinical-toolkits/public-reporting-toolkit">Public Reporting Toolkit</a>
+*      </h2>
+*      <p id="content_1_genList_rptListings_qiiGenLisItem_1_genericP_1">
+*      Implement best practices for improving data collection processes, overall data quality through better registry data capture, and performance on publicly reported metrics.
+*      <a class="more" href="/clinical-toolkits/public-reporting-toolkit">More..</a>
+*      </p>
+*      </li>
+*  </ul>
+*/
+ul.no-bullets {
+  /*.layout-listing #colone ul.generic-list,*/
+  margin-top: 1em; }
+  ul.no-bullets li {
+    /*.layout-listing #colone ul.generic-list li, */
+    margin: 0 0 1em;
+    overflow: auto;
+    list-style-type: none; }
+    ul.no-bullets li img {
+      /*.layout-listing ul.generic-list li img, */
+      margin: 0 14px 6px 0;
+      float: left; }
+
 .card {
   border-radius: 0; }
   .card h1, .card h2, .card h3, .card h4, .card h5, .card h6 {
@@ -7366,11 +7404,71 @@ input {
  *  .position-right-sm the float appears small up.
  *  .position-left-[size] floats the card to the left so text will wrap around the right when the veiw port is above the size.
  * @markup
- *  <div class="card notice"><div class="card-body"><h1>Notice Title</h1></div></div>
+ *  <div><div class="card notice position-right-md"><div class="card-body"><h1>Notice Block</h1><p>@{lipsum:10:words}</p><a class="btn btn-secondary btn-block">Action</a></div></div><div>@{lipsum:3:paragraphs}</div></div>
  *
  */
 .card.notice {
-  background-color: #a4cded; }
+  background-color: #a4cded;
+  border-color: #a4cded; }
+
+.card {
+  float: none;
+  width: 100%;
+  width: 100%;
+  transition: width 1s ease-out;
+  -webkit-transition: width 1s ease-out;
+  -moz-transition: width 1s ease-out; }
+  .card.position-right {
+    float: right;
+    clear: right;
+    width: 45%;
+    margin-left: 5%;
+    margin-bottom: 1em; }
+  .card.position-left {
+    float: left;
+    clear: left;
+    width: 45%;
+    margin-right: 5%;
+    margin-bottom: 1em; }
+  @media only screen and (min-width: 576px) {
+    .card.position-right, .card.position-right-sm {
+      float: right;
+      clear: right;
+      width: 40%;
+      margin-left: 1.5em;
+      margin-bottom: 1em; }
+    .card.position-left, .card.position-left-sm {
+      float: left;
+      clear: left;
+      width: 40%;
+      margin-right: 1.5em;
+      margin-bottom: 1em; } }
+  @media only screen and (min-width: 768px) {
+    .card.position-right, .card.position-right-sm, .card.position-right-md {
+      float: right;
+      clear: right;
+      width: 33%;
+      margin-left: 1.5em;
+      margin-bottom: 1em; }
+    .card.position-left, .card.position-left-sm, .card.position-left-md {
+      float: left;
+      clear: left;
+      width: 33%;
+      margin-right: 1.5em;
+      margin-bottom: 1em; } }
+  @media only screen and (min-width: 1024px) {
+    .card.position-right, .card.position-right-sm, .card.position-right-md, .card.position-right-lg {
+      float: right;
+      clear: right;
+      width: 20%;
+      margin-left: 1.5em;
+      margin-bottom: 1em; }
+    .card.position-left, .card.position-left-sm, .card.position-left-md, .card.position-left-lg {
+      float: left;
+      clear: left;
+      width: 20%;
+      margin-right: 1.5em;
+      margin-bottom: 1em; } }
 
 .card.info {
   background-color: #eceaea; }
@@ -7671,7 +7769,7 @@ a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:a
 * User Status Container contains system feed back on what systems you may or may not be logged into. 
 *
 *
-* @molecule User Status
+* @structure User Status
 * @section Nav > Utility
 * @markup
 *   <div class="user-status-container">
@@ -7748,7 +7846,7 @@ a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:a
 /**
 * Primary Nav at the top of the page.
 *
-* @molecule  Nav Primary
+* @structure  Nav Primary
 * @section Nav > Page
 * @modifiers
 *  .active for use on marking when on page
@@ -7902,7 +8000,7 @@ a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:a
 /**
 * Utiltiy Nav at the top of the page. These are nav items are highly specialized and have been cherry picked out of site tree structure to give them global importance.
 *
-* @molecule  Utiltiy Nav 
+* @structure  Utiltiy Nav 
 * @section Nav > Utility
 * @modifiers 
 *  .mobile - decorates the nav to look like mobile
@@ -7959,7 +8057,7 @@ a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:a
 /**
  * Sub nav is the secondary nav that shows on the desktop design on the right side.  
  *
- * @molecule Nav Sub (Sidebar Nav) 
+ * @structure Nav Sub (Sidebar Nav) 
  * @section Nav > Page 
  * @markup
  *  <div class="nav-subpage">
@@ -8033,7 +8131,7 @@ a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:a
       color: #2f2f2f; }
   .nav-subpage li.active > a {
     color: #e87d1e; }
-  .nav-subpage li.current > a {
+  .nav-subpage li.current > a, .nav-subpage li.current > a:hover {
     background-color: #ffc425;
     color: #2f2f2f; }
   .nav-subpage li.parent a:before {
@@ -8059,7 +8157,7 @@ a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:a
  * Toggle Button for the menu on mobile
  *
  * @atom Mobile Toggle
- * @section Mobile
+ * @section Nav > Mobile
  * @markup
  *   <div class="mobile-menu-toggle"><span class="text">Menu</span> <i class="fa fa-bars"></i></div>
  */
@@ -8095,46 +8193,6 @@ a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:a
     left: 0;
     width: 100% !important;
     height: 100% !important; }
-
-/**
-* listing of blocks of information to be semanitic are wrapped in a ul.nobullet 
-*
-* @molecule List with No Bullets
-* @section Typography
-* @markup
-*    <ul class="no-bullets">
-*        <li>
-*        <h2>
-*        <a href="/Clinical-Toolkits/QI-Toolkit">QI Toolkit</a>
-*        </h2>
-*        <p>
-*        Implement quality patient care at your facility with checklists, reminders, and other tools to address common quality improvement issues.
-*        <a class="more" href="/Clinical-Toolkits/QII-Toolkit"></a>
-*        </p>
-*        </li>
-*        <li>
-*        <h2>
-*        <a href="/clinical-toolkits/public-reporting-toolkit">Public Reporting Toolkit</a>
-*        </h2>
-*        <p id="content_1_genList_rptListings_qiiGenLisItem_1_genericP_1">
-*        Implement best practices for improving data collection processes, overall data quality through better registry data capture, and performance on publicly reported metrics.
-*        <a class="more" href="/clinical-toolkits/public-reporting-toolkit">More..</a>
-*        </p>
-*        </li>
-*    </ul>
-*/
-ul.no-bullets {
-  /*.layout-listing #colone ul.generic-list,*/
-  margin-top: 1em; }
-  ul.no-bullets li {
-    /*.layout-listing #colone ul.generic-list li, */
-    margin: 0 0 1em;
-    overflow: auto;
-    list-style-type: none; }
-    ul.no-bullets li img {
-      /*.layout-listing ul.generic-list li img, */
-      margin: 0 14px 6px 0;
-      float: left; }
 
 /* Footer */
 /**
@@ -8192,7 +8250,7 @@ address.vcard {
 * Social engagement buttons.
 * 
 *	
-* @molecule Social Buttons
+* @structure Social Buttons
 * @section Nav > Utility
 * @markup 
 *  <section id="social" class="social-buttons">
@@ -8250,7 +8308,7 @@ address.vcard {
 /**
 * Navigation in the footer
 *
-* @molecule  Nav Footer
+* @structure  Nav Footer
 * @section Nav > Page
 * @markup
 *  <ul id="footer-sitemap">
@@ -8318,6 +8376,7 @@ address.vcard {
 /**
  * Footer of CV Qaulity combines, footer-nav, socail-nav, and logos to make a renforcing page structure.
  * @structure Footer Nav
+ * @section Page Section
  *
  * @markup
  *  <footer id="footer" role="contentinfo">
@@ -9482,7 +9541,7 @@ main .forgot-pswd #fp-email {
 
 /* Customer Service Toggle */
 .cs-box h2:before {
-  background: url("../images/2013-icn-customer-service.png") no-repeat scroll center -4px transparent;
+  background: url("../images/2013-icn-customer-service.png") no-repeat scroll center -4px rgba(0, 0, 0, 0);
   content: " , ";
   display: block;
   height: 40px;
