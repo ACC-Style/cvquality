@@ -87,7 +87,7 @@
                 color:$off-black;
             }
         }
-        &.active>a {
+        &.current>a {
             color: $dark-orange;
         }
         &.current>a,&.current>a:hover{
@@ -95,7 +95,7 @@
             color:$off-black;
         }
 
-        &.parent a:before {
+        &.parent>a:before {
             @extend .icon-before;
             content: "\f0da";
             cursor: pointer;

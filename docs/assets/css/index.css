@@ -97,7 +97,7 @@
  *  @include monospace(300);
  */
 @import "https://use.fontawesome.com/972bb54a90.css";
-.icon-before:before, .accordion .card-header h5:before, a.link:before, .nav-subpage li.parent a:before {
+.icon-before:before, .accordion .card-header h5:before, a.link:before, .nav-subpage li.parent > a:before {
   display: inline-block;
   margin-right: .5em;
   font: normal normal normal 14px/1 FontAwesome;
@@ -6939,7 +6939,7 @@ a.text-dark:focus, a.text-dark:hover {
 *              <div class="modal-content">
 *                  <div class="modal-header">
 *                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-*                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+*                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">├ù</span></button>
 *                  </div>
 *                  <div class="modal-body">
 *                      <h2>Modal body heading</h2>
@@ -7787,6 +7787,8 @@ a.link[href^="mailto:"]:before {
   content: "\f003"; }
 a.link[href^="tel:"]:before {
   content: "\f095"; }
+a.link[href^="fax:"]:before {
+  content: "\f1ac"; }
 
 /**
 * User Status Container contains system feed back on what systems you may or may not be logged into. 
@@ -8154,12 +8156,12 @@ a.link[href^="tel:"]:before {
     .nav-subpage li a:hover {
       text-decoration: none;
       color: #2f2f2f; }
-  .nav-subpage li.active > a {
+  .nav-subpage li.current > a {
     color: #e87d1e; }
   .nav-subpage li.current > a, .nav-subpage li.current > a:hover {
     background-color: #ffc425;
     color: #2f2f2f; }
-  .nav-subpage li.parent a:before {
+  .nav-subpage li.parent > a:before {
     content: "\f0da";
     cursor: pointer;
     transition: transform 0.25s ease-out;
