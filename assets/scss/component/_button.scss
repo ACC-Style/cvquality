@@ -179,4 +179,7 @@ a.link{
 	&[href^="tel:"]:before{ 
 	    content: "\f095";
 	}
+	&[href^="fax:"]:before{ 
+	    content: "\f1ac";
+	}
 }
