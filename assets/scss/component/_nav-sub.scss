@@ -60,16 +60,16 @@
         -webkit-transition:max-height 1s ease-out;
         -moz-transition:max-height 1s ease-out;
         background: $soft-grey;
-        >li:hover{ background:mix($soft-grey,white);}
+        >li a:hover{ background:mix($soft-grey,white);}
         ul {
             font-size: ms(0);
             max-height: 0;
             overflow: hidden;
             background: mix($soft-grey, $warm-grey-light);
-            >li:hover{ background:mix(white,$warm-grey-light);}
+            >li a:hover{ background:mix(white,$warm-grey-light);}
             ul {
                background:mix($warm-grey,$soft-grey);
-               >li:hover{background:mix(white,$warm-grey);}
+               >li a:hover{background:mix(white,$warm-grey);}
             }
         }
     }
@@ -87,12 +87,12 @@
                 color:$off-black;
             }
         }
-        &.current.active>a {
+        &.current>a {
             color: $dark-orange;
         }
         &.current>a,&.current>a:hover{
-           
-             color: $dark-orange;
+            background-color:$light-orange;
+            color:$off-black;
         }
 
         &.parent>a:before {
@@ -114,10 +114,7 @@
             }
         }
     }
-    li>a{padding: 3px 10px 3px 0;}
-    li li>a{padding: 3px 10px 3px 0;}
-    li li li>a{padding: 3px 10px 3px 0;}
-    li{padding-right:.75rem;}
-    li li{padding-right:1.5rem;}
-    li li li{padding-right:2.25rem;}
+    li>a{padding: 3px 10px 3px .75rem;}
+    li li>a{padding: 3px 10px 3px 1.5rem;}
+    li li li>a{padding: 3px 10px 3px 2.25rem;}
 }

@@ -8130,18 +8130,18 @@ a.link[href^="fax:"]:before {
   -webkit-transition: max-height 1s ease-out;
   -moz-transition: max-height 1s ease-out;
   background: #eceaea; }
-  .nav-subpage ul > li:hover {
+  .nav-subpage ul > li a:hover {
     background: #f6f5f5; }
   .nav-subpage ul ul {
     font-size: 14px;
     max-height: 0;
     overflow: hidden;
     background: #e1dfdf; }
-    .nav-subpage ul ul > li:hover {
+    .nav-subpage ul ul > li a:hover {
       background: #ebeaea; }
     .nav-subpage ul ul ul {
       background: #c7c5c7; }
-      .nav-subpage ul ul ul > li:hover {
+      .nav-subpage ul ul ul > li a:hover {
         background: #d0d0d2; }
 .nav-subpage li {
   display: block;
@@ -8156,10 +8156,11 @@ a.link[href^="fax:"]:before {
     .nav-subpage li a:hover {
       text-decoration: none;
       color: #2f2f2f; }
-  .nav-subpage li.current.active > a {
+  .nav-subpage li.current > a {
     color: #e87d1e; }
   .nav-subpage li.current > a, .nav-subpage li.current > a:hover {
-    color: #e87d1e; }
+    background-color: #ffc425;
+    color: #2f2f2f; }
   .nav-subpage li.parent > a:before {
     content: "\f0da";
     cursor: pointer;
@@ -8173,17 +8174,11 @@ a.link[href^="fax:"]:before {
     -moz-transform: rotate(90deg);
     -webkit-transform: rotate(90deg); }
 .nav-subpage li > a {
-  padding: 3px 10px 3px 0; }
+  padding: 3px 10px 3px .75rem; }
 .nav-subpage li li > a {
-  padding: 3px 10px 3px 0; }
+  padding: 3px 10px 3px 1.5rem; }
 .nav-subpage li li li > a {
-  padding: 3px 10px 3px 0; }
-.nav-subpage li {
-  padding-right: .75rem; }
-.nav-subpage li li {
-  padding-right: 1.5rem; }
-.nav-subpage li li li {
-  padding-right: 2.25rem; }
+  padding: 3px 10px 3px 2.25rem; }
 
 /**
  * Toggle Button for the menu on mobile
