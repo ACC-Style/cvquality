@@ -74,6 +74,11 @@ $h4-font-size: ms(1);
 $h5-font-size: ms(1);
 $h6-font-size: ms(0);
 
+$font-size-base: (ms(1)/16px)*1rem;
+$font-size-lg:  (ms(2)/16px)*1rem;
+$font-size-sm:   (ms(0)/16px)*1rem;
+
+
 $headings-font-family: 'Muli', Verdana, Helvetica, sans-serif;
 
 // cheveron content "\f054"
@@ -93,3 +98,18 @@ $progress-bg:                   $warm-grey-light;
 $progress-bar-color:            $white;
 $progress-bar-bg:               $dark-orange;
 $progress-box-shadow:           inset 0 .1rem .1rem rgba($off-black,.25);
+
+
+// Buttons
+
+$input-btn-padding-y:       (4/16)*1rem;
+$input-btn-padding-x:       1rem;
+$input-btn-line-height:     1.25;
+
+$input-btn-padding-y-sm:    (2/16)*1rem;
+$input-btn-padding-x-sm:    .75rem;
+$input-btn-line-height-sm:  1.1;
+
+$input-btn-padding-y-lg:    (6/16)*1rem;
+$input-btn-padding-x-lg:    1.5rem;
+$input-btn-line-height-lg:  1.5;

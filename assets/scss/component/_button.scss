@@ -143,12 +143,16 @@ input[type="submit"], input[type="button"], button,.button{
 *  <a class="link" href="abc.pdf">A link that is a Pdf Document</a><br/>
 *  <a class="link" href="abc.doc">A link that is a Word Document</a><br/>
 *  <a class="link" href="https://www.abc.ppt">An External link that is a Power Point Document</a><br/>
+*  <a class="link" href="tel:1-555-555-5555">1-555-555-5555</a><br/>
+*  <a class="link" href="mailto:test@abc.org">test@abc.org</a><br/>
 * @modifiers
 *  .pdf Portable Document Format
 *  .doc Word Documents
 *  .txt Text Documents
 *  .ppt Power Points
-*  _blacnk External Link icons will appear after any link that has target blank, or the href begins with http, or https
+*  mailto: email links
+*  tel: Telephone 
+*  _blank External Link icons will appear after any link that has target blank, or the href begins with http, or https
  */
 
 a.link{
@@ -168,5 +172,11 @@ a.link{
 	&[target=_blank]:after,&[href^="http"]:after,&[href^="https"]:after{
 		@extend .icon-after;
 		content:"\f14c";
+	}
+	&[href^="mailto:"]:before{ 
+		content: "\f003";
+	}
+	&[href^="tel:"]:before{ 
+	    content: "\f095";
 	}
 }

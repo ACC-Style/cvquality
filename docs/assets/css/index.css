@@ -97,7 +97,7 @@
  *  @include monospace(300);
  */
 @import "https://use.fontawesome.com/972bb54a90.css";
-.icon-before:before, a.link:before, .nav-subpage li.parent a:before {
+.icon-before:before, .accordion .card-header h5:before, a.link:before, .nav-subpage li.parent a:before {
   display: inline-block;
   margin-right: .5em;
   font: normal normal normal 14px/1 FontAwesome;
@@ -283,61 +283,61 @@ span {
 .alphabet-display .font--uppercase {
   text-transform: uppercase; }
 .alphabet-display .ms12 {
-  font-size: 10.5714285714em;
-  line-height: 1.1351351351em;
+  font-size: 16.35714em;
+  line-height: 1.00873em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
   .alphabet-display .ms12 {
-    line-height: 1.0216216216em; } }
+    line-height: 1em; } }
 @media only screen and (max-width: 1024px) and (max-height: 320px) {
   .alphabet-display .ms12 {
     line-height: 1em; } }
 
 .alphabet-display .ms6 {
-  font-size: 4.1428571429em;
-  line-height: 1.0862068966em;
+  font-size: 5.35714em;
+  line-height: 1.12em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
   .alphabet-display .ms6 {
-    line-height: 1em; } }
+    line-height: 1.008em; } }
 @media only screen and (max-width: 1024px) and (max-height: 320px) {
   .alphabet-display .ms6 {
     line-height: 1em; } }
 
 .alphabet-display .ms4 {
-  font-size: 2.5714285714em;
-  line-height: 1.1666666667em;
+  font-size: 3.07143em;
+  line-height: 1.46512em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
   .alphabet-display .ms4 {
-    line-height: 1.05em; } }
+    line-height: 1.3186em; } }
 @media only screen and (max-width: 1024px) and (max-height: 320px) {
   .alphabet-display .ms4 {
-    line-height: 1em; } }
+    line-height: 1.24535em; } }
 
 .alphabet-display .ms2 {
-  font-size: 1.5714285714em;
-  line-height: 1.9090909091em;
+  font-size: 1.71429em;
+  line-height: 1.75em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
   .alphabet-display .ms2 {
-    line-height: 1.7181818182em; } }
+    line-height: 1.575em; } }
 @media only screen and (max-width: 1024px) and (max-height: 320px) {
   .alphabet-display .ms2 {
-    line-height: 1.6227272727em; } }
+    line-height: 1.4875em; } }
 
 .alphabet-display .ms1 {
-  font-size: 1.2857142857em;
-  line-height: 1.1666666667em;
+  font-size: 1.35714em;
+  line-height: 1.10526em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
   .alphabet-display .ms1 {
-    line-height: 1.05em; } }
+    line-height: 1em; } }
 @media only screen and (max-width: 1024px) and (max-height: 320px) {
   .alphabet-display .ms1 {
     line-height: 1em; } }
@@ -421,7 +421,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 *,
 *::before,
@@ -690,13 +690,13 @@ h1, h2, h3, h4, h5, h6,
   color: inherit; }
 
 h1, .h1 {
-  font-size: 22px; }
+  font-size: 24px; }
 
 h2, .h2 {
-  font-size: 20px; }
+  font-size: 21px; }
 
 h3, .h3 {
-  font-size: 18px; }
+  font-size: 19px; }
 
 h4, .h4 {
   font-size: 16px; }
@@ -908,48 +908,48 @@ pre {
   max-width: none; }
 
 .col-1 {
-  flex: 0 0 8.3333333333%;
-  max-width: 8.3333333333%; }
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%; }
 
 .col-2 {
-  flex: 0 0 16.6666666667%;
-  max-width: 16.6666666667%; }
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%; }
 
 .col-3 {
   flex: 0 0 25%;
   max-width: 25%; }
 
 .col-4 {
-  flex: 0 0 33.3333333333%;
-  max-width: 33.3333333333%; }
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%; }
 
 .col-5 {
-  flex: 0 0 41.6666666667%;
-  max-width: 41.6666666667%; }
+  flex: 0 0 41.66667%;
+  max-width: 41.66667%; }
 
 .col-6 {
   flex: 0 0 50%;
   max-width: 50%; }
 
 .col-7 {
-  flex: 0 0 58.3333333333%;
-  max-width: 58.3333333333%; }
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%; }
 
 .col-8 {
-  flex: 0 0 66.6666666667%;
-  max-width: 66.6666666667%; }
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%; }
 
 .col-9 {
   flex: 0 0 75%;
   max-width: 75%; }
 
 .col-10 {
-  flex: 0 0 83.3333333333%;
-  max-width: 83.3333333333%; }
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%; }
 
 .col-11 {
-  flex: 0 0 91.6666666667%;
-  max-width: 91.6666666667%; }
+  flex: 0 0 91.66667%;
+  max-width: 91.66667%; }
 
 .col-12 {
   flex: 0 0 100%;
@@ -1003,48 +1003,48 @@ pre {
     max-width: none; }
 
   .col-sm-1 {
-    flex: 0 0 8.3333333333%;
-    max-width: 8.3333333333%; }
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%; }
 
   .col-sm-2 {
-    flex: 0 0 16.6666666667%;
-    max-width: 16.6666666667%; }
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%; }
 
   .col-sm-3 {
     flex: 0 0 25%;
     max-width: 25%; }
 
   .col-sm-4 {
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%; }
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%; }
 
   .col-sm-5 {
-    flex: 0 0 41.6666666667%;
-    max-width: 41.6666666667%; }
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%; }
 
   .col-sm-6 {
     flex: 0 0 50%;
     max-width: 50%; }
 
   .col-sm-7 {
-    flex: 0 0 58.3333333333%;
-    max-width: 58.3333333333%; }
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%; }
 
   .col-sm-8 {
-    flex: 0 0 66.6666666667%;
-    max-width: 66.6666666667%; }
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%; }
 
   .col-sm-9 {
     flex: 0 0 75%;
     max-width: 75%; }
 
   .col-sm-10 {
-    flex: 0 0 83.3333333333%;
-    max-width: 83.3333333333%; }
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%; }
 
   .col-sm-11 {
-    flex: 0 0 91.6666666667%;
-    max-width: 91.6666666667%; }
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%; }
 
   .col-sm-12 {
     flex: 0 0 100%;
@@ -1097,48 +1097,48 @@ pre {
     max-width: none; }
 
   .col-md-1 {
-    flex: 0 0 8.3333333333%;
-    max-width: 8.3333333333%; }
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%; }
 
   .col-md-2 {
-    flex: 0 0 16.6666666667%;
-    max-width: 16.6666666667%; }
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%; }
 
   .col-md-3 {
     flex: 0 0 25%;
     max-width: 25%; }
 
   .col-md-4 {
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%; }
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%; }
 
   .col-md-5 {
-    flex: 0 0 41.6666666667%;
-    max-width: 41.6666666667%; }
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%; }
 
   .col-md-6 {
     flex: 0 0 50%;
     max-width: 50%; }
 
   .col-md-7 {
-    flex: 0 0 58.3333333333%;
-    max-width: 58.3333333333%; }
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%; }
 
   .col-md-8 {
-    flex: 0 0 66.6666666667%;
-    max-width: 66.6666666667%; }
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%; }
 
   .col-md-9 {
     flex: 0 0 75%;
     max-width: 75%; }
 
   .col-md-10 {
-    flex: 0 0 83.3333333333%;
-    max-width: 83.3333333333%; }
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%; }
 
   .col-md-11 {
-    flex: 0 0 91.6666666667%;
-    max-width: 91.6666666667%; }
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%; }
 
   .col-md-12 {
     flex: 0 0 100%;
@@ -1191,48 +1191,48 @@ pre {
     max-width: none; }
 
   .col-lg-1 {
-    flex: 0 0 8.3333333333%;
-    max-width: 8.3333333333%; }
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%; }
 
   .col-lg-2 {
-    flex: 0 0 16.6666666667%;
-    max-width: 16.6666666667%; }
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%; }
 
   .col-lg-3 {
     flex: 0 0 25%;
     max-width: 25%; }
 
   .col-lg-4 {
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%; }
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%; }
 
   .col-lg-5 {
-    flex: 0 0 41.6666666667%;
-    max-width: 41.6666666667%; }
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%; }
 
   .col-lg-6 {
     flex: 0 0 50%;
     max-width: 50%; }
 
   .col-lg-7 {
-    flex: 0 0 58.3333333333%;
-    max-width: 58.3333333333%; }
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%; }
 
   .col-lg-8 {
-    flex: 0 0 66.6666666667%;
-    max-width: 66.6666666667%; }
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%; }
 
   .col-lg-9 {
     flex: 0 0 75%;
     max-width: 75%; }
 
   .col-lg-10 {
-    flex: 0 0 83.3333333333%;
-    max-width: 83.3333333333%; }
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%; }
 
   .col-lg-11 {
-    flex: 0 0 91.6666666667%;
-    max-width: 91.6666666667%; }
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%; }
 
   .col-lg-12 {
     flex: 0 0 100%;
@@ -1285,48 +1285,48 @@ pre {
     max-width: none; }
 
   .col-xl-1 {
-    flex: 0 0 8.3333333333%;
-    max-width: 8.3333333333%; }
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%; }
 
   .col-xl-2 {
-    flex: 0 0 16.6666666667%;
-    max-width: 16.6666666667%; }
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%; }
 
   .col-xl-3 {
     flex: 0 0 25%;
     max-width: 25%; }
 
   .col-xl-4 {
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%; }
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%; }
 
   .col-xl-5 {
-    flex: 0 0 41.6666666667%;
-    max-width: 41.6666666667%; }
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%; }
 
   .col-xl-6 {
     flex: 0 0 50%;
     max-width: 50%; }
 
   .col-xl-7 {
-    flex: 0 0 58.3333333333%;
-    max-width: 58.3333333333%; }
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%; }
 
   .col-xl-8 {
-    flex: 0 0 66.6666666667%;
-    max-width: 66.6666666667%; }
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%; }
 
   .col-xl-9 {
     flex: 0 0 75%;
     max-width: 75%; }
 
   .col-xl-10 {
-    flex: 0 0 83.3333333333%;
-    max-width: 83.3333333333%; }
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%; }
 
   .col-xl-11 {
-    flex: 0 0 91.6666666667%;
-    max-width: 91.6666666667%; }
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%; }
 
   .col-xl-12 {
     flex: 0 0 100%;
@@ -1537,7 +1537,7 @@ pre {
 .form-control {
   display: block;
   width: 100%;
-  padding: 0.5rem 0.75rem;
+  padding: 0.25rem 1rem;
   font-size: 1rem;
   line-height: 1.25;
   color: #495057;
@@ -1563,7 +1563,7 @@ pre {
     opacity: 1; }
 
 select.form-control:not([size]):not([multiple]) {
-  height: calc(2.25rem + 2px); }
+  height: calc(1.75rem + 2px); }
 select.form-control:focus::-ms-value {
   color: #495057;
   background-color: #fff; }
@@ -1573,29 +1573,29 @@ select.form-control:focus::-ms-value {
   display: block; }
 
 .col-form-label {
-  padding-top: calc(0.5rem - 1px * 2);
-  padding-bottom: calc(0.5rem - 1px * 2);
+  padding-top: calc(0.25rem - 1px * 2);
+  padding-bottom: calc(0.25rem - 1px * 2);
   margin-bottom: 0; }
 
 .col-form-label-lg {
-  padding-top: calc(0.5rem - 1px * 2);
-  padding-bottom: calc(0.5rem - 1px * 2);
-  font-size: 1.25rem; }
+  padding-top: calc(0.375rem - 1px * 2);
+  padding-bottom: calc(0.375rem - 1px * 2);
+  font-size: 1.1875rem; }
 
 .col-form-label-sm {
-  padding-top: calc(0.25rem - 1px * 2);
-  padding-bottom: calc(0.25rem - 1px * 2);
+  padding-top: calc(0.125rem - 1px * 2);
+  padding-bottom: calc(0.125rem - 1px * 2);
   font-size: 0.875rem; }
 
 .col-form-legend {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   margin-bottom: 0;
   font-size: 1rem; }
 
 .form-control-plaintext {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   margin-bottom: 0;
   line-height: 1.25;
   border: solid transparent;
@@ -1623,16 +1623,16 @@ select.form-control:focus::-ms-value {
 .input-group-sm > .input-group-btn > input[type="button"],
 .input-group-sm > .input-group-btn > button,
 .input-group-sm > .input-group-btn > .button {
-  padding: 0.25rem 0.5rem;
+  padding: 0.125rem 0.75rem;
   font-size: 0.875rem;
-  line-height: 1.5;
+  line-height: 1.1;
   border-radius: 0.2rem; }
 
 select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]),
 .input-group-sm > select.input-group-addon:not([size]):not([multiple]),
 .input-group-sm > .input-group-btn > select.btn:not([size]):not([multiple]),
 .input-group-sm > .input-group-btn > select.button:not([size]):not([multiple]) {
-  height: calc(1.8125rem + 2px); }
+  height: calc(1.2125rem + 2px); }
 
 .form-control-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
@@ -1641,8 +1641,8 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 .input-group-lg > .input-group-btn > input[type="button"],
 .input-group-lg > .input-group-btn > button,
 .input-group-lg > .input-group-btn > .button {
-  padding: 0.5rem 1rem;
-  font-size: 1.25rem;
+  padding: 0.375rem 1.5rem;
+  font-size: 1.1875rem;
   line-height: 1.5;
   border-radius: 0.3rem; }
 
@@ -1650,7 +1650,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .input-group-lg > select.input-group-addon:not([size]):not([multiple]),
 .input-group-lg > .input-group-btn > select.btn:not([size]):not([multiple]),
 .input-group-lg > .input-group-btn > select.button:not([size]):not([multiple]) {
-  height: calc(2.3125rem + 2px); }
+  height: calc(2.0625rem + 2px); }
 
 .form-group {
   margin-bottom: 1rem; }
@@ -1714,19 +1714,20 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   background-color: rgba(153, 0, 0, 0.8);
   border-radius: .2rem; }
 
-.was-validated .form-control:valid, .form-control.is-valid,
-.was-validated .custom-select:valid,
+.was-validated .form-control:valid, .form-control.is-valid, .was-validated
+.custom-select:valid,
 .custom-select.is-valid {
   border-color: #28a745; }
-  .was-validated .form-control:valid:focus, .form-control.is-valid:focus,
-  .was-validated .custom-select:valid:focus,
+  .was-validated .form-control:valid:focus, .form-control.is-valid:focus, .was-validated
+  .custom-select:valid:focus,
   .custom-select.is-valid:focus {
     box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25); }
   .was-validated .form-control:valid ~ .invalid-feedback,
   .was-validated .form-control:valid ~ .invalid-tooltip, .form-control.is-valid ~ .invalid-feedback,
-  .form-control.is-valid ~ .invalid-tooltip,
-  .was-validated .custom-select:valid ~ .invalid-feedback,
-  .was-validated .custom-select:valid ~ .invalid-tooltip,
+  .form-control.is-valid ~ .invalid-tooltip, .was-validated
+  .custom-select:valid ~ .invalid-feedback,
+  .was-validated
+  .custom-select:valid ~ .invalid-tooltip,
   .custom-select.is-valid ~ .invalid-feedback,
   .custom-select.is-valid ~ .invalid-tooltip {
     display: block; }
@@ -1746,19 +1747,20 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .was-validated .custom-file-input:valid:focus, .custom-file-input.is-valid:focus {
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25); }
 
-.was-validated .form-control:invalid, .form-control.is-invalid,
-.was-validated .custom-select:invalid,
+.was-validated .form-control:invalid, .form-control.is-invalid, .was-validated
+.custom-select:invalid,
 .custom-select.is-invalid {
   border-color: #990000; }
-  .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus,
-  .was-validated .custom-select:invalid:focus,
+  .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus, .was-validated
+  .custom-select:invalid:focus,
   .custom-select.is-invalid:focus {
     box-shadow: 0 0 0 0.2rem rgba(153, 0, 0, 0.25); }
   .was-validated .form-control:invalid ~ .invalid-feedback,
   .was-validated .form-control:invalid ~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback,
-  .form-control.is-invalid ~ .invalid-tooltip,
-  .was-validated .custom-select:invalid ~ .invalid-feedback,
-  .was-validated .custom-select:invalid ~ .invalid-tooltip,
+  .form-control.is-invalid ~ .invalid-tooltip, .was-validated
+  .custom-select:invalid ~ .invalid-feedback,
+  .was-validated
+  .custom-select:invalid ~ .invalid-tooltip,
   .custom-select.is-invalid ~ .invalid-feedback,
   .custom-select.is-invalid ~ .invalid-tooltip {
     display: block; }
@@ -1842,7 +1844,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   vertical-align: middle;
   user-select: none;
   border: 1px solid transparent;
-  padding: 0.5rem 0.75rem;
+  padding: 0.25rem 1rem;
   font-size: 1rem;
   line-height: 1.25;
   border-radius: 0.25rem;
@@ -2179,13 +2181,13 @@ fieldset[disabled] a.button {
       text-decoration: none; }
 
 .btn-lg, .btn-group-lg > .btn, .btn-group-lg > input[type="submit"], .btn-group-lg > input[type="button"], .btn-group-lg > button, .btn-group-lg > .button {
-  padding: 0.5rem 1rem;
-  font-size: 1.25rem;
+  padding: 0.375rem 1.5rem;
+  font-size: 1.1875rem;
   line-height: 1.5;
   border-radius: 0.3rem; }
 
 .btn-sm, .btn-group-sm > .btn, .btn-group-sm > input[type="submit"], .btn-group-sm > input[type="button"], .btn-group-sm > button, .btn-group-sm > .button {
-  padding: 0.25rem 0.5rem;
+  padding: 0.125rem 0.75rem;
   font-size: 0.875rem;
   line-height: 1.5;
   border-radius: 0.2rem; }
@@ -2437,18 +2439,18 @@ tbody.collapse.show {
   border-bottom-left-radius: 0; }
 
 .btn + .dropdown-toggle-split, input[type="submit"] + .dropdown-toggle-split, input[type="button"] + .dropdown-toggle-split, button + .dropdown-toggle-split, .button + .dropdown-toggle-split {
-  padding-right: 0.5625rem;
-  padding-left: 0.5625rem; }
+  padding-right: 0.75rem;
+  padding-left: 0.75rem; }
   .btn + .dropdown-toggle-split::after, input[type="submit"] + .dropdown-toggle-split::after, input[type="button"] + .dropdown-toggle-split::after, button + .dropdown-toggle-split::after, .button + .dropdown-toggle-split::after {
     margin-left: 0; }
 
 .btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > input[type="submit"] + .dropdown-toggle-split, .btn-group-sm > input[type="button"] + .dropdown-toggle-split, .btn-group-sm > button + .dropdown-toggle-split, .btn-group-sm > .button + .dropdown-toggle-split {
-  padding-right: 0.375rem;
-  padding-left: 0.375rem; }
+  padding-right: 0.5625rem;
+  padding-left: 0.5625rem; }
 
 .btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > input[type="submit"] + .dropdown-toggle-split, .btn-group-lg > input[type="button"] + .dropdown-toggle-split, .btn-group-lg > button + .dropdown-toggle-split, .btn-group-lg > .button + .dropdown-toggle-split {
-  padding-right: 0.75rem;
-  padding-left: 0.75rem; }
+  padding-right: 1.125rem;
+  padding-left: 1.125rem; }
 
 .btn-group-vertical {
   display: inline-flex;
@@ -2543,7 +2545,7 @@ tbody.collapse.show {
   vertical-align: middle; }
 
 .input-group-addon {
-  padding: 0.5rem 0.75rem;
+  padding: 0.25rem 1rem;
   margin-bottom: 0;
   font-size: 1rem;
   font-weight: 400;
@@ -2560,7 +2562,7 @@ tbody.collapse.show {
   .input-group-sm > .input-group-btn > input.input-group-addon[type="button"],
   .input-group-sm > .input-group-btn > button.input-group-addon,
   .input-group-sm > .input-group-btn > .input-group-addon.button {
-    padding: 0.25rem 0.5rem;
+    padding: 0.125rem 0.75rem;
     font-size: 0.875rem;
     border-radius: 0.2rem; }
   .input-group-addon.form-control-lg,
@@ -2570,8 +2572,8 @@ tbody.collapse.show {
   .input-group-lg > .input-group-btn > input.input-group-addon[type="button"],
   .input-group-lg > .input-group-btn > button.input-group-addon,
   .input-group-lg > .input-group-btn > .input-group-addon.button {
-    padding: 0.5rem 1rem;
-    font-size: 1.25rem;
+    padding: 0.375rem 1.5rem;
+    font-size: 1.1875rem;
     border-radius: 0.3rem; }
   .input-group-addon input[type="radio"],
   .input-group-addon input[type="checkbox"] {
@@ -2720,7 +2722,7 @@ tbody.collapse.show {
 .custom-select {
   display: inline-block;
   max-width: 100%;
-  height: calc(2.25rem + 2px);
+  height: calc(1.75rem + 2px);
   padding: 0.375rem 1.75rem 0.375rem 0.75rem;
   line-height: 1.25;
   color: #495057;
@@ -2743,7 +2745,7 @@ tbody.collapse.show {
     opacity: 0; }
 
 .custom-select-sm {
-  height: calc(1.8125rem + 2px);
+  height: calc(1.2125rem + 2px);
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
   font-size: 75%; }
@@ -2871,10 +2873,10 @@ tbody.collapse.show {
 
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
+  padding-top: 0.35938rem;
+  padding-bottom: 0.35938rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: 1.1875rem;
   line-height: inherit;
   white-space: nowrap; }
   .navbar-brand:focus, .navbar-brand:hover {
@@ -2904,7 +2906,7 @@ tbody.collapse.show {
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
-  font-size: 1.25rem;
+  font-size: 1.1875rem;
   line-height: 1;
   background: transparent;
   border: 1px solid transparent;
@@ -3302,7 +3304,7 @@ tbody.collapse.show {
 
 .pagination-lg .page-link {
   padding: 0.75rem 1.5rem;
-  font-size: 1.25rem;
+  font-size: 1.1875rem;
   line-height: 1.5; }
 .pagination-lg .page-item:first-child .page-link {
   border-top-left-radius: 0.3rem;
@@ -4524,7 +4526,7 @@ a.bg-dark:focus, a.bg-dark:hover {
     border: 0; }
 
 .embed-responsive-21by9::before {
-  padding-top: 42.8571428571%; }
+  padding-top: 42.85714%; }
 
 .embed-responsive-16by9::before {
   padding-top: 56.25%; }
@@ -6937,7 +6939,7 @@ a.text-dark:focus, a.text-dark:hover {
 *              <div class="modal-content">
 *                  <div class="modal-header">
 *                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-*                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">├ù</span></button>
+*                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
 *                  </div>
 *                  <div class="modal-body">
 *                      <h2>Modal body heading</h2>
@@ -7230,6 +7232,9 @@ input {
 :-ms-input-placeholder {
   color: #08a; }
 
+.form-check-input {
+  margin-right: 4px; }
+
 .input.RadAutoCompleteBox .racTokenList {
   background-image: url(../images/icon-search.png);
   background-position: right;
@@ -7252,22 +7257,41 @@ input {
 * @markup
 *   <div class="accordion" role="tablist">
 *     <div class="card">
-*       <div class="card-header" role="tab" id="headingOne">
+*       <div class="card-header" role="tab" href="#collapseOne" id="headingOne" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
 *         <h5 class="mb-0">
-*           <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 *             Collapsible Group Item #1
-*           </a>
 *         </h5>
 *       </div> 
 *       <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-*         <div class="card-body">
+*         <div class="card-body"><p>
 *           Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-*         </div>
+*         </p></div>
 *       </div>
 *     </div>
 *   </div>
 *
 */
+.accordion .card-header {
+  background-color: #eceaea;
+  border: #d6d4d4 1px solid;
+  border-bottom: #05aee5 2px solid; }
+  .accordion .card-header:hover {
+    background-color: #a4cded;
+    border: #05aee5 1px solid;
+    border-bottom: #0088aa 2px solid;
+    text-decoration: none; }
+    .accordion .card-header:hover h5 {
+      color: #2f2f2f; }
+.accordion .card-header h5:before {
+  content: "\f13a";
+  transition: transform 0.25s ease-out;
+  -moz-transition: transform 0.25s ease-out;
+  -webkit-transition: transform 0.25s ease-out; }
+.accordion .card-header.collapsed h5:before {
+  transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg); }
+
 /**
 * Breadcrumbs 
 *
@@ -7350,7 +7374,7 @@ input {
 /**
 * listing of blocks of information to be semanitic are wrapped in a ul.no-bullets 
 *
-* @molecule List with No Bullets
+* @atom List with No Bullets
 * @section Typography
 * @markup
 *  <ul class="no-bullets">
@@ -7738,12 +7762,16 @@ ul.no-bullets {
 *  <a class="link" href="abc.pdf">A link that is a Pdf Document</a><br/>
 *  <a class="link" href="abc.doc">A link that is a Word Document</a><br/>
 *  <a class="link" href="https://www.abc.ppt">An External link that is a Power Point Document</a><br/>
+*  <a class="link" href="tel:1-555-555-5555">1-555-555-5555</a><br/>
+*  <a class="link" href="mailto:test@abc.org">test@abc.org</a><br/>
 * @modifiers
 *  .pdf Portable Document Format
 *  .doc Word Documents
 *  .txt Text Documents
 *  .ppt Power Points
-*  _blacnk External Link icons will appear after any link that has target blank, or the href begins with http, or https
+*  mailto: email links
+*  tel: Telephone 
+*  _blank External Link icons will appear after any link that has target blank, or the href begins with http, or https
  */
 a.link[href$=".pdf"]:before {
   content: "\f1c1"; }
@@ -7755,6 +7783,10 @@ a.link[href$=".csv"]:before, a.link[href$=".xls"]:before, a.link[href$=".xlsx"]:
   content: "\f0ce"; }
 a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:after {
   content: "\f14c"; }
+a.link[href^="mailto:"]:before {
+  content: "\f003"; }
+a.link[href^="tel:"]:before {
+  content: "\f095"; }
 
 /**
 * User Status Container contains system feed back on what systems you may or may not be logged into. 
@@ -7879,7 +7911,7 @@ a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:a
 #nav-primary {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 19px;
   background: #a1a0a4;
   border-top: #ffc425 4px solid; }
   #nav-primary .nav {
