@@ -4,63 +4,89 @@
 *	
 * @structure Social Buttons
 * @section Nav > Utility
+* @modifiers
+*  .mono-teal  added to the .nav-social-buttons container the class turns all of the buttons scrub teal
+*  .mono-orange  added to the .nav-social-buttons container the class turns all of the buttons dark orange
+*  .mono-grey  added to the .nav-social-buttons container the class turns all of the buttons grey
+*  .small  added to the .nav-social-buttons container the class turns all of the buttons small and more compact
 * @markup 
-*  <section id="social" class="social-buttons">
+*  <nav class="nav-social-button">
 *    <h2>Stay Connected</h2>
-*    <ul class="nav nav-social-button">
-*    <li class="nav-item twitter"><a id="msFooter_lnkTwitter" class="nav-link" href="https://twitter.com/accintouch" target="_blank"><i class="fa fa-twitter"></i></a></li>
-*    <li class="nav-item facebook"><a id="msFooter_lnkFacebook" class="nav-link" href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank"><i class="fa fa-facebook"></i></a></li>
-*    <li class="nav-item linkedin"><a id="msFooter_lnkLinkedIn" class="nav-link" href="http://www.linkedin.com/groups/American-College-Cardiology-732607?trk=myg_ugrp_ovr" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-*    <li class="nav-item youtube"><a id="msFooter_lnkYoutube" class="nav-link" href="http://www.youtube.com/user/ACCinTouch" target="_blank"><i class="fa fa-youtube"></i></a></li>
+*    <ul class="nav">
+*    <li class="nav-item twitter"><a class="nav-link" href="https://twitter.com/accintouch" target="_blank"><i class="fa fa-twitter"></i></a></li>
+*    <li class="nav-item facebook"><a class="nav-link" href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank"><i class="fa fa-facebook"></i></a></li>
+*    <li class="nav-item linkedin"><a  class="nav-link" href="http://www.linkedin.com/groups/American-College-Cardiology-732607?trk=myg_ugrp_ovr" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+*    <li class="nav-item youtube"><a  class="nav-link" href="http://www.youtube.com/user/ACCinTouch" target="_blank"><i class="fa fa-youtube"></i></a></li>
 *    </ul>
-*  </section>
+*  </nav>
 * 
 **/
-.social-buttons {
+.nav-social-button {
 	@extend %nav-basic;
-	padding: 0 1em;
-	clear: left;
-	@include bp(md){margin-top:2rem;}
-	h2 {
-		margin-bottom: 0.75em;
-		padding: 0;
-		font-size: 0.875em;
-		/* 14px */
-		text-transform: uppercase;
-		color:  $off-white;
-	}
-	i{
-		color: $off-white;
-	    font-size: 20px;
-	    margin: 10px;
-	    text-align: center;
-	}
-	.nav-social-button{
-		.nav-item {
-			margin: 0 4px 0;
-			padding: 0;	
-			float: left;
-			&.twitter a {
-				background-color: #78cdf0;
-			}
-			&.facebook a {
-				background-color: #537bbd;
-			}
-			&.youtube a {
-				background-color: #e9654b;
-			}
-			&.linkedin a {
-				background-color: #2085c7;
-			}
-			&:first-child{margin-left:0;}
-			&:last-child{margin-right:0;}			
+	.nav-item {
+		margin: 0 .125rem 0;
+		padding: 0;	
+		float: left;
+		opacity: .9;
+		&:hover{
+			opacity: 1;
 		}
-		.nav-link {
-				height: 40px;
-				width: 40px;
-				padding:0;
-				display: block;
-				text-align: center;
+		&.twitter a {
+			background-color: #78cdf0;
+		}
+		&.facebook a {
+			background-color: #537bbd;
+		}
+		&.youtube a {
+			background-color: #e9654b;
+		}
+		&.linkedin a {
+			background-color: #2085c7;
+		}
+		&:first-child{margin-left:0;}
+		&:last-child{margin-right:0;}			
+	}
+	.nav-link {
+		height: ms(7);
+		width:  ms(7);
+		padding:0;
+		display: inline-block;
+		text-align: center;
+		i{
+			display: inline-block;
+			color: $off-white;
+		    font-size: ms(4);
+		    text-align: center;
+		    line-height: 1;
+		    width: ms(7);
+		    height: ms(7);
+		    vertical-align: middle;
+		    @extend .icon-before;
+		    &:after{content: "\f0da"; vertical-align:middle;}
 		}
 	}
+	&.mono-teal .nav-item{
+		a{background-color:$scrubteal;}
+	}
+	&.mono-orange .nav-item{
+		a{background-color:$dark-orange;}
+	}
+	&.mono-grey .nav-item{
+		a{background-color:$warm-grey;}
+	}
+	&.small{ 
+		.nav-item{
+			margin:0 2px 0;
+		}
+		.nav-link{
+			height: ms(3);
+			width: ms(3);
+			i{
+				width:ms(3);
+				height: ms(3);
+				font-size:ms(1);
+			}		
+		}
+	}
+
 }

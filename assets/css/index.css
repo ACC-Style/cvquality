@@ -97,7 +97,7 @@
  *  @include monospace(300);
  */
 @import "https://use.fontawesome.com/972bb54a90.css";
-.icon-before:before, .accordion .card-header h5:before, a.link:before {
+.icon-before:before, .accordion .card-header h5:before, a.link:before, .nav-social-button .nav-link i:before {
   display: inline-block;
   margin-right: .5em;
   font: normal normal normal 14px/1 FontAwesome;
@@ -4540,7 +4540,7 @@ a.bg-dark:focus, a.bg-dark:hover {
 .flex-row {
   flex-direction: row !important; }
 
-.flex-column, #nav-primary.mobile, #nav-utility.mobile {
+.flex-column, .nav-primary.mobile, #nav-utility.mobile {
   flex-direction: column !important; }
 
 .flex-row-reverse {
@@ -7859,11 +7859,11 @@ a.link[href^="fax:"]:before {
     .nav-user-status .action:hover {
       text-decoration: underline; }
 
-.pagination, .nav-user-status, #nav-primary, #nav-utility, .nav-sub, .social-buttons, .pagination ul, .nav-user-status ul, #nav-primary ul, #nav-utility ul, .nav-sub ul, .social-buttons ul, .nav, .nav ul, .navbar-nav, .navbar-nav ul {
+.pagination, .nav-user-status, .nav-primary, #nav-utility, .nav-sub, .nav-social-button, .pagination ul, .nav-user-status ul, .nav-primary ul, #nav-utility ul, .nav-sub ul, .nav-social-button ul, .nav, .nav ul, .navbar-nav, .navbar-nav ul {
   list-style: none;
   margin: 0;
   padding: 0; }
-.pagination li, .nav-user-status li, #nav-primary li, #nav-utility li, .nav-sub li, .social-buttons li, .pagination ul li, .nav-user-status ul li, #nav-primary ul li, #nav-utility ul li, .nav-sub ul li, .social-buttons ul li, .nav li, .nav ul li, .navbar-nav li, .navbar-nav ul li {
+.pagination li, .nav-user-status li, .nav-primary li, #nav-utility li, .nav-sub li, .nav-social-button li, .pagination ul li, .nav-user-status ul li, .nav-primary ul li, #nav-utility ul li, .nav-sub ul li, .nav-social-button ul li, .nav li, .nav ul li, .navbar-nav li, .navbar-nav ul li {
   list-style-type: none;
   margin: 0;
   padding: 0; }
@@ -7880,7 +7880,7 @@ a.link[href^="fax:"]:before {
 *  .alt.primary used to decorate the standout button to the positive flow
 *  .alt.secondary used to convert the standout button to the alternate flow
 * @markup 
-*  <nav id="nav-primary">
+*  <nav class="nav-primary">
 *      <ul class="nav nav-fill flex-column flex-md-row">
 *        <li class="nav-item">
 *          <a class="nav-link active" href="#">@{lipsum:1:words}</a>
@@ -7912,19 +7912,19 @@ a.link[href^="fax:"]:before {
 *      </ul>
 *  </nav>
 */
-#nav-primary {
+.nav-primary {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 19px;
   background: #a1a0a4;
   border-top: #ffc425 4px solid; }
-  #nav-primary .nav {
+  .nav-primary .nav {
     width: 100%; }
-  #nav-primary .nav-item:hover {
+  .nav-primary .nav-item:hover {
     background-color: #6f6b6f; }
-  #nav-primary .nav-item + .nav-item {
+  .nav-primary .nav-item + .nav-item {
     border: #fafafa dotted 1px; }
-  #nav-primary .nav-item.alt.primary {
+  .nav-primary .nav-item.alt.primary {
     background: #047294;
     /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -7941,7 +7941,7 @@ a.link[href^="fax:"]:before {
     /* IE10+ */
     background: linear-gradient(to bottom, #05aee5 0%, #047294 100%);
     /* W3C */ }
-    #nav-primary .nav-item.alt.primary:hover {
+    .nav-primary .nav-item.alt.primary:hover {
       background: #047294;
       /* Old browsers */
       /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -7958,7 +7958,7 @@ a.link[href^="fax:"]:before {
       /* IE10+ */
       background: linear-gradient(to bottom, #047294 0%, #0088aa 100%);
       /* W3C */ }
-  #nav-primary .nav-item.alt.secondary {
+  .nav-primary .nav-item.alt.secondary {
     background: #a1a0a4;
     /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -7975,7 +7975,7 @@ a.link[href^="fax:"]:before {
     /* IE10+ */
     background: linear-gradient(to bottom, #a1a0a4 0%, #6f6b6f 100%);
     /* W3C */ }
-    #nav-primary .nav-item.alt.secondary:hover {
+    .nav-primary .nav-item.alt.secondary:hover {
       background: #6f6b6f;
       /* Old browsers */
       /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -7992,54 +7992,54 @@ a.link[href^="fax:"]:before {
       /* IE10+ */
       background: linear-gradient(to bottom, #6f6b6f 0%, #a1a0a4 100%);
       /* W3C */ }
-  #nav-primary .nav-link {
+  .nav-primary .nav-link {
     text-align: left;
     padding-bottom: 10px;
     padding-top: 10px;
     text-transform: uppercase;
     color: #fafafa; }
-    #nav-primary .nav-link:hover {
+    .nav-primary .nav-link:hover {
       color: #fff; }
   @media only screen and (min-width: 768px) {
-    #nav-primary .nav-item + .nav-item {
+    .nav-primary .nav-item + .nav-item {
       border: none transparent 0; }
-    #nav-primary .nav-link {
+    .nav-primary .nav-link {
       text-align: center; } }
-  #nav-primary .dropdown-toggle::after {
+  .nav-primary .dropdown-toggle::after {
     border: none 0 transparent; }
-  #nav-primary .dropdown-menu {
+  .nav-primary .dropdown-menu {
     border-radius: 0px;
     background-color: #eceaea;
     padding: 0;
     margin: 0; }
-  #nav-primary .dropdown-item {
+  .nav-primary .dropdown-item {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 16px;
     padding: .5em 1em;
     color: #a1a0a4; }
-    #nav-primary .dropdown-item:hover {
+    .nav-primary .dropdown-item:hover {
       background-color: #a1a0a4;
       color: white; }
-  #nav-primary .dropdown-divider {
+  .nav-primary .dropdown-divider {
     border: 1px dotted #a4cded; }
-  #nav-primary .dropdown.alt .dropdown-menu {
+  .nav-primary .dropdown.alt .dropdown-menu {
     width: 100%;
     right: 0;
     background-color: #387a8d; }
-    #nav-primary .dropdown.alt .dropdown-menu .dropdown-item {
+    .nav-primary .dropdown.alt .dropdown-menu .dropdown-item {
       color: #fafafa; }
-      #nav-primary .dropdown.alt .dropdown-menu .dropdown-item:hover {
+      .nav-primary .dropdown.alt .dropdown-menu .dropdown-item:hover {
         color: white;
         background-color: #e87d1e; }
-      #nav-primary .dropdown.alt .dropdown-menu .dropdown-item small {
+      .nav-primary .dropdown.alt .dropdown-menu .dropdown-item small {
         float: right;
         font-size: 12px;
         padding-top: 2px;
         padding-bottom: 2px; }
-    #nav-primary .dropdown.alt .dropdown-menu .dropdown-item.alt {
+    .nav-primary .dropdown.alt .dropdown-menu .dropdown-item.alt {
       background-color: #6f6b6f; }
-      #nav-primary .dropdown.alt .dropdown-menu .dropdown-item.alt:hover {
+      .nav-primary .dropdown.alt .dropdown-menu .dropdown-item.alt:hover {
         background-color: #2f2f2f; }
 
 /**
@@ -8351,58 +8351,75 @@ address.vcard {
 *	
 * @structure Social Buttons
 * @section Nav > Utility
+* @modifiers
+*  .mono-teal  added to the .nav-social-buttons container the class turns all of the buttons scrub teal
+*  .mono-orange  added to the .nav-social-buttons container the class turns all of the buttons dark orange
+*  .mono-grey  added to the .nav-social-buttons container the class turns all of the buttons grey
+*  .small  added to the .nav-social-buttons container the class turns all of the buttons small and more compact
 * @markup 
-*  <section id="social" class="social-buttons">
+*  <nav class="nav-social-button">
 *    <h2>Stay Connected</h2>
-*    <ul class="nav nav-social-button">
-*    <li class="nav-item twitter"><a id="msFooter_lnkTwitter" class="nav-link" href="https://twitter.com/accintouch" target="_blank"><i class="fa fa-twitter"></i></a></li>
-*    <li class="nav-item facebook"><a id="msFooter_lnkFacebook" class="nav-link" href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank"><i class="fa fa-facebook"></i></a></li>
-*    <li class="nav-item linkedin"><a id="msFooter_lnkLinkedIn" class="nav-link" href="http://www.linkedin.com/groups/American-College-Cardiology-732607?trk=myg_ugrp_ovr" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-*    <li class="nav-item youtube"><a id="msFooter_lnkYoutube" class="nav-link" href="http://www.youtube.com/user/ACCinTouch" target="_blank"><i class="fa fa-youtube"></i></a></li>
+*    <ul class="nav">
+*    <li class="nav-item twitter"><a class="nav-link" href="https://twitter.com/accintouch" target="_blank"><i class="fa fa-twitter"></i></a></li>
+*    <li class="nav-item facebook"><a class="nav-link" href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank"><i class="fa fa-facebook"></i></a></li>
+*    <li class="nav-item linkedin"><a  class="nav-link" href="http://www.linkedin.com/groups/American-College-Cardiology-732607?trk=myg_ugrp_ovr" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+*    <li class="nav-item youtube"><a  class="nav-link" href="http://www.youtube.com/user/ACCinTouch" target="_blank"><i class="fa fa-youtube"></i></a></li>
 *    </ul>
-*  </section>
+*  </nav>
 * 
 **/
-.social-buttons {
-  padding: 0 1em;
-  clear: left; }
-  @media only screen and (min-width: 768px) {
-    .social-buttons {
-      margin-top: 2rem; } }
-  .social-buttons h2 {
-    margin-bottom: 0.75em;
-    padding: 0;
-    font-size: 0.875em;
-    /* 14px */
-    text-transform: uppercase;
-    color: #fafafa; }
-  .social-buttons i {
+.nav-social-button .nav-item {
+  margin: 0 .125rem 0;
+  padding: 0;
+  float: left;
+  opacity: .9; }
+  .nav-social-button .nav-item:hover {
+    opacity: 1; }
+  .nav-social-button .nav-item.twitter a {
+    background-color: #78cdf0; }
+  .nav-social-button .nav-item.facebook a {
+    background-color: #537bbd; }
+  .nav-social-button .nav-item.youtube a {
+    background-color: #e9654b; }
+  .nav-social-button .nav-item.linkedin a {
+    background-color: #2085c7; }
+  .nav-social-button .nav-item:first-child {
+    margin-left: 0; }
+  .nav-social-button .nav-item:last-child {
+    margin-right: 0; }
+.nav-social-button .nav-link {
+  height: 37px;
+  width: 37px;
+  padding: 0;
+  display: inline-block;
+  text-align: center; }
+  .nav-social-button .nav-link i {
+    display: inline-block;
     color: #fafafa;
-    font-size: 20px;
-    margin: 10px;
-    text-align: center; }
-  .social-buttons .nav-social-button .nav-item {
-    margin: 0 4px 0;
-    padding: 0;
-    float: left; }
-    .social-buttons .nav-social-button .nav-item.twitter a {
-      background-color: #78cdf0; }
-    .social-buttons .nav-social-button .nav-item.facebook a {
-      background-color: #537bbd; }
-    .social-buttons .nav-social-button .nav-item.youtube a {
-      background-color: #e9654b; }
-    .social-buttons .nav-social-button .nav-item.linkedin a {
-      background-color: #2085c7; }
-    .social-buttons .nav-social-button .nav-item:first-child {
-      margin-left: 0; }
-    .social-buttons .nav-social-button .nav-item:last-child {
-      margin-right: 0; }
-  .social-buttons .nav-social-button .nav-link {
-    height: 40px;
-    width: 40px;
-    padding: 0;
-    display: block;
-    text-align: center; }
+    font-size: 24px;
+    text-align: center;
+    line-height: 1;
+    width: 37px;
+    height: 37px;
+    vertical-align: middle; }
+    .nav-social-button .nav-link i:after {
+      content: "\f0da";
+      vertical-align: middle; }
+.nav-social-button.mono-teal .nav-item a {
+  background-color: #0088aa; }
+.nav-social-button.mono-orange .nav-item a {
+  background-color: #e87d1e; }
+.nav-social-button.mono-grey .nav-item a {
+  background-color: #a1a0a4; }
+.nav-social-button.small .nav-item {
+  margin: 0 2px 0; }
+.nav-social-button.small .nav-link {
+  height: 21px;
+  width: 21px; }
+  .nav-social-button.small .nav-link i {
+    width: 21px;
+    height: 21px;
+    font-size: 16px; }
 
 /**
 * Navigation in the footer

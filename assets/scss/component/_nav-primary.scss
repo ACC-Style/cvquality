@@ -10,7 +10,7 @@
 *  .alt.primary used to decorate the standout button to the positive flow
 *  .alt.secondary used to convert the standout button to the alternate flow
 * @markup 
-*  <nav id="nav-primary">
+*  <nav class="nav-primary">
 *      <ul class="nav nav-fill flex-column flex-md-row">
 *        <li class="nav-item">
 *          <a class="nav-link active" href="#">@{lipsum:1:words}</a>
@@ -43,7 +43,7 @@
 *  </nav>
 */
 
-#nav-primary{
+.nav-primary{
     @extend %nav-basic;
     @include font(700);
     font-size: ms(2);
@@ -134,16 +134,3 @@
         }
     }
 }
-
-
-// need to build some dynamics or mech to to replace the toggle open and close of movbile app.
-// 
-// .nav-active #nav-primary {
-//     max-height: 600px;
-//     width: 100%;
-// }
-// .nav-active #page-nav {
-//     max-height: 1000px;
-//     width: 100%;
-// }
-
