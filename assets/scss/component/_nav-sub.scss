@@ -26,8 +26,8 @@
  *          <li class="nav-item parent">
  *              <a class="nav-link" ><i class="fa fa-holder toggle"></i>@{lipsum:1:words}</a>
  *               <ul class="nav flex-column">
- *                   <li class="nav-item "><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
- *                   <li class="nav-item current"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:3:words}</a></li>
+ *                   <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *                   <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:3:words}</a></li>
  *                   <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
  *               </ul>
  *          </li>
@@ -43,14 +43,6 @@
 
 .nav-sub {
     @extend %nav-basic;
-    // max-height: 0;
-    // overflow: hidden;
-    /*Taken out in ACCQIISP-9*/
-    /**/
-}
-/* Internal Nav */
-
-.nav-sub {
     h2 {
         padding: 16px 1em 16px 1em;
         
@@ -63,27 +55,6 @@
         border-top: solid 1px $dark-orange;
         border-bottom: solid 1px $dark-orange;
 
-    }
-    .toggle{
-        width: 1.25em;
-        text-align: center;
-        display:none;
-        transition:transform 0.25s ease-out;
-        -moz-transition:transform 0.25s ease-out;
-        -webkit-transition:transform 0.25s ease-out;  
-        &:after{
-            content: "\f0da";
-            cursor: pointer;
-        } 
-        &:hover{}    
-    }
-    .parent>a>.toggle{
-        display: inline-block;
-    }
-    .parent.active>a>.toggle{
-        transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -webkit-transform: rotate(90deg);
     }
     ul {
         @include font(bold);
@@ -133,5 +104,26 @@
     li.parent>a{padding-left:0rem;}
     li li.parent>a{padding-left:.75rem;}
     li li li.parent>a{padding-left:1.5rem;}
+    .toggle{
+        width: 1.25em;
+        text-align: center;
+        display:none;
+        transition:transform 0.25s ease-out;
+        -moz-transition:transform 0.25s ease-out;
+        -webkit-transition:transform 0.25s ease-out;  
+        &:after{
+            content: "\f0da";
+            cursor: pointer;
+        } 
+        &:hover{}    
+    }
+    .parent>a>.toggle{
+        display: inline-block;
+    }
+    .parent.active>a>.toggle{
+        transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+    }
 
 }

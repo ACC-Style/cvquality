@@ -25,17 +25,19 @@
 *          <a class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#" data-delay="1000" data-close-others="false">@{lipsum:1:words}</a>
 *          <div class="dropdown-menu">
 *              <a class="dropdown-item" href="#">@{lipsum:2:words}</a>
+*              <div class="dropdown-divider"></div>
 *              <a class="dropdown-item" href="#">@{lipsum:2:words}</a>
 *              <a class="dropdown-item" href="#">@{lipsum:3:words}</a>
-*              <div class="dropdown-divider"></div>
 *              <a class="dropdown-item" href="#">@{lipsum:3:words}</a>
 *            </div>
 *        </li>
-*        <li class="nav-item alt primary">
-*          <a class="nav-link disabled" href="#">Login</a>
-*        </li>
-*        <li class="nav-item alt secondary">
-*          <a class="nav-link disabled" href="#">Log Out</a>
+*        <li class="nav-item dropdown alt primary ">
+*          <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#" data-delay="1000" data-close-others="false">Login</a>
+*          <div class="dropdown-menu">
+*              <a class="dropdown-item alt" href="#">CV Quality <small>Log Out <i class="fa fa-sign-out"></i></small></a>
+*              <a class="dropdown-item" href="#">Accreditation <small>Log In <i class="fa fa-sign-in"></i></a>
+*              <a class="dropdown-item" href="#">NCDR <small>Log In <i class="fa fa-sign-in"></i></a>
+*            </div>
 *        </li>
 *      </ul>
 *  </nav>
@@ -110,6 +112,27 @@
     .dropdown-divider{
         border: 1px dotted $soft-blue;
         }
+    .dropdown.alt{
+        .dropdown-menu{
+            width:100%; right:0;background-color:mix($warm-grey-dark,$scrubteal);
+            
+            .dropdown-item{
+                color:$off-white;
+                &:hover{
+                    color:white;
+                    background-color:$dark-orange;
+                }
+                small{float:right; font-size:ms(-1); padding-top:(ms(1) - ms(-1))/2;padding-bottom:(ms(1) - ms(-1))/2;}
+            }
+            .dropdown-item.alt{
+                background-color: $warm-grey-dark;
+                
+                &:hover{
+                    background-color:$off-black;
+                }
+            }
+        }
+    }
 }
 
 

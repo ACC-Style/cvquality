@@ -7895,17 +7895,19 @@ a.link[href^="fax:"]:before {
 *          <a class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#" data-delay="1000" data-close-others="false">@{lipsum:1:words}</a>
 *          <div class="dropdown-menu">
 *              <a class="dropdown-item" href="#">@{lipsum:2:words}</a>
+*              <div class="dropdown-divider"></div>
 *              <a class="dropdown-item" href="#">@{lipsum:2:words}</a>
 *              <a class="dropdown-item" href="#">@{lipsum:3:words}</a>
-*              <div class="dropdown-divider"></div>
 *              <a class="dropdown-item" href="#">@{lipsum:3:words}</a>
 *            </div>
 *        </li>
-*        <li class="nav-item alt primary">
-*          <a class="nav-link disabled" href="#">Login</a>
-*        </li>
-*        <li class="nav-item alt secondary">
-*          <a class="nav-link disabled" href="#">Log Out</a>
+*        <li class="nav-item dropdown alt primary ">
+*          <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#" data-delay="1000" data-close-others="false">Login</a>
+*          <div class="dropdown-menu">
+*              <a class="dropdown-item alt" href="#">CV Quality <small>Log Out <i class="fa fa-sign-out"></i></small></a>
+*              <a class="dropdown-item" href="#">Accreditation <small>Log In <i class="fa fa-sign-in"></i></a>
+*              <a class="dropdown-item" href="#">NCDR <small>Log In <i class="fa fa-sign-in"></i></a>
+*            </div>
 *        </li>
 *      </ul>
 *  </nav>
@@ -8021,6 +8023,24 @@ a.link[href^="fax:"]:before {
       color: white; }
   #nav-primary .dropdown-divider {
     border: 1px dotted #a4cded; }
+  #nav-primary .dropdown.alt .dropdown-menu {
+    width: 100%;
+    right: 0;
+    background-color: #387a8d; }
+    #nav-primary .dropdown.alt .dropdown-menu .dropdown-item {
+      color: #fafafa; }
+      #nav-primary .dropdown.alt .dropdown-menu .dropdown-item:hover {
+        color: white;
+        background-color: #e87d1e; }
+      #nav-primary .dropdown.alt .dropdown-menu .dropdown-item small {
+        float: right;
+        font-size: 12px;
+        padding-top: 2px;
+        padding-bottom: 2px; }
+    #nav-primary .dropdown.alt .dropdown-menu .dropdown-item.alt {
+      background-color: #6f6b6f; }
+      #nav-primary .dropdown.alt .dropdown-menu .dropdown-item.alt:hover {
+        background-color: #2f2f2f; }
 
 /**
 * Utiltiy Nav at the top of the page. These are nav items are highly specialized and have been cherry picked out of site tree structure to give them global importance.
@@ -8107,8 +8127,8 @@ a.link[href^="fax:"]:before {
  *          <li class="nav-item parent">
  *              <a class="nav-link" ><i class="fa fa-holder toggle"></i>@{lipsum:1:words}</a>
  *               <ul class="nav flex-column">
- *                   <li class="nav-item "><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
- *                   <li class="nav-item current"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:3:words}</a></li>
+ *                   <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *                   <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:3:words}</a></li>
  *                   <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
  *               </ul>
  *          </li>
@@ -8121,11 +8141,6 @@ a.link[href^="fax:"]:before {
  *     e.stopPropagation(); 
  *  });
  */
-.nav-sub {
-  /*Taken out in ACCQIISP-9*/
-  /**/ }
-
-/* Internal Nav */
 .nav-sub h2 {
   padding: 16px 1em 16px 1em; }
   .nav-sub h2 img {
@@ -8133,22 +8148,6 @@ a.link[href^="fax:"]:before {
 .nav-sub > .nav {
   border-top: solid 1px #e87d1e;
   border-bottom: solid 1px #e87d1e; }
-.nav-sub .toggle {
-  width: 1.25em;
-  text-align: center;
-  display: none;
-  transition: transform 0.25s ease-out;
-  -moz-transition: transform 0.25s ease-out;
-  -webkit-transition: transform 0.25s ease-out; }
-  .nav-sub .toggle:after {
-    content: "\f0da";
-    cursor: pointer; }
-.nav-sub .parent > a > .toggle {
-  display: inline-block; }
-.nav-sub .parent.active > a > .toggle {
-  transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -webkit-transform: rotate(90deg); }
 .nav-sub ul {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-weight: 700;
@@ -8202,6 +8201,22 @@ a.link[href^="fax:"]:before {
   padding-left: .75rem; }
 .nav-sub li li li.parent > a {
   padding-left: 1.5rem; }
+.nav-sub .toggle {
+  width: 1.25em;
+  text-align: center;
+  display: none;
+  transition: transform 0.25s ease-out;
+  -moz-transition: transform 0.25s ease-out;
+  -webkit-transition: transform 0.25s ease-out; }
+  .nav-sub .toggle:after {
+    content: "\f0da";
+    cursor: pointer; }
+.nav-sub .parent > a > .toggle {
+  display: inline-block; }
+.nav-sub .parent.active > a > .toggle {
+  transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg); }
 
 /**
  * Toggle Button for the menu on mobile
