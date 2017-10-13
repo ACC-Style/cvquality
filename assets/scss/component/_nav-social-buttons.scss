@@ -62,7 +62,7 @@
 		    height: ms(7);
 		    vertical-align: middle;
 		    @extend .icon-before;
-		    &:after{content: "\f0da"; vertical-align:middle;}
+		    &:after{vertical-align:middle;}
 		}
 	}
 	&.mono-teal .nav-item{

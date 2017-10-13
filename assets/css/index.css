@@ -8403,7 +8403,6 @@ address.vcard {
     height: 37px;
     vertical-align: middle; }
     .nav-social-button .nav-link i:after {
-      content: "\f0da";
       vertical-align: middle; }
 .nav-social-button.mono-teal .nav-item a {
   background-color: #0088aa; }
