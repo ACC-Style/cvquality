@@ -4,32 +4,44 @@
  * @structure Nav Sub (Sidebar Nav) 
  * @section Nav > Page 
  * @markup
- *  <div class="nav-subpage">
+ *  <nav class="nav-sub">
  *      <h2>@{lipsum:3:words}</h2>
  *      <ul class="nav flex-column">
- *          <li class="nav-item parent active">
- *             <a class="nav-link" >@{lipsum:3:words}</a>
+ *          <li class="nav-item parent active current">
+ *            <a class="nav-link" ><i class="fa fa-holder toggle"></i>@{lipsum:3:words}</a>
  *                  <ul class="nav flex-column">
- *                  <li class="nav-item"><a class="nav-link" href="">@{lipsum:2:words}</a></li>
- *                  <li class="nav-item"><a class="nav-link" href="">@{lipsum:2:words}</a></li>
- *                  <li class="nav-item parent active">
- *                      <a class="nav-link" >@{lipsum:1:words}</a>
+ *                  <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *                  <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *                  <li class="nav-item parent active current">
+ *                      <a class="nav-link" ><i class="fa fa-holder toggle"></i>@{lipsum:1:words}</a>
  *                       <ul class="nav flex-column">
- *                           <li class="nav-item "><a class="nav-link" href="">@{lipsum:2:words}</a></li>
- *                           <li class="nav-item current"><a class="nav-link" href="">@{lipsum:3:words}</a></li>
- *                           <li class="nav-item"><a class="nav-link" href="">@{lipsum:2:words}</a></li>
+ *                           <li class="nav-item "><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *                           <li class="nav-item current"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:3:words}</a></li>
+ *                           <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
  *                       </ul>
  *                  </li>
  *              </ul>
  *          </li>
- *          <li class="nav-item"><a class="nav-link" href="">@{lipsum:2:words}</a></li>
- *          <li class="nav-item"><a class="nav-link" href="">@{lipsum:4:words}</a></li>
+ *          <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *          <li class="nav-item parent">
+ *              <a class="nav-link" ><i class="fa fa-holder toggle"></i>@{lipsum:1:words}</a>
+ *               <ul class="nav flex-column">
+ *                   <li class="nav-item "><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *                   <li class="nav-item current"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:3:words}</a></li>
+ *                   <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *               </ul>
+ *          </li>
  *      </ul>
- *  </div>
- *
+ *  </nav>
+ * @script
+ *  $('.nav-sub .toggle').click(function(e){
+ *     $(this).closest('li').toggleClass('active');
+ *     e.preventDefault();
+ *     e.stopPropagation(); 
+ *  });
  */
 
-.nav-subpage {
+.nav-sub {
     @extend %nav-basic;
     // max-height: 0;
     // overflow: hidden;
@@ -38,7 +50,7 @@
 }
 /* Internal Nav */
 
-.nav-subpage {
+.nav-sub {
     h2 {
         padding: 16px 1em 16px 1em;
         
@@ -51,6 +63,27 @@
         border-top: solid 1px $dark-orange;
         border-bottom: solid 1px $dark-orange;
 
+    }
+    .toggle{
+        width: 1.25em;
+        text-align: center;
+        display:none;
+        transition:transform 0.25s ease-out;
+        -moz-transition:transform 0.25s ease-out;
+        -webkit-transition:transform 0.25s ease-out;  
+        &:after{
+            content: "\f0da";
+            cursor: pointer;
+        } 
+        &:hover{}    
+    }
+    .parent>a>.toggle{
+        display: inline-block;
+    }
+    .parent.active>a>.toggle{
+        transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
     }
     ul {
         @include font(bold);
@@ -72,6 +105,7 @@
                >li a:hover{background:mix(white,$warm-grey);}
             }
         }
+        .active>ul{max-height:400px;}
     }
     li {
         display: block;
@@ -87,34 +121,17 @@
                 color:$off-black;
             }
         }
-        &.current>a {
-            color: $dark-orange;
-        }
-        &.current>a,&.current>a:hover{
-            background-color:$light-orange;
-            color:$off-black;
-        }
+        &.active{color:$off-black;}
+        &.current>a, &.current>a:hover{
 
-        &.parent>a:before {
-            @extend .icon-before;
-            content: "\f0da";
-            cursor: pointer;
-            transition:transform 0.25s ease-out;
-            -moz-transition:transform 0.25s ease-out;
-            -webkit-transition:transform 0.25s ease-out;
-        }
-        &.active {
-            >ul {
-                max-height: 400px;
-            }
-            >a:before {
-                transform: rotate(90deg);
-                -moz-transform: rotate(90deg);
-                -webkit-transform: rotate(90deg);
-            }
-        }
+            color:$dark-orange;
+        }        
     }
-    li>a{padding: 3px 10px 3px .75rem;}
-    li li>a{padding: 3px 10px 3px 1.5rem;}
-    li li li>a{padding: 3px 10px 3px 2.25rem;}
+    li>a{padding: 3px 10px 3px 1.25rem;}
+    li li>a{padding: 3px 10px 3px 2rem;}
+    li li li>a{padding: 3px 10px 3px 2.75rem;}
+    li.parent>a{padding-left:0rem;}
+    li li.parent>a{padding-left:.75rem;}
+    li li li.parent>a{padding-left:1.5rem;}
+
 }
