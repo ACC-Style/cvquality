@@ -49,7 +49,7 @@
 	.nav-link {
 		height: ms(7);
 		width:  ms(7);
-		padding:0;
+		padding: ( ms(7) - ms(3) )/2;
 		display: inline-block;
 		text-align: center;
 		i{
@@ -62,7 +62,7 @@
 		    height: ms(7);
 		    vertical-align: middle;
 		    @extend .icon-before;
-		    &:after{vertical-align:middle;}
+		    &:before{vertical-align:middle; width:auto;margin-right:0;}
 		}
 	}
 	&.mono-teal .nav-item{

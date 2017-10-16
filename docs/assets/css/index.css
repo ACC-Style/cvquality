@@ -8390,7 +8390,7 @@ address.vcard {
 .nav-social-button .nav-link {
   height: 37px;
   width: 37px;
-  padding: 0;
+  padding: 8px;
   display: inline-block;
   text-align: center; }
   .nav-social-button .nav-link i {
@@ -8402,8 +8402,10 @@ address.vcard {
     width: 37px;
     height: 37px;
     vertical-align: middle; }
-    .nav-social-button .nav-link i:after {
-      vertical-align: middle; }
+    .nav-social-button .nav-link i:before {
+      vertical-align: middle;
+      width: auto;
+      margin-right: 0; }
 .nav-social-button.mono-teal .nav-item a {
   background-color: #0088aa; }
 .nav-social-button.mono-orange .nav-item a {
