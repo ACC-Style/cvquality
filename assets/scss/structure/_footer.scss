@@ -5,7 +5,6 @@
  *
  * @markup
  *  <footer id="footer" role="contentinfo">
- *     <div class="wrapper container-fluid">
  *         <div class="row">
  *             <div class="col-md-3">
  *                 @{include:address.vcard}
@@ -16,10 +15,9 @@
  *             </div>
  *             </div>
  *             <div class="col-md-4">
- *                 @{include:.social-buttons}
+ *                 @{include:.nav-social-button}
  *             </div>
  *         </div>
- *     </div>
  *     <!-- wrapper -->
  *  </footer>
  *
@@ -31,13 +29,18 @@
 	overflow: visible;
 	color: $off-black;
 	background: $warm-grey;
-	.wrapper {
-		background:transparent;		
-	}
 	@include bp(md) {
 		padding-top: 12px;
 		padding-bottom: 30px;
 	}
+	.nav-social-button h2{ 
+		font-size: ms(-1);
+        line-height: 1.4em;
+        color: $off-black;
+		 display: table-cell;
+        height: 3rem;
+        vertical-align: bottom;
+    }
 }
 
 

@@ -6,8 +6,8 @@
 * @modifiers 
 *  .mobile - decorates the nav to look like mobile
 * @markup 
-*  <nav id="nav-utility">
-*      <ul class="nav flex-column flex-md-row">
+*  <nav class="nav-utility">
+*      <ul class="nav flex-column flex-md-row justify-content-end">
 *        <li class="nav-item">
 *          <a class="nav-link active" href="#">@{lipsum:1:words}</a>
 *        </li>
@@ -20,14 +20,12 @@
 *      </ul>
 *  </nav>
 */
-
-#nav-utility{
+.nav-utility{
         @extend %nav-basic;
-
     // Phone Mode
     background-color:$warm-grey-light;
     @include font(700);
-    font-size: ms(1);
+    font-size: ms(2);
     .nav-link{
         padding-right:1em;
         color: $off-black
@@ -53,8 +51,11 @@
             content: '|';
             color: $light-orange;
             }
+        .nav-item:first-child .nav-link{ padding-left:0;}
+        .nav-item:last-child .nav-link{ padding-right:0;}
         .nav-item:last-child .nav-link:after{
                 content: '';
+                padding-left:0;
             }
         .nav-item + .nav-item{
             border:transparent none 0;

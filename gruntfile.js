@@ -46,12 +46,6 @@ module.exports = function(grunt) {
         exec: {
             echo_something: 'npm run styleguide'
         },
-        livereload  : {
-            options   : {
-              base    : 'docs',
-            },
-            files     : ['docs/**/*','docs/*.html']
-        },
         watch: {
             css: {
                 files: 'assets/scss/**/*.scss',
@@ -75,12 +69,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-livereload');
     grunt.loadNpmTasks('grunt-exec');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     // grunt.loadNpmTasks('@micahgodbolt/grunt-phantomcss');
 
 
-    grunt.registerTask('default', ['connect','livereload','sass','watch']);
+    grunt.registerTask('default', ['connect','sass','watch']);
 }

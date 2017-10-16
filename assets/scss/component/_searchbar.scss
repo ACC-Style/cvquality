@@ -1,0 +1,20 @@
+/**
+ * a combo input for users to quickly search the site with. 
+ *
+ * @molecule Search Bar 
+ * @section Search 
+ * @markup
+ *  <div class="searchbar"><div class="input-group">
+ *	  <span class="input-group-addon"><i class="fa fa-search"></i></span>
+ *	  <input type="text" class="form-control" aria-label="Search" placeholder="Search...">
+ *	  <span class="input-group-btn"><a class="input-group-addon btn btn-primary">Search</a></span>
+ *	</div></div>
+ *
+ */
+.searchbar{
+	.input-group-addon,input,input-group-btn{
+		border-color:$scrubteal;
+	}
+	.input-group-addon.btn.btn-primary{color:white;}
+	.input-group-addon{background-color:$soft-blue; color:$scrubteal;}
+}

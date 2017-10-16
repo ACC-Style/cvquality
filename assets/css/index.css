@@ -97,7 +97,7 @@
  *  @include monospace(300);
  */
 @import "https://use.fontawesome.com/972bb54a90.css";
-.icon-before:before, .accordion .card-header h5:before, a.link:before, .nav-social-button .nav-link i:before {
+.icon-before:before, .accordion .card-header h5:before, a.link:before {
   display: inline-block;
   margin-right: .5em;
   font: normal normal normal 14px/1 FontAwesome;
@@ -283,8 +283,8 @@ span {
 .alphabet-display .font--uppercase {
   text-transform: uppercase; }
 .alphabet-display .ms12 {
-  font-size: 16.35714em;
-  line-height: 1.00873em;
+  font-size: 16.3571428571em;
+  line-height: 1.0087336245em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
@@ -295,7 +295,7 @@ span {
     line-height: 1em; } }
 
 .alphabet-display .ms6 {
-  font-size: 5.35714em;
+  font-size: 5.3571428571em;
   line-height: 1.12em;
   margin-top: 0em;
   margin-bottom: 0em; }
@@ -307,19 +307,19 @@ span {
     line-height: 1em; } }
 
 .alphabet-display .ms4 {
-  font-size: 3.07143em;
-  line-height: 1.46512em;
+  font-size: 3.0714285714em;
+  line-height: 1.4651162791em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
   .alphabet-display .ms4 {
-    line-height: 1.3186em; } }
+    line-height: 1.3186046512em; } }
 @media only screen and (max-width: 1024px) and (max-height: 320px) {
   .alphabet-display .ms4 {
-    line-height: 1.24535em; } }
+    line-height: 1.2453488372em; } }
 
 .alphabet-display .ms2 {
-  font-size: 1.71429em;
+  font-size: 1.7142857143em;
   line-height: 1.75em;
   margin-top: 0em;
   margin-bottom: 0em; }
@@ -331,8 +331,8 @@ span {
     line-height: 1.4875em; } }
 
 .alphabet-display .ms1 {
-  font-size: 1.35714em;
-  line-height: 1.10526em;
+  font-size: 1.3571428571em;
+  line-height: 1.1052631579em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
@@ -421,7 +421,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 *,
 *::before,
@@ -908,48 +908,48 @@ pre {
   max-width: none; }
 
 .col-1 {
-  flex: 0 0 8.33333%;
-  max-width: 8.33333%; }
+  flex: 0 0 8.3333333333%;
+  max-width: 8.3333333333%; }
 
 .col-2 {
-  flex: 0 0 16.66667%;
-  max-width: 16.66667%; }
+  flex: 0 0 16.6666666667%;
+  max-width: 16.6666666667%; }
 
 .col-3 {
   flex: 0 0 25%;
   max-width: 25%; }
 
 .col-4 {
-  flex: 0 0 33.33333%;
-  max-width: 33.33333%; }
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%; }
 
 .col-5 {
-  flex: 0 0 41.66667%;
-  max-width: 41.66667%; }
+  flex: 0 0 41.6666666667%;
+  max-width: 41.6666666667%; }
 
 .col-6 {
   flex: 0 0 50%;
   max-width: 50%; }
 
 .col-7 {
-  flex: 0 0 58.33333%;
-  max-width: 58.33333%; }
+  flex: 0 0 58.3333333333%;
+  max-width: 58.3333333333%; }
 
 .col-8 {
-  flex: 0 0 66.66667%;
-  max-width: 66.66667%; }
+  flex: 0 0 66.6666666667%;
+  max-width: 66.6666666667%; }
 
 .col-9 {
   flex: 0 0 75%;
   max-width: 75%; }
 
 .col-10 {
-  flex: 0 0 83.33333%;
-  max-width: 83.33333%; }
+  flex: 0 0 83.3333333333%;
+  max-width: 83.3333333333%; }
 
 .col-11 {
-  flex: 0 0 91.66667%;
-  max-width: 91.66667%; }
+  flex: 0 0 91.6666666667%;
+  max-width: 91.6666666667%; }
 
 .col-12 {
   flex: 0 0 100%;
@@ -1003,48 +1003,48 @@ pre {
     max-width: none; }
 
   .col-sm-1 {
-    flex: 0 0 8.33333%;
-    max-width: 8.33333%; }
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%; }
 
   .col-sm-2 {
-    flex: 0 0 16.66667%;
-    max-width: 16.66667%; }
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%; }
 
   .col-sm-3 {
     flex: 0 0 25%;
     max-width: 25%; }
 
   .col-sm-4 {
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%; }
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
 
   .col-sm-5 {
-    flex: 0 0 41.66667%;
-    max-width: 41.66667%; }
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%; }
 
   .col-sm-6 {
     flex: 0 0 50%;
     max-width: 50%; }
 
   .col-sm-7 {
-    flex: 0 0 58.33333%;
-    max-width: 58.33333%; }
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%; }
 
   .col-sm-8 {
-    flex: 0 0 66.66667%;
-    max-width: 66.66667%; }
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%; }
 
   .col-sm-9 {
     flex: 0 0 75%;
     max-width: 75%; }
 
   .col-sm-10 {
-    flex: 0 0 83.33333%;
-    max-width: 83.33333%; }
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%; }
 
   .col-sm-11 {
-    flex: 0 0 91.66667%;
-    max-width: 91.66667%; }
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%; }
 
   .col-sm-12 {
     flex: 0 0 100%;
@@ -1097,48 +1097,48 @@ pre {
     max-width: none; }
 
   .col-md-1 {
-    flex: 0 0 8.33333%;
-    max-width: 8.33333%; }
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%; }
 
   .col-md-2 {
-    flex: 0 0 16.66667%;
-    max-width: 16.66667%; }
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%; }
 
   .col-md-3 {
     flex: 0 0 25%;
     max-width: 25%; }
 
   .col-md-4 {
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%; }
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
 
   .col-md-5 {
-    flex: 0 0 41.66667%;
-    max-width: 41.66667%; }
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%; }
 
   .col-md-6 {
     flex: 0 0 50%;
     max-width: 50%; }
 
   .col-md-7 {
-    flex: 0 0 58.33333%;
-    max-width: 58.33333%; }
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%; }
 
   .col-md-8 {
-    flex: 0 0 66.66667%;
-    max-width: 66.66667%; }
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%; }
 
   .col-md-9 {
     flex: 0 0 75%;
     max-width: 75%; }
 
   .col-md-10 {
-    flex: 0 0 83.33333%;
-    max-width: 83.33333%; }
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%; }
 
   .col-md-11 {
-    flex: 0 0 91.66667%;
-    max-width: 91.66667%; }
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%; }
 
   .col-md-12 {
     flex: 0 0 100%;
@@ -1191,48 +1191,48 @@ pre {
     max-width: none; }
 
   .col-lg-1 {
-    flex: 0 0 8.33333%;
-    max-width: 8.33333%; }
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%; }
 
   .col-lg-2 {
-    flex: 0 0 16.66667%;
-    max-width: 16.66667%; }
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%; }
 
   .col-lg-3 {
     flex: 0 0 25%;
     max-width: 25%; }
 
   .col-lg-4 {
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%; }
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
 
   .col-lg-5 {
-    flex: 0 0 41.66667%;
-    max-width: 41.66667%; }
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%; }
 
   .col-lg-6 {
     flex: 0 0 50%;
     max-width: 50%; }
 
   .col-lg-7 {
-    flex: 0 0 58.33333%;
-    max-width: 58.33333%; }
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%; }
 
   .col-lg-8 {
-    flex: 0 0 66.66667%;
-    max-width: 66.66667%; }
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%; }
 
   .col-lg-9 {
     flex: 0 0 75%;
     max-width: 75%; }
 
   .col-lg-10 {
-    flex: 0 0 83.33333%;
-    max-width: 83.33333%; }
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%; }
 
   .col-lg-11 {
-    flex: 0 0 91.66667%;
-    max-width: 91.66667%; }
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%; }
 
   .col-lg-12 {
     flex: 0 0 100%;
@@ -1285,48 +1285,48 @@ pre {
     max-width: none; }
 
   .col-xl-1 {
-    flex: 0 0 8.33333%;
-    max-width: 8.33333%; }
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%; }
 
   .col-xl-2 {
-    flex: 0 0 16.66667%;
-    max-width: 16.66667%; }
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%; }
 
   .col-xl-3 {
     flex: 0 0 25%;
     max-width: 25%; }
 
   .col-xl-4 {
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%; }
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
 
   .col-xl-5 {
-    flex: 0 0 41.66667%;
-    max-width: 41.66667%; }
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%; }
 
   .col-xl-6 {
     flex: 0 0 50%;
     max-width: 50%; }
 
   .col-xl-7 {
-    flex: 0 0 58.33333%;
-    max-width: 58.33333%; }
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%; }
 
   .col-xl-8 {
-    flex: 0 0 66.66667%;
-    max-width: 66.66667%; }
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%; }
 
   .col-xl-9 {
     flex: 0 0 75%;
     max-width: 75%; }
 
   .col-xl-10 {
-    flex: 0 0 83.33333%;
-    max-width: 83.33333%; }
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%; }
 
   .col-xl-11 {
-    flex: 0 0 91.66667%;
-    max-width: 91.66667%; }
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%; }
 
   .col-xl-12 {
     flex: 0 0 100%;
@@ -1714,20 +1714,19 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   background-color: rgba(153, 0, 0, 0.8);
   border-radius: .2rem; }
 
-.was-validated .form-control:valid, .form-control.is-valid, .was-validated
-.custom-select:valid,
+.was-validated .form-control:valid, .form-control.is-valid,
+.was-validated .custom-select:valid,
 .custom-select.is-valid {
   border-color: #28a745; }
-  .was-validated .form-control:valid:focus, .form-control.is-valid:focus, .was-validated
-  .custom-select:valid:focus,
+  .was-validated .form-control:valid:focus, .form-control.is-valid:focus,
+  .was-validated .custom-select:valid:focus,
   .custom-select.is-valid:focus {
     box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25); }
   .was-validated .form-control:valid ~ .invalid-feedback,
   .was-validated .form-control:valid ~ .invalid-tooltip, .form-control.is-valid ~ .invalid-feedback,
-  .form-control.is-valid ~ .invalid-tooltip, .was-validated
-  .custom-select:valid ~ .invalid-feedback,
-  .was-validated
-  .custom-select:valid ~ .invalid-tooltip,
+  .form-control.is-valid ~ .invalid-tooltip,
+  .was-validated .custom-select:valid ~ .invalid-feedback,
+  .was-validated .custom-select:valid ~ .invalid-tooltip,
   .custom-select.is-valid ~ .invalid-feedback,
   .custom-select.is-valid ~ .invalid-tooltip {
     display: block; }
@@ -1747,20 +1746,19 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .was-validated .custom-file-input:valid:focus, .custom-file-input.is-valid:focus {
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25); }
 
-.was-validated .form-control:invalid, .form-control.is-invalid, .was-validated
-.custom-select:invalid,
+.was-validated .form-control:invalid, .form-control.is-invalid,
+.was-validated .custom-select:invalid,
 .custom-select.is-invalid {
   border-color: #990000; }
-  .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus, .was-validated
-  .custom-select:invalid:focus,
+  .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus,
+  .was-validated .custom-select:invalid:focus,
   .custom-select.is-invalid:focus {
     box-shadow: 0 0 0 0.2rem rgba(153, 0, 0, 0.25); }
   .was-validated .form-control:invalid ~ .invalid-feedback,
   .was-validated .form-control:invalid ~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback,
-  .form-control.is-invalid ~ .invalid-tooltip, .was-validated
-  .custom-select:invalid ~ .invalid-feedback,
-  .was-validated
-  .custom-select:invalid ~ .invalid-tooltip,
+  .form-control.is-invalid ~ .invalid-tooltip,
+  .was-validated .custom-select:invalid ~ .invalid-feedback,
+  .was-validated .custom-select:invalid ~ .invalid-tooltip,
   .custom-select.is-invalid ~ .invalid-feedback,
   .custom-select.is-invalid ~ .invalid-tooltip {
     display: block; }
@@ -2843,7 +2841,7 @@ tbody.collapse.show {
     color: #fff;
     background-color: #0088aa; }
 
-.nav-fill .nav-item, #nav-utility.mobile .nav-item {
+.nav-fill .nav-item, .nav-utility.mobile .nav-item {
   flex: 1 1 auto;
   text-align: center; }
 
@@ -2873,8 +2871,8 @@ tbody.collapse.show {
 
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.35938rem;
-  padding-bottom: 0.35938rem;
+  padding-top: 0.359375rem;
+  padding-bottom: 0.359375rem;
   margin-right: 1rem;
   font-size: 1.1875rem;
   line-height: inherit;
@@ -4526,7 +4524,7 @@ a.bg-dark:focus, a.bg-dark:hover {
     border: 0; }
 
 .embed-responsive-21by9::before {
-  padding-top: 42.85714%; }
+  padding-top: 42.8571428571%; }
 
 .embed-responsive-16by9::before {
   padding-top: 56.25%; }
@@ -4540,7 +4538,7 @@ a.bg-dark:focus, a.bg-dark:hover {
 .flex-row {
   flex-direction: row !important; }
 
-.flex-column, .nav-primary.mobile, #nav-utility.mobile {
+.flex-column, .nav-primary.mobile, .nav-utility.mobile {
   flex-direction: column !important; }
 
 .flex-row-reverse {
@@ -6939,7 +6937,7 @@ a.text-dark:focus, a.text-dark:hover {
 *              <div class="modal-content">
 *                  <div class="modal-header">
 *                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-*                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+*                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">├ù</span></button>
 *                  </div>
 *                  <div class="modal-body">
 *                      <h2>Modal body heading</h2>
@@ -7859,11 +7857,11 @@ a.link[href^="fax:"]:before {
     .nav-user-status .action:hover {
       text-decoration: underline; }
 
-.pagination, .nav-user-status, .nav-primary, #nav-utility, .nav-sub, .nav-social-button, .pagination ul, .nav-user-status ul, .nav-primary ul, #nav-utility ul, .nav-sub ul, .nav-social-button ul, .nav, .nav ul, .navbar-nav, .navbar-nav ul {
+.pagination, .nav-user-status, .nav-primary, .nav-utility, .nav-sub, .nav-social-button, .pagination ul, .nav-user-status ul, .nav-primary ul, .nav-utility ul, .nav-sub ul, .nav-social-button ul, .nav, .nav ul, .navbar-nav, .navbar-nav ul {
   list-style: none;
   margin: 0;
   padding: 0; }
-.pagination li, .nav-user-status li, .nav-primary li, #nav-utility li, .nav-sub li, .nav-social-button li, .pagination ul li, .nav-user-status ul li, .nav-primary ul li, #nav-utility ul li, .nav-sub ul li, .nav-social-button ul li, .nav li, .nav ul li, .navbar-nav li, .navbar-nav ul li {
+.pagination li, .nav-user-status li, .nav-primary li, .nav-utility li, .nav-sub li, .nav-social-button li, .pagination ul li, .nav-user-status ul li, .nav-primary ul li, .nav-utility ul li, .nav-sub ul li, .nav-social-button ul li, .nav li, .nav ul li, .navbar-nav li, .navbar-nav ul li {
   list-style-type: none;
   margin: 0;
   padding: 0; }
@@ -7905,9 +7903,9 @@ a.link[href^="fax:"]:before {
 *          <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#" data-delay="1000" data-close-others="false">Login</a>
 *          <div class="dropdown-menu">
 *              <a class="dropdown-item alt" href="#">CV Quality <small>Log Out <i class="fa fa-sign-out"></i></small></a>
-*              <a class="dropdown-item" href="#">Accreditation <small>Log In <i class="fa fa-sign-in"></i></a>
-*              <a class="dropdown-item" href="#">NCDR <small>Log In <i class="fa fa-sign-in"></i></a>
-*            </div>
+*              <a class="dropdown-item" href="#">Accreditation <small>Log In <i class="fa fa-sign-in"></i></small></a>
+*              <a class="dropdown-item" href="#">NCDR <small>Log In <i class="fa fa-sign-in"></i></small></a>
+*           </div>
 *        </li>
 *      </ul>
 *  </nav>
@@ -8050,8 +8048,8 @@ a.link[href^="fax:"]:before {
 * @modifiers 
 *  .mobile - decorates the nav to look like mobile
 * @markup 
-*  <nav id="nav-utility">
-*      <ul class="nav flex-column flex-md-row">
+*  <nav class="nav-utility">
+*      <ul class="nav flex-column flex-md-row justify-content-end">
 *        <li class="nav-item">
 *          <a class="nav-link active" href="#">@{lipsum:1:words}</a>
 *        </li>
@@ -8064,38 +8062,43 @@ a.link[href^="fax:"]:before {
 *      </ul>
 *  </nav>
 */
-#nav-utility {
+.nav-utility {
   background-color: #d6d4d4;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 16px; }
-  #nav-utility .nav-link {
+  font-size: 19px; }
+  .nav-utility .nav-link {
     padding-right: 1em;
     color: #2f2f2f; }
-  #nav-utility .nav-item {
+  .nav-utility .nav-item {
     text-align: center; }
-  #nav-utility .nav-item + .nav-item {
+  .nav-utility .nav-item + .nav-item {
     border: #fafafa dotted 1px; }
   @media only screen and (min-width: 768px) {
-    #nav-utility {
+    .nav-utility {
       font-weight: 400;
       background-color: #fff; }
-      #nav-utility .nav-link {
+      .nav-utility .nav-link {
         color: #6f6b6f; }
-      #nav-utility .nav-link:after {
+      .nav-utility .nav-link:after {
         padding-left: 1em;
         content: '|';
         color: #ffc425; }
-      #nav-utility .nav-item:last-child .nav-link:after {
-        content: ''; }
-      #nav-utility .nav-item + .nav-item {
+      .nav-utility .nav-item:first-child .nav-link {
+        padding-left: 0; }
+      .nav-utility .nav-item:last-child .nav-link {
+        padding-right: 0; }
+      .nav-utility .nav-item:last-child .nav-link:after {
+        content: '';
+        padding-left: 0; }
+      .nav-utility .nav-item + .nav-item {
         border: transparent none 0; } }
-  #nav-utility.mobile {
+  .nav-utility.mobile {
     font-weight: 400;
     background-color: #d6d4d4; }
-    #nav-utility.mobile .nav-item {
+    .nav-utility.mobile .nav-item {
       width: auto; }
-    #nav-utility.mobile .nav-link:after {
+    .nav-utility.mobile .nav-link:after {
       padding-left: 0;
       content: ''; }
 
@@ -8293,6 +8296,27 @@ a.link[href^="fax:"]:before {
 #Adslot-3 {
   margin-bottom: 1em !important; }
 
+/**
+ * a combo input for users to quickly search the site with. 
+ *
+ * @molecule Search Bar 
+ * @section Search 
+ * @markup
+ *  <div class="searchbar"><div class="input-group">
+ *	  <span class="input-group-addon"><i class="fa fa-search"></i></span>
+ *	  <input type="text" class="form-control" aria-label="Search" placeholder="Search...">
+ *	  <span class="input-group-btn"><a class="input-group-addon btn btn-primary">Search</a></span>
+ *	</div></div>
+ *
+ */
+.searchbar .input-group-addon, .searchbar input, .searchbar input-group-btn {
+  border-color: #0088aa; }
+.searchbar .input-group-addon.btn.btn-primary, .searchbar input.input-group-addon.btn-primary[type="submit"], .searchbar input.input-group-addon.btn-primary[type="button"], .searchbar button.input-group-addon.btn-primary, .searchbar .input-group-addon.btn-primary.button {
+  color: white; }
+.searchbar .input-group-addon {
+  background-color: #a4cded;
+  color: #0088aa; }
+
 /* Footer */
 /**
  * Address blocks are well formated microformat to optimum usage in browsers.
@@ -8390,7 +8414,7 @@ address.vcard {
 .nav-social-button .nav-link {
   height: 37px;
   width: 37px;
-  padding: 8px;
+  padding: 7px;
   display: inline-block;
   text-align: center; }
   .nav-social-button .nav-link i {
@@ -8399,13 +8423,8 @@ address.vcard {
     font-size: 24px;
     text-align: center;
     line-height: 1;
-    width: 37px;
-    height: 37px;
-    vertical-align: middle; }
-    .nav-social-button .nav-link i:before {
-      vertical-align: middle;
-      width: auto;
-      margin-right: 0; }
+    width: 24px;
+    height: 24px; }
 .nav-social-button.mono-teal .nav-item a {
   background-color: #0088aa; }
 .nav-social-button.mono-orange .nav-item a {
@@ -8416,10 +8435,11 @@ address.vcard {
   margin: 0 2px 0; }
 .nav-social-button.small .nav-link {
   height: 21px;
-  width: 21px; }
+  width: 21px;
+  padding: 2.5px; }
   .nav-social-button.small .nav-link i {
-    width: 21px;
-    height: 21px;
+    width: 16px;
+    height: 16px;
     font-size: 16px; }
 
 /**
@@ -8497,7 +8517,6 @@ address.vcard {
  *
  * @markup
  *  <footer id="footer" role="contentinfo">
- *     <div class="wrapper container-fluid">
  *         <div class="row">
  *             <div class="col-md-3">
  *                 @{include:address.vcard}
@@ -8508,10 +8527,9 @@ address.vcard {
  *             </div>
  *             </div>
  *             <div class="col-md-4">
- *                 @{include:.social-buttons}
+ *                 @{include:.nav-social-button}
  *             </div>
  *         </div>
- *     </div>
  *     <!-- wrapper -->
  *  </footer>
  *
@@ -8523,33 +8541,52 @@ address.vcard {
   overflow: visible;
   color: #2f2f2f;
   background: #a1a0a4; }
-  #footer .wrapper {
-    background: transparent; }
   @media only screen and (min-width: 768px) {
     #footer {
       padding-top: 12px;
       padding-bottom: 30px; } }
+  #footer .nav-social-button h2 {
+    font-size: 12px;
+    line-height: 1.4em;
+    color: #2f2f2f;
+    display: table-cell;
+    height: 3rem;
+    vertical-align: bottom; }
 
-/* Header */
-#site-logo img {
-  max-width: 100%; }
-
-#header .nav-utility {
-  display: none; }
-
-#site-search {
-  padding: 0.5em 3%;
-  background: #a1a0a4;
-  border-bottom: dotted 1px #fff; }
-
-.initiative #site-search {
-  background: #a1a0a4; }
-
-#site-search label {
-  position: absolute;
-  left: -9999px; }
-#site-search input#keyword {
-  width: 70%; }
+/**
+ * Header of CV Qaulity combines, logo, header-nav, header-nav.mobile, user-status-containr, search and utility-nav to brand the page.
+ * @structure Header Nav
+ * @section Page Section
+ *
+ * @markup
+ *  <header id="header" role="contentinfo" class="row">
+ *     <div class="col-md-6">
+ *         <h1 class="site-logo"><a href="/" target="_top"><img src="/Assets/images/qii-logo.png" id="saHeader_imgHeader" alt="Quality Improvement for Institutions"></a></h1>
+ *     </div>
+ *     <div class="col-md-6"> <div class="row actions">
+ *       <div class="col-12">@{include:.nav-utility}</div>
+ *       <div class="col-12">@{include:.searchbar}</div>
+ *      <div class="col-12">@{include:.user-status-container}</div>
+ *     </div></div>
+ *  </header>
+ *
+ */
+#header {
+  border: #eceaea 1px solid; }
+  #header .site-logo {
+    padding: 25px 1rem 20px; }
+    #header .site-logo img {
+      height: 110px;
+      width: 471px;
+      max-width: unset; }
+  #header .searchbar {
+    max-width: 400px;
+    float: right; }
+  #header .actions {
+    padding: 10px 1rem 10px;
+    height: 155px; }
+  #header .user-status-container {
+    margin-bottom: -1rem; }
 
 /**
  * Container for the Menu Toggle for the Mobile Nav. ~Inline Style should be removed. Currently used so it will show on all screen dimensions~
