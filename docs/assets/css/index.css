@@ -8561,7 +8561,7 @@ address.vcard {
  * @markup
  *  <header id="header" role="contentinfo" class="row">
  *     <div class="col-md-6">
- *         <h1 class="site-logo"><a href="/" target="_top"><img src="/Assets/images/qii-logo.png" id="saHeader_imgHeader" alt="Quality Improvement for Institutions"></a></h1>
+ *         <h1 class="site-logo"><a href="/" target="_top"><img src="assets/images/qii-logo.png" id="saHeader_imgHeader" alt="Quality Improvement for Institutions"></a></h1>
  *     </div>
  *     <div class="col-md-6"> <div class="row actions">
  *       <div class="col-12">@{include:.nav-utility}</div>
