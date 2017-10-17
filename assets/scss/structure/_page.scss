@@ -23,7 +23,7 @@
     margin: 0 auto;
     max-width: 1020px;
     background: #fff;
-
+@include bp(xl){max-width:1150px;}
     &:before {
         content: "";
         display: table;

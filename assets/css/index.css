@@ -8629,7 +8629,7 @@ address.vcard {
       margin: 0;
       padding-right: 1rem;
       max-width: 200px;
-      flex: 1  0 100%; }
+      flex: 1  1 auto; }
       .nav-footer:last-child {
         padding-right: 0; } }
   .nav-footer h2 {
@@ -8675,6 +8675,9 @@ address.vcard {
   max-width: 1020px;
   background: #fff;
   *zoom: 1; }
+  @media only screen and (min-width: 1200px) {
+    .wrapper {
+      max-width: 1150px; } }
   .wrapper:before {
     content: "";
     display: table; }
@@ -8700,10 +8703,10 @@ address.vcard {
  *  	    @{include:address.vcard}
  *  	    <div class="d-lg-none"> @{include:.nav-social-button}</div>
  *  	</div>
- *  	<div class="col-lg-7 col-md-7">
+ *  	<div class="col-lg-8 col-md-7">
  *  		@{include:.footer-sitemap}
  *  	</div>
- *  	<div class="col-lg-3 d-none d-lg-block">
+ *  	<div class="col-lg-2 d-none d-lg-block">
  *  	    @{include:.nav-social-button}
  *  	</div>
  *  </footer>
