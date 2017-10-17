@@ -15,6 +15,12 @@
 	.input-group-addon,input,input-group-btn{
 		border-color:$scrubteal;
 	}
-	.input-group-addon.btn.btn-primary{color:white;}
-	.input-group-addon{background-color:$soft-blue; color:$scrubteal;}
+	.input-group-addon.btn.btn-primary{
+		color:white;
+	}
+	.input-group-addon{
+		background-color:$soft-blue;
+		color:$scrubteal;
+		border-radius:2px;
+	}
 }

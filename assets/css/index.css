@@ -7665,17 +7665,21 @@ ul.no-bullets {
 
 .btn.btn-outline-primary, input.btn-outline-primary[type="submit"], input.btn-outline-primary[type="button"], button.btn-outline-primary, .btn-outline-primary.button {
   border-color: #0088aa;
-  color: #0088aa; }
+  color: #0088aa;
+  background: none; }
   .btn.btn-outline-primary:visited, input.btn-outline-primary[type="submit"]:visited, input.btn-outline-primary[type="button"]:visited, button.btn-outline-primary:visited, .btn-outline-primary.button:visited, .btn.btn-outline-primary:hover, input.btn-outline-primary[type="submit"]:hover, input.btn-outline-primary[type="button"]:hover, button.btn-outline-primary:hover, .btn-outline-primary.button:hover {
     border-color: #047294;
-    color: #047294; }
+    color: #047294;
+    background-color: rgba(255, 255, 255, 0.2); }
 
 .btn.btn-outline-secondary, input.btn-outline-secondary[type="submit"], input.btn-outline-secondary[type="button"], button.btn-outline-secondary, .btn-outline-secondary.button {
   border-color: #6f6b6f;
-  color: #6f6b6f; }
+  color: #6f6b6f;
+  background: none; }
   .btn.btn-outline-secondary:visited, input.btn-outline-secondary[type="submit"]:visited, input.btn-outline-secondary[type="button"]:visited, button.btn-outline-secondary:visited, .btn-outline-secondary.button:visited, .btn.btn-outline-secondary:hover, input.btn-outline-secondary[type="submit"]:hover, input.btn-outline-secondary[type="button"]:hover, button.btn-outline-secondary:hover, .btn-outline-secondary.button:hover {
     border-color: #2f2f2f;
-    color: #2f2f2f; }
+    color: #2f2f2f;
+    background-color: rgba(255, 255, 255, 0.2); }
 
 .btn-secondary {
   background: #a1a0a4;
@@ -8066,7 +8070,7 @@ a.link[href^="fax:"]:before {
   background-color: #d6d4d4;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 19px; }
+  font-size: 16px; }
   .nav-utility .nav-link {
     padding-right: 1em;
     color: #2f2f2f; }
@@ -8315,7 +8319,8 @@ a.link[href^="fax:"]:before {
   color: white; }
 .searchbar .input-group-addon {
   background-color: #a4cded;
-  color: #0088aa; }
+  color: #0088aa;
+  border-radius: 2px; }
 
 /* Footer */
 /**
@@ -8326,11 +8331,10 @@ a.link[href^="fax:"]:before {
  * @markup
  *  <address class="vcard">
  *     <!-- http://microformats.org/wiki/hcard -->
- *     <a class="fn org url" href="http://www.acc.org" target="_blank">
- *         <img alt="" src="/Assets/images/acc-logo-footer.png" id="msFooter_imgFooter">
+ *     <a class="photo" href="http://www.acc.org" target="_blank">
+ *         <img alt="" src="/Assets/images/acc-logo-footer.png">
  *     </a>
- *     <h2><a class="fn org ur
- *         l" href="http://www.acc.org" target="_blank">American College of Cardiology</a></h2>
+ *     <a class="fn org url" href="http://www.acc.org" target="_blank">American College of Cardiology</a>
  *     <span class="adr">
  *         <span class="street-address">2400 N St. NW</span>
  *         <span class="locality">Washington</span>,
@@ -8338,19 +8342,18 @@ a.link[href^="fax:"]:before {
  *          <span class="postal-code hidden"></span>
  *     </span>
  *     <!-- end .adr -->
- *     <a href="mailto:" class="email hidden"></a>
- *     <abbr tel="+18002574737" class="tel">(800) 257-4737</abbr>
- *     <a href="mailto:cvquality@acc.org">cvquality@acc.org</a>
+ *     <div class="contact">
+ *     <a tel="tel:1-800-257-4737" class="tel">(800) 257-4737</a>
+ *     <a href="mailto:cvquality@acc.org" class="email">cvquality@acc.org</a>
+ *     </div>
  *  </address>
 */
 address.vcard {
-  padding: 0 1em;
-  max-width: 16em; }
-  address.vcard, address.vcard h2 {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-weight: normal;
-    font-size: 14px;
-    color: #2f2f2f; }
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  color: #2f2f2f;
+  margin-bottom: 0; }
   address.vcard a {
     color: #000;
     text-decoration: none;
@@ -8365,9 +8368,105 @@ address.vcard {
       display: inline-block; }
     address.vcard .adr span.street-address {
       width: 100%; }
-  address.vcard a img {
-    margin: 0 .75em .25em;
-    display: block; }
+  address.vcard .photo {
+    display: inline-block;
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin: 6px 12px 6px 0; }
+    @media only screen and (min-width: 768px) {
+      address.vcard .photo {
+        width: 72px;
+        height: 72px; } }
+    @media only screen and (min-width: 1024px) {
+      address.vcard .photo {
+        display: block;
+        text-align: center;
+        margin: 1rem auto .5rem;
+        float: none; } }
+  address.vcard .org {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
+    display: inline-block;
+    float: right;
+    width: calc(100% - 60px); }
+    @media only screen and (min-width: 768px) {
+      address.vcard .org {
+        width: calc(100% - 84px); } }
+    @media only screen and (min-width: 1024px) {
+      address.vcard .org {
+        display: none; } }
+  address.vcard .adr {
+    display: inline-block;
+    float: right;
+    width: calc(100% - 60px); }
+    @media only screen and (min-width: 768px) {
+      address.vcard .adr {
+        width: calc(100% - 84px); } }
+    @media only screen and (min-width: 1024px) {
+      address.vcard .adr {
+        font-family: 'Lato', Verdana, Helvetica, sans-serif;
+        font-weight: 700;
+        width: 100%;
+        float: none;
+        display: block;
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.3; } }
+  address.vcard .contact:before {
+    content: "";
+    display: table;
+    clear: both; }
+  address.vcard .email, address.vcard .tel {
+    color: #fafafa;
+    background-color: transparent;
+    background-image: none;
+    border-color: #fafafa;
+    padding: 0.25rem 1rem;
+    font-size: 12px;
+    line-height: 1;
+    border-radius: 0.2rem;
+    border-width: 1px;
+    border-style: solid;
+    width: 48%;
+    text-align: center; }
+    address.vcard .email:hover, address.vcard .tel:hover {
+      color: #2f2f2f;
+      background-color: #fafafa;
+      border-color: #fafafa; }
+    address.vcard .email:focus, address.vcard .email.focus, address.vcard .tel:focus, address.vcard .tel.focus {
+      box-shadow: 0 0 0 3px rgba(250, 250, 250, 0.5); }
+    address.vcard .email.disabled, address.vcard .email:disabled, address.vcard .tel.disabled, address.vcard .tel:disabled {
+      color: #fafafa;
+      background-color: transparent; }
+    address.vcard .email:active, address.vcard .email.active, .show > address.vcard .email.dropdown-toggle, address.vcard .tel:active, address.vcard .tel.active, .show > address.vcard .tel.dropdown-toggle {
+      color: #2f2f2f;
+      background-color: #fafafa;
+      border-color: #fafafa; }
+    address.vcard .email + .email, address.vcard .email + .tel, address.vcard .tel + .email, address.vcard .tel + .tel {
+      margin-left: 2%; }
+    @media only screen and (min-width: 768px) {
+      address.vcard .email, address.vcard .tel {
+        border: 0 none transparent; } }
+    @media only screen and (min-width: 1024px) {
+      address.vcard .email, address.vcard .tel {
+        display: inline-block;
+        width: 100%;
+        line-height: 1.3;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 14px;
+        color: #2f2f2f;
+        text-decoration: none;
+        margin: 0; }
+        address.vcard .email:hover, address.vcard .tel:hover {
+          background: none;
+          color: #fafafa;
+          text-decoration: underline; } }
 
 /**
 * Social engagement buttons.
@@ -8382,22 +8481,32 @@ address.vcard {
 *  .small  added to the .nav-social-buttons container the class turns all of the buttons small and more compact
 * @markup 
 *  <nav class="nav-social-button">
-*    <h2>Stay Connected</h2>
+*    <h2>Stay Connected:</h2>
 *    <ul class="nav">
-*    <li class="nav-item twitter"><a class="nav-link" href="https://twitter.com/accintouch" target="_blank"><i class="fa fa-twitter"></i></a></li>
-*    <li class="nav-item facebook"><a class="nav-link" href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank"><i class="fa fa-facebook"></i></a></li>
-*    <li class="nav-item linkedin"><a  class="nav-link" href="http://www.linkedin.com/groups/American-College-Cardiology-732607?trk=myg_ugrp_ovr" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-*    <li class="nav-item youtube"><a  class="nav-link" href="http://www.youtube.com/user/ACCinTouch" target="_blank"><i class="fa fa-youtube"></i></a></li>
+*        <li class="nav-item twitter"><a class="nav-link" href="https://twitter.com/accintouch" target="_blank"><i class="fa fa-twitter"></i></a></li>
+*        <li class="nav-item facebook"><a class="nav-link" href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank"><i class="fa fa-facebook"></i></a></li>
+*        <li class="nav-item linkedin"><a  class="nav-link" href="http://www.linkedin.com/groups/American-College-Cardiology-732607?trk=myg_ugrp_ovr" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+*        <li class="nav-item youtube"><a  class="nav-link" href="http://www.youtube.com/user/ACCinTouch" target="_blank"><i class="fa fa-youtube"></i></a></li>
 *    </ul>
 *  </nav>
 * 
 **/
+.nav-social-button h2 {
+  color: #2f2f2f; }
+  @media only screen and (min-width: 1024px) {
+    .nav-social-button h2 {
+      text-align: center; } }
+@media only screen and (min-width: 1024px) {
+  .nav-social-button .nav {
+    border-top: #d6d4d4 dotted 1px;
+    padding: .25em; } }
 .nav-social-button .nav-item {
   margin: 0 .125rem 0;
   padding: 0;
-  float: left;
-  opacity: .9; }
-  .nav-social-button .nav-item:hover {
+  float: left; }
+  .nav-social-button .nav-item a i {
+    opacity: .8; }
+  .nav-social-button .nav-item a:hover i {
     opacity: 1; }
   .nav-social-button .nav-item.twitter a {
     background-color: #78cdf0; }
@@ -8414,17 +8523,17 @@ address.vcard {
 .nav-social-button .nav-link {
   height: 37px;
   width: 37px;
-  padding: 7px;
+  padding: 8px;
   display: inline-block;
   text-align: center; }
   .nav-social-button .nav-link i {
     display: inline-block;
     color: #fafafa;
-    font-size: 24px;
+    font-size: 21px;
     text-align: center;
     line-height: 1;
-    width: 24px;
-    height: 24px; }
+    width: 21px;
+    height: 21px; }
 .nav-social-button.mono-teal .nav-item a {
   background-color: #0088aa; }
 .nav-social-button.mono-orange .nav-item a {
@@ -8441,6 +8550,10 @@ address.vcard {
     width: 16px;
     height: 16px;
     font-size: 16px; }
+.nav-social-button .nav.flex-row .nav-item {
+  flex: 1 1 auto; }
+.nav-social-button .nav.flex-row .nav-link {
+  width: 100%; }
 
 /**
 * Navigation in the footer
@@ -8448,7 +8561,7 @@ address.vcard {
 * @structure  Nav Footer
 * @section Nav > Page
 * @markup
-*  <ul id="footer-sitemap">
+*  <ul class="footer-sitemap">
 *      <li class="nav-footer">
 *          <h2>Quality Improvement for Institutions:</h2>
 *          <ul class="nav flex-column">
@@ -8456,8 +8569,6 @@ address.vcard {
 *              <li class="nav-item"><a class="nav-link" id="msFooter_rptQii_hypLnk_1" href="/About-QII" target="_top">About</a></li>
 *              <li class="nav-item"><a class="nav-link" id="msFooter_rptQii_hypLnk_2" href="/Get-Started" target="_top">Get Started</a></li>
 *              <li class="nav-item"><a class="nav-link" id="msFooter_rptQii_hypLnk_3" href="/News" target="_top">News</a></li>
-*          </ul>
-*          <ul class="nav flex-column">
 *              <li class="nav-item"><a class="nav-link" href="http://www.acc.org/footer-pages/terms-and-conditions">Terms &amp; Conditions</a></li>
 *              <li class="nav-item"><a class="nav-link" href="http://www.acc.org/footer-pages/privacy-policy">Privacy Policy</a></li>
 *              <li class="nav-item"><a class="nav-link" href="http://www.acc.org/footer-pages/registered-user-agreement">Registered User Agreement</a></li>
@@ -8480,25 +8591,46 @@ address.vcard {
 *              <li class="nav-item"><a class="nav-link" id="msFooter_rptAccSites_hypLnk_3" href="https://www.cardiosmart.org/" target="_blank">CardioSmart</a></li>
 *          </ul>
 *      </li>
+*     <li class="nav-footer">
+*          <h2>@{lipsum:2:words}:</h2>
+*          <ul class="nav flex-column">
+*              <li class="nav-item"><a class="nav-link" id="msFooter_rptAccSites_hypLnk_1" href="http://www.acc.org" target="_blank">@{lipsum:2:words}</a></li>
+*              <li class="nav-item"><a class="nav-link" id="msFooter_rptAccSites_hypLnk_2" href="http://www.acc.org/footer-pages/media-center" target="_blank">@{lipsum:2:words}</a></li>
+*              <li class="nav-item"><a class="nav-link" id="msFooter_rptAccSites_hypLnk_3" href="https://www.cardiosmart.org/" target="_blank">@{lipsum:2:words}</a></li>
+*          </ul>
+*      </li>
 *  </ul>
 */
-@media only screen and (min-width: 1024px) {
-  #footer-sitemap {
-    border-right: solid 1px #ddd;
-    border-left: solid 1px #ddd; } }
+.footer-sitemap {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap; }
+  @media only screen and (min-width: 768px) {
+    .footer-sitemap {
+      border-left: solid 1px #ddd;
+      padding-left: 1rem; } }
+  @media only screen and (min-width: 1024px) {
+    .footer-sitemap {
+      border-right: solid 1px #ddd;
+      padding-right: 1rem; } }
 
 .nav-footer {
-  maring: 0;
+  margin: 0;
   float: left;
-  list-style-type: none; }
+  list-style-type: none;
+  padding-right: 1rem;
+  max-width: 200px;
+  flex: 1 1 auto; }
+  .nav-footer:last-child {
+    padding-right: 0; }
   .nav-footer h2 {
     /* allows for vertical align bottomw without extra DOM*/
-    display: table-cell;
-    height: 3rem;
-    vertical-align: bottom;
-    font-size: 12px;
-    line-height: 1.4em;
     color: #2f2f2f; }
+  .nav-footer .nav {
+    border-top: #d6d4d4 dotted 1px;
+    padding: .25em; }
   .nav-footer .nav-link {
     padding: .25em 0;
     font-size: 11px;
@@ -8516,21 +8648,17 @@ address.vcard {
  * @section Page Section
  *
  * @markup
- *  <footer id="footer" role="contentinfo">
- *         <div class="row">
- *             <div class="col-md-3">
- *                 @{include:address.vcard}
- *             </div>
- *             <div class="col-md-5">
- *             <div class="row">
- *             @{include:#footer-sitemap}
- *             </div>
- *             </div>
- *             <div class="col-md-4">
- *                 @{include:.nav-social-button}
- *             </div>
- *         </div>
- *     <!-- wrapper -->
+ *  <footer id="footer" role="contentinfo" class="row">
+ *  	<div class="col-lg-2 col-md-5">
+ *  	    @{include:address.vcard}
+ *  	    <div class="d-lg-none"> @{include:.nav-social-button}</div>
+ *  	</div>
+ *  	<div class="col-lg-7 col-md-7">
+ *  		@{include:.footer-sitemap}
+ *  	</div>
+ *  	<div class="col-lg-3 d-none d-lg-block">
+ *  	    @{include:.nav-social-button}
+ *  	</div>
  *  </footer>
  *
  */
@@ -8545,13 +8673,20 @@ address.vcard {
     #footer {
       padding-top: 12px;
       padding-bottom: 30px; } }
-  #footer .nav-social-button h2 {
-    font-size: 12px;
-    line-height: 1.4em;
-    color: #2f2f2f;
+  #footer h2 {
+    font-size: 16px;
+    line-height: 1.3;
     display: table-cell;
-    height: 3rem;
-    vertical-align: bottom; }
+    height: auto;
+    vertical-align: bottom;
+    padding-bottom: .25em; }
+    @media only screen and (min-width: 1024px) {
+      #footer h2 {
+        height: 3rem; } }
+  #footer address {
+    margin-top: 1rem; }
+  #footer .footer-sitemap, #footer .nav-social-button {
+    margin-top: 1rem; }
 
 /**
  * Header of CV Qaulity combines, logo, header-nav, header-nav.mobile, user-status-containr, search and utility-nav to brand the page.
@@ -8563,30 +8698,58 @@ address.vcard {
  *     <div class="col-md-6">
  *         <h1 class="site-logo"><a href="/" target="_top"><img src="assets/images/qii-logo.png" id="saHeader_imgHeader" alt="Quality Improvement for Institutions"></a></h1>
  *     </div>
- *     <div class="col-md-6"> <div class="row actions">
- *       <div class="col-12">@{include:.nav-utility}</div>
- *       <div class="col-12">@{include:.searchbar}</div>
- *      <div class="col-12">@{include:.user-status-container}</div>
+ *     <div class="col-md-6"> <div class="actions d-none d-lg-flex">
+ *       <div class="nav-utility-position">@{include:.nav-utility}</div>
+ *       <div class="searchbar-position">@{include:.searchbar}</div>
+ *      <div class="user-staus-position">@{include:.user-status-container}</div>
  *     </div></div>
  *  </header>
  *
  */
-#header {
-  border: #eceaea 1px solid; }
-  #header .site-logo {
-    padding: 25px 1rem 20px; }
-    #header .site-logo img {
-      height: 110px;
-      width: 471px;
-      max-width: unset; }
-  #header .searchbar {
-    max-width: 400px;
-    float: right; }
-  #header .actions {
-    padding: 10px 1rem 10px;
-    height: 155px; }
-  #header .user-status-container {
-    margin-bottom: -1rem; }
+#header .site-logo {
+  padding: .75rem .33rem .5rem; }
+  #header .site-logo img {
+    height: 55px;
+    width: 235px;
+    max-width: unset; }
+  @media only screen and (min-width: 768px) {
+    #header .site-logo {
+      padding: 1rem .5rem .75rem; }
+      #header .site-logo img {
+        height: 73.3333333333px;
+        width: 313.3333333333px; } }
+  @media only screen and (min-width: 1024px) {
+    #header .site-logo {
+      padding: 2rem 1rem 1.5rem; }
+      #header .site-logo img {
+        height: 110px;
+        width: 470px; } }
+#header .searchbar {
+  max-width: 400px;
+  float: right; }
+#header .actions {
+  padding: 10px 1rem 10px;
+  height: 155px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-between; }
+#header .nav-utility-position,
+#header .searchbar-position,
+#header .user-staus-position {
+  display: block;
+  flex: 0 1 100%; }
+#header .nav-utility-position {
+  flex: 0 1 20%; }
+#header .searchbar-position {
+  flex: 0 1 20%; }
+#header .user-staus-position {
+  flex: 0 1 60%;
+  position: relative; }
+#header .user-status-container {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
 
 /**
  * Container for the Menu Toggle for the Mobile Nav. ~Inline Style should be removed. Currently used so it will show on all screen dimensions~

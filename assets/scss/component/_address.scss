@@ -6,11 +6,10 @@
  * @markup
  *  <address class="vcard">
  *     <!-- http://microformats.org/wiki/hcard -->
- *     <a class="fn org url" href="http://www.acc.org" target="_blank">
- *         <img alt="" src="/Assets/images/acc-logo-footer.png" id="msFooter_imgFooter">
+ *     <a class="photo" href="http://www.acc.org" target="_blank">
+ *         <img alt="" src="/Assets/images/acc-logo-footer.png">
  *     </a>
- *     <h2><a class="fn org ur
- *         l" href="http://www.acc.org" target="_blank">American College of Cardiology</a></h2>
+ *     <a class="fn org url" href="http://www.acc.org" target="_blank">American College of Cardiology</a>
  *     <span class="adr">
  *         <span class="street-address">2400 N St. NW</span>
  *         <span class="locality">Washington</span>,
@@ -18,21 +17,19 @@
  *          <span class="postal-code hidden"></span>
  *     </span>
  *     <!-- end .adr -->
- *     <a href="mailto:" class="email hidden"></a>
- *     <abbr tel="+18002574737" class="tel">(800) 257-4737</abbr>
- *     <a href="mailto:cvquality@acc.org">cvquality@acc.org</a>
+ *     <div class="contact">
+ *     <a tel="tel:1-800-257-4737" class="tel">(800) 257-4737</a>
+ *     <a href="mailto:cvquality@acc.org" class="email">cvquality@acc.org</a>
+ *     </div>
  *  </address>
 */
 
 address.vcard {
-    padding:0 1em;
-    max-width:16em;
-    &, h2 {
-        @include font(normal);
-        font-size: ms(0);
-        color: $off-black;
-    }
-    a {
+    @include font(normal);
+    font-size: ms(0);
+    color: $off-black;
+    margin-bottom:0;
+   a {
         color: #000;
         text-decoration: none;
         display: inline-block;
@@ -47,14 +44,91 @@ address.vcard {
         span.street-address{width:100%;}
 
     }
-    a img {
-        margin: 0 .75em .25em;
-        display: block;
+    .photo{
+        display: inline-block;
+        float: left;
+        width:48px;
+        height:48px;
+        margin:6px 12px 6px 0;
+        @include bp(md){
+            width:72px;
+            height:72px;
+        }
+        @include bp(lg){
+           display: block;
+           text-align: center;
+           margin:1rem auto .5rem;
+           float: none;
+
+        }
     }
-}
+    .org{ 
+        @include font(bold);
+        font-size:ms(1);
+        line-height: $tight;
+        display: inline-block;
+        float:right;
+        width:calc(100% - 60px);
+         @include bp(md){
+           width:calc(100% - 84px);
+        }
+        @include bp(lg){
+           display: none;
+        }
+    }
+    .adr{
+         display: inline-block;
+        float:right;
+        width:calc(100% - 60px);
+         @include bp(md){
+           width:calc(100% - 84px);
+        }
+        @include bp(lg){
+            @include font(bold);
+           width:100%;
+           float:none;
+           display: block;
+           text-align:center;
+           font-size: ms(1);
+           line-height: $tight;
+
+        }
+       
+    }
+    .contact{
+         &:before{
+           content: "";
+           display: table;
+           clear:both;
+        }
+    }
+    .email,.tel{
+        @include  button-outline-variant($off-white,$off-black);
+        @include button-size($input-btn-padding-y, $input-btn-padding-x, ms(-1), 1, .2rem); 
+        border-width:1px;
+        border-style:solid;
+        width:48%;
+        + .email,+ .tel{margin-left:2%;}
+        text-align: center;
+        @include bp(md){
+            border:0 none transparent;
+        }
+        // transition the buttons into links when on large screen
+        @include bp(lg){
+           display: inline-block;
+           width:100%;
+           line-height: $tight;
+           text-align: center;
+           margin:0;
+           padding:0;
+           border:0;
+           font-size: ms(0);
+           color: $off-black;
+           text-decoration: none;
+           margin:0;
+           &:hover{background:none; color:$off-white; text-decoration:underline;}
 
 
-#site-footer address{
-
-    
+        }
+    }
 }

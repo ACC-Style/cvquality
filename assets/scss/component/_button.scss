@@ -95,17 +95,21 @@
 .btn.btn-outline-primary{
 	border-color:$scrubteal;
 	color:$scrubteal;
+	background:none;
 	&:visited,&:hover{
 		border-color:$scrubteal-dark;
 		color:$scrubteal-dark;
+		background-color: rgba(255,255,255,.2);
 	}
 }
 .btn.btn-outline-secondary{
 	border-color:$warm-grey-dark;
 	color:$warm-grey-dark;
+	background:none;
 	&:visited,&:hover{
 		border-color:$off-black;
 		color:$off-black;
+		background-color: rgba(255,255,255,.2);
 	}
 }
 

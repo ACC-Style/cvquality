@@ -4,21 +4,17 @@
  * @section Page Section
  *
  * @markup
- *  <footer id="footer" role="contentinfo">
- *         <div class="row">
- *             <div class="col-md-3">
- *                 @{include:address.vcard}
- *             </div>
- *             <div class="col-md-5">
- *             <div class="row">
- *             @{include:#footer-sitemap}
- *             </div>
- *             </div>
- *             <div class="col-md-4">
- *                 @{include:.nav-social-button}
- *             </div>
- *         </div>
- *     <!-- wrapper -->
+ *  <footer id="footer" role="contentinfo" class="row">
+ *  	<div class="col-lg-2 col-md-5">
+ *  	    @{include:address.vcard}
+ *  	    <div class="d-lg-none"> @{include:.nav-social-button}</div>
+ *  	</div>
+ *  	<div class="col-lg-7 col-md-7">
+ *  		@{include:.footer-sitemap}
+ *  	</div>
+ *  	<div class="col-lg-3 d-none d-lg-block">
+ *  	    @{include:.nav-social-button}
+ *  	</div>
  *  </footer>
  *
  */
@@ -33,14 +29,22 @@
 		padding-top: 12px;
 		padding-bottom: 30px;
 	}
-	.nav-social-button h2{ 
-		font-size: ms(-1);
-        line-height: 1.4em;
-        color: $off-black;
-		 display: table-cell;
-        height: 3rem;
+	h2{ 	
+		font-size: ms(1);
+        line-height: $tight;
+		display: table-cell;
+        height: auto;
         vertical-align: bottom;
+        padding-bottom:.25em;
+        @include bp(lg){
+        	height: 3rem;
+        }
     }
+    address{
+    	margin-top: 1rem;
+    }
+    .footer-sitemap, .nav-social-button{margin-top:1rem;}
+
 }
 
 

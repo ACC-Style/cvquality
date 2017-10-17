@@ -8,38 +8,70 @@
  *     <div class="col-md-6">
  *         <h1 class="site-logo"><a href="/" target="_top"><img src="assets/images/qii-logo.png" id="saHeader_imgHeader" alt="Quality Improvement for Institutions"></a></h1>
  *     </div>
- *     <div class="col-md-6"> <div class="row actions">
- *       <div class="col-12">@{include:.nav-utility}</div>
- *       <div class="col-12">@{include:.searchbar}</div>
- *      <div class="col-12">@{include:.user-status-container}</div>
+ *     <div class="col-md-6"> <div class="actions d-none d-lg-flex">
+ *       <div class="nav-utility-position">@{include:.nav-utility}</div>
+ *       <div class="searchbar-position">@{include:.searchbar}</div>
+ *      <div class="user-staus-position">@{include:.user-status-container}</div>
  *     </div></div>
  *  </header>
  *
  */
 #header{
-    border: $soft-grey 1px solid;
+    
     .site-logo{ 
-        padding:25px 1rem 20px; 
+        padding:.75rem .33rem .5rem;
         img {
-            height: 110px;
-            width:471px;
+            height: 110/2 * 1px;
+            width:  470/2 * 1px;
             max-width: unset;
+        }
+        @include bp(md){   
+            padding:1rem .5rem .75rem;
+            img{
+                height: 110/1.5 * 1px;
+                width: 470/1.5 * 1px;
+               }
            }
+        @include bp(lg){
+            padding:2rem 1rem 1.5rem;
+            img{
+                height: 110 * 1px;
+                width:470 * 1px;
+            }
+        }
     }
-    .searchbar{max-width:400px; float:right;}
-    .utility-nav{}
+    .searchbar{
+        max-width:400px; 
+        float:right;
+    }
     .actions{
         padding:10px 1rem 10px;
         height:155px;
+        display: flex;
+        flex-direction:column;
+        align-content:space-between;
+        justify-content:space-between;
 
     }
-    .user-status-container{
-        margin-bottom: -1rem;
+    .nav-utility-position,
+    .searchbar-position,
+    .user-staus-position{
+        display:block; 
+        flex:0 1 100%;
+    }
+     .nav-utility-position{
+        flex:0 1 20%;
+     }
+     .searchbar-position{
+         flex:0 1 20%;
+     }
+     .user-staus-position{
+         flex:0 1 60%;
+         position: relative;
+     }
+     .user-status-container{
+        position: absolute;
+        bottom: 0;
+        right:0;
      }
 }
-
-
-
-
-
-

@@ -4,7 +4,7 @@
 * @structure  Nav Footer
 * @section Nav > Page
 * @markup
-*  <ul id="footer-sitemap">
+*  <ul class="footer-sitemap">
 *      <li class="nav-footer">
 *          <h2>Quality Improvement for Institutions:</h2>
 *          <ul class="nav flex-column">
@@ -12,8 +12,6 @@
 *              <li class="nav-item"><a class="nav-link" id="msFooter_rptQii_hypLnk_1" href="/About-QII" target="_top">About</a></li>
 *              <li class="nav-item"><a class="nav-link" id="msFooter_rptQii_hypLnk_2" href="/Get-Started" target="_top">Get Started</a></li>
 *              <li class="nav-item"><a class="nav-link" id="msFooter_rptQii_hypLnk_3" href="/News" target="_top">News</a></li>
-*          </ul>
-*          <ul class="nav flex-column">
 *              <li class="nav-item"><a class="nav-link" href="http://www.acc.org/footer-pages/terms-and-conditions">Terms &amp; Conditions</a></li>
 *              <li class="nav-item"><a class="nav-link" href="http://www.acc.org/footer-pages/privacy-policy">Privacy Policy</a></li>
 *              <li class="nav-item"><a class="nav-link" href="http://www.acc.org/footer-pages/registered-user-agreement">Registered User Agreement</a></li>
@@ -36,28 +34,49 @@
 *              <li class="nav-item"><a class="nav-link" id="msFooter_rptAccSites_hypLnk_3" href="https://www.cardiosmart.org/" target="_blank">CardioSmart</a></li>
 *          </ul>
 *      </li>
+*     <li class="nav-footer">
+*          <h2>@{lipsum:2:words}:</h2>
+*          <ul class="nav flex-column">
+*              <li class="nav-item"><a class="nav-link" id="msFooter_rptAccSites_hypLnk_1" href="http://www.acc.org" target="_blank">@{lipsum:2:words}</a></li>
+*              <li class="nav-item"><a class="nav-link" id="msFooter_rptAccSites_hypLnk_2" href="http://www.acc.org/footer-pages/media-center" target="_blank">@{lipsum:2:words}</a></li>
+*              <li class="nav-item"><a class="nav-link" id="msFooter_rptAccSites_hypLnk_3" href="https://www.cardiosmart.org/" target="_blank">@{lipsum:2:words}</a></li>
+*          </ul>
+*      </li>
 *  </ul>
 */
 
-#footer-sitemap {
+.footer-sitemap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    @include bp(md) {
+        border-left: solid 1px #ddd;
+        padding-left: 1rem;
+    }
     @include bp(lg) {
         border-right: solid 1px #ddd;
-        border-left: solid 1px #ddd;
+        padding-right: 1rem;
     }
 }
 
 .nav-footer {
-    maring: 0;
+    margin: 0;
     float: left;
     list-style-type: none;
+    padding-right:1rem;
+    max-width: 200px;
+    flex: 1 1 auto;
+    &:last-child{padding-right:0;}
+
     h2 {
         /* allows for vertical align bottomw without extra DOM*/
-        display: table-cell;
-        height: 3rem;
-        vertical-align: bottom;
-        font-size: ms(-1);
-        line-height: 1.4em;
         color: $off-black;
+    }
+    .nav{
+        border-top: $warm-grey-light dotted 1px;
+        padding: .25em;
     }
     .nav-link {
         padding: .25em 0;
