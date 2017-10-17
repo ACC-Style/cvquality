@@ -4,14 +4,12 @@
  * @structure Mobile Menu Toggle
  * @section Nav > Mobile
  * @markup
- *  <div class="mobile-menu-toggle-container" style="display:block;">
- *      <div class="row no-gutters">
- *          <div class="col-7">
- *              @{include:.user-status-container}
- *          </div>
- *          <div class="col-5">
- *               @{include:.mobile-menu-toggle}
- *          </div>
+ *  <div class="mobile-menu-toggle-container row no-gutter" style="display:flex;">
+ *      <div class="col-7">
+ *          @{include:.user-status-container}
+ *      </div>
+ *      <div class="col-5">
+ *           @{include:.mobile-menu-toggle}
  *      </div>
  *  </div>
  */
@@ -19,11 +17,10 @@
 
 .mobile-menu-toggle-container {
     position: relative;
-    display: none;
-    padding: .25rem .75rem;
+    display: flex;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
     height: 2.75rem;
-    width:100%;
-    /* displays shadow above next sibling tag */
     @include lightgrey-gradient;
     @include dropshadow;
     .user-status-container{
@@ -39,6 +36,6 @@
         }
     }
     @include bp(sm){
-        display: block;
+        display: none;
     }
 }

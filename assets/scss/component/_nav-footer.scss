@@ -51,10 +51,13 @@
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
+
     @include bp(md) {
         border-left: solid 1px #ddd;
         padding-left: 1rem;
     }
+
+
     @include bp(lg) {
         border-right: solid 1px #ddd;
         padding-right: 1rem;
@@ -62,31 +65,42 @@
 }
 
 .nav-footer {
-    margin: 0;
-    float: left;
+    @extend %nav-basic;
     list-style-type: none;
-    padding-right:1rem;
-    max-width: 200px;
-    flex: 1 1 auto;
-    &:last-child{padding-right:0;}
+    flex: 1 0 100%;
+    @include bp(md) {
+        margin: 0;
+        padding-right: 1rem;
+        max-width: 200px;
+        flex: 1  0 100%;
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+
 
     h2 {
         /* allows for vertical align bottomw without extra DOM*/
         color: $off-black;
     }
-    .nav{
+
+    .nav {
         border-top: $warm-grey-light dotted 1px;
         padding: .25em;
     }
+
     .nav-link {
         padding: .25em 0;
         font-size: ms(-2);
         color: $off-black;
+
         #footer & {
             color: $off-white;
         }
+
         text-decoration: none;
         text-transform: uppercase;
+
         &:hover {
             text-decoration: underline;
         }

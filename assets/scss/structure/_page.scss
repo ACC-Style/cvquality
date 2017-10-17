@@ -1,0 +1,43 @@
+/**
+ * Page Layout of a basic page
+ * 
+ * @structure Page
+ * @section Layouts
+ * @flag full-width
+ * @markup
+ *  <div class="body">
+ *      <div class="wrapper container-fluid">
+ *           @{include:#header}
+ *           @{include:.mobile-menu-toggle-container}
+ *      <div id="aux" class="row">@{include:.breadcrumb}</div>
+ *      <div id="layout" class="row no-gutter">
+ *          <div class="col-md-3 p-0 d-none d-lg-block"> @{include:.nav-sub}</div>
+ *          <div class="col-md-9 col"><div class="page-content">{{ Content }}</div></div>
+ *      </div>
+ *       @{include:#footer}
+ *  </div>
+ *  </div>
+ */
+.wrapper {
+    margin: 0 auto;
+    max-width: 1020px;
+    background: #fff;
+
+    &:before {
+        content: "";
+        display: table;
+    }
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    *zoom: 1;
+}
+
+.page-content{
+    padding: 1rem 1rem 2rem;
+    + .page-content{padding-top:0;margin-top:-1rem;}
+}
+
+

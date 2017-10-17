@@ -4,32 +4,19 @@
 * @structure Breadcrumb
 * @section Nav > Utility 
 * @markup
-*  <nav class="breadcrumb">
+*  <nav class="breadcrumb d-none d-md-block">
 *   <a class="breadcrumb-item" href="#">Home</a>
 *   <a class="breadcrumb-item" href="#">Library</a>
 *   <span class="breadcrumb-item active">Breadcrumb</span>
 *  </nav>
 */
-.breadcrumbs {
-    // display:none;
-    // padding: 0.5em 3%;
-    // font-weight: 600;
-    // font-size: 0.75em;
-    // /* 12px */
-    // line-height: 1.5em;
-    // color: #555;
-    // a {
-    //     color: #0197c4;
-    //     text-decoration: none;
-    // }
-    // .separator {
-    //     padding: 0 3px;
-    //     color: #0197c4;
-    // }
+.breadcrumb{
+    // most of the style changes came from modifing the custom.scss varibles
+    padding: .75rem 1rem .5rem;
 }
 // adding in font awesome to change the character type to an icon.
 .breadcrumb-item + .breadcrumb-item::before{
-	    display: inline-block;
+    display: inline-block;
     margin-right: .5em;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;

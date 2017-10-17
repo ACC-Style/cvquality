@@ -12,7 +12,7 @@
 @import "vendor/bootstrap/kitchensink";
 
 
-body {
+body, .body {
     @include lightblue-gradient;
 }
 
@@ -45,6 +45,7 @@ body {
 @import "component/nav-social-buttons";
 @import "component/nav-footer";
 
+@import "structure/page";
 @import "structure/footer";
 @import "structure/header";
 @import "structure/mobile-menu-toggle-container";
