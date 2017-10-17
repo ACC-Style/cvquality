@@ -7303,7 +7303,7 @@ input {
 *  </nav>
 */
 .breadcrumb {
-  padding: .75rem 1rem .5rem; }
+  padding: .75rem .75rem 0 1rem; }
 
 .breadcrumb-item + .breadcrumb-item::before {
   display: inline-block;
@@ -7864,11 +7864,11 @@ a.link[href^="fax:"]:before {
     .nav-user-status .action:hover {
       text-decoration: underline; }
 
-.pagination, .nav-user-status, .nav-primary, .nav-utility, .nav-sub, .nav-social-button, .nav-footer, .pagination ul, .nav-user-status ul, .nav-primary ul, .nav-utility ul, .nav-sub ul, .nav-social-button ul, .nav-footer ul, .nav, .nav ul, .navbar-nav, .navbar-nav ul {
+.pagination, .nav-user-status, .nav-utility, .nav-sub, .nav-social-button, .nav-footer, .pagination ul, .nav-user-status ul, .nav-utility ul, .nav-sub ul, .nav-social-button ul, .nav-footer ul, .nav, .nav ul, .navbar-nav, .navbar-nav ul {
   list-style: none;
   margin: 0;
   padding: 0; }
-.pagination li, .nav-user-status li, .nav-primary li, .nav-utility li, .nav-sub li, .nav-social-button li, .nav-footer li, .pagination ul li, .nav-user-status ul li, .nav-primary ul li, .nav-utility ul li, .nav-sub ul li, .nav-social-button ul li, .nav-footer ul li, .nav li, .nav ul li, .navbar-nav li, .navbar-nav ul li {
+.pagination li, .nav-user-status li, .nav-utility li, .nav-sub li, .nav-social-button li, .nav-footer li, .pagination ul li, .nav-user-status ul li, .nav-utility ul li, .nav-sub ul li, .nav-social-button ul li, .nav-footer ul li, .nav li, .nav ul li, .navbar-nav li, .navbar-nav ul li {
   list-style-type: none;
   margin: 0;
   padding: 0; }
@@ -7922,7 +7922,8 @@ a.link[href^="fax:"]:before {
   font-weight: 700;
   font-size: 19px;
   background: #a1a0a4;
-  border-top: #ffc425 4px solid; }
+  border-top: #ffc425 4px solid;
+  width: 100%; }
   .nav-primary .nav {
     width: 100%; }
   .nav-primary .nav-item:hover {
@@ -8151,82 +8152,84 @@ a.link[href^="fax:"]:before {
  *     e.stopPropagation(); 
  *  });
  */
-.nav-sub h2 {
-  padding: 16px 1em 16px 1em; }
-  .nav-sub h2 img {
-    max-width: 100%; }
-.nav-sub > .nav {
-  border-top: solid 1px #e87d1e;
-  border-bottom: solid 1px #e87d1e; }
-.nav-sub ul {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  display: block;
-  transition: max-height 1s ease-out;
-  -webkit-transition: max-height 1s ease-out;
-  -moz-transition: max-height 1s ease-out;
-  background: #eceaea; }
-  .nav-sub ul > li a:hover {
-    background: #f6f5f5; }
-  .nav-sub ul ul {
-    font-size: 14px;
-    max-height: 0;
-    overflow: hidden;
-    background: #e1dfdf; }
-    .nav-sub ul ul > li a:hover {
-      background: #ebeaea; }
-    .nav-sub ul ul ul {
-      background: #c7c5c7; }
-      .nav-sub ul ul ul > li a:hover {
-        background: #d0d0d2; }
-  .nav-sub ul .active > ul {
-    max-height: 400px; }
-.nav-sub li {
-  display: block;
-  cursor: pointer;
-  line-height: 1.5; }
-  .nav-sub li li {
-    line-height: 1.3; }
-  .nav-sub li a {
+.nav-sub {
+  padding-bottom: 1.5rem; }
+  .nav-sub h2 {
+    padding: 16px 1em 16px 1em; }
+    .nav-sub h2 img {
+      max-width: 100%; }
+  .nav-sub > .nav {
+    border-top: solid 1px #e87d1e;
+    border-bottom: solid 1px #e87d1e; }
+  .nav-sub ul {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
     display: block;
-    color: #6f6b6f;
-    text-decoration: none; }
-    .nav-sub li a:hover {
-      text-decoration: none;
+    transition: max-height 1s ease-out;
+    -webkit-transition: max-height 1s ease-out;
+    -moz-transition: max-height 1s ease-out;
+    background: #eceaea; }
+    .nav-sub ul > li a:hover {
+      background: #f6f5f5; }
+    .nav-sub ul ul {
+      font-size: 14px;
+      max-height: 0;
+      overflow: hidden;
+      background: #e1dfdf; }
+      .nav-sub ul ul > li a:hover {
+        background: #ebeaea; }
+      .nav-sub ul ul ul {
+        background: #c7c5c7; }
+        .nav-sub ul ul ul > li a:hover {
+          background: #d0d0d2; }
+    .nav-sub ul .active > ul {
+      max-height: 400px; }
+  .nav-sub li {
+    display: block;
+    cursor: pointer;
+    line-height: 1.5; }
+    .nav-sub li li {
+      line-height: 1.3; }
+    .nav-sub li a {
+      display: block;
+      color: #6f6b6f;
+      text-decoration: none; }
+      .nav-sub li a:hover {
+        text-decoration: none;
+        color: #2f2f2f; }
+    .nav-sub li.active {
       color: #2f2f2f; }
-  .nav-sub li.active {
-    color: #2f2f2f; }
-  .nav-sub li.current > a, .nav-sub li.current > a:hover {
-    color: #e87d1e; }
-.nav-sub li > a {
-  padding: 3px 10px 3px 1.25rem; }
-.nav-sub li li > a {
-  padding: 3px 10px 3px 2rem; }
-.nav-sub li li li > a {
-  padding: 3px 10px 3px 2.75rem; }
-.nav-sub li.parent > a {
-  padding-left: 0rem; }
-.nav-sub li li.parent > a {
-  padding-left: .75rem; }
-.nav-sub li li li.parent > a {
-  padding-left: 1.5rem; }
-.nav-sub .toggle {
-  width: 1.25em;
-  text-align: center;
-  display: none;
-  transition: transform 0.25s ease-out;
-  -moz-transition: transform 0.25s ease-out;
-  -webkit-transition: transform 0.25s ease-out; }
-  .nav-sub .toggle:after {
-    content: "\f0da";
-    cursor: pointer; }
-.nav-sub .parent > a > .toggle {
-  display: inline-block; }
-.nav-sub .parent.active > a > .toggle {
-  transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -webkit-transform: rotate(90deg); }
+    .nav-sub li.current > a, .nav-sub li.current > a:hover {
+      color: #e87d1e; }
+  .nav-sub li > a {
+    padding: 3px 10px 3px 1.25rem; }
+  .nav-sub li li > a {
+    padding: 3px 10px 3px 2rem; }
+  .nav-sub li li li > a {
+    padding: 3px 10px 3px 2.75rem; }
+  .nav-sub li.parent > a {
+    padding-left: 0rem; }
+  .nav-sub li li.parent > a {
+    padding-left: .75rem; }
+  .nav-sub li li li.parent > a {
+    padding-left: 1.5rem; }
+  .nav-sub .toggle {
+    width: 1.25em;
+    text-align: center;
+    display: none;
+    transition: transform 0.25s ease-out;
+    -moz-transition: transform 0.25s ease-out;
+    -webkit-transition: transform 0.25s ease-out; }
+    .nav-sub .toggle:after {
+      content: "\f0da";
+      cursor: pointer; }
+  .nav-sub .parent > a > .toggle {
+    display: inline-block; }
+  .nav-sub .parent.active > a > .toggle {
+    transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg); }
 
 /**
  * Toggle Button for the menu on mobile
@@ -8656,11 +8659,12 @@ address.vcard {
  *  <div class="body">
  *      <div class="wrapper container-fluid">
  *           @{include:#header}
+ *           <div class="row">@{include:.nav-primary}</div>
  *           @{include:.mobile-menu-toggle-container}
  *      <div id="aux" class="row">@{include:.breadcrumb}</div>
  *      <div id="layout" class="row no-gutter">
  *          <div class="col-md-3 p-0 d-none d-lg-block"> @{include:.nav-sub}</div>
- *          <div class="col-md-9 col"><div class="page-content">{{ Content }}</div></div>
+ *          <div class="col-md-9 col"><div class="page-content"><h1>Sample Page</h1> @{include:ul.no-bullets}</div></div>
  *      </div>
  *       @{include:#footer}
  *  </div>
@@ -8774,7 +8778,7 @@ address.vcard {
   float: right; }
 #header .actions {
   padding: 10px 1rem 10px;
-  height: 155px;
+  height: 175px;
   display: flex;
   flex-direction: column;
   align-content: space-between;
@@ -8802,7 +8806,7 @@ address.vcard {
  * @structure Mobile Menu Toggle
  * @section Nav > Mobile
  * @markup
- *  <div class="mobile-menu-toggle-container row no-gutter" style="display:flex;">
+ *  <div class="mobile-menu-toggle-container row no-gutter">
  *      <div class="col-7">
  *          @{include:.user-status-container}
  *      </div>

@@ -44,12 +44,11 @@
 */
 
 .nav-primary{
-    @extend %nav-basic;
     @include font(700);
     font-size: ms(2);
     background: $warm-grey;
     border-top: $light-orange 4px solid;
-
+    width:100%;
     .nav{
         width:100%;
     }
