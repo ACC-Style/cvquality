@@ -8659,12 +8659,12 @@ address.vcard {
  *  <div class="body">
  *      <div class="wrapper container-fluid">
  *           @{include:#header}
- *           <div class="row">@{include:.nav-primary}</div>
  *           @{include:.mobile-menu-toggle-container}
+ *           <div class="row">@{include:.nav-primary}</div>
  *      <div id="aux" class="row">@{include:.breadcrumb}</div>
  *      <div id="layout" class="row no-gutter">
- *          <div class="col-md-3 p-0 d-none d-lg-block"> @{include:.nav-sub}</div>
- *          <div class="col-md-9 col"><div class="page-content"><h1>Sample Page</h1> @{include:ul.no-bullets}</div></div>
+ *          <div class="col-lg-2 p-0 d-none d-lg-block"> @{include:.nav-sub}</div>
+ *          <div class="col-lg-10 col"><div class="page-content"><h1>Sample Page</h1> @{include:ul.no-bullets}</div></div>
  *      </div>
  *       @{include:#footer}
  *  </div>
