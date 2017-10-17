@@ -103,7 +103,7 @@ address.vcard {
         }
     }
     .email,.tel{
-        @include  button-outline-variant($off-white,$off-black);
+        @include  button-outline-variant($off-black,$off-white);
         @include button-size($input-btn-padding-y, $input-btn-padding-x, ms(-1), 1, .2rem); 
         border-width:1px;
         border-style:solid;
@@ -125,8 +125,8 @@ address.vcard {
            font-size: ms(0);
            color: $off-black;
            text-decoration: none;
-           margin:0;
-           &:hover{background:none; color:$off-white; text-decoration:underline;}
+           &, + .email,+ .tel{margin:0;}
+           &:hover{background:none; color:$off-black; text-decoration:underline;}
 
 
         }

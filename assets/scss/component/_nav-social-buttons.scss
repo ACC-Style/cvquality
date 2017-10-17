@@ -5,10 +5,11 @@
 * @structure Social Buttons
 * @section Nav > Utility
 * @modifiers
-*  .mono-teal  added to the .nav-social-buttons container the class turns all of the buttons scrub teal
-*  .mono-orange  added to the .nav-social-buttons container the class turns all of the buttons dark orange
-*  .mono-grey  added to the .nav-social-buttons container the class turns all of the buttons grey
-*  .small  added to the .nav-social-buttons container the class turns all of the buttons small and more compact
+*  .mono-teal  added to the .nav-social-button container the class turns all of the buttons scrub teal
+*  .mono-orange  added to the .nav-social-button container the class turns all of the buttons dark orange
+*  .mono-grey  added to the .nav-social-button container the class turns all of the buttons grey
+*  .small  added to the .nav-social-button container the class turns all of the buttons small and more compact
+*  .flex-row add to .nav-social-button container  to make the nav full width of its parent container. Buttons will expand to take up the space and will flex instead of squares.
 * @markup 
 *  <nav class="nav-social-button">
 *    <h2>Stay Connected:</h2>
@@ -26,9 +27,6 @@
 	h2{
 		
 		color:$off-black;
-		@include bp(lg){
-			text-align: center;
-		}
 	}
 	.nav{
 		@include bp(lg){
@@ -103,7 +101,7 @@
 			}		
 		}
 	}
-	.nav.flex-row{
+	&.flex-row{
 		.nav-item{flex:1 1 auto;}
 		.nav-link{width:100%;}
 	}
