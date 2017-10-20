@@ -7,12 +7,12 @@
  *  <footer id="footer" role="contentinfo" class="row">
  *  	<div class="col-lg-2 col-md-5">
  *  	    @{include:address.vcard}
- *  	    <div class="d-lg-none"> @{include:.nav-social-button}</div>
+ *  	    <div class="hidden-lg"> @{include:.nav-social-button}</div>
  *  	</div>
  *  	<div class="col-lg-8 col-md-7">
  *  		@{include:.footer-sitemap}
  *  	</div>
- *  	<div class="col-lg-2 d-none d-lg-block">
+ *  	<div class="col-lg-2 hidden-xs visible-lg-block">
  *  	    @{include:.nav-social-button}
  *  	</div>
  *  </footer>

@@ -103,7 +103,7 @@ address.vcard {
         }
     }
     .email,.tel{
-        @include  button-outline-variant($off-black,$off-white);
+        @include  button-variant($off-black,$off-white,$warm-grey-dark);
         @include button-size($input-btn-padding-y, $input-btn-padding-x, ms(-1), 1, .2rem); 
         border-width:1px;
         border-style:solid;
@@ -112,6 +112,7 @@ address.vcard {
         text-align: center;
         @include bp(md){
             border:0 none transparent;
+            background:none transparent;
         }
         // transition the buttons into links when on large screen
         @include bp(lg){
@@ -126,7 +127,7 @@ address.vcard {
            color: $off-black;
            text-decoration: none;
            &, + .email,+ .tel{margin:0;}
-           &:hover{background:none; color:$off-black; text-decoration:underline;}
+           &:hover,&:focus,&:active{background:none; color:$off-black; text-decoration:underline;}
 
 
         }

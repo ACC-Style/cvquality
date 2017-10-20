@@ -55,31 +55,32 @@
 
 .nav-user-status{
     @extend %nav-basic;
-    
+    @include nav-inline-block-basic;
     text-align: right;
    
     .user + &{margin-top:-.5rem;}
+    //add bars remove the last bar
+    .nav-item:after{
+            content:"|";
+            padding-right:.25rem;
+            color:$acc-blue;
+    }
+    .nav-item:last-child:after{ 
+        content:'';
+        padding-right:0;
+    }
     .nav-link{
          padding: 0.25rem .25rem;
-         &:after{
-            content:"|";
-            padding-left:.25rem;
-            color:$acc-blue;
+         &:hover{
+            text-decoration: underline;
          }
+        
     }
-    // remove the last bar
-    .nav-item:last-child .nav-link:after{
-            content:'';
-            padding-left:0;
-        }
     .account{
         text-transform: uppercase;
     }
     .action{
         font-weight: 700;
         text-transform: uppercase;
-        &:hover{
-            text-decoration: underline;
-        }
     }
 }

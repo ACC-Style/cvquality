@@ -4,11 +4,22 @@
  * @structure Mobile Menu Toggle
  * @section Nav > Mobile
  * @markup
- *  <div class="mobile-menu-toggle-container row no-gutter">
- *      <div class="col-7">
- *          @{include:.user-status-container}
+ *  <div class="mobile-menu-toggle-container row no-gutter show-mobile">
+ *      <div class="col-md-7">
+ *         <div class="user-status-container">
+ *              <nav class="nav-user-status">
+ *                   <ul class="nav">
+ *                       <li class="register nav-item action">
+ *                           <a class="nav-link" title="Register" href="javascript:__doPostBack('ctl00$qiiLoginStatus$lnkLogout','')">Register</a>
+ *                       </li>
+ *                       <li class="logout nav-item action">
+ *                           <a class="nav-link" title="Logout" href="javascript:__doPostBack('ctl00$qiiLoginStatus$lnkLogout','')">Logout</a>
+ *                       </li>
+ *                   </ul>
+ *             </nav>
+ *         </div>
  *      </div>
- *      <div class="col-5">
+ *      <div class="col-md-5">
  *           @{include:.mobile-menu-toggle}
  *      </div>
  *  </div>
@@ -28,8 +39,8 @@
         padding:.5rem 0;
         .user{ display: none;}
         .nav-user-status{
-            @extend .justify-content-start;
-            .acount{display:none;}
+           float:left;
+           .acount{display:none;}
         }
         .user + .nav-user-status {
             margin-top: 0rem;
@@ -37,5 +48,6 @@
     }
     @include bp(sm){
         display: none;
+        &.show-mobile{display:block;}
     }
 }

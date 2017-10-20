@@ -1590,7 +1590,7 @@ p {
   font-size: 18px;
   font-weight: 300;
   line-height: 1.4; }
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     .lead {
       font-size: 24px; } }
 
@@ -1750,7 +1750,7 @@ dd {
   display: table; }
 .dl-horizontal dd:after {
   clear: both; }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .dl-horizontal dt {
     float: left;
     width: 160px;
@@ -1878,13 +1878,13 @@ pre {
     display: table; }
   .container:after {
     clear: both; }
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     .container {
       width: 740px; } }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     .container {
       width: 960px; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1024px) {
     .container {
       width: 1160px; } }
 
@@ -2070,7 +2070,7 @@ pre {
 .col-xs-offset-12 {
   margin-left: 100%; }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left; }
 
@@ -2226,7 +2226,7 @@ pre {
 
   .col-sm-offset-12 {
     margin-left: 100%; } }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left; }
 
@@ -2382,7 +2382,7 @@ pre {
 
   .col-md-offset-12 {
     margin-left: 100%; } }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left; }
 
@@ -2700,7 +2700,7 @@ table th[class*="col-"] {
 .table-responsive {
   overflow-x: auto;
   min-height: 0.01%; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 575px) {
     .table-responsive {
       width: 100%;
       margin-bottom: 18px;
@@ -3200,7 +3200,7 @@ select[multiple].input-lg,
   margin-bottom: 10px;
   color: #737373; }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .form-inline .form-group {
     display: inline-block;
     margin-bottom: 0;
@@ -3257,18 +3257,18 @@ select[multiple].input-lg,
     display: table; }
   .form-horizontal .form-group:after {
     clear: both; }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .form-horizontal .control-label {
     text-align: right;
     margin-bottom: 0;
     padding-top: 7px; } }
 .form-horizontal .has-feedback .form-control-feedback {
   right: 10px; }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .form-horizontal .form-group-lg .control-label {
     padding-top: 11px;
     font-size: 19px; } }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .form-horizontal .form-group-sm .control-label {
     padding-top: 6px;
     font-size: 14px; } }
@@ -3685,7 +3685,7 @@ tbody.collapse.in {
   bottom: 100%;
   margin-bottom: 2px; }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .navbar-right .dropdown-menu {
     right: 0;
     left: auto; }
@@ -4133,7 +4133,7 @@ tbody.collapse.in {
   .nav-justified > .dropdown .dropdown-menu {
     top: auto;
     left: auto; }
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     .nav-justified > li, .nav-tabs.nav-justified > li {
       display: table-cell;
       width: 1%; }
@@ -4151,7 +4151,7 @@ tbody.collapse.in {
   .nav-tabs-justified > .active > a:focus,
   .nav-tabs.nav-justified > .active > a:focus {
     border: 1px solid #ddd; }
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
       border-bottom: 1px solid #ddd;
       border-radius: 4px 4px 0 0; }
@@ -4182,7 +4182,7 @@ tbody.collapse.in {
     display: table; }
   .navbar:after {
     clear: both; }
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     .navbar {
       border-radius: 4px; } }
 
@@ -4191,7 +4191,7 @@ tbody.collapse.in {
   display: table; }
 .navbar-header:after {
   clear: both; }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .navbar-header {
     float: left; } }
 
@@ -4209,7 +4209,7 @@ tbody.collapse.in {
     clear: both; }
   .navbar-collapse.in {
     overflow-y: auto; }
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     .navbar-collapse {
       width: auto;
       border-top: 0;
@@ -4228,7 +4228,7 @@ tbody.collapse.in {
 .navbar-fixed-top .navbar-collapse,
 .navbar-fixed-bottom .navbar-collapse {
   max-height: 340px; }
-  @media (max-device-width: 480px) and (orientation: landscape) {
+  @media (max-device-width: 320px) and (orientation: landscape) {
     .navbar-fixed-top .navbar-collapse,
     .navbar-fixed-bottom .navbar-collapse {
       max-height: 200px; } }
@@ -4239,7 +4239,7 @@ tbody.collapse.in {
 .container-fluid > .navbar-collapse {
   margin-right: -10px;
   margin-left: -10px; }
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     .container > .navbar-header,
     .container > .navbar-collapse,
     .container-fluid > .navbar-header,
@@ -4250,7 +4250,7 @@ tbody.collapse.in {
 .navbar-static-top {
   z-index: 1000;
   border-width: 0 0 1px; }
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     .navbar-static-top {
       border-radius: 0; } }
 
@@ -4260,7 +4260,7 @@ tbody.collapse.in {
   right: 0;
   left: 0;
   z-index: 1030; }
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     .navbar-fixed-top,
     .navbar-fixed-bottom {
       border-radius: 0; } }
@@ -4284,7 +4284,7 @@ tbody.collapse.in {
     text-decoration: none; }
   .navbar-brand > img {
     display: block; }
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
       margin-left: -10px; } }
 
@@ -4308,7 +4308,7 @@ tbody.collapse.in {
     border-radius: 1px; }
   .navbar-toggle .icon-bar + .icon-bar {
     margin-top: 4px; }
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     .navbar-toggle {
       display: none; } }
 
@@ -4318,7 +4318,7 @@ tbody.collapse.in {
     padding-top: 10px;
     padding-bottom: 10px;
     line-height: 24px; }
-  @media (max-width: 767px) {
+  @media (max-width: 575px) {
     .navbar-nav .open .dropdown-menu {
       position: static;
       float: none;
@@ -4334,7 +4334,7 @@ tbody.collapse.in {
         line-height: 24px; }
         .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus {
           background-image: none; } }
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     .navbar-nav {
       float: left;
       margin: 0; }
@@ -4354,7 +4354,7 @@ tbody.collapse.in {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   margin-top: 6px;
   margin-bottom: 6px; }
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     .navbar-form .form-group {
       display: inline-block;
       margin-bottom: 0;
@@ -4392,12 +4392,12 @@ tbody.collapse.in {
       margin-left: 0; }
     .navbar-form .has-feedback .form-control-feedback {
       top: 0; } }
-  @media (max-width: 767px) {
+  @media (max-width: 575px) {
     .navbar-form .form-group {
       margin-bottom: 5px; }
       .navbar-form .form-group:last-child {
         margin-bottom: 0; } }
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     .navbar-form {
       width: auto;
       border: 0;
@@ -4433,13 +4433,13 @@ tbody.collapse.in {
 .navbar-text {
   margin-top: 13px;
   margin-bottom: 13px; }
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     .navbar-text {
       float: left;
       margin-left: 10px;
       margin-right: 10px; } }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .navbar-left {
     float: left !important; }
 
@@ -4481,7 +4481,7 @@ tbody.collapse.in {
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     background-color: #e7e7e7;
     color: #555; }
-  @media (max-width: 767px) {
+  @media (max-width: 575px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
       color: #777; }
       .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -4537,7 +4537,7 @@ tbody.collapse.in {
   .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
     background-color: #090909;
     color: #fff; }
-  @media (max-width: 767px) {
+  @media (max-width: 575px) {
     .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
       border-color: #090909; }
     .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
@@ -4573,9 +4573,9 @@ tbody.collapse.in {
   .breadcrumb > li {
     display: inline-block; }
     .breadcrumb > li + li:before {
-      content: "/ ";
+      content: " ";
       padding: 0 5px;
-      color: #ccc; }
+      color: #0088aa; }
   .breadcrumb > .active {
     color: #6f6b6f; }
 
@@ -4807,7 +4807,7 @@ a.badge:hover, a.badge:focus {
     padding-right: 10px; }
   .jumbotron .container {
     max-width: 100%; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 576px) {
     .jumbotron {
       padding-top: 48px;
       padding-bottom: 48px; }
@@ -5660,7 +5660,7 @@ button.close {
   height: 50px;
   overflow: scroll; }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .modal-dialog {
     width: 600px;
     margin: 30px auto; }
@@ -5671,7 +5671,7 @@ button.close {
 
   .modal-sm {
     width: 300px; } }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .modal-lg {
     width: 900px; } }
 .tooltip {
@@ -6063,7 +6063,7 @@ button.close {
   .carousel-caption .btn, .carousel-caption input[type="submit"], .carousel-caption input[type="button"], .carousel-caption button, .carousel-caption .button {
     text-shadow: none; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-prev,
@@ -6153,7 +6153,7 @@ button.close {
 .visible-lg-inline-block {
   display: none !important; }
 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   .visible-xs {
     display: block !important; }
 
@@ -6166,19 +6166,19 @@ button.close {
   th.visible-xs,
   td.visible-xs {
     display: table-cell !important; } }
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   .visible-xs-block {
     display: block !important; } }
 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   .visible-xs-inline {
     display: inline !important; } }
 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   .visible-xs-inline-block {
     display: inline-block !important; } }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .visible-sm {
     display: block !important; }
 
@@ -6191,19 +6191,19 @@ button.close {
   th.visible-sm,
   td.visible-sm {
     display: table-cell !important; } }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .visible-sm-block {
     display: block !important; } }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .visible-sm-inline {
     display: inline !important; } }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .visible-sm-inline-block {
     display: inline-block !important; } }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .visible-md {
     display: block !important; }
 
@@ -6216,19 +6216,19 @@ button.close {
   th.visible-md,
   td.visible-md {
     display: table-cell !important; } }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .visible-md-block {
     display: block !important; } }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .visible-md-inline {
     display: inline !important; } }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .visible-md-inline-block {
     display: inline-block !important; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .visible-lg {
     display: block !important; }
 
@@ -6241,28 +6241,28 @@ button.close {
   th.visible-lg,
   td.visible-lg {
     display: table-cell !important; } }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .visible-lg-block {
     display: block !important; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .visible-lg-inline {
     display: inline !important; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .visible-lg-inline-block {
     display: inline-block !important; } }
 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   .hidden-xs {
     display: none !important; } }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .hidden-sm {
     display: none !important; } }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .hidden-md {
     display: none !important; } }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .hidden-lg {
     display: none !important; } }
 .visible-print {
@@ -6302,6 +6302,17 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+.breadcrumb, .pagination, .nav-user-status, .nav-utility, .nav-sub, .nav-social-button, .nav-footer, .breadcrumb ul, .pagination ul, .nav-user-status ul, .nav-utility ul, .nav-sub ul, .nav-social-button ul, .nav-footer ul, .nav, .nav ul, .navbar-nav, .navbar-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+.breadcrumb li, .pagination li, .nav-user-status li, .nav-utility li, .nav-sub li, .nav-social-button li, .nav-footer li, .breadcrumb ul li, .pagination ul li, .nav-user-status ul li, .nav-utility ul li, .nav-sub ul li, .nav-social-button ul li, .nav-footer ul li, .nav li, .nav ul li, .navbar-nav li, .navbar-nav ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+.breadcrumb > li > a:focus, .pagination > li > a:focus, .nav-user-status > li > a:focus, .nav-utility > li > a:focus, .nav-sub > li > a:focus, .nav-social-button > li > a:focus, .nav-footer > li > a:focus, .breadcrumb > li > a:hover, .pagination > li > a:hover, .nav-user-status > li > a:hover, .nav-utility > li > a:hover, .nav-sub > li > a:hover, .nav-social-button > li > a:hover, .nav-footer > li > a:hover, .nav > li > a:focus, .nav > li > a:hover, .navbar-nav > li > a:focus, .navbar-nav > li > a:hover {
+  background-color: transparent; }
+
 .dropdown .dropdown-menu {
   max-height: 0;
   display: block;
@@ -6320,6 +6331,37 @@ button.close {
 .dropdown-divider {
   border-color: #ffc425;
   margin: 0; }
+
+/**
+* Breadcrumbs 
+*
+* @structure Breadcrumb
+* @section Nav > Utility 
+* @markup
+*  <ol class="breadcrumb">
+*   <li class="breadcrumb-item"><a href="#">@{lipsum:2:words}</a></li>
+*   <li class="breadcrumb-item"><a href="#">@{lipsum:2:words}</a></li>
+*   <li class="active breadcrumb-item">@{lipsum:2:words}</li>
+*  </ol>
+*/
+.breadcrumb {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-weight: 700;
+  padding: .75rem .75rem 0 1rem; }
+
+.breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  margin-right: .5em;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+  width: 1.28571429em;
+  text-align: center;
+  content: "\f054";
+  color: #a1a0a4; }
 
 /*
 * @atom bootstrap kitchensink
@@ -6660,25 +6702,6 @@ button.close {
 *  </div>
 *
 **/
-body, .body {
-  background: #a4cded;
-  /* Old browsers */
-  background-attachment: fixed;
-  background-image: -moz-linear-gradient(top, #fafafa 1%, #a4cded 100%);
-  /* FF3.6+ */
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #fafafa), color-stop(100%, #a4cded));
-  /* Chrome,Safari4+ */
-  background-image: -webkit-linear-gradient(top, #fafafa 1%, #a4cded 100%);
-  /* Chrome10+,Safari5.1+ */
-  background-image: -o-linear-gradient(top, #fafafa 1%, #a4cded 100%);
-  /* Opera 11.10+ */
-  background-image: -ms-linear-gradient(top, #fafafa 1%, #a4cded 100%);
-  /* IE10+ */
-  background-image: linear-gradient(to bottom, #fafafa 1%, #a4cded 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=' $off-white', endColorstr='$soft-blue', GradientType=0);
-  /* IE6-9 */ }
-
 html,
 body {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
@@ -7358,45 +7381,6 @@ a.link[href^="tel:"]:before {
 a.link[href^="fax:"]:before {
   content: "\f1ac"; }
 
-.pagination, .breadcrumb, .nav-user-status, .nav-utility, .nav-social-button, .nav-footer, .pagination ul, .breadcrumb ul, .nav-user-status ul, .nav-utility ul, .nav-social-button ul, .nav-footer ul, .nav, .nav ul, .navbar-nav, .navbar-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-.pagination li, .breadcrumb li, .nav-user-status li, .nav-utility li, .nav-social-button li, .nav-footer li, .pagination ul li, .breadcrumb ul li, .nav-user-status ul li, .nav-utility ul li, .nav-social-button ul li, .nav-footer ul li, .nav li, .nav ul li, .navbar-nav li, .navbar-nav ul li {
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
-.pagination > li > a:focus, .breadcrumb > li > a:focus, .nav-user-status > li > a:focus, .nav-utility > li > a:focus, .nav-social-button > li > a:focus, .nav-footer > li > a:focus, .pagination > li > a:hover, .breadcrumb > li > a:hover, .nav-user-status > li > a:hover, .nav-utility > li > a:hover, .nav-social-button > li > a:hover, .nav-footer > li > a:hover, .nav > li > a:focus, .nav > li > a:hover, .navbar-nav > li > a:focus, .navbar-nav > li > a:hover {
-  background-color: transparent; }
-
-/**
-* Breadcrumbs 
-*
-* @structure Breadcrumb
-* @section Nav > Utility 
-* @markup
-*  <ol class="breadcrumb">
-*   <li class="breadcrumb-item"><a href="#">@{lipsum:2:words}</a></li>
-*   <li class="breadcrumb-item"><a href="#">@{lipsum:2:words}</a></li>
-*   <li class="active breadcrumb-item">@{lipsum:2:words}</li>
-*  </ol>
-*/
-.breadcrumb {
-  padding: .75rem .75rem 0 1rem; }
-
-.breadcrumb-item + .breadcrumb-item::before {
-  display: inline-block;
-  margin-right: .5em;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transform: translate(0, 0);
-  width: 1.28571429em;
-  text-align: center;
-  content: "\f054"; }
-
 /**
 * User Status Container contains system feed back on what systems you may or may not be logged into. 
 *
@@ -7449,24 +7433,37 @@ a.link[href^="fax:"]:before {
 
 .nav-user-status {
   text-align: right; }
+  .nav-user-status .nav, .nav-user-status .nav-item {
+    display: inline-block;
+    width: auto;
+    position: relative;
+    text-align: center; }
+  .nav-user-status .nav:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .nav-user-status .nav-item {
+    float: left; }
+  .nav-user-status .nav-link {
+    display: inline-block; }
   .user + .nav-user-status {
     margin-top: -.5rem; }
+  .nav-user-status .nav-item:after {
+    content: "|";
+    padding-right: .25rem;
+    color: #004176; }
+  .nav-user-status .nav-item:last-child:after {
+    content: '';
+    padding-right: 0; }
   .nav-user-status .nav-link {
     padding: 0.25rem .25rem; }
-    .nav-user-status .nav-link:after {
-      content: "|";
-      padding-left: .25rem;
-      color: #004176; }
-  .nav-user-status .nav-item:last-child .nav-link:after {
-    content: '';
-    padding-left: 0; }
+    .nav-user-status .nav-link:hover {
+      text-decoration: underline; }
   .nav-user-status .account {
     text-transform: uppercase; }
   .nav-user-status .action {
     font-weight: 700;
     text-transform: uppercase; }
-    .nav-user-status .action:hover {
-      text-decoration: underline; }
 
 /**
 * Utiltiy Nav at the top of the page. These are nav items are highly specialized and have been cherry picked out of site tree structure to give them global importance.
@@ -7727,6 +7724,154 @@ a.link[href^="fax:"]:before {
       .nav-primary .dropdown-menu.alt .dropdown-item.alt:hover {
         background-color: #2f2f2f; }
 
+/**
+ * Sub nav is the secondary nav that shows on the desktop design on the right side.  
+ *
+ * @structure Nav Sub (Sidebar Nav) 
+ * @section Nav > Page 
+ * @markup
+ *  <nav class="nav-sub">
+ *      <h2>@{lipsum:3:words}</h2>
+ *      <ul class="nav flex-column">
+ *          <li class="nav-item parent active current">
+ *            <a class="nav-link" ><i class="fa fa-holder toggle"></i>@{lipsum:3:words}</a>
+ *                  <ul class="nav flex-column">
+ *                  <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *                  <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *                  <li class="nav-item parent active current">
+ *                      <a class="nav-link" ><i class="fa fa-holder toggle"></i>@{lipsum:1:words}</a>
+ *                       <ul class="nav flex-column">
+ *                           <li class="nav-item "><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *                           <li class="nav-item current"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:3:words}</a></li>
+ *                           <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *                       </ul>
+ *                  </li>
+ *              </ul>
+ *          </li>
+ *          <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *          <li class="nav-item parent">
+ *              <a class="nav-link" ><i class="fa fa-holder toggle"></i>@{lipsum:1:words}</a>
+ *               <ul class="nav flex-column">
+ *                   <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *                   <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:3:words}</a></li>
+ *                   <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *               </ul>
+ *          </li>
+ *      </ul>
+ *  </nav>
+ * @script
+ *  $('.nav-sub .toggle').click(function(e){
+ *     $(this).closest('li').toggleClass('active');
+ *     e.preventDefault();
+ *     e.stopPropagation(); 
+ *  });
+ */
+.nav-sub {
+  padding-bottom: 1.5rem; }
+  .nav-sub h2 {
+    padding: 16px 1em 16px 1em; }
+    .nav-sub h2 img {
+      max-width: 100%; }
+  .nav-sub > .nav {
+    border-top: solid 1px #e87d1e;
+    border-bottom: solid 1px #e87d1e; }
+  .nav-sub ul {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    display: block;
+    transition: max-height 1s ease-out;
+    -webkit-transition: max-height 1s ease-out;
+    -moz-transition: max-height 1s ease-out;
+    background: #eceaea; }
+    .nav-sub ul > li a:hover {
+      background: #f6f5f5; }
+    .nav-sub ul ul {
+      font-size: 14px;
+      max-height: 0;
+      overflow: hidden;
+      background: #e1dfdf; }
+      .nav-sub ul ul > li a:hover {
+        background: #ebeaea; }
+      .nav-sub ul ul ul {
+        background: #c7c5c7; }
+        .nav-sub ul ul ul > li a:hover {
+          background: #d0d0d2; }
+    .nav-sub ul .active > ul {
+      max-height: 400px; }
+  .nav-sub li {
+    display: block;
+    cursor: pointer;
+    line-height: 1.5; }
+    .nav-sub li li {
+      line-height: 1.3; }
+    .nav-sub li a {
+      display: block;
+      color: #6f6b6f;
+      text-decoration: none; }
+      .nav-sub li a:hover {
+        text-decoration: none;
+        color: #2f2f2f; }
+    .nav-sub li.active {
+      color: #2f2f2f; }
+    .nav-sub li.current > a, .nav-sub li.current > a:hover {
+      color: #e87d1e; }
+  .nav-sub li > a {
+    padding: 3px 10px 3px 1.25rem; }
+  .nav-sub li li > a {
+    padding: 3px 10px 3px 2rem; }
+  .nav-sub li li li > a {
+    padding: 3px 10px 3px 2.75rem; }
+  .nav-sub li.parent > a {
+    padding-left: 0rem; }
+  .nav-sub li li.parent > a {
+    padding-left: .75rem; }
+  .nav-sub li li li.parent > a {
+    padding-left: 1.5rem; }
+  .nav-sub .toggle {
+    width: 1.25em;
+    text-align: center;
+    display: none;
+    transition: transform 0.25s ease-out;
+    -moz-transition: transform 0.25s ease-out;
+    -webkit-transition: transform 0.25s ease-out; }
+    .nav-sub .toggle:after {
+      content: "\f0da";
+      cursor: pointer; }
+  .nav-sub .parent > a > .toggle {
+    display: inline-block; }
+  .nav-sub .parent.active > a > .toggle {
+    transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg); }
+
+/**
+ * Toggle Button for the menu on mobile
+ *
+ * @atom Mobile Toggle
+ * @section Nav > Mobile
+ * @markup
+ *   <div class="mobile-menu-toggle"><span class="text">Menu</span> <i class="fa fa-bars"></i></div>
+ */
+.mobile-menu-toggle {
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: right;
+  display: block;
+  position: relative; }
+  .mobile-menu-toggle .text {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #0088aa;
+    display: inline-block;
+    vertical-align: top;
+    padding: .5rem .25rem; }
+  .mobile-menu-toggle i.fa {
+    color: #a1a0a4;
+    font-size: 2.125rem;
+    margin: .125rem; }
+
 .video-wrapper {
   margin-bottom: 1em;
   position: relative;
@@ -7798,6 +7943,163 @@ a.link[href^="fax:"]:before {
   border-radius: 2px; }
 
 /* Footer */
+/**
+ * Address blocks are well formated microformat to optimum usage in browsers.
+ * @structure address.vcard
+ * @section Content Blocks
+ *
+ * @markup
+ *  <address class="vcard">
+ *     <!-- http://microformats.org/wiki/hcard -->
+ *     <a class="photo" href="http://www.acc.org" target="_blank">
+ *         <img alt="" src="assets/images/acc-logo-footer.png">
+ *     </a>
+ *     <a class="fn org url" href="http://www.acc.org" target="_blank">American College of Cardiology</a>
+ *     <span class="adr">
+ *         <span class="street-address">2400 N St. NW</span>
+ *         <span class="locality">Washington</span>,
+ *          <span class="country-name"><abbr title="District of Colombia">DC</abbr></span> 
+ *          <span class="postal-code hidden"></span>
+ *     </span>
+ *     <!-- end .adr -->
+ *     <div class="contact">
+ *     <a tel="tel:1-800-257-4737" class="tel">(800) 257-4737</a>
+ *     <a href="mailto:cvquality@acc.org" class="email">cvquality@acc.org</a>
+ *     </div>
+ *  </address>
+*/
+address.vcard {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  color: #2f2f2f;
+  margin-bottom: 0; }
+  address.vcard a {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%; }
+  address.vcard abbr[title] {
+    text-decoration: none;
+    border: 0; }
+  address.vcard .adr {
+    display: block; }
+    address.vcard .adr span {
+      display: inline-block; }
+    address.vcard .adr span.street-address {
+      width: 100%; }
+  address.vcard .photo {
+    display: inline-block;
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin: 6px 12px 6px 0; }
+    @media only screen and (min-width: 768px) {
+      address.vcard .photo {
+        width: 72px;
+        height: 72px; } }
+    @media only screen and (min-width: 1024px) {
+      address.vcard .photo {
+        display: block;
+        text-align: center;
+        margin: 1rem auto .5rem;
+        float: none; } }
+  address.vcard .org {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
+    display: inline-block;
+    float: right;
+    width: calc(100% - 60px); }
+    @media only screen and (min-width: 768px) {
+      address.vcard .org {
+        width: calc(100% - 84px); } }
+    @media only screen and (min-width: 1024px) {
+      address.vcard .org {
+        display: none; } }
+  address.vcard .adr {
+    display: inline-block;
+    float: right;
+    width: calc(100% - 60px); }
+    @media only screen and (min-width: 768px) {
+      address.vcard .adr {
+        width: calc(100% - 84px); } }
+    @media only screen and (min-width: 1024px) {
+      address.vcard .adr {
+        font-family: 'Lato', Verdana, Helvetica, sans-serif;
+        font-weight: 700;
+        width: 100%;
+        float: none;
+        display: block;
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.3; } }
+  address.vcard .contact:before {
+    content: "";
+    display: table;
+    clear: both; }
+  address.vcard .email, address.vcard .tel {
+    color: #2f2f2f;
+    background-color: #fafafa;
+    border-color: #6f6b6f;
+    padding: 0.25rem 1rem;
+    font-size: 12px;
+    line-height: 1;
+    border-radius: 0.2rem;
+    border-width: 1px;
+    border-style: solid;
+    width: 48%;
+    text-align: center; }
+    address.vcard .email:focus, address.vcard .email.focus, address.vcard .tel:focus, address.vcard .tel.focus {
+      color: #2f2f2f;
+      background-color: #e1e1e1;
+      border-color: #2e2c2e; }
+    address.vcard .email:hover, address.vcard .tel:hover {
+      color: #2f2f2f;
+      background-color: #e1e1e1;
+      border-color: #504d50; }
+    address.vcard .email:active, address.vcard .email.active, .open > address.vcard .email.dropdown-toggle, address.vcard .tel:active, address.vcard .tel.active, .open > address.vcard .tel.dropdown-toggle {
+      color: #2f2f2f;
+      background-color: #e1e1e1;
+      border-color: #504d50; }
+      address.vcard .email:active:hover, address.vcard .email:active:focus, address.vcard .email:active.focus, address.vcard .email.active:hover, address.vcard .email.active:focus, address.vcard .email.active.focus, .open > address.vcard .email.dropdown-toggle:hover, .open > address.vcard .email.dropdown-toggle:focus, .open > address.vcard .email.dropdown-toggle.focus, address.vcard .tel:active:hover, address.vcard .tel:active:focus, address.vcard .tel:active.focus, address.vcard .tel.active:hover, address.vcard .tel.active:focus, address.vcard .tel.active.focus, .open > address.vcard .tel.dropdown-toggle:hover, .open > address.vcard .tel.dropdown-toggle:focus, .open > address.vcard .tel.dropdown-toggle.focus {
+        color: #2f2f2f;
+        background-color: #cfcfcf;
+        border-color: #2e2c2e; }
+    address.vcard .email:active, address.vcard .email.active, .open > address.vcard .email.dropdown-toggle, address.vcard .tel:active, address.vcard .tel.active, .open > address.vcard .tel.dropdown-toggle {
+      background-image: none; }
+    address.vcard .email.disabled:hover, address.vcard .email.disabled:focus, address.vcard .email.disabled.focus, address.vcard .email[disabled]:hover, address.vcard .email[disabled]:focus, address.vcard .email[disabled].focus, fieldset[disabled] address.vcard .email:hover, fieldset[disabled] address.vcard .email:focus, fieldset[disabled] address.vcard .email.focus, address.vcard .tel.disabled:hover, address.vcard .tel.disabled:focus, address.vcard .tel.disabled.focus, address.vcard .tel[disabled]:hover, address.vcard .tel[disabled]:focus, address.vcard .tel[disabled].focus, fieldset[disabled] address.vcard .tel:hover, fieldset[disabled] address.vcard .tel:focus, fieldset[disabled] address.vcard .tel.focus {
+      background-color: #fafafa;
+      border-color: #6f6b6f; }
+    address.vcard .email .badge, address.vcard .tel .badge {
+      color: #fafafa;
+      background-color: #2f2f2f; }
+    address.vcard .email + .email, address.vcard .email + .tel, address.vcard .tel + .email, address.vcard .tel + .tel {
+      margin-left: 2%; }
+    @media only screen and (min-width: 768px) {
+      address.vcard .email, address.vcard .tel {
+        border: 0 none transparent;
+        background: none transparent; } }
+    @media only screen and (min-width: 1024px) {
+      address.vcard .email, address.vcard .tel {
+        display: inline-block;
+        width: 100%;
+        line-height: 1.3;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 14px;
+        color: #2f2f2f;
+        text-decoration: none; }
+        address.vcard .email, address.vcard .email + .email, address.vcard .email + .tel, address.vcard .tel, address.vcard .tel + .email, address.vcard .tel + .tel {
+          margin: 0; }
+        address.vcard .email:hover, address.vcard .email:focus, address.vcard .email:active, address.vcard .tel:hover, address.vcard .tel:focus, address.vcard .tel:active {
+          background: none;
+          color: #2f2f2f;
+          text-decoration: underline; } }
+
 /**
 * Social engagement buttons.
 * 
@@ -7993,6 +8295,25 @@ a.link[href^="fax:"]:before {
  *  </div>
  *  </div>
  */
+body, .body {
+  background: #a4cded;
+  /* Old browsers */
+  background-attachment: fixed;
+  background-image: -moz-linear-gradient(top, #fafafa 1%, #a4cded 100%);
+  /* FF3.6+ */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #fafafa), color-stop(100%, #a4cded));
+  /* Chrome,Safari4+ */
+  background-image: -webkit-linear-gradient(top, #fafafa 1%, #a4cded 100%);
+  /* Chrome10+,Safari5.1+ */
+  background-image: -o-linear-gradient(top, #fafafa 1%, #a4cded 100%);
+  /* Opera 11.10+ */
+  background-image: -ms-linear-gradient(top, #fafafa 1%, #a4cded 100%);
+  /* IE10+ */
+  background-image: linear-gradient(to bottom, #fafafa 1%, #a4cded 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=' $off-white', endColorstr='$soft-blue', GradientType=0);
+  /* IE6-9 */ }
+
 .wrapper {
   margin: 0 auto;
   max-width: 1020px;
@@ -8024,12 +8345,12 @@ a.link[href^="fax:"]:before {
  *  <footer id="footer" role="contentinfo" class="row">
  *  	<div class="col-lg-2 col-md-5">
  *  	    @{include:address.vcard}
- *  	    <div class="d-lg-none"> @{include:.nav-social-button}</div>
+ *  	    <div class="hidden-lg"> @{include:.nav-social-button}</div>
  *  	</div>
  *  	<div class="col-lg-8 col-md-7">
  *  		@{include:.footer-sitemap}
  *  	</div>
- *  	<div class="col-lg-2 d-none d-lg-block">
+ *  	<div class="col-lg-2 hidden-xs visible-lg-block">
  *  	    @{include:.nav-social-button}
  *  	</div>
  *  </footer>
@@ -8126,6 +8447,67 @@ a.link[href^="fax:"]:before {
   bottom: 0;
   right: 0; }
 
+/**
+ * Container for the Menu Toggle for the Mobile Nav. ~Inline Style should be removed. Currently used so it will show on all screen dimensions~
+ *
+ * @structure Mobile Menu Toggle
+ * @section Nav > Mobile
+ * @markup
+ *  <div class="mobile-menu-toggle-container row no-gutter show-mobile">
+ *      <div class="col-md-7">
+ *         <div class="user-status-container">
+ *              <nav class="nav-user-status">
+ *                   <ul class="nav">
+ *                       <li class="register nav-item action">
+ *                           <a class="nav-link" title="Register" href="javascript:__doPostBack('ctl00$qiiLoginStatus$lnkLogout','')">Register</a>
+ *                       </li>
+ *                       <li class="logout nav-item action">
+ *                           <a class="nav-link" title="Logout" href="javascript:__doPostBack('ctl00$qiiLoginStatus$lnkLogout','')">Logout</a>
+ *                       </li>
+ *                   </ul>
+ *             </nav>
+ *         </div>
+ *      </div>
+ *      <div class="col-md-5">
+ *           @{include:.mobile-menu-toggle}
+ *      </div>
+ *  </div>
+ */
+.mobile-menu-toggle-container {
+  position: relative;
+  display: flex;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  height: 2.75rem;
+  background: #ffffff;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlY2VhZWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #ffffff 0%, #eceaea 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #eceaea));
+  background: -webkit-linear-gradient(top, #ffffff 0%, #eceaea 100%);
+  background: -o-linear-gradient(top, #ffffff 0%, #eceaea 100%);
+  background: -ms-linear-gradient(top, #ffffff 0%, #eceaea 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #eceaea 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr=' $soft-grey', GradientType=0);
+  box-shadow: 0px 3px 3px #999;
+  -webkit-box-shadow: 0px 3px 3px #999;
+  -moz-box-shadow: 0px 3px 3px #999; }
+  .mobile-menu-toggle-container .user-status-container {
+    height: 2.25rem;
+    padding: .5rem 0; }
+    .mobile-menu-toggle-container .user-status-container .user {
+      display: none; }
+    .mobile-menu-toggle-container .user-status-container .nav-user-status {
+      float: left; }
+      .mobile-menu-toggle-container .user-status-container .nav-user-status .acount {
+        display: none; }
+    .mobile-menu-toggle-container .user-status-container .user + .nav-user-status {
+      margin-top: 0rem; }
+  @media only screen and (min-width: 576px) {
+    .mobile-menu-toggle-container {
+      display: none; }
+      .mobile-menu-toggle-container.show-mobile {
+        display: block; } }
+
 .hidden {
   display: none !important;
   visibility: hidden !important; }
@@ -8138,5 +8520,9 @@ a.link[href^="fax:"]:before {
 .asterisk {
   font-size: 120%;
   color: #a00; }
+
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0; }
 
 /*# sourceMappingURL=index.css.map */

@@ -13,7 +13,9 @@
 .breadcrumb{
     // most of the style changes came from modifing the custom.scss varibles
     @extend %nav-basic;
+    @include font(700);
     padding: .75rem .75rem 0 1rem;
+
 }
 // adding in font awesome to change the character type to an icon.
 .breadcrumb-item + .breadcrumb-item::before{
@@ -28,5 +30,6 @@
     width: 1.28571429em;
     text-align: center;
     content: "\f054";
+    color:$warm-grey;
 }
 

@@ -8,15 +8,11 @@
 @import "base/fonts.kitchensink";
 @import "vendor/bootstrap.override/custom";
 @import "vendor/bootstrap-sass-3.3.7/sass/bootstrap";
+// starts to overide the basic nav decorations
+@import "base/nav-basic";
 @import "vendor/bootstrap.override/dropdown.override";
+@import "vendor/bootstrap.override/breadcrumbs.override";
 @import "vendor/bootstrap/kitchensink";
-
-
-body, .body {
-    @include lightblue-gradient;
-}
-
-
 
 @import "base/typography";
 @import "base/inputs";
@@ -29,28 +25,27 @@ body, .body {
 
 @import "component/card";
 @import "component/button";
-@import "component/nav-basic";
-//breadcrumb override uses nav-basic
-@import "vendor/bootstrap.override/breadcrumbs.override";
+
 @import "component/user-status-container";
 @import "component/nav-utility";
 @import "component/nav-primary";
-//@import "component/nav-sub";
-//@import "component/mobile-menu-toggle";
+@import "component/nav-sub";
+@import "component/mobile-menu-toggle";
 @import "component/video-player";
 @import "component/ads";
 @import "component/searchbar";
 
 /* Footer */
-//@import "component/address";
+@import "component/address";
 @import "component/nav-social-buttons";
 @import "component/nav-footer";
 
 @import "structure/page";
 @import "structure/footer";
 @import "structure/header";
-//@import "structure/mobile-menu-toggle-container";
+@import "structure/mobile-menu-toggle-container";
 
 @import "helpers/states";
+@import "helpers/trumps";
 
 //@import "oldshame";
