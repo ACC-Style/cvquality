@@ -23,21 +23,23 @@
 *        </li>
 *        <li class="nav-item dropdown">
 *          <a class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#" data-delay="1000" data-close-others="false">@{lipsum:1:words}</a>
-*          <div class="dropdown-menu">
-*              <a class="dropdown-item" href="#">@{lipsum:2:words}</a>
-*              <div class="dropdown-divider"></div>
-*              <a class="dropdown-item" href="#">@{lipsum:2:words}</a>
-*              <a class="dropdown-item" href="#">@{lipsum:3:words}</a>
-*              <a class="dropdown-item" href="#">@{lipsum:3:words}</a>
-*            </div>
+*          <nav class="dropdown-menu">
+*              <ul class="nav">
+*              <li class="nav-item"><a class="dropdown-item nav-link" href="#">@{lipsum:2:words}</a></li>
+*              <li class="nav-item"><a class="dropdown-item nav-link" href="#">@{lipsum:2:words}</a></li>
+*              <li class="nav-item"><a class="dropdown-item nav-link" href="#">@{lipsum:2:words}</a></li>
+*              </ul>
+*            </nav>
 *        </li>
-*        <li class="nav-item dropdown alt primary ">
+*        <li class="nav-item alt dropdown primary ">
 *          <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#" data-delay="1000" data-close-others="false">Login</a>
-*          <div class="dropdown-menu">
-*              <a class="dropdown-item alt" href="#">CV Quality <small>Log Out <i class="fa fa-sign-out"></i></small></a>
-*              <a class="dropdown-item" href="#">Accreditation <small>Log In <i class="fa fa-sign-in"></i></small></a>
-*              <a class="dropdown-item" href="#">NCDR <small>Log In <i class="fa fa-sign-in"></i></small></a>
-*           </div>
+*          <nav class="dropdown-menu alt">
+*             <ul>
+*                   <li class="nav-item"><a class="dropdown-item nav-link alt" href="#">CV Quality <small>Log Out <i class="fa fa-sign-out"></i></small></a></li>
+*                   <li class="nav-item"><a class="dropdown-item nav-link" href="#">Accreditation <small>Log In <i class="fa fa-sign-in"></i></small></a></li>
+*                   <li class="nav-item"><a class="dropdown-item nav-link" href="#">NCDR <small>Log In <i class="fa fa-sign-in"></i></small></a></li>
+*                </ul>
+*           </nav>
 *        </li>
 *      </ul>
 *  </nav>
@@ -45,17 +47,25 @@
 
 .nav-primary{
     @include font(700);
+    @include nav-mobile-basic;
     font-size: ms(2);
     background: $warm-grey;
     border-top: $light-orange 4px solid;
-    width:100%;
+    @include bp(lg){
+        @include nav-flex-row-basic;
+    }
     .nav{
-        width:100%;
     }
     .nav-item{
-        &:hover{ background-color: $warm-grey-dark;}
+        &:hover{
+        background-color: $warm-grey-dark;}
         +  .nav-item{
             border:$off-white dotted 1px;
+        }
+        // removal of bootstrap decorating the a
+        &.open>a,&.open>a:focus,&.open>a:hover{
+            background-color:transparent;
+            border: none transparent 0;
         }
         &.alt{
 
@@ -80,12 +90,12 @@
            
         }
     }
-    @include bp(md){
+    @include bp(lg){
         .nav-item + .nav-item{ border: none transparent 0;}
         .nav-link{ text-align: center;}
     }
     &.mobile{
-        @extend .flex-column;
+        // @extend .flex-column;
        
     }
     .dropdown-toggle::after{
@@ -100,6 +110,7 @@
         }
     .dropdown-item{
         @include font(700);
+         text-align: left;
         font-size:ms(1);
         padding:.5em 1em;
         color:$warm-grey;
@@ -111,24 +122,30 @@
     .dropdown-divider{
         border: 1px dotted $soft-blue;
         }
-    .dropdown.alt{
-        .dropdown-menu{
-            width:100%; right:0;background-color:mix($warm-grey-dark,$scrubteal);
-            
-            .dropdown-item{
-                color:$off-white;
-                &:hover{
-                    color:white;
-                    background-color:$dark-orange;
-                }
-                small{float:right; font-size:ms(-1); padding-top:(ms(1) - ms(-1))/2;padding-bottom:(ms(1) - ms(-1))/2;}
+
+    .dropdown-menu.alt{
+        width:100%; right:0;background-color:mix($warm-grey-dark,$scrubteal);
+        
+        .dropdown-item{
+            color:$off-white;
+            &:hover{
+                color:white;
+                background-color:$dark-orange;
             }
-            .dropdown-item.alt{
-                background-color: $warm-grey-dark;
-                
-                &:hover{
-                    background-color:$off-black;
-                }
+            small{
+                position:absolute;
+                 font-size:ms(-1);
+                 padding-top:(ms(1) - ms(-1))/2;
+                 padding-bottom:(ms(1) - ms(-1))/2;
+                 top:10px;
+                 right:1rem;
+            }
+        }
+        .dropdown-item.alt{
+            background-color: $warm-grey-dark;
+            
+            &:hover{
+                background-color:$off-black;
             }
         }
     }

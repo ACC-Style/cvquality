@@ -14,26 +14,28 @@
 *           [User Name]
 *         </span>
 *        </div>
-*       <ul class="nav-user-status nav">
-*       <li class="acred acount nav-item">
-*           <a href="" class="nav-link" target="_blank">ACRED</a>
-*       </li>
-*       <li class="ncdr acount nav-item">
-*           <a href="" class="nav-link" target="_blank">NCDR</a>
-*       </li>
-*       <li class="qii acount nav-item">
-*           <a href="" class="nav-link" target="_blank">QII</a>
-*       </li>
-*       <li class="acc acount nav-item">
-*           <a href="" class="nav-link" title="My ACC Profile"  target="_blank">My ACC</a>
-*       </li>
-*       <li class="register nav-item action">
-*           <a class="nav-link" title="Register" href="javascript:__doPostBack('ctl00$qiiLoginStatus$lnkLogout','')">Register</a>
-*       </li>
-*       <li class="logout nav-item action">
-*           <a class="nav-link" title="Logout" href="javascript:__doPostBack('ctl00$qiiLoginStatus$lnkLogout','')">Logout</a>
-*       </li>
-*       </ul>
+ *        <nav class="nav-user-status">
+*             <ul class="nav">
+*                 <li class="acred acount nav-item">
+*                     <a href="" class="nav-link" target="_blank">ACRED</a>
+*                 </li>
+*                 <li class="ncdr acount nav-item">
+*                     <a href="" class="nav-link" target="_blank">NCDR</a>
+*                 </li>
+*                 <li class="qii acount nav-item">
+*                     <a href="" class="nav-link" target="_blank">QII</a>
+*                 </li>
+*                 <li class="acc acount nav-item">
+*                     <a href="" class="nav-link" title="My ACC Profile"  target="_blank">My ACC</a>
+*                 </li>
+*                 <li class="register nav-item action">
+*                     <a class="nav-link" title="Register" href="javascript:__doPostBack('ctl00$qiiLoginStatus$lnkLogout','')">Register</a>
+*                 </li>
+*                 <li class="logout nav-item action">
+*                     <a class="nav-link" title="Logout" href="javascript:__doPostBack('ctl00$qiiLoginStatus$lnkLogout','')">Logout</a>
+*                 </li>
+*             </ul>
+ *       </nav>
 *   </div>
 */
 
@@ -53,8 +55,9 @@
 
 .nav-user-status{
     @extend %nav-basic;
+    
     text-align: right;
-    @extend .justify-content-end;
+   
     .user + &{margin-top:-.5rem;}
     .nav-link{
          padding: 0.25rem .25rem;

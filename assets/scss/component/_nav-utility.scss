@@ -21,7 +21,8 @@
 *  </nav>
 */
 .nav-utility{
-        @extend %nav-basic;
+    @extend %nav-basic;
+   .nav{@extend .nav-pills;} 
     // Phone Mode
     background-color:$warm-grey-light;
     @include font(700);
@@ -65,8 +66,8 @@
     &.mobile{
         font-weight: 400;
         background-color:$warm-grey-light;
-        @extend .flex-column;
-        @extend .nav-fill;
+        // @extend .flex-column;
+        // @extend .nav-fill;
         .nav-item{
             width:auto;          
         }

@@ -67,24 +67,24 @@ $font-weight-bold: 700;
 
 $line-height-base: $baseline-modifier;
 
-$h1-font-size: ms(4);
-$h2-font-size: ms(3);
-$h3-font-size: ms(2);
-$h4-font-size: ms(1);
-$h5-font-size: ms(1);
-$h6-font-size: ms(0);
+$hfont-size-1: ms(4);
+$hfont-size-2: ms(3);
+$hfont-size-3: ms(2);
+$hfont-size-4: ms(1);
+$hfont-size-5: ms(1);
+$hfont-size-6: ms(0);
 
-$font-size-base: (ms(1)/16px)*1rem;
-$font-size-lg:  (ms(2)/16px)*1rem;
-$font-size-sm:   (ms(0)/16px)*1rem;
+$font-size-base: ms(1);
+$font-size-large: ms(2);
+$font-size-small: ms(0);
 
 
 $headings-font-family: 'Muli', Verdana, Helvetica, sans-serif;
 
 // cheveron content "\f054"
-$breadcrumb-padding-y:          .25rem;
-$breadcrumb-padding-x:          .5rem;
-$breadcrumb-item-padding:       .5rem;
+$breadcrumb-padding-horiztonal: .25rem;
+$breadcrumb-padding-vertical:   .5rem;
+
 
 $breadcrumb-bg:                 #fff;
 $breadcrumb-divider-color:      $warm-grey;

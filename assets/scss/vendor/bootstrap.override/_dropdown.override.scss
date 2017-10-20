@@ -1,11 +1,23 @@
 // Hover Effect for Drop Down
-.dropdown:hover>.dropdown-menu {
-  display: block;
+.dropdown .dropdown-menu {
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    transition: max-height 1s ease-out;
+    -webkit-transition: max-height 1s ease-out;
+    -moz-transition: max-height 1s ease-out;
 }
-.dropdown-menu{
-	background-color: $off-white;
+
+.dropdown:hover > .dropdown-menu {
+    max-height: 500px;
 }
-.dropdown-divider{
-	border-color:  $light-orange;
-	margin:0;
+
+.dropdown-menu {
+    background-color: $off-white;
+    border:0px;
+}
+
+.dropdown-divider {
+    border-color: $light-orange;
+    margin: 0;
 }

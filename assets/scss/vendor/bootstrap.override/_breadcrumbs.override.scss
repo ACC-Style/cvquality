@@ -4,14 +4,15 @@
 * @structure Breadcrumb
 * @section Nav > Utility 
 * @markup
-*  <nav class="breadcrumb d-none d-md-block">
-*   <a class="breadcrumb-item" href="#">Home</a>
-*   <a class="breadcrumb-item" href="#">Library</a>
-*   <span class="breadcrumb-item active">Breadcrumb</span>
-*  </nav>
+*  <ol class="breadcrumb">
+*   <li class="breadcrumb-item"><a href="#">@{lipsum:2:words}</a></li>
+*   <li class="breadcrumb-item"><a href="#">@{lipsum:2:words}</a></li>
+*   <li class="active breadcrumb-item">@{lipsum:2:words}</li>
+*  </ol>
 */
 .breadcrumb{
     // most of the style changes came from modifing the custom.scss varibles
+    @extend %nav-basic;
     padding: .75rem .75rem 0 1rem;
 }
 // adding in font awesome to change the character type to an icon.
@@ -24,7 +25,8 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     transform: translate(0, 0);
-        width: 1.28571429em;
+    width: 1.28571429em;
     text-align: center;
+    content: "\f054";
 }
 

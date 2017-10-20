@@ -1,6 +1,7 @@
-// Unstyle ul, ol for nav use
 %nav-basic,.nav,.navbar-nav{
-&, ul{	list-style: none;
+// Unstyle ul, ol for nav use
+&, ul{	
+	list-style: none;
 	margin:0;
 	padding:0;}
 	li, ul li {
@@ -8,4 +9,41 @@
 		margin:0;
 		padding:0;
 	}
+	>li>a:focus, >li>a:hover{
+		background-color: transparent;
+	}
+}
+
+
+@mixin nav-mobile-basic(){
+	.nav,.nav-item,.nav-link{
+		display: block;
+		width:100%;
+		position:relative;
+		float:none;
+		clear:both;
+		text-align:left;
+	}
+	.nav{
+		
+	}
+	.nav-item{}
+	.nav-link{}
+
+}
+@mixin nav-flex-row-basic(){
+	>.nav{
+		display:flex;
+		flex-direction: row;
+		flex-wrap:nowrap;
+		align-items:stretch;
+		align-content:strech;
+
+	}
+	>.nav>.nav-item{
+		display: block;
+		flex:1 1 auto;
+	}
+	.nav-link{}
+
 }
