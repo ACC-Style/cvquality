@@ -6,7 +6,7 @@
  * @markup
  *  <nav class="nav-sub">
  *      <h2>@{lipsum:3:words}</h2>
- *      <ul class="nav flex-column">
+ *      <ul class="nav">
  *          <li class="nav-item parent active current">
  *            <a class="nav-link" ><i class="fa fa-holder toggle"></i>@{lipsum:3:words}</a>
  *                  <ul class="nav flex-column">
@@ -17,14 +17,21 @@
  *                       <ul class="nav flex-column">
  *                           <li class="nav-item "><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
  *                           <li class="nav-item current"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:3:words}</a></li>
- *                           <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *                           <li class="nav-item parent active current">
+ *                              <a class="nav-link" ><i class="fa fa-holder toggle"></i>@{lipsum:1:words}</a>
+ *                              <ul class="nav flex-column">
+ *                                  <li class="nav-item "><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *                                  <li class="nav-item current"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:3:words}</a></li>
+ *                                  <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *                              </ul>
+ *                           </li>
  *                       </ul>
  *                  </li>
  *              </ul>
  *          </li>
  *          <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
  *          <li class="nav-item parent">
- *              <a class="nav-link" ><i class="fa fa-holder toggle"></i>@{lipsum:1:words}</a>
+ *              <a class="nav-link" ><i class="fa fa-holder toggle"></i>@{lipsum:5:words}</a>
  *               <ul class="nav flex-column">
  *                   <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
  *                   <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:3:words}</a></li>
@@ -70,11 +77,16 @@
             font-size: ms(0);
             max-height: 0;
             overflow: hidden;
-            background: mix($soft-grey, $warm-grey-light);
+            background: mix($soft-grey, $warm-grey-light,70%);
             >li a:hover{ background:mix(white,$warm-grey-light);}
             ul {
-               background:mix($warm-grey,$soft-grey);
-               >li a:hover{background:mix(white,$warm-grey);}
+               background:mix($soft-grey,$warm-grey,70%);
+               >li a:hover{background:mix($off-white,$warm-grey);}
+                ul {
+                   background:mix($soft-grey,$warm-grey-dark,70%);
+                   >li a{ color:$off-black;}
+                   >li a:hover{background:mix($off-white,$warm-grey-dark);}
+                }
             }
         }
         .active>ul{max-height:400px;}
@@ -99,12 +111,11 @@
             color:$dark-orange;
         }        
     }
-    li>a{padding: 3px 10px 3px 1.25rem;}
-    li li>a{padding: 3px 10px 3px 2rem;}
-    li li li>a{padding: 3px 10px 3px 2.75rem;}
-    li.parent>a{padding-left:0rem;}
-    li li.parent>a{padding-left:.75rem;}
-    li li li.parent>a{padding-left:1.5rem;}
+    li>a{padding: 3px 10px 3px 1.5em;}
+    li li>a{padding: 3px 10px 3px 2em;}
+    li li li>a{padding: 3px 10px 3px 2.875em;}
+    li li li li>a{padding: 3px 10px 3px 4em;}
+
     .toggle{
         width: 1.25em;
         text-align: center;
@@ -118,10 +129,19 @@
         } 
         &:hover{}    
     }
-    .parent>a>.toggle{
-        display: inline-block;
+    .parent>.nav-link{
+        text-indent: -1.4em;
+        line-height: 1.2em;
     }
-    .parent.active>a>.toggle{
+    li.parent>.nav-link{padding-left:1.5rem;}
+    li li.parent>.nav-link{padding-left:2.5rem;}
+    li li li.parent>.nav-link{padding-left:3.5rem;}
+
+    .parent>.nav-link>.toggle{
+        display: inline-block;
+        text-indent: 0;
+    }
+    .parent.active>.nav-link>.toggle{
         transform: rotate(90deg);
         -moz-transform: rotate(90deg);
         -webkit-transform: rotate(90deg);

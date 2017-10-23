@@ -32,10 +32,10 @@
 
 }
 @mixin nav-inline-block-basic{
-.nav,.nav-item{display:inline-block; width:auto; position: relative;text-align:center;}
+.nav,.nav-item{display:inline-block; width:auto; position: relative;text-align:center;clear:none;}
 .nav:after{content:"";display:table;clear:both;}
 .nav-item{float:left;}
-.nav-link{display:inline-block}
+.nav-link{display:inline-block;clear:none;width:auto;}
 
 }
 @mixin nav-flex-row-basic(){

@@ -4107,13 +4107,13 @@ tbody.collapse.in {
       border-bottom-color: transparent;
       cursor: default; }
 
-.nav-pills > li, .nav-utility .nav > li {
+.nav-pills > li {
   float: left; }
-  .nav-pills > li > a, .nav-utility .nav > li > a {
+  .nav-pills > li > a {
     border-radius: 4px; }
-  .nav-pills > li + li, .nav-utility .nav > li + li {
+  .nav-pills > li + li {
     margin-left: 2px; }
-  .nav-pills > li.active > a, .nav-utility .nav > li.active > a, .nav-pills > li.active > a:hover, .nav-utility .nav > li.active > a:hover, .nav-pills > li.active > a:focus, .nav-utility .nav > li.active > a:focus {
+  .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
     color: #fff;
     background-color: #337ab7; }
 
@@ -4771,14 +4771,14 @@ a.label:hover, a.label:focus {
   .btn-xs .badge, .btn-group-xs > .btn .badge, .btn-group-xs > input[type="submit"] .badge, .btn-group-xs > input[type="button"] .badge, .btn-group-xs > button .badge, .btn-group-xs > .button .badge, .btn-group-xs > .btn .badge, .btn-group-xs > input[type="submit"] .badge, .btn-group-xs > input[type="button"] .badge, .btn-group-xs > button .badge, .btn-group-xs > .button .badge {
     top: 0;
     padding: 1px 5px; }
-  .list-group-item.active > .badge, .nav-pills > .active > a > .badge, .nav-utility .nav > .active > a > .badge {
+  .list-group-item.active > .badge, .nav-pills > .active > a > .badge {
     color: #337ab7;
     background-color: #fff; }
   .list-group-item > .badge {
     float: right; }
   .list-group-item > .badge + .badge {
     margin-right: 5px; }
-  .nav-pills > li > a > .badge, .nav-utility .nav > li > a > .badge {
+  .nav-pills > li > a > .badge {
     margin-left: 3px; }
 
 a.badge:hover, a.badge:focus {
@@ -7429,7 +7429,8 @@ a.link[href^="fax:"]:before {
     display: inline-block;
     width: auto;
     position: relative;
-    text-align: center; }
+    text-align: center;
+    clear: none; }
   .nav-user-status .nav:after {
     content: "";
     display: table;
@@ -7437,7 +7438,9 @@ a.link[href^="fax:"]:before {
   .nav-user-status .nav-item {
     float: left; }
   .nav-user-status .nav-link {
-    display: inline-block; }
+    display: inline-block;
+    clear: none;
+    width: auto; }
   .user + .nav-user-status {
     margin-top: -.5rem; }
   .nav-user-status .nav-item:after {
@@ -7466,7 +7469,7 @@ a.link[href^="fax:"]:before {
 *  .mobile - decorates the nav to look like mobile
 * @markup 
 *  <nav class="nav-utility">
-*      <ul class="nav flex-column flex-md-row justify-content-end">
+*      <ul class="nav">
 *        <li class="nav-item">
 *          <a class="nav-link active" href="#">@{lipsum:1:words}</a>
 *        </li>
@@ -7480,42 +7483,75 @@ a.link[href^="fax:"]:before {
 *  </nav>
 */
 .nav-utility {
+  float: right;
   background-color: #d6d4d4;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 16px; }
+  .nav-utility .nav, .nav-utility .nav-item, .nav-utility .nav-link {
+    display: block;
+    width: 100%;
+    position: relative;
+    float: none;
+    clear: both;
+    text-align: left; }
   .nav-utility .nav-link {
-    padding-right: 1em;
     color: #2f2f2f; }
   .nav-utility .nav-item {
-    text-align: center; }
+    text-align: center;
+    white-space: nowrap; }
   .nav-utility .nav-item + .nav-item {
-    border: #fafafa dotted 1px; }
-  @media only screen and (min-width: 768px) {
+    border-top: #fafafa dotted 1px; }
+  @media only screen and (min-width: 1024px) {
     .nav-utility {
       font-weight: 400;
       background-color: #fff; }
+      .nav-utility .nav, .nav-utility .nav-item {
+        display: inline-block;
+        width: auto;
+        position: relative;
+        text-align: center;
+        clear: none; }
+      .nav-utility .nav:after {
+        content: "";
+        display: table;
+        clear: both; }
+      .nav-utility .nav-item {
+        float: left; }
       .nav-utility .nav-link {
-        color: #6f6b6f; }
-      .nav-utility .nav-link:after {
-        padding-left: 1em;
+        display: inline-block;
+        clear: none;
+        width: auto; }
+      .nav-utility .nav-item + .nav-item {
+        border: 0px none transparent; }
+      .nav-utility .nav-item:after {
+        display: inline-block;
+        padding-right: 1em;
         content: '|';
         color: #ffc425; }
-      .nav-utility .nav-item:first-child .nav-link {
-        padding-left: 0; }
-      .nav-utility .nav-item:last-child .nav-link {
-        padding-right: 0; }
-      .nav-utility .nav-item:last-child .nav-link:after {
+      .nav-utility .nav-item:last-child:after {
         content: '';
         padding-left: 0; }
-      .nav-utility .nav-item + .nav-item {
-        border: transparent none 0; } }
+      .nav-utility .nav-link {
+        color: #6f6b6f;
+        padding-left: 0; }
+        .nav-utility .nav-link:hover {
+          text-decoration: underline; }
+      .nav-utility .nav-item:last-child .nav-link {
+        padding-right: 0em; } }
   .nav-utility.mobile {
     font-weight: 400;
     background-color: #d6d4d4; }
+    .nav-utility.mobile .nav, .nav-utility.mobile .nav-item, .nav-utility.mobile .nav-link {
+      display: block;
+      width: 100%;
+      position: relative;
+      float: none;
+      clear: both;
+      text-align: left; }
     .nav-utility.mobile .nav-item {
       width: auto; }
-    .nav-utility.mobile .nav-link:after {
+    .nav-utility.mobile .nav-item:after {
       padding-left: 0;
       content: ''; }
 
@@ -7532,7 +7568,7 @@ a.link[href^="fax:"]:before {
 *  .alt.secondary used to convert the standout button to the alternate flow
 * @markup 
 *  <nav class="nav-primary">
-*      <ul class="nav nav-fill flex-column flex-md-row">
+*      <ul class="nav">
 *        <li class="nav-item">
 *          <a class="nav-link active" href="#">@{lipsum:1:words}</a>
 *        </li>
@@ -7731,7 +7767,7 @@ a.link[href^="fax:"]:before {
  * @markup
  *  <nav class="nav-sub">
  *      <h2>@{lipsum:3:words}</h2>
- *      <ul class="nav flex-column">
+ *      <ul class="nav">
  *          <li class="nav-item parent active current">
  *            <a class="nav-link" ><i class="fa fa-holder toggle"></i>@{lipsum:3:words}</a>
  *                  <ul class="nav flex-column">
@@ -7742,14 +7778,21 @@ a.link[href^="fax:"]:before {
  *                       <ul class="nav flex-column">
  *                           <li class="nav-item "><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
  *                           <li class="nav-item current"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:3:words}</a></li>
- *                           <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *                           <li class="nav-item parent active current">
+ *                              <a class="nav-link" ><i class="fa fa-holder toggle"></i>@{lipsum:1:words}</a>
+ *                              <ul class="nav flex-column">
+ *                                  <li class="nav-item "><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *                                  <li class="nav-item current"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:3:words}</a></li>
+ *                                  <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *                              </ul>
+ *                           </li>
  *                       </ul>
  *                  </li>
  *              </ul>
  *          </li>
  *          <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
  *          <li class="nav-item parent">
- *              <a class="nav-link" ><i class="fa fa-holder toggle"></i>@{lipsum:1:words}</a>
+ *              <a class="nav-link" ><i class="fa fa-holder toggle"></i>@{lipsum:5:words}</a>
  *               <ul class="nav flex-column">
  *                   <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
  *                   <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:3:words}</a></li>
@@ -7789,13 +7832,19 @@ a.link[href^="fax:"]:before {
       font-size: 14px;
       max-height: 0;
       overflow: hidden;
-      background: #e1dfdf; }
+      background: #e5e3e3; }
       .nav-sub ul ul > li a:hover {
         background: #ebeaea; }
       .nav-sub ul ul ul {
-        background: #c7c5c7; }
+        background: #d6d4d5; }
         .nav-sub ul ul ul > li a:hover {
-          background: #d0d0d2; }
+          background: #cecdcf; }
+        .nav-sub ul ul ul ul {
+          background: #c7c4c5; }
+          .nav-sub ul ul ul ul > li a {
+            color: #2f2f2f; }
+          .nav-sub ul ul ul ul > li a:hover {
+            background: #b5b3b5; }
     .nav-sub ul .active > ul {
       max-height: 400px; }
   .nav-sub li {
@@ -7816,17 +7865,13 @@ a.link[href^="fax:"]:before {
     .nav-sub li.current > a, .nav-sub li.current > a:hover {
       color: #e87d1e; }
   .nav-sub li > a {
-    padding: 3px 10px 3px 1.25rem; }
+    padding: 3px 10px 3px 1.5em; }
   .nav-sub li li > a {
-    padding: 3px 10px 3px 2rem; }
+    padding: 3px 10px 3px 2em; }
   .nav-sub li li li > a {
-    padding: 3px 10px 3px 2.75rem; }
-  .nav-sub li.parent > a {
-    padding-left: 0rem; }
-  .nav-sub li li.parent > a {
-    padding-left: .75rem; }
-  .nav-sub li li li.parent > a {
-    padding-left: 1.5rem; }
+    padding: 3px 10px 3px 2.875em; }
+  .nav-sub li li li li > a {
+    padding: 3px 10px 3px 4em; }
   .nav-sub .toggle {
     width: 1.25em;
     text-align: center;
@@ -7837,9 +7882,19 @@ a.link[href^="fax:"]:before {
     .nav-sub .toggle:after {
       content: "\f0da";
       cursor: pointer; }
-  .nav-sub .parent > a > .toggle {
-    display: inline-block; }
-  .nav-sub .parent.active > a > .toggle {
+  .nav-sub .parent > .nav-link {
+    text-indent: -1.4em;
+    line-height: 1.2em; }
+  .nav-sub li.parent > .nav-link {
+    padding-left: 1.5rem; }
+  .nav-sub li li.parent > .nav-link {
+    padding-left: 2.5rem; }
+  .nav-sub li li li.parent > .nav-link {
+    padding-left: 3.5rem; }
+  .nav-sub .parent > .nav-link > .toggle {
+    display: inline-block;
+    text-indent: 0; }
+  .nav-sub .parent.active > .nav-link > .toggle {
     transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -webkit-transform: rotate(90deg); }
@@ -8456,7 +8511,7 @@ body, .body {
  * @structure Mobile Menu Toggle
  * @section Nav > Mobile
  * @markup
- *  <div class="mobile-menu-toggle-container row no-gutter show-mobile">
+ *  <div class="mobile-menu-toggle-container row show-mobile">
  *      <div class="col-md-7">
  *         <div class="user-status-container">
  *              <nav class="nav-user-status">

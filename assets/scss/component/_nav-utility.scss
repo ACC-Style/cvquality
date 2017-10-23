@@ -7,7 +7,7 @@
 *  .mobile - decorates the nav to look like mobile
 * @markup 
 *  <nav class="nav-utility">
-*      <ul class="nav flex-column flex-md-row justify-content-end">
+*      <ul class="nav">
 *        <li class="nav-item">
 *          <a class="nav-link active" href="#">@{lipsum:1:words}</a>
 *        </li>
@@ -22,58 +22,63 @@
 */
 .nav-utility{
     @extend %nav-basic;
-   .nav{@extend .nav-pills;} 
+    @include nav-mobile-basic;
+    float:right;
+
+   .nav{} 
     // Phone Mode
     background-color:$warm-grey-light;
     @include font(700);
     font-size: ms(1);
     .nav-link{
-        padding-right:1em;
         color: $off-black
     }
     .nav-item{
         text-align: center;
+        white-space: nowrap;
     
     }
     .nav-item + .nav-item{
-        border:$off-white dotted 1px;
+        border-top:$off-white dotted 1px;
     }
    
     // Tablet Up Mode
-    @include bp(md){
+    @include bp(lg){
+        @include nav-inline-block-basic;
         font-weight: 400;
         background-color:#fff;
-        .nav-link{
-            color:$warm-grey-dark;
-            }
-     // pipes between nav items
-        .nav-link:after{
-            padding-left: 1em;
+         .nav-item + .nav-item{border:0px none transparent;}
+         // pipes between nav items
+        .nav-item:after{
+            display:inline-block;
+            padding-right: 1em;
             content: '|';
             color: $light-orange;
             }
-        .nav-item:first-child .nav-link{ padding-left:0;}
-        .nav-item:last-child .nav-link{ padding-right:0;}
-        .nav-item:last-child .nav-link:after{
+        .nav-item:last-child:after{
                 content: '';
                 padding-left:0;
             }
-        .nav-item + .nav-item{
-            border:transparent none 0;
+        .nav-link{
+            color:$warm-grey-dark;
+            padding-left:0;
+            &:hover{
+                text-decoration:underline;
+            }
         }
+        .nav-item:last-child{.nav-link{padding-right:0em;}}
     }
     // Phone Decrative Override
     &.mobile{
+        @include nav-mobile-basic();
         font-weight: 400;
         background-color:$warm-grey-light;
-        // @extend .flex-column;
-        // @extend .nav-fill;
         .nav-item{
             width:auto;          
         }
         .nav-item + .nav-item{}
         .nav-link{}
-        .nav-link:after{ padding-left:0; content: '';}
+        .nav-item:after{ padding-left:0; content: '';}
     }
 }
 
