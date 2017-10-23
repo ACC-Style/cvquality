@@ -7925,14 +7925,18 @@ a.link[href^="fax:"]:before {
  * @molecule Search Bar 
  * @section Search 
  * @markup
- *  <div class="searchbar"><div class="input-group">
- *	  <span class="input-group-addon"><i class="fa fa-search"></i></span>
- *	  <input type="text" class="form-control" aria-label="Search" placeholder="Search...">
- *	  <span class="input-group-btn"><a class="input-group-addon btn btn-primary">Search</a></span>
- *	</div></div>
+ *  <div class="searchbar">
+ *  	<div class="input-group input-group-sm">
+ *			<span class="input-group-addon"><i class="fa fa-search"></i></span>
+ *			<input type="text" class="form-control" aria-label="Search" placeholder="Search...">
+ *			<span class="input-group-btn">
+ *				<a class="btn btn-primary">Search</a>
+ *			</span>
+ *		</div>
+ *	</div>
  *
  */
-.searchbar .input-group-addon, .searchbar input, .searchbar input-group-btn {
+.searchbar .input-group-addon, .searchbar input, .searchbar .input-group-btn {
   border-color: #0088aa; }
 .searchbar .input-group-addon.btn.btn-primary, .searchbar input.input-group-addon.btn-primary[type="submit"], .searchbar input.input-group-addon.btn-primary[type="button"], .searchbar button.input-group-addon.btn-primary, .searchbar .input-group-addon.btn-primary.button {
   color: white; }
