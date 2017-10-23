@@ -16,7 +16,7 @@
 *          <a class="nav-link active" href="#">@{lipsum:1:words}</a>
 *        </li>
 *        <li class="nav-item">
-*          <a class="nav-link" href="#">@{lipsum:1:words}</a>
+*          <a class="nav-link" href="#">@{lipsum:3:words}</a>
 *        </li>
 *        <li class="nav-item">
 *          <a class="nav-link" href="#">@{lipsum:1:words}</a>
@@ -25,7 +25,7 @@
 *          <a class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#" data-delay="1000" data-close-others="false">@{lipsum:1:words}</a>
 *          <nav class="dropdown-menu">
 *              <ul class="nav">
-*              <li class="nav-item"><a class="dropdown-item nav-link" href="#">@{lipsum:2:words}</a></li>
+*              <li class="nav-item"><a class="dropdown-item nav-link" href="#">@{lipsum:5:words}</a></li>
 *              <li class="nav-item"><a class="dropdown-item nav-link" href="#">@{lipsum:2:words}</a></li>
 *              <li class="nav-item"><a class="dropdown-item nav-link" href="#">@{lipsum:2:words}</a></li>
 *              </ul>
@@ -104,13 +104,13 @@
     .dropdown-menu{
         border-radius: 0px;
         background-color: $soft-grey;
-        
         padding: 0;
         margin:0;
+        width:max-content;
         }
     .dropdown-item{
         @include font(700);
-         text-align: left;
+        text-align: left;
         font-size:ms(1);
         padding:.5em 1em;
         color:$warm-grey;
@@ -124,13 +124,18 @@
         }
 
     .dropdown-menu.alt{
-        width:100%; right:0;background-color:mix($warm-grey-dark,$scrubteal);
+        min-width: 100%;
+        left:auto;
+        right:0;
+        background-color:mix($warm-grey-dark,$scrubteal);
         
         .dropdown-item{
             color:$off-white;
+            padding-right:8em;
             &:hover{
                 color:white;
                 background-color:$dark-orange;
+                text-decoration: none;
             }
             small{
                 position:absolute;
@@ -140,12 +145,12 @@
                  top:10px;
                  right:1rem;
             }
-        }
-        .dropdown-item.alt{
-            background-color: $warm-grey-dark;
-            
-            &:hover{
-                background-color:$off-black;
+            &.alt{
+                background-color: $warm-grey-dark;
+                
+                &:hover{
+                    background-color:$off-black;
+                }
             }
         }
     }

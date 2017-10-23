@@ -49,8 +49,11 @@
 	}
 	>.nav>.nav-item{
 		display: block;
+		width:unset;
 		flex:1 1 auto;
 	}
-	.nav-link{}
+	.nav-link{
+		width:unset;
+	}
 
 }
