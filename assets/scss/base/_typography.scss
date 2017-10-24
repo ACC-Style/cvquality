@@ -45,7 +45,7 @@
 
     h3 {
         @extend %header-link;
-        @include font-display("regular");
+        @include font-display("light");
         color: $dark-orange;
     }
 

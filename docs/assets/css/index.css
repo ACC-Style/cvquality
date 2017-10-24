@@ -97,7 +97,7 @@
  *  @include monospace(300);
  */
 @import "https://use.fontawesome.com/972bb54a90.css";
-.icon-before:before, .accordion .card-header h5:before, a.link:before {
+.icon-before:before, .accordion .panel-title a:before, a.link:before {
   display: inline-block;
   margin-right: .5em;
   font: normal normal normal 14px/1 FontAwesome;
@@ -238,17 +238,18 @@ span {
  * @atom Lato, Verdana, Helvetica, sans-serif
  * @section Fonts & Branding
  * @markup 
- * 	<div class="container-fluid"><div class="alphabet-display row font-normal">
- *	<div class="ms12 col-md-4 col-sm-6 col-lg-3 font--dropcase_2x">La</div>
- *	<div class="col-md-8 col-sm-6 col-lg-9 font--example">
- * 	<h3>Primary Navigation & Body Copy</h3>
- *	<div class="font--lowercase ms4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
- *	<div class="font--uppercase ms4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
- *	<div class="font--numbers ms4">0 1 2 3 4 5 6 7 8 9</div>
- *	<div class="font--lowercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
- *	<div class="font--uppercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
- *	<div class="font--numbers ms2">0 1 2 3 4 5 6 7 8 9</div>
- *	</div> 
+ * 	<div class="alphabet-display row font-normal">
+ *		<div class="ms12 col-md-4 col-sm-6 col-lg-3 font--dropcase_2x">La</div>
+ *    	<div class="col-md-8 col-sm-6 col-lg-9 font--example">
+ *  		<h3>Primary Navigation & Body Copy</h3>
+ *   	  	<div class="font--lowercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+ *    	 	<div class="font--uppercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+ *    	 	<div class="font--numbers ms2">0 1 2 3 4 5 6 7 8 9</div>
+ *     		<div class="font--lowercase ms1">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+ *     		<div class="font--uppercase ms1">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+ *     		<div class="font--numbers ms1">0 1 2 3 4 5 6 7 8 9</div>
+ *  	</div>
+ *	</div>
  */
 .font-display {
   font-family: 'Muli', Verdana, Helvetica, sans-serif;
@@ -258,17 +259,18 @@ span {
  * @atom Muli, Verdana, Helvetica, sans-serif;
  * @section Fonts & Branding
  * @markup 
- * 	<div class="container-fluid"><div class="alphabet-display row font-display">
- *	<div class="ms12 col-md-4 col-sm-6 col-lg-3 font--dropcase_2x">Mu</div>
- *	<div class="col-md-8 col-sm-6 col-lg-9 font--example">
- * 	<h3>Headers & Secondary Navs</h3>
- *	<div class="font--lowercase ms4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
- *	<div class="font--uppercase ms4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
- *	<div class="font--numbers ms4">0 1 2 3 4 5 6 7 8 9</div>
- *	<div class="font--lowercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
- *	<div class="font--uppercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
- *	<div class="font--numbers ms2">0 1 2 3 4 5 6 7 8 9</div>
- *	</div> 
+ *  <div class="alphabet-display row font-display">
+ *	  <div class="ms12 col-md-4 col-sm-6 col-lg-3 font--dropcase_2x">Mu</div>
+ *	  <div class="col-md-8 col-sm-6 col-lg-9 font--example">
+ *   	<h3>Headers & Secondary Navs</h3>
+ *  	  <div class="font--lowercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+ *  	  <div class="font--uppercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+ *  	  <div class="font--numbers ms2">0 1 2 3 4 5 6 7 8 9</div>
+ *  	  <div class="font--lowercase ms1">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+ *  	  <div class="font--uppercase ms1">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+ *  	  <div class="font--numbers ms1">0 1 2 3 4 5 6 7 8 9</div>
+ *	  </div>
+ *	</div>
  */
 .font-normal {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
@@ -283,8 +285,8 @@ span {
 .alphabet-display .font--uppercase {
   text-transform: uppercase; }
 .alphabet-display .ms12 {
-  font-size: 16.3571428571em;
-  line-height: 1.0087336245em;
+  font-size: 12.3571428571em;
+  line-height: 1.0924855491em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
@@ -5382,21 +5384,22 @@ button.list-group-item-danger {
   border: 0;
   margin-bottom: 0; }
 
-.panel-group {
+.panel-group, .accordion {
   margin-bottom: 24px; }
-  .panel-group .panel {
+  .panel-group .panel, .accordion .panel {
     margin-bottom: 0;
     border-radius: 4px; }
-    .panel-group .panel + .panel {
+    .panel-group .panel + .panel, .accordion .panel + .panel {
       margin-top: 5px; }
-  .panel-group .panel-heading {
+  .panel-group .panel-heading, .accordion .panel-heading {
     border-bottom: 0; }
-    .panel-group .panel-heading + .panel-collapse > .panel-body,
-    .panel-group .panel-heading + .panel-collapse > .list-group {
+    .panel-group .panel-heading + .panel-collapse > .panel-body, .accordion .panel-heading + .panel-collapse > .panel-body,
+    .panel-group .panel-heading + .panel-collapse > .list-group,
+    .accordion .panel-heading + .panel-collapse > .list-group {
       border-top: 1px solid #ddd; }
-  .panel-group .panel-footer {
+  .panel-group .panel-footer, .accordion .panel-footer {
     border-top: 0; }
-    .panel-group .panel-footer + .panel-collapse .panel-body {
+    .panel-group .panel-footer + .panel-collapse .panel-body, .accordion .panel-footer + .panel-collapse .panel-body {
       border-bottom: 1px solid #ddd; }
 
 .panel-default {
@@ -6339,6 +6342,7 @@ button.close {
 .breadcrumb {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-weight: 700;
+  font-size: 12px;
   padding: .75rem .75rem 0 1rem; }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -6734,7 +6738,7 @@ h2 {
 
 h3 {
   font-family: 'Muli', Verdana, Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: 200;
   color: #e87d1e; }
 
 ul {
@@ -6858,39 +6862,46 @@ input {
 *
 * @structure Accordion
 * @markup
-*   <div class="accordion" role="tablist">
-*     <div class="card">
-*       <div class="card-header" role="tab" href="#collapseOne" id="headingOne" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
-*         <h5 class="mb-0">
-*             Collapsible Group Item #1
-*         </h5>
-*       </div> 
-*       <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-*         <div class="card-body"><p>
-*           Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-*         </p></div>
-*       </div>
-*     </div>
+*  <div class="panel-group accordion">
+*   <div class="panel" id="accordion" role="tablist" aria-multiselectable="true">
+*   	<div class="panel-heading" role="tab" id="headingOne">
+*   	  <h4 class="panel-title">
+*   	    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
+*   	      Collapsible Group Item #1
+*   	    </a>
+*   	  </h4>
+*   	</div>
+*   	<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+*   	  <div class="panel-body">
+*   	    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+*   	  </div>
+*   	</div>
 *   </div>
+*  </div>
 *
 */
-.accordion .card-header {
+.accordion .panel-heading {
   background-color: #eceaea;
   border: #d6d4d4 1px solid;
-  border-bottom: #05aee5 2px solid; }
-  .accordion .card-header:hover {
+  border-bottom: #05aee5 2px solid;
+  padding: 0; }
+  .accordion .panel-heading:hover {
     background-color: #a4cded;
     border: #05aee5 1px solid;
-    border-bottom: #0088aa 2px solid;
+    border-bottom: #0088aa 2px solid; }
+  .accordion .panel-heading .panel-title:hover, .accordion .panel-heading .panel-title a:hover, .accordion .panel-heading .panel-title a:focus, .accordion .panel-heading .panel-title a:active {
+    color: #2f2f2f;
     text-decoration: none; }
-    .accordion .card-header:hover h5 {
-      color: #2f2f2f; }
-.accordion .card-header h5:before {
+.accordion .panel-title a {
+  padding: 10px 15px;
+  display: block;
+  width: 100%; }
+.accordion .panel-title a:before {
   content: "\f13a";
   transition: transform 0.25s ease-out;
   -moz-transition: transform 0.25s ease-out;
   -webkit-transition: transform 0.25s ease-out; }
-.accordion .card-header.collapsed h5:before {
+.accordion .panel-title a.collapsed:before {
   transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg); }
@@ -7483,7 +7494,6 @@ a.link[href^="fax:"]:before {
 *  </nav>
 */
 .nav-utility {
-  float: right;
   background-color: #d6d4d4;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-weight: 700;
@@ -7502,8 +7512,9 @@ a.link[href^="fax:"]:before {
     white-space: nowrap; }
   .nav-utility .nav-item + .nav-item {
     border-top: #fafafa dotted 1px; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 768px) {
     .nav-utility {
+      float: right;
       font-weight: 400;
       background-color: #fff; }
       .nav-utility .nav, .nav-utility .nav-item {
@@ -7531,7 +7542,8 @@ a.link[href^="fax:"]:before {
         color: #ffc425; }
       .nav-utility .nav-item:last-child:after {
         content: '';
-        padding-left: 0; }
+        padding-left: 0;
+        display: none; }
       .nav-utility .nav-link {
         color: #6f6b6f;
         padding-left: 0; }
@@ -7604,7 +7616,7 @@ a.link[href^="fax:"]:before {
 .nav-primary {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 19px;
+  font-size: 16px;
   background: #a1a0a4;
   border-top: #ffc425 4px solid; }
   .nav-primary .nav, .nav-primary .nav-item, .nav-primary .nav-link {
@@ -7614,19 +7626,6 @@ a.link[href^="fax:"]:before {
     float: none;
     clear: both;
     text-align: left; }
-  @media only screen and (min-width: 1024px) {
-    .nav-primary > .nav {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      align-items: stretch;
-      align-content: strech; }
-    .nav-primary > .nav > .nav-item {
-      display: block;
-      width: unset;
-      flex: 1 1 auto; }
-    .nav-primary .nav-link {
-      width: unset; } }
   .nav-primary .nav-item:hover {
     background-color: #6f6b6f; }
   .nav-primary .nav-item + .nav-item {
@@ -7710,11 +7709,26 @@ a.link[href^="fax:"]:before {
     color: #fafafa; }
     .nav-primary .nav-link:hover {
       color: #fff; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 768px) {
+    .nav-primary > .nav {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: stretch;
+      align-content: strech; }
+    .nav-primary > .nav > .nav-item {
+      display: block;
+      width: unset;
+      flex: 1 1 auto; }
+    .nav-primary .nav-link {
+      width: unset; }
     .nav-primary .nav-item + .nav-item {
       border: none transparent 0; }
     .nav-primary .nav-link {
       text-align: center; } }
+  @media only screen and (min-width: 1024px) {
+    .nav-primary {
+      font-size: 19px; } }
   .nav-primary .dropdown-toggle::after {
     border: none 0 transparent; }
   .nav-primary .dropdown-menu {

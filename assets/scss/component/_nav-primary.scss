@@ -48,12 +48,9 @@
 .nav-primary{
     @include font(700);
     @include nav-mobile-basic;
-    font-size: ms(2);
+    font-size: ms(1);
     background: $warm-grey;
     border-top: $light-orange 4px solid;
-    @include bp(lg){
-        @include nav-flex-row-basic;
-    }
     .nav{
     }
     .nav-item{
@@ -90,9 +87,13 @@
            
         }
     }
-    @include bp(lg){
+    @include bp(md){
+         @include nav-flex-row-basic;
         .nav-item + .nav-item{ border: none transparent 0;}
         .nav-link{ text-align: center;}
+    }
+    @include bp(lg){
+        font-size: ms(2);
     }
     &.mobile{
         // @extend .flex-column;

@@ -23,8 +23,7 @@
 .nav-utility{
     @extend %nav-basic;
     @include nav-mobile-basic;
-    float:right;
-
+    
    .nav{} 
     // Phone Mode
     background-color:$warm-grey-light;
@@ -43,8 +42,10 @@
     }
    
     // Tablet Up Mode
-    @include bp(lg){
+    @include bp(md){
         @include nav-inline-block-basic;
+        float:right;
+
         font-weight: 400;
         background-color:#fff;
          .nav-item + .nav-item{border:0px none transparent;}
@@ -58,6 +59,7 @@
         .nav-item:last-child:after{
                 content: '';
                 padding-left:0;
+                display: none;
             }
         .nav-link{
             color:$warm-grey-dark;
