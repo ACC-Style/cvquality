@@ -285,8 +285,8 @@ span {
 .alphabet-display .font--uppercase {
   text-transform: uppercase; }
 .alphabet-display .ms12 {
-  font-size: 12.3571428571em;
-  line-height: 1.0924855491em;
+  font-size: 14.5714285714em;
+  line-height: 1.0294117647em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
@@ -297,49 +297,49 @@ span {
     line-height: 1em; } }
 
 .alphabet-display .ms6 {
-  font-size: 5.3571428571em;
-  line-height: 1.12em;
+  font-size: 3.7857142857em;
+  line-height: 1.1886792453em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
   .alphabet-display .ms6 {
-    line-height: 1.008em; } }
+    line-height: 1.0698113208em; } }
 @media only screen and (max-width: 1024px) and (max-height: 320px) {
   .alphabet-display .ms6 {
-    line-height: 1em; } }
+    line-height: 1.0103773585em; } }
 
 .alphabet-display .ms4 {
-  font-size: 3.0714285714em;
-  line-height: 1.4651162791em;
+  font-size: 2.4285714286em;
+  line-height: 1.2352941176em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
   .alphabet-display .ms4 {
-    line-height: 1.3186046512em; } }
+    line-height: 1.1117647059em; } }
 @media only screen and (max-width: 1024px) and (max-height: 320px) {
   .alphabet-display .ms4 {
-    line-height: 1.2453488372em; } }
+    line-height: 1.05em; } }
 
 .alphabet-display .ms2 {
-  font-size: 1.7142857143em;
-  line-height: 1.75em;
+  font-size: 1.5714285714em;
+  line-height: 1.9090909091em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
   .alphabet-display .ms2 {
-    line-height: 1.575em; } }
+    line-height: 1.7181818182em; } }
 @media only screen and (max-width: 1024px) and (max-height: 320px) {
   .alphabet-display .ms2 {
-    line-height: 1.4875em; } }
+    line-height: 1.6227272727em; } }
 
 .alphabet-display .ms1 {
-  font-size: 1.3571428571em;
-  line-height: 1.1052631579em;
+  font-size: 1.2857142857em;
+  line-height: 1.1666666667em;
   margin-top: 0em;
   margin-bottom: 0em; }
 @media only screen and (max-width: 1024px) and (max-height: 576px) {
   .alphabet-display .ms1 {
-    line-height: 1em; } }
+    line-height: 1.05em; } }
 @media only screen and (max-width: 1024px) and (max-height: 320px) {
   .alphabet-display .ms1 {
     line-height: 1em; } }
@@ -591,11 +591,8 @@ th {
   .navbar {
     display: none; }
 
-  .btn > .caret, input[type="submit"] > .caret, input[type="button"] > .caret, button > .caret, .button > .caret,
+  .btn > .caret, .button > .caret,
   .dropup > .btn > .caret,
-  .dropup > input[type="submit"] > .caret,
-  .dropup > input[type="button"] > .caret,
-  .dropup > button > .caret,
   .dropup > .button > .caret {
     border-top-color: #000 !important; }
 
@@ -1430,7 +1427,7 @@ html {
 
 body {
   font-family: "Lato", Verdana, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   color: #333333;
   background-color: #fff; }
@@ -1444,10 +1441,10 @@ textarea {
   line-height: inherit; }
 
 a {
-  color: #337ab7;
+  color: #0088aa;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #23527c;
+    color: #004b5e;
     text-decoration: underline; }
   a:focus {
     outline: 5px auto -webkit-focus-ring-color;
@@ -1465,14 +1462,14 @@ img {
   height: auto; }
 
 .img-rounded {
-  border-radius: 6px; }
+  border-radius: 9px; }
 
 .img-thumbnail {
   padding: 4px;
   line-height: 1.5;
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 6px;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -1484,8 +1481,8 @@ img {
   border-radius: 50%; }
 
 hr {
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-top: 27px;
+  margin-bottom: 27px;
   border: 0;
   border-top: 1px solid #eeeeee; }
 
@@ -1537,8 +1534,8 @@ h1, h2, h3, h4, h5, h6,
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  margin-top: 24px;
-  margin-bottom: 12px; }
+  margin-top: 27px;
+  margin-bottom: 13.5px; }
   h1 small,
   h1 .small, .h1 small,
   .h1 .small,
@@ -1553,8 +1550,8 @@ h3, .h3 {
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  margin-top: 12px;
-  margin-bottom: 12px; }
+  margin-top: 13.5px;
+  margin-bottom: 13.5px; }
   h4 small,
   h4 .small, .h4 small,
   .h4 .small,
@@ -1567,38 +1564,38 @@ h6, .h6 {
     font-size: 75%; }
 
 h1, .h1 {
-  font-size: 41px; }
-
-h2, .h2 {
   font-size: 34px; }
 
+h2, .h2 {
+  font-size: 27px; }
+
 h3, .h3 {
-  font-size: 28px; }
+  font-size: 22px; }
 
 h4, .h4 {
-  font-size: 20px; }
+  font-size: 18px; }
 
 h5, .h5 {
-  font-size: 16px; }
+  font-size: 18px; }
 
 h6, .h6 {
   font-size: 14px; }
 
 p {
-  margin: 0 0 12px; }
+  margin: 0 0 13.5px; }
 
 .lead {
-  margin-bottom: 24px;
-  font-size: 18px;
+  margin-bottom: 27px;
+  font-size: 20px;
   font-weight: 300;
   line-height: 1.4; }
   @media (min-width: 576px) {
     .lead {
-      font-size: 24px; } }
+      font-size: 27px; } }
 
 small,
 .small {
-  font-size: 87%; }
+  font-size: 77%; }
 
 mark,
 .mark {
@@ -1633,11 +1630,11 @@ mark,
   color: #777777; }
 
 .text-primary {
-  color: #337ab7; }
+  color: #0088aa; }
 
 a.text-primary:hover,
 a.text-primary:focus {
-  color: #286090; }
+  color: #005f77; }
 
 .text-success {
   color: #3c763d; }
@@ -1671,11 +1668,11 @@ a.text-danger:focus {
   color: #fff; }
 
 .bg-primary {
-  background-color: #337ab7; }
+  background-color: #0088aa; }
 
 a.bg-primary:hover,
 a.bg-primary:focus {
-  background-color: #286090; }
+  background-color: #005f77; }
 
 .bg-success {
   background-color: #dff0d8; }
@@ -1706,14 +1703,14 @@ a.bg-danger:focus {
   background-color: #e4b9b9; }
 
 .page-header {
-  padding-bottom: 11px;
-  margin: 48px 0 24px;
+  padding-bottom: 12.5px;
+  margin: 54px 0 27px;
   border-bottom: 1px solid #eeeeee; }
 
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 12px; }
+  margin-bottom: 13.5px; }
   ul ul,
   ul ol,
   ol ul,
@@ -1735,7 +1732,7 @@ ol {
 
 dl {
   margin-top: 0;
-  margin-bottom: 24px; }
+  margin-bottom: 27px; }
 
 dt,
 dd {
@@ -1773,9 +1770,9 @@ abbr[data-original-title] {
   font-size: 90%; }
 
 blockquote {
-  padding: 12px 24px;
-  margin: 0 0 24px;
-  font-size: 20px;
+  padding: 13.5px 27px;
+  margin: 0 0 27px;
+  font-size: 22.5px;
   border-left: 5px solid #eeeeee; }
   blockquote p:last-child,
   blockquote ul:last-child,
@@ -1816,7 +1813,7 @@ blockquote.pull-right {
     content: '\00A0 \2014'; }
 
 address {
-  margin-bottom: 24px;
+  margin-bottom: 27px;
   font-style: normal;
   line-height: 1.5; }
 
@@ -1831,14 +1828,14 @@ code {
   font-size: 90%;
   color: #c7254e;
   background-color: #f9f2f4;
-  border-radius: 4px; }
+  border-radius: 6px; }
 
 kbd {
   padding: 2px 4px;
   font-size: 90%;
   color: #fff;
   background-color: #333;
-  border-radius: 3px;
+  border-radius: 2px;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25); }
   kbd kbd {
     padding: 0;
@@ -1848,16 +1845,16 @@ kbd {
 
 pre {
   display: block;
-  padding: 11.5px;
-  margin: 0 0 12px;
-  font-size: 15px;
+  padding: 13px;
+  margin: 0 0 13.5px;
+  font-size: 17px;
   line-height: 1.5;
   word-break: break-all;
   word-wrap: break-word;
   color: #333333;
   background-color: #f5f5f5;
   border: 1px solid #ccc;
-  border-radius: 4px; }
+  border-radius: 6px; }
   pre code {
     padding: 0;
     font-size: inherit;
@@ -2555,7 +2552,7 @@ th {
 .table {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 24px; }
+  margin-bottom: 27px; }
   .table > thead > tr > th,
   .table > thead > tr > td,
   .table > tbody > tr > th,
@@ -2705,7 +2702,7 @@ table th[class*="col-"] {
   @media screen and (max-width: 575px) {
     .table-responsive {
       width: 100%;
-      margin-bottom: 18px;
+      margin-bottom: 20.25px;
       overflow-y: hidden;
       -ms-overflow-style: -ms-autohiding-scrollbar;
       border: 1px solid #ddd; }
@@ -2750,8 +2747,8 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 24px;
-  font-size: 24px;
+  margin-bottom: 27px;
+  font-size: 27px;
   line-height: inherit;
   color: #333333;
   border: 0;
@@ -2793,23 +2790,23 @@ input[type="checkbox"]:focus {
 
 output {
   display: block;
-  padding-top: 7px;
-  font-size: 16px;
+  padding-top: 4.5px;
+  font-size: 18px;
   line-height: 1.5;
   color: #555555; }
 
 .form-control {
   display: block;
   width: 100%;
-  height: 38px;
-  padding: 6px 12px;
-  font-size: 16px;
+  height: 36px;
+  padding: 3.5px 14px;
+  font-size: 18px;
   line-height: 1.5;
   color: #555555;
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
@@ -2847,60 +2844,44 @@ input[type="search"] {
   input[type="time"].form-control,
   input[type="datetime-local"].form-control,
   input[type="month"].form-control {
-    line-height: 38px; }
+    line-height: 36px; }
   input[type="date"].input-sm, .input-group-sm > input[type="date"].form-control,
   .input-group-sm > input[type="date"].input-group-addon,
   .input-group-sm > .input-group-btn > input[type="date"].btn,
-  .input-group-sm > .input-group-btn > input[type="date"][type="submit"],
-  .input-group-sm > .input-group-btn > input[type="date"][type="button"],
   .input-group-sm > .input-group-btn > input[type="date"].button, .input-group-sm input[type="date"],
   input[type="time"].input-sm,
   .input-group-sm > input[type="time"].form-control,
   .input-group-sm > input[type="time"].input-group-addon,
   .input-group-sm > .input-group-btn > input[type="time"].btn,
-  .input-group-sm > .input-group-btn > input[type="time"][type="submit"],
-  .input-group-sm > .input-group-btn > input[type="time"][type="button"],
   .input-group-sm > .input-group-btn > input[type="time"].button,
   .input-group-sm input[type="time"],
   input[type="datetime-local"].input-sm,
   .input-group-sm > input[type="datetime-local"].form-control,
   .input-group-sm > input[type="datetime-local"].input-group-addon,
   .input-group-sm > .input-group-btn > input[type="datetime-local"].btn,
-  .input-group-sm > .input-group-btn > input[type="datetime-local"][type="submit"],
-  .input-group-sm > .input-group-btn > input[type="datetime-local"][type="button"],
   .input-group-sm > .input-group-btn > input[type="datetime-local"].button,
   .input-group-sm input[type="datetime-local"],
   input[type="month"].input-sm,
   .input-group-sm > input[type="month"].form-control,
   .input-group-sm > input[type="month"].input-group-addon,
   .input-group-sm > .input-group-btn > input[type="month"].btn,
-  .input-group-sm > .input-group-btn > input[type="month"][type="submit"],
-  .input-group-sm > .input-group-btn > input[type="month"][type="button"],
   .input-group-sm > .input-group-btn > input[type="month"].button,
   .input-group-sm input[type="month"] {
-    line-height: 33px; }
+    line-height: 26.5px; }
   input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control,
   .input-group-lg > input[type="date"].input-group-addon,
   .input-group-lg > .input-group-btn > input[type="date"].btn,
-  .input-group-lg > .input-group-btn > input[type="date"][type="submit"],
-  .input-group-lg > .input-group-btn > input[type="date"][type="button"],
   .input-group-lg > .input-group-btn > input[type="date"].button, .input-group-lg input[type="date"], input[type="time"].input-lg, .input-group-lg > input[type="time"].form-control,
   .input-group-lg > input[type="time"].input-group-addon,
   .input-group-lg > .input-group-btn > input[type="time"].btn,
-  .input-group-lg > .input-group-btn > input[type="time"][type="submit"],
-  .input-group-lg > .input-group-btn > input[type="time"][type="button"],
   .input-group-lg > .input-group-btn > input[type="time"].button, .input-group-lg input[type="time"], input[type="datetime-local"].input-lg, .input-group-lg > input[type="datetime-local"].form-control,
   .input-group-lg > input[type="datetime-local"].input-group-addon,
   .input-group-lg > .input-group-btn > input[type="datetime-local"].btn,
-  .input-group-lg > .input-group-btn > input[type="datetime-local"][type="submit"],
-  .input-group-lg > .input-group-btn > input[type="datetime-local"][type="button"],
   .input-group-lg > .input-group-btn > input[type="datetime-local"].button, .input-group-lg input[type="datetime-local"], input[type="month"].input-lg, .input-group-lg > input[type="month"].form-control,
   .input-group-lg > input[type="month"].input-group-addon,
   .input-group-lg > .input-group-btn > input[type="month"].btn,
-  .input-group-lg > .input-group-btn > input[type="month"][type="submit"],
-  .input-group-lg > .input-group-btn > input[type="month"][type="button"],
   .input-group-lg > .input-group-btn > input[type="month"].button, .input-group-lg input[type="month"] {
-    line-height: 48px; } }
+    line-height: 42.5px; } }
 .form-group {
   margin-bottom: 15px; }
 
@@ -2912,7 +2893,7 @@ input[type="search"] {
   margin-bottom: 10px; }
   .radio label,
   .checkbox label {
-    min-height: 24px;
+    min-height: 27px;
     padding-left: 20px;
     margin-bottom: 0;
     font-weight: normal;
@@ -2962,22 +2943,16 @@ fieldset[disabled] .checkbox label {
   cursor: not-allowed; }
 
 .form-control-static {
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 4.5px;
+  padding-bottom: 4.5px;
   margin-bottom: 0;
-  min-height: 40px; }
+  min-height: 45px; }
   .form-control-static.input-lg, .input-group-lg > .form-control-static.form-control,
   .input-group-lg > .form-control-static.input-group-addon,
   .input-group-lg > .input-group-btn > .form-control-static.btn,
-  .input-group-lg > .input-group-btn > input.form-control-static[type="submit"],
-  .input-group-lg > .input-group-btn > input.form-control-static[type="button"],
-  .input-group-lg > .input-group-btn > button.form-control-static,
   .input-group-lg > .input-group-btn > .form-control-static.button, .form-control-static.input-sm, .input-group-sm > .form-control-static.form-control,
   .input-group-sm > .form-control-static.input-group-addon,
   .input-group-sm > .input-group-btn > .form-control-static.btn,
-  .input-group-sm > .input-group-btn > input.form-control-static[type="submit"],
-  .input-group-sm > .input-group-btn > input.form-control-static[type="button"],
-  .input-group-sm > .input-group-btn > button.form-control-static,
   .input-group-sm > .input-group-btn > .form-control-static.button {
     padding-left: 0;
     padding-right: 0; }
@@ -2985,22 +2960,19 @@ fieldset[disabled] .checkbox label {
 .input-sm, .input-group-sm > .form-control,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn,
-.input-group-sm > .input-group-btn > input[type="submit"],
-.input-group-sm > .input-group-btn > input[type="button"],
-.input-group-sm > .input-group-btn > button,
 .input-group-sm > .input-group-btn > .button {
-  height: 33px;
-  padding: 5px 10px;
+  height: 26.5px;
+  padding: 1.75px 10.5px;
   font-size: 14px;
   line-height: 1.5;
-  border-radius: 3px; }
+  border-radius: 2px; }
 
 select.input-sm, .input-group-sm > select.form-control,
 .input-group-sm > select.input-group-addon,
 .input-group-sm > .input-group-btn > select.btn,
 .input-group-sm > .input-group-btn > select.button {
-  height: 33px;
-  line-height: 33px; }
+  height: 26.5px;
+  line-height: 26.5px; }
 
 textarea.input-sm, .input-group-sm > textarea.form-control,
 .input-group-sm > textarea.input-group-addon,
@@ -3014,43 +2986,40 @@ select[multiple].input-sm,
   height: auto; }
 
 .form-group-sm .form-control {
-  height: 33px;
-  padding: 5px 10px;
+  height: 26.5px;
+  padding: 1.75px 10.5px;
   font-size: 14px;
   line-height: 1.5;
-  border-radius: 3px; }
+  border-radius: 2px; }
 .form-group-sm select.form-control {
-  height: 33px;
-  line-height: 33px; }
+  height: 26.5px;
+  line-height: 26.5px; }
 .form-group-sm textarea.form-control,
 .form-group-sm select[multiple].form-control {
   height: auto; }
 .form-group-sm .form-control-static {
-  height: 33px;
-  min-height: 38px;
-  padding: 6px 10px;
+  height: 26.5px;
+  min-height: 41px;
+  padding: 2.75px 10.5px;
   font-size: 14px;
   line-height: 1.5; }
 
 .input-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn,
-.input-group-lg > .input-group-btn > input[type="submit"],
-.input-group-lg > .input-group-btn > input[type="button"],
-.input-group-lg > .input-group-btn > button,
 .input-group-lg > .input-group-btn > .button {
-  height: 48px;
-  padding: 10px 16px;
-  font-size: 19px;
+  height: 42.5px;
+  padding: 5.25px 21px;
+  font-size: 22px;
   line-height: 1.3333333;
-  border-radius: 6px; }
+  border-radius: 9px; }
 
 select.input-lg, .input-group-lg > select.form-control,
 .input-group-lg > select.input-group-addon,
 .input-group-lg > .input-group-btn > select.btn,
 .input-group-lg > .input-group-btn > select.button {
-  height: 48px;
-  line-height: 48px; }
+  height: 42.5px;
+  line-height: 42.5px; }
 
 textarea.input-lg, .input-group-lg > textarea.form-control,
 .input-group-lg > textarea.input-group-addon,
@@ -3064,28 +3033,28 @@ select[multiple].input-lg,
   height: auto; }
 
 .form-group-lg .form-control {
-  height: 48px;
-  padding: 10px 16px;
-  font-size: 19px;
+  height: 42.5px;
+  padding: 5.25px 21px;
+  font-size: 22px;
   line-height: 1.3333333;
-  border-radius: 6px; }
+  border-radius: 9px; }
 .form-group-lg select.form-control {
-  height: 48px;
-  line-height: 48px; }
+  height: 42.5px;
+  line-height: 42.5px; }
 .form-group-lg textarea.form-control,
 .form-group-lg select[multiple].form-control {
   height: auto; }
 .form-group-lg .form-control-static {
-  height: 48px;
-  min-height: 43px;
-  padding: 11px 16px;
-  font-size: 19px;
+  height: 42.5px;
+  min-height: 49px;
+  padding: 6.25px 21px;
+  font-size: 22px;
   line-height: 1.3333333; }
 
 .has-feedback {
   position: relative; }
   .has-feedback .form-control {
-    padding-right: 47.5px; }
+    padding-right: 45px; }
 
 .form-control-feedback {
   position: absolute;
@@ -3093,37 +3062,31 @@ select[multiple].input-lg,
   right: 0;
   z-index: 2;
   display: block;
-  width: 38px;
-  height: 38px;
-  line-height: 38px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
   text-align: center;
   pointer-events: none; }
 
 .input-lg + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback,
 .input-group-lg > .input-group-addon + .form-control-feedback,
 .input-group-lg > .input-group-btn > .btn + .form-control-feedback,
-.input-group-lg > .input-group-btn > input[type="submit"] + .form-control-feedback,
-.input-group-lg > .input-group-btn > input[type="button"] + .form-control-feedback,
-.input-group-lg > .input-group-btn > button + .form-control-feedback,
 .input-group-lg > .input-group-btn > .button + .form-control-feedback,
 .input-group-lg + .form-control-feedback,
 .form-group-lg .form-control + .form-control-feedback {
-  width: 48px;
-  height: 48px;
-  line-height: 48px; }
+  width: 42.5px;
+  height: 42.5px;
+  line-height: 42.5px; }
 
 .input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback,
 .input-group-sm > .input-group-addon + .form-control-feedback,
 .input-group-sm > .input-group-btn > .btn + .form-control-feedback,
-.input-group-sm > .input-group-btn > input[type="submit"] + .form-control-feedback,
-.input-group-sm > .input-group-btn > input[type="button"] + .form-control-feedback,
-.input-group-sm > .input-group-btn > button + .form-control-feedback,
 .input-group-sm > .input-group-btn > .button + .form-control-feedback,
 .input-group-sm + .form-control-feedback,
 .form-group-sm .form-control + .form-control-feedback {
-  width: 33px;
-  height: 33px;
-  line-height: 33px; }
+  width: 26.5px;
+  height: 26.5px;
+  line-height: 26.5px; }
 
 .has-success .help-block,
 .has-success .control-label,
@@ -3192,7 +3155,7 @@ select[multiple].input-lg,
   color: #a94442; }
 
 .has-feedback label ~ .form-control-feedback {
-  top: 29px; }
+  top: 32px; }
 .has-feedback label.sr-only ~ .form-control-feedback {
   top: 0; }
 
@@ -3247,10 +3210,10 @@ select[multiple].input-lg,
 .form-horizontal .checkbox-inline {
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 7px; }
+  padding-top: 4.5px; }
 .form-horizontal .radio,
 .form-horizontal .checkbox {
-  min-height: 31px; }
+  min-height: 31.5px; }
 .form-horizontal .form-group {
   margin-left: -10px;
   margin-right: -10px; }
@@ -3263,19 +3226,19 @@ select[multiple].input-lg,
   .form-horizontal .control-label {
     text-align: right;
     margin-bottom: 0;
-    padding-top: 7px; } }
+    padding-top: 4.5px; } }
 .form-horizontal .has-feedback .form-control-feedback {
   right: 10px; }
 @media (min-width: 576px) {
   .form-horizontal .form-group-lg .control-label {
-    padding-top: 11px;
-    font-size: 19px; } }
+    padding-top: 6.25px;
+    font-size: 22px; } }
 @media (min-width: 576px) {
   .form-horizontal .form-group-sm .control-label {
-    padding-top: 6px;
+    padding-top: 2.75px;
     font-size: 14px; } }
 
-.btn, input[type="submit"], input[type="button"], button, .button {
+.btn, .button {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -3286,26 +3249,26 @@ select[multiple].input-lg,
   background-image: none;
   border: 1px solid transparent;
   white-space: nowrap;
-  padding: 6px 12px;
-  font-size: 16px;
+  padding: 3.5px 14px;
+  font-size: 18px;
   line-height: 1.5;
-  border-radius: 4px;
+  border-radius: 6px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
-  .btn:focus, input[type="submit"]:focus, input[type="button"]:focus, button:focus, .button:focus, .btn.focus, input.focus[type="submit"], input.focus[type="button"], button.focus, .focus.button, .btn:active:focus, input[type="submit"]:active:focus, input[type="button"]:active:focus, button:active:focus, .button:active:focus, .btn:active.focus, input[type="submit"]:active.focus, input[type="button"]:active.focus, button:active.focus, .button:active.focus, .btn.active:focus, input.active[type="submit"]:focus, input.active[type="button"]:focus, button.active:focus, .active.button:focus, .btn.active.focus, input.active.focus[type="submit"], input.active.focus[type="button"], button.active.focus, .active.focus.button {
+  .btn:focus, .button:focus, .btn.focus, .focus.button, .btn:active:focus, .button:active:focus, .btn:active.focus, .button:active.focus, .btn.active:focus, .active.button:focus, .btn.active.focus, .active.focus.button {
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
-  .btn:hover, input[type="submit"]:hover, input[type="button"]:hover, button:hover, .button:hover, .btn:focus, input[type="submit"]:focus, input[type="button"]:focus, button:focus, .button:focus, .btn.focus, input.focus[type="submit"], input.focus[type="button"], button.focus, .focus.button {
+  .btn:hover, .button:hover, .btn:focus, .button:focus, .btn.focus, .focus.button {
     color: #333;
     text-decoration: none; }
-  .btn:active, input[type="submit"]:active, input[type="button"]:active, button:active, .button:active, .btn.active, input.active[type="submit"], input.active[type="button"], button.active, .active.button {
+  .btn:active, .button:active, .btn.active, .active.button {
     outline: 0;
     background-image: none;
     -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
-  .btn.disabled, input.disabled[type="submit"], input.disabled[type="button"], button.disabled, .disabled.button, .btn[disabled], input[disabled][type="submit"], input[disabled][type="button"], button[disabled], [disabled].button, fieldset[disabled] .btn, fieldset[disabled] input[type="submit"], fieldset[disabled] input[type="button"], fieldset[disabled] button, fieldset[disabled] .button {
+  .btn.disabled, .disabled.button, .btn[disabled], [disabled].button, fieldset[disabled] .btn, fieldset[disabled] .button {
     cursor: not-allowed;
     opacity: 0.65;
     filter: alpha(opacity=65);
@@ -3346,151 +3309,151 @@ a.btn.disabled, a.disabled.button, fieldset[disabled] a.btn, fieldset[disabled] 
 
 .btn-primary {
   color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4; }
+  background-color: #0088aa;
+  border-color: #007491; }
   .btn-primary:focus, .btn-primary.focus {
     color: #fff;
-    background-color: #286090;
-    border-color: #122b40; }
+    background-color: #005f77;
+    border-color: #000e11; }
   .btn-primary:hover {
     color: #fff;
-    background-color: #286090;
-    border-color: #204d74; }
+    background-color: #005f77;
+    border-color: #004353; }
   .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #286090;
-    border-color: #204d74; }
+    background-color: #005f77;
+    border-color: #004353; }
     .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus, .open > .btn-primary.dropdown-toggle:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle.focus {
       color: #fff;
-      background-color: #204d74;
-      border-color: #122b40; }
+      background-color: #004353;
+      border-color: #000e11; }
   .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
     background-image: none; }
   .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus {
-    background-color: #337ab7;
-    border-color: #2e6da4; }
+    background-color: #0088aa;
+    border-color: #007491; }
   .btn-primary .badge {
-    color: #337ab7;
+    color: #0088aa;
     background-color: #fff; }
 
 .btn-success {
   color: #fff;
-  background-color: #5cb85c;
-  border-color: #4cae4c; }
+  background-color: #28a745;
+  border-color: #23923d; }
   .btn-success:focus, .btn-success.focus {
     color: #fff;
-    background-color: #449d44;
-    border-color: #255625; }
+    background-color: #1e7e34;
+    border-color: #0a2c12; }
   .btn-success:hover {
     color: #fff;
-    background-color: #449d44;
-    border-color: #398439; }
+    background-color: #1e7e34;
+    border-color: #176128; }
   .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
     color: #fff;
-    background-color: #449d44;
-    border-color: #398439; }
+    background-color: #1e7e34;
+    border-color: #176128; }
     .btn-success:active:hover, .btn-success:active:focus, .btn-success:active.focus, .btn-success.active:hover, .btn-success.active:focus, .btn-success.active.focus, .open > .btn-success.dropdown-toggle:hover, .open > .btn-success.dropdown-toggle:focus, .open > .btn-success.dropdown-toggle.focus {
       color: #fff;
-      background-color: #398439;
-      border-color: #255625; }
+      background-color: #176128;
+      border-color: #0a2c12; }
   .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
     background-image: none; }
   .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled.focus, .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled].focus, fieldset[disabled] .btn-success:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success.focus {
-    background-color: #5cb85c;
-    border-color: #4cae4c; }
+    background-color: #28a745;
+    border-color: #23923d; }
   .btn-success .badge {
-    color: #5cb85c;
+    color: #28a745;
     background-color: #fff; }
 
 .btn-info {
   color: #fff;
-  background-color: #5bc0de;
-  border-color: #46b8da; }
+  background-color: #17a2b8;
+  border-color: #148ea1; }
   .btn-info:focus, .btn-info.focus {
     color: #fff;
-    background-color: #31b0d5;
-    border-color: #1b6d85; }
+    background-color: #117a8b;
+    border-color: #062a30; }
   .btn-info:hover {
     color: #fff;
-    background-color: #31b0d5;
-    border-color: #269abc; }
+    background-color: #117a8b;
+    border-color: #0d5e6b; }
   .btn-info:active, .btn-info.active, .open > .btn-info.dropdown-toggle {
     color: #fff;
-    background-color: #31b0d5;
-    border-color: #269abc; }
+    background-color: #117a8b;
+    border-color: #0d5e6b; }
     .btn-info:active:hover, .btn-info:active:focus, .btn-info:active.focus, .btn-info.active:hover, .btn-info.active:focus, .btn-info.active.focus, .open > .btn-info.dropdown-toggle:hover, .open > .btn-info.dropdown-toggle:focus, .open > .btn-info.dropdown-toggle.focus {
       color: #fff;
-      background-color: #269abc;
-      border-color: #1b6d85; }
+      background-color: #0d5e6b;
+      border-color: #062a30; }
   .btn-info:active, .btn-info.active, .open > .btn-info.dropdown-toggle {
     background-image: none; }
   .btn-info.disabled:hover, .btn-info.disabled:focus, .btn-info.disabled.focus, .btn-info[disabled]:hover, .btn-info[disabled]:focus, .btn-info[disabled].focus, fieldset[disabled] .btn-info:hover, fieldset[disabled] .btn-info:focus, fieldset[disabled] .btn-info.focus {
-    background-color: #5bc0de;
-    border-color: #46b8da; }
+    background-color: #17a2b8;
+    border-color: #148ea1; }
   .btn-info .badge {
-    color: #5bc0de;
+    color: #17a2b8;
     background-color: #fff; }
 
 .btn-warning {
   color: #fff;
-  background-color: #f0ad4e;
-  border-color: #eea236; }
+  background-color: #ffc107;
+  border-color: #edb100; }
   .btn-warning:focus, .btn-warning.focus {
     color: #fff;
-    background-color: #ec971f;
-    border-color: #985f0d; }
+    background-color: #d39e00;
+    border-color: #6d5200; }
   .btn-warning:hover {
     color: #fff;
-    background-color: #ec971f;
-    border-color: #d58512; }
+    background-color: #d39e00;
+    border-color: #af8300; }
   .btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle {
     color: #fff;
-    background-color: #ec971f;
-    border-color: #d58512; }
+    background-color: #d39e00;
+    border-color: #af8300; }
     .btn-warning:active:hover, .btn-warning:active:focus, .btn-warning:active.focus, .btn-warning.active:hover, .btn-warning.active:focus, .btn-warning.active.focus, .open > .btn-warning.dropdown-toggle:hover, .open > .btn-warning.dropdown-toggle:focus, .open > .btn-warning.dropdown-toggle.focus {
       color: #fff;
-      background-color: #d58512;
-      border-color: #985f0d; }
+      background-color: #af8300;
+      border-color: #6d5200; }
   .btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle {
     background-image: none; }
   .btn-warning.disabled:hover, .btn-warning.disabled:focus, .btn-warning.disabled.focus, .btn-warning[disabled]:hover, .btn-warning[disabled]:focus, .btn-warning[disabled].focus, fieldset[disabled] .btn-warning:hover, fieldset[disabled] .btn-warning:focus, fieldset[disabled] .btn-warning.focus {
-    background-color: #f0ad4e;
-    border-color: #eea236; }
+    background-color: #ffc107;
+    border-color: #edb100; }
   .btn-warning .badge {
-    color: #f0ad4e;
+    color: #ffc107;
     background-color: #fff; }
 
 .btn-danger {
   color: #fff;
-  background-color: #d9534f;
-  border-color: #d43f3a; }
+  background-color: #990000;
+  border-color: maroon; }
   .btn-danger:focus, .btn-danger.focus {
     color: #fff;
-    background-color: #c9302c;
-    border-color: #761c19; }
+    background-color: #660000;
+    border-color: black; }
   .btn-danger:hover {
     color: #fff;
-    background-color: #c9302c;
-    border-color: #ac2925; }
+    background-color: #660000;
+    border-color: #420000; }
   .btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle {
     color: #fff;
-    background-color: #c9302c;
-    border-color: #ac2925; }
+    background-color: #660000;
+    border-color: #420000; }
     .btn-danger:active:hover, .btn-danger:active:focus, .btn-danger:active.focus, .btn-danger.active:hover, .btn-danger.active:focus, .btn-danger.active.focus, .open > .btn-danger.dropdown-toggle:hover, .open > .btn-danger.dropdown-toggle:focus, .open > .btn-danger.dropdown-toggle.focus {
       color: #fff;
-      background-color: #ac2925;
-      border-color: #761c19; }
+      background-color: #420000;
+      border-color: black; }
   .btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle {
     background-image: none; }
   .btn-danger.disabled:hover, .btn-danger.disabled:focus, .btn-danger.disabled.focus, .btn-danger[disabled]:hover, .btn-danger[disabled]:focus, .btn-danger[disabled].focus, fieldset[disabled] .btn-danger:hover, fieldset[disabled] .btn-danger:focus, fieldset[disabled] .btn-danger.focus {
-    background-color: #d9534f;
-    border-color: #d43f3a; }
+    background-color: #990000;
+    border-color: maroon; }
   .btn-danger .badge {
-    color: #d9534f;
+    color: #990000;
     background-color: #fff; }
 
 .btn-link {
-  color: #337ab7;
+  color: #0088aa;
   font-weight: normal;
   border-radius: 0; }
   .btn-link, .btn-link:active, .btn-link.active, .btn-link[disabled], fieldset[disabled] .btn-link {
@@ -3500,30 +3463,30 @@ a.btn.disabled, a.disabled.button, fieldset[disabled] a.btn, fieldset[disabled] 
   .btn-link, .btn-link:hover, .btn-link:focus, .btn-link:active {
     border-color: transparent; }
   .btn-link:hover, .btn-link:focus {
-    color: #23527c;
+    color: #004b5e;
     text-decoration: underline;
     background-color: transparent; }
   .btn-link[disabled]:hover, .btn-link[disabled]:focus, fieldset[disabled] .btn-link:hover, fieldset[disabled] .btn-link:focus {
     color: #777777;
     text-decoration: none; }
 
-.btn-lg, .btn-group-lg > .btn, .btn-group-lg > input[type="submit"], .btn-group-lg > input[type="button"], .btn-group-lg > button, .btn-group-lg > .button {
-  padding: 10px 16px;
-  font-size: 19px;
+.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .button {
+  padding: 5.25px 21px;
+  font-size: 22px;
   line-height: 1.3333333;
-  border-radius: 6px; }
+  border-radius: 9px; }
 
-.btn-sm, .btn-group-sm > .btn, .btn-group-sm > input[type="submit"], .btn-group-sm > input[type="button"], .btn-group-sm > button, .btn-group-sm > .button {
-  padding: 5px 10px;
+.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .button {
+  padding: 1.75px 10.5px;
   font-size: 14px;
   line-height: 1.5;
-  border-radius: 3px; }
+  border-radius: 2px; }
 
-.btn-xs, .btn-group-xs > .btn, .btn-group-xs > input[type="submit"], .btn-group-xs > input[type="button"], .btn-group-xs > button, .btn-group-xs > .button {
-  padding: 1px 5px;
+.btn-xs, .btn-group-xs > .btn, .btn-group-xs > .button {
+  padding: 0.875px 7px;
   font-size: 14px;
   line-height: 1.5;
-  border-radius: 3px; }
+  border-radius: 2px; }
 
 .btn-block {
   display: block;
@@ -3596,12 +3559,12 @@ tbody.collapse.in {
   padding: 5px 0;
   margin: 2px 0 0;
   list-style: none;
-  font-size: 16px;
+  font-size: 18px;
   text-align: left;
   background-color: #fff;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  border-radius: 6px;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box; }
@@ -3610,7 +3573,7 @@ tbody.collapse.in {
     left: auto; }
   .dropdown-menu .divider {
     height: 1px;
-    margin: 11px 0;
+    margin: 12.5px 0;
     overflow: hidden;
     background-color: #e5e5e5; }
   .dropdown-menu > li > a {
@@ -3631,7 +3594,7 @@ tbody.collapse.in {
   color: #fff;
   text-decoration: none;
   outline: 0;
-  background-color: #337ab7; }
+  background-color: #0088aa; }
 
 .dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
   color: #777777; }
@@ -3699,47 +3662,26 @@ tbody.collapse.in {
   position: relative;
   display: inline-block;
   vertical-align: middle; }
-  .btn-group > .btn, .btn-group > input[type="submit"], .btn-group > input[type="button"], .btn-group > button, .btn-group > .button,
+  .btn-group > .btn, .btn-group > .button,
   .btn-group-vertical > .btn,
-  .btn-group-vertical > input[type="submit"],
-  .btn-group-vertical > input[type="button"],
-  .btn-group-vertical > button,
   .btn-group-vertical > .button {
     position: relative;
     float: left; }
-    .btn-group > .btn:hover, .btn-group > input[type="submit"]:hover, .btn-group > input[type="button"]:hover, .btn-group > button:hover, .btn-group > .button:hover, .btn-group > .btn:focus, .btn-group > input[type="submit"]:focus, .btn-group > input[type="button"]:focus, .btn-group > button:focus, .btn-group > .button:focus, .btn-group > .btn:active, .btn-group > input[type="submit"]:active, .btn-group > input[type="button"]:active, .btn-group > button:active, .btn-group > .button:active, .btn-group > .btn.active, .btn-group > input.active[type="submit"], .btn-group > input.active[type="button"], .btn-group > button.active, .btn-group > .active.button,
+    .btn-group > .btn:hover, .btn-group > .button:hover, .btn-group > .btn:focus, .btn-group > .button:focus, .btn-group > .btn:active, .btn-group > .button:active, .btn-group > .btn.active, .btn-group > .active.button,
     .btn-group-vertical > .btn:hover,
-    .btn-group-vertical > input[type="submit"]:hover,
-    .btn-group-vertical > input[type="button"]:hover,
-    .btn-group-vertical > button:hover,
     .btn-group-vertical > .button:hover,
     .btn-group-vertical > .btn:focus,
-    .btn-group-vertical > input[type="submit"]:focus,
-    .btn-group-vertical > input[type="button"]:focus,
-    .btn-group-vertical > button:focus,
     .btn-group-vertical > .button:focus,
     .btn-group-vertical > .btn:active,
-    .btn-group-vertical > input[type="submit"]:active,
-    .btn-group-vertical > input[type="button"]:active,
-    .btn-group-vertical > button:active,
     .btn-group-vertical > .button:active,
     .btn-group-vertical > .btn.active,
-    .btn-group-vertical > input.active[type="submit"],
-    .btn-group-vertical > input.active[type="button"],
-    .btn-group-vertical > button.active,
     .btn-group-vertical > .active.button {
       z-index: 2; }
 
-.btn-group .btn + .btn, .btn-group input[type="submit"] + .btn, .btn-group input[type="button"] + .btn, .btn-group button + .btn, .btn-group .button + .btn, .btn-group .btn + input[type="submit"], .btn-group input[type="submit"] + input[type="submit"], .btn-group input[type="button"] + input[type="submit"], .btn-group button + input[type="submit"], .btn-group .button + input[type="submit"], .btn-group .btn + input[type="button"], .btn-group input[type="submit"] + input[type="button"], .btn-group input[type="button"] + input[type="button"], .btn-group button + input[type="button"], .btn-group .button + input[type="button"], .btn-group .btn + button, .btn-group input[type="submit"] + button, .btn-group input[type="button"] + button, .btn-group button + button, .btn-group .button + button, .btn-group .btn + .button, .btn-group input[type="submit"] + .button, .btn-group input[type="button"] + .button, .btn-group button + .button, .btn-group .button + .button,
+.btn-group .btn + .btn, .btn-group .button + .btn, .btn-group .btn + .button, .btn-group .button + .button,
 .btn-group .btn + .btn-group,
-.btn-group input[type="submit"] + .btn-group,
-.btn-group input[type="button"] + .btn-group,
-.btn-group button + .btn-group,
 .btn-group .button + .btn-group,
 .btn-group .btn-group + .btn,
-.btn-group .btn-group + input[type="submit"],
-.btn-group .btn-group + input[type="button"],
-.btn-group .btn-group + button,
 .btn-group .btn-group + .button,
 .btn-group .btn-group + .btn-group {
   margin-left: -1px; }
@@ -3751,25 +3693,25 @@ tbody.collapse.in {
     display: table; }
   .btn-toolbar:after {
     clear: both; }
-  .btn-toolbar .btn, .btn-toolbar input[type="submit"], .btn-toolbar input[type="button"], .btn-toolbar button, .btn-toolbar .button,
+  .btn-toolbar .btn, .btn-toolbar .button,
   .btn-toolbar .btn-group,
   .btn-toolbar .input-group {
     float: left; }
-  .btn-toolbar > .btn, .btn-toolbar > input[type="submit"], .btn-toolbar > input[type="button"], .btn-toolbar > button, .btn-toolbar > .button,
+  .btn-toolbar > .btn, .btn-toolbar > .button,
   .btn-toolbar > .btn-group,
   .btn-toolbar > .input-group {
     margin-left: 5px; }
 
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > input[type="submit"]:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > input[type="button"]:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > button:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > .button:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > .button:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0; }
 
-.btn-group > .btn:first-child, .btn-group > input[type="submit"]:first-child, .btn-group > input[type="button"]:first-child, .btn-group > button:first-child, .btn-group > .button:first-child {
+.btn-group > .btn:first-child, .btn-group > .button:first-child {
   margin-left: 0; }
-  .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > input[type="submit"]:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > input[type="button"]:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > button:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > .button:first-child:not(:last-child):not(.dropdown-toggle) {
+  .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > .button:first-child:not(:last-child):not(.dropdown-toggle) {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0; }
 
-.btn-group > .btn:last-child:not(:first-child), .btn-group > input[type="submit"]:last-child:not(:first-child), .btn-group > input[type="button"]:last-child:not(:first-child), .btn-group > button:last-child:not(:first-child), .btn-group > .button:last-child:not(:first-child),
+.btn-group > .btn:last-child:not(:first-child), .btn-group > .button:last-child:not(:first-child),
 .btn-group > .dropdown-toggle:not(:first-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0; }
@@ -3777,15 +3719,15 @@ tbody.collapse.in {
 .btn-group > .btn-group {
   float: left; }
 
-.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .btn-group > .btn-group:not(:first-child):not(:last-child) > input[type="submit"], .btn-group > .btn-group:not(:first-child):not(:last-child) > input[type="button"], .btn-group > .btn-group:not(:first-child):not(:last-child) > button, .btn-group > .btn-group:not(:first-child):not(:last-child) > .button {
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .btn-group > .btn-group:not(:first-child):not(:last-child) > .button {
   border-radius: 0; }
 
-.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, .btn-group > .btn-group:first-child:not(:last-child) > input[type="submit"]:last-child, .btn-group > .btn-group:first-child:not(:last-child) > input[type="button"]:last-child, .btn-group > .btn-group:first-child:not(:last-child) > button:last-child, .btn-group > .btn-group:first-child:not(:last-child) > .button:last-child,
+.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, .btn-group > .btn-group:first-child:not(:last-child) > .button:last-child,
 .btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0; }
 
-.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child, .btn-group > .btn-group:last-child:not(:first-child) > input[type="submit"]:first-child, .btn-group > .btn-group:last-child:not(:first-child) > input[type="button"]:first-child, .btn-group > .btn-group:last-child:not(:first-child) > button:first-child, .btn-group > .btn-group:last-child:not(:first-child) > .button:first-child {
+.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child, .btn-group > .btn-group:last-child:not(:first-child) > .button:first-child {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0; }
 
@@ -3793,11 +3735,11 @@ tbody.collapse.in {
 .btn-group.open .dropdown-toggle {
   outline: 0; }
 
-.btn-group > .btn + .dropdown-toggle, .btn-group > input[type="submit"] + .dropdown-toggle, .btn-group > input[type="button"] + .dropdown-toggle, .btn-group > button + .dropdown-toggle, .btn-group > .button + .dropdown-toggle {
+.btn-group > .btn + .dropdown-toggle, .btn-group > .button + .dropdown-toggle {
   padding-left: 8px;
   padding-right: 8px; }
 
-.btn-group > .btn-lg + .dropdown-toggle, .btn-group-lg.btn-group > .btn + .dropdown-toggle, .btn-group-lg.btn-group > input[type="submit"] + .dropdown-toggle, .btn-group-lg.btn-group > input[type="button"] + .dropdown-toggle, .btn-group-lg.btn-group > button + .dropdown-toggle, .btn-group-lg.btn-group > .button + .dropdown-toggle {
+.btn-group > .btn-lg + .dropdown-toggle, .btn-group-lg.btn-group > .btn + .dropdown-toggle, .btn-group-lg.btn-group > .button + .dropdown-toggle {
   padding-left: 12px;
   padding-right: 12px; }
 
@@ -3808,22 +3750,19 @@ tbody.collapse.in {
     -webkit-box-shadow: none;
     box-shadow: none; }
 
-.btn .caret, input[type="submit"] .caret, input[type="button"] .caret, button .caret, .button .caret {
+.btn .caret, .button .caret {
   margin-left: 0; }
 
-.btn-lg .caret, .btn-group-lg > .btn .caret, .btn-group-lg > input[type="submit"] .caret, .btn-group-lg > input[type="button"] .caret, .btn-group-lg > button .caret, .btn-group-lg > .button .caret {
+.btn-lg .caret, .btn-group-lg > .btn .caret, .btn-group-lg > .button .caret {
   border-width: 5px 5px 0;
   border-bottom-width: 0; }
 
-.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret, .dropup .btn-group-lg > input[type="submit"] .caret, .dropup .btn-group-lg > input[type="button"] .caret, .dropup .btn-group-lg > button .caret, .dropup .btn-group-lg > .button .caret {
+.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret, .dropup .btn-group-lg > .button .caret {
   border-width: 0 5px 5px; }
 
-.btn-group-vertical > .btn, .btn-group-vertical > input[type="submit"], .btn-group-vertical > input[type="button"], .btn-group-vertical > button, .btn-group-vertical > .button,
+.btn-group-vertical > .btn, .btn-group-vertical > .button,
 .btn-group-vertical > .btn-group,
 .btn-group-vertical > .btn-group > .btn,
-.btn-group-vertical > .btn-group > input[type="submit"],
-.btn-group-vertical > .btn-group > input[type="button"],
-.btn-group-vertical > .btn-group > button,
 .btn-group-vertical > .btn-group > .button {
   display: block;
   float: none;
@@ -3834,45 +3773,39 @@ tbody.collapse.in {
   display: table; }
 .btn-group-vertical > .btn-group:after {
   clear: both; }
-.btn-group-vertical > .btn-group > .btn, .btn-group-vertical > .btn-group > input[type="submit"], .btn-group-vertical > .btn-group > input[type="button"], .btn-group-vertical > .btn-group > button, .btn-group-vertical > .btn-group > .button {
+.btn-group-vertical > .btn-group > .btn, .btn-group-vertical > .btn-group > .button {
   float: none; }
-.btn-group-vertical > .btn + .btn, .btn-group-vertical > input[type="submit"] + .btn, .btn-group-vertical > input[type="button"] + .btn, .btn-group-vertical > button + .btn, .btn-group-vertical > .button + .btn, .btn-group-vertical > .btn + input[type="submit"], .btn-group-vertical > input[type="submit"] + input[type="submit"], .btn-group-vertical > input[type="button"] + input[type="submit"], .btn-group-vertical > button + input[type="submit"], .btn-group-vertical > .button + input[type="submit"], .btn-group-vertical > .btn + input[type="button"], .btn-group-vertical > input[type="submit"] + input[type="button"], .btn-group-vertical > input[type="button"] + input[type="button"], .btn-group-vertical > button + input[type="button"], .btn-group-vertical > .button + input[type="button"], .btn-group-vertical > .btn + button, .btn-group-vertical > input[type="submit"] + button, .btn-group-vertical > input[type="button"] + button, .btn-group-vertical > button + button, .btn-group-vertical > .button + button, .btn-group-vertical > .btn + .button, .btn-group-vertical > input[type="submit"] + .button, .btn-group-vertical > input[type="button"] + .button, .btn-group-vertical > button + .button, .btn-group-vertical > .button + .button,
+.btn-group-vertical > .btn + .btn, .btn-group-vertical > .button + .btn, .btn-group-vertical > .btn + .button, .btn-group-vertical > .button + .button,
 .btn-group-vertical > .btn + .btn-group,
-.btn-group-vertical > input[type="submit"] + .btn-group,
-.btn-group-vertical > input[type="button"] + .btn-group,
-.btn-group-vertical > button + .btn-group,
 .btn-group-vertical > .button + .btn-group,
 .btn-group-vertical > .btn-group + .btn,
-.btn-group-vertical > .btn-group + input[type="submit"],
-.btn-group-vertical > .btn-group + input[type="button"],
-.btn-group-vertical > .btn-group + button,
 .btn-group-vertical > .btn-group + .button,
 .btn-group-vertical > .btn-group + .btn-group {
   margin-top: -1px;
   margin-left: 0; }
 
-.btn-group-vertical > .btn:not(:first-child):not(:last-child), .btn-group-vertical > input[type="submit"]:not(:first-child):not(:last-child), .btn-group-vertical > input[type="button"]:not(:first-child):not(:last-child), .btn-group-vertical > button:not(:first-child):not(:last-child), .btn-group-vertical > .button:not(:first-child):not(:last-child) {
+.btn-group-vertical > .btn:not(:first-child):not(:last-child), .btn-group-vertical > .button:not(:first-child):not(:last-child) {
   border-radius: 0; }
-.btn-group-vertical > .btn:first-child:not(:last-child), .btn-group-vertical > input[type="submit"]:first-child:not(:last-child), .btn-group-vertical > input[type="button"]:first-child:not(:last-child), .btn-group-vertical > button:first-child:not(:last-child), .btn-group-vertical > .button:first-child:not(:last-child) {
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
+.btn-group-vertical > .btn:first-child:not(:last-child), .btn-group-vertical > .button:first-child:not(:last-child) {
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0; }
-.btn-group-vertical > .btn:last-child:not(:first-child), .btn-group-vertical > input[type="submit"]:last-child:not(:first-child), .btn-group-vertical > input[type="button"]:last-child:not(:first-child), .btn-group-vertical > button:last-child:not(:first-child), .btn-group-vertical > .button:last-child:not(:first-child) {
+.btn-group-vertical > .btn:last-child:not(:first-child), .btn-group-vertical > .button:last-child:not(:first-child) {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px; }
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px; }
 
-.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > input[type="submit"], .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > input[type="button"], .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > button, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .button {
+.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .button {
   border-radius: 0; }
 
-.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > input[type="submit"]:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > input[type="button"]:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > button:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > .button:last-child,
+.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > .button:last-child,
 .btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0; }
 
-.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > input[type="submit"]:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > input[type="button"]:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > button:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > .button:first-child {
+.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > .button:first-child {
   border-top-right-radius: 0;
   border-top-left-radius: 0; }
 
@@ -3881,31 +3814,22 @@ tbody.collapse.in {
   width: 100%;
   table-layout: fixed;
   border-collapse: separate; }
-  .btn-group-justified > .btn, .btn-group-justified > input[type="submit"], .btn-group-justified > input[type="button"], .btn-group-justified > button, .btn-group-justified > .button,
+  .btn-group-justified > .btn, .btn-group-justified > .button,
   .btn-group-justified > .btn-group {
     float: none;
     display: table-cell;
     width: 1%; }
-  .btn-group-justified > .btn-group .btn, .btn-group-justified > .btn-group input[type="submit"], .btn-group-justified > .btn-group input[type="button"], .btn-group-justified > .btn-group button, .btn-group-justified > .btn-group .button {
+  .btn-group-justified > .btn-group .btn, .btn-group-justified > .btn-group .button {
     width: 100%; }
   .btn-group-justified > .btn-group .dropdown-menu {
     left: auto; }
 
-[data-toggle="buttons"] > .btn input[type="radio"], [data-toggle="buttons"] > input[type="submit"] input[type="radio"], [data-toggle="buttons"] > input[type="button"] input[type="radio"], [data-toggle="buttons"] > button input[type="radio"], [data-toggle="buttons"] > .button input[type="radio"],
+[data-toggle="buttons"] > .btn input[type="radio"], [data-toggle="buttons"] > .button input[type="radio"],
 [data-toggle="buttons"] > .btn input[type="checkbox"],
-[data-toggle="buttons"] > input[type="submit"] input[type="checkbox"],
-[data-toggle="buttons"] > input[type="button"] input[type="checkbox"],
-[data-toggle="buttons"] > button input[type="checkbox"],
 [data-toggle="buttons"] > .button input[type="checkbox"],
 [data-toggle="buttons"] > .btn-group > .btn input[type="radio"],
-[data-toggle="buttons"] > .btn-group > input[type="submit"] input[type="radio"],
-[data-toggle="buttons"] > .btn-group > input[type="button"] input[type="radio"],
-[data-toggle="buttons"] > .btn-group > button input[type="radio"],
 [data-toggle="buttons"] > .btn-group > .button input[type="radio"],
 [data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"],
-[data-toggle="buttons"] > .btn-group > input[type="submit"] input[type="checkbox"],
-[data-toggle="buttons"] > .btn-group > input[type="button"] input[type="checkbox"],
-[data-toggle="buttons"] > .btn-group > button input[type="checkbox"],
 [data-toggle="buttons"] > .btn-group > .button input[type="checkbox"] {
   position: absolute;
   clip: rect(0, 0, 0, 0);
@@ -3944,35 +3868,29 @@ tbody.collapse.in {
   vertical-align: middle; }
 
 .input-group-addon {
-  padding: 6px 12px;
-  font-size: 16px;
+  padding: 3.5px 14px;
+  font-size: 18px;
   font-weight: normal;
   line-height: 1;
   color: #555555;
   text-align: center;
   background-color: #eeeeee;
   border: 1px solid #ccc;
-  border-radius: 4px; }
+  border-radius: 6px; }
   .input-group-addon.input-sm,
   .input-group-sm > .input-group-addon,
   .input-group-sm > .input-group-btn > .input-group-addon.btn,
-  .input-group-sm > .input-group-btn > input.input-group-addon[type="submit"],
-  .input-group-sm > .input-group-btn > input.input-group-addon[type="button"],
-  .input-group-sm > .input-group-btn > button.input-group-addon,
   .input-group-sm > .input-group-btn > .input-group-addon.button {
-    padding: 5px 10px;
+    padding: 1.75px 10.5px;
     font-size: 14px;
-    border-radius: 3px; }
+    border-radius: 2px; }
   .input-group-addon.input-lg,
   .input-group-lg > .input-group-addon,
   .input-group-lg > .input-group-btn > .input-group-addon.btn,
-  .input-group-lg > .input-group-btn > input.input-group-addon[type="submit"],
-  .input-group-lg > .input-group-btn > input.input-group-addon[type="button"],
-  .input-group-lg > .input-group-btn > button.input-group-addon,
   .input-group-lg > .input-group-btn > .input-group-addon.button {
-    padding: 10px 16px;
-    font-size: 19px;
-    border-radius: 6px; }
+    padding: 5.25px 21px;
+    font-size: 22px;
+    border-radius: 9px; }
   .input-group-addon input[type="radio"],
   .input-group-addon input[type="checkbox"] {
     margin-top: 0; }
@@ -3980,25 +3898,13 @@ tbody.collapse.in {
 .input-group .form-control:first-child,
 .input-group-addon:first-child,
 .input-group-btn:first-child > .btn,
-.input-group-btn:first-child > input[type="submit"],
-.input-group-btn:first-child > input[type="button"],
-.input-group-btn:first-child > button,
 .input-group-btn:first-child > .button,
 .input-group-btn:first-child > .btn-group > .btn,
-.input-group-btn:first-child > .btn-group > input[type="submit"],
-.input-group-btn:first-child > .btn-group > input[type="button"],
-.input-group-btn:first-child > .btn-group > button,
 .input-group-btn:first-child > .btn-group > .button,
 .input-group-btn:first-child > .dropdown-toggle,
 .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
-.input-group-btn:last-child > input[type="submit"]:not(:last-child):not(.dropdown-toggle),
-.input-group-btn:last-child > input[type="button"]:not(:last-child):not(.dropdown-toggle),
-.input-group-btn:last-child > button:not(:last-child):not(.dropdown-toggle),
 .input-group-btn:last-child > .button:not(:last-child):not(.dropdown-toggle),
 .input-group-btn:last-child > .btn-group:not(:last-child) > .btn,
-.input-group-btn:last-child > .btn-group:not(:last-child) > input[type="submit"],
-.input-group-btn:last-child > .btn-group:not(:last-child) > input[type="button"],
-.input-group-btn:last-child > .btn-group:not(:last-child) > button,
 .input-group-btn:last-child > .btn-group:not(:last-child) > .button {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0; }
@@ -4009,25 +3915,13 @@ tbody.collapse.in {
 .input-group .form-control:last-child,
 .input-group-addon:last-child,
 .input-group-btn:last-child > .btn,
-.input-group-btn:last-child > input[type="submit"],
-.input-group-btn:last-child > input[type="button"],
-.input-group-btn:last-child > button,
 .input-group-btn:last-child > .button,
 .input-group-btn:last-child > .btn-group > .btn,
-.input-group-btn:last-child > .btn-group > input[type="submit"],
-.input-group-btn:last-child > .btn-group > input[type="button"],
-.input-group-btn:last-child > .btn-group > button,
 .input-group-btn:last-child > .btn-group > .button,
 .input-group-btn:last-child > .dropdown-toggle,
 .input-group-btn:first-child > .btn:not(:first-child),
-.input-group-btn:first-child > input[type="submit"]:not(:first-child),
-.input-group-btn:first-child > input[type="button"]:not(:first-child),
-.input-group-btn:first-child > button:not(:first-child),
 .input-group-btn:first-child > .button:not(:first-child),
 .input-group-btn:first-child > .btn-group:not(:first-child) > .btn,
-.input-group-btn:first-child > .btn-group:not(:first-child) > input[type="submit"],
-.input-group-btn:first-child > .btn-group:not(:first-child) > input[type="button"],
-.input-group-btn:first-child > .btn-group:not(:first-child) > button,
 .input-group-btn:first-child > .btn-group:not(:first-child) > .button {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0; }
@@ -4039,16 +3933,16 @@ tbody.collapse.in {
   position: relative;
   font-size: 0;
   white-space: nowrap; }
-  .input-group-btn > .btn, .input-group-btn > input[type="submit"], .input-group-btn > input[type="button"], .input-group-btn > button, .input-group-btn > .button {
+  .input-group-btn > .btn, .input-group-btn > .button {
     position: relative; }
-    .input-group-btn > .btn + .btn, .input-group-btn > input[type="submit"] + .btn, .input-group-btn > input[type="button"] + .btn, .input-group-btn > button + .btn, .input-group-btn > .button + .btn, .input-group-btn > .btn + input[type="submit"], .input-group-btn > input[type="submit"] + input[type="submit"], .input-group-btn > input[type="button"] + input[type="submit"], .input-group-btn > button + input[type="submit"], .input-group-btn > .button + input[type="submit"], .input-group-btn > .btn + input[type="button"], .input-group-btn > input[type="submit"] + input[type="button"], .input-group-btn > input[type="button"] + input[type="button"], .input-group-btn > button + input[type="button"], .input-group-btn > .button + input[type="button"], .input-group-btn > .btn + button, .input-group-btn > input[type="submit"] + button, .input-group-btn > input[type="button"] + button, .input-group-btn > button + button, .input-group-btn > .button + button, .input-group-btn > .btn + .button, .input-group-btn > input[type="submit"] + .button, .input-group-btn > input[type="button"] + .button, .input-group-btn > button + .button, .input-group-btn > .button + .button {
+    .input-group-btn > .btn + .btn, .input-group-btn > .button + .btn, .input-group-btn > .btn + .button, .input-group-btn > .button + .button {
       margin-left: -1px; }
-    .input-group-btn > .btn:hover, .input-group-btn > input[type="submit"]:hover, .input-group-btn > input[type="button"]:hover, .input-group-btn > button:hover, .input-group-btn > .button:hover, .input-group-btn > .btn:focus, .input-group-btn > input[type="submit"]:focus, .input-group-btn > input[type="button"]:focus, .input-group-btn > button:focus, .input-group-btn > .button:focus, .input-group-btn > .btn:active, .input-group-btn > input[type="submit"]:active, .input-group-btn > input[type="button"]:active, .input-group-btn > button:active, .input-group-btn > .button:active {
+    .input-group-btn > .btn:hover, .input-group-btn > .button:hover, .input-group-btn > .btn:focus, .input-group-btn > .button:focus, .input-group-btn > .btn:active, .input-group-btn > .button:active {
       z-index: 2; }
-  .input-group-btn:first-child > .btn, .input-group-btn:first-child > input[type="submit"], .input-group-btn:first-child > input[type="button"], .input-group-btn:first-child > button, .input-group-btn:first-child > .button,
+  .input-group-btn:first-child > .btn, .input-group-btn:first-child > .button,
   .input-group-btn:first-child > .btn-group {
     margin-right: -1px; }
-  .input-group-btn:last-child > .btn, .input-group-btn:last-child > input[type="submit"], .input-group-btn:last-child > input[type="button"], .input-group-btn:last-child > button, .input-group-btn:last-child > .button,
+  .input-group-btn:last-child > .btn, .input-group-btn:last-child > .button,
   .input-group-btn:last-child > .btn-group {
     z-index: 2;
     margin-left: -1px; }
@@ -4081,10 +3975,10 @@ tbody.collapse.in {
         cursor: not-allowed; }
   .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: #eeeeee;
-    border-color: #337ab7; }
+    border-color: #0088aa; }
   .nav .nav-divider {
     height: 1px;
-    margin: 11px 0;
+    margin: 12.5px 0;
     overflow: hidden;
     background-color: #e5e5e5; }
   .nav > li > a > img {
@@ -4099,7 +3993,7 @@ tbody.collapse.in {
       margin-right: 2px;
       line-height: 1.5;
       border: 1px solid transparent;
-      border-radius: 4px 4px 0 0; }
+      border-radius: 6px 6px 0 0; }
       .nav-tabs > li > a:hover {
         border-color: #eeeeee #eeeeee #ddd; }
     .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
@@ -4112,12 +4006,12 @@ tbody.collapse.in {
 .nav-pills > li {
   float: left; }
   .nav-pills > li > a {
-    border-radius: 4px; }
+    border-radius: 6px; }
   .nav-pills > li + li {
     margin-left: 2px; }
   .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
     color: #fff;
-    background-color: #337ab7; }
+    background-color: #0088aa; }
 
 .nav-stacked > li {
   float: none; }
@@ -4146,7 +4040,7 @@ tbody.collapse.in {
   border-bottom: 0; }
   .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
     margin-right: 0;
-    border-radius: 4px; }
+    border-radius: 6px; }
   .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
   .nav-tabs-justified > .active > a:hover,
   .nav-tabs.nav-justified > .active > a:hover,
@@ -4156,7 +4050,7 @@ tbody.collapse.in {
   @media (min-width: 576px) {
     .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
       border-bottom: 1px solid #ddd;
-      border-radius: 4px 4px 0 0; }
+      border-radius: 6px 6px 0 0; }
     .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
     .nav-tabs-justified > .active > a:hover,
     .nav-tabs.nav-justified > .active > a:hover,
@@ -4177,7 +4071,7 @@ tbody.collapse.in {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 24px;
+  margin-bottom: 27px;
   border: 1px solid transparent; }
   .navbar:before, .navbar:after {
     content: " ";
@@ -4186,7 +4080,7 @@ tbody.collapse.in {
     clear: both; }
   @media (min-width: 576px) {
     .navbar {
-      border-radius: 4px; } }
+      border-radius: 6px; } }
 
 .navbar-header:before, .navbar-header:after {
   content: " ";
@@ -4278,9 +4172,9 @@ tbody.collapse.in {
 
 .navbar-brand {
   float: left;
-  padding: 13px 10px;
-  font-size: 19px;
-  line-height: 24px;
+  padding: 11.5px 10px;
+  font-size: 22px;
+  line-height: 27px;
   height: 50px; }
   .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none; }
@@ -4300,7 +4194,7 @@ tbody.collapse.in {
   background-color: transparent;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 4px; }
+  border-radius: 6px; }
   .navbar-toggle:focus {
     outline: 0; }
   .navbar-toggle .icon-bar {
@@ -4315,11 +4209,11 @@ tbody.collapse.in {
       display: none; } }
 
 .navbar-nav {
-  margin: 6.5px -10px; }
+  margin: 5.75px -10px; }
   .navbar-nav > li > a {
     padding-top: 10px;
     padding-bottom: 10px;
-    line-height: 24px; }
+    line-height: 27px; }
   @media (max-width: 575px) {
     .navbar-nav .open .dropdown-menu {
       position: static;
@@ -4333,7 +4227,7 @@ tbody.collapse.in {
       .navbar-nav .open .dropdown-menu .dropdown-header {
         padding: 5px 15px 5px 25px; }
       .navbar-nav .open .dropdown-menu > li > a {
-        line-height: 24px; }
+        line-height: 27px; }
         .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus {
           background-image: none; } }
   @media (min-width: 576px) {
@@ -4343,8 +4237,8 @@ tbody.collapse.in {
       .navbar-nav > li {
         float: left; }
         .navbar-nav > li > a {
-          padding-top: 13px;
-          padding-bottom: 13px; } }
+          padding-top: 11.5px;
+          padding-bottom: 11.5px; } }
 
 .navbar-form {
   margin-left: -10px;
@@ -4354,8 +4248,8 @@ tbody.collapse.in {
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 6px;
-  margin-bottom: 6px; }
+  margin-top: 7px;
+  margin-bottom: 7px; }
   @media (min-width: 576px) {
     .navbar-form .form-group {
       display: inline-block;
@@ -4417,24 +4311,24 @@ tbody.collapse.in {
 
 .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
   margin-bottom: 0;
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0; }
 
 .navbar-btn {
-  margin-top: 6px;
-  margin-bottom: 6px; }
-  .navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn, .btn-group-sm > input.navbar-btn[type="submit"], .btn-group-sm > input.navbar-btn[type="button"], .btn-group-sm > button.navbar-btn, .btn-group-sm > .navbar-btn.button {
-    margin-top: 8.5px;
-    margin-bottom: 8.5px; }
-  .navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn, .btn-group-xs > input.navbar-btn[type="submit"], .btn-group-xs > input.navbar-btn[type="button"], .btn-group-xs > button.navbar-btn, .btn-group-xs > .navbar-btn.button {
+  margin-top: 7px;
+  margin-bottom: 7px; }
+  .navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn, .btn-group-sm > .navbar-btn.button {
+    margin-top: 11.75px;
+    margin-bottom: 11.75px; }
+  .navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn, .btn-group-xs > .navbar-btn.button {
     margin-top: 14px;
     margin-bottom: 14px; }
 
 .navbar-text {
-  margin-top: 13px;
-  margin-bottom: 13px; }
+  margin-top: 11.5px;
+  margin-bottom: 11.5px; }
   @media (min-width: 576px) {
     .navbar-text {
       float: left;
@@ -4568,10 +4462,10 @@ tbody.collapse.in {
 
 .breadcrumb {
   padding: 0.5rem 15px;
-  margin-bottom: 24px;
+  margin-bottom: 27px;
   list-style: none;
   background-color: #fff;
-  border-radius: 4px; }
+  border-radius: 6px; }
   .breadcrumb > li {
     display: inline-block; }
     .breadcrumb > li + li:before {
@@ -4584,35 +4478,35 @@ tbody.collapse.in {
 .pagination {
   display: inline-block;
   padding-left: 0;
-  margin: 24px 0;
-  border-radius: 4px; }
+  margin: 27px 0;
+  border-radius: 6px; }
   .pagination > li {
     display: inline; }
     .pagination > li > a,
     .pagination > li > span {
       position: relative;
       float: left;
-      padding: 6px 12px;
+      padding: 3.5px 14px;
       line-height: 1.5;
       text-decoration: none;
-      color: #337ab7;
+      color: #0088aa;
       background-color: #fff;
       border: 1px solid #ddd;
       margin-left: -1px; }
     .pagination > li:first-child > a,
     .pagination > li:first-child > span {
       margin-left: 0;
-      border-bottom-left-radius: 4px;
-      border-top-left-radius: 4px; }
+      border-bottom-left-radius: 6px;
+      border-top-left-radius: 6px; }
     .pagination > li:last-child > a,
     .pagination > li:last-child > span {
-      border-bottom-right-radius: 4px;
-      border-top-right-radius: 4px; }
+      border-bottom-right-radius: 6px;
+      border-top-right-radius: 6px; }
   .pagination > li > a:hover, .pagination > li > a:focus,
   .pagination > li > span:hover,
   .pagination > li > span:focus {
     z-index: 2;
-    color: #23527c;
+    color: #004b5e;
     background-color: #eeeeee;
     border-color: #ddd; }
   .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,
@@ -4621,8 +4515,8 @@ tbody.collapse.in {
   .pagination > .active > span:focus {
     z-index: 3;
     color: #fff;
-    background-color: #337ab7;
-    border-color: #337ab7;
+    background-color: #0088aa;
+    border-color: #0088aa;
     cursor: default; }
   .pagination > .disabled > span,
   .pagination > .disabled > span:hover,
@@ -4637,35 +4531,35 @@ tbody.collapse.in {
 
 .pagination-lg > li > a,
 .pagination-lg > li > span {
-  padding: 10px 16px;
-  font-size: 19px;
+  padding: 5.25px 21px;
+  font-size: 22px;
   line-height: 1.3333333; }
 .pagination-lg > li:first-child > a,
 .pagination-lg > li:first-child > span {
-  border-bottom-left-radius: 6px;
-  border-top-left-radius: 6px; }
+  border-bottom-left-radius: 9px;
+  border-top-left-radius: 9px; }
 .pagination-lg > li:last-child > a,
 .pagination-lg > li:last-child > span {
-  border-bottom-right-radius: 6px;
-  border-top-right-radius: 6px; }
+  border-bottom-right-radius: 9px;
+  border-top-right-radius: 9px; }
 
 .pagination-sm > li > a,
 .pagination-sm > li > span {
-  padding: 5px 10px;
+  padding: 1.75px 10.5px;
   font-size: 14px;
   line-height: 1.5; }
 .pagination-sm > li:first-child > a,
 .pagination-sm > li:first-child > span {
-  border-bottom-left-radius: 3px;
-  border-top-left-radius: 3px; }
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px; }
 .pagination-sm > li:last-child > a,
 .pagination-sm > li:last-child > span {
-  border-bottom-right-radius: 3px;
-  border-top-right-radius: 3px; }
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px; }
 
 .pager {
   padding-left: 0;
-  margin: 24px 0;
+  margin: 27px 0;
   list-style: none;
   text-align: center; }
   .pager:before, .pager:after {
@@ -4713,7 +4607,7 @@ tbody.collapse.in {
   border-radius: .25em; }
   .label:empty {
     display: none; }
-  .btn .label, input[type="submit"] .label, input[type="button"] .label, button .label, .button .label {
+  .btn .label, .button .label {
     position: relative;
     top: -1px; }
 
@@ -4728,29 +4622,29 @@ a.label:hover, a.label:focus {
     background-color: #5e5e5e; }
 
 .label-primary {
-  background-color: #337ab7; }
+  background-color: #0088aa; }
   .label-primary[href]:hover, .label-primary[href]:focus {
-    background-color: #286090; }
+    background-color: #005f77; }
 
 .label-success {
-  background-color: #5cb85c; }
+  background-color: #28a745; }
   .label-success[href]:hover, .label-success[href]:focus {
-    background-color: #449d44; }
+    background-color: #1e7e34; }
 
 .label-info {
-  background-color: #5bc0de; }
+  background-color: #17a2b8; }
   .label-info[href]:hover, .label-info[href]:focus {
-    background-color: #31b0d5; }
+    background-color: #117a8b; }
 
 .label-warning {
-  background-color: #f0ad4e; }
+  background-color: #ffc107; }
   .label-warning[href]:hover, .label-warning[href]:focus {
-    background-color: #ec971f; }
+    background-color: #d39e00; }
 
 .label-danger {
-  background-color: #d9534f; }
+  background-color: #990000; }
   .label-danger[href]:hover, .label-danger[href]:focus {
-    background-color: #c9302c; }
+    background-color: #660000; }
 
 .badge {
   display: inline-block;
@@ -4767,14 +4661,14 @@ a.label:hover, a.label:focus {
   border-radius: 10px; }
   .badge:empty {
     display: none; }
-  .btn .badge, input[type="submit"] .badge, input[type="button"] .badge, button .badge, .button .badge {
+  .btn .badge, .button .badge {
     position: relative;
     top: -1px; }
-  .btn-xs .badge, .btn-group-xs > .btn .badge, .btn-group-xs > input[type="submit"] .badge, .btn-group-xs > input[type="button"] .badge, .btn-group-xs > button .badge, .btn-group-xs > .button .badge, .btn-group-xs > .btn .badge, .btn-group-xs > input[type="submit"] .badge, .btn-group-xs > input[type="button"] .badge, .btn-group-xs > button .badge, .btn-group-xs > .button .badge {
+  .btn-xs .badge, .btn-group-xs > .btn .badge, .btn-group-xs > .button .badge, .btn-group-xs > .btn .badge, .btn-group-xs > .button .badge {
     top: 0;
     padding: 1px 5px; }
   .list-group-item.active > .badge, .nav-pills > .active > a > .badge {
-    color: #337ab7;
+    color: #0088aa;
     background-color: #fff; }
   .list-group-item > .badge {
     float: right; }
@@ -4799,12 +4693,12 @@ a.badge:hover, a.badge:focus {
     color: inherit; }
   .jumbotron p {
     margin-bottom: 15px;
-    font-size: 24px;
+    font-size: 27px;
     font-weight: 200; }
   .jumbotron > hr {
     border-top-color: #d5d5d5; }
   .container .jumbotron, .container-fluid .jumbotron {
-    border-radius: 6px;
+    border-radius: 9px;
     padding-left: 10px;
     padding-right: 10px; }
   .jumbotron .container {
@@ -4818,16 +4712,16 @@ a.badge:hover, a.badge:focus {
         padding-right: 60px; }
       .jumbotron h1,
       .jumbotron .h1 {
-        font-size: 72px; } }
+        font-size: 81px; } }
 
 .thumbnail {
   display: block;
   padding: 4px;
-  margin-bottom: 24px;
+  margin-bottom: 27px;
   line-height: 1.5;
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 6px;
   -webkit-transition: border 0.2s ease-in-out;
   -o-transition: border 0.2s ease-in-out;
   transition: border 0.2s ease-in-out; }
@@ -4845,13 +4739,13 @@ a.badge:hover, a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #337ab7; }
+  border-color: #0088aa; }
 
 .alert {
   padding: 15px;
-  margin-bottom: 24px;
+  margin-bottom: 27px;
   border: 1px solid transparent;
-  border-radius: 4px; }
+  border-radius: 6px; }
   .alert h4 {
     margin-top: 0;
     color: inherit; }
@@ -4921,10 +4815,10 @@ a.thumbnail.active {
     background-position: 0 0; } }
 .progress {
   overflow: hidden;
-  height: 24px;
-  margin-bottom: 24px;
+  height: 27px;
+  margin-bottom: 27px;
   background-color: #d6d4d4;
-  border-radius: 4px;
+  border-radius: 6px;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); }
 
@@ -4933,7 +4827,7 @@ a.thumbnail.active {
   width: 0%;
   height: 100%;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 27px;
   color: #fff;
   text-align: center;
   background-color: #e87d1e;
@@ -4957,28 +4851,28 @@ a.thumbnail.active {
   animation: progress-bar-stripes 2s linear infinite; }
 
 .progress-bar-success {
-  background-color: #5cb85c; }
+  background-color: #28a745; }
   .progress-striped .progress-bar-success {
     background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
 
 .progress-bar-info {
-  background-color: #5bc0de; }
+  background-color: #17a2b8; }
   .progress-striped .progress-bar-info {
     background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
 
 .progress-bar-warning {
-  background-color: #f0ad4e; }
+  background-color: #ffc107; }
   .progress-striped .progress-bar-warning {
     background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
 
 .progress-bar-danger {
-  background-color: #d9534f; }
+  background-color: #990000; }
   .progress-striped .progress-bar-danger {
     background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -5042,12 +4936,12 @@ a.thumbnail.active {
   background-color: #fff;
   border: 1px solid #ddd; }
   .list-group-item:first-child {
-    border-top-right-radius: 4px;
-    border-top-left-radius: 4px; }
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px; }
   .list-group-item:last-child {
     margin-bottom: 0;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px; }
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px; }
 
 a.list-group-item,
 button.list-group-item {
@@ -5077,8 +4971,8 @@ button.list-group-item {
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
   z-index: 2;
   color: #fff;
-  background-color: #337ab7;
-  border-color: #337ab7; }
+  background-color: #0088aa;
+  border-color: #0088aa; }
   .list-group-item.active .list-group-item-heading,
   .list-group-item.active .list-group-item-heading > small,
   .list-group-item.active .list-group-item-heading > .small, .list-group-item.active:hover .list-group-item-heading,
@@ -5088,7 +4982,7 @@ button.list-group-item {
   .list-group-item.active:focus .list-group-item-heading > .small {
     color: inherit; }
   .list-group-item.active .list-group-item-text, .list-group-item.active:hover .list-group-item-text, .list-group-item.active:focus .list-group-item-text {
-    color: #c7ddef; }
+    color: #77e4ff; }
 
 .list-group-item-success {
   color: #3c763d;
@@ -5191,10 +5085,10 @@ button.list-group-item-danger {
   line-height: 1.3; }
 
 .panel {
-  margin-bottom: 24px;
+  margin-bottom: 27px;
   background-color: #fff;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 6px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
 
@@ -5209,15 +5103,15 @@ button.list-group-item-danger {
 .panel-heading {
   padding: 10px 15px;
   border-bottom: 1px solid transparent;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px; }
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px; }
   .panel-heading > .dropdown .dropdown-toggle {
     color: inherit; }
 
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 18px;
+  font-size: 21px;
   color: inherit; }
   .panel-title > a,
   .panel-title > small,
@@ -5230,8 +5124,8 @@ button.list-group-item-danger {
   padding: 10px 15px;
   background-color: #f5f5f5;
   border-top: 1px solid #ddd;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px; }
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px; }
 
 .panel > .list-group,
 .panel > .panel-collapse > .list-group {
@@ -5243,13 +5137,13 @@ button.list-group-item-danger {
   .panel > .list-group:first-child .list-group-item:first-child,
   .panel > .panel-collapse > .list-group:first-child .list-group-item:first-child {
     border-top: 0;
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px; }
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px; }
   .panel > .list-group:last-child .list-group-item:last-child,
   .panel > .panel-collapse > .list-group:last-child .list-group-item:last-child {
     border-bottom: 0;
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px; }
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px; }
 .panel > .panel-heading + .panel-collapse > .list-group .list-group-item:first-child {
   border-top-right-radius: 0;
   border-top-left-radius: 0; }
@@ -5271,14 +5165,14 @@ button.list-group-item-danger {
     padding-right: 15px; }
 .panel > .table:first-child,
 .panel > .table-responsive:first-child > .table:first-child {
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px; }
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px; }
   .panel > .table:first-child > thead:first-child > tr:first-child,
   .panel > .table:first-child > tbody:first-child > tr:first-child,
   .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child,
   .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child {
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px; }
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
     .panel > .table:first-child > thead:first-child > tr:first-child td:first-child,
     .panel > .table:first-child > thead:first-child > tr:first-child th:first-child,
     .panel > .table:first-child > tbody:first-child > tr:first-child td:first-child,
@@ -5287,7 +5181,7 @@ button.list-group-item-danger {
     .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
     .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
     .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child {
-      border-top-left-radius: 3px; }
+      border-top-left-radius: 5px; }
     .panel > .table:first-child > thead:first-child > tr:first-child td:last-child,
     .panel > .table:first-child > thead:first-child > tr:first-child th:last-child,
     .panel > .table:first-child > tbody:first-child > tr:first-child td:last-child,
@@ -5296,17 +5190,17 @@ button.list-group-item-danger {
     .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
     .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
     .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child {
-      border-top-right-radius: 3px; }
+      border-top-right-radius: 5px; }
 .panel > .table:last-child,
 .panel > .table-responsive:last-child > .table:last-child {
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px; }
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px; }
   .panel > .table:last-child > tbody:last-child > tr:last-child,
   .panel > .table:last-child > tfoot:last-child > tr:last-child,
   .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child,
   .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child {
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px; }
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
     .panel > .table:last-child > tbody:last-child > tr:last-child td:first-child,
     .panel > .table:last-child > tbody:last-child > tr:last-child th:first-child,
     .panel > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
@@ -5315,7 +5209,7 @@ button.list-group-item-danger {
     .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
     .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
     .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child {
-      border-bottom-left-radius: 3px; }
+      border-bottom-left-radius: 5px; }
     .panel > .table:last-child > tbody:last-child > tr:last-child td:last-child,
     .panel > .table:last-child > tbody:last-child > tr:last-child th:last-child,
     .panel > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
@@ -5324,7 +5218,7 @@ button.list-group-item-danger {
     .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
     .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
     .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child {
-      border-bottom-right-radius: 3px; }
+      border-bottom-right-radius: 5px; }
 .panel > .panel-body + .table,
 .panel > .panel-body + .table-responsive,
 .panel > .table + .panel-body,
@@ -5385,10 +5279,10 @@ button.list-group-item-danger {
   margin-bottom: 0; }
 
 .panel-group, .accordion {
-  margin-bottom: 24px; }
+  margin-bottom: 27px; }
   .panel-group .panel, .accordion .panel {
     margin-bottom: 0;
-    border-radius: 4px; }
+    border-radius: 6px; }
     .panel-group .panel + .panel, .accordion .panel + .panel {
       margin-top: 5px; }
   .panel-group .panel-heading, .accordion .panel-heading {
@@ -5417,18 +5311,18 @@ button.list-group-item-danger {
     border-bottom-color: #ddd; }
 
 .panel-primary {
-  border-color: #337ab7; }
+  border-color: #0088aa; }
   .panel-primary > .panel-heading {
     color: #fff;
-    background-color: #337ab7;
-    border-color: #337ab7; }
+    background-color: #0088aa;
+    border-color: #0088aa; }
     .panel-primary > .panel-heading + .panel-collapse > .panel-body {
-      border-top-color: #337ab7; }
+      border-top-color: #0088aa; }
     .panel-primary > .panel-heading .badge {
-      color: #337ab7;
+      color: #0088aa;
       background-color: #fff; }
   .panel-primary > .panel-footer + .panel-collapse > .panel-body {
-    border-bottom-color: #337ab7; }
+    border-bottom-color: #0088aa; }
 
 .panel-success {
   border-color: #d6e9c6; }
@@ -5517,7 +5411,7 @@ button.list-group-item-danger {
   margin-bottom: 20px;
   background-color: #f5f5f5;
   border: 1px solid #e3e3e3;
-  border-radius: 4px;
+  border-radius: 6px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05); }
   .well blockquote {
@@ -5526,15 +5420,15 @@ button.list-group-item-danger {
 
 .well-lg {
   padding: 24px;
-  border-radius: 6px; }
+  border-radius: 9px; }
 
 .well-sm {
   padding: 9px;
-  border-radius: 3px; }
+  border-radius: 2px; }
 
 .close {
   float: right;
-  font-size: 24px;
+  font-size: 27px;
   font-weight: bold;
   line-height: 1;
   color: #000;
@@ -5598,7 +5492,7 @@ button.close {
   background-color: #fff;
   border: 1px solid #999;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
+  border-radius: 9px;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   background-clip: padding-box;
@@ -5648,10 +5542,10 @@ button.close {
     display: table; }
   .modal-footer:after {
     clear: both; }
-  .modal-footer .btn + .btn, .modal-footer input[type="submit"] + .btn, .modal-footer input[type="button"] + .btn, .modal-footer button + .btn, .modal-footer .button + .btn, .modal-footer .btn + input[type="submit"], .modal-footer input[type="submit"] + input[type="submit"], .modal-footer input[type="button"] + input[type="submit"], .modal-footer button + input[type="submit"], .modal-footer .button + input[type="submit"], .modal-footer .btn + input[type="button"], .modal-footer input[type="submit"] + input[type="button"], .modal-footer input[type="button"] + input[type="button"], .modal-footer button + input[type="button"], .modal-footer .button + input[type="button"], .modal-footer .btn + button, .modal-footer input[type="submit"] + button, .modal-footer input[type="button"] + button, .modal-footer button + button, .modal-footer .button + button, .modal-footer .btn + .button, .modal-footer input[type="submit"] + .button, .modal-footer input[type="button"] + .button, .modal-footer button + .button, .modal-footer .button + .button {
+  .modal-footer .btn + .btn, .modal-footer .button + .btn, .modal-footer .btn + .button, .modal-footer .button + .button {
     margin-left: 5px;
     margin-bottom: 0; }
-  .modal-footer .btn-group .btn + .btn, .modal-footer .btn-group input[type="submit"] + .btn, .modal-footer .btn-group input[type="button"] + .btn, .modal-footer .btn-group button + .btn, .modal-footer .btn-group .button + .btn, .modal-footer .btn-group .btn + input[type="submit"], .modal-footer .btn-group input[type="submit"] + input[type="submit"], .modal-footer .btn-group input[type="button"] + input[type="submit"], .modal-footer .btn-group button + input[type="submit"], .modal-footer .btn-group .button + input[type="submit"], .modal-footer .btn-group .btn + input[type="button"], .modal-footer .btn-group input[type="submit"] + input[type="button"], .modal-footer .btn-group input[type="button"] + input[type="button"], .modal-footer .btn-group button + input[type="button"], .modal-footer .btn-group .button + input[type="button"], .modal-footer .btn-group .btn + button, .modal-footer .btn-group input[type="submit"] + button, .modal-footer .btn-group input[type="button"] + button, .modal-footer .btn-group button + button, .modal-footer .btn-group .button + button, .modal-footer .btn-group .btn + .button, .modal-footer .btn-group input[type="submit"] + .button, .modal-footer .btn-group input[type="button"] + .button, .modal-footer .btn-group button + .button, .modal-footer .btn-group .button + .button {
+  .modal-footer .btn-group .btn + .btn, .modal-footer .btn-group .button + .btn, .modal-footer .btn-group .btn + .button, .modal-footer .btn-group .button + .button {
     margin-left: -1px; }
   .modal-footer .btn-block + .btn-block {
     margin-left: 0; }
@@ -5721,7 +5615,7 @@ button.close {
   color: #fff;
   text-align: center;
   background-color: #000;
-  border-radius: 4px; }
+  border-radius: 6px; }
 
 .tooltip-arrow {
   position: absolute;
@@ -5802,12 +5696,12 @@ button.close {
   word-break: normal;
   word-spacing: normal;
   word-wrap: normal;
-  font-size: 16px;
+  font-size: 18px;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
+  border-radius: 9px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
   .popover.top {
@@ -5822,10 +5716,10 @@ button.close {
 .popover-title {
   margin: 0;
   padding: 8px 14px;
-  font-size: 16px;
+  font-size: 18px;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
-  border-radius: 5px 5px 0 0; }
+  border-radius: 8px 8px 0 0; }
 
 .popover-content {
   padding: 9px 14px; }
@@ -6063,7 +5957,7 @@ button.close {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
-  .carousel-caption .btn, .carousel-caption input[type="submit"], .carousel-caption input[type="button"], .carousel-caption button, .carousel-caption .button {
+  .carousel-caption .btn, .carousel-caption .button {
     text-shadow: none; }
 
 @media screen and (min-width: 576px) {
@@ -6342,7 +6236,7 @@ button.close {
 .breadcrumb {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 11px;
   padding: .75rem .75rem 0 1rem; }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -6359,343 +6253,538 @@ button.close {
   content: "\f054";
   color: #a1a0a4; }
 
+blockquote {
+  border: 0 none transparent; }
+
 /*
 * @atom bootstrap kitchensink
 * @section Bootstrap
 * @markup
-*  <div class="">
-*      <h3>Alert</h3>
-*      <div class="alert alert-warning" role="alert"><strong>Alert!</strong>This is a Bootstrap alert box </div>
-*      <h3>Badge</h3>
-*      <p>Example heading <span class="badge badge-default">badge</span></p>
-*      <p>Example heading <span class="badge badge-primary">.badge-primary</span></p>
-*      <h3>Popover</h3><a tabindex="0" class="btn btn-lg btn-primary" role="button" data-toggle="popover" data-trigger="focus" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="Dismissible popover">Popover on click</a>
-*      <br>
-*      <br>
-*      <br>
-*      <button type="button" class="btn btn-lg btn-primary" data-toggle="popover" data-trigger="hover" data-delay="300" title="" data-content="Popover description text" data-original-title="Popover title">Popover on hover</button>
-*      <h3>Card</h3>
-*      <div class="card" style="width: 20rem;"><img class="card-img-top w-100" src="https://dummyimage.com/600x400/563d7c/fff" alt="Card image cap">
-*          <div class="card-block">
-*              <h4 class="card-title">Card title</h4>
-*              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-*              <a href="#" class="btn btn-primary">Go somewhere</a></div>
-*      </div>
-*      <h3>Collapse - Accordian</h3>
-*      <div id="accordion" role="tablist" aria-multiselectable="true">
-*          <div class="card">
-*              <div class="card-header" role="tab" id="headingOne">
-*                  <h5 class="mb-0"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Accordian Group Item #1 </a></h5></div>
-*              <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
-*                  <div class="card-block">
-*                      <div class=" ">
-*                          <div class="col-sm-6"><img src="https://dummyimage.com/200x200/563d7c/fff" alt="" class="img-thumbnail img-fluid"></div>
-*                          <!-- /.col -->
-*                          <div class="col-sm-6">
-*                              <h2>Accordian Group Heading</h2>Accordian content description text. </div>
-*                          <!-- /.col -->
-*                      </div>
-*                      <!-- /.row -->
-*                  </div>
-*              </div>
-*          </div>
-*          <div class="card">
-*              <div class="card-header" role="tab" id="headingTwo">
-*                  <h5 class="mb-0"><a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Accordian Group Item #2 </a></h5></div>
-*              <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-*                  <div class="card-block">
-*                      <div class=" ">
-*                          <div class="col-sm-6"><img src="https://dummyimage.com/200x200/563d7c/fff" alt="" class="img-thumbnail img-fluid"></div>
-*                          <!-- /.col -->
-*                          <div class="col-sm-6">
-*                              <h2>Accordian Group Heading</h2>Accordian content description text. </div>
-*                          <!-- /.col -->
-*                      </div>
-*                      <!-- /.row -->
-*                  </div>
-*              </div>
-*          </div>
-*          <div class="card">
-*              <div class="card-header" role="tab" id="headingThree">
-*                  <h5 class="mb-0"><a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Accordian Group Item #3 </a></h5></div>
-*              <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
-*                  <div class="card-block">
-*                      <div class=" ">
-*                          <div class="col-sm-6"><img src="https://dummyimage.com/200x200/563d7c/fff" alt="" class="img-thumbnail img-fluid"></div>
-*                          <!-- /.col -->
-*                          <div class="col-sm-6">
-*                              <h2>Accordian Group Heading</h2>Accordian content description text. </div>
-*                          <!-- /.col -->
-*                      </div>
-*                      <!-- /.row -->
-*                  </div>
-*              </div>
-*          </div>
-*      </div>
-*      <h3>Input group</h3>
-*      <div class="input-group">
-*          <input type="text" class="form-control" placeholder="Search Products"><span class="input-group-btn"><button class="btn btn-primary" type="button">Search</button></span></div>
-*      <br>
-*      <div class="input-group input-group-lg">
-*          <input type="email" class="form-control" placeholder="Email Address"><span class="input-group-btn"><button class="btn btn-primary" type="button">Subscribe</button></span></div>
-*      <h3>List group with Custom Content</h3>
-*      <div class="list-group">
-*          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
-*              <div class="d-flex w-100 justify-content-between">
-*                  <h5 class="mb-1">Don't Make Me Think</h5>
-*                  <small>20 Comments</small></div>
-*              <p class="mb-1">Description text gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small>Category: Design</small></a>
-*          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-*              <div class="d-flex w-100 justify-content-between">
-*                  <h5 class="mb-1">Thinking with Type</h5><small class="text-muted">3 Comments</small></div>
-*              <p class="mb-1">Description text gravida at eget metus. Maecenas sed diam eget risus varius blandit</p><small class="text-muted">Category: Design</small></a>
-*          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-*              <div class="d-flex w-100 justify-content-between">
-*                  <h5 class="mb-1">Design of Everyday Things</h5><small class="text-muted">3 Comments</small></div>
-*              <p class="mb-1">Description text gravida at eget metus. Maecenas sed diam eget risus varius blandit</p><small class="text-muted">Category: Design</small></a>
-*      </div>
-*      <h3>Pills Nav</h3>
-*      <ul class="nav nav-pills">
-*          <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
-*          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-*              <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-*                  <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a></div>
-*          </li>
-*          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-*          <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
-*      </ul>
-*      <h3>Fill and Justify Pills Nav</h3>
-*      <div class=" ">
-*          <ul class="nav nav-pills nav-fill">
-*              <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
-*              <li class="nav-item"><a class="nav-link" href="#">Longer nav link</a></li>
-*              <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-*              <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
-*          </ul>
-*      </div>
-*      <div class="btn-group btn-group-lg" role="group" aria-label="Button group with nested dropdown">
-*          <button type="button" class="btn btn-secondary">1</button>
-*          <button type="button" class="btn btn-secondary">2</button>
-*          <div class="btn-group" role="group">
-*              <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown </button>
-*              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1"><a class="dropdown-item" href="#">Dropdown link</a><a class="dropdown-item" href="#">Dropdown link</a></div>
-*          </div>
-*      </div>
-*      <p></p>
-*      <h3>Collapse</h3>
-*      <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Link with href </a>
-*          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Button with data-target </button>
-*      </p>
-*      <div class="collapse" id="collapseExample">
-*          <div class="card card-block">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. </div>
-*      </div>
-*      <h3>Tooltips</h3><a href="#" data-toggle="tooltip" title="" data-original-title="Some tooltip text!">Tooltip on top</a>
-*      <br>
-*      <br>
-*      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" data-html="true" title="" data-original-title="<img src=https://dummyimage.com/100x80/563d7c/fff alt= class=img-thumbnail img-fluid><h4>Tooltip</h4> <u>with</u> <b>HTML</b>">HTML Tooltip on right </button>
-*  </div>
-*  <div class=" ">
-*      <h3>Breadcrumb</h3>
-*      <nav class="breadcrumb"><a class="breadcrumb-item" href="#">Home</a><a class="breadcrumb-item" href="#">Library</a><span class="breadcrumb-item active">Breadcrumb</span></nav>
-*      <h3>Carousel</h3>
-*      <div id="carousel-name" class="carousel slide" data-ride="carousel">
-*          <ol class="carousel-indicators">
-*              <li data-target="#carousel-name" data-slide-to="0" class="active"></li>
-*              <li data-target="#carousel-name" data-slide-to="1" class=""></li>
-*              <li data-target="#carousel-name" data-slide-to="2" class=""></li>
-*          </ol>
-*          <div class="carousel-inner" role="listbox">
-*              <div class="carousel-item active"><img class="d-block img-fluid" src="https://dummyimage.com/900x340/563d7c/fff&amp;text=+" alt="First slide">
-*                  <div class="carousel-caption d-none d-md-block">
-*                      <h3>Carousel Slider Title</h3>
-*                      <p>Description text to further describe the content of the slide image</p><a href="" class="btn btn-primary">Call to Action</a></div>
-*              </div>
-*              <div class="carousel-item"><img class="d-block img-fluid" src="https://dummyimage.com/900x340/563d7c/fff&amp;text=+" alt="Second slide">
-*                  <div class="carousel-caption d-none d-md-block">
-*                      <h3>Carousel Slider Title</h3>
-*                      <p>Description text to further describe the content of the slide image</p><a href="" class="btn btn-primary">Call to Action</a></div>
-*              </div>
-*              <div class="carousel-item"><img class="d-block img-fluid" src="https://dummyimage.com/900x340/563d7c/fff&amp;text=+" alt="Third slide">
-*                  <div class="carousel-caption d-none d-md-block">
-*                      <h3>Carousel Slider Title</h3>
-*                      <p>Description text to further describe the content of the slide image</p><a href="" class="btn btn-primary">Call to Action</a></div>
-*              </div>
-*          </div><a class="carousel-control-prev" href="#carousel-name" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-name" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a></div>
-*      <h3>Dropdowns</h3>
-*      <div class="btn-toolbar" role="toolbar">
-*          <div class="btn-group">
-*              <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Large button </button>
-*              <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-*                  <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a></div>
-*          </div>
-*          <!-- /btn-group -->
-*          <div class="btn-group ml-2">
-*              <button type="button" class="btn btn-lg btn-secondary">Large split button</button>
-*              <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
-*              <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-*                  <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a></div>
-*          </div>
-*          <!-- /btn-group -->
-*      </div>
-*      <!-- /btn-toolbar -->
-*      <br>
-*      <br>
-*      <div class="btn-toolbar" role="toolbar">
-*          <div class="btn-group">
-*              <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Small button </button>
-*              <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-*                  <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a></div>
-*          </div>
-*          <!-- /btn-group -->
-*          <div class="btn-group ml-2">
-*              <button type="button" class="btn btn-sm btn-secondary">Small split button</button>
-*              <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
-*              <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-*                  <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a></div>
-*          </div>
-*          <!-- /btn-group -->
-*      </div>
-*      <!-- /btn-toolbar -->
-*      <h3>Modal</h3>
-*      <!-- Button trigger modal -->
-*      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Launch demo modal </button>
-*      <!-- Modal -->
-*      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-*          <div class="modal-dialog" role="document">
-*              <div class="modal-content">
-*                  <div class="modal-header">
-*                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-*                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">├ù</span></button>
-*                  </div>
-*                  <div class="modal-body">
-*                      <h2>Modal body heading</h2>
-*                      <p>Modal body text description</p>
-*                  </div>
-*                  <div class="modal-footer">
-*                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-*                      <button type="button" class="btn btn-primary">Save changes</button>
-*                  </div>
-*              </div>
-*          </div>
-*      </div>
-*      <h3>Navbar</h3>
-*      <nav class="navbar navbar-toggleable-md navbar-dark bg-primary">
-*          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand" href="#">Navbar</a>
-*          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-*              <ul class="navbar-nav">
-*                  <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
-*                  <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
-*                  <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-*                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown link </a>
-*                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
-*                  </li>
-*              </ul>
-*          </div>
-*      </nav>
-*      <h3>Jumbotron</h3>
-*      <div class="jumbotron">
-*          <h1 class="display-3">Jumbotron</h1>
-*          <p class="lead">A component for calling extra attention to featured content or information.</p>
-*          <hr class="my-4">
-*          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-*          <p class="lead"><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-*      </div>
-*      <h3>List group</h3>
-*      <ul class="list-group">
-*          <li class="list-group-item justify-content-between">List group item #1 <span class="badge badge-default badge-pill">14</span></li>
-*          <li class="list-group-item justify-content-between">List group item #2 <span class="badge badge-default badge-pill">2</span></li>
-*          <li class="list-group-item justify-content-between">List group item #3 <span class="badge badge-warning badge-pill">1</span></li>
-*      </ul>
-*      <h3>Base Nav</h3>
-*      <ul class="nav">
-*          <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
-*          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-*          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-*          <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
-*      </ul>
-*      <h3>Tabs Nav</h3>
-*      <ul class="nav nav-tabs">
-*          <li class="nav-item"><a class="nav-link active" href="#tab-1" data-toggle="tab">Active</a></li>
-*          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-*              <div class="dropdown-menu"><a class="dropdown-item" href="#tab-2" data-toggle="tab">Tab 2</a><a class="dropdown-item" href="#tab-3" data-toggle="tab">Tab 3</a>
-*                  <div class="dropdown-divider"></div><a class="dropdown-item" href="#tab-4" data-toggle="tab">Tab 4</a></div>
-*          </li>
-*          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-*          <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
-*      </ul>
-*      <br>
-*      <!-- Tab panes -->
-*      <div class="tab-content">
-*          <div class="tab-pane active" id="tab-1" role="tabpanel">
-*              <h5>Tab #1 Content</h5>
-*              <p>Tab main content.</p>
-*          </div>
-*          <div class="tab-pane" id="tab-2" role="tabpanel">Tab #2 content</div>
-*          <div class="tab-pane" id="tab-3" role="tabpanel">Tab #3 content</div>
-*          <div class="tab-pane" id="tab-4" role="tabpanel">Tab #4 content</div>
-*      </div>
-*      <h3>Forms</h3>
-*      <form lpformnum="1">
-*          <div class=" ">
-*              <div class="col">
-*                  <div class="form-group">
-*                      <label for="exampleInputEmail1">Email address</label>
-*                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;"><small id="emailHelp" class="form-text text-muted">No Spam.</small></div>
-*                  <div class="form-group">
-*                      <label for="exampleSelect1">Example select</label>
-*                      <select class="form-control" id="exampleSelect1">
-*                          <option>1</option>
-*                          <option>2</option>
-*                          <option>3</option>
-*                      </select>
-*                  </div>
-*                  <fieldset class="form-group">
-*                      <legend>Radio buttons</legend>
-*                      <div class="form-check">
-*                          <label class="form-check-label">
-*                              <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">Option one </label>
-*                      </div>
-*                      <div class="form-check disabled">
-*                          <label class="form-check-label">
-*                              <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled="">Option two - disabled </label>
-*                      </div>
-*                  </fieldset>
-*              </div>
-*              <!-- /.col -->
-*              <div class="col">
-*                  <div class="form-group">
-*                      <label for="exampleInputPassword1">Password</label>
-*                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;"><small id="emailHelp" class="form-text text-muted"><a href="">Forgot Password?</a>/ <a href="">Sign Up</a></small></div>
-*                  <div class="form-group">
-*                      <label for="exampleSelect2">Multiple select</label>
-*                      <select multiple="" class="form-control" id="exampleSelect2">
-*                          <option>1</option>
-*                          <option>2</option>
-*                          <option>3</option>
-*                      </select>
-*                  </div>
-*                  <div class="form-check">
-*                      <label class="form-check-label">
-*                          <input type="checkbox" class="form-check-input">Checkbox </label>
-*                  </div>
-*                  <div class="form-check">
-*                      <label class="form-check-label">
-*                          <input type="checkbox" class="form-check-input" disabled="">Checkbox - disabled </label>
-*                  </div>
-*              </div>
-*              <!-- /.col -->
-*          </div>
-*          <!-- /.row -->
-*          <div class="form-group">
-*              <label for="exampleTextarea">Textarea</label>
-*              <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-*          </div>
-*          <div class="form-group">
-*              <label for="exampleInputFile">File input</label>
-*              <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp"><small id="fileHelp" class="form-text text-muted">Help message</small></div>
-*          <button type="submit" class="btn btn-primary">Submit</button>
-*      </form>
-*  </div>
+*   <div class="container">
+*   	<div class="jumbotron">
+*   		<h1>Kitchen Sink</h1>
+*   		<p>A quick preview of everything Bootstrap has to offer.</p>
+*   		<p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+*   	</div>
+*   	<div class="row">
+*   	<div class="panel panel-default" id="forms">
+*   		<div class="panel-heading">Forms
+*   		</div>
+*   		<div class="panel-body">
+*   			<form>
+*   				<fieldset>
+*   					<legend>Legend</legend>
+*   					<div class="form-group">
+*   						<label for="exampleInputEmail">Email address</label> <input type="text" class="form-control" id="exampleInputEmail" placeholder="Enter email">
+*   					</div>
+*   					<div class="form-group">
+*   						<label for="exampleInputPassword">Password</label> <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+*   					</div>
+*   					<div class="form-group">
+*   						<label for="exampleInputFile">File input</label> <input type="file" id="exampleInputFile">
+*   						<p class="help-block">Example block-level help text here.</p>
+*   					</div>
+*   					<div class="checkbox">
+*   						<label> <input type="checkbox">Check me out</label>
+*   					</div>
+*   					<button type="submit" class="btn btn-default">Submit</button>
+*   				</fieldset>
+*   			</form>
+*   			<hr>
+*   			<form class="form-inline">
+*   				<input type="text" class="form-control" placeholder="Email" style="width: 200px;"> <input type="password" class="form-control" placeholder="Password" style="width: 200px;">
+*   				<div class="checkbox">
+*   					<label> <input type="checkbox">Remember me</label>
+*   				</div>
+*   				<button type="submit" class="btn btn-default">Sign in</button>
+*   			</form>
+*   			<hr>
+*   			<form class="form-horizontal">
+*   				<div class="form-group">
+*   					<label for="inputEmail" class="col-lg-2 control-label">Email</label>
+*   					<div class="col-lg-10">
+*   						<input type="text" class="form-control" id="inputEmail" placeholder="Email">
+*   					</div>
+*   				</div>
+*   				<div class="form-group has-warning">
+*   					<label for="inputEmail" class="col-lg-2 control-label">Email</label>
+*   					<div class="col-lg-10">
+*   						<input type="text" class="form-control" id="inputEmail" placeholder="Email">
+*   					</div>
+*   				</div>
+*   				<div class="form-group has-error">
+*   					<label for="inputEmail" class="col-lg-2 control-label">Email</label>
+*   					<div class="col-lg-10">
+*   						<input type="text" class="form-control" id="inputEmail" placeholder="Email">
+*   					</div>
+*   				</div>
+*   				<div class="form-group has-success">
+*   					<label for="inputEmail" class="col-lg-2 control-label">Email</label>
+*   					<div class="col-lg-10">
+*   						<input type="text" class="form-control" id="inputEmail" placeholder="Email">
+*   					</div>
+*   				</div>
+*   				<div class="form-group">
+*   					<label for="inputPassword" class="col-lg-2 control-label">Password</label>
+*   					<div class="col-lg-10">
+*   						<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+*   						<div class="checkbox">
+*   							<label> <input type="checkbox">Remember me</label>
+*   						</div>
+*   						<button type="submit" class="btn btn-default">Sign in</button>
+*   					</div>
+*   				</div>
+*   			</form>
+*   		</div>
+*   	</div>
+*   	<div class="row">
+*   		<div class="col-lg-8">
+*   			<div class="panel panel-default" id="buttons">
+*   				<div class="panel-heading">Buttons
+*   				</div>
+*   				<div class="panel-body">
+*   					<p>
+*   						<button type="button" class="btn btn-lg btn-default">Default</button>
+*   						<button type="button" class="btn btn-lg btn-primary">Primary</button>
+*   						<button type="button" class="btn btn-lg btn-success">Success</button>
+*   						<button type="button" class="btn btn-lg btn-info">Info</button>
+*   						<button type="button" class="btn btn-lg btn-warning">Warning</button>
+*   						<button type="button" class="btn btn-lg btn-danger">Danger</button>
+*   						<button type="button" class="btn btn-lg btn-link">Link</button>
+*   					</p>
+*   					<p>
+*   						<button type="button" class="btn btn-default">Default</button>
+*   						<button type="button" class="btn btn-primary">Primary</button>
+*   						<button type="button" class="btn btn-success">Success</button>
+*   						<button type="button" class="btn btn-info">Info</button>
+*   						<button type="button" class="btn btn-warning">Warning</button>
+*   						<button type="button" class="btn btn-danger">Danger</button>
+*   						<button type="button" class="btn btn-link">Link</button>
+*   					</p>
+*   					<p>
+*   						<button type="button" class="btn btn-sm btn-default">Default</button>
+*   						<button type="button" class="btn btn-sm btn-primary">Primary</button>
+*   						<button type="button" class="btn btn-sm btn-success">Success</button>
+*   						<button type="button" class="btn btn-sm btn-info">Info</button>
+*   						<button type="button" class="btn btn-sm btn-warning">Warning</button>
+*   						<button type="button" class="btn btn-sm btn-danger">Danger</button>
+*   						<button type="button" class="btn btn-sm btn-link">Link</button>
+*   					</p>
+*   					<p>
+*   						<button type="button" class="btn btn-xs btn-default">Default</button>
+*   						<button type="button" class="btn btn-xs btn-primary">Primary</button>
+*   						<button type="button" class="btn btn-xs btn-success">Success</button>
+*   						<button type="button" class="btn btn-xs btn-info">Info</button>
+*   						<button type="button" class="btn btn-xs btn-warning">Warning</button>
+*   						<button type="button" class="btn btn-xs btn-danger">Danger</button>
+*   						<button type="button" class="btn btn-xs btn-link">Link</button>
+*   					</p>
+*   					<p>
+*   						<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-star"></span> Glyphicons!</button>
+*   						<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-edit"></span></button>
+*   						<button type="button" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span></button>
+*   						<button type="button" class="btn btn-info"><span class="glyphicon glyphicon-info-sign"></span></button>
+*   						<button type="button" class="btn btn-warning"><span class="glyphicon glyphicon-flash"></span></button>
+*   						<button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-ban-circle"></span></button>
+*   						<button type="button" class="btn btn-link"><span class="glyphicon glyphicon-arrow-right"></span></button>
+*   					</p>
+*   				</div>
+*   			</div>
+*   		</div>
+*   		<div class="col-lg-4">
+*   			<div class="panel panel-default" id="images">
+*   				<div class="panel-heading">Images
+*   				</div>
+*   				<div class="panel-body">
+*   					<p><img src="http://placehold.it/100x100" class="img-rounded"> <img src="http://placehold.it/100x100" class="img-circle"> <img src="http://placehold.it/100x100" class="img-thumbnail"></p>
+*   				</div>
+*   			</div>
+*   		</div>
+*   	</div>
+*   	<div class="row">
+*   		<div class="col-lg-3">
+*   			<div class="panel panel-default" id="dropdowns">
+*   				<div class="panel-heading">Dropdowns
+*   				</div>
+*   				<div class="panel-body clearfix">
+*   					<div class="dropdown">
+*   						<!-- Link or button to toggle dropdown -->
+*   						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static;">
+*   							<li class="dropdown-header">Dropdown header</li>
+*   							<li class="disabled">
+*   								<a tabindex="-1" href="#">Action</a>
+*   							</li>
+*   							<li>
+*   								<a tabindex="-1" href="#">Another action</a>
+*   							</li>
+*   							<li>
+*   								<a tabindex="-1" href="#">Something else here</a>
+*   							</li>
+*   							<li class="divider"></li>
+*   							<li>
+*   								<a tabindex="-1" href="#">Separated link</a>
+*   							</li>
+*   						</ul>
+*   					</div>
+*   				</div>
+*   			</div>
+*   		</div>
+*   		<div class="col-lg-9">
+*   			<div class="panel panel-default" id="input-groups">
+*   				<div class="panel-heading">Input Groups
+*   				</div>
+*   				<div class="panel-body">
+*   					<div class="input-group">
+*   						<span class="input-group-btn">                <button class="btn btn-default" type="button">Go!</button>              </span><input type="text" class="form-control" placeholder="Username">
+*   					</div>
+*   					<br>
+*   					<div class="input-group">
+*   						<input type="text" class="form-control input-large"> <span class="input-group-addon input-large">.00</span>
+*   					</div>
+*   					<br>
+*   					<div class="input-group">
+*   						<span class="input-group-addon">$</span><input type="text" class="form-control"> <span class="input-group-addon">.00</span>
+*   					</div>
+*   				</div>
+*   			</div>
+*   		</div>
+*   	</div>
+*   	<div class="row">
+*   		<div class="col-lg-6">
+*   			<div class="panel panel-default" id="navs">
+*   				<div class="panel-heading">Navs
+*   				</div>
+*   				<div class="panel-body clearfix">
+*   					<ul class="nav nav-tabs">
+*   						<li class="active">
+*   							<a href="#">Home</a>
+*   						</li>
+*   						<li>
+*   							<a href="#">About</a>
+*   						</li>
+*   					</ul>
+*   					<p></p>
+*   					<p></p>
+*   					<ul class="nav nav-pills">
+*   						<li class="active">
+*   							<a href="#">Home</a>
+*   						</li>
+*   						<li>
+*   							<a href="#">About</a>
+*   						</li>
+*   					</ul>
+*   					<p></p>
+*   					<p></p>
+*   					<ul class="nav nav-stacked nav-pills">
+*   						<li class="active">
+*   							<a href="#">Home</a>
+*   						</li>
+*   						<li>
+*   							<a href="#">About</a>
+*   						</li>
+*   					</ul>
+*   				</div>
+*   			</div>
+*   		</div>
+*   		<div class="col-lg-6" id="navbar">
+*   			<div class="panel panel-default">
+*   				<div class="panel-heading">Navbar
+*   				</div>
+*   				<div class="panel-body">
+*   					<p></p>
+*   					<div class="navbar">
+*   						<div class="navbar-header">
+*   							<a href="#" class="navbar-brand">Your Company</a>
+*   						</div>
+*   						<div class="navbar-collapse">
+*   							<ul class="nav navbar-nav navbar-right">
+*   								<li class="active">
+*   									<a href="#">Home</a>
+*   								</li>
+*   								<li>
+*   									<a href="#">About</a>
+*   								</li>
+*   								<li>
+*   									<a href="#">Contact</a>
+*   								</li>
+*   							</ul>
+*   						</div>
+*   					</div>
+*   					<div class="navbar navbar-inverse">
+*   						<div class="navbar-header">
+*   							<a href="#" class="navbar-brand">Your Company</a>
+*   						</div>
+*   						<div class="navbar-collapse">
+*   							<ul class="nav navbar-nav navbar-right">
+*   								<li class="active">
+*   									<a href="#">Home</a>
+*   								</li>
+*   								<li>
+*   									<a href="#">About</a>
+*   								</li>
+*   								<li>
+*   									<a href="#">Contact</a>
+*   								</li>
+*   							</ul>
+*   						</div>
+*   					</div>
+*   					<div class="navbar">
+*   						<div class="collapse navbar-collapse">
+*   							<a class="btn btn-primary navbar-btn">Navbar Button</a>
+*   							<p class="navbar-text navbar-right">Navbar Text</p>
+*   						</div>
+*   					</div>
+*   				</div>
+*   			</div>
+*   		</div>
+*   	</div>
+*   	<div class="row">
+*   		<div class="col-lg-6">
+*   			<div class="panel panel-default" id="pagination">
+*   				<div class="panel-heading">Pagination
+*   				</div>
+*   				<div class="panel-body">
+*   					<ul class="pagination" style="margin-right: 10px;">
+*   						<li>
+*   							<a href="#">Prev</a>
+*   						</li>
+*   						<li>
+*   							<a href="#">1</a>
+*   						</li>
+*   						<li>
+*   							<a href="#">2</a>
+*   						</li>
+*   						<li>
+*   							<a href="#">3</a>
+*   						</li>
+*   						<li>
+*   							<a href="#">4</a>
+*   						</li>
+*   						<li>
+*   							<a href="#">Next</a>
+*   						</li>
+*   					</ul>
+*   					<ul class="pagination pagination-lg">
+*   						<li>
+*   							<a href="#">Prev</a>
+*   						</li>
+*   						<li>
+*   							<a href="#">1</a>
+*   						</li>
+*   						<li>
+*   							<a href="#">2</a>
+*   						</li>
+*   						<li>
+*   							<a href="#">3</a>
+*   						</li>
+*   						<li>
+*   							<a href="#">4</a>
+*   						</li>
+*   						<li>
+*   							<a href="#">Next</a>
+*   						</li>
+*   					</ul>
+*   					<ul class="pager">
+*   						<li>
+*   							<a href="#">Prev</a>
+*   						</li>
+*   						<li>
+*   							<a href="#">Next</a>
+*   						</li>
+*   					</ul>
+*   				</div>
+*   			</div>
+*   			<div class="panel panel-default" id="labels">
+*   				<div class="panel-heading">Labels and Badges
+*   				</div>
+*   				<div class="panel-body">
+*   					<h3><span class="label label-default">Default</span>&nbsp;<span class="label label-success">Success</span>&nbsp;<span class="label label-warning">Warning</span>&nbsp;<span class="label label-danger">Danger</span>&nbsp;<span class="label label-info">Info</span></h3>
+*   					<p class="lead"><a href="#">Inbox <span class="badge">42</span></a></p>
+*   				</div>
+*   			</div>
+*   		</div>
+*   		<div class="col-lg-6">
+*   			<div class="panel panel-default" id="alerts">
+*   				<div class="panel-heading">Alerts
+*   				</div>
+*   				<div class="panel-body">
+*   					<div>
+*   						<div class="alert alert-danger">
+*   							<button type="button" class="close" data-dismiss="alert">&times;</button>
+*   							<strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+*   						</div>
+*   						<div class="alert alert-success">
+*   							<button type="button" class="close" data-dismiss="alert">&times;</button>
+*   							<strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+*   						</div>
+*   						<div class="alert alert-warning">
+*   							<button type="button" class="close" data-dismiss="alert">&times;</button>
+*   							<strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
+*   						</div>
+*   						<div class="alert alert-info">
+*   							<button type="button" class="close" data-dismiss="alert">&times;</button>
+*   							<strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
+*   						</div>
+*   						<div class="alert">
+*   							<button type="button" class="close" data-dismiss="alert">&times;</button>
+*   							<h4>Warning!</h4>
+*   							<p>This is a block style alert.</p>
+*   						</div>
+*   					</div>
+*   				</div>
+*   			</div>
+*   		</div>
+*   	</div>
+*   	<div class="row">
+*   		<div class="col-lg-6">
+*   			<div class="panel panel-default" id="progress">
+*   				<div class="panel-heading">Progress Bars
+*   				</div>
+*   				<div class="panel-body">
+*   					<div class="progress">
+*   						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="sr-only">60% Complete</span></div>
+*   					</div>
+*   					<div class="progress">
+*   						<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"><span class="sr-only">40% Complete (success)</span></div>
+*   					</div>
+*   					<div class="progress">
+*   						<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"><span class="sr-only">20% Complete</span></div>
+*   					</div>
+*   					<div class="progress">
+*   						<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"><span class="sr-only">60% Complete (warning)</span></div>
+*   					</div>
+*   					<div class="progress">
+*   						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"><span class="sr-only">80% Complete (danger)</span></div>
+*   					</div>
+*   					<div class="progress">
+*   						<div class="progress-bar progress-bar-success" style="width: 35%"><span class="sr-only">35% Complete (success)</span></div>
+*   						<div class="progress-bar progress-bar-warning" style="width: 20%"><span class="sr-only">20% Complete (warning)</span></div>
+*   						<div class="progress-bar progress-bar-danger" style="width: 10%"><span class='sr-only'>10% Complete (danger)</span></div>
+*   					</div>
+*   				</div>
+*   			</div>
+*   		</div>
+*   		<div class="col-lg-6">
+*   			<div class="panel panel-default" id="media-object">
+*   				<div class="panel-heading">Media Object
+*   				</div>
+*   				<div class="panel-body">
+*   					<p></p>
+*   					<div class="media">
+*   						<a class="pull-left" href="#"> <img class="media-object" src="https://app.divshot.com/img/placeholder-64x64.gif"> </a>
+*   						<div class="media-body">
+*   							<h4 class="media-heading">Media heading</h4>
+*   							<p>This is the content for your media.</p>
+*   							<div class="media">
+*   								<a class="pull-left" href="#"> <img class="media-object" src="https://app.divshot.com/img/placeholder-64x64.gif"> </a>
+*   								<div class="media-body">
+*   									<h4 class="media-heading">Media heading</h4>
+*   									<p>This is the content for your media.</p>
+*   								</div>
+*   							</div>
+*   						</div>
+*   					</div>
+*   				</div>
+*   			</div>
+*   		</div>
+*   	</div>
+*   	<div class="row">
+*   		<div class="col-lg-4">
+*   			<ul class="list-group">
+*   				<li class="list-group-item">Cras justo odio</li>
+*   				<li class="list-group-item">Dapibus ac facilisis in</li>
+*   				<li class="list-group-item">Morbi leo risus</li>
+*   				<li class="list-group-item">Porta ac consectetur ac</li>
+*   				<li class="list-group-item">Vestibulum at eros</li>
+*   			</ul>
+*   		</div>
+*   		<div class="col-lg-4">
+*   			<div class="list-group">
+*   				<a href="#" class="list-group-item active"> Cras justo odio </a><a href="#" class="list-group-item">Dapibus ac facilisis in </a><a href="#" class="list-group-item">Morbi leo risus </a><a href="#" class="list-group-item">Porta ac consectetur ac </a><a href="#" class="list-group-item">Vestibulum at eros </a>
+*   			</div>
+*   		</div>
+*   		<div class="col-lg-4">
+*   			<div class="list-group">
+*   				<a href="#" class="list-group-item active"><h4 class="list-group-item-heading">List group item heading</h4>          <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+*   				</a><a href="#" class="list-group-item"><h4 class="list-group-item-heading">List group item heading</h4>          <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p></a><a href="#" class="list-group-item">
+*   				<h4 class="list-group-item-heading">List group item heading</h4>          <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p></a>
+*   			</div>
+*   		</div>
+*   	</div>
+*   	<div class="row">
+*   		<div class="col-lg-3">
+*   			<div class="panel panel-primary" id="panels">
+*   				<div class="panel-heading">This is a header
+*   				</div>
+*   				<p class="panel-body">This is a panel</p>
+*   				<div class="panel-footer">This is a footer
+*   				</div>
+*   			</div>
+*   		</div>
+*   		<div class="col-lg-3">
+*   			<div class="panel panel-success">
+*   				<div class="panel-heading">This is a header
+*   				</div>
+*   				<div class="panel-body">This is a panel</div>
+*   				<div class="panel-footer">This is a footer
+*   				</div>
+*   			</div>
+*   		</div>
+*   		<div class="col-lg-3">
+*   			<div class="panel panel-danger">
+*   				<div class="panel-heading">This is a header
+*   				</div>
+*   				<div class="panel-body">This is a panel</div>
+*   				<div class="panel-footer">This is a footer
+*   				</div>
+*   			</div>
+*   		</div>
+*   		<div class="col-lg-3">
+*   			<div class="panel panel-warning">
+*   				<div class="panel-heading">This is a header
+*   				</div>
+*   				<div class="panel-body">This is a panel</div>
+*   				<div class="panel-footer">This is a footer
+*   				</div>
+*   			</div>
+*   		</div>
+*   	</div>
+*   	<div class="row">
+*   		<div class="col-lg-3">
+*   			<div class="panel panel-info">
+*   				<div class="panel-heading">This is a header
+*   				</div>
+*   				<p class="panel-body">This is a panel</p>
+*   				<div class="panel-footer">This is a footer
+*   				</div>
+*   			</div>
+*   		</div>
+*   		<div class="col-lg-3">
+*   			<div class="panel panel-default">
+*   				<div class="panel-heading">This is a header
+*   				</div>
+*   				<div class="panel-body">This is a panel</div>
+*   				<ul class="list-group list-group-flush">
+*   					<li class="list-group-item">First Item</li>
+*   					<li class="list-group-item">Second Item</li>
+*   					<li class="list-group-item">Third Item</li>
+*   				</ul>
+*   				<div class="panel-footer">This is a footer
+*   				</div>
+*   			</div>
+*   		</div>
+*   		<div class="col-lg-3">
+*   			<div class="well" id="wells">Default Well
+*   			</div>
+*   			<div class="well well-small">Small Well
+*   			</div>
+*   		</div>
+*   		<div class="col-lg-3">
+*   			<div class="well well-large">Large Padding Well
+*   			</div>
+*   		</div>
+*   	</div>
+*   </div>
 *
 **/
 html,
@@ -6713,11 +6802,17 @@ body {
 *  .display-[x] Produces large display sized text where x is a number 1 through 4
 *  a.tag  Produces the header tag in the dark teal color of the site with an underline on hover. 
 * @markup
-*  <h1>@{lipsum:4:words}</h1>
-*  <h2>@{lipsum:4:words} <a href="">@{lipsum:1:words}</a></h2>
-*  <h3>@{lipsum:4:words}</h3>
-*  <h4>@{lipsum:4:words}</h4>
-*  <h5>@{lipsum:4:words}</h5>
+*  <h1 class="page-header">Page Header
+*      <small>With Small Text</small>
+*  </h1>
+*  <h1>This is an h1 heading</h1>
+*  <h2>This is an h2 heading 
+*      <a href="">@{lipsum:1:words}</a>
+*  </h2>
+*  <h3>This is an h3 heading</h3>
+*  <h4>This is an h4 heading</h4>
+*  <h5>This is an h5 heading</h5>
+*  <h6>This is an h6 heading</h6>
 */
 h1 a, h2 a, h3 a {
   color: #0088aa;
@@ -6727,8 +6822,8 @@ h1 a, h2 a, h3 a {
     text-decoration: underline; }
 
 h1 {
-  font-family: 'Muli', Verdana, Helvetica, sans-serif;
-  font-weight: 700;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-weight: 400;
   color: #e87d1e; }
 
 h2 {
@@ -6804,6 +6899,15 @@ hr {
 .border-dashed {
   border: 3px #2f2f2f dashed !important; }
 
+/**
+* @atom Text Decoration
+* @section Typography
+* @markup
+*  <strong>Strong: @{lipsum:4:words}  <a href="">@{lipsum:1:words}</a></strong>
+*  <b>Bold: @{lipsum:4:words} <a href="">@{lipsum:1:words}</a></b>
+*  <small>Small: @{lipsum:4:words}  <a href="">@{lipsum:1:words}</a></small>
+*  <em>Em: @{lipsum:4:words}  <a href="">@{lipsum:1:words}</a></em>
+*/
 fieldset {
   margin: 0;
   padding: 0;
@@ -6942,18 +7046,18 @@ input {
 * @section Feed Back UI
 * @modifiers
 *  progress-bar-striped decorate the bar with a diagonal stripe to the progress bar
-*  progress-bar-animated animate the strips to show action
+*  active animate the strips to show action
 *  progress-bar-primary color the bar to blue
 *  progress-bar-secondary color the bar to dark grey
 * @markup
 *  <div class="progress">
-*    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+*    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
 *  </div><br/>
 *  <div class="progress">
-*    <div class="progress-bar progress-bar-primary progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+*    <div class="progress-bar progress-bar-primary progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
 *  </div><br/>
 *  <div class="progress">
-*    <div class="progress-bar progress-bar-secondary progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+*    <div class="progress-bar progress-bar-secondary progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
 *  </div>
 */
 .progress-bar.progress-bar-primary {
@@ -6961,6 +7065,24 @@ input {
 .progress-bar.progress-bar-secondary {
   background-color: #6f6b6f; }
 
+/**
+* Progress bars can be stacked to show levels of completion.
+*
+* @molecule Progress Bar Stacked
+* @section Feed Back UI
+* @markup
+*  <div class="progress">
+*    <div class="progress-bar progress-bar-success" style="width: 35%">
+*      <span class="sr-only">35% Complete (success)</span>
+*    </div>
+*    <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
+*      <span class="sr-only">20% Complete (warning)</span>
+*    </div>
+*    <div class="progress-bar progress-bar-danger" style="width: 10%">
+*      <span class="sr-only">10% Complete (danger)</span>
+*    </div>
+*  </div>
+**/
 /**
 * listing of blocks of information to be semanitic are wrapped in a ul.no-bullets 
 *
@@ -7009,12 +7131,31 @@ ul.no-bullets {
  *  .position-right-sm the float appears small up.
  *  .position-left-[size] floats the card to the left so text will wrap around the right when the veiw port is above the size.
  * @markup
- *  <div class="card notice position-right-md"><div class="card-body"><h1>Notice Block</h1><p>@{lipsum:10:words}</p><a class="btn btn-secondary btn-block">Action</a></div></div>
+ *  <div class="card notice position-right-md">
+ *    <div class="card-header"><h2>Notice Block</h2></div>
+ *    <div class="card-body">
+ *      <p>@{lipsum:10:words}</p>
+ *      <a class="btn btn-secondary btn-block">Action</a>
+ *    </div>
+ *  </div>
  *
  */
 .card.notice {
   background-color: #a4cded;
   border-color: #a4cded; }
+  .card.notice .card-header:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12.5px 0 12.5px 20px;
+    border-color: transparent transparent transparent #eceaea;
+    position: absolute;
+    left: 0; }
+  .card.notice .card-header * {
+    color: #047294;
+    text-transform: capitalize;
+    font-weight: normal; }
 
 .card {
   float: none;
@@ -7023,6 +7164,11 @@ ul.no-bullets {
   transition: width 1s ease-out;
   -webkit-transition: width 1s ease-out;
   -moz-transition: width 1s ease-out; }
+  .card .card-header {
+    text-align: center;
+    position: relative; }
+  .card .card-body {
+    padding: 0 1em 1.5em; }
   .card.position-right {
     float: right;
     clear: right;
@@ -7135,145 +7281,50 @@ ul.no-bullets {
  * @atom .btn\.button\button
  * @section Buttons & Links
  * @markup
- *  <div class="row">
- *    <div class="col-sm-4"><a class="btn">"A" tag decorated with .btn</a></div>
- *    <div class="col-sm-4"><a class="button">"A" tag decorated with .button</a></div>
- *    <div class="col-sm-4"><button> "BUTTON" tag</button></div>
- *  </div>
- *      <h3>Buttons</h3>
- *      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
- *      <div class="row">
- *          <div class="col-sm-6">
- *              <p>
- *                  <button type="button" class="btn btn-primary btn-sm">Primary</button>
- *              </p>
- *              <p>
- *                  <button type="button" class="btn btn-primary">Primary</button>
- *              </p>
- *              <p>
- *                  <button type="button" class="btn btn-primary btn-lg">Primary</button>
- *              </p>
- *              <p>
- *                  <button type="button" class="btn btn-secondary btn-sm">Secondary</button>
- *              </p>
- *              <p>
- *                  <button type="button" class="btn btn-secondary">Secondary</button>
- *              </p>
- *              <p>
- *                  <button type="button" class="btn btn-secondary btn-lg">Secondary</button>
- *              </p>
- *              <p>
- *                  <button type="button" class="btn btn-link">Link</button>
- *              </p>
- *          </div>
- *          <!-- .col -->
- *          <div class="col-sm-6">
- *              <p>
- *                  <button type="button" class="btn btn-outline-primary btn-sm">Primary Outline</button>
- *              </p>
- *              <p>
- *                  <button type="button" class="btn btn-outline-primary">Primary Outline</button>
- *              </p>
- *              <p>
- *                  <button type="button" class="btn btn-outline-primary btn-lg">Primary Outline</button>
- *              </p>
- *              <p>
- *                  <button type="button" class="btn btn-outline-secondary btn-sm">Secondary Outline</button>
- *              </p>
- *              <p>
- *                  <button type="button" class="btn btn-outline-secondary">Secondary Outline</button>
- *              </p>
- *              <p>
- *                  <button type="button" class="btn btn-outline-secondary btn-lg">Secondary Outline</button>
- *              </p>
- *          </div>
- *          <!-- .col -->
- *      </div>
- *      <!-- .row -->
- *      <h3>Button Group</h3>
- *      <p></p>
- *      <div class="btn-group btn-group-sm" role="group" aria-label="Button group with nested dropdown">
- *          <button type="button" class="btn btn-secondary">1</button>
- *          <button type="button" class="btn btn-secondary">2</button>
- *          <div class="btn-group" role="group">
- *              <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown </button>
- *              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1"><a class="dropdown-item" href="#">Dropdown link</a><a class="dropdown-item" href="#">Dropdown link</a></div>
- *          </div>
- *      </div>
- *      <p></p>
- *      <p></p>
- *      <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
- *          <button type="button" class="btn btn-secondary">1</button>
- *          <button type="button" class="btn btn-secondary">2</button>
- *          <div class="btn-group" role="group">
- *              <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown </button>
- *              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1"><a class="dropdown-item" href="#">Dropdown link</a><a class="dropdown-item" href="#">Dropdown link</a></div>
- *          </div>
- *      </div>
+ *  <div>
+ *		<button type="button" class="btn ">Undecorated</button>
+ *		<button type="button" class="btn btn-default">Default</button>
+ *		<button type="button" class="btn btn-primary">Primary</button>
+ *		<button type="button" class="btn btn-secondary">Secondary</button>
+ *		<button type="button" class="btn btn-success">Success</button>
+ *		<button type="button" class="btn btn-info">Info</button>
+ *		<button type="button" class="btn btn-warning">Warning</button>
+ *		<button type="button" class="btn btn-danger">Danger</button>
+ *		<button type="button" class="btn btn-link">Link</button>
+ *	</div>
  */
-.btn, input[type="submit"], input[type="button"], button, .button {
-  background: #a1a0a4;
-  /* Old browsers */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1YWVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjgzYWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-linear-gradient(top, #d6d4d4 0%, #a1a0a4 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a1a0a4), color-stop(100%, #a1a0a4));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #d6d4d4 0%, #a1a0a4 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #d6d4d4 0%, #a1a0a4 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #d6d4d4 0%, #a1a0a4 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, #d6d4d4 0%, #a1a0a4 100%);
-  /* W3C */ }
-  .btn:visited, input[type="submit"]:visited, input[type="button"]:visited, button:visited, .button:visited {
-    color: #2f2f2f; }
-  .btn:hover, input[type="submit"]:hover, input[type="button"]:hover, button:hover, .button:hover {
-    background: #a1a0a4;
-    /* Old browsers */
-    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1YWVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjgzYWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(top, #a1a0a4 0%, #d6d4d4 100%);
-    /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a1a0a4), color-stop(100%, #d6d4d4));
-    /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #a1a0a4 0%, #d6d4d4 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #a1a0a4 0%, #d6d4d4 100%);
-    /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #a1a0a4 0%, #d6d4d4 100%);
-    /* IE10+ */
-    background: linear-gradient(to bottom, #a1a0a4 0%, #d6d4d4 100%);
-    /* W3C */ }
+.btn, .button {
+  border: 0 none transparent; }
 
-.btn.btn-link, input.btn-link[type="submit"], input.btn-link[type="button"], button.btn-link, .btn-link.button {
+.btn-block {
+  display: inline-block; }
+
+.btn.btn-link, .btn-link.button {
   background: none transparent;
   border: none transparent 0px; }
 
-.btn.btn-outline-primary, input.btn-outline-primary[type="submit"], input.btn-outline-primary[type="button"], button.btn-outline-primary, .btn-outline-primary.button, .btn.btn-outline-secondary, input.btn-outline-secondary[type="submit"], input.btn-outline-secondary[type="button"], button.btn-outline-secondary, .btn-outline-secondary.button {
+.btn.btn-outline-primary, .btn-outline-primary.button, .btn.btn-outline-secondary, .btn-outline-secondary.button {
   background: none transparent; }
 
-.btn.btn-outline-primary, input.btn-outline-primary[type="submit"], input.btn-outline-primary[type="button"], button.btn-outline-primary, .btn-outline-primary.button {
+.btn.btn-outline-primary, .btn-outline-primary.button {
   border-color: #0088aa;
   color: #0088aa;
   background: none; }
-  .btn.btn-outline-primary:visited, input.btn-outline-primary[type="submit"]:visited, input.btn-outline-primary[type="button"]:visited, button.btn-outline-primary:visited, .btn-outline-primary.button:visited, .btn.btn-outline-primary:hover, input.btn-outline-primary[type="submit"]:hover, input.btn-outline-primary[type="button"]:hover, button.btn-outline-primary:hover, .btn-outline-primary.button:hover {
+  .btn.btn-outline-primary:visited, .btn-outline-primary.button:visited, .btn.btn-outline-primary:hover, .btn-outline-primary.button:hover {
     border-color: #047294;
     color: #047294;
     background-color: rgba(255, 255, 255, 0.2); }
 
-.btn.btn-outline-secondary, input.btn-outline-secondary[type="submit"], input.btn-outline-secondary[type="button"], button.btn-outline-secondary, .btn-outline-secondary.button {
+.btn.btn-outline-secondary, .btn-outline-secondary.button {
   border-color: #6f6b6f;
   color: #6f6b6f;
   background: none; }
-  .btn.btn-outline-secondary:visited, input.btn-outline-secondary[type="submit"]:visited, input.btn-outline-secondary[type="button"]:visited, button.btn-outline-secondary:visited, .btn-outline-secondary.button:visited, .btn.btn-outline-secondary:hover, input.btn-outline-secondary[type="submit"]:hover, input.btn-outline-secondary[type="button"]:hover, button.btn-outline-secondary:hover, .btn-outline-secondary.button:hover {
+  .btn.btn-outline-secondary:visited, .btn-outline-secondary.button:visited, .btn.btn-outline-secondary:hover, .btn-outline-secondary.button:hover {
     border-color: #2f2f2f;
     color: #2f2f2f;
     background-color: rgba(255, 255, 255, 0.2); }
 
-.btn-secondary {
+.btn.btn-secondary, .btn-secondary.button, .btn.btn-default, .btn-default.button {
   background: #a1a0a4;
   /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -7290,9 +7341,9 @@ ul.no-bullets {
   /* IE10+ */
   background: linear-gradient(to bottom, #d6d4d4 0%, #a1a0a4 100%);
   /* W3C */ }
-  .btn-secondary:visited {
+  .btn.btn-secondary:visited, .btn-secondary.button:visited, .btn.btn-secondary, .btn-secondary.button, .btn.btn-default:visited, .btn-default.button:visited, .btn.btn-default, .btn-default.button {
     color: #2f2f2f; }
-  .btn-secondary:hover {
+  .btn.btn-secondary:hover, .btn-secondary.button:hover, .btn.btn-secondary:active, .btn-secondary.button:active, .btn.btn-secondary:focus, .btn-secondary.button:focus, .btn.btn-default:hover, .btn-default.button:hover, .btn.btn-default:active, .btn-default.button:active, .btn.btn-default:focus, .btn-default.button:focus {
     background: #a1a0a4;
     /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -7308,9 +7359,10 @@ ul.no-bullets {
     background: -ms-linear-gradient(top, #a1a0a4 0%, #d6d4d4 100%);
     /* IE10+ */
     background: linear-gradient(to bottom, #a1a0a4 0%, #d6d4d4 100%);
-    /* W3C */ }
+    /* W3C */
+    color: #000; }
 
-.btn-primary {
+.btn.btn-primary, .btn-primary.button {
   background: #047294;
   /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -7327,9 +7379,9 @@ ul.no-bullets {
   /* IE10+ */
   background: linear-gradient(to bottom, #05aee5 0%, #047294 100%);
   /* W3C */ }
-  .btn-primary:visited {
+  .btn.btn-primary:visited, .btn-primary.button:visited {
     color: #fafafa; }
-  .btn-primary:hover {
+  .btn.btn-primary:hover, .btn-primary.button:hover {
     background: #047294;
     /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -7425,7 +7477,7 @@ a.link[href^="fax:"]:before {
 *   </div>
 */
 .user-status-container {
-  font-size: 11px;
+  font-size: 9px;
   color: #0088aa;
   line-height: 1.25em; }
   .user-status-container .user {
@@ -7497,7 +7549,7 @@ a.link[href^="fax:"]:before {
   background-color: #d6d4d4;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 16px; }
+  font-size: 18px; }
   .nav-utility .nav, .nav-utility .nav-item, .nav-utility .nav-link {
     display: block;
     width: 100%;
@@ -7616,7 +7668,7 @@ a.link[href^="fax:"]:before {
 .nav-primary {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   background: #a1a0a4;
   border-top: #ffc425 4px solid; }
   .nav-primary .nav, .nav-primary .nav-item, .nav-primary .nav-link {
@@ -7728,7 +7780,7 @@ a.link[href^="fax:"]:before {
       text-align: center; } }
   @media only screen and (min-width: 1024px) {
     .nav-primary {
-      font-size: 19px; } }
+      font-size: 22px; } }
   .nav-primary .dropdown-toggle::after {
     border: none 0 transparent; }
   .nav-primary .dropdown-menu {
@@ -7741,7 +7793,7 @@ a.link[href^="fax:"]:before {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
     font-weight: 700;
     text-align: left;
-    font-size: 16px;
+    font-size: 18px;
     padding: .5em 1em;
     color: #a1a0a4; }
     .nav-primary .dropdown-item:hover {
@@ -7763,9 +7815,9 @@ a.link[href^="fax:"]:before {
         text-decoration: none; }
       .nav-primary .dropdown-menu.alt .dropdown-item small {
         position: absolute;
-        font-size: 12px;
-        padding-top: 2px;
-        padding-bottom: 2px;
+        font-size: 11px;
+        padding-top: 3.5px;
+        padding-bottom: 3.5px;
         top: 10px;
         right: 1rem; }
       .nav-primary .dropdown-menu.alt .dropdown-item.alt {
@@ -7834,7 +7886,7 @@ a.link[href^="fax:"]:before {
   .nav-sub ul {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 18px;
     display: block;
     transition: max-height 1s ease-out;
     -webkit-transition: max-height 1s ease-out;
@@ -7916,7 +7968,7 @@ a.link[href^="fax:"]:before {
 /**
  * Toggle Button for the menu on mobile
  *
- * @atom Mobile Toggle
+ * @molecules Mobile Toggle
  * @section Nav > Mobile
  * @markup
  *   <div class="mobile-menu-toggle"><span class="text">Menu</span> <i class="fa fa-bars"></i></div>
@@ -8007,7 +8059,7 @@ a.link[href^="fax:"]:before {
  */
 .searchbar .input-group-addon, .searchbar input, .searchbar .input-group-btn {
   border-color: #0088aa; }
-.searchbar .input-group-addon.btn.btn-primary, .searchbar input.input-group-addon.btn-primary[type="submit"], .searchbar input.input-group-addon.btn-primary[type="button"], .searchbar button.input-group-addon.btn-primary, .searchbar .input-group-addon.btn-primary.button {
+.searchbar .input-group-addon.btn.btn-primary, .searchbar .input-group-addon.btn-primary.button {
   color: white; }
 .searchbar .input-group-addon {
   background-color: #a4cded;
@@ -8079,7 +8131,7 @@ address.vcard {
   address.vcard .org {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.3;
     display: inline-block;
     float: right;
@@ -8105,7 +8157,7 @@ address.vcard {
         float: none;
         display: block;
         text-align: center;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 1.3; } }
   address.vcard .contact:before {
     content: "";
@@ -8115,8 +8167,8 @@ address.vcard {
     color: #2f2f2f;
     background-color: #fafafa;
     border-color: #6f6b6f;
-    padding: 0.25rem 1rem;
-    font-size: 12px;
+    padding: 7px 0.875px;
+    font-size: 11px;
     line-height: 1;
     border-radius: 0.2rem;
     border-width: 1px;
@@ -8223,19 +8275,19 @@ address.vcard {
   .nav-social-button .nav-item:last-child {
     margin-right: 0; }
 .nav-social-button .nav-link {
-  height: 37px;
-  width: 37px;
-  padding: 8px;
+  height: 67px;
+  width: 67px;
+  padding: 20px;
   display: inline-block;
   text-align: center; }
   .nav-social-button .nav-link i {
     display: inline-block;
     color: #fafafa;
-    font-size: 21px;
+    font-size: 27px;
     text-align: center;
     line-height: 1;
-    width: 21px;
-    height: 21px; }
+    width: 27px;
+    height: 27px; }
 .nav-social-button.mono-teal .nav-item a {
   background-color: #0088aa; }
 .nav-social-button.mono-orange .nav-item a {
@@ -8245,13 +8297,13 @@ address.vcard {
 .nav-social-button.small .nav-item {
   margin: 0 2px 0; }
 .nav-social-button.small .nav-link {
-  height: 21px;
-  width: 21px;
-  padding: 2.5px; }
+  height: 27px;
+  width: 27px;
+  padding: 4.5px; }
   .nav-social-button.small .nav-link i {
-    width: 16px;
-    height: 16px;
-    font-size: 16px; }
+    width: 18px;
+    height: 18px;
+    font-size: 18px; }
 .nav-social-button.flex-row .nav-item {
   flex: 1 1 auto; }
 .nav-social-button.flex-row .nav-link {
@@ -8337,7 +8389,7 @@ address.vcard {
     padding: .25em; }
   .nav-footer .nav-link {
     padding: .25em 0;
-    font-size: 11px;
+    font-size: 9px;
     color: #2f2f2f;
     text-decoration: none;
     text-transform: uppercase; }
@@ -8442,7 +8494,7 @@ body, .body {
     #footer {
       padding: 12px 0 30px; } }
   #footer h2 {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.3;
     display: table-cell;
     height: auto;
@@ -8498,25 +8550,21 @@ body, .body {
   max-width: 400px;
   float: right; }
 #header .actions {
-  padding: 10px 1rem 10px;
-  height: 175px;
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-  justify-content: space-between; }
+  margin: 10px 1rem 10px;
+  position: relative; }
+  @media only screen and (min-width: 768px) {
+    #header .actions {
+      min-height: 115px; } }
+  @media only screen and (min-width: 1024px) {
+    #header .actions {
+      min-height: 175px; } }
 #header .nav-utility-position,
 #header .searchbar-position,
 #header .user-status-position {
   display: block;
-  flex: 0 1 100%; }
-#header .nav-utility-position {
-  flex: 0 1 20%; }
-#header .searchbar-position {
-  flex: 0 1 20%; }
+  clear: both;
+  float: none; }
 #header .user-status-position {
-  flex: 0 1 60%;
-  position: relative; }
-#header .user-status-container {
   position: absolute;
   bottom: 0;
   right: 0; }

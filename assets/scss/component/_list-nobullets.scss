@@ -41,3 +41,15 @@ ul.no-bullets{
         }
     }
 }
+
+/**
+* listing blocks can be decorated with images to both the right and left. 
+*
+* @molecule Media Block
+* @section Typography
+* @markup
+*  <div class="list-block">
+*  </div>
+**/
+.list-block{}
+.media a img{max-width:none;}

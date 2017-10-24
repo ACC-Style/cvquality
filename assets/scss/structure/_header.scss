@@ -47,31 +47,29 @@
         float:right;
     }
     .actions{
-        padding:10px 1rem 10px;
-        height:175px;
-        display: flex;
-        flex-direction:column;
-        align-content:space-between;
-        justify-content:space-between;
+        margin: 10px 1rem 10px;
+        position: relative;
+        @include bp(md){ min-height: 115px;}
+        @include bp(lg){ min-height: 175px;}
+       
+        
 
     }
     .nav-utility-position,
     .searchbar-position,
     .user-status-position{
         display:block; 
-        flex:0 1 100%;
+        clear:both;
+        float:none;
+       
     }
      .nav-utility-position{
-        flex:0 1 20%;
+       
      }
      .searchbar-position{
-         flex:0 1 20%;
+     
      }
      .user-status-position{
-         flex:0 1 60%;
-         position: relative;
-     }
-     .user-status-container{
         position: absolute;
         bottom: 0;
         right:0;

@@ -4,87 +4,22 @@
  * @atom .btn\.button\button
  * @section Buttons & Links
  * @markup
- *  <div class="row">
- *    <div class="col-sm-4"><a class="btn">"A" tag decorated with .btn</a></div>
- *    <div class="col-sm-4"><a class="button">"A" tag decorated with .button</a></div>
- *    <div class="col-sm-4"><button> "BUTTON" tag</button></div>
- *  </div>
- *      <h3>Buttons</h3>
- *      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
- *      <div class="row">
- *          <div class="col-sm-6">
- *              <p>
- *                  <button type="button" class="btn btn-primary btn-sm">Primary</button>
- *              </p>
- *              <p>
- *                  <button type="button" class="btn btn-primary">Primary</button>
- *              </p>
- *              <p>
- *                  <button type="button" class="btn btn-primary btn-lg">Primary</button>
- *              </p>
- *              <p>
- *                  <button type="button" class="btn btn-secondary btn-sm">Secondary</button>
- *              </p>
- *              <p>
- *                  <button type="button" class="btn btn-secondary">Secondary</button>
- *              </p>
- *              <p>
- *                  <button type="button" class="btn btn-secondary btn-lg">Secondary</button>
- *              </p>
- *              <p>
- *                  <button type="button" class="btn btn-link">Link</button>
- *              </p>
- *          </div>
- *          <!-- .col -->
- *          <div class="col-sm-6">
- *              <p>
- *                  <button type="button" class="btn btn-outline-primary btn-sm">Primary Outline</button>
- *              </p>
- *              <p>
- *                  <button type="button" class="btn btn-outline-primary">Primary Outline</button>
- *              </p>
- *              <p>
- *                  <button type="button" class="btn btn-outline-primary btn-lg">Primary Outline</button>
- *              </p>
- *              <p>
- *                  <button type="button" class="btn btn-outline-secondary btn-sm">Secondary Outline</button>
- *              </p>
- *              <p>
- *                  <button type="button" class="btn btn-outline-secondary">Secondary Outline</button>
- *              </p>
- *              <p>
- *                  <button type="button" class="btn btn-outline-secondary btn-lg">Secondary Outline</button>
- *              </p>
- *          </div>
- *          <!-- .col -->
- *      </div>
- *      <!-- .row -->
- *      <h3>Button Group</h3>
- *      <p></p>
- *      <div class="btn-group btn-group-sm" role="group" aria-label="Button group with nested dropdown">
- *          <button type="button" class="btn btn-secondary">1</button>
- *          <button type="button" class="btn btn-secondary">2</button>
- *          <div class="btn-group" role="group">
- *              <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown </button>
- *              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1"><a class="dropdown-item" href="#">Dropdown link</a><a class="dropdown-item" href="#">Dropdown link</a></div>
- *          </div>
- *      </div>
- *      <p></p>
- *      <p></p>
- *      <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
- *          <button type="button" class="btn btn-secondary">1</button>
- *          <button type="button" class="btn btn-secondary">2</button>
- *          <div class="btn-group" role="group">
- *              <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown </button>
- *              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1"><a class="dropdown-item" href="#">Dropdown link</a><a class="dropdown-item" href="#">Dropdown link</a></div>
- *          </div>
- *      </div>
+ *  <div>
+ *		<button type="button" class="btn ">Undecorated</button>
+ *		<button type="button" class="btn btn-default">Default</button>
+ *		<button type="button" class="btn btn-primary">Primary</button>
+ *		<button type="button" class="btn btn-secondary">Secondary</button>
+ *		<button type="button" class="btn btn-success">Success</button>
+ *		<button type="button" class="btn btn-info">Info</button>
+ *		<button type="button" class="btn btn-warning">Warning</button>
+ *		<button type="button" class="btn btn-danger">Danger</button>
+ *		<button type="button" class="btn btn-link">Link</button>
+ *	</div>
  */
 .btn { 
-	@include warmgrey-gradient;
-	&:visited{color:$off-black;}
-	&:hover{@include warmgrey-gradient-reverse;}
+	border:0 none transparent;
 }
+.btn-block{display:inline-block;}
 .btn.btn-link{
 	background:none transparent;
 	border:none transparent 0px;
@@ -113,29 +48,22 @@
 	}
 }
 
-input[type="submit"], input[type="button"], button,.button{
-	@extend .btn;
-}
-.btn-secondary{
+.btn.btn-secondary,.btn.btn-default{
 	@include warmgrey-gradient;
-	&:visited{color:$off-black;}
+	&:visited, &{color:$off-black;}
 
-	&:hover{@include warmgrey-gradient-reverse;}
+	&:hover,&:active,&:focus{@include warmgrey-gradient-reverse;color:#000;}
 }
 
-.btn-primary {
+.btn.btn-primary {
 	@include teal-gradient;
 	&:visited{color:$off-white;}
 	&:hover{@include teal-gradient-reverse;}
 }
 
-
-
-
-
-
-
-
+.button{
+	@extend .btn;
+}
 
 
 /*

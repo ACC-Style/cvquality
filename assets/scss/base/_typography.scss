@@ -13,11 +13,17 @@
 *  .display-[x] Produces large display sized text where x is a number 1 through 4
 *  a.tag  Produces the header tag in the dark teal color of the site with an underline on hover. 
 * @markup
-*  <h1>@{lipsum:4:words}</h1>
-*  <h2>@{lipsum:4:words} <a href="">@{lipsum:1:words}</a></h2>
-*  <h3>@{lipsum:4:words}</h3>
-*  <h4>@{lipsum:4:words}</h4>
-*  <h5>@{lipsum:4:words}</h5>
+*  <h1 class="page-header">Page Header
+*      <small>With Small Text</small>
+*  </h1>
+*  <h1>This is an h1 heading</h1>
+*  <h2>This is an h2 heading 
+*      <a href="">@{lipsum:1:words}</a>
+*  </h2>
+*  <h3>This is an h3 heading</h3>
+*  <h4>This is an h4 heading</h4>
+*  <h5>This is an h5 heading</h5>
+*  <h6>This is an h6 heading</h6>
 */
 
     %header-link {
@@ -33,7 +39,7 @@
 
     h1 {
         @extend %header-link;
-        @include font-display(700);
+        @include font("regular");
         color: $dark-orange;
     }
 
@@ -125,3 +131,14 @@ hr {
 .border-dashed {
     border: 3px $off-black dashed !important;
 }
+
+/**
+* @atom Text Decoration
+* @section Typography
+* @markup
+*  <strong>Strong: @{lipsum:4:words}  <a href="">@{lipsum:1:words}</a></strong>
+*  <b>Bold: @{lipsum:4:words} <a href="">@{lipsum:1:words}</a></b>
+*  <small>Small: @{lipsum:4:words}  <a href="">@{lipsum:1:words}</a></small>
+*  <em>Em: @{lipsum:4:words}  <a href="">@{lipsum:1:words}</a></em>
+*/
+strong{}

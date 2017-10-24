@@ -15,12 +15,34 @@
  *  .position-right-sm the float appears small up.
  *  .position-left-[size] floats the card to the left so text will wrap around the right when the veiw port is above the size.
  * @markup
- *  <div class="card notice position-right-md"><div class="card-body"><h1>Notice Block</h1><p>@{lipsum:10:words}</p><a class="btn btn-secondary btn-block">Action</a></div></div>
+ *  <div class="card notice position-right-md">
+ *    <div class="card-header"><h2>Notice Block</h2></div>
+ *    <div class="card-body">
+ *      <p>@{lipsum:10:words}</p>
+ *      <a class="btn btn-secondary btn-block">Action</a>
+ *    </div>
+ *  </div>
  *
  */
 .card.notice{
 	 background-color: $soft-blue;
 	 border-color:$soft-blue;
+	 .card-header:before{
+	 	content:"";
+	 	width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 12.5px 0 12.5px 20px;
+		border-color: transparent transparent transparent $soft-grey;
+		position:absolute;
+		left:0;
+
+	 }
+	 .card-header *{
+	 	color:$scrubteal-dark; 
+	 	text-transform:capitalize;
+	 	font-weight: normal;
+	 }
 }
 .card{
 	float:none;
@@ -29,6 +51,11 @@
 	transition:width 1s ease-out;
 	-webkit-transition:width 1s ease-out;
 	-moz-transition:width 1s ease-out;
+	.card-header{text-align:center;
+		position:relative;
+		
+	}
+	.card-body{padding:0 1em 1.25em;}
 
 	&.position-right{
 		float: right; clear:right; width:45%;margin-left:5%;margin-bottom:1em;

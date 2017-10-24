@@ -104,7 +104,7 @@ address.vcard {
     }
     .email,.tel{
         @include  button-variant($off-black,$off-white,$warm-grey-dark);
-        @include button-size($input-btn-padding-y, $input-btn-padding-x, ms(-1), 1, .2rem); 
+        @include button-size($padding-xs-horizontal,$padding-xs-vertical, ms(-1), 1, .2rem); 
         border-width:1px;
         border-style:solid;
         width:48%;

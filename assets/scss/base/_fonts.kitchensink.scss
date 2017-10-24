@@ -43,10 +43,10 @@
 	.font--dropcase_2x{color:$dark-orange;}
 	.font--lowercase{ text-transform: lowercase;}
 	.font--uppercase{ text-transform: uppercase;}
-	.ms12{@include baseline-font(18);}
-	.ms6{@include baseline-font(12);}
-	.ms4{@include baseline-font(8);}
-	.ms2{@include baseline-font(4);}
-	.ms1{@include baseline-font(2);}  
+	.ms12{@include baseline-font(12);}
+	.ms6{@include baseline-font(6);}
+	.ms4{@include baseline-font(4);}
+	.ms2{@include baseline-font(2);}
+	.ms1{@include baseline-font(1);}  
 	.ms{@include baseline-font(0);}           
 }
