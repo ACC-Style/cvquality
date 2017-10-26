@@ -4,6 +4,7 @@
 
 @import "helpers/flex";
 @import "base/modular-scale-typography";
+@import "base/html";
 @import "helpers/fixes";
 @import "base/fonts.kitchensink";
 @import "vendor/bootstrap.override/custom";
@@ -43,6 +44,10 @@
 @import "component/nav-social-buttons";
 @import "component/nav-footer";
 
+/*! Javascript Components */
+@import "component/carousel";
+
+/*! Layouts */
 @import "structure/page";
 @import "structure/footer";
 @import "structure/header";

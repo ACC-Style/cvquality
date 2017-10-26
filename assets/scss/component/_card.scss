@@ -151,7 +151,7 @@
  *    </header>
  *    <div class="card-body">
  *      <article class="blockquote">
- *        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+ *        <p>@{lipsum:15:words}</p>
  *        <cite class="blockquote-cite">Someone famous</cite>
  *      </article>
  *    </div>
@@ -249,7 +249,7 @@
  *    </header>
  *    <div class="card-body">
  *      <article class="blockquote">
- *        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+ *        <p>@{lipsum:15:words}</p>
  *        <cite class="blockquote-cite">Someone famous</cite>
  *      </article>
  *    </div>

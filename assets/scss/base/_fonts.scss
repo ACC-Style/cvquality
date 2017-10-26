@@ -7,7 +7,7 @@
 	@else if ($weight == regular){$weight:400;}
 	@else if ($weight == light){$weight:200;}
 	@else{$weight:$weight;}
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
   font-weight: $weight;
 }
 
@@ -27,7 +27,7 @@
 	@else if ($weight == regular){$weight:400;}
 	@else if ($weight == light){$weight:200;}
 	@else{$weight:$weight;}
-	font-family:  'Muli', Verdana, Helvetica, sans-serif;
+	font-family:  'Muli', Verdana, Helvetica, Arial, sans-serif;
 	font-weight: $weight;
 }
 

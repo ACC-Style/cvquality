@@ -1,0 +1,11 @@
+html{
+	all: initial;
+    display: block;
+    box-sizing: border-box;
+    @include font(normal);
+    line-height: $baseline-modifier;
+    font-size: $ms-base;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
