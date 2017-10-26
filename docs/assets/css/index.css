@@ -6962,6 +6962,73 @@ input {
     right: 0; }
 
 /**
+* @molecule Tables
+* @section Typography
+* @markup
+*   <table class="table table-hover">
+*   	<thead>
+*   	<tr>
+*   		<th>#</th>
+*   		<th>First Name</th>
+*   		<th>Tables</th>
+*   	</tr>
+*   	</thead>
+*   	<tbody>
+*   	<tr>
+*   		<td>1</td>
+*   		<td>Michael</td>
+*   		<td>Are formatted like this</td>
+*   	</tr>
+*   	<tr>
+*   		<td>2</td>
+*   		<td>Lucille</td>
+*   		<td>Do you like them?</td>
+*   	</tr>
+*   	<tr class="success">
+*   		<td>3</td>
+*   		<td>Success</td>
+*   		<td></td>
+*   	</tr>
+*   	<tr class="danger">
+*   		<td>4</td>
+*   		<td>Danger</td>
+*   		<td></td>
+*   	</tr>
+*   	<tr class="warning">
+*   		<td>5</td>
+*   		<td>Warning</td>
+*   		<td></td>
+*   	</tr>
+*   	<tr class="active">
+*   		<td>6</td>
+*   		<td>Active</td>
+*   		<td></td>
+*   	</tr>
+*   	</tbody>
+*   </table>
+*   <table class="table table-striped table-bordered table-condensed">
+*   	<thead>
+*   	<tr>
+*   		<th>#</th>
+*   		<th>First Name</th>
+*   		<th>Tables</th>
+*   	</tr>
+*   	</thead>
+*   	<tbody>
+*   	<tr>
+*   		<td>1</td>
+*   		<td>Michael</td>
+*   		<td>This one is bordered and condensed</td>
+*   	</tr>
+*   	<tr>
+*   		<td>2</td>
+*   		<td>Lucille</td>
+*   		<td>Do you still like it?</td>
+*   	</tr>
+*   	</tbody>
+*   </table>
+**/
+/**
 * Collapse page content with header.
 *
 * @structure Accordion
@@ -7119,56 +7186,22 @@ ul.no-bullets {
   .card h1, .card h2, .card h3, .card h4, .card h5, .card h6 {
     color: #2f2f2f; }
 
-/**
- * Notice cards are stylized cards with a soft blue background to stand out from surrounding text
- *
- * @molecule Notice 
- * @section Card 
- * @modifiers
- *  .position-right-[size] floats the card to the right so text will wrap around the left when the veiw port is above the size.
- *  .position-right-lg the float appears large up.
- *  .position-right-md the float appears medium up.
- *  .position-right-sm the float appears small up.
- *  .position-left-[size] floats the card to the left so text will wrap around the right when the veiw port is above the size.
- * @markup
- *  <div class="card notice position-right-md">
- *    <div class="card-header"><h2>Notice Block</h2></div>
- *    <div class="card-body">
- *      <p>@{lipsum:10:words}</p>
- *      <a class="btn btn-secondary btn-block">Action</a>
- *    </div>
- *  </div>
- *
- */
-.card.notice {
-  background-color: #a4cded;
-  border-color: #a4cded; }
-  .card.notice .card-header:before {
-    content: "";
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 12.5px 0 12.5px 20px;
-    border-color: transparent transparent transparent #eceaea;
-    position: absolute;
-    left: 0; }
-  .card.notice .card-header * {
-    color: #047294;
-    text-transform: capitalize;
-    font-weight: normal; }
-
 .card {
   float: none;
   width: 100%;
-  width: 100%;
+  margin: 0;
+  display: block;
+  padding-top: 1px;
   transition: width 1s ease-out;
   -webkit-transition: width 1s ease-out;
   -moz-transition: width 1s ease-out; }
   .card .card-header {
+    padding: 0 1em;
     text-align: center;
     position: relative; }
   .card .card-body {
-    padding: 0 1em 1.5em; }
+    padding: 0 1em 1.25em;
+    text-align: center; }
   .card.position-right {
     float: right;
     clear: right;
@@ -7221,8 +7254,75 @@ ul.no-bullets {
       margin-right: 1.5em;
       margin-bottom: 1em; } }
 
+/**
+ * Notice cards are stylized cards with a soft blue background and grey triangle to cause it to stand out from surrounding text
+ *
+ * @molecule Notice 
+ * @section Card 
+ * @modifiers
+ *  .position-right-[size] floats the card to the right so text will wrap around the left when the veiw port is above the size.
+ *  .position-right-lg the float appears large up.
+ *  .position-right-md the float appears medium up.
+ *  .position-right-sm the float appears small up.
+ *  .position-left-[size] floats the card to the left so text will wrap around the right when the veiw port is above the size.
+ * @markup
+ *  <div class="card notice position-right-md">
+ *   <h2 class="card-header triangle">Notice Block</h2>
+ *    <div class="card-body">
+ *      <p>@{lipsum:30:words}</p>
+ *      <a class="btn btn-secondary btn-block">Action</a>
+ *    </div>
+ *  </div>
+ *
+ */
+.card.notice .triangle:before, .card.info .triangle:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: .5em 0 .5em .75em;
+  position: absolute;
+  left: 0; }
+.card.notice .card-header, .card.info .card-header {
+  text-transform: capitalize;
+  font-weight: normal; }
+
+.card.notice {
+  background-color: #d2e6f6;
+  border-color: #a4cded; }
+  .card.notice .triangle:before {
+    border-color: transparent transparent transparent #eceaea; }
+  .card.notice .card-header {
+    color: #047294; }
+
+/**
+ * Info cards are stylized cards with a soft grey background with orange triangle to cause it to stand out from surrounding text
+ *
+ * @molecule Info 
+ * @section Card 
+ * @modifiers
+ *  .position-right-[size] floats the card to the right so text will wrap around the left when the veiw port is above the size.
+ *  .position-right-lg the float appears large up.
+ *  .position-right-md the float appears medium up.
+ *  .position-right-sm the float appears small up.
+ *  .position-left-[size] floats the card to the left so text will wrap around the right when the veiw port is above the size.
+ * @markup
+ *  <div class="card info position-left-md">
+ *    <h2 class="card-header triangle">Info Block</h2>
+ *    <div class="card-body">
+ *      <p>@{lipsum:15:words}</p>
+ *      <a class="btn btn-secondary btn-block">Action</a>
+ *    </div>
+ *  </div>
+ *
+ */
 .card.info {
-  background-color: #eceaea; }
+  background-color: #eceaea;
+  border-color: #d6d4d4; }
+  .card.info .triangle:before {
+    border-color: transparent transparent transparent #ffc425; }
+  .card.info .card-header {
+    color: #e87d1e; }
 
 /**
  * Events are containers for Event Data Type 
@@ -7242,38 +7342,115 @@ ul.no-bullets {
  * @section Card 
  * @modifiers
  *  .horizontal - alignment of image to the right of the testimonial
- *  .veriticle - alignment of image above the testimonial
  * @markup
- *  <div class="row"><div class="col-sm-6"><div class="card testimonial">
- *    <img class="card-img-top" src="@{image:300:200}"/>
+ *  <div class="card testimonial">
+ *    <header class="card-header">
+ *    	<img class="card-img img-circle img-thumbnail" src="@{image:200:200}"/>
+ *    </header>
  *    <div class="card-body">
- *      <blockquote class="blockquote mb-0">
+ *      <article class="blockquote">
  *        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
- *        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
- *      </blockquote>
+ *        <cite class="blockquote-cite">Someone famous</cite>
+ *      </article>
  *    </div>
- *  </div></div></div>
+ *  </div>
  *
  */
-.card.testimonial .blockquote p:before, .card.testimonial .blockquote p:after {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transform: translate(0, 0);
-  width: 1.28571429em;
-  text-align: center; }
-.card.testimonial .blockquote p:before {
-  margin-right: .5em;
-  content: "\f10d"; }
-.card.testimonial .blockquote p:after {
-  margin-left: .5em;
-  content: "\f10e"; }
-.card.testimonial .blockquote p + footer {
-  margin-top: -1em;
-  text-align: right; }
+.card.testimonial {
+  border: 1px solid #eceaea;
+  margin-top: 0; }
+  @media only screen and (min-width: 768px) {
+    .card.testimonial {
+      margin-top: 100px; } }
+  .card.testimonial .card-header {
+    background-color: #a4cded;
+    margin-bottom: 75px; }
+    @media only screen and (min-width: 768px) {
+      .card.testimonial .card-header {
+        margin-bottom: 0; } }
+  .card.testimonial .card-img {
+    margin: 20px auto -50px;
+    width: 100px;
+    height: 100px; }
+    @media only screen and (min-width: 768px) {
+      .card.testimonial .card-img {
+        margin: -100px auto 20px;
+        width: 200px;
+        height: 200px; } }
+  .card.testimonial .card-body {
+    padding: 10px 1em 1em;
+    position: relative; }
+  .card.testimonial .blockquote {
+    position: relative;
+    text-align: center; }
+  .card.testimonial .blockquote p:before, .card.testimonial .blockquote p:after, .card.testimonial .blockquote-cite:before, .card.testimonial .blockquote-cite:after {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    width: 1.28571429em;
+    text-align: center; }
+  .card.testimonial .blockquote p {
+    font-size: 18px; }
+    .card.testimonial .blockquote p:before, .card.testimonial .blockquote p:after {
+      color: #ffc425; }
+    .card.testimonial .blockquote p:before {
+      margin-right: .5em;
+      content: "\f10d"; }
+    .card.testimonial .blockquote p:after {
+      margin-left: .5em;
+      content: "\f10e"; }
+  .card.testimonial .blockquote-cite {
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    color: #a1a0a4;
+    bottom: -1.75em; }
+    @media only screen and (min-width: 768px) {
+      .card.testimonial .blockquote-cite {
+        bottom: -1.5em; } }
+    .card.testimonial .blockquote-cite:after {
+      margin-right: .5em;
+      content: "\f007"; }
+
+/**
+* Testemonials are containers for Testemonial Data Type 
+*
+* @molecule Testimonial Horizontal
+* @section Card 
+* @modifiers
+*  .horizontal - alignment of image to the right of the testimonial
+* @markup
+*  <div class="card testimonial horizontal">
+*    <header class="card-header">
+*    	<img class="card-img img-circle img-thumbnail" src="@{image:200:200}"/>
+*    </header>
+*    <div class="card-body">
+*      <article class="blockquote">
+*        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+*        <cite class="blockquote-cite">Someone famous</cite>
+*      </article>
+*    </div>
+*  </div>
+*
+*/
+@media only screen and (min-width: 768px) {
+  .card.testimonial.horizontal {
+    display: block;
+    margin-top: 0; }
+    .card.testimonial.horizontal .card-header, .card.testimonial.horizontal .card-body {
+      display: inline-block;
+      width: auto;
+      margin: 0; }
+    .card.testimonial.horizontal .card-img {
+      margin: 10px;
+      height: 125px;
+      width: 125px; }
+    .card.testimonial.horizontal .card-body {
+      margin: 0; } }
 
 /**
  * buttons are highly flexable and can be decorated by the modifiers to change size and color
@@ -7968,7 +8145,7 @@ a.link[href^="fax:"]:before {
 /**
  * Toggle Button for the menu on mobile
  *
- * @molecules Mobile Toggle
+ * @molecule Mobile Toggle
  * @section Nav > Mobile
  * @markup
  *   <div class="mobile-menu-toggle"><span class="text">Menu</span> <i class="fa fa-bars"></i></div>
