@@ -52,6 +52,7 @@
  *
  * @molecule Notice 
  * @section Card 
+ * @flag contained
  * @modifiers
  *  .position-right-[size] floats the card to the right so text will wrap around the left when the veiw port is above the size.
  *  .position-right-lg the float appears large up.
@@ -59,7 +60,7 @@
  *  .position-right-sm the float appears small up.
  *  .position-left-[size] floats the card to the left so text will wrap around the right when the veiw port is above the size.
  * @markup
- *  <div class="card notice position-right-md">
+ *  <div class="card notice">
  *   <h2 class="card-header triangle">Notice Block</h2>
  *    <div class="card-body">
  *      <p>@{lipsum:30:words}</p>
@@ -68,6 +69,7 @@
  *  </div>
  *
  */
+ .card.notice{}
 .card.notice, .card.info{
 	
 	 .triangle:before{
@@ -98,6 +100,7 @@
  *
  * @molecule Info 
  * @section Card 
+ * @flag contained
  * @modifiers
  *  .position-right-[size] floats the card to the right so text will wrap around the left when the veiw port is above the size.
  *  .position-right-lg the float appears large up.
@@ -105,7 +108,7 @@
  *  .position-right-sm the float appears small up.
  *  .position-left-[size] floats the card to the left so text will wrap around the right when the veiw port is above the size.
  * @markup
- *  <div class="card info position-left-md">
+ *  <div class="card info">
  *    <h2 class="card-header triangle">Info Block</h2>
  *    <div class="card-body">
  *      <p>@{lipsum:15:words}</p>
@@ -128,10 +131,11 @@
  *
  * @molecule Event 
  * @section Card 
+ * @flag contained
  * @modifiers
  *  .compressed arranges the container to take up less room.
  * @markup
- *  <div class="card event"><H1 class="card-body">Event TBD</H1></div>
+ *  <div class="card event"><H1 class="card-body">Event Todo</H1></div>
  *
  */	
 
@@ -142,6 +146,7 @@
  *
  * @molecule Testimonial 
  * @section Card 
+ * @flag contained
  * @modifiers
  *  .horizontal - alignment of image to the right of the testimonial
  * @markup
@@ -190,7 +195,10 @@
  	}
  	
 
- 	.blockquote{position:relative;text-align:center;}
+ 	.blockquote{
+ 		position:relative;
+ 		text-align:center;
+ 	}
  	.blockquote p,.blockquote-cite{
 		&:before,&:after{
 			display: inline-block;
@@ -240,6 +248,7 @@
  *
  * @molecule Testimonial Horizontal
  * @section Card 
+ * @flag contained
  * @modifiers
  *  .horizontal - alignment of image to the right of the testimonial
  * @markup
@@ -260,11 +269,14 @@
 	@include bp(md){
 		display: block;
 		margin-top:0;
+		display: table;
 		.card-header,.card-body{
-			display:table; 
-			width:auto;
-			margin:0;
-
+			display: table-cell;
+		    width: unset;
+		    padding: 10px;
+		    margin: 0;
+		    vertical-align: middle;
+		    float:none;
 		}
 		.card-img{
 			margin: 10px;
@@ -273,11 +285,16 @@
 
 		}
 		.card-header{
+			min-width: 160px;
 
 		}
 		.card-body{
-			margin:0;
+			text-align: left;
+			.blockquote-cite{float:right;}
 		}
-
+		.blockquote{
+			text-align: left;
+		}
+		.blockquote-cite{text-align:right;}
 	}
 }

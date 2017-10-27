@@ -47,7 +47,34 @@ body {
 
 .SG-component {
     margin-bottom: 50px;
+    padding-left:10px;
+    padding-right:10px;
+    + .SG-component{
+        margin-top: 20px;
+        border-top:1px dotted $light-orange;
+       
+    }
+    + .SG-row{ border-top:15px solid $soft-grey;}
     .SG-component__preview {
         margin-top: 20px;
     }
+    .SG-component__title{
+        font-size:ms(8);
+    }
+}
+
+.SG-table {
+
+  .SG-table__cell {
+    padding: 5px 0;
+    margin: 5px 0;
+    color: $off-black;
+  }
+
+  .SG-table__head {
+
+    color: $warm-grey-dark;
+    font-weight: 900;
+    border-bottom: 1px solid $scrubteal-light;
+  }
 }

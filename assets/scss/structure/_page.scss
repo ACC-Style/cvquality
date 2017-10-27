@@ -46,3 +46,29 @@
 }
 
 
+/**
+ * Page Layout of home
+ * 
+ * @layouts Page
+ * @section Layouts
+ * @flag full-width
+ * @markup
+ *  <div class="body">
+ *      <div class="wrapper container-fluid">
+ *           @{include:#header}
+ *           @{include:.mobile-menu-toggle-container}
+ *          <div class="row">@{include:.nav-primary}</div>
+ *          <div id="aux" class="row">@{include:.breadcrumb}</div>
+ *          <div id="layout">
+ *              <div class="page-content row">
+ *                  <div class="col-lg-12 "><h1>Sample Page</h1></div>
+ *                  <div class="col-lg-4 ">@{include:.card.notice}</div>
+ *                  <div class="col-lg-8">@{include:.carousel}</div>
+ *              </div>
+ *          </div>
+ *      </div>
+ *       @{include:#footer}
+ *  </div>
+ *  </div>
+ */
+.homepage{}

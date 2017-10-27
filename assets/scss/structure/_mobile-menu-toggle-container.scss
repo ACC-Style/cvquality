@@ -1,3 +1,25 @@
+.mobile-menu-toggle {
+    text-transform: uppercase;
+    cursor: pointer; 
+    text-align:right;
+    display: block;
+    position: relative;
+    .text{
+        @include font(700);
+        font-size: 1.25rem;
+        color: $scrubteal;
+        display: inline-block;
+        vertical-align: top;
+        padding: .5rem .25rem;
+    }
+    i.fa {
+        color: $warm-grey;
+        font-size: 2.125rem;
+        margin: .125rem;
+    }
+}
+
+
 /**
  * Container for the Menu Toggle for the Mobile Nav. ~Inline Style should be removed. Currently used so it will show on all screen dimensions~
  *
@@ -20,7 +42,7 @@
  *         </div>
  *      </div>
  *      <div class="col-md-5">
- *           @{include:.mobile-menu-toggle}
+ *           <div class="mobile-menu-toggle"><span class="text">Menu</span> <i class="fa fa-bars"></i></div>
  *      </div>
  *  </div>
  */

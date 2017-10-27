@@ -74,11 +74,15 @@ mixin component(component)
       div.SG-row.SG-row-full
         div.SG-gr-12.SG-no-gutter.SG-component__preview(class=meta.namespace)
           | !{component.markup}
-    else
-      if (component.flags && component.flags.inline)
+    else if (component.flags && component.flags.inline)
         div.SG-row.SG-row
           div.SG-gr-12.SG-component__preview.SG-component__preview--inline(class=meta.namespace)
             | !{component.markup}
+    else
+      if (component.flags && component.flags.contained)
+        div.SG-row.SG-row
+          div.SG-gr-4.SG-component__preview.SG-component__preview--contained(class=meta.namespace)
+            | !{component.markup}                        
       else
         div.SG-row
           div.SG-gr-12.SG-component__preview(class=meta.namespace)

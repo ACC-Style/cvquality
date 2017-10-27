@@ -198,8 +198,26 @@ body {
     display: inline-block; }
 
 .SG-component {
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px; }
+  .SG-component + .SG-component {
+    margin-top: 20px;
+    border-top: 1px dotted #ffc425; }
+  .SG-component + .SG-row {
+    border-top: 15px solid #eceaea; }
   .SG-component .SG-component__preview {
     margin-top: 20px; }
+  .SG-component .SG-component__title {
+    font-size: 36px; }
+
+.SG-table .SG-table__cell {
+  padding: 5px 0;
+  margin: 5px 0;
+  color: #2f2f2f; }
+.SG-table .SG-table__head {
+  color: #6f6b6f;
+  font-weight: 900;
+  border-bottom: 1px solid #05aee5; }
 
 /*# sourceMappingURL=styleguide.css.map */

@@ -59,6 +59,9 @@ Structure.prototype.getFlags = function() {
   if(raw_flags.indexOf('inline') !== -1) {
     flags.inline = true;
   }
+ if(raw_flags.indexOf('contained') !== -1) {
+    flags.contained = true;
+  }
   return flags;
 };
 
