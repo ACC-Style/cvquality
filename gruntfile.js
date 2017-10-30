@@ -49,7 +49,17 @@ module.exports = function(grunt) {
         watch: {
             css: {
                 files: 'assets/scss/**/*.scss',
-                tasks: ['sass','cssmin','copy', 'exec']
+                tasks: ['sass','cssmin','copy', 'exec'],
+                options:{livereload: true,}
+            },
+            html:{
+               files: 'docs/*.html',
+               task:[''],
+                options: {
+
+                  livereload: true,
+                },
+
             }
         }
   //       phantomcss: {

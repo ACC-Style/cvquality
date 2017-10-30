@@ -1,6 +1,6 @@
 .card {
 	border-radius:0;
-	h1,h2,h3,h4,h5,h6{color:$off-black;}
+	// h1,h2,h3,h4,h5,h6{color:$off-black;}
 
 }
 
@@ -14,13 +14,13 @@
 	-webkit-transition:width 1s ease-out;
 	-moz-transition:width 1s ease-out;
 	.card-header{
-		padding:0 1em;
+		padding:0 1rem;
 		text-align:center;
 		position:relative;
 		
 	}
 	.card-body{
-		padding:0 1em 1.25em;
+		padding:0 1rem 1.25rem;
 		text-align: center;
 	}
 
@@ -69,7 +69,7 @@
  *  </div>
  *
  */
- .card.notice{}
+.card.notice{}
 .card.notice, .card.info{
 	
 	 .triangle:before{
@@ -135,11 +135,75 @@
  * @modifiers
  *  .compressed arranges the container to take up less room.
  * @markup
- *  <div class="card event"><H1 class="card-body">Event Todo</H1></div>
+ *	<div class="card event">
+ *		<h2 class="card-header">@{lipsum:3:words}</h2>
+ *		<div class="card-body">
+ *			<div class="date">
+ *				<span class="day">12</span>
+ *				<span class="month">May</span>
+ *				<span class="year">2018</span>
+ *			</div>
+ *			@{lipsum:2:paragraphs}
+ *		</div>
+ *	</div>
  *
  */	
+.card.event{
+	border:$soft-grey 1px solid;
+	position:relative;
+	.card-header{
+		text-align: left;
+	}
+	.card-body{
+		text-align: left;
+	}
+	.date{
+		float:right;
+		max-width:160px;
+		min-width:110px;
+		margin:0px 0px 10px 10px;
+	}
+	.day{
+	}
+	.month{}
+	.year{
+	}
 
-.card.event{}
+}
+.event{
+	.date{
+		@include font("bold");
+		font-size: ms(4);
+		background-color:$off-white;
+		text-align: center;
+		border:4px solid $scrubteal;
+		display: block;
+		
+	}
+	.day,.month,.year{
+		display: block;
+		clear:both;
+		line-height: 1;
+	}
+	.day{
+		font-size: ms(8);
+		margin-top:3px;
+
+	}
+	.month{
+		font-size: ms(2);
+		margin-bottom:4px;
+
+	}
+	.year{
+		display: block;
+		width: 100%;
+		background-color:$scrubteal;
+		color:$off-white;
+		padding:4px 0 0;
+
+	}
+}
 
 /**
  * Testemonials are containers for Testemonial Data Type 
