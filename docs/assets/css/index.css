@@ -7581,7 +7581,7 @@ ul.no-bullets {
 * @markup
 *  <div class="card testimonial horizontal">
 *    <header class="card-header">
-*    	<img class="card-img img-circle img-thumbnail" src="@{image:200:200}"/>
+*    	<img class="card-img  img-thumbnail" src="@{image:200:200}"/>
 *    </header>
 *    <div class="card-body">
 *      <article class="blockquote">
