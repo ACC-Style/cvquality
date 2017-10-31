@@ -39,7 +39,7 @@
 
     h1 {
         @extend %header-link;
-        @include font("regular");
+        @include font("bold");
         color: $dark-orange;
     }
 

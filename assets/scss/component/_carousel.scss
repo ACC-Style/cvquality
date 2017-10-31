@@ -16,21 +16,21 @@
  *    <!-- Wrapper for slides -->
  *    <div class="carousel-inner" role="listbox">
  *      <div class="item active">
- *        <a><img src="@{image:900:500}"alt="..."></a>
+ *        <a><img src="@{image:630:420}"alt="..."></a>
  *        <div class="carousel-caption">
  *         <span class="title">@{lipsum:5:words}</span>
  *          @{lipsum:10:words}
  *        </div>
  *      </div>
  *      <div class="item">
- *        <a><img src="@{image:900:500}" alt="..."></a>
+ *        <a><img src="@{image:630:420}" alt="..."></a>
  *        <div class="carousel-caption">
  *         <span class="title">@{lipsum:7:words}</span>
  *          @{lipsum:13:words}
  *        </div>
  *      </div>
  *      <div class="item">
- *        <a><img src="@{image:900:500}" alt="..."></a>
+ *        <a><img src="@{image:630:420}" alt="..."></a>
  *        <div class="carousel-caption">
  *          <span class="title">@{lipsum:8:words}</span>
  *          @{lipsum:12:words}
@@ -50,6 +50,22 @@
  */
  .carousel{
     max-width: 900px;
+    position: relative;
+    &:before {
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top: (7/15) * 100%;
+    }
+    > .carousel-inner{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+  
     .carousel-indicators{
       display: flex;
       flex-direction: column;
@@ -107,7 +123,14 @@
         }
       }
     }
-    .carousel-inner{width:70%;}
+    .carousel-inner{
+      width:70%;
+      > .item{
+        width:100%;
+        height: 100%;
+        overflow: hidden;
+      }
+    }
     .carousel-control.right{right:30%;}
     .carousel-caption{
       .title{
@@ -122,7 +145,7 @@
        right:0;
        background-color:rgba(black,.75);
        line-height: $tight;
-       @include font-display("normal");
+       @include font-display(300);
         padding: 10px 1em 25px;
        text-align: left;
     }

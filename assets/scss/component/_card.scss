@@ -4,10 +4,12 @@
 	margin:0;
 	display:block;
 	padding-top:1px;
+	padding-bottom:1px;
 	transition:width 1s ease-out;
 	-webkit-transition:width 1s ease-out;
 	-moz-transition:width 1s ease-out;
 	border-color:$warm-grey-light;
+	background-color:white;
 	.card-header{
 		padding:0 1rem;
 		text-align:center;
@@ -30,7 +32,11 @@
 	.card-action{
 		padding:0 2rem 1.25rem;
 	}
-	.card-body + .card-action{margin-top:-.5rem;}
+	.card-body + .card-action{margin-top:-.75rem;}
+	>.card{
+		margin:0 1rem 1rem;
+		width:auto;
+	}
 
 	&.position-right{
 		float: right; clear:right; width:45%;margin-left:5%;margin-bottom:1em;
@@ -54,6 +60,49 @@
 	}
 
 	
+}
+/**
+ * Highlighted Cards are stylized cards with a soft blue background and changes all header sizes and text to a bit larger. These cards are used as hero area or of extra interst.
+ *
+ * @molecule Highlighted Card 
+ * @section Card 
+ * @flag contained
+ * @modifiers
+ *  .position-right-[size] floats the card to the right so text will wrap around the left when the veiw port is above the size.
+ *  .position-right-lg the float appears large up.
+ *  .position-right-md the float appears medium up.
+ *  .position-right-sm the float appears small up.
+ *  .position-left-[size] floats the card to the left so text will wrap around the right when the veiw port is above the size.
+ * @markup
+ *  <div class="card highlighted">
+ *   <h2 class="card-header">Highlighted Card</h2>
+ *    <div class="card-body">
+ *      <p>@{lipsum:30:words}</p>
+ *    </div>
+ *     <div class="card-action"> <a class="btn btn-primary btn-block">Action</a></div>
+ *  </div>
+ *
+ */
+.card.highlighted{
+	h1,h2,h3,h4{
+		line-height: $crunched;
+	}
+	h1,h3{
+		color:$dark-orange;
+	}
+	h2,h4{
+		color: $off-black;
+	}
+h2{font-size:ms(6);}
+h3{font-size:ms(5);}
+	h4{font-size:ms(4);}
+	p{font-size:ms(2);}
+	border-color:$soft-blue;
+	.card-header{text-transform:uppercase;@include font-display("regular");}
+	background-color:mix($soft-blue, white);
+	.card-header,.card-body{text-align:left;}
+	.card-action{padding-right:1em;padding-left:1em;}
+
 }
 /**
  * Info Cards are stylized cards with a warm grey background and changes all headers are bold.
@@ -82,7 +131,7 @@
 	.card-header{color:$off-black;font-weight:900; }
 	background-color:$warm-grey-light;
 	.card-header,.card-body{text-align:left;}
-	.card-action{}
+	.card-action{padding-right:1em;padding-left:1em;}
 
 }
 
@@ -395,3 +444,32 @@
 }
 
 
+/**
+ * The "Facility Card" is a combination of cards and ui to make the UI element that is found on the home page. 
+ *
+ * @structure Highlighted Card "Facility" 
+ * @section Card Stuctures 
+ * @flag contained
+ * @markup
+ *  <div class="card highlighted">
+ *   <h3 class="card-header">Does My Facility Participate?</h3>
+ *    <div class="card-body">
+ *      <p>Search for your facility by typing your <strong>facility name</strong> or <strong>participant ID</strong> below to create an ACC Quality Improvement for Institutions account.</p>
+ *		<div class="form-group">
+ *			<label for="exampleInputFacility">Search your Facility:</label>
+ *			<input type="email" class="form-control" id="exampleInputFacility" placeholder="Start Typing your facility name" autocomplete="on">
+ *		</div>
+ *    </div>
+ *     <div class="card-action"><a class="btn btn-primary btn-block">Search</a></div>
+ *     <div class="card">
+ *     	<h3 class="card-header">
+ *			Can't find your facility?
+ *		</h3>
+ *		<div class="card-body">
+ *			<p>If your facility is not a participant with NCDR or PINNACLE, please <a href="#" class="link">submit a request</a> to get more information and gain access. </p>
+ *		</div>
+ *     </div>
+ *  </div>
+ *
+ */
+ .featured.card{}
