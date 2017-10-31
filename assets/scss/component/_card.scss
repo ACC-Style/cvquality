@@ -1,9 +1,3 @@
-.card {
-	border-radius:0;
-	// h1,h2,h3,h4,h5,h6{color:$off-black;}
-
-}
-
 .card{
 	float:none;
 	width:100%;
@@ -13,16 +7,30 @@
 	transition:width 1s ease-out;
 	-webkit-transition:width 1s ease-out;
 	-moz-transition:width 1s ease-out;
+	border-color:$warm-grey-light;
 	.card-header{
 		padding:0 1rem;
 		text-align:center;
 		position:relative;
+		&.triangle:before{
+	 	content:"";
+	 	width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: .5em 0 .5em .75em;	
+		position:absolute;
+		left:0;
+	 }
 		
 	}
 	.card-body{
 		padding:0 1rem 1.25rem;
 		text-align: center;
 	}
+	.card-action{
+		padding:0 2rem 1.25rem;
+	}
+	.card-body + .card-action{margin-top:-.5rem;}
 
 	&.position-right{
 		float: right; clear:right; width:45%;margin-left:5%;margin-bottom:1em;
@@ -48,9 +56,40 @@
 	
 }
 /**
- * Notice cards are stylized cards with a soft blue background and grey triangle to cause it to stand out from surrounding text
+ * Info Cards are stylized cards with a warm grey background and changes all headers are bold.
  *
- * @molecule Notice 
+ * @molecule Info Card 
+ * @section Card 
+ * @flag contained
+ * @modifiers
+ *  .position-right-[size] floats the card to the right so text will wrap around the left when the veiw port is above the size.
+ *  .position-right-lg the float appears large up.
+ *  .position-right-md the float appears medium up.
+ *  .position-right-sm the float appears small up.
+ *  .position-left-[size] floats the card to the left so text will wrap around the right when the veiw port is above the size.
+ * @markup
+ *  <div class="card info">
+ *   <h2 class="card-header">Info Card</h2>
+ *    <div class="card-body">
+ *      <p>@{lipsum:30:words}</p>
+ *    </div>
+ *     <div class="card-action"> <a class="btn btn-primary btn-block">Action</a></div>
+ *  </div>
+ *
+ */
+.card.info{
+	border-color:$warm-grey;
+	.card-header{color:$off-black;font-weight:900; }
+	background-color:$warm-grey-light;
+	.card-header,.card-body{text-align:left;}
+	.card-action{}
+
+}
+
+/**
+ * Notice Cards are stylized cards with a soft blue background and grey triangle to cause it to stand out from surrounding text
+ *
+ * @molecule Notice Card 
  * @section Card 
  * @flag contained
  * @modifiers
@@ -61,26 +100,17 @@
  *  .position-left-[size] floats the card to the left so text will wrap around the right when the veiw port is above the size.
  * @markup
  *  <div class="card notice">
- *   <h2 class="card-header triangle">Notice Block</h2>
+ *   <h2 class="card-header triangle">Notice Card</h2>
  *    <div class="card-body">
  *      <p>@{lipsum:30:words}</p>
- *      <a class="btn btn-secondary btn-block">Action</a>
  *    </div>
+ *     <div class="card-action"> <a class="btn btn-primary btn-block">Action</a></div>
  *  </div>
  *
  */
 .card.notice{}
-.card.notice, .card.info{
-	
-	 .triangle:before{
-	 	content:"";
-	 	width: 0;
-		height: 0;
-		border-style: solid;
-		border-width: .5em 0 .5em .75em;	
-		position:absolute;
-		left:0;
-	 }
+.card.notice, .card.notice.alt{
+
 	 .card-header{
 	 	text-transform:capitalize;
 	 	font-weight: normal;
@@ -96,9 +126,9 @@
 
 }
 /**
- * Info cards are stylized cards with a soft grey background with orange triangle to cause it to stand out from surrounding text
+ * Notice Cards with the alt class modifies the style of notice cards by changing thie background to soft grey background with an orange triangle.
  *
- * @molecule Info 
+ * @molecule Notice Card Alt 
  * @section Card 
  * @flag contained
  * @modifiers
@@ -108,16 +138,16 @@
  *  .position-right-sm the float appears small up.
  *  .position-left-[size] floats the card to the left so text will wrap around the right when the veiw port is above the size.
  * @markup
- *  <div class="card info">
- *    <h2 class="card-header triangle">Info Block</h2>
+ *  <div class="card notice alt">
+ *    <h2 class="card-header triangle">Notice with .alt</h2>
  *    <div class="card-body">
  *      <p>@{lipsum:15:words}</p>
- *      <a class="btn btn-secondary btn-block">Action</a>
  *    </div>
+ *     <div class="card-action"> <a class="btn btn-secondary btn-block">Action</a></div>
  *  </div>
  *
  */
-.card.info{
+.card.notice.alt{
 	 background-color: $soft-grey;
 	 border-color:$warm-grey-light;
 	 .triangle:before{
@@ -127,9 +157,9 @@
 
 }
 /**
- * Events are containers for Event Data Type 
+ * Event Cards are containers for Event Data Type 
  *
- * @molecule Event 
+ * @molecule Event Card 
  * @section Card 
  * @flag contained
  * @modifiers
@@ -149,7 +179,8 @@
  *
  */	
 .card.event{
-	border:$soft-grey 1px solid;
+	border-style:solid;
+	border-width:1px;
 	position:relative;
 	.card-header{
 		text-align: left;
@@ -206,9 +237,9 @@
 }
 
 /**
- * Testemonials are containers for Testemonial Data Type 
+ * Testemonial Card are containers for Testemonial Data Type 
  *
- * @molecule Testimonial 
+ * @molecule Testimonial Card 
  * @section Card 
  * @flag contained
  * @modifiers
@@ -229,8 +260,8 @@
  */
 
  .card.testimonial{
-
- 	border:1px solid $soft-grey;
+	border-style:solid;
+	border-width:1px;
  	margin-top: 0;
  	@include bp(md){
 		margin-top:100px;
@@ -308,9 +339,9 @@
  }
 
  /**
- * Testemonials are containers for Testemonial Data Type 
+ * Horizontal Testimonial are compact containers for Testemonial Data Type 
  *
- * @molecule Testimonial Horizontal
+ * @molecule Testimonial Card (.horizontal)
  * @section Card 
  * @flag contained
  * @modifiers
@@ -362,3 +393,5 @@
 		.blockquote-cite{text-align:right;}
 	}
 }
+
+

@@ -7194,9 +7194,6 @@ ul.no-bullets {
       float: left; }
 
 .card {
-  border-radius: 0; }
-
-.card {
   float: none;
   width: 100%;
   margin: 0;
@@ -7204,14 +7201,27 @@ ul.no-bullets {
   padding-top: 1px;
   transition: width 1s ease-out;
   -webkit-transition: width 1s ease-out;
-  -moz-transition: width 1s ease-out; }
+  -moz-transition: width 1s ease-out;
+  border-color: #d6d4d4; }
   .card .card-header {
     padding: 0 1rem;
     text-align: center;
     position: relative; }
+    .card .card-header.triangle:before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: .5em 0 .5em .75em;
+      position: absolute;
+      left: 0; }
   .card .card-body {
     padding: 0 1rem 1.25rem;
     text-align: center; }
+  .card .card-action {
+    padding: 0 2rem 1.25rem; }
+  .card .card-body + .card-action {
+    margin-top: -.5rem; }
   .card.position-right {
     float: right;
     clear: right;
@@ -7265,9 +7275,40 @@ ul.no-bullets {
       margin-bottom: 1em; } }
 
 /**
- * Notice cards are stylized cards with a soft blue background and grey triangle to cause it to stand out from surrounding text
+ * Info Cards are stylized cards with a warm grey background and changes all headers are bold.
  *
- * @molecule Notice 
+ * @molecule Info Card 
+ * @section Card 
+ * @flag contained
+ * @modifiers
+ *  .position-right-[size] floats the card to the right so text will wrap around the left when the veiw port is above the size.
+ *  .position-right-lg the float appears large up.
+ *  .position-right-md the float appears medium up.
+ *  .position-right-sm the float appears small up.
+ *  .position-left-[size] floats the card to the left so text will wrap around the right when the veiw port is above the size.
+ * @markup
+ *  <div class="card info">
+ *   <h2 class="card-header">Info Card</h2>
+ *    <div class="card-body">
+ *      <p>@{lipsum:30:words}</p>
+ *    </div>
+ *     <div class="card-action"> <a class="btn btn-primary btn-block">Action</a></div>
+ *  </div>
+ *
+ */
+.card.info {
+  border-color: #a1a0a4;
+  background-color: #d6d4d4; }
+  .card.info .card-header {
+    color: #2f2f2f;
+    font-weight: 900; }
+  .card.info .card-header, .card.info .card-body {
+    text-align: left; }
+
+/**
+ * Notice Cards are stylized cards with a soft blue background and grey triangle to cause it to stand out from surrounding text
+ *
+ * @molecule Notice Card 
  * @section Card 
  * @flag contained
  * @modifiers
@@ -7278,23 +7319,15 @@ ul.no-bullets {
  *  .position-left-[size] floats the card to the left so text will wrap around the right when the veiw port is above the size.
  * @markup
  *  <div class="card notice">
- *   <h2 class="card-header triangle">Notice Block</h2>
+ *   <h2 class="card-header triangle">Notice Card</h2>
  *    <div class="card-body">
  *      <p>@{lipsum:30:words}</p>
- *      <a class="btn btn-secondary btn-block">Action</a>
  *    </div>
+ *     <div class="card-action"> <a class="btn btn-primary btn-block">Action</a></div>
  *  </div>
  *
  */
-.card.notice .triangle:before, .card.info .triangle:before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: .5em 0 .5em .75em;
-  position: absolute;
-  left: 0; }
-.card.notice .card-header, .card.info .card-header {
+.card.notice .card-header, .card.notice.alt .card-header {
   text-transform: capitalize;
   font-weight: normal; }
 
@@ -7307,9 +7340,9 @@ ul.no-bullets {
     color: #047294; }
 
 /**
- * Info cards are stylized cards with a soft grey background with orange triangle to cause it to stand out from surrounding text
+ * Notice Cards with the alt class modifies the style of notice cards by changing thie background to soft grey background with an orange triangle.
  *
- * @molecule Info 
+ * @molecule Notice Card Alt 
  * @section Card 
  * @flag contained
  * @modifiers
@@ -7319,27 +7352,27 @@ ul.no-bullets {
  *  .position-right-sm the float appears small up.
  *  .position-left-[size] floats the card to the left so text will wrap around the right when the veiw port is above the size.
  * @markup
- *  <div class="card info">
- *    <h2 class="card-header triangle">Info Block</h2>
+ *  <div class="card notice alt">
+ *    <h2 class="card-header triangle">Notice with .alt</h2>
  *    <div class="card-body">
  *      <p>@{lipsum:15:words}</p>
- *      <a class="btn btn-secondary btn-block">Action</a>
  *    </div>
+ *     <div class="card-action"> <a class="btn btn-secondary btn-block">Action</a></div>
  *  </div>
  *
  */
-.card.info {
+.card.notice.alt {
   background-color: #eceaea;
   border-color: #d6d4d4; }
-  .card.info .triangle:before {
+  .card.notice.alt .triangle:before {
     border-color: transparent transparent transparent #ffc425; }
-  .card.info .card-header {
+  .card.notice.alt .card-header {
     color: #e87d1e; }
 
 /**
- * Events are containers for Event Data Type 
+ * Event Cards are containers for Event Data Type 
  *
- * @molecule Event 
+ * @molecule Event Card 
  * @section Card 
  * @flag contained
  * @modifiers
@@ -7359,7 +7392,8 @@ ul.no-bullets {
  *
  */
 .card.event {
-  border: #eceaea 1px solid;
+  border-style: solid;
+  border-width: 1px;
   position: relative; }
   .card.event .card-header {
     text-align: left; }
@@ -7397,9 +7431,9 @@ ul.no-bullets {
   padding: 4px 0 0; }
 
 /**
- * Testemonials are containers for Testemonial Data Type 
+ * Testemonial Card are containers for Testemonial Data Type 
  *
- * @molecule Testimonial 
+ * @molecule Testimonial Card 
  * @section Card 
  * @flag contained
  * @modifiers
@@ -7419,7 +7453,8 @@ ul.no-bullets {
  *
  */
 .card.testimonial {
-  border: 1px solid #eceaea;
+  border-style: solid;
+  border-width: 1px;
   margin-top: 0; }
   @media only screen and (min-width: 768px) {
     .card.testimonial {
@@ -7479,9 +7514,9 @@ ul.no-bullets {
       content: "\f007"; }
 
 /**
-* Testemonials are containers for Testemonial Data Type 
+* Horizontal Testimonial are compact containers for Testemonial Data Type 
 *
-* @molecule Testimonial Horizontal
+* @molecule Testimonial Card (.horizontal)
 * @section Card 
 * @flag contained
 * @modifiers
