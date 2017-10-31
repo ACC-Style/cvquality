@@ -8830,7 +8830,9 @@ address.vcard {
  */
 .carousel {
   max-width: 900px;
-  position: relative; }
+  position: relative;
+  background: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/subtle_surface.png");
+  background-repeat: repeat; }
   .carousel:before {
     display: block;
     content: "";

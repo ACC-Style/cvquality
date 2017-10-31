@@ -51,6 +51,8 @@
  .carousel{
     max-width: 900px;
     position: relative;
+    background:url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/subtle_surface.png");
+    background-repeat: repeat;
     &:before {
       display: block;
       content: "";
