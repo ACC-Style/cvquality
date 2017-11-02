@@ -8143,7 +8143,8 @@ input {
   font-weight: 700;
   font-size: 14px;
   background: #a1a0a4;
-  border-top: #ffc425 4px solid; }
+  border-top: #ffc425 4px solid;
+  margin-bottom: .5rem; }
   .nav-primary .nav, .nav-primary .nav-item, .nav-primary .nav-link {
     display: block;
     width: 100%;
@@ -8235,25 +8236,28 @@ input {
     .nav-primary .nav-link:hover {
       color: #fff; }
   @media only screen and (min-width: 768px) {
-    .nav-primary > .nav {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      align-items: stretch;
-      align-content: strech; }
-    .nav-primary > .nav > .nav-item {
-      display: block;
-      width: unset;
-      flex: 1 1 auto; }
-    .nav-primary .nav-link {
-      width: unset; }
-    .nav-primary .nav-item + .nav-item {
-      border: none transparent 0; }
-    .nav-primary .nav-link {
-      text-align: center; } }
+    .nav-primary {
+      margin-bottom: .75rem; }
+      .nav-primary > .nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        align-content: strech; }
+      .nav-primary > .nav > .nav-item {
+        display: block;
+        width: unset;
+        flex: 1 1 auto; }
+      .nav-primary .nav-link {
+        width: unset; }
+      .nav-primary .nav-item + .nav-item {
+        border: none transparent 0; }
+      .nav-primary .nav-link {
+        text-align: center; } }
   @media only screen and (min-width: 1024px) {
     .nav-primary {
-      font-size: 18px; } }
+      font-size: 18px;
+      margin-bottom: 1rem; } }
   .nav-primary .dropdown-toggle::after {
     border: none 0 transparent; }
   .nav-primary .dropdown-menu {
@@ -9159,10 +9163,15 @@ body, .body {
     clear: both; }
 
 .page-content {
-  padding: 1rem 1rem 2rem; }
+  padding: .5rem  0 1rem; }
+  @media only screen and (min-width: 768px) {
+    .page-content {
+      padding: .5rem 1rem 2rem; } }
   .page-content + .page-content {
-    padding-top: 0;
-    margin-top: -1rem; }
+    padding-top: 0; }
+    @media only screen and (min-width: 768px) {
+      .page-content + .page-content {
+        margin-top: -1rem; } }
 
 /**
  * Home page layout uses special cards to make more of a varried typography which doesn't exsist in sub pages. 
@@ -9203,8 +9212,8 @@ body, .body {
  *                  </div>
  *              </div>           
  *          </div>
- *      </div>
  *       @{include:#footer}
+ *      </div>
  *  </div>
  *  </div>
  */
