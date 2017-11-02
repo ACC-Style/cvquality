@@ -10,6 +10,7 @@
 	-moz-transition:width 1s ease-out;
 	border-color:$warm-grey-light;
 	background-color:white;
+	position:relative;
 	.card-header{
 		padding:0 1rem;
 		text-align:center;
@@ -59,31 +60,25 @@
 		&.position-left,&.position-left-sm,&.position-left-md,&.position-left-lg{float: left; clear:left; width:20%;margin-right:1.5em;margin-bottom:1em;}
 	}
 
-	
 }
+
 /**
  * Highlighted Cards are stylized cards with a soft blue background and changes all header sizes and text to a bit larger. These cards are used as hero area or of extra interst.
  *
  * @molecule Highlighted Card 
  * @section Card 
  * @flag contained
- * @modifiers
- *  .position-right-[size] floats the card to the right so text will wrap around the left when the veiw port is above the size.
- *  .position-right-lg the float appears large up.
- *  .position-right-md the float appears medium up.
- *  .position-right-sm the float appears small up.
- *  .position-left-[size] floats the card to the left so text will wrap around the right when the veiw port is above the size.
  * @markup
  *  <div class="card highlighted">
- *   <h2 class="card-header">Highlighted Card</h2>
+ *   <h3 class="card-header">Highlighted Card</h3>
  *    <div class="card-body">
  *      <p>@{lipsum:30:words}</p>
  *    </div>
- *     <div class="card-action"> <a class="btn btn-primary btn-block">Action</a></div>
+ *     <div class="card-action card-footer"> <a class="btn btn-primary btn-block">Action</a></div>
  *  </div>
  *
  */
-.card.highlighted{
+.highlighted.card{
 	h1,h2,h3,h4{
 		line-height: $crunched;
 	}
@@ -126,7 +121,7 @@ h3{font-size:ms(5);}
  *  </div>
  *
  */
-.card.info{
+.info.card{
 	border-color:$warm-grey;
 	.card-header{color:$off-black;font-weight:900; }
 	background-color:$warm-grey-light;
@@ -481,11 +476,11 @@ h3{font-size:ms(5);}
  * @flag contained
  * @markup
  *  <div class="card highlighted undecorated">
- *   <h3 class="card-header">Highlighted Card</h3>
+ *   <h3 class="card-header">Undecorated Highlight Card</h3>
  *    <div class="card-body">
- *      <p>@{lipsum:30:words}</p>
+ *      <p>@{lipsum:20:words}</p>
  *    </div>
- *     <div class="card-action"> <a class="btn btn-primary btn-block">Action</a></div>
+ *     <div class="card-action card-footer"> <a class="btn btn-primary btn-block">Action</a></div>
  *  </div>
  *
  *

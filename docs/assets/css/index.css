@@ -7325,7 +7325,8 @@ input {
   -webkit-transition: width 1s ease-out;
   -moz-transition: width 1s ease-out;
   border-color: #d6d4d4;
-  background-color: white; }
+  background-color: white;
+  position: relative; }
   .card .card-header {
     padding: 0 1rem;
     text-align: center;
@@ -7406,46 +7407,40 @@ input {
  * @molecule Highlighted Card 
  * @section Card 
  * @flag contained
- * @modifiers
- *  .position-right-[size] floats the card to the right so text will wrap around the left when the veiw port is above the size.
- *  .position-right-lg the float appears large up.
- *  .position-right-md the float appears medium up.
- *  .position-right-sm the float appears small up.
- *  .position-left-[size] floats the card to the left so text will wrap around the right when the veiw port is above the size.
  * @markup
  *  <div class="card highlighted">
- *   <h2 class="card-header">Highlighted Card</h2>
+ *   <h3 class="card-header">Highlighted Card</h3>
  *    <div class="card-body">
  *      <p>@{lipsum:30:words}</p>
  *    </div>
- *     <div class="card-action"> <a class="btn btn-primary btn-block">Action</a></div>
+ *     <div class="card-action card-footer"> <a class="btn btn-primary btn-block">Action</a></div>
  *  </div>
  *
  */
-.card.highlighted {
+.highlighted.card {
   border-color: #a4cded;
   background-color: #d2e6f6; }
-  .card.highlighted h1, .card.highlighted h2, .card.highlighted h3, .card.highlighted h4 {
+  .highlighted.card h1, .highlighted.card h2, .highlighted.card h3, .highlighted.card h4 {
     line-height: 1.15; }
-  .card.highlighted h1, .card.highlighted h3 {
+  .highlighted.card h1, .highlighted.card h3 {
     color: #e87d1e; }
-  .card.highlighted h2, .card.highlighted h4 {
+  .highlighted.card h2, .highlighted.card h4 {
     color: #2f2f2f; }
-  .card.highlighted h2 {
+  .highlighted.card h2 {
     font-size: 28px; }
-  .card.highlighted h3 {
+  .highlighted.card h3 {
     font-size: 25px; }
-  .card.highlighted h4 {
+  .highlighted.card h4 {
     font-size: 22px; }
-  .card.highlighted p {
+  .highlighted.card p {
     font-size: 18px; }
-  .card.highlighted .card-header {
+  .highlighted.card .card-header {
     text-transform: uppercase;
     font-family: 'Muli', Verdana, Helvetica, Arial, sans-serif;
     font-weight: 400; }
-  .card.highlighted .card-header, .card.highlighted .card-body {
+  .highlighted.card .card-header, .highlighted.card .card-body {
     text-align: left; }
-  .card.highlighted .card-action {
+  .highlighted.card .card-action {
     padding-right: 1em;
     padding-left: 1em; }
 
@@ -7471,15 +7466,15 @@ input {
  *  </div>
  *
  */
-.card.info {
+.info.card {
   border-color: #a1a0a4;
   background-color: #d6d4d4; }
-  .card.info .card-header {
+  .info.card .card-header {
     color: #2f2f2f;
     font-weight: 900; }
-  .card.info .card-header, .card.info .card-body {
+  .info.card .card-header, .info.card .card-body {
     text-align: left; }
-  .card.info .card-action {
+  .info.card .card-action {
     padding-right: 1em;
     padding-left: 1em; }
 
@@ -7776,11 +7771,11 @@ input {
  * @flag contained
  * @markup
  *  <div class="card highlighted undecorated">
- *   <h3 class="card-header">Highlighted Card</h3>
+ *   <h3 class="card-header">Undecorated Highlight Card</h3>
  *    <div class="card-body">
- *      <p>@{lipsum:30:words}</p>
+ *      <p>@{lipsum:20:words}</p>
  *    </div>
- *     <div class="card-action"> <a class="btn btn-primary btn-block">Action</a></div>
+ *     <div class="card-action card-footer"> <a class="btn btn-primary btn-block">Action</a></div>
  *  </div>
  *
  *
@@ -9182,7 +9177,6 @@ body, .body {
  *          <div class="row">@{include:.nav-primary}</div>
  *          <div id="layout">
  *              <div class="page-content">
- *                  <div class="row"><div class="col-lg-12 "><h1>Home Page</h1></div></div>
  *                  <div class="row"><div class="col-lg-4">@{include:.featured.card}</div>
  *                  <div class="col-lg-8">
  *                      @{include:.carousel}
@@ -9193,15 +9187,19 @@ body, .body {
  *                           </div>
  *                            <div class="row">
  *                                <div class="col-md-6">&nbsp;</div>
- *                                <div class="col-md-6"> <div class="card-action"> <a class="btn btn-primary btn-block">Action</a></div></div>
+ *                                <div class="col-md-6"> 
+ *                                  <div class="card-action">
+ *                                       <a class="btn btn-primary btn-block">Action</a>
+ *                                  </div>
+ *                                </div>
  *                            </div>
  *                         </div>
  *                      </div>
  *                  </div>
- *                  <div class="row">
+ *                  <div class="row vh_30">
+ *                      <div class="col-lg-4">@{include:.highlighted.card}</div> 
  *                      <div class="col-lg-4">@{include:.undecorated.card}</div>
- *                      <div class="col-lg-4">@{include:.undecorated.card}</div>
- *                      <div class="col-lg-4">@{include:.undecorated.card}</div>
+ *                      <div class="col-lg-4">@{include:.highlighted.card}</div>
  *                  </div>
  *              </div>           
  *          </div>
@@ -9399,6 +9397,48 @@ body, .body {
       .mobile-menu-toggle-container.show-mobile {
         display: block; } }
 
+@media only screen and (min-width: 768px) {
+  .row.vh_30 div[class^="col-"], .row.vh_30 .card {
+    min-height: 30vh; }
+  .row.vh_40 div[class^="col-"], .row.vh_40 .card {
+    min-height: 40vh; }
+  .row.vh_50 div[class^="col-"], .row.vh_50 .card {
+    min-height: 50vh; }
+  .row.vh_60 div[class^="col-"], .row.vh_60 .card {
+    min-height: 60vh; }
+  .row.vh_70 div[class^="col-"], .row.vh_70 .card {
+    min-height: 70vh; }
+  .row.vh_80 div[class^="col-"], .row.vh_80 .card {
+    min-height: 80vh; }
+  .row.vh_90 div[class^="col-"], .row.vh_90 .card {
+    min-height: 90vh; }
+  .row.vh_100 div[class^="col-"], .row.vh_100 .card {
+    min-height: 100vh; }
+
+  div[class*="vh_"] .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-bottom: 3rem;
+    position: relative;
+    top: 0;
+    bottom: 0; }
+  div[class*="vh_"] .card-header {
+    flex: 0 1 25%; }
+  div[class*="vh_"] .card-body {
+    flex: 1 1 auto;
+    padding-bottom: 0; }
+  div[class*="vh_"] .card-footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    align-self: flex-end;
+    flex: 0 1 auto; }
+  div[class*="vh_"] .card-body + .card-action {
+    margin-top: 0; } }
 .hidden {
   display: none !important;
   visibility: hidden !important; }
@@ -9412,7 +9452,7 @@ body, .body {
   font-size: 120%;
   color: #a00; }
 
-.no-gutter > [class*='col-'] {
+.no-gutter > .sf_cols > [class*='col-'], .no-gutter > [class*='col-'] {
   padding-right: 0;
   padding-left: 0; }
 

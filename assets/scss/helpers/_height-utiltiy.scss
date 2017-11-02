@@ -1,0 +1,44 @@
+@include bp(md){
+	.row{
+	&.vh_30{ div[class^="col-"], .card{ min-height:30vh;}}
+	&.vh_40{ div[class^="col-"], .card{ min-height:40vh;}}
+	&.vh_50{ div[class^="col-"], .card{ min-height:50vh;}}
+	&.vh_60{ div[class^="col-"], .card{ min-height:60vh;}}
+	&.vh_70{ div[class^="col-"], .card{ min-height:70vh;}}
+
+	&.vh_80{ div[class^="col-"], .card{ min-height:80vh;}}
+	&.vh_90{ div[class^="col-"], .card{ min-height:90vh;}}
+	&.vh_100{ div[class^="col-"], .card{ min-height:100vh;}}
+}
+
+div[class*="vh_"]{
+	.card{
+		display: flex;
+		flex-direction:column;
+		 justify-content: space-between;
+	    height: 100%;
+	    padding-bottom:3rem;
+	    position:relative;
+	    top:0;
+	    bottom:0;
+	}
+	.card-header{
+		flex:0 1 25%;
+	}
+	.card-body{flex:1 1 auto;
+		padding-bottom:0;
+	}
+	.card-footer{ 
+		position:absolute;
+		bottom:0;
+		right:0;
+		left:0;
+		width:100%;
+		align-self: flex-end;
+		flex:0 1 auto;
+		} 
+		.card-body + .card-action{margin-top:0;}
+	}
+
+
+}

@@ -1,4 +1,4 @@
-.no-gutter > [class*='col-'] {
+.no-gutter > .sf_cols > [class*='col-'],.no-gutter > [class*='col-'] {
     padding-right:0;
     padding-left:0;
 }
