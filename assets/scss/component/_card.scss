@@ -443,7 +443,6 @@ h3{font-size:ms(5);}
 	}
 }
 
-
 /**
  * The "Facility Card" is a combination of cards and ui to make the UI element that is found on the home page. 
  *
@@ -472,4 +471,27 @@ h3{font-size:ms(5);}
  *  </div>
  *
  */
- .featured.card{}
+.featured.card{}
+
+/**
+ * "Undecorated" cards remove the background,padding and border of cards with leaving behind all of the typography treatment of card.  This is mosly used on the homepage in combination with the highlighted card 
+ *
+ * @structure Undecorated Highlighted Card 
+ * @section Card Stuctures 
+ * @flag contained
+ * @markup
+ *  <div class="card highlighted undecorated">
+ *   <h3 class="card-header">Highlighted Card</h3>
+ *    <div class="card-body">
+ *      <p>@{lipsum:30:words}</p>
+ *    </div>
+ *     <div class="card-action"> <a class="btn btn-primary btn-block">Action</a></div>
+ *  </div>
+ *
+ *
+ */
+ .undecorated.card{
+ 	border-width: 0;
+ 	background-color:transparent;
+ 	padding:0;
+ }

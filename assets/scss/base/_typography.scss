@@ -8,7 +8,7 @@
 
 /**
 * @atom Headline Tags
-* @section Typography
+* @section Typography > Headers
 * @modifiers
 *  .display-[x] Produces large display sized text where x is a number 1 through 4
 *  a.tag  Produces the header tag in the dark teal color of the site with an underline on hover. 
@@ -39,7 +39,7 @@
 
     h1 {
         @extend %header-link;
-        @include font("bold");
+        @include font-display("bold");
         color: $dark-orange;
     }
 
@@ -51,7 +51,7 @@
 
     h3 {
         @extend %header-link;
-        @include font-display("light");
+        @include font-display("regular");
         color: $dark-orange;
     }
 
@@ -134,11 +134,190 @@ hr {
 
 /**
 * @atom Text Decoration
-* @section Typography
+* @section Typography > Decorators
 * @markup
-*  <strong>Strong: @{lipsum:4:words}  <a href="">@{lipsum:1:words}</a></strong>
-*  <b>Bold: @{lipsum:4:words} <a href="">@{lipsum:1:words}</a></b>
-*  <small>Small: @{lipsum:4:words}  <a href="">@{lipsum:1:words}</a></small>
-*  <em>Em: @{lipsum:4:words}  <a href="">@{lipsum:1:words}</a></em>
+*  <div><strong>Strong: @{lipsum:4:words}  <a href="">@{lipsum:1:words}</a></strong></div>
+*  <div><b>Bold: @{lipsum:4:words} <a href="">@{lipsum:1:words}</a></b></div>
+*  <div><small>Small: @{lipsum:4:words}  <a href="">@{lipsum:1:words}</a></small></div>
+*  <div><em>Em: @{lipsum:4:words}  <a href="">@{lipsum:1:words}</a></em></div>
 */
 strong{}
+
+
+/*
+* Links will auto decorate with an icon of the corresponding file type
+*
+* @atom File Links
+* @section Typography > Decorators
+* @markup
+*  <a class="link" href="abc.pdf">A link that is a Pdf Document</a><br/>
+*  <a class="link" href="abc.doc">A link that is a Word Document</a><br/>
+*  <a class="link" href="https://www.abc.ppt">An External link that is a Power Point Document</a><br/>
+*  <a class="link" href="tel:1-555-555-5555">1-555-555-5555</a><br/>
+*  <a class="link" href="mailto:test@abc.org">test@abc.org</a><br/>
+* @modifiers
+*  .pdf Portable Document Format
+*  .doc Word Documents
+*  .txt Text Documents
+*  .ppt Power Points
+*  mailto: email links
+*  tel: Telephone 
+*  _blank External Link icons will appear after any link that has target blank, or the href begins with http, or https
+ */
+
+a.link{
+    @extend .icon-before;
+    &[href$=".pdf"]:before{
+        content: "\f1c1";   
+    }
+    &[href$=".doc"]:before,&[href$=".docx"]:before,&[href$=".txt"]:before{
+            content: "\f016";   
+    }
+    &[href$=".ppt"]:before,&[href$=".pptx"]:before{
+         content: "\f080";
+    }
+    &[href$=".csv"]:before,&[href$=".xls"]:before,&[href$=".xlsx"]:before{
+        content: "\f0ce";   
+    }
+    &[target=_blank]:after,&[href^="http"]:after,&[href^="https"]:after{
+        @extend .icon-after;
+        content:"\f14c";
+    }
+    &[href^="mailto:"]:before{ 
+        content: "\f003";
+    }
+    &[href^="tel:"]:before{ 
+        content: "\f095";
+    }
+    &[href^="fax:"]:before{ 
+        content: "\f1ac";
+    }
+}
+
+
+
+
+/**
+* listing of blocks of information to be semanitic are wrapped in a ul.no-bullets 
+*
+* @atom List with No Bullets
+* @section Typography > Lists
+* @markup
+*  <ul class="no-bullets">
+*      <li>
+*      <h2>
+*      <a href="/Clinical-Toolkits/QI-Toolkit">QI Toolkit</a>
+*      </h2>
+*      <p>
+*      Implement quality patient care at your facility with checklists, reminders, and other tools to address common quality improvement issues.
+*      <a class="more" href="/Clinical-Toolkits/QII-Toolkit"></a>
+*      </p>
+*      </li>
+*      <li>
+*      <h2>
+*      <a href="/Clinical-Toolkits/QI-Toolkit">QI Toolkit 2</a>
+*      </h2>
+*      <p>
+*      Implement quality patient care at your facility with checklists, reminders, and other tools to address common quality improvement issues.
+*      <a class="more" href="/Clinical-Toolkits/QII-Toolkit"></a>
+*      </p>
+*      </li>
+*  </ul>
+*/
+
+ul.no-bullets{
+    /*.layout-listing #colone ul.generic-list,*/
+    margin-top: 1em;
+    li {
+        /*.layout-listing #colone ul.generic-list li, */
+        margin: 0 0 1em;
+        overflow: auto;
+        list-style-type: none;
+        img {
+            /*.layout-listing ul.generic-list li img, */
+            margin: 0 14px 6px 0;
+            float: left;
+        }
+    }
+}
+
+
+
+/**
+* @atom Typography Kitchen Sink
+* @section Typography > kitchensink
+* @markup
+*  <section>
+*      <h4>Headers</h4>
+*      <hr>
+*      <h1>Header 1</h1>
+*      <h2>Header 2</h2>
+*      <h3>Header 3</h3>
+*      <h4>Header 4</h4>
+*      <h5>Header 5</h5>
+*      <h6>Header 6</h6>
+*  </section>
+*  <section>
+*      <h4>Lists</h4>
+*      <hr>
+*      <ul>
+*          <li>Item 1</li>
+*          <ul>
+*              <li>Item 1</li>
+*              <li>Item 2</li>
+*          </ul>
+*          <li>Item 2</li>
+*          <li>Item 3</li>
+*          <li>Item 4</li>
+*      </ul>
+*      <ol>
+*          <li>Item 1</li>
+*          <ol>
+*              <li>Item 1</li>
+*              <li>Item 2</li>
+*          </ol>
+*          <li>Item 2</li>
+*          <li>Item 3</li>
+*          <li>Item 4</li>
+*      </ol>
+*  </section>
+*  <section>
+*      <h4>Code Block</h4>
+*      <hr>
+*      <pre><code>header {
+*      width:100%;
+*      height:100vh;
+*  }
+*  
+*  </code></pre>
+*  </section>
+*  </div>
+*  <div class="col-md-6">
+*      <section>
+*          <h4>Paragraphs</h4>
+*          <hr>
+*          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit inventore rerum, ad eos ex harum, debitis adipisci ut <a href="#">laboriosam placeat</a> at fugiat earum, impedit quidem dicta repellendus vitae! Esse, quos.</p>
+*          <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Duis mollis, <code>est non commodo</code> luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum <a href="#">dolor sit amet</a>, consectetur adipiscing elit.</p>
+*      </section>
+*      <section>
+*          <h4>Blockquotes</h4>
+*          <hr>
+*          <blockquote>
+*              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cras mattis consectetur purus sit amet fermentum.
+*          </blockquote>
+*      </section>
+*      <section>
+*          <h4>Image Caption</h4>
+*          <hr>
+*          <figure>
+*              <img src="http://placehold.it/700x300">
+*              <figcaption>Fig1. - A view of the pulpit rock in Norway.</figcaption>
+*          </figure>
+*          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non totam cumque numquam eligendi a vitae ex. Dolorum hic itaque consequuntur mollitia nisi voluptatem in est, soluta eos molestias. Suscipit, consectetur.</p>
+*      </section>
+*  </div>
+*  </div>
+**/
+.typography-kitchensink{}
+
+@import "included/table";

@@ -1,0 +1,1259 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"soft",
+				"soft-blue"
+			],
+			[
+				"off",
+				"off-black"
+			],
+			[
+				"warm",
+				"warm-grey-light"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"card",
+				"card-action"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"block",
+				"blockquote"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"bor",
+				"border-top"
+			],
+			[
+				"pso",
+				"position"
+			],
+			[
+				"car",
+				"carousel-control"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"off-",
+				"off-white"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"nav",
+				"nav-link"
+			],
+			[
+				"last",
+				"last-child"
+			],
+			[
+				"drop",
+				"dropdown-menu"
+			],
+			[
+				"content",
+				"content-padding"
+			],
+			[
+				"large",
+				"large-pull-8"
+			],
+			[
+				"lare",
+				"large-push-4"
+			],
+			[
+				"la",
+				"large-4"
+			],
+			[
+				"small",
+				"small-9"
+			],
+			[
+				"in",
+				"includes"
+			],
+			[
+				"ma",
+				"max-width"
+			],
+			[
+				"no",
+				"no-gutter"
+			],
+			[
+				"padding",
+				"padding-right"
+			],
+			[
+				"lin",
+				"line-height"
+			],
+			[
+				"footer",
+				"footer-sitemap"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"spa",
+				"space-between"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"pad",
+				"padding-right"
+			],
+			[
+				"input",
+				"input-group-addon"
+			],
+			[
+				"com",
+				"component"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "assets/scss/component/_address.scss",
+			"settings":
+			{
+				"buffer_size": 3640,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/component/_nav-sub.scss",
+			"settings":
+			{
+				"buffer_size": 5810,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/component/_card.scss",
+			"settings":
+			{
+				"buffer_size": 12214,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "ToDo.md",
+			"settings":
+			{
+				"buffer_size": 3558,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/component/_carousel.scss",
+			"settings":
+			{
+				"buffer_size": 6608,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/component/_ads.scss",
+			"settings":
+			{
+				"buffer_size": 1311,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "node_modules/nucleus-styleguide/assets/views/common/components.pug",
+			"settings":
+			{
+				"buffer_size": 3848,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/scss/base/_typography.scss",
+			"settings":
+			{
+				"buffer_size": 3251,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/vendor/bootstrap.override/_custom.scss",
+			"settings":
+			{
+				"buffer_size": 4506,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 2363,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<div class=\"form-group\">\n\t<label for=\"exampleInputFacility\">Search your Facility:</label>\n\t<input type=\"email\" class=\"form-control\" id=\"exampleInputFacility\" placeholder=\"Start Typing your facility name\" autocomplete=\"on\">\n</div>\n<h3 class=\"card-header\">\n\tCan't find your facility?\n</h3>\n<div class=\"card-body\">\n\t<p>If your facility is not a participant with NCDR or PINNACLE, please <a href=\"#\">submit a request</a> to get more information and gain access. </p>\n</div>\n\n",
+			"settings":
+			{
+				"buffer_size": 471,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 254.0,
+		"last_filter": "set html\t",
+		"selected_items":
+		[
+			[
+				"set html\t",
+				"Set Syntax: HTML"
+			],
+			[
+				"beau",
+				"SassBeautify"
+			],
+			[
+				"pretty",
+				"HTMLPrettify"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"bea",
+				"SassBeautify"
+			],
+			[
+				"set html",
+				"Set Syntax: HTML"
+			],
+			[
+				"set ham",
+				"Set Syntax: HTML"
+			],
+			[
+				"ht",
+				"HTMLPrettify"
+			],
+			[
+				"pre",
+				"HTMLPrettify: Set Prettify Preferences"
+			],
+			[
+				"pret",
+				"HTMLPrettify"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"s",
+				"SassBeautify"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"set scss",
+				"Set Syntax: CSS"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 572.0
+	},
+	"console":
+	{
+		"height": 171.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/mwatier/Repo/cvquality",
+		"/C/Users/mwatier/Repo/cvquality/assets",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/base",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component",
+		"/C/Users/mwatier/Repo/cvquality/docs"
+	],
+	"file_history":
+	[
+		"/C/Users/mwatier/Repo/cvquality/node_modules/.bin/lorem-ipsum",
+		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/src/entities/Molecule.js",
+		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/src/entities/Structure.js",
+		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/assets/views/common/components.pug",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/structure/_header.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_card.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/styleguide.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/_setup.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/_oldshame.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/index.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_charts.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_toolkit-sublisting.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_video-player.scss",
+		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/assets/styles/molecules/tables.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/structure/_mobile-menu-toggle-container.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_assessment.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_address.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/structure/_page.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_nav-primary.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_mobile-menu-toggle.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/_table.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_nav-footer.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_carousel.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap-sass-3.3.7/sass/bootstrap/_variables.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_custom.scss",
+		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/assets/styles/structures/layouts.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/_html.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/_fonts.kitchensink.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/_fonts.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/_colors.scss",
+		"/C/Users/mwatier/Repo/cvquality/node_modules/grunt-reload/.idea/scopes/scope_settings.xml",
+		"/C/Users/mwatier/Repo/cvquality/.sass-cache/825ee957c1e68c0a11a4049aafcc815ceea5fa45/_card.scssc",
+		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/src/entities/Brand.js",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/_typography.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_progress-bar.override.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_list-nobullets.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_button.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap-sass-3.3.7/sass/bootstrap/_media.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap-sass-3.3.7/sass/bootstrap/_buttons.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_kitchensink.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/base/_table.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_blockquote.override.scss",
+		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/assets/styles/atoms/typography.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap/_kitchensink.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_collapse.override.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_nav-utility.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_searchbar.scss",
+		"/C/Users/mwatier/Repo/cvquality/config.nucleus.json",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap-sass-3.3.7/sass/bootstrap/_panels.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_breadcrumbs.override.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/_nav-basic.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_nav-sub.scss",
+		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/src/entities/Icon.js",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_dropdown.override.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/structure/_footer.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap-sass-3.3.7/sass/bootstrap/mixins/_buttons.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_user-status-container.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_nav-basic.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/helpers/_trumps.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap-sass-3.3.7/javascripts/bootstrap/button.js",
+		"/C/Users/mwatier/Repo/Bristol/templates/includes/layouts/base-layout.liquid",
+		"/C/Users/mwatier/Repo/Bristol/GruntFile.js",
+		"/C/Users/mwatier/Repo/Bristol/package.json",
+		"/C/Users/mwatier/Repo/Bristol/templates/index.liquid",
+		"/C/Users/mwatier/Repo/Bristol/Assets/scss/index.scss",
+		"/C/Users/mwatier/Repo/Bristol/templates/includes/sections/chart.liquid",
+		"/C/Users/mwatier/Repo/Bristol/templates/includes/snippets/data-dualprogressbar-unknown.liquid",
+		"/C/Users/mwatier/Repo/Bristol/templates/includes/snippets/data-dualprogressbar-bad.liquid",
+		"/C/Users/mwatier/Repo/Bristol/templates/includes/snippets/data-dualprogressbar-good.liquid",
+		"/C/Users/mwatier/Repo/Bristol/Assets/scss/_setup.scss",
+		"/C/Users/mwatier/Repo/Bristol/templates/includes/scripts.liquid",
+		"/C/Users/mwatier/Repo/Bristol/package-lock.json",
+		"/C/Users/mwatier/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc.defaults.json",
+		"/C/Users/mwatier/Repo/Bristol/templates/data-display.liquid",
+		"/C/Users/mwatier/Repo/bristol/GruntFile.js",
+		"/C/Users/mwatier/Repo/bristol/package.json",
+		"/C/Users/mwatier/Repo/bristol/templates/includes/layouts/layout.liquid",
+		"/C/Users/mwatier/Repo/bristol/templates/index.liquid",
+		"/C/Users/mwatier/Repo/bristol/.gitignore",
+		"/C/Users/mwatier/Repo/bristol/templates/test.liquid",
+		"/C/Users/mwatier/Repo/cvquality/mods to node-styleguid/nucleus-styleguide/assets/views/entities/nuclides.pug",
+		"/C/Users/mwatier/Repo/cvquality/mods to node-styleguid/nucleus-styleguide/index.js",
+		"/C/Users/mwatier/Repo/cvquality/mods to node-styleguid/nucleus-styleguide/init.js",
+		"/C/Users/mwatier/Repo/cvquality/mods to node-styleguid/nucleus-styleguide/default.nucleus.json",
+		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/src/entities/Layouts.js",
+		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/assets/views/layouts.pug",
+		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/index.js",
+		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/assets/views/common/sections.pug",
+		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/assets/views/common/header.pug",
+		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/assets/views/structures.pug",
+		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/src/Transform.js",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap/mixins/_buttons.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_nav-social-buttons.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap/_variables.scss",
+		"/C/Users/mwatier/Repo/cvquality/docs/test.html",
+		"/C/Users/mwatier/Repo/cvquality/test.html",
+		"/C/Users/mwatier/AppData/Roaming/Sublime Text 3/Packages/User/.jsbeautifyrc",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Users/mwatier/Repo/cvquality/gruntfile.js"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 134.0,
+		"where_history":
+		[
+			"C:\\Users\\mwatier\\Repo\\cvquality\\node_modules\\nucleus-styleguide\\assets\\views",
+			"C:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss",
+			"C:\\Users\\mwatier\\Repo\\cvquality\\assets",
+			"C:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"warm-grey-light",
+			"block",
+			"1260",
+			"945",
+			"500",
+			"630",
+			"900",
+			"exampleInputEmail1",
+			"h2",
+			"Info",
+			"info",
+			"Block",
+			"h3",
+			"h1",
+			"card",
+			"inline",
+			"flag",
+			"toolkit-sublisting",
+			";",
+			"; ",
+			"<span>",
+			"h2",
+			"transform",
+			"200:200",
+			"footer",
+			"h3",
+			".btn-block",
+			"progress-bar-animated",
+			"hfont",
+			"bootstrap kitchensink",
+			"<h3>Alert</h3>",
+			"\n\n\t\t",
+			"rem",
+			"*1rem",
+			"button",
+			"btn-lg",
+			"user-staus-position",
+			"; ",
+			"h5",
+			"card-header",
+			"bre",
+			"bookmar",
+			"bood",
+			"ms4",
+			"ms2",
+			"a{",
+			"a",
+			"mobile",
+			"1em",
+			"flex: 1 1 auto;",
+			"font-size",
+			"line-height-computed",
+			":241",
+			";",
+			"only",
+			"medium-push",
+			"h2",
+			"h5",
+			"%} {% ",
+			"span",
+			" (2017Q1)",
+			"(2017Q1)",
+			"h3",
+			"small-9",
+			"small-3",
+			"small-7",
+			"mall-5",
+			"small-5",
+			"<div class=\"column medium-4 large-3\">",
+			"small-8",
+			"small-4",
+			"4",
+			"small-9",
+			"small-3",
+			"span",
+			"p",
+			"h5",
+			"6",
+			"3",
+			"small",
+			"h4",
+			"h5",
+			"large ",
+			" medium-6",
+			"<h5>",
+			"strong",
+			"h4",
+			"column",
+			"label",
+			"\">\n",
+			"templates",
+			"structure",
+			"struc",
+			"structures",
+			"Structure",
+			"structure",
+			"Structure",
+			"structures",
+			"Structures",
+			"structures",
+			"Structures",
+			"structures",
+			"Structures",
+			"structures",
+			"structure",
+			"Structure",
+			"Layouts",
+			"Structure",
+			"structure",
+			"Structure.prototype",
+			"Structure",
+			"structure",
+			"Structure",
+			"><",
+			".nav ",
+			".nav-social-buttons container ",
+			"&.",
+			"4",
+			" width:72px;",
+			");\n",
+			"radius",
+			"boder",
+			"include",
+			",",
+			";",
+			"px",
+			"flex:0 0 ",
+			";"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "assets/scss/component/_address.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3640,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1026,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "assets/scss/component/_nav-sub.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5810,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								172,
+								172
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "assets/scss/component/_card.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12214,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10172,
+								10172
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 6890.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "ToDo.md",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 3558,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								3558
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "assets/scss/component/_carousel.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6608,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								165,
+								174
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "assets/scss/component/_ads.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1311,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1013,
+								1013
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "node_modules/nucleus-styleguide/assets/views/common/components.pug",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3848,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2491,
+								2491
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 972.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "assets/scss/base/_typography.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3251,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1925,
+								1925
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 486.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "assets/scss/vendor/bootstrap.override/_custom.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4506,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3302,
+								3302
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1512.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "gruntfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2363,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1590,
+								1590
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Theme - Monokai+/icons/Langs/Gruntfile JS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 619.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 471,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								471,
+								471
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 48.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "cvquality.sublime-project",
+	"replace":
+	{
+		"height": 59.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"caro",
+				"assets\\scss\\component\\_carousel.scss"
+			],
+			[
+				"nuceucomp",
+				"node_modules\\nucleus-styleguide\\assets\\views\\common\\components.pug"
+			],
+			[
+				"custom.scs",
+				"assets\\scss\\vendor\\bootstrap.override\\_custom.scss"
+			],
+			[
+				"card",
+				"assets\\scss\\component\\_card.scss"
+			],
+			[
+				"",
+				"assets\\scss\\base\\_typography.scss"
+			],
+			[
+				"custom.scss",
+				"assets\\scss\\vendor\\bootstrap.override\\_custom.scss"
+			],
+			[
+				"nodelip",
+				"node_modules\\.bin\\lorem-ipsum"
+			],
+			[
+				"address",
+				"assets\\scss\\component\\_address.scss"
+			],
+			[
+				"styleg",
+				"assets\\scss\\styleguide.scss"
+			],
+			[
+				"header.scss",
+				"assets\\scss\\structure\\_header.scss"
+			],
+			[
+				"index.scss",
+				"assets\\scss\\index.scss"
+			],
+			[
+				"styl",
+				"assets\\scss\\styleguide.scss"
+			],
+			[
+				"page.scss",
+				"assets\\scss\\structure\\_page.scss"
+			],
+			[
+				"old",
+				"assets\\scss\\_oldshame.scss"
+			],
+			[
+				"settings",
+				"node_modules\\grunt-reload\\.idea\\scopes\\scope_settings.xml"
+			],
+			[
+				"fontki",
+				"assets\\scss\\base\\_fonts.kitchensink.scss"
+			],
+			[
+				"cards",
+				"assets\\scss\\component\\_card.scss"
+			],
+			[
+				"cardss",
+				"assets\\scss\\component\\_card.scss"
+			],
+			[
+				"fonts",
+				"assets\\scss\\base\\_fonts.scss"
+			],
+			[
+				"strupage",
+				"assets\\scss\\structure\\_page.scss"
+			],
+			[
+				"index.scs",
+				"assets\\scss\\index.scss"
+			],
+			[
+				"colorsscss",
+				"assets\\scss\\base\\_colors.scss"
+			],
+			[
+				"button.scss",
+				"assets\\scss\\component\\_button.scss"
+			],
+			[
+				"media.scss",
+				"assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\_media.scss"
+			],
+			[
+				"progress",
+				"assets\\scss\\vendor\\bootstrap.override\\_progress-bar.override.scss"
+			],
+			[
+				"typography",
+				"node_modules\\nucleus-styleguide\\assets\\styles\\atoms\\typography.scss"
+			],
+			[
+				"customscss",
+				"assets\\scss\\vendor\\bootstrap.override\\_custom.scss"
+			],
+			[
+				"kitchensink",
+				"assets\\scss\\vendor\\bootstrap\\_kitchensink.scss"
+			],
+			[
+				"setup.scss",
+				"assets\\scss\\_setup.scss"
+			],
+			[
+				"varables",
+				"assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\_variables.scss"
+			],
+			[
+				"header.scs",
+				"assets\\scss\\structure\\_header.scss"
+			],
+			[
+				"searchbar",
+				"assets\\scss\\component\\_searchbar.scss"
+			],
+			[
+				"panel",
+				"assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\_panels.scss"
+			],
+			[
+				"variscss",
+				"assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\_variables.scss"
+			],
+			[
+				"breadcrub",
+				"assets\\scss\\vendor\\bootstrap.override\\_breadcrumbs.override.scss"
+			],
+			[
+				"mobile",
+				"assets\\scss\\structure\\_mobile-menu-toggle-container.scss"
+			],
+			[
+				"search.scss",
+				"assets\\scss\\component\\_searchbar.scss"
+			],
+			[
+				"mobilemen",
+				"assets\\scss\\structure\\_mobile-menu-toggle-container.scss"
+			],
+			[
+				"boot3button.scs",
+				"assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\mixins\\_buttons.scss"
+			],
+			[
+				"boot3button",
+				"assets\\scss\\vendor\\bootstrap-sass-3.3.7\\javascripts\\bootstrap\\button.js"
+			],
+			[
+				"nav-basi",
+				"assets\\scss\\component\\_nav-basic.scss"
+			],
+			[
+				"boot3var",
+				"assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\_variables.scss"
+			],
+			[
+				"nav-basic",
+				"assets\\scss\\component\\_nav-basic.scss"
+			],
+			[
+				"brisindex.scss",
+				"Bristol\\Assets\\scss\\index.scss"
+			],
+			[
+				"footer.scs",
+				"assets\\scss\\structure\\_footer.scss"
+			],
+			[
+				"bootbutton",
+				"assets\\scss\\vendor\\bootstrap\\mixins\\_buttons.scss"
+			],
+			[
+				"variabl",
+				"assets\\scss\\vendor\\bootstrap\\_variables.scss"
+			],
+			[
+				"indexscss",
+				"assets\\scss\\index.scss"
+			],
+			[
+				"colors.scss",
+				"assets\\scss\\base\\_colors.scss"
+			],
+			[
+				"primary",
+				"assets\\scss\\component\\_nav-primary.scss"
+			],
+			[
+				"social",
+				"assets\\scss\\component\\_nav-social-buttons.scss"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 353.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

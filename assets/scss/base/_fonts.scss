@@ -3,9 +3,9 @@
 
 
 @mixin font ( $weight : 400) {
-	@if ($weight == bold){$weight:700;}
-	@else if ($weight == regular){$weight:400;}
-	@else if ($weight == light){$weight:200;}
+	@if ($weight == "bold"){$weight:700;}
+	@else if ($weight == "regular"){$weight:400;}
+	@else if ($weight == "light"){$weight:200;}
 	@else{$weight:$weight;}
   font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
   font-weight: $weight;
@@ -23,9 +23,9 @@
  *  @include monospace(300);
  */
 @mixin font-display ($weight : 200) {
-	@if ($weight == bold){$weight:700;}
-	@else if ($weight == regular){$weight:400;}
-	@else if ($weight == light){$weight:200;}
+	@if ($weight == "bold"){$weight:700;}
+	@else if ($weight == "regular"){$weight:400;}
+	@else if ($weight == "light"){$weight:200;}
 	@else{$weight:$weight;}
 	font-family:  'Muli', Verdana, Helvetica, Arial, sans-serif;
 	font-weight: $weight;

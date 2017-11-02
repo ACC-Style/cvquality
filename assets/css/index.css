@@ -97,7 +97,7 @@
  *  @include monospace(300);
  */
 @import "https://use.fontawesome.com/972bb54a90.css";
-.icon-before:before, .accordion .panel-title a:before, a.link:before {
+.icon-before:before, a.link:before, .accordion .panel-title a:before {
   display: inline-block;
   margin-right: .5em;
   font: normal normal normal 14px/1 FontAwesome;
@@ -1582,10 +1582,10 @@ h2, .h2 {
   font-size: 25px; }
 
 h3, .h3 {
-  font-size: 18px; }
+  font-size: 20px; }
 
 h4, .h4 {
-  font-size: 16px; }
+  font-size: 18px; }
 
 h5, .h5 {
   font-size: 16px; }
@@ -6809,7 +6809,7 @@ body {
 
 /**
 * @atom Headline Tags
-* @section Typography
+* @section Typography > Headers
 * @modifiers
 *  .display-[x] Produces large display sized text where x is a number 1 through 4
 *  a.tag  Produces the header tag in the dark teal color of the site with an underline on hover. 
@@ -6834,7 +6834,7 @@ h1 a, h2 a, h3 a {
     text-decoration: underline; }
 
 h1 {
-  font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
+  font-family: 'Muli', Verdana, Helvetica, Arial, sans-serif;
   font-weight: 700;
   color: #e87d1e; }
 
@@ -6845,7 +6845,7 @@ h2 {
 
 h3 {
   font-family: 'Muli', Verdana, Helvetica, Arial, sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   color: #e87d1e; }
 
 ul {
@@ -6913,69 +6913,168 @@ hr {
 
 /**
 * @atom Text Decoration
-* @section Typography
+* @section Typography > Decorators
 * @markup
-*  <strong>Strong: @{lipsum:4:words}  <a href="">@{lipsum:1:words}</a></strong>
-*  <b>Bold: @{lipsum:4:words} <a href="">@{lipsum:1:words}</a></b>
-*  <small>Small: @{lipsum:4:words}  <a href="">@{lipsum:1:words}</a></small>
-*  <em>Em: @{lipsum:4:words}  <a href="">@{lipsum:1:words}</a></em>
+*  <div><strong>Strong: @{lipsum:4:words}  <a href="">@{lipsum:1:words}</a></strong></div>
+*  <div><b>Bold: @{lipsum:4:words} <a href="">@{lipsum:1:words}</a></b></div>
+*  <div><small>Small: @{lipsum:4:words}  <a href="">@{lipsum:1:words}</a></small></div>
+*  <div><em>Em: @{lipsum:4:words}  <a href="">@{lipsum:1:words}</a></em></div>
 */
-fieldset {
-  margin: 0;
-  padding: 0;
-  border: 0; }
-
-label {
-  font-weight: bold;
-  font-size: 0.875em; }
-
-select,
-textarea {
-  border: solid 1px #aaa;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px; }
-
-input {
-  padding: 7px;
-  font-size: 0.875em; }
-  input:required, input:invalid {
-    box-shadow: none; }
-  input[type="text"], input[type="password"] {
-    border: solid 1px #aaa;
-    border-radius: 3px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px; }
-  input[type="checkbox"], input[type="radio"] {
-    border: 0; }
-
-::-webkit-input-placeholder,
-:-moz-placeholder,
-::-moz-placeholder,
-:-ms-input-placeholder {
-  color: #08a; }
-
-.form-check-input {
-  margin-right: 4px; }
-
-.input.RadAutoCompleteBox .racTokenList {
-  background-image: url(../images/icon-search.png);
-  background-position: right;
-  background-repeat: no-repeat;
-  padding: 7px 30px 7px 7px;
-  font-size: 0.875em; }
-.input.RadAutoCompleteBox .racToken {
-  white-space: normal; }
-.input.RadAutoCompleteBox .racRemoveTokenLink {
-  text-decoration: none; }
-  .input.RadAutoCompleteBox .racRemoveTokenLink:before {
-    position: absolute;
-    top: 0;
-    right: 0; }
+/*
+* Links will auto decorate with an icon of the corresponding file type
+*
+* @atom File Links
+* @section Typography > Decorators
+* @markup
+*  <a class="link" href="abc.pdf">A link that is a Pdf Document</a><br/>
+*  <a class="link" href="abc.doc">A link that is a Word Document</a><br/>
+*  <a class="link" href="https://www.abc.ppt">An External link that is a Power Point Document</a><br/>
+*  <a class="link" href="tel:1-555-555-5555">1-555-555-5555</a><br/>
+*  <a class="link" href="mailto:test@abc.org">test@abc.org</a><br/>
+* @modifiers
+*  .pdf Portable Document Format
+*  .doc Word Documents
+*  .txt Text Documents
+*  .ppt Power Points
+*  mailto: email links
+*  tel: Telephone 
+*  _blank External Link icons will appear after any link that has target blank, or the href begins with http, or https
+ */
+a.link[href$=".pdf"]:before {
+  content: "\f1c1"; }
+a.link[href$=".doc"]:before, a.link[href$=".docx"]:before, a.link[href$=".txt"]:before {
+  content: "\f016"; }
+a.link[href$=".ppt"]:before, a.link[href$=".pptx"]:before {
+  content: "\f080"; }
+a.link[href$=".csv"]:before, a.link[href$=".xls"]:before, a.link[href$=".xlsx"]:before {
+  content: "\f0ce"; }
+a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:after {
+  content: "\f14c"; }
+a.link[href^="mailto:"]:before {
+  content: "\f003"; }
+a.link[href^="tel:"]:before {
+  content: "\f095"; }
+a.link[href^="fax:"]:before {
+  content: "\f1ac"; }
 
 /**
-* @molecule Tables
-* @section Typography
+* listing of blocks of information to be semanitic are wrapped in a ul.no-bullets 
+*
+* @atom List with No Bullets
+* @section Typography > Lists
+* @markup
+*  <ul class="no-bullets">
+*      <li>
+*      <h2>
+*      <a href="/Clinical-Toolkits/QI-Toolkit">QI Toolkit</a>
+*      </h2>
+*      <p>
+*      Implement quality patient care at your facility with checklists, reminders, and other tools to address common quality improvement issues.
+*      <a class="more" href="/Clinical-Toolkits/QII-Toolkit"></a>
+*      </p>
+*      </li>
+*      <li>
+*      <h2>
+*      <a href="/Clinical-Toolkits/QI-Toolkit">QI Toolkit 2</a>
+*      </h2>
+*      <p>
+*      Implement quality patient care at your facility with checklists, reminders, and other tools to address common quality improvement issues.
+*      <a class="more" href="/Clinical-Toolkits/QII-Toolkit"></a>
+*      </p>
+*      </li>
+*  </ul>
+*/
+ul.no-bullets {
+  /*.layout-listing #colone ul.generic-list,*/
+  margin-top: 1em; }
+  ul.no-bullets li {
+    /*.layout-listing #colone ul.generic-list li, */
+    margin: 0 0 1em;
+    overflow: auto;
+    list-style-type: none; }
+    ul.no-bullets li img {
+      /*.layout-listing ul.generic-list li img, */
+      margin: 0 14px 6px 0;
+      float: left; }
+
+/**
+* @atom Typography Kitchen Sink
+* @section Typography > kitchensink
+* @markup
+*  <section>
+*      <h4>Headers</h4>
+*      <hr>
+*      <h1>Header 1</h1>
+*      <h2>Header 2</h2>
+*      <h3>Header 3</h3>
+*      <h4>Header 4</h4>
+*      <h5>Header 5</h5>
+*      <h6>Header 6</h6>
+*  </section>
+*  <section>
+*      <h4>Lists</h4>
+*      <hr>
+*      <ul>
+*          <li>Item 1</li>
+*          <ul>
+*              <li>Item 1</li>
+*              <li>Item 2</li>
+*          </ul>
+*          <li>Item 2</li>
+*          <li>Item 3</li>
+*          <li>Item 4</li>
+*      </ul>
+*      <ol>
+*          <li>Item 1</li>
+*          <ol>
+*              <li>Item 1</li>
+*              <li>Item 2</li>
+*          </ol>
+*          <li>Item 2</li>
+*          <li>Item 3</li>
+*          <li>Item 4</li>
+*      </ol>
+*  </section>
+*  <section>
+*      <h4>Code Block</h4>
+*      <hr>
+*      <pre><code>header {
+*      width:100%;
+*      height:100vh;
+*  }
+*  
+*  </code></pre>
+*  </section>
+*  </div>
+*  <div class="col-md-6">
+*      <section>
+*          <h4>Paragraphs</h4>
+*          <hr>
+*          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit inventore rerum, ad eos ex harum, debitis adipisci ut <a href="#">laboriosam placeat</a> at fugiat earum, impedit quidem dicta repellendus vitae! Esse, quos.</p>
+*          <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Duis mollis, <code>est non commodo</code> luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum <a href="#">dolor sit amet</a>, consectetur adipiscing elit.</p>
+*      </section>
+*      <section>
+*          <h4>Blockquotes</h4>
+*          <hr>
+*          <blockquote>
+*              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cras mattis consectetur purus sit amet fermentum.
+*          </blockquote>
+*      </section>
+*      <section>
+*          <h4>Image Caption</h4>
+*          <hr>
+*          <figure>
+*              <img src="http://placehold.it/700x300">
+*              <figcaption>Fig1. - A view of the pulpit rock in Norway.</figcaption>
+*          </figure>
+*          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non totam cumque numquam eligendi a vitae ex. Dolorum hic itaque consequuntur mollitia nisi voluptatem in est, soluta eos molestias. Suscipit, consectetur.</p>
+*      </section>
+*  </div>
+*  </div>
+**/
+/**
+* @atom Tables
+* @section Typography > Tables
 * @markup
 *   <table class="table table-hover">
 *   	<thead>
@@ -7040,6 +7139,59 @@ input {
 *   	</tbody>
 *   </table>
 **/
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+label {
+  font-weight: bold;
+  font-size: 0.875em; }
+
+select,
+textarea {
+  border: solid 1px #aaa;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px; }
+
+input {
+  padding: 7px;
+  font-size: 0.875em; }
+  input:required, input:invalid {
+    box-shadow: none; }
+  input[type="text"], input[type="password"] {
+    border: solid 1px #aaa;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px; }
+  input[type="checkbox"], input[type="radio"] {
+    border: 0; }
+
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder {
+  color: #08a; }
+
+.form-check-input {
+  margin-right: 4px; }
+
+.input.RadAutoCompleteBox .racTokenList {
+  background-image: url(../images/icon-search.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 7px 30px 7px 7px;
+  font-size: 0.875em; }
+.input.RadAutoCompleteBox .racToken {
+  white-space: normal; }
+.input.RadAutoCompleteBox .racRemoveTokenLink {
+  text-decoration: none; }
+  .input.RadAutoCompleteBox .racRemoveTokenLink:before {
+    position: absolute;
+    top: 0;
+    right: 0; }
+
 /**
 * Collapse page content with header.
 *
@@ -7162,37 +7314,6 @@ input {
 *    </div>
 *  </div>
 **/
-/**
-* listing of blocks of information to be semanitic are wrapped in a ul.no-bullets 
-*
-* @atom List with No Bullets
-* @section Typography
-* @markup
-*  <ul class="no-bullets">
-*      <li>
-*      <h2>
-*      <a href="/Clinical-Toolkits/QI-Toolkit">QI Toolkit</a>
-*      </h2>
-*      <p>
-*      Implement quality patient care at your facility with checklists, reminders, and other tools to address common quality improvement issues.
-*      <a class="more" href="/Clinical-Toolkits/QII-Toolkit"></a>
-*      </p>
-*      </li>
-*  </ul>
-*/
-ul.no-bullets {
-  /*.layout-listing #colone ul.generic-list,*/
-  margin-top: 1em; }
-  ul.no-bullets li {
-    /*.layout-listing #colone ul.generic-list li, */
-    margin: 0 0 1em;
-    overflow: auto;
-    list-style-type: none; }
-    ul.no-bullets li img {
-      /*.layout-listing ul.generic-list li img, */
-      margin: 0 14px 6px 0;
-      float: left; }
-
 .card {
   float: none;
   width: 100%;
@@ -7648,6 +7769,28 @@ ul.no-bullets {
  *
  */
 /**
+ * "Undecorated" cards remove the background,padding and border of cards with leaving behind all of the typography treatment of card.  This is mosly used on the homepage in combination with the highlighted card 
+ *
+ * @structure Undecorated Highlighted Card 
+ * @section Card Stuctures 
+ * @flag contained
+ * @markup
+ *  <div class="card highlighted undecorated">
+ *   <h3 class="card-header">Highlighted Card</h3>
+ *    <div class="card-body">
+ *      <p>@{lipsum:30:words}</p>
+ *    </div>
+ *     <div class="card-action"> <a class="btn btn-primary btn-block">Action</a></div>
+ *  </div>
+ *
+ *
+ */
+.undecorated.card {
+  border-width: 0;
+  background-color: transparent;
+  padding: 0; }
+
+/**
  * buttons are highly flexable and can be decorated by the modifiers to change size and color
  *
  * @atom .btn\.button\button
@@ -7770,43 +7913,6 @@ ul.no-bullets {
     /* IE10+ */
     background: linear-gradient(to bottom, #047294 0%, #0088aa 100%);
     /* W3C */ }
-
-/*
-* Links will auto decorate with an icon of the corresponding file type
-*
-* @atom File Links
-* @section Buttons & Links
-* @markup
-*  <a class="link" href="abc.pdf">A link that is a Pdf Document</a><br/>
-*  <a class="link" href="abc.doc">A link that is a Word Document</a><br/>
-*  <a class="link" href="https://www.abc.ppt">An External link that is a Power Point Document</a><br/>
-*  <a class="link" href="tel:1-555-555-5555">1-555-555-5555</a><br/>
-*  <a class="link" href="mailto:test@abc.org">test@abc.org</a><br/>
-* @modifiers
-*  .pdf Portable Document Format
-*  .doc Word Documents
-*  .txt Text Documents
-*  .ppt Power Points
-*  mailto: email links
-*  tel: Telephone 
-*  _blank External Link icons will appear after any link that has target blank, or the href begins with http, or https
- */
-a.link[href$=".pdf"]:before {
-  content: "\f1c1"; }
-a.link[href$=".doc"]:before, a.link[href$=".docx"]:before, a.link[href$=".txt"]:before {
-  content: "\f016"; }
-a.link[href$=".ppt"]:before, a.link[href$=".pptx"]:before {
-  content: "\f080"; }
-a.link[href$=".csv"]:before, a.link[href$=".xls"]:before, a.link[href$=".xlsx"]:before {
-  content: "\f0ce"; }
-a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:after {
-  content: "\f14c"; }
-a.link[href^="mailto:"]:before {
-  content: "\f003"; }
-a.link[href^="tel:"]:before {
-  content: "\f095"; }
-a.link[href^="fax:"]:before {
-  content: "\f1ac"; }
 
 /**
 * User Status Container contains system feed back on what systems you may or may not be logged into. 
@@ -9064,24 +9170,40 @@ body, .body {
     margin-top: -1rem; }
 
 /**
- * Page Layout of home
+ * Home page layout uses special cards to make more of a varried typography which doesn't exsist in sub pages. 
  * 
- * @layouts Page
+ * @layouts Home Page
  * @section Layouts
  * @flag full-width
  * @markup
  *  <div class="body">
  *      <div class="wrapper container-fluid">
  *           @{include:#header}
- *           @{include:.mobile-menu-toggle-container}
  *          <div class="row">@{include:.nav-primary}</div>
- *          <div id="aux" class="row">@{include:.breadcrumb}</div>
  *          <div id="layout">
- *              <div class="page-content row">
- *                  <div class="col-lg-12 "><h1>Sample Page</h1></div>
- *                  <div class="col-lg-4 ">@{include:.card.notice}</div>
- *                  <div class="col-lg-8">@{include:.carousel}</div>
- *              </div>
+ *              <div class="page-content">
+ *                  <div class="row"><div class="col-lg-12 "><h1>Home Page</h1></div></div>
+ *                  <div class="row"><div class="col-lg-4">@{include:.featured.card}</div>
+ *                  <div class="col-lg-8">
+ *                      @{include:.carousel}
+ *                       <div class="card highlighted undecorated row">
+ *                          <h3 class="card-header">@{lipsum:8:words}</h3>    
+ *                           <div class="card-body">
+ *                             <p>@{lipsum:1:paragraphss}</p>
+ *                           </div>
+ *                            <div class="row">
+ *                                <div class="col-md-6">&nbsp;</div>
+ *                                <div class="col-md-6"> <div class="card-action"> <a class="btn btn-primary btn-block">Action</a></div></div>
+ *                            </div>
+ *                         </div>
+ *                      </div>
+ *                  </div>
+ *                  <div class="row">
+ *                      <div class="col-lg-4">@{include:.undecorated.card}</div>
+ *                      <div class="col-lg-4">@{include:.undecorated.card}</div>
+ *                      <div class="col-lg-4">@{include:.undecorated.card}</div>
+ *                  </div>
+ *              </div>           
  *          </div>
  *      </div>
  *       @{include:#footer}
