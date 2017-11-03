@@ -7326,7 +7326,8 @@ input {
   -moz-transition: width 1s ease-out;
   border-color: #d6d4d4;
   background-color: white;
-  position: relative; }
+  position: relative;
+  margin-bottom: 1rem; }
   .card .card-header {
     padding: 0 1rem;
     text-align: center;
@@ -8458,12 +8459,16 @@ input {
     height: 100% !important; }
 
 /**
- * Advertisement blocks are for add placement on pages..
+ * Advertisement blocks are sized blocks that will by default hide when the view port is smaller then tablet
  * @molecule Advertisement
- * @section Content Blocks
+ * @section Content Blocks > Ads
  * @modifiers
- *  .mobile swaps the default visablity from hiding on small and showing on medium to showing on small and hidding on medium. 
- *  .skyscraper added to the container will center the ad within the container.
+ *  .mobile             Swaps the default visablity to show when smaller then tablet and hide when veiwport is larger then phone. 
+ *  .skyscraper         600w x 160h ad that has default visablity
+ *  .bigbox             300w x 200h ad that has default visablity
+ *  .leaderboard        728w x 90h ad that has default visablity
+ *  .leaderboard-lg     728w x 210h ad that has default visablity
+ *  .full-banner        468w x 60h ad that has default visablity.  This size is commonly combined with .mobile so it shows up only on phones
  * @flag contained
  *
  * @markup
@@ -8477,24 +8482,49 @@ input {
  *   </div>
 */
 .ad-container {
-  display: none;
   border: 5px solid #fafafa;
   background-color: #fafafa;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  position: relative;
+  display: none;
+  margin-top: .25rem;
+  margin-bottom: .25rem;
+  width: 100%; }
+  .ad-container img {
+    width: 100%; }
   @media only screen and (min-width: 768px) {
     .ad-container {
-      display: inline-block; } }
+      display: block; } }
+  .ad-container:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .ad-container.skyscraper {
+    max-width: 174px; }
+    .ad-container.skyscraper .ad:before {
+      padding-top: 375%; }
+  .ad-container.bigbox {
+    max-width: 314px; }
+    .ad-container.bigbox .ad:before {
+      padding-top: 66.6666666667%; }
+  .ad-container.leaderboard {
+    max-width: 742px; }
+    .ad-container.leaderboard .ad:before {
+      padding-top: 12.3626373626%; }
+  .ad-container.leaderboard-lg {
+    max-width: 742px; }
+    .ad-container.leaderboard-lg .ad:before {
+      padding-top: 28.8461538462%; }
+  .ad-container.full-banner {
+    max-width: 482px; }
+    .ad-container.full-banner .ad:before {
+      padding-top: 12.8205128205%; }
   .ad-container.mobile {
-    display: inline-block; }
+    display: block; }
     @media only screen and (min-width: 768px) {
       .ad-container.mobile {
         display: none; } }
-  .ad-container.skyscraper {
-    width: 164px; }
-    @media only screen and (min-width: 768px) {
-      .ad-container.skyscraper {
-        display: block; } }
   .ad-container p {
     clear: both;
     font-size: 10px;
@@ -8502,9 +8532,82 @@ input {
     padding-bottom: 4px;
     color: #a1a0a4;
     text-transform: uppercase; }
+  .ad-container .ad + p {
+    padding-bottom: 0;
+    padding-top: 4px; }
   .ad-container .ad {
-    border: 2px solid #e8e7e7; }
+    border: 2px solid #e8e7e7;
+    position: relative; }
+    .ad-container .ad:before {
+      display: block;
+      content: "";
+      width: 100%;
+      position: relative; }
+    .ad-container .ad .ad-inner {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0; }
 
+/**
+ * Advertisement Big Box 
+ * @molecule Advertisement-BigBox
+ * @section Content Blocks > Ads
+ * @flag contained
+ * @markup
+ *   <div class="ad-container bigbox">
+ *       <div class="ad">
+ *           <div class="ad-inner">
+ *               <a><img src="@{image:300:200}" alt="..."></a>
+ *           </div>
+ *       </div>
+ *       <p>Advertisement</p>
+ *   </div>
+*/
+/**
+ * Advertisement Leaderboard 
+ * @molecule Advertisement-Leaderboard
+ * @section Content Blocks > Ads
+ * @markup
+ *   <div class="ad-container leaderboard">
+ *       <div class="ad">
+ *           <div class="ad-inner">
+ *               <a><img src="@{image:728:90}" alt="..."></a>
+ *           </div>
+ *       </div>
+ *       <p>Advertisement</p>
+ *   </div>
+*/
+/**
+ * Advertisement Large Leaderboard 
+ * @molecule Advertisement-Leaderboard
+ * @section Content Blocks > Ads
+ * @markup
+ *   <div class="ad-container leaderboard-lg">
+ *       <div class="ad">
+ *           <div class="ad-inner">
+ *               <a><img src="@{image:728:210}" alt="..."></a>
+ *           </div>
+ *       </div>
+ *       <p>Advertisement</p>
+ *   </div>
+*/
+/**
+ * Advertisement Full Banner 
+ * @molecule Advertisement-Full-Banner
+ * @section Content Blocks > Ads
+ * @flag contained
+ * @markup
+ *   <div class="ad-container full-banner">
+ *       <div class="ad">
+ *           <div class="ad-inner">
+ *               <a><img src="@{image:468:60}" alt="..."></a>
+ *           </div>
+ *       </div>
+ *       <p>Advertisement</p>
+ *   </div>
+*/
 /**
  * a combo input for users to quickly search the site with. 
  *
@@ -9186,29 +9289,19 @@ body, .body {
  *          <div class="row">@{include:.nav-primary}</div>
  *          <div id="layout">
  *              <div class="page-content">
- *                  <div class="row"><div class="col-lg-4">@{include:.featured.card}</div>
- *                  <div class="col-lg-8">
- *                      @{include:.carousel}
- *                       <div class="card highlighted undecorated row">
- *                          <h3 class="card-header">@{lipsum:8:words}</h3>    
- *                           <div class="card-body">
- *                             <p>@{lipsum:1:paragraphss}</p>
- *                           </div>
- *                            <div class="row">
- *                                <div class="col-md-6">&nbsp;</div>
- *                                <div class="col-md-6"> 
- *                                  <div class="card-action">
- *                                       <a class="btn btn-primary btn-block">Action</a>
- *                                  </div>
- *                                </div>
- *                            </div>
- *                         </div>
+ *                  <div class="row">
+ *                      <div class="col-lg-4">
+ *                          @{include:.featured.card}</div>
+ *                      <div class="col-lg-8">
+ *                          @{include:.carousel}
+ *                          @{include:.leaderboard-lg}
  *                      </div>
  *                  </div>
- *                  <div class="row vh_30">
- *                      <div class="col-lg-4">@{include:.highlighted.card}</div> 
- *                      <div class="col-lg-4">@{include:.undecorated.card}</div>
+ *                  <div class="row vh_60">
+ *                      <div class="col-lg-8">@{include:.undecorated.card}</div> 
  *                      <div class="col-lg-4">@{include:.highlighted.card}</div>
+ *                      <div class="col-lg-4">@{include:.highlighted.card}</div>
+ *                      <div class="col-lg-8">@{include:.undecorated.card}</div>
  *                  </div>
  *              </div>           
  *          </div>
@@ -9286,6 +9379,8 @@ body, .body {
  *
  */
 #header .site-logo {
+  margin-top: 0;
+  margin-bottom: 0;
   padding: .75rem .33rem .5rem; }
   #header .site-logo img {
     height: 55px;

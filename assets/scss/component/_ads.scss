@@ -1,10 +1,14 @@
 /**
- * Advertisement blocks are for add placement on pages..
+ * Advertisement blocks are sized blocks that will by default hide when the view port is smaller then tablet
  * @molecule Advertisement
- * @section Content Blocks
+ * @section Content Blocks > Ads
  * @modifiers
- *  .mobile swaps the default visablity from hiding on small and showing on medium to showing on small and hidding on medium. 
- *  .skyscraper added to the container will center the ad within the container.
+ *  .mobile             Swaps the default visablity to show when smaller then tablet and hide when veiwport is larger then phone. 
+ *  .skyscraper         600w x 160h ad that has default visablity
+ *  .bigbox             300w x 200h ad that has default visablity
+ *  .leaderboard        728w x 90h ad that has default visablity
+ *  .leaderboard-lg     728w x 210h ad that has default visablity
+ *  .full-banner        468w x 60h ad that has default visablity.  This size is commonly combined with .mobile so it shows up only on phones
  * @flag contained
  *
  * @markup
@@ -17,27 +21,56 @@
  *       </div>
  *   </div>
 */
-
-
-
 .ad-container {
-    display: none;
-    @include bp(md){
-        display: inline-block;
-    }
-    &.mobile{
-        display: inline-block;
-        @include bp(md){
-            display: none;
-        }
-    }
     border:5px solid $off-white;
     background-color: $off-white;
     margin: 0 auto;
     text-align: center;
+    position: relative;
+    display: none;
+    margin-top:.25rem;
+    margin-bottom: .25rem;
+    width:100%;
+    img{width:100%;}
+    @include bp(md){ display: block; }
+    &:after{content:"";display:table;clear:both;}
     &.skyscraper{ 
-        width:164px;
-         @include bp(md){ display: block; }
+        max-width:160px + 14px;
+        .ad:before {
+          padding-top: (600/160) * 100%;
+        }
+    }
+    &.bigbox{ 
+        max-width:300px + 14px;
+        .ad:before {
+          padding-top: (200/300) * 100%;
+        }
+    }
+    &.leaderboard{ 
+        max-width:728px + 14px;
+        .ad:before {
+          padding-top: (90/728) * 100%;
+        }
+         
+    }
+    &.leaderboard-lg{ 
+        max-width:728px + 14px;
+        .ad:before {
+          padding-top: (210/728) * 100%;
+        }
+        
+    }
+    &.full-banner{
+        max-width:468px + 14px;
+        .ad:before {
+            padding-top: (60/468) * 100%;
+        }
+    }
+    &.mobile{
+        display:block;
+        @include bp(md){
+            display: none;
+        }
     }
     p {
         clear: both;
@@ -47,10 +80,89 @@
         color: $warm-grey;
         text-transform: uppercase;
     }
+    .ad + p{padding-bottom:0; padding-top:4px;}
     .ad{
         border:2px solid mix($warm-grey-light, $off-white);
-        .ad-inner{}
+        position:relative;
+        &:before {
+          display: block;
+          content: "";
+          width: 100%;
+          position:relative;
+      }
+        .ad-inner{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
 
     }
 }
 
+/**
+ * Advertisement Big Box 
+ * @molecule Advertisement-BigBox
+ * @section Content Blocks > Ads
+ * @flag contained
+ * @markup
+ *   <div class="ad-container bigbox">
+ *       <div class="ad">
+ *           <div class="ad-inner">
+ *               <a><img src="@{image:300:200}" alt="..."></a>
+ *           </div>
+ *       </div>
+ *       <p>Advertisement</p>
+ *   </div>
+*/
+.bigbox{}
+
+/**
+ * Advertisement Leaderboard 
+ * @molecule Advertisement-Leaderboard
+ * @section Content Blocks > Ads
+ * @markup
+ *   <div class="ad-container leaderboard">
+ *       <div class="ad">
+ *           <div class="ad-inner">
+ *               <a><img src="@{image:728:90}" alt="..."></a>
+ *           </div>
+ *       </div>
+ *       <p>Advertisement</p>
+ *   </div>
+*/
+.leaderboard{}
+
+/**
+ * Advertisement Large Leaderboard 
+ * @molecule Advertisement-Leaderboard
+ * @section Content Blocks > Ads
+ * @markup
+ *   <div class="ad-container leaderboard-lg">
+ *       <div class="ad">
+ *           <div class="ad-inner">
+ *               <a><img src="@{image:728:210}" alt="..."></a>
+ *           </div>
+ *       </div>
+ *       <p>Advertisement</p>
+ *   </div>
+*/
+.leaderboard-lg{}
+
+/**
+ * Advertisement Full Banner 
+ * @molecule Advertisement-Full-Banner
+ * @section Content Blocks > Ads
+ * @flag contained
+ * @markup
+ *   <div class="ad-container full-banner">
+ *       <div class="ad">
+ *           <div class="ad-inner">
+ *               <a><img src="@{image:468:60}" alt="..."></a>
+ *           </div>
+ *       </div>
+ *       <p>Advertisement</p>
+ *   </div>
+*/
+.full-banner{}

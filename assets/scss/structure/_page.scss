@@ -63,29 +63,19 @@
  *          <div class="row">@{include:.nav-primary}</div>
  *          <div id="layout">
  *              <div class="page-content">
- *                  <div class="row"><div class="col-lg-4">@{include:.featured.card}</div>
- *                  <div class="col-lg-8">
- *                      @{include:.carousel}
- *                       <div class="card highlighted undecorated row">
- *                          <h3 class="card-header">@{lipsum:8:words}</h3>    
- *                           <div class="card-body">
- *                             <p>@{lipsum:1:paragraphss}</p>
- *                           </div>
- *                            <div class="row">
- *                                <div class="col-md-6">&nbsp;</div>
- *                                <div class="col-md-6"> 
- *                                  <div class="card-action">
- *                                       <a class="btn btn-primary btn-block">Action</a>
- *                                  </div>
- *                                </div>
- *                            </div>
- *                         </div>
+ *                  <div class="row">
+ *                      <div class="col-lg-4">
+ *                          @{include:.featured.card}</div>
+ *                      <div class="col-lg-8">
+ *                          @{include:.carousel}
+ *                          @{include:.leaderboard-lg}
  *                      </div>
  *                  </div>
- *                  <div class="row vh_30">
- *                      <div class="col-lg-4">@{include:.highlighted.card}</div> 
- *                      <div class="col-lg-4">@{include:.undecorated.card}</div>
+ *                  <div class="row vh_60">
+ *                      <div class="col-lg-8">@{include:.undecorated.card}</div> 
  *                      <div class="col-lg-4">@{include:.highlighted.card}</div>
+ *                      <div class="col-lg-4">@{include:.highlighted.card}</div>
+ *                      <div class="col-lg-8">@{include:.undecorated.card}</div>
  *                  </div>
  *              </div>           
  *          </div>
