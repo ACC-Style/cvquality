@@ -1882,8 +1882,8 @@ pre {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 10px;
-  padding-right: 10px; }
+  padding-left: 9px;
+  padding-right: 9px; }
   .container:before, .container:after {
     content: " ";
     display: table; }
@@ -1891,19 +1891,19 @@ pre {
     clear: both; }
   @media (min-width: 576px) {
     .container {
-      width: 740px; } }
+      width: 738px; } }
   @media (min-width: 768px) {
     .container {
-      width: 960px; } }
+      width: 958px; } }
   @media (min-width: 1024px) {
     .container {
-      width: 1160px; } }
+      width: 1158px; } }
 
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 10px;
-  padding-right: 10px; }
+  padding-left: 9px;
+  padding-right: 9px; }
   .container-fluid:before, .container-fluid:after {
     content: " ";
     display: table; }
@@ -1911,8 +1911,8 @@ pre {
     clear: both; }
 
 .row {
-  margin-left: -10px;
-  margin-right: -10px; }
+  margin-left: -9px;
+  margin-right: -9px; }
   .row:before, .row:after {
     content: " ";
     display: table; }
@@ -1922,8 +1922,8 @@ pre {
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-left: 10px;
-  padding-right: 10px; }
+  padding-left: 9px;
+  padding-right: 9px; }
 
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left; }
@@ -3227,8 +3227,8 @@ select[multiple].input-lg,
 .form-horizontal .checkbox {
   min-height: 28.5px; }
 .form-horizontal .form-group {
-  margin-left: -10px;
-  margin-right: -10px; }
+  margin-left: -9px;
+  margin-right: -9px; }
   .form-horizontal .form-group:before, .form-horizontal .form-group:after {
     content: " ";
     display: table; }
@@ -3240,7 +3240,7 @@ select[multiple].input-lg,
     margin-bottom: 0;
     padding-top: 4.5px; } }
 .form-horizontal .has-feedback .form-control-feedback {
-  right: 10px; }
+  right: 9px; }
 @media (min-width: 576px) {
   .form-horizontal .form-group-lg .control-label {
     padding-top: 6.25px;
@@ -4105,8 +4105,8 @@ tbody.collapse.in {
 
 .navbar-collapse {
   overflow-x: visible;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 9px;
+  padding-left: 9px;
   border-top: 1px solid transparent;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   -webkit-overflow-scrolling: touch; }
@@ -4145,8 +4145,8 @@ tbody.collapse.in {
 .container > .navbar-collapse,
 .container-fluid > .navbar-header,
 .container-fluid > .navbar-collapse {
-  margin-right: -10px;
-  margin-left: -10px; }
+  margin-right: -9px;
+  margin-left: -9px; }
   @media (min-width: 576px) {
     .container > .navbar-header,
     .container > .navbar-collapse,
@@ -4184,7 +4184,7 @@ tbody.collapse.in {
 
 .navbar-brand {
   float: left;
-  padding: 13px 10px;
+  padding: 13px 9px;
   font-size: 18px;
   line-height: 24px;
   height: 50px; }
@@ -4194,12 +4194,12 @@ tbody.collapse.in {
     display: block; }
   @media (min-width: 576px) {
     .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
-      margin-left: -10px; } }
+      margin-left: -9px; } }
 
 .navbar-toggle {
   position: relative;
   float: right;
-  margin-right: 10px;
+  margin-right: 9px;
   padding: 9px 10px;
   margin-top: 8px;
   margin-bottom: 8px;
@@ -4221,7 +4221,7 @@ tbody.collapse.in {
       display: none; } }
 
 .navbar-nav {
-  margin: 6.5px -10px; }
+  margin: 6.5px -9px; }
   .navbar-nav > li > a {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -4253,9 +4253,9 @@ tbody.collapse.in {
           padding-bottom: 13px; } }
 
 .navbar-form {
-  margin-left: -10px;
-  margin-right: -10px;
-  padding: 10px 10px;
+  margin-left: -9px;
+  margin-right: -9px;
+  padding: 10px 9px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -4344,8 +4344,8 @@ tbody.collapse.in {
   @media (min-width: 576px) {
     .navbar-text {
       float: left;
-      margin-left: 10px;
-      margin-right: 10px; } }
+      margin-left: 9px;
+      margin-right: 9px; } }
 
 @media (min-width: 576px) {
   .navbar-left {
@@ -4353,7 +4353,7 @@ tbody.collapse.in {
 
   .navbar-right {
     float: right !important;
-    margin-right: -10px; }
+    margin-right: -9px; }
     .navbar-right ~ .navbar-right {
       margin-right: 0; } }
 .navbar-default {
@@ -4711,8 +4711,8 @@ a.badge:hover, a.badge:focus {
     border-top-color: #d5d5d5; }
   .container .jumbotron, .container-fluid .jumbotron {
     border-radius: 9px;
-    padding-left: 10px;
-    padding-right: 10px; }
+    padding-left: 9px;
+    padding-right: 9px; }
   .jumbotron .container {
     max-width: 100%; }
   @media screen and (min-width: 576px) {
@@ -6958,44 +6958,144 @@ a.link[href^="fax:"]:before {
   content: "\f1ac"; }
 
 /**
-* listing of blocks of information to be semanitic are wrapped in a ul.no-bullets 
+* Semantic List for content that shouldn't be bulleted or indented. 
 *
-* @atom List with No Bullets
+* @atom Generic List
 * @section Typography > Lists
 * @markup
-*  <ul class="no-bullets">
-*      <li>
-*      <h2>
-*      <a href="/Clinical-Toolkits/QI-Toolkit">QI Toolkit</a>
-*      </h2>
-*      <p>
-*      Implement quality patient care at your facility with checklists, reminders, and other tools to address common quality improvement issues.
-*      <a class="more" href="/Clinical-Toolkits/QII-Toolkit"></a>
-*      </p>
-*      </li>
-*      <li>
-*      <h2>
-*      <a href="/Clinical-Toolkits/QI-Toolkit">QI Toolkit 2</a>
-*      </h2>
-*      <p>
-*      Implement quality patient care at your facility with checklists, reminders, and other tools to address common quality improvement issues.
-*      <a class="more" href="/Clinical-Toolkits/QII-Toolkit"></a>
-*      </p>
-*      </li>
-*  </ul>
+*    <ul class="generic-list">
+*        <li>
+*            <h2>
+*          <a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a>
+*          </h2>
+*            <p>@{lipsum:3:sentences}
+*            </p>
+*            <a>more <i class="fa fa-arrow-right"></i></a>
+*        </li>
+*        <li>
+*            <h2>
+*          <a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a>
+*          </h2>
+*            <p>@{lipsum:3:sentences}
+*            </p>
+*            <a>more <i class="fa fa-arrow-right"></i></a>
+*        </li>
+*    </ul>
 */
-ul.no-bullets {
+ul.generic-list {
   /*.layout-listing #colone ul.generic-list,*/
   margin-top: 1em; }
-  ul.no-bullets li {
+  ul.generic-list li {
     /*.layout-listing #colone ul.generic-list li, */
     margin: 0 0 1em;
     overflow: auto;
     list-style-type: none; }
-    ul.no-bullets li img {
+    ul.generic-list li img {
       /*.layout-listing ul.generic-list li img, */
       margin: 0 14px 6px 0;
       float: left; }
+  ul.generic-list > li + li {
+    margin-top: .5rem;
+    border-top: 1px dashed #d6d4d4;
+    padding-top: .5rem; }
+
+/**
+* Definision List. 
+*
+* @atom Definision List
+* @section Typography > Lists
+* @markup
+*    <dl class="grouped-definision-list term-xs">
+*        <dt><img src="@{image:100:100}" alt="..."></dt> 
+*        <dd>
+*            <h2>
+*          <a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a>
+*          </h2>
+*            <p>@{lipsum:3:sentences}
+*            </p>
+*            <a>more <i class="fa fa-arrow-right"></i></a>
+*        </dd>
+*        <dt><img src="@{image:100:100}" alt="..."></dt> 
+*        <dd>
+*            <h2>
+*          <a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a>
+*          </h2>
+*            <p>@{lipsum:3:sentences}
+*            </p>
+*            <a>more <i class="fa fa-arrow-right"></i></a>
+*        </dd>
+*    </dl>
+*/
+dl.grouped-definision-list dt {
+  float: left;
+  clear: both; }
+dl.grouped-definision-list dd {
+  float: left;
+  padding-left: 18px; }
+  dl.grouped-definision-list dd > *:first-child {
+    margin-top: 0; }
+dl.grouped-definision-list dt:after, dl.grouped-definision-list dd:after {
+  padding-top: 18px;
+  content: "";
+  display: table;
+  width: 100%; }
+dl.grouped-definision-list.term-xs dt {
+  width: 30%; }
+dl.grouped-definision-list.term-xs dd {
+  width: 70%; }
+dl.grouped-definision-list.term-sm dt {
+  width: 40%; }
+dl.grouped-definision-list.term-sm dd {
+  width: 60%; }
+dl.grouped-definision-list.term-md dt, dl.grouped-definision-list.term-md dd, dl.grouped-definision-list.term-lg dt, dl.grouped-definision-list.term-lg dd {
+  width: 100%;
+  clear: both; }
+@media only screen and (min-width: 768px) {
+  dl.grouped-definision-list.term-xs dt {
+    width: 20%; }
+  dl.grouped-definision-list.term-xs dd {
+    width: 80%; }
+  dl.grouped-definision-list.term-sm dt {
+    width: 30%; }
+  dl.grouped-definision-list.term-sm dd {
+    width: 70%; }
+  dl.grouped-definision-list.term-md dt {
+    width: 40%; }
+  dl.grouped-definision-list.term-md dd {
+    width: 80%; }
+  dl.grouped-definision-list.term-lg dt {
+    width: 50%; }
+  dl.grouped-definision-list.term-lg dd {
+    width: 50%; } }
+@media only screen and (min-width: 1024px) {
+  dl.grouped-definision-list.term-xs dt {
+    width: 10%; }
+  dl.grouped-definision-list.term-xs dd {
+    width: 90%; }
+  dl.grouped-definision-list.term-sm dt {
+    width: 20%; }
+  dl.grouped-definision-list.term-sm dd {
+    width: 80%; }
+  dl.grouped-definision-list.term-md dt {
+    width: 30%; }
+  dl.grouped-definision-list.term-md dd {
+    width: 70%; }
+  dl.grouped-definision-list.term-lg dt {
+    width: 50%; }
+  dl.grouped-definision-list.term-lg dd {
+    width: 50%; } }
+dl.grouped-definision-list.term-sq-sm dt {
+  width: 20%; }
+dl.grouped-definision-list.term-sq-sm dd {
+  width: 80%; }
+dl.grouped-definision-list.term-sq-md dt {
+  width: 20%; }
+dl.grouped-definision-list.term-sq-md dd {
+  width: 80%; }
+dl.grouped-definision-list.term-sq-lg dt {
+  width: 20%; }
+dl.grouped-definision-list.term-sq-lg dd {
+  width: 80%; }
 
 /**
 * @atom Typography Kitchen Sink
@@ -7767,8 +7867,8 @@ input {
 /**
  * "Undecorated" cards remove the background,padding and border of cards with leaving behind all of the typography treatment of card.  This is mosly used on the homepage in combination with the highlighted card 
  *
- * @structure Undecorated Highlighted Card 
- * @section Card Stuctures 
+ * @molecule Undecorated Highlighted Card 
+ * @section Card 
  * @flag contained
  * @markup
  *  <div class="card highlighted undecorated">

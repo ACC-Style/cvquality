@@ -198,34 +198,32 @@ a.link{
 
 
 /**
-* listing of blocks of information to be semanitic are wrapped in a ul.no-bullets 
+* Semantic List for content that shouldn't be bulleted or indented. 
 *
-* @atom List with No Bullets
+* @atom Generic List
 * @section Typography > Lists
 * @markup
-*  <ul class="no-bullets">
-*      <li>
-*      <h2>
-*      <a href="/Clinical-Toolkits/QI-Toolkit">QI Toolkit</a>
-*      </h2>
-*      <p>
-*      Implement quality patient care at your facility with checklists, reminders, and other tools to address common quality improvement issues.
-*      <a class="more" href="/Clinical-Toolkits/QII-Toolkit"></a>
-*      </p>
-*      </li>
-*      <li>
-*      <h2>
-*      <a href="/Clinical-Toolkits/QI-Toolkit">QI Toolkit 2</a>
-*      </h2>
-*      <p>
-*      Implement quality patient care at your facility with checklists, reminders, and other tools to address common quality improvement issues.
-*      <a class="more" href="/Clinical-Toolkits/QII-Toolkit"></a>
-*      </p>
-*      </li>
-*  </ul>
+*    <ul class="generic-list">
+*        <li>
+*            <h2>
+*          <a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a>
+*          </h2>
+*            <p>@{lipsum:3:sentences}
+*            </p>
+*            <a>more <i class="fa fa-arrow-right"></i></a>
+*        </li>
+*        <li>
+*            <h2>
+*          <a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a>
+*          </h2>
+*            <p>@{lipsum:3:sentences}
+*            </p>
+*            <a>more <i class="fa fa-arrow-right"></i></a>
+*        </li>
+*    </ul>
 */
 
-ul.no-bullets{
+ul.generic-list{
     /*.layout-listing #colone ul.generic-list,*/
     margin-top: 1em;
     li {
@@ -239,7 +237,75 @@ ul.no-bullets{
             float: left;
         }
     }
+    >li + li{ margin-top:.5rem; border-top:1px dashed $warm-grey-light; padding-top:.5rem;}
 }
+
+/**
+* Definision List. 
+*
+* @atom Definision List
+* @section Typography > Lists
+* @markup
+*    <dl class="grouped-definision-list term-xs">
+*        <dt><img src="@{image:100:100}" alt="..."></dt> 
+*        <dd>
+*            <h2>
+*          <a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a>
+*          </h2>
+*            <p>@{lipsum:3:sentences}
+*            </p>
+*            <a>more <i class="fa fa-arrow-right"></i></a>
+*        </dd>
+*        <dt><img src="@{image:100:100}" alt="..."></dt> 
+*        <dd>
+*            <h2>
+*          <a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a>
+*          </h2>
+*            <p>@{lipsum:3:sentences}
+*            </p>
+*            <a>more <i class="fa fa-arrow-right"></i></a>
+*        </dd>
+*    </dl>
+*/
+
+dl.grouped-definision-list{
+
+    dt{
+        float:left;
+        clear:both;
+    }
+    dd{
+        float:left; padding-left:$grid-gutter-width;
+        >*:first-child{margin-top:0;}
+    }
+    dt,dd{
+        &:after{
+            padding-top:$grid-gutter-width;
+            content:"";
+            display: table;
+            width: 100%;
+        }
+    }
+    &.term-xs{dt{width:30%}dd{width:70%}}
+    &.term-sm{dt{width:40%}dd{width:60%}}
+    &.term-md,&.term-lg{dt,dd{width:100%; clear:both;}}
+    @include bp(md){
+         &.term-xs{dt{width:20%}dd{width:80%}}
+        &.term-sm{dt{width:30%}dd{width:70%}}
+        &.term-md{dt{width:40%}dd{width:80%}}
+        &.term-lg{dt{width:50%}dd{width:50%}}
+    }
+     @include bp(lg){
+                 &.term-xs{dt{width:10%}dd{width:90%}}
+        &.term-sm{dt{width:20%}dd{width:80%}}
+        &.term-md{dt{width:30%}dd{width:70%}}
+        &.term-lg{dt{width:50%}dd{width:50%}}
+    }
+    &.term-sq-sm{dt{width:20%}dd{width:80%}}
+    &.term-sq-md{dt{width:20%}dd{width:80%}}
+    &.term-sq-lg{dt{width:20%}dd{width:80%}}
+}
+
 
 
 
