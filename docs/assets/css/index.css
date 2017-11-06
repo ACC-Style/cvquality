@@ -9217,7 +9217,7 @@ address.vcard {
       @media only screen and (min-width: 768px) {
         .carousel .carousel-caption .title {
           font-size: 28px; } }
-  .carousel.chevron-on .carousel-indicators li:active:before {
+  .carousel.chevron-on .carousel-indicators li.active:before {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;

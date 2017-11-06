@@ -141,7 +141,7 @@
             }
         }
     }
-    &.chevron-on .carousel-indicators li:active:before{
+    &.chevron-on .carousel-indicators li.active:before{
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
       font-size: inherit;
