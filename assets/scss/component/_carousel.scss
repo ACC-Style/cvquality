@@ -5,8 +5,9 @@
  * @section Javascript
  * @modifiers
  *  .no-controls will remove left and right arrow
+ *  .text-indecators converts the circle indicators to text tabs that lock to the right side of the images.
  * @markup
- *  <div id="carousel-example-generic" class="carousel slide no-controls" data-ride="carousel">
+ *  <div id="carousel-example-generic" class="carousel slide no-controls text-indecators" data-ride="carousel ">
  *    <!-- Indicators -->
  *    <ol class="carousel-indicators">
  *      <li data-target="#carousel-example-generic" data-slide-to="0" class="active">@{lipsum:5:words}</li>
@@ -55,181 +56,261 @@
  *    </a>
  *  </div>
  */
- .carousel{
-    max-width: 900px;
+.carousel {
+    max-width: 630px;
     position: relative;
-    background:url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/subtle_surface.png");
+    background: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/subtle_surface.png");
     background-repeat: repeat;
+    margin: 0 auto 1rem;
+
     &:before {
-      display: block;
-      content: "";
-      width: 100%;
-      padding-top: (7/15) * 100%;
-    }
-    > .carousel-inner{
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-    }
-
-  
-    .carousel-indicators{
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      bottom:0;
-      top:0;
-      right:0;
-      max-width: 300px;
-      width:30%;
-      left:auto;
-      li{
-        flex:1 1 20%;
-        text-indent: 0;
-        border-radius: 0;
-        background-color:$warm-grey;
         display: block;
-        position: relative;
+        content: "";
         width: 100%;
-        height: auto;
-        padding:.5em 16px .5px 16px;
-        overflow: hidden;
-        flex-direction: column;
-        transition:background-color 0.25s ease-out;
-        -moz-transition:background-color 0.25s ease-out;
-        -webkit-transition:background-color 0.25s ease-out; 
-        border:1px solid $warm-grey-light; 
-        text-align: left;
-        font-size: ms(1);
-        &:first-child{
-          border-top:0;
-        }
-        &:last-child{
-          border-bottom:0;
-        }
-        &.active{
-          &:before{
-              display: inline-block;
-              font: normal normal normal 14px/1 FontAwesome;
-              font-size: inherit;
-              text-rendering: auto;
-              -webkit-font-smoothing: antialiased;
-              -moz-osx-font-smoothing: grayscale;
-              transform: translate(0, 0);
-              width: 1.28571429em;
-              text-align: center;
-              content: "\f054";
-              color:$light-orange;
-              font-size:ms(4);
-              padding-top:5px;
-          }
-          background-color:$warm-grey-dark;
-          color:white;
-          border-right:$dark-orange 10px solid;
-          padding-right:10px;
-        }
-      }
+        padding-top: 2 / 3 * 100%;
     }
-    .carousel-inner{
-      width:70%;
-      > .item{
-        width:100%;
-        height: 100%;
-        overflow: hidden;
-      }
+
+    > .carousel-inner {
+        position: absolute;
+        top: 0px;
+        right: 0;
+        bottom: 0;
+        left: 0;
     }
-    .carousel-control.right{right:30%;}
-    .carousel-caption{
-      .title{
-        color:white; 
-        margin-bottom:.25em;
-        font-size:ms(6);
-        display:block; 
-        @include font-display(100);
-      }
-       bottom:0;
-       left:0;
-       right:0;
-       background-color:rgba(black,.75);
-       line-height: $tight;
-       @include font-display(300);
+
+    // .carousel-inner > .item > img,
+    // .carousel-inner > .item > a > img {
+    //   width: 100%;
+    //   }
+
+    .carousel-indicators {
+        background-color: rgba(0, 0, 0, 0.6);
+        bottom: auto;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+
+        li {
+            text-indent: -9999px;
+            overflow: hidden;
+            border-color: $off-white;
+
+            &.active {
+                border-color: $light-orange;
+                background-color: $light-orange;
+            }
+        }
+    }
+
+    .carousel-control.right {
+        right: 30%;
+    }
+
+    .carousel-caption {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(black, 0.75);
+        line-height: $tight;
+
+        @include font-display(300);
+
+        font-size: ms(0);
         padding: 10px 1em 25px;
-       text-align: left;
+        text-align: center;
+
+        @include bp(md) {
+            text-align: left;
+            font-size: ms(2);
+        }
+
+
+        .title {
+            color: white;
+            margin-bottom: .25em;
+            font-size: ms(3);
+            display: block;
+
+            @include font-display(100);
+
+            line-height: $crunched;
+
+            @include bp(md) {
+                font-size: ms(6);
+            }
+        }
     }
 
- }
- .carousel-control {
-  .no-controls &{display:none;}
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: $carousel-control-width;
-  @include opacity($carousel-control-opacity);
-  font-size: $carousel-control-font-size;
-  color: $carousel-control-color;
-  text-align: center;
-  text-shadow: $carousel-text-shadow;
-  background-color: rgba(0, 0, 0, 0); // Fix IE9 click-thru bug
-  // We can't have this transition here because WebKit cancels the carousel
-  // animation if you trip this while in the middle of another animation.
+    &.text-indecators {
+        @include bp(md) {
+            max-width: 900px;
 
-  // Set gradients for backgrounds
-  &.left {
-    @include gradient-horizontal($start-color: rgba(0,0,0,.5), $end-color: rgba(0,0,0,.0001));
-  }
-  &.right {
-    left: auto;
-    right: 0;
-    @include gradient-horizontal($start-color: rgba(0,0,0,.0001), $end-color: rgba(0,0,0,.5));
-  }
+            &:before {
+                padding-top: 7 / 15 * 100%;
+            }
 
-  // Hover/focus state
-  &:hover,
-  &:focus {
-    outline: 0;
-    color: $light-orange;
-    text-decoration: none;
-    @include opacity(.9);
-  }
+            .carousel-inner {
+                width: 70%;
 
-  // Toggles
-  .fa{
-    position: absolute;
-    top: 50%;
-    margin-top: -10px;
-    z-index: 5;
-    display: inline-block;
-  }
-   &.left .fa {
-    left: 50%;
-    margin-left: -10px;
-  }
-   &.right .fa {
-    right: 50%;
-    margin-right: -10px;
-  }
+                > .item {
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                }
+            }
 
+            .carousel-control {
+                width: 30%;
+            }
+            .carousel-indicators {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                bottom: 0;
+                top: 0;
+                right: 0;
+                max-width: 300px;
+                width: 30%;
+                left: auto;
+
+                li {
+                    flex: 1 1 20%;
+                    text-indent: 0;
+                    border-radius: 0;
+                    background-color: $warm-grey;
+                    display: block;
+                    position: relative;
+                    width: 100%;
+                    height: auto;
+                    padding: .5em 16px .5px 16px;
+                    flex-direction: column;
+                    transition: background-color 0.25s ease-out;
+                    -moz-transition: background-color 0.25s ease-out;
+                    -webkit-transition: background-color 0.25s ease-out;
+                    border: 1px solid $warm-grey-light;
+                    text-align: left;
+                    font-size: ms(1);
+
+                    &:first-child {
+                        border-top: 0;
+                    }
+
+                    &:last-child {
+                        border-bottom: 0;
+                    }
+
+                    &.active {
+                        &:before {
+                            display: inline-block;
+                            font: normal normal normal 14px/1 FontAwesome;
+                            font-size: inherit;
+                            text-rendering: auto;
+                            -webkit-font-smoothing: antialiased;
+                            -moz-osx-font-smoothing: grayscale;
+                            transform: translate(0, 0);
+                            width: 1.28571429em;
+                            text-align: center;
+                            content: "\f054";
+                            color: $light-orange;
+                            font-size: ms(4);
+                            padding-top: 5px;
+                        }
+
+                        background-color: $warm-grey-dark;
+                        color: white;
+                        border-right: $dark-orange 10px solid;
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+    }
 }
 
- // Scale up controls for tablets and up
-@media screen and (min-width: $screen-sm-min) {
+.carousel-control {
+    .no-controls & {
+        display: none;
+    }
 
-  // Scale up the controls a smidge
-  .carousel-control {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: $carousel-control-width;
+
+    @include opacity($carousel-control-opacity);
+
+    font-size: $carousel-control-font-size;
+    color: $carousel-control-color;
+    text-align: center;
+    text-shadow: $carousel-text-shadow;
+    background-color: rgba(0, 0, 0, 0);
+
+    // Fix IE9 click-thru bug
+    // We can't have this transition here because WebKit cancels the carousel
+    // animation if you trip this while in the middle of another animation.
+
+    // Set gradients for backgrounds
+    &.left {
+        @include gradient-horizontal($start-color: rgba(0, 0, 0, 0.5), $end-color: rgba(0, 0, 0, 0.0001));
+    }
+
+    &.right {
+        left: auto;
+        right: 0;
+
+        @include gradient-horizontal($start-color: rgba(0, 0, 0, 0.0001), $end-color: rgba(0, 0, 0, 0.5));
+    }
+
+    // Hover/focus state
+    &:hover,
+    &:focus {
+        outline: 0;
+        color: $light-orange;
+        text-decoration: none;
+
+        @include opacity(0.9);
+    }
+
+    // Toggles
     .fa {
-      width: ($carousel-control-font-size * 1.5);
-      height: ($carousel-control-font-size * 1.5);
-      margin-top: ($carousel-control-font-size / -2);
-      font-size: ($carousel-control-font-size * 1.5);
+        position: absolute;
+        top: 50%;
+        margin-top: -10px;
+        z-index: 5;
+        display: inline-block;
     }
+
     &.left .fa {
-      margin-left: ($carousel-control-font-size / -2);
+        left: 50%;
+        margin-left: -10px;
     }
+
     &.right .fa {
-      margin-right: ($carousel-control-font-size / -2);
+        right: 50%;
+        margin-right: -10px;
     }
-  }
+}
+
+// Scale up controls for tablets and up
+@media screen and (min-width: $screen-sm-min) {
+    // Scale up the controls a smidge
+    .carousel-control {
+        .fa {
+            width: $carousel-control-font-size * 1.5;
+            height: $carousel-control-font-size * 1.5;
+            margin-top: $carousel-control-font-size / -2;
+            font-size: $carousel-control-font-size * 1.5;
+        }
+
+        &.left .fa {
+            margin-left: $carousel-control-font-size / -2;
+        }
+
+        &.right .fa {
+            margin-right: $carousel-control-font-size / -2;
+        }
+    }
 }

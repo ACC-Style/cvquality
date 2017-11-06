@@ -9107,8 +9107,9 @@ address.vcard {
  * @section Javascript
  * @modifiers
  *  .no-controls will remove left and right arrow
+ *  .text-indecators converts the circle indicators to text tabs that lock to the right side of the images.
  * @markup
- *  <div id="carousel-example-generic" class="carousel slide no-controls" data-ride="carousel">
+ *  <div id="carousel-example-generic" class="carousel slide no-controls text-indecators" data-ride="carousel ">
  *    <!-- Indicators -->
  *    <ol class="carousel-indicators">
  *      <li data-target="#carousel-example-generic" data-slide-to="0" class="active">@{lipsum:5:words}</li>
@@ -9158,78 +9159,37 @@ address.vcard {
  *  </div>
  */
 .carousel {
-  max-width: 900px;
+  max-width: 630px;
   position: relative;
   background: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/subtle_surface.png");
-  background-repeat: repeat; }
+  background-repeat: repeat;
+  margin: 0 auto 1rem; }
   .carousel:before {
     display: block;
     content: "";
     width: 100%;
-    padding-top: 46.6666666667%; }
+    padding-top: 66.6666666667%; }
   .carousel > .carousel-inner {
     position: absolute;
-    top: 0;
+    top: 0px;
     right: 0;
     bottom: 0;
     left: 0; }
   .carousel .carousel-indicators {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    bottom: auto;
+    width: 100%;
     top: 0;
+    left: 0;
     right: 0;
-    max-width: 300px;
-    width: 30%;
-    left: auto; }
+    margin: 0; }
     .carousel .carousel-indicators li {
-      flex: 1 1 20%;
-      text-indent: 0;
-      border-radius: 0;
-      background-color: #a1a0a4;
-      display: block;
-      position: relative;
-      width: 100%;
-      height: auto;
-      padding: .5em 16px .5px 16px;
+      text-indent: -9999px;
       overflow: hidden;
-      flex-direction: column;
-      transition: background-color 0.25s ease-out;
-      -moz-transition: background-color 0.25s ease-out;
-      -webkit-transition: background-color 0.25s ease-out;
-      border: 1px solid #d6d4d4;
-      text-align: left;
-      font-size: 16px; }
-      .carousel .carousel-indicators li:first-child {
-        border-top: 0; }
-      .carousel .carousel-indicators li:last-child {
-        border-bottom: 0; }
+      border-color: #fafafa; }
       .carousel .carousel-indicators li.active {
-        background-color: #6f6b6f;
-        color: white;
-        border-right: #e87d1e 10px solid;
-        padding-right: 10px; }
-        .carousel .carousel-indicators li.active:before {
-          display: inline-block;
-          font: normal normal normal 14px/1 FontAwesome;
-          font-size: inherit;
-          text-rendering: auto;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;
-          transform: translate(0, 0);
-          width: 1.28571429em;
-          text-align: center;
-          content: "\f054";
-          color: #ffc425;
-          font-size: 22px;
-          padding-top: 5px; }
-  .carousel .carousel-inner {
-    width: 70%; }
-    .carousel .carousel-inner > .item {
-      width: 100%;
-      height: 100%;
-      overflow: hidden; }
+        border-color: #ffc425;
+        background-color: #ffc425; }
   .carousel .carousel-control.right {
     right: 30%; }
   .carousel .carousel-caption {
@@ -9240,15 +9200,87 @@ address.vcard {
     line-height: 1.3;
     font-family: 'Muli', Verdana, Helvetica, Arial, sans-serif;
     font-weight: 300;
+    font-size: 14px;
     padding: 10px 1em 25px;
-    text-align: left; }
+    text-align: center; }
+    @media only screen and (min-width: 768px) {
+      .carousel .carousel-caption {
+        text-align: left;
+        font-size: 18px; } }
     .carousel .carousel-caption .title {
       color: white;
       margin-bottom: .25em;
-      font-size: 28px;
+      font-size: 20px;
       display: block;
       font-family: 'Muli', Verdana, Helvetica, Arial, sans-serif;
-      font-weight: 100; }
+      font-weight: 100;
+      line-height: 1.15; }
+      @media only screen and (min-width: 768px) {
+        .carousel .carousel-caption .title {
+          font-size: 28px; } }
+  @media only screen and (min-width: 768px) {
+    .carousel.text-indecators {
+      max-width: 900px; }
+      .carousel.text-indecators:before {
+        padding-top: 46.6666666667%; }
+      .carousel.text-indecators .carousel-inner {
+        width: 70%; }
+        .carousel.text-indecators .carousel-inner > .item {
+          width: 100%;
+          height: 100%;
+          overflow: hidden; }
+      .carousel.text-indecators .carousel-control {
+        width: 30%; }
+      .carousel.text-indecators .carousel-indicators {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        max-width: 300px;
+        width: 30%;
+        left: auto; }
+        .carousel.text-indecators .carousel-indicators li {
+          flex: 1 1 20%;
+          text-indent: 0;
+          border-radius: 0;
+          background-color: #a1a0a4;
+          display: block;
+          position: relative;
+          width: 100%;
+          height: auto;
+          padding: .5em 16px .5px 16px;
+          flex-direction: column;
+          transition: background-color 0.25s ease-out;
+          -moz-transition: background-color 0.25s ease-out;
+          -webkit-transition: background-color 0.25s ease-out;
+          border: 1px solid #d6d4d4;
+          text-align: left;
+          font-size: 16px; }
+          .carousel.text-indecators .carousel-indicators li:first-child {
+            border-top: 0; }
+          .carousel.text-indecators .carousel-indicators li:last-child {
+            border-bottom: 0; }
+          .carousel.text-indecators .carousel-indicators li.active {
+            background-color: #6f6b6f;
+            color: white;
+            border-right: #e87d1e 10px solid;
+            padding-right: 10px; }
+            .carousel.text-indecators .carousel-indicators li.active:before {
+              display: inline-block;
+              font: normal normal normal 14px/1 FontAwesome;
+              font-size: inherit;
+              text-rendering: auto;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale;
+              transform: translate(0, 0);
+              width: 1.28571429em;
+              text-align: center;
+              content: "\f054";
+              color: #ffc425;
+              font-size: 22px;
+              padding-top: 5px; } }
 
 .carousel-control {
   position: absolute;
