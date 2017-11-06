@@ -5,9 +5,9 @@
  * @section Javascript
  * @modifiers
  *  .no-controls will remove left and right arrow
- *  .text-indecators converts the circle indicators to text tabs that lock to the right side of the images.
+ *  .text-indicators converts the circle indicators to text tabs that lock to the right side of the images.
  * @markup
- *  <div id="carousel-example-generic" class="carousel slide no-controls text-indecators" data-ride="carousel ">
+ *  <div id="carousel-example-generic" class="carousel slide no-controls text-indicators" data-ride="carousel ">
  *    <!-- Indicators -->
  *    <ol class="carousel-indicators">
  *      <li data-target="#carousel-example-generic" data-slide-to="0" class="active">@{lipsum:5:words}</li>
@@ -143,7 +143,7 @@
         }
     }
 
-    &.text-indecators {
+    &.text-indicators {
         @include bp(md) {
             max-width: 900px;
 

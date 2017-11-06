@@ -9107,9 +9107,9 @@ address.vcard {
  * @section Javascript
  * @modifiers
  *  .no-controls will remove left and right arrow
- *  .text-indecators converts the circle indicators to text tabs that lock to the right side of the images.
+ *  .text-indicators converts the circle indicators to text tabs that lock to the right side of the images.
  * @markup
- *  <div id="carousel-example-generic" class="carousel slide no-controls text-indecators" data-ride="carousel ">
+ *  <div id="carousel-example-generic" class="carousel slide no-controls text-indicators" data-ride="carousel ">
  *    <!-- Indicators -->
  *    <ol class="carousel-indicators">
  *      <li data-target="#carousel-example-generic" data-slide-to="0" class="active">@{lipsum:5:words}</li>
@@ -9219,19 +9219,19 @@ address.vcard {
         .carousel .carousel-caption .title {
           font-size: 28px; } }
   @media only screen and (min-width: 768px) {
-    .carousel.text-indecators {
+    .carousel.text-indicators {
       max-width: 900px; }
-      .carousel.text-indecators:before {
+      .carousel.text-indicators:before {
         padding-top: 46.6666666667%; }
-      .carousel.text-indecators .carousel-inner {
+      .carousel.text-indicators .carousel-inner {
         width: 70%; }
-        .carousel.text-indecators .carousel-inner > .item {
+        .carousel.text-indicators .carousel-inner > .item {
           width: 100%;
           height: 100%;
           overflow: hidden; }
-      .carousel.text-indecators .carousel-control {
+      .carousel.text-indicators .carousel-control {
         width: 30%; }
-      .carousel.text-indecators .carousel-indicators {
+      .carousel.text-indicators .carousel-indicators {
         display: flex;
         flex-direction: column;
         height: 100%;
@@ -9241,7 +9241,7 @@ address.vcard {
         max-width: 300px;
         width: 30%;
         left: auto; }
-        .carousel.text-indecators .carousel-indicators li {
+        .carousel.text-indicators .carousel-indicators li {
           flex: 1 1 20%;
           text-indent: 0;
           border-radius: 0;
@@ -9258,16 +9258,16 @@ address.vcard {
           border: 1px solid #d6d4d4;
           text-align: left;
           font-size: 16px; }
-          .carousel.text-indecators .carousel-indicators li:first-child {
+          .carousel.text-indicators .carousel-indicators li:first-child {
             border-top: 0; }
-          .carousel.text-indecators .carousel-indicators li:last-child {
+          .carousel.text-indicators .carousel-indicators li:last-child {
             border-bottom: 0; }
-          .carousel.text-indecators .carousel-indicators li.active {
+          .carousel.text-indicators .carousel-indicators li.active {
             background-color: #6f6b6f;
             color: white;
             border-right: #e87d1e 10px solid;
             padding-right: 10px; }
-            .carousel.text-indecators .carousel-indicators li.active:before {
+            .carousel.text-indicators .carousel-indicators li.active:before {
               display: inline-block;
               font: normal normal normal 14px/1 FontAwesome;
               font-size: inherit;
