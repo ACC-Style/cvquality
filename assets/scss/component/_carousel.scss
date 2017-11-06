@@ -6,8 +6,9 @@
  * @modifiers
  *  .no-controls will remove left and right arrow
  *  .text-indicators converts the circle indicators to text tabs that lock to the right side of the images.
+ *  .chevron-on  Adds a light orange chevron on the active inidicator to increase it's impact.
  * @markup
- *  <div id="carousel-example-generic" class="carousel slide no-controls text-indicators" data-ride="carousel ">
+ *  <div id="carousel-example-generic" class="carousel slide no-controls text-indicators chevron-on" data-ride="carousel ">
  *    <!-- Indicators -->
  *    <ol class="carousel-indicators">
  *      <li data-target="#carousel-example-generic" data-slide-to="0" class="active">@{lipsum:5:words}</li>
@@ -104,9 +105,7 @@
         }
     }
 
-    .carousel-control.right {
-        right: 30%;
-    }
+
 
     .carousel-caption {
         bottom: 0;
@@ -142,6 +141,22 @@
             }
         }
     }
+    &.chevron-on .carousel-indicators li:active:before{
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      transform: translate(0, 0);
+      width: 1.28571429em;
+      text-align: center;
+      content: "\f054";
+      color: $light-orange;
+      font-size: ms(4);
+      padding-top: 5px;
+
+    }
 
     &.text-indicators {
         @include bp(md) {
@@ -161,8 +176,8 @@
                 }
             }
 
-            .carousel-control {
-                width: 30%;
+            .carousel-control.right {
+                right: 30%;
             }
             .carousel-indicators {
                 display: flex;
@@ -202,22 +217,6 @@
                     }
 
                     &.active {
-                        &:before {
-                            display: inline-block;
-                            font: normal normal normal 14px/1 FontAwesome;
-                            font-size: inherit;
-                            text-rendering: auto;
-                            -webkit-font-smoothing: antialiased;
-                            -moz-osx-font-smoothing: grayscale;
-                            transform: translate(0, 0);
-                            width: 1.28571429em;
-                            text-align: center;
-                            content: "\f054";
-                            color: $light-orange;
-                            font-size: ms(4);
-                            padding-top: 5px;
-                        }
-
                         background-color: $warm-grey-dark;
                         color: white;
                         border-right: $dark-orange 10px solid;
@@ -231,8 +230,12 @@
 
 .carousel-control {
     .no-controls & {
-        display: none;
+        @include bp(md){ display: none;}
     }
+    min-width: 3rem;
+    width:20%;
+    @include bp(md){width:10%;}
+    @include bp(lg){width:5%;}
 
     position: absolute;
     top: 0;
