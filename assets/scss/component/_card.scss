@@ -199,15 +199,26 @@ h3{font-size:ms(5);}
  *  .compressed arranges the container to take up less room.
  * @markup
  *	<div class="card event">
- *		<h2 class="card-header">@{lipsum:3:words}</h2>
- *		<div class="card-body">
- *			<div class="date">
- *				<span class="day">12</span>
- *				<span class="month">May</span>
- *				<span class="year">2018</span>
+ *		<div class="card-header">
+ *			<div class="row">
+ *			    <div class="column col-sm-6 col-md-4 col-lg-3">
+ *			        <div class="date">
+ *			            <span class="month">May</span>
+ *			            <span class="day">12</span>
+ *			            <span class="year">2018</span>
+ *			        </div>
+ *			    </div>
+ *			    <div class="column col-sm-6 col-md-8 col-lg-9">
+ *			        <div class="title">@{lipsum:8:words}</div>
+ *			        <div class="location">Cincinnati, OH</div>
+ *			        <div class="full-date">May 12, 2018</div>
+ *			    </div>
  *			</div>
- *			@{lipsum:2:paragraphs}
  *		</div>
+ *		<div class="card-body">		
+ *			<p>@{lipsum:1:paragraphs}</p>
+ *		</div>
+ *		<div class="card-action"><strong>Add to Calendar: </strong><a class="link">Outlook</a> | <a class="link">Google Calendar</a> | <a class="link">iCal</a></div>
  *	</div>
  *
  */	
@@ -216,23 +227,51 @@ h3{font-size:ms(5);}
 	border-width:1px;
 	position:relative;
 	.card-header{
+		padding-top:1rem;
 		text-align: left;
+		background-color:$soft-grey;
+		
 	}
 	.card-body{
 		text-align: left;
+		clear:both;
+		padding-top:.5rem;
 	}
 	.date{
-		float:right;
 		max-width:160px;
 		min-width:110px;
-		margin:0px 0px 10px 10px;
+		margin:0px auto 10px auto;
 	}
 	.day{
 	}
 	.month{}
 	.year{
 	}
+	.title{
+		margin-top:0;
+		margin-bottom:.25rem;
+		font-size:ms(3);
+		 color:$dark-orange;
+		 @include font(normal);
+		 line-height: $crunched;
+		 text-transform: capitalize;
+		}
+	.location{
+		 @include font(regular);
+		 font-size: ms(1);
+		 line-height: $crunched;
+		 }
+	.full-date{
+		@include font(regular);
+		font-size: ms(-1);
+		color:$warm-grey-dark;
+		line-height: $tight;
+		font-style: italic;
+	}
 
+	.leed{font-size:ms(1); line-height:normal; color:mix($scrubteal-dark, black);}
+
+	.card-action{ text-align:center; background-color:$off-white; padding-top:.5rem; padding-bottom:.5rem; color:$warm-grey-dark;}
 }
 .event{
 	.date{
@@ -252,6 +291,7 @@ h3{font-size:ms(5);}
 	.day{
 		font-size: ms(8);
 		margin-top:3px;
+		font-weight: bold;
 
 	}
 	.month{
@@ -296,6 +336,7 @@ h3{font-size:ms(5);}
 	border-style:solid;
 	border-width:1px;
  	margin-top: 0;
+ 	padding:0;
  	@include bp(md){
 		margin-top:100px;
 	}

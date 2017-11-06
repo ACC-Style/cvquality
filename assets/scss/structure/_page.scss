@@ -13,7 +13,7 @@
  *      <div id="aux" class="row">@{include:.breadcrumb}</div>
  *      <div id="layout" class="row no-gutter">
  *          <div class="col-lg-2 p-0 d-none d-lg-block"> @{include:.nav-sub}</div>
- *          <div class="col-lg-10 col"><div class="page-content"><h1>Sample Page</h1> @{include:ul.no-bullets}</div></div>
+ *          <div class="col-lg-10 col"><div class="page-content"><h1>Sample Page</h1> @{include:dl.grouped-definision-list}</div></div>
  *      </div>
  *       @{include:#footer}
  *  </div>
@@ -71,11 +71,12 @@
  *                          @{include:.leaderboard-lg}
  *                      </div>
  *                  </div>
- *                  <div class="row vh_60">
- *                      <div class="col-lg-8">@{include:.undecorated.card}</div> 
- *                      <div class="col-lg-4">@{include:.highlighted.card}</div>
- *                      <div class="col-lg-4">@{include:.highlighted.card}</div>
- *                      <div class="col-lg-8">@{include:.undecorated.card}</div>
+ *                  <div class="row vh_40">
+ *                      <div class="col-lg-8 col-md-7">@{include:.undecorated.card}</div> 
+ *                      <div class="col-lg-4 col-md-5">@{include:.highlighted.card}</div>
+ *                  </div><div class="row vh_40">
+ *                      <div class="col-lg-4 col-md-5">@{include:.highlighted.card}</div>
+ *                      <div class="col-lg-8 col-md-7">@{include:.undecorated.card}</div>
  *                  </div>
  *              </div>           
  *          </div>

@@ -267,12 +267,14 @@ ul.generic-list{
 *        </dd>
 *    </dl>
 */
-
 dl.grouped-definision-list{
 
     dt{
+        padding:.5rem 0;
         float:left;
         clear:both;
+        text-align: center;
+        >*{margin:0 auto;}
     }
     dd{
         float:left; padding-left:$grid-gutter-width;
