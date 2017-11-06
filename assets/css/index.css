@@ -7508,6 +7508,12 @@ input {
  * @molecule Highlighted Card 
  * @section Card 
  * @flag contained
+ * @modifiers
+ *  .position-right-[size] floats the card to the right so text will wrap around the left when the veiw port is above the size.
+ *  .position-right-lg the float appears large up.
+ *  .position-right-md the float appears medium up.
+ *  .position-right-sm the float appears small up.
+ *  .position-left-[size] floats the card to the left so text will wrap around the right when the veiw port is above the size.
  * @markup
  *  <div class="card highlighted">
  *   <h3 class="card-header">Highlighted Card</h3>
@@ -7551,12 +7557,6 @@ input {
  * @molecule Info Card 
  * @section Card 
  * @flag contained
- * @modifiers
- *  .position-right-[size] floats the card to the right so text will wrap around the left when the veiw port is above the size.
- *  .position-right-lg the float appears large up.
- *  .position-right-md the float appears medium up.
- *  .position-right-sm the float appears small up.
- *  .position-left-[size] floats the card to the left so text will wrap around the right when the veiw port is above the size.
  * @markup
  *  <div class="card info">
  *   <h2 class="card-header">Info Card</h2>
@@ -7585,12 +7585,6 @@ input {
  * @molecule Notice Card 
  * @section Card 
  * @flag contained
- * @modifiers
- *  .position-right-[size] floats the card to the right so text will wrap around the left when the veiw port is above the size.
- *  .position-right-lg the float appears large up.
- *  .position-right-md the float appears medium up.
- *  .position-right-sm the float appears small up.
- *  .position-left-[size] floats the card to the left so text will wrap around the right when the veiw port is above the size.
  * @markup
  *  <div class="card notice">
  *   <h2 class="card-header triangle">Notice Card</h2>
@@ -7619,12 +7613,6 @@ input {
  * @molecule Notice Card Alt 
  * @section Card 
  * @flag contained
- * @modifiers
- *  .position-right-[size] floats the card to the right so text will wrap around the left when the veiw port is above the size.
- *  .position-right-lg the float appears large up.
- *  .position-right-md the float appears medium up.
- *  .position-right-sm the float appears small up.
- *  .position-left-[size] floats the card to the left so text will wrap around the right when the veiw port is above the size.
  * @markup
  *  <div class="card notice alt">
  *    <h2 class="card-header triangle">Notice with .alt</h2>
@@ -7635,12 +7623,12 @@ input {
  *  </div>
  *
  */
-.card.notice.alt {
+.card.alt {
   background-color: #eceaea;
   border-color: #d6d4d4; }
-  .card.notice.alt .triangle:before {
+  .card.alt .triangle:before {
     border-color: transparent transparent transparent #ffc425; }
-  .card.notice.alt .card-header {
+  .card.alt .card-header {
     color: #e87d1e; }
 
 /**
@@ -7885,6 +7873,8 @@ input {
   border-width: 0;
   background-color: transparent;
   padding: 0; }
+  .undecorated.card .card-header.triangle:before {
+    display: none; }
 
 /**
  * buttons are highly flexable and can be decorated by the modifiers to change size and color
