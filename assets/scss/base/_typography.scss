@@ -10,16 +10,17 @@
 * @atom Headline Tags
 * @section Typography > Headers
 * @modifiers
-*  .display-[x] Produces large display sized text where x is a number 1 through 4
+*  &.display-[x] Produces large display sized text where x is a number 2 through 4. Thins only works on h1,h2,h3,h4 and p.
 *  a.tag  Produces the header tag in the dark teal color of the site with an underline on hover. 
 * @markup
-*  <h1 class="page-header">Page Header
-*      <small>With Small Text</small>
-*  </h1>
-*  <h1>This is an h1 heading</h1>
-*  <h2>This is an h2 heading 
-*      <a href="">@{lipsum:1:words}</a>
-*  </h2>
+*  <div><h1 class="display-4 inline">display-4</h1>
+*  <h1 class="display-3 inline">display-3</h1>
+*  <h1 class="display-2 inline">display-2</h1>
+*  <h1 class="inline">H1 Tag</h1></div>
+*  <div><h2 class="display-4 inline">display-4</h2>
+*  <h2 class="display-3 inline">display-3</h2>
+*  <h2 class="display-2 inline">display-2</h2>
+*  <h2 class="inline">h2  <a href="">@{lipsum:1:words}</a></h2></div>
 *  <h3>This is an h3 heading</h3>
 *  <h4>This is an h4 heading</h4>
 *  <h5>This is an h5 heading</h5>
@@ -35,27 +36,52 @@
                 text-decoration: underline
             }
         }
+        &.inline{display:inline;}
     }
-
+    
     h1 {
         @extend %header-link;
-        @include font-display("bold");
+        @include font-display(regular);
         color: $dark-orange;
+        &.display-4{ font-size:ms(7, $ms-base, $ms-ratio-4);}
+        &.display-3{ font-size:ms(7, $ms-base, $ms-ratio-3);}
+        &.display-2{ font-size:ms(7, $ms-base, $ms-ratio-2);} 
+        &.display-4,&.display-3,&.display-2{font-weight:100;}       
     }
 
     h2 {
         @extend %header-link;
-        @include font-display("bold");
+        @include font-display(bold);
         color: $warm-grey-dark;
+        &.display-4{ font-size:ms(5, $ms-base, $ms-ratio-4);}
+        &.display-3{ font-size:ms(5, $ms-base, $ms-ratio-3);}
+        &.display-2{ font-size:ms(5, $ms-base,$ms-ratio-2);} 
+         &.display-4,&.display-3,&.display-2{font-weight:300;}  
     }
 
     h3 {
         @extend %header-link;
-        @include font-display("regular");
+        @include font-display(regular);
         color: $dark-orange;
+        &.display-4{ font-size:ms(3, $ms-base, $ms-ratio-4);}
+        &.display-3{ font-size:ms(3, $ms-base, $ms-ratio-3);}
+        &.display-2{ font-size:ms(3, $ms-base,$ms-ratio-2);} 
+         &.display-4,&.display-3,&.display-2{font-weight:100;}   
     }
-
-
+    h4 {
+        @extend %header-link;
+        @include font-display(bold);
+        color: $warm-grey-dark;
+        &.display-4{ font-size:ms(2, $ms-base, $ms-ratio-4);}
+        &.display-3{ font-size:ms(2, $ms-base, $ms-ratio-3);}
+        &.display-2{ font-size:ms(2, $ms-base,$ms-ratio-2);} 
+         &.display-4,&.display-3,&.display-2{font-weight:300;}   
+    }
+    p{
+        &.display-4{ font-size:ms(1, $ms-base, $ms-ratio-4);}
+        &.display-3{ font-size:ms(1, $ms-base, $ms-ratio-3);}
+        &.display-2{ font-size:ms(1, $ms-base,$ms-ratio-2);}  
+    }
 
 
     ul {

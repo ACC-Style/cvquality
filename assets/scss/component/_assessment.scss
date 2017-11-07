@@ -1,5 +1,5 @@
 /**
- * Box is the basic unit inside of Assesments. !!! Todo move box to card !!! 
+ * ".box"  Boxes are a simple decorator that has internal padding, a colored background, and fills its parent container. Boxes are a simpler version of .cards when the structured DOM is either unnessary or would conflict with the internal content.
  *
  * @molecule box
  * @flag contained
@@ -13,7 +13,6 @@
  *      <h4>@{lipsum:4:words}</h4>
  *   </div>
 */
-.assessment {}
 
 .box {
     margin-top: 1rem;
@@ -28,10 +27,9 @@
     }
 }
 /**
-* The assessment score is broken into sections.
+* The Score Box Generic is currently used on the Assessments Page. These repeated boxes are used to show the score with each section of the assessment.
 *
 * @molecule Score Box Generic
-* @flag contained
 * @section Assessments > Score
 * @markup
 *  <div class="box score">
@@ -48,9 +46,9 @@
 
 
 /**
-* The assessment score with expanding sections
+* Score Boxes can have Accodian's nested inside themselves.  The Accordion simplifies when it is with a box so it is cleaner. 
 *
-* @molecule Score Box Accordian
+* @molecule Score Box Accordion
 * @flag contained
 * @section Assessments > Score
 * @markup
@@ -60,35 +58,17 @@
 *           <span class="points-possible">(18 possible points)</span>
 *           <span class="points-total">0</span>
 *       </div>
-*       <div class="panel-group accordion">
-*    <div class="panel" id="accordion" role="tablist" aria-multiselectable="true">
-*     <div class="" role="tab" id="headingOne">
-*       <h4 class="panel-title">
-*         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
-*           Collapsible Group Item #1
-*         </a>
-*       </h4>
-*     </div>
-*     <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
-*       <div class="panel-body">
-*       <ul class="no-bullets">    
-*         <li style="page-break-inside: avoid">
-*             <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
-*         </li>
-*         <li style="page-break-inside: avoid">
-*             <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
-*         </li>
-*         <li style="page-break-inside: avoid">
-*             <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
-*         </li>
-*       </ul>
-*       </div>
-*     </div>
-*    </div>
-*   </div>
+*       @{include:.accordion}
 *  </div>
 */
 .box.score.accordion{}
+.box,.card{
+    .accordion .panel-heading{
+        border:0 none transparent;
+        background-color:transparent;
+        .panel-title{margin-top:0;}
+    }
+}
 
 /**
 * The assessment box is defaultly white add the alt class to make it grey.
@@ -122,7 +102,6 @@
 * The Overall score of the assessments is the wrap of the sections with in the entire assesment
 *
 * @molecule overall-score-box
-* @flag contained
 * @section Assessments > Score
 * @markup
 *  <div class="overall-score box">

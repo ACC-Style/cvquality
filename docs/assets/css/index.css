@@ -6811,42 +6811,89 @@ body {
 * @atom Headline Tags
 * @section Typography > Headers
 * @modifiers
-*  .display-[x] Produces large display sized text where x is a number 1 through 4
+*  &.display-[x] Produces large display sized text where x is a number 2 through 4. Thins only works on h1,h2,h3,h4 and p.
 *  a.tag  Produces the header tag in the dark teal color of the site with an underline on hover. 
 * @markup
-*  <h1 class="page-header">Page Header
-*      <small>With Small Text</small>
-*  </h1>
-*  <h1>This is an h1 heading</h1>
-*  <h2>This is an h2 heading 
-*      <a href="">@{lipsum:1:words}</a>
-*  </h2>
+*  <div><h1 class="display-4 inline">display-4</h1>
+*  <h1 class="display-3 inline">display-3</h1>
+*  <h1 class="display-2 inline">display-2</h1>
+*  <h1 class="inline">H1 Tag</h1></div>
+*  <div><h2 class="display-4 inline">display-4</h2>
+*  <h2 class="display-3 inline">display-3</h2>
+*  <h2 class="display-2 inline">display-2</h2>
+*  <h2 class="inline">h2  <a href="">@{lipsum:1:words}</a></h2></div>
 *  <h3>This is an h3 heading</h3>
 *  <h4>This is an h4 heading</h4>
 *  <h5>This is an h5 heading</h5>
 *  <h6>This is an h6 heading</h6>
 */
-h1 a, h2 a, h3 a {
+h1 a, h2 a, h3 a, h4 a {
   color: #0088aa;
   text-decoration: none; }
-  h1 a:hover, h2 a:hover, h3 a:hover {
+  h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
     color: #047294;
     text-decoration: underline; }
+h1.inline, h2.inline, h3.inline, h4.inline {
+  display: inline; }
 
 h1 {
   font-family: 'Muli', Verdana, Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   color: #e87d1e; }
+  h1.display-4 {
+    font-size: 130px; }
+  h1.display-3 {
+    font-size: 84px; }
+  h1.display-2 {
+    font-size: 53px; }
+  h1.display-4, h1.display-3, h1.display-2 {
+    font-weight: 100; }
 
 h2 {
   font-family: 'Muli', Verdana, Helvetica, Arial, sans-serif;
   font-weight: 700;
   color: #6f6b6f; }
+  h2.display-4 {
+    font-size: 69px; }
+  h2.display-3 {
+    font-size: 50px; }
+  h2.display-2 {
+    font-size: 36px; }
+  h2.display-4, h2.display-3, h2.display-2 {
+    font-weight: 300; }
 
 h3 {
   font-family: 'Muli', Verdana, Helvetica, Arial, sans-serif;
   font-weight: 400;
   color: #e87d1e; }
+  h3.display-4 {
+    font-size: 36px; }
+  h3.display-3 {
+    font-size: 30px; }
+  h3.display-2 {
+    font-size: 25px; }
+  h3.display-4, h3.display-3, h3.display-2 {
+    font-weight: 100; }
+
+h4 {
+  font-family: 'Muli', Verdana, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #6f6b6f; }
+  h4.display-4 {
+    font-size: 26px; }
+  h4.display-3 {
+    font-size: 23px; }
+  h4.display-2 {
+    font-size: 20px; }
+  h4.display-4, h4.display-3, h4.display-2 {
+    font-weight: 300; }
+
+p.display-4 {
+  font-size: 19px; }
+p.display-3 {
+  font-size: 18px; }
+p.display-2 {
+  font-size: 17px; }
 
 ul {
   margin: 0 0 1em 0;
@@ -7668,6 +7715,7 @@ input {
 * Collapse page content with header.
 *
 * @structure Accordion
+* @section Advanced Containers
 * @markup
 *  <div class="panel-group accordion">
 *   <div class="panel" id="accordion" role="tablist" aria-multiselectable="true">
@@ -7681,6 +7729,17 @@ input {
 *   	<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
 *   	  <div class="panel-body">
 *   	    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+*           <ul class="no-bullets">    
+*             <li style="page-break-inside: avoid">
+*                 <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*             </li>
+*             <li style="page-break-inside: avoid">
+*                 <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*             </li>
+*             <li style="page-break-inside: avoid">
+*                 <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*             </li>
+*           </ul>
 *   	  </div>
 *   	</div>
 *   </div>
@@ -9172,7 +9231,7 @@ input {
 */
 /* Legacy Support */
 /**
- * Box is the basic unit inside of Assesments. !!! Todo move box to card !!! 
+ * ".box"  Boxes are a simple decorator that has internal padding, a colored background, and fills its parent container. Boxes are a simpler version of .cards when the structured DOM is either unnessary or would conflict with the internal content.
  *
  * @molecule box
  * @flag contained
@@ -9200,10 +9259,9 @@ input {
       margin-top: .5rem; }
 
 /**
-* The assessment score is broken into sections.
+* The Score Box Generic is currently used on the Assessments Page. These repeated boxes are used to show the score with each section of the assessment.
 *
 * @molecule Score Box Generic
-* @flag contained
 * @section Assessments > Score
 * @markup
 *  <div class="box score">
@@ -9218,9 +9276,9 @@ input {
   background-color: #eceaea; }
 
 /**
-* The assessment score with expanding sections
+* Score Boxes can have Accodian's nested inside themselves.  The Accordion simplifies when it is with a box so it is cleaner. 
 *
-* @molecule Score Box Accordian
+* @molecule Score Box Accordion
 * @flag contained
 * @section Assessments > Score
 * @markup
@@ -9230,34 +9288,15 @@ input {
 *           <span class="points-possible">(18 possible points)</span>
 *           <span class="points-total">0</span>
 *       </div>
-*       <div class="panel-group accordion">
-*    <div class="panel" id="accordion" role="tablist" aria-multiselectable="true">
-*     <div class="" role="tab" id="headingOne">
-*       <h4 class="panel-title">
-*         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
-*           Collapsible Group Item #1
-*         </a>
-*       </h4>
-*     </div>
-*     <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
-*       <div class="panel-body">
-*       <ul class="no-bullets">    
-*         <li style="page-break-inside: avoid">
-*             <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
-*         </li>
-*         <li style="page-break-inside: avoid">
-*             <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
-*         </li>
-*         <li style="page-break-inside: avoid">
-*             <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
-*         </li>
-*       </ul>
-*       </div>
-*     </div>
-*    </div>
-*   </div>
+*       @{include:.accordion}
 *  </div>
 */
+.box .accordion .panel-heading, .card .accordion .panel-heading {
+  border: 0 none transparent;
+  background-color: transparent; }
+  .box .accordion .panel-heading .panel-title, .card .accordion .panel-heading .panel-title {
+    margin-top: 0; }
+
 /**
 * The assessment box is defaultly white add the alt class to make it grey.
 *
@@ -9287,7 +9326,6 @@ input {
 * The Overall score of the assessments is the wrap of the sections with in the entire assesment
 *
 * @molecule overall-score-box
-* @flag contained
 * @section Assessments > Score
 * @markup
 *  <div class="overall-score box">

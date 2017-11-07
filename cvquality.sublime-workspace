@@ -4,12 +4,76 @@
 		"selected_items":
 		[
 			[
-				"warm",
+				"padding",
+				"padding-left"
+			],
+			[
+				"war",
 				"warm-grey-light"
 			],
 			[
+				"font",
+				"font-weight"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"points",
+				"points-possible"
+			],
+			[
+				"sof",
+				"soft-blue"
+			],
+			[
+				"warm-gre",
+				"warm-grey-light"
+			],
+			[
+				"bor",
+				"border-right"
+			],
+			[
+				"flex-",
+				"flex-direction"
+			],
+			[
 				"margin",
-				"margin-bottom"
+				"margin-top"
+			],
+			[
+				"soft",
+				"soft-grey"
+			],
+			[
+				"off",
+				"off-white"
+			],
+			[
+				"scu",
+				"scrubteal-dark"
+			],
+			[
+				"up",
+				"uppercase"
+			],
+			[
+				"card",
+				"card-header"
+			],
+			[
+				"text-in",
+				"text-indent"
+			],
+			[
+				"caro",
+				"carousel-indicators"
+			],
+			[
+				"warm",
+				"warm-grey-light"
 			],
 			[
 				"padd",
@@ -20,32 +84,12 @@
 				"align-self"
 			],
 			[
-				"font",
-				"font-size"
-			],
-			[
 				"text",
 				"text-transform"
 			],
 			[
-				"soft",
-				"soft-blue"
-			],
-			[
-				"off",
-				"off-black"
-			],
-			[
 				"mar",
 				"margin-top"
-			],
-			[
-				"card",
-				"card-action"
-			],
-			[
-				"fon",
-				"font-size"
 			],
 			[
 				"back",
@@ -62,10 +106,6 @@
 			[
 				"min",
 				"min-width"
-			],
-			[
-				"bor",
-				"border-top"
 			],
 			[
 				"pso",
@@ -140,10 +180,6 @@
 				"no-gutter"
 			],
 			[
-				"padding",
-				"padding-right"
-			],
-			[
 				"lin",
 				"line-height"
 			],
@@ -180,151 +216,10 @@
 	"buffers":
 	[
 		{
-			"file": "assets/scss/component/_address.scss",
+			"contents": "<div class=\"panel\">\n    <h3>@{lipsum:4:words}</h3>\n    <div class=\"results-points\">\n        <span class=\"points-possible\">(18 possible points)</span>\n        <span class=\"points-total\">0</span>\n    </div>\n</div>\n  <div class=\"form-group\">\n     <label  for=\"xx\">View Previous Results:</label>\n  </div>\n<div class=\"form-inline\">\n  <div class=\"form-group\">\n    <div class=\"input-group\">\n      <div class=\"input-group-addon\">$</div>\n      <input type=\"text\" class=\"form-control\" id=\"xx\" placeholder=\"Amount\">\n      <div class=\"input-group-addon\"> <button type=\"submit\" class=\"btn btn-primary\">Go</button></div>\n    </div>\n  </div>\n  <button type=\"submit\" class=\"btn btn-primary\">Comparison Report</button>\n</div>\n\n\n<select name=\"\" id=\"\">\n  <option value=\"\">@{lipsum:14:characters}</option>\n  <option value=\"\">@{lipsum:14:characters}</option>\n  <option value=\"\">@{lipsum:14:characters}</option>\n  <option value=\"\">@{lipsum:14:characters}</option>\n</select>\n\n",
 			"settings":
 			{
-				"buffer_size": 3640,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/component/_nav-sub.scss",
-			"settings":
-			{
-				"buffer_size": 5810,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/component/_card.scss",
-			"settings":
-			{
-				"buffer_size": 12544,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "<ul class=\"generic-list\">\n    <li>\n        <h2>\n      <a href=\"/Clinical-Toolkits/QI-Toolkit\">@{lipsum:3:Words}</a>\n      </h2>\n        <p>@{lipsum:1:sentences}\n        </p>\n        <a>more <i class=\"fa fa-arrow-right\"></i></a>\n    </li>\n    <li>\n        <h2>\n      <a href=\"/Clinical-Toolkits/QI-Toolkit\">@{lipsum:3:Words}</a>\n      </h2>\n        <p>@{lipsum:1:sentences}\n        </p>\n        <a>more <i class=\"fa fa-arrow-right\"></i></a>\n    </li>\n</ul>",
-			"settings":
-			{
-				"buffer_size": 455,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/component/_carousel.scss",
-			"settings":
-			{
-				"buffer_size": 6608,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/component/_ads.scss",
-			"settings":
-			{
-				"buffer_size": 4292,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/structure/_header.scss",
-			"settings":
-			{
-				"buffer_size": 2042,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "node_modules/nucleus-styleguide/assets/views/common/components.pug",
-			"settings":
-			{
-				"buffer_size": 3848,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "    html,\n    body {\n        @include font;\n        color: #333;\n        font-size: 1rem;\n        line-height: 1.4rem;\n    }\n\n/**\n* @atom Headline Tags\n* @section Typography > Headers\n* @modifiers\n*  .display-[x] Produces large display sized text where x is a number 1 through 4\n*  a.tag  Produces the header tag in the dark teal color of the site with an underline on hover. \n* @markup\n*  <h1 class=\"page-header\">Page Header\n*      <small>With Small Text</small>\n*  </h1>\n*  <h1>This is an h1 heading</h1>\n*  <h2>This is an h2 heading \n*      <a href=\"\">@{lipsum:1:words}</a>\n*  </h2>\n*  <h3>This is an h3 heading</h3>\n*  <h4>This is an h4 heading</h4>\n*  <h5>This is an h5 heading</h5>\n*  <h6>This is an h6 heading</h6>\n*/\n\n    %header-link {\n        a {\n            color: $scrubteal;\n            text-decoration: none;\n            &:hover {\n                color: $scrubteal-dark;\n                text-decoration: underline\n            }\n        }\n    }\n\n    h1 {\n        @extend %header-link;\n        @include font-display(\"bold\");\n        color: $dark-orange;\n    }\n\n    h2 {\n        @extend %header-link;\n        @include font-display(\"bold\");\n        color: $warm-grey-dark;\n    }\n\n    h3 {\n        @extend %header-link;\n        @include font-display(\"regular\");\n        color: $dark-orange;\n    }\n\n\n\n\n    ul {\n        margin: 0 0 1em 0;\n        padding: 0;\n        list-style-type: none;\n    }\n\n    a {\n        &:hover,\n        &:active {\n            outline: none;\n        }\n    }\n// style all typograpy content inside of the containing div to remove scope from the rest of the design. \n\n        a {\n            color: $scrubteal;\n            &.more {\n                @include font(bold);\n                display: inline-block;\n                text-decoration: none;\n            }\n            &:hover,\n            &:active {\n                text-decoration: underline;\n            }\n        }\n        p {\n            margin: 0 0 1em 0;\n        }\n        ol,\n        ul {\n            margin-bottom: 1em;\n            ol,\n            ul {\n                margin-top: 0.25em;\n                margin-bottom: 0.5em;\n                margin-left: 1.25em;\n            }\n        }\n        ol li{\n            margin-left: 20px;\n            list-style-type: decimal;\n        }\n         ul li {\n            margin-left: 20px;\n            list-style-type: disc;\n        }\n         // Alternate Typography. \n        address {\n            font-style: normal;\n        }\n        img,a img {\n            height: auto;\n            max-width: 100%;\n        }\n\n     .login-box ul li {\n        /* per http://jira.beaconfire.us/browse/ACCQII-457 */\n        min-height: 30px;\n        list-style-type: none;\n    }\n    .login-box li input {\n    float: left;\n}\n\nhr {\n    margin-bottom: 1em;\n    border: solid 1px $warm-grey-light;\n    border-width: 1px 0 0;\n}\n.border-dashed {\n    border: 3px $off-black dashed !important;\n}\n\n/**\n* @atom Text Decoration\n* @section Typography > Decorators\n* @markup\n*  <div><strong>Strong: @{lipsum:4:words}  <a href=\"\">@{lipsum:1:words}</a></strong></div>\n*  <div><b>Bold: @{lipsum:4:words} <a href=\"\">@{lipsum:1:words}</a></b></div>\n*  <div><small>Small: @{lipsum:4:words}  <a href=\"\">@{lipsum:1:words}</a></small></div>\n*  <div><em>Em: @{lipsum:4:words}  <a href=\"\">@{lipsum:1:words}</a></em></div>\n*/\nstrong{}\n\n\n/*\n* Links will auto decorate with an icon of the corresponding file type\n*\n* @atom File Links\n* @section Typography > Decorators\n* @markup\n*  <a class=\"link\" href=\"abc.pdf\">A link that is a Pdf Document</a><br/>\n*  <a class=\"link\" href=\"abc.doc\">A link that is a Word Document</a><br/>\n*  <a class=\"link\" href=\"https://www.abc.ppt\">An External link that is a Power Point Document</a><br/>\n*  <a class=\"link\" href=\"tel:1-555-555-5555\">1-555-555-5555</a><br/>\n*  <a class=\"link\" href=\"mailto:test@abc.org\">test@abc.org</a><br/>\n* @modifiers\n*  .pdf Portable Document Format\n*  .doc Word Documents\n*  .txt Text Documents\n*  .ppt Power Points\n*  mailto: email links\n*  tel: Telephone \n*  _blank External Link icons will appear after any link that has target blank, or the href begins with http, or https\n */\n\na.link{\n    @extend .icon-before;\n    &[href$=\".pdf\"]:before{\n        content: \"\\f1c1\";   \n    }\n    &[href$=\".doc\"]:before,&[href$=\".docx\"]:before,&[href$=\".txt\"]:before{\n            content: \"\\f016\";   \n    }\n    &[href$=\".ppt\"]:before,&[href$=\".pptx\"]:before{\n         content: \"\\f080\";\n    }\n    &[href$=\".csv\"]:before,&[href$=\".xls\"]:before,&[href$=\".xlsx\"]:before{\n        content: \"\\f0ce\";   \n    }\n    &[target=_blank]:after,&[href^=\"http\"]:after,&[href^=\"https\"]:after{\n        @extend .icon-after;\n        content:\"\\f14c\";\n    }\n    &[href^=\"mailto:\"]:before{ \n        content: \"\\f003\";\n    }\n    &[href^=\"tel:\"]:before{ \n        content: \"\\f095\";\n    }\n    &[href^=\"fax:\"]:before{ \n        content: \"\\f1ac\";\n    }\n}\n\n\n\n\n/**\n* Semantic List for content that shouldn't be bulleted or indented. \n*\n* @atom Generic List\n* @section Typography > Lists\n* @markup\n*    <ul class=\"generic-list\">\n*        <li>\n*            <h2>\n*          <a href=\"/Clinical-Toolkits/QI-Toolkit\">@{lipsum:3:words}</a>\n*          </h2>\n*            <p>@{lipsum:3:sentences}\n*            </p>\n*            <a>more <i class=\"fa fa-arrow-right\"></i></a>\n*        </li>\n*        <li>\n*            <h2>\n*          <a href=\"/Clinical-Toolkits/QI-Toolkit\">@{lipsum:3:words}</a>\n*          </h2>\n*            <p>@{lipsum:3:sentences}\n*            </p>\n*            <a>more <i class=\"fa fa-arrow-right\"></i></a>\n*        </li>\n*    </ul>\n*/\n\nul.generic-list{\n    /*.layout-listing #colone ul.generic-list,*/\n    margin-top: 1em;\n    li {\n        /*.layout-listing #colone ul.generic-list li, */\n        margin: 0 0 1em;\n        overflow: auto;\n        list-style-type: none;\n        img {\n            /*.layout-listing ul.generic-list li img, */\n            margin: 0 14px 6px 0;\n            float: left;\n        }\n    }\n    >li + li{ margin-top:.5rem; border-top:1px dashed $warm-grey-light; padding-top:.5rem;}\n}\n\n/**\n* Definision List are groups of an item and the description.  Classic definision list is Q&A \n*\n* @atom Definision List\n* @section Typography > Lists\n* @markup\n*    <dl class=\"grouped-definision-list term-xs\">\n*        <dt><img src=\"@{image:100:100}\" alt=\"...\"></dt> \n*        <dd>\n*            <h2>\n*          <a href=\"/Clinical-Toolkits/QI-Toolkit\">@{lipsum:3:words}</a>\n*          </h2>\n*            <p>@{lipsum:3:sentences}\n*            </p>\n*            <a>more <i class=\"fa fa-arrow-right\"></i></a>\n*        </dd>\n*        <dt><img src=\"@{image:100:100}\" alt=\"...\"></dt> \n*        <dd>\n*            <h2>\n*          <a href=\"/Clinical-Toolkits/QI-Toolkit\">@{lipsum:3:words}</a>\n*          </h2>\n*            <p>@{lipsum:3:sentences}\n*            </p>\n*            <a>more <i class=\"fa fa-arrow-right\"></i></a>\n*        </dd>\n*    </dl>\n*/\ndl.grouped-definision-list{\n\n    dt{\n        float:left;\n        clear:both;\n    }\n    dd{\n        float:left; padding-left:$grid-gutter-width;\n        >*:first-child{margin-top:0;}\n    }\n    dt,dd{\n        &:after{\n            padding-top:$grid-gutter-width;\n            content:\"\";\n            display: table;\n            width: 100%;\n        }\n    }\n    &.term-xs{dt{width:30%}dd{width:70%}}\n    &.term-sm{dt{width:40%}dd{width:60%}}\n    &.term-md,&.term-lg{dt,dd{width:100%; clear:both;}}\n    @include bp(md){\n         &.term-xs{dt{width:20%}dd{width:80%}}\n        &.term-sm{dt{width:30%}dd{width:70%}}\n        &.term-md{dt{width:40%}dd{width:80%}}\n        &.term-lg{dt{width:50%}dd{width:50%}}\n    }\n     @include bp(lg){\n                 &.term-xs{dt{width:10%}dd{width:90%}}\n        &.term-sm{dt{width:20%}dd{width:80%}}\n        &.term-md{dt{width:30%}dd{width:70%}}\n        &.term-lg{dt{width:50%}dd{width:50%}}\n    }\n    &.term-sq-sm{dt{width:20%}dd{width:80%}}\n    &.term-sq-md{dt{width:20%}dd{width:80%}}\n    &.term-sq-lg{dt{width:20%}dd{width:80%}}\n}\n\n\n\n\n/**\n* @atom Typography Kitchen Sink\n* @section Typography > kitchensink\n* @markup\n*  <section>\n*      <h4>Headers</h4>\n*      <hr>\n*      <h1>Header 1</h1>\n*      <h2>Header 2</h2>\n*      <h3>Header 3</h3>\n*      <h4>Header 4</h4>\n*      <h5>Header 5</h5>\n*      <h6>Header 6</h6>\n*  </section>\n*  <section>\n*      <h4>Lists</h4>\n*      <hr>\n*      <ul>\n*          <li>Item 1</li>\n*          <ul>\n*              <li>Item 1</li>\n*              <li>Item 2</li>\n*          </ul>\n*          <li>Item 2</li>\n*          <li>Item 3</li>\n*          <li>Item 4</li>\n*      </ul>\n*      <ol>\n*          <li>Item 1</li>\n*          <ol>\n*              <li>Item 1</li>\n*              <li>Item 2</li>\n*          </ol>\n*          <li>Item 2</li>\n*          <li>Item 3</li>\n*          <li>Item 4</li>\n*      </ol>\n*  </section>\n*  <section>\n*      <h4>Code Block</h4>\n*      <hr>\n*      <pre><code>header {\n*      width:100%;\n*      height:100vh;\n*  }\n*  \n*  </code></pre>\n*  </section>\n*  </div>\n*  <div class=\"col-md-6\">\n*      <section>\n*          <h4>Paragraphs</h4>\n*          <hr>\n*          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit inventore rerum, ad eos ex harum, debitis adipisci ut <a href=\"#\">laboriosam placeat</a> at fugiat earum, impedit quidem dicta repellendus vitae! Esse, quos.</p>\n*          <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Duis mollis, <code>est non commodo</code> luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum <a href=\"#\">dolor sit amet</a>, consectetur adipiscing elit.</p>\n*      </section>\n*      <section>\n*          <h4>Blockquotes</h4>\n*          <hr>\n*          <blockquote>\n*              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cras mattis consectetur purus sit amet fermentum.\n*          </blockquote>\n*      </section>\n*      <section>\n*          <h4>Image Caption</h4>\n*          <hr>\n*          <figure>\n*              <img src=\"http://placehold.it/700x300\">\n*              <figcaption>Fig1. - A view of the pulpit rock in Norway.</figcaption>\n*          </figure>\n*          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non totam cumque numquam eligendi a vitae ex. Dolorum hic itaque consequuntur mollitia nisi voluptatem in est, soluta eos molestias. Suscipit, consectetur.</p>\n*      </section>\n*  </div>\n*  </div>\n**/\n.typography-kitchensink{}\n\n@import \"included/table\";",
-			"file": "assets/scss/base/_typography.scss",
-			"file_size": 10795,
-			"file_write_time": 131542083652314733,
-			"settings":
-			{
-				"buffer_size": 10406,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "Searching 239 files for \"List with No Bullets\"\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\component\\_list-nobullets.scss:\n    2  * listing of blocks of information to be semanitic are wrapped in a ul.nobullet \n    3  *\n    4: * @molecule List with No Bullets\n    5  * @section Typography\n    6  * @markup\n\n1 match in 1 file\n",
-			"settings":
-			{
-				"buffer_size": 326,
-				"line_ending": "Windows",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"contents": "/**\n* listing of blocks of information to be semanitic are wrapped in a ul.nobullet \n*\n* @molecule List with No Bullets\n* @section Typography\n* @markup\n*  <ul class=\"no-bullets\">\n*      <li>\n*      <h2>\n*      <a href=\"/Clinical-Toolkits/QI-Toolkit\">QI Toolkit</a>\n*      </h2>\n*      <p>\n*      Implement quality patient care at your facility with checklists, reminders, and other tools to address common quality improvement issues.\n*      <a class=\"more\" href=\"/Clinical-Toolkits/QII-Toolkit\"></a>\n*      </p>\n*      </li>\n*      <li>\n*      <h2>\n*      <a href=\"/clinical-toolkits/public-reporting-toolkit\">Public Reporting Toolkit</a>\n*      </h2>\n*      <p id=\"content_1_genList_rptListings_qiiGenLisItem_1_genericP_1\">\n*      Implement best practices for improving data collection processes, overall data quality through better registry data capture, and performance on publicly reported metrics.\n*      <a class=\"more\" href=\"/clinical-toolkits/public-reporting-toolkit\">More..</a>\n*      </p>\n*      </li>\n*  </ul>\n*/\n\nul.no-bullets{\n    /*.layout-listing #colone ul.generic-list,*/\n    margin-top: 1em;\n    li {\n        /*.layout-listing #colone ul.generic-list li, */\n        margin: 0 0 1em;\n        overflow: auto;\n        list-style-type: none;\n        img {\n            /*.layout-listing ul.generic-list li img, */\n            margin: 0 14px 6px 0;\n            float: left;\n        }\n    }\n}\n\n/**\n* listing blocks can be decorated with images to both the right and left. \n*\n* @molecule Media Block\n* @section Typography\n* @markup\n*  <div class=\"list-block\">\n*  </div>\n**/\n.list-block{}\n.media a img{max-width:none;}",
-			"file": "assets/scss/component/_list-nobullets.scss",
-			"file_size": 1682,
-			"file_write_time": 131533431889895783,
-			"settings":
-			{
-				"buffer_size": 1628,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/structure/_page.scss",
-			"settings":
-			{
-				"buffer_size": 2537,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/component/_nav-primary.scss",
-			"settings":
-			{
-				"buffer_size": 5187,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/base/_fonts.scss",
-			"settings":
-			{
-				"buffer_size": 923,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/component/_button.scss",
-			"settings":
-			{
-				"buffer_size": 1765,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/base/_list-nobullets.scss",
-			"settings":
-			{
-				"buffer_size": 0,
-				"encoding": "UTF-8",
+				"buffer_size": 953,
 				"line_ending": "Windows"
 			}
 		},
@@ -332,60 +227,43 @@
 			"file": "assets/scss/index.scss",
 			"settings":
 			{
-				"buffer_size": 1682,
+				"buffer_size": 1705,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "assets/scss/helpers/_height-utiltiy.scss",
+			"file": "assets/scss/component/_assessment.scss",
 			"settings":
 			{
-				"buffer_size": 945,
+				"buffer_size": 5752,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "assets/scss/helpers/_trumps.scss",
+			"file": "assets/scss/base/_typography.scss",
 			"settings":
 			{
-				"buffer_size": 113,
+				"buffer_size": 10567,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "assets/scss/vendor/bootstrap.override/_custom.scss",
+			"file": "assets/scss/vendor/bootstrap/_card.scss",
 			"settings":
 			{
-				"buffer_size": 4507,
+				"buffer_size": 4346,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/component/_card.scss",
+			"settings":
+			{
+				"buffer_size": 13224,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "ToDo.md",
-			"settings":
-			{
-				"buffer_size": 3558,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "gruntfile.js",
-			"settings":
-			{
-				"buffer_size": 2363,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "<div class=\"form-group\">\n\t<label for=\"exampleInputFacility\">Search your Facility:</label>\n\t<input type=\"email\" class=\"form-control\" id=\"exampleInputFacility\" placeholder=\"Start Typing your facility name\" autocomplete=\"on\">\n</div>\n<h3 class=\"card-header\">\n\tCan't find your facility?\n</h3>\n<div class=\"card-body\">\n\t<p>If your facility is not a participant with NCDR or PINNACLE, please <a href=\"#\">submit a request</a> to get more information and gain access. </p>\n</div>\n\n",
-			"settings":
-			{
-				"buffer_size": 471,
 				"line_ending": "Windows"
 			}
 		}
@@ -397,17 +275,41 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 389.0,
-		"last_filter": "prett",
+		"height": 392.0,
+		"last_filter": "convt",
 		"selected_items":
 		[
 			[
-				"prett",
-				"HTMLPrettify"
+				"convt",
+				"Indentation: Convert to Spaces"
 			],
 			[
 				"set html",
 				"Set Syntax: HTML"
+			],
+			[
+				"b",
+				"SassBeautify"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"pre",
+				"HTMLPrettify: Set Prettify Preferences"
+			],
+			[
+				"bea",
+				"SassBeautify"
+			],
+			[
+				"ht",
+				"HTMLPrettify"
+			],
+			[
+				"prett",
+				"HTMLPrettify"
 			],
 			[
 				"set html\t",
@@ -426,24 +328,8 @@
 				"Package Control: Install Package"
 			],
 			[
-				"html",
-				"HTMLPrettify"
-			],
-			[
-				"bea",
-				"SassBeautify"
-			],
-			[
 				"set ham",
 				"Set Syntax: HTML"
-			],
-			[
-				"ht",
-				"HTMLPrettify"
-			],
-			[
-				"pre",
-				"HTMLPrettify: Set Prettify Preferences"
 			],
 			[
 				"pret",
@@ -503,45 +389,59 @@
 	],
 	"file_history":
 	[
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_assessments.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_address.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_nav-sub.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_card.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_nav-social-buttons.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/structure/_page.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_carousel.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_ads.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/structure/_header.scss",
+		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/assets/views/common/components.pug",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/_typography.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/included/_table_scrollable.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/helpers/_breakpoints.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_nav-primary.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/_fonts.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_button.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/index.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_custom.scss",
+		"/C/Users/mwatier/Repo/cvquality/ToDo.md",
+		"/C/Users/mwatier/Repo/cvquality/gruntfile.js",
+		"/C/Users/mwatier/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc.defaults.json",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/helpers/_trumps.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/helpers/_height-utiltiy.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/shame/_assessment.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/included/_table-scrollable.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_list-nobullets.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/_list-nobullets.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap/_card.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/_table.scss",
 		"/C/Users/mwatier/Repo/cvquality/mods to node-styleguid/nucleus-styleguide/assets/styles/molecules/tables.scss",
 		"/C/Users/mwatier/Repo/cvquality/node_modules/.bin/lorem-ipsum",
 		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/src/entities/Molecule.js",
 		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/src/entities/Structure.js",
-		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/assets/views/common/components.pug",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/structure/_header.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_card.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/styleguide.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/_setup.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/_oldshame.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/index.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_charts.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_toolkit-sublisting.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_video-player.scss",
 		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/assets/styles/molecules/tables.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/structure/_mobile-menu-toggle-container.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_assessment.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_address.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/structure/_page.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_nav-primary.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_mobile-menu-toggle.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_nav-footer.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_carousel.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap-sass-3.3.7/sass/bootstrap/_variables.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_custom.scss",
 		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/assets/styles/structures/layouts.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/_html.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/_fonts.kitchensink.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/_fonts.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/_colors.scss",
 		"/C/Users/mwatier/Repo/cvquality/node_modules/grunt-reload/.idea/scopes/scope_settings.xml",
 		"/C/Users/mwatier/Repo/cvquality/.sass-cache/825ee957c1e68c0a11a4049aafcc815ceea5fa45/_card.scssc",
 		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/src/entities/Brand.js",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/_typography.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_progress-bar.override.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_list-nobullets.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_button.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap-sass-3.3.7/sass/bootstrap/_media.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap-sass-3.3.7/sass/bootstrap/_buttons.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_kitchensink.scss",
@@ -556,14 +456,12 @@
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap-sass-3.3.7/sass/bootstrap/_panels.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_breadcrumbs.override.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/_nav-basic.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_nav-sub.scss",
 		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/src/entities/Icon.js",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_dropdown.override.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/structure/_footer.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap-sass-3.3.7/sass/bootstrap/mixins/_buttons.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_user-status-container.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_nav-basic.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/helpers/_trumps.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap-sass-3.3.7/javascripts/bootstrap/button.js",
 		"/C/Users/mwatier/Repo/Bristol/templates/includes/layouts/base-layout.liquid",
 		"/C/Users/mwatier/Repo/Bristol/GruntFile.js",
@@ -577,7 +475,6 @@
 		"/C/Users/mwatier/Repo/Bristol/Assets/scss/_setup.scss",
 		"/C/Users/mwatier/Repo/Bristol/templates/includes/scripts.liquid",
 		"/C/Users/mwatier/Repo/Bristol/package-lock.json",
-		"/C/Users/mwatier/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc.defaults.json",
 		"/C/Users/mwatier/Repo/Bristol/templates/data-display.liquid",
 		"/C/Users/mwatier/Repo/bristol/GruntFile.js",
 		"/C/Users/mwatier/Repo/bristol/package.json",
@@ -597,13 +494,11 @@
 		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/assets/views/structures.pug",
 		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/src/Transform.js",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap/mixins/_buttons.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_nav-social-buttons.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap/_variables.scss",
 		"/C/Users/mwatier/Repo/cvquality/docs/test.html",
 		"/C/Users/mwatier/Repo/cvquality/test.html",
 		"/C/Users/mwatier/AppData/Roaming/Sublime Text 3/Packages/User/.jsbeautifyrc",
-		"/C/Windows/System32/drivers/etc/hosts",
-		"/C/Users/mwatier/Repo/cvquality/gruntfile.js"
+		"/C/Windows/System32/drivers/etc/hosts"
 	],
 	"find":
 	{
@@ -630,6 +525,57 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"14",
+			"exampleInputAmount",
+			"form",
+			"md",
+			"background:",
+			"background",
+			" *         * ",
+			"list",
+			"event",
+			"even",
+			"panel",
+			"Panel",
+			"panel",
+			"li",
+			" #666",
+			"#content_0_ucBottomPrintDownload",
+			"#content_0_bottomPrintDownloadIcons_",
+			"height: 8rem;",
+			"60",
+			"30",
+			"width",
+			"1",
+			"small",
+			"fa-arrow",
+			"instructions",
+			"div",
+			"id=\"lnkContent\"",
+			";}",
+			",\n",
+			"\n",
+			"scope=\"col\" style=\"",
+			" style=\"background-color:",
+			"style=\"width: ",
+			"Accred",
+			"dark",
+			"margin-top:-1",
+			"margin-top\"-1",
+			"font-display",
+			"medium-",
+			"*",
+			";",
+			"</p>",
+			"<p",
+			"p",
+			"even",
+			"no-bullets",
+			"list",
+			"f054",
+			"carousel-control",
+			"text-indicators",
+			"indecators",
 			"List with No Bullets",
 			"no-bul",
 			"xm",
@@ -706,58 +652,7 @@
 			"bootstrap kitchensink",
 			"<h3>Alert</h3>",
 			"\n\n\t\t",
-			"rem",
-			"*1rem",
-			"button",
-			"btn-lg",
-			"user-staus-position",
-			"; ",
-			"h5",
-			"card-header",
-			"bre",
-			"bookmar",
-			"bood",
-			"ms4",
-			"ms2",
-			"a{",
-			"a",
-			"mobile",
-			"1em",
-			"flex: 1 1 auto;",
-			"font-size",
-			"line-height-computed",
-			":241",
-			";",
-			"only",
-			"medium-push",
-			"h2",
-			"h5",
-			"%} {% ",
-			"span",
-			" (2017Q1)",
-			"(2017Q1)",
-			"h3",
-			"small-9",
-			"small-3",
-			"small-7",
-			"mall-5",
-			"small-5",
-			"<div class=\"column medium-4 large-3\">",
-			"small-8",
-			"small-4",
-			"4",
-			"small-9",
-			"small-3",
-			"span",
-			"p",
-			"h5",
-			"6",
-			"3",
-			"small",
-			"h4",
-			"h5",
-			"large ",
-			" medium-6"
+			"rem"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -775,490 +670,29 @@
 	"groups":
 	[
 		{
-			"selected": 10,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "assets/scss/component/_address.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3640,
+						"buffer_size": 953,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1026,
-								0
+								951,
+								711
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 20,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "assets/scss/component/_nav-sub.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5810,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								172,
-								172
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "assets/scss/component/_card.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 12544,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								12121,
-								12121
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 6517.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 455,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								455,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "assets/scss/component/_carousel.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6608,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1563,
-								1601
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 480.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "assets/scss/component/_ads.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4292,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3609,
-								3609
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1750.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "assets/scss/structure/_header.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2042,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								919,
-								919
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 159.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "node_modules/nucleus-styleguide/assets/views/common/components.pug",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3848,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2491,
-								2491
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1057.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 18,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "assets/scss/base/_typography.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10406,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4544,
-								4544
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2647.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 326,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										240,
-										260
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								93,
-								93
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"line_numbers": false,
-							"output_tag": 1,
-							"result_base_dir": "",
-							"result_file_regex": "^([^ \t].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "assets/scss/component/_list-nobullets.scss",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 1628,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "assets/scss/structure/_page.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2537,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2202,
-								2202
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 791.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "assets/scss/component/_nav-primary.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5187,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3698,
-								3698
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 675.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "assets/scss/base/_fonts.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 923,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 15,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "assets/scss/component/_button.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1765,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1765,
-								1765
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1006.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 19,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "assets/scss/base/_list-nobullets.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -1269,20 +703,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 1,
 					"file": "assets/scss/index.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1682,
+						"buffer_size": 1705,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1330,
-								1330
+								1116,
+								1116
 							]
 						],
 						"settings":
@@ -1290,84 +724,86 @@
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 180.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 17,
-					"file": "assets/scss/helpers/_height-utiltiy.scss",
+					"buffer": 2,
+					"file": "assets/scss/component/_assessment.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 945,
+						"buffer_size": 5752,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								764,
-								764
+								2778,
+								2778
 							]
 						],
 						"settings":
 						{
-							"_anf_new": "",
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1080.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 18,
-					"file": "assets/scss/helpers/_trumps.scss",
+					"buffer": 3,
+					"file": "assets/scss/base/_typography.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 113,
+						"buffer_size": 10567,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								113,
-								113
+								4907,
+								4907
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2790.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 19,
-					"file": "assets/scss/vendor/bootstrap.override/_custom.scss",
+					"buffer": 4,
+					"file": "assets/scss/vendor/bootstrap/_card.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4507,
+						"buffer_size": 4346,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2513,
-								2495
+								9,
+								10
 							]
 						],
 						"settings":
@@ -1377,96 +813,39 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1151.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 20,
-					"file": "ToDo.md",
+					"buffer": 5,
+					"file": "assets/scss/component/_card.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3558,
+						"buffer_size": 13224,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2065,
-								2065
+								615,
+								615
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 837.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
-					"type": "text"
-				},
-				{
-					"buffer": 21,
-					"file": "gruntfile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2363,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1590,
-								1590
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Theme - Monokai+/icons/Langs/Gruntfile JS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 551.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 22,
-					"type": "text"
-				},
-				{
-					"buffer": 22,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 471,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								471,
-								471
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 21,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1478,7 +857,7 @@
 	},
 	"input":
 	{
-		"height": 48.0
+		"height": 35.0
 	},
 	"layout":
 	{
@@ -1521,8 +900,56 @@
 		"selected_items":
 		[
 			[
+				"card",
+				"assets\\scss\\component\\_card.scss"
+			],
+			[
 				"",
+				"assets\\scss\\component\\_assessment.scss"
+			],
+			[
+				"asscards",
+				"assets\\scss\\component\\_card.scss"
+			],
+			[
+				"index.scs",
+				"assets\\scss\\index.scss"
+			],
+			[
+				"index",
+				"assets\\scss\\index.scss"
+			],
+			[
+				"index.scss",
+				"assets\\scss\\index.scss"
+			],
+			[
+				"breakpoin",
+				"assets\\scss\\helpers\\_breakpoints.scss"
+			],
+			[
+				"page.scs",
+				"assets\\scss\\structure\\_page.scss"
+			],
+			[
+				"social",
+				"assets\\scss\\component\\_nav-social-buttons.scss"
+			],
+			[
+				"cards",
+				"assets\\scss\\component\\_card.scss"
+			],
+			[
+				"typogra",
 				"assets\\scss\\base\\_typography.scss"
+			],
+			[
+				"pagescss",
+				"assets\\scss\\structure\\_page.scss"
+			],
+			[
+				"caro",
+				"assets\\scss\\component\\_carousel.scss"
 			],
 			[
 				"custom.scss",
@@ -1557,10 +984,6 @@
 				"assets\\scss\\component\\_card.scss"
 			],
 			[
-				"card",
-				"assets\\scss\\vendor\\bootstrap\\_card.scss"
-			],
-			[
 				"heigh",
 				"assets\\scss\\helpers\\_height-utiltiy.scss"
 			],
@@ -1577,16 +1000,8 @@
 				"assets\\scss\\index.scss"
 			],
 			[
-				"index.scs",
-				"assets\\scss\\index.scss"
-			],
-			[
 				"aspage",
 				"assets\\scss\\structure\\_page.scss"
-			],
-			[
-				"asscards",
-				"assets\\scss\\component\\_card.scss"
 			],
 			[
 				"custom.scs",
@@ -1613,14 +1028,6 @@
 				"mods to node-styleguid\\nucleus-styleguide\\assets\\styles\\molecules\\tables.scss"
 			],
 			[
-				"index",
-				"assets\\scss\\index.scss"
-			],
-			[
-				"caro",
-				"assets\\scss\\component\\_carousel.scss"
-			],
-			[
 				"nuceucomp",
 				"node_modules\\nucleus-styleguide\\assets\\views\\common\\components.pug"
 			],
@@ -1641,10 +1048,6 @@
 				"assets\\scss\\structure\\_header.scss"
 			],
 			[
-				"index.scss",
-				"assets\\scss\\index.scss"
-			],
-			[
 				"styl",
 				"assets\\scss\\styleguide.scss"
 			],
@@ -1663,10 +1066,6 @@
 			[
 				"fontki",
 				"assets\\scss\\base\\_fonts.kitchensink.scss"
-			],
-			[
-				"cards",
-				"assets\\scss\\component\\_card.scss"
 			],
 			[
 				"cardss",
@@ -1795,10 +1194,6 @@
 			[
 				"primary",
 				"assets\\scss\\component\\_nav-primary.scss"
-			],
-			[
-				"social",
-				"assets\\scss\\component\\_nav-social-buttons.scss"
 			]
 		],
 		"width": 0.0
