@@ -8,14 +8,18 @@
 	transition:width 1s ease-out;
 	-webkit-transition:width 1s ease-out;
 	-moz-transition:width 1s ease-out;
-	border-color:$warm-grey-light;
+	border-color:$warm-grey;
 	background-color:white;
 	position:relative;
 	margin-bottom:1rem;
+	 .triangle:before{
+	 	border-color: transparent transparent transparent $warm-grey;
+	 }
 	.card-header{
 		padding:0 1rem;
 		text-align:center;
 		position:relative;
+		&.triangle{padding-left:1.5rem}
 		&.triangle:before{
 	 	content:"";
 	 	width: 0;
@@ -95,8 +99,8 @@
 	h2,h4{
 		color: $off-black;
 	}
-h2{font-size:ms(6);}
-h3{font-size:ms(5);}
+	h2{font-size:ms(6);}
+	h3{font-size:ms(5);}
 	h4{font-size:ms(4);}
 	p{font-size:ms(2);}
 	border-color:$soft-blue;
@@ -123,6 +127,9 @@ h3{font-size:ms(5);}
  *
  */
 .info.card{
+		 .triangle:before{
+	 	border-color: transparent transparent transparent $warm-grey;
+	 }
 	border-color:$warm-grey;
 	.card-header{color:$off-black;font-weight:900; }
 	background-color:$warm-grey-light;

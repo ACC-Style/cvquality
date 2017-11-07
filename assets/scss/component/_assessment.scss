@@ -7,10 +7,10 @@
  * @section Assessments
  * @markup
  *   <div class="box">
- *   	<h1>H1 Tag<h1>
- *		<h2>@{lipsum:4:words}</h2>
- *		<h3>@{lipsum:4:words}</h3>
- *		<h4>@{lipsum:4:words}</h4>
+ *      <h1>H1 Tag<h1>
+ *      <h2>@{lipsum:4:words}</h2>
+ *      <h3>@{lipsum:4:words}</h3>
+ *      <h4>@{lipsum:4:words}</h4>
  *   </div>
 */
 .assessment {}
@@ -19,21 +19,22 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: .5rem .75rem;
-    background-color: $soft-grey;
+    .card-header{margin-left:-.75rem; margin-right:-.75rem;}
 
     h1, h2, h3, h4 {
+        &:first-child{margin-top:.5rem;}
         font-weight: bold;
         color: $dark-orange;
     }
 }
 /**
-* The assessment score is broken into sections
+* The assessment score is broken into sections.
 *
 * @molecule Score Box Generic
 * @flag contained
 * @section Assessments > Score
 * @markup
-*  <div class="box">
+*  <div class="box score">
 *       <h3>@{lipsum:4:words}</h3>
 *       <div class="results-points">
 *           <span class="points-possible">(18 possible points)</span>
@@ -41,12 +42,87 @@
 *       </div>
 *  </div>
 */
-.box.score{}
+.box.score,.box.alt{
+    background-color: $soft-grey;
+}
+
+
+/**
+* The assessment score with expanding sections
+*
+* @molecule Score Box Accordian
+* @flag contained
+* @section Assessments > Score
+* @markup
+*  <div class="box score">
+*       <h3>@{lipsum:4:words}</h3>
+*       <div class="results-points">
+*           <span class="points-possible">(18 possible points)</span>
+*           <span class="points-total">0</span>
+*       </div>
+*       <div class="panel-group accordion">
+*    <div class="panel" id="accordion" role="tablist" aria-multiselectable="true">
+*     <div class="" role="tab" id="headingOne">
+*       <h4 class="panel-title">
+*         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
+*           Collapsible Group Item #1
+*         </a>
+*       </h4>
+*     </div>
+*     <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+*       <div class="panel-body">
+*       <ul class="no-bullets">    
+*         <li style="page-break-inside: avoid">
+*             <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*         </li>
+*         <li style="page-break-inside: avoid">
+*             <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*         </li>
+*         <li style="page-break-inside: avoid">
+*             <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*         </li>
+*       </ul>
+*       </div>
+*     </div>
+*    </div>
+*   </div>
+*  </div>
+*/
+.box.score.accordion{}
+
+/**
+* The assessment box is defaultly white add the alt class to make it grey.
+*
+* @molecule Box Alt
+* @flag contained
+* @section Assessments > Score
+* @markup
+*  <div class="box alt">
+*      <h4  class="">View Previous Results:</h4>
+*      <div class="form-inline">
+*          <div class="form-group">
+*              <div class="input-group">
+*                   <select name="" id=""class="form-control">
+*                     <option value="">@{lipsum:3:words}</option>
+*                     <option value="">@{lipsum:3:words}</option>
+*                     <option value="">@{lipsum:3:words}</option>
+*                     <option value="">@{lipsum:3:words}</option>
+*                   </select>
+*              </div>
+*              <button type="submit" class="btn btn-primary">Go</button>
+*          </div>
+*          <button type="submit" class="btn btn-primary">Comparison Report</button>
+*      </div>
+*  </div>
+*/
+.box.alt{
+}
 
 /**
 * The Overall score of the assessments is the wrap of the sections with in the entire assesment
 *
 * @molecule overall-score-box
+* @flag contained
 * @section Assessments > Score
 * @markup
 *  <div class="overall-score box">
@@ -62,7 +138,7 @@
 *  </div>
 */
 .overall-score.box {
-    background: white;
+    background-color: white;
 }
 
 .your-score-label {
@@ -102,14 +178,16 @@
 .points-total {
     color: $off-black;
     font-size: ms(2);
-    background: $soft-grey;
     font-weight: normal;
-	float:right;
-	z-index:2;
-
-        padding: .25rem .125rem;
+    float:right;
+    z-index:2;
+    padding: .25rem .125rem;
+    background-color:white;
+    .score &{    
+        background-color: $soft-grey;
+    }
     .overall-score & {
-        background: $dark-orange;
+        background-color: $dark-orange;
         padding: .75rem .5rem;
         color: white;
         font-weight: bold;
@@ -117,60 +195,20 @@
 }
 
 .points-possible {
-	vertical-align:bottom;
-	padding:.5em .25em .5em 0;
-	z-index:3;
-    background: $soft-grey;
-	h1{
-    line-height: .75;
-	vertical-align:bottom;
-		background-color:$soft-grey; 
-		display:inline-block;}
-    .overall-score & {
-    	h1{background-color:white;}
-        background: white;
+    vertical-align:bottom;
+    padding:.5em .25em .5em 0;
+    z-index:3;
+    background-color:white;
+    .score &{background-color: $soft-grey;}
+    .overall-score & {}
+
+    h1,h2,h3,h4{
+        margin:0;
+        line-height: .75;
+        vertical-align:bottom;
+        background-color: white;
+        display:inline-block;
+        .score &{background-color:$soft-grey;}
+        .overall-score &{}
     }
 }
-
-/**
-* The assessment score with expanding sections
-*
-* @molecule Score Box Accordian
-* @flag contained
-* @section Assessments > Score
-* @markup
-*  <div class="box">
-*       <h3>@{lipsum:4:words}</h3>
-*       <div class="results-points">
-*           <span class="points-possible">(18 possible points)</span>
-*           <span class="points-total">0</span>
-*       </div>
-*       <div class="panel-group accordion">
-*    <div class="panel" id="accordion" role="tablist" aria-multiselectable="true">
-*     <div class="" role="tab" id="headingOne">
-*       <h4 class="panel-title">
-*         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
-*           Collapsible Group Item #1
-*         </a>
-*       </h4>
-*     </div>
-*     <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
-*       <div class="panel-body">
-*       <ul class="no-bullets">    
-*         <li style="page-break-inside: avoid">
-*             <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
-*         </li>
-*         <li style="page-break-inside: avoid">
-*             <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
-*         </li>
-*         <li style="page-break-inside: avoid">
-*             <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
-*         </li>
-*       </ul>
-*       </div>
-*     </div>
-*    </div>
-*   </div>
-*  </div>
-*/
-.box.score.collapse{}
