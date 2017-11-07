@@ -195,7 +195,9 @@ a.link{
 }
 
 
-
+ul.no-bullets{
+    &, li{list-style:none;}
+}
 
 /**
 * Semantic List for content that shouldn't be bulleted or indented. 

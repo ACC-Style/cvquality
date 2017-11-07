@@ -238,9 +238,8 @@ h3{font-size:ms(5);}
 		padding-top:.5rem;
 	}
 	.date{
-		max-width:160px;
-		min-width:110px;
-		margin:0px auto 10px auto;
+		max-width:120px;
+		margin:0px auto 10px;
 	}
 	.day{
 	}
@@ -267,6 +266,7 @@ h3{font-size:ms(5);}
 		color:$warm-grey-dark;
 		line-height: $tight;
 		font-style: italic;
+		margin-bottom:1em;
 	}
 
 	.leed{font-size:ms(1); line-height:normal; color:mix($scrubteal-dark, black);}

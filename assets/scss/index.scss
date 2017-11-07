@@ -35,9 +35,12 @@
 @import "component/video-player";
 @import "component/ads";
 @import "component/searchbar";
-@import "component/assessment";
 @import "component/toolkit-sublisting";
 @import "component/charts";
+
+/* Legacy Support */ 
+@import "component/assessment";
+//@import "shame/assessment";
 
 /* Footer */
 @import "component/address";
@@ -57,5 +60,6 @@
 @import "helpers/height-utiltiy";
 @import "helpers/states";
 @import "helpers/trumps";
+
 
 //@import "oldshame";
