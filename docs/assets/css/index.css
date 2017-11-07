@@ -109,7 +109,7 @@
   width: 1.28571429em;
   text-align: center; }
 
-.icon-after:after, a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:after {
+.icon-after:after, a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:after, .software-vendors .company:after {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -7243,6 +7243,371 @@ dl.grouped-definision-list.term-sq-lg dd {
 *   	</tbody>
 *   </table>
 **/
+/**
+* @atom Tables Scrollable
+* @section Typography > Tables
+* @markup
+*  <div class="table-scrollable">
+*    <div class="instructions"> <i class="fa fa-long-arrow-left"></i> Scroll For Software Companies  <i class="fa fa-long-arrow-right"></i> </div>
+*      <table class="software-vendors">
+*          <thead>
+*              <tr>
+*                  <th>Certified NCDR Software Vendor</th>
+*                  <th>IMPACT Registry</th>
+*                  <th>ACTION Registry</th>
+*                  <th>PVI Registry</th>
+*                  <th>CathPCI Registry</th>
+*                  <th>ICD Registry</th>
+*                  <th>AFib Registry</th>
+*              </tr>
+*          </thead>
+*          <tbody>
+*              <tr>
+*                  <td><a href="#157" class="company">ARMUS Corporation</a></td>
+*                  <td>Certified 04/21/2017</td>
+*                  <td>Certified 12/23/14</td>
+*                  <td>Certified October 18, 2017
+*                  </td>
+*                  <td>Certified - Interoperable with ACTION v2 07/14/10</td>
+*                  <td>Certified 08/05/2016</td>
+*                  <td>Certified 08/05/2016</td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#101" class="company">Axis Clinical Software, Inc.</a></td>
+*                  <td>Certified 08/24/2016</td>
+*                  <td>Interoperable with CathPCI and ICD v4 01/13/15</td>
+*                  <td>Certified 11/07/2014</td>
+*                  <td>Certified Interoperable with ACTION v2 10/28/11 and ICD v2 04/13/12
+*                      <br><b>*Metric License </b></td>
+*                  <td>Certified 05/27/16
+*                      <br><b>*Metric License </b></td>
+*                  <td>Certified 07/29/2016</td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#127" class="company">BayaTree, LLC</a></td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Certified 07/12/2017</td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Certified 08/18/2009</td>
+*                  <td>Certified 05/24/16</td>
+*                  <td>Certified 09/09/2016</td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#179" class="company">CardioAccess, Inc.</a></td>
+*                  <td>Certified 06/03/2016</td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#110" class="company">CardioPulse</a></td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Interoperable with CathPCI v4 and ICD v2 04/10/15</td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Interoperable with ICD v2 and ACTION v2 9/6/11</td>
+*                  <td>Certified 09/08/2016</td>
+*                  <td>Certified 10/18/2017</td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#103" class="company">Cedaron Medical, Inc.</a></td>
+*                  <td>Certified 01/15/2016</td>
+*                  <td>Interoperable with CathPCI and ICD v4 11/24/14
+*                      <br><b>*Metric License </b></td>
+*                  <td>Certified 06/03/2014
+*                      <br><b>*Metric License </b></td>
+*                  <td>Certified Interoperable with ACTION v2 05/04/10
+*                      <br><b>*Metric License </b></td>
+*                  <td>Certified 05/25/16
+*                      <br><b>*Metric License </b></td>
+*                  <td>Certified 07/13/2016</td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#140" class="company">Epic</a></td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Certified 06/09/2009</td>
+*                  <td>Certified 04/28/2016</td>
+*                  <td>Certified 04/12/2017</td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#205" class="company">Flexible Informatics</a></td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Certified 07/13/2017</td>
+*                  <td>Certified 07/25/2017</td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#105" class="company">GE Healthcare</a></td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Certified 03/06/2009</td>
+*                  <td>Certified 07/07/16</td>
+*                  <td>Certified 07/12/2016</td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#200" class="company">Health Level</a></td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Certified v4.4 12/07/2016</td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#108" class="company">heartbase</a></td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Interoperable with CathPCI and ICD 05/01/15</td>
+*                  <td>Certified 06/18/2014</td>
+*                  <td>Interoperable with ACTION v2 and ICD v2 03/29/13
+*                      <br><b>*Metric License </b></td>
+*                  <td>Certified 06/08/16</td>
+*                  <td>Certified 08/03/2016</td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#118" class="company">Juniper Consulting Group</a></td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Certified 06/22/2009</td>
+*                  <td>Certified 05/24/16</td>
+*                  <td>Certified 11/10/2016</td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#111" class="company">LUMEDX</a></td>
+*                  <td>Certified 03/17/2016
+*                      <br><b>*Metric License </b></td>
+*                  <td>Interoperable with CathPCI and ICD v4 02/05/15</td>
+*                  <td>Certified 05/11/2015</td>
+*                  <td>Interoperable with ACTION v2</td>
+*                  <td>Certified 08/10/16
+*                      <br><b>*Metric License </b></td>
+*                  <td>Certified 12/22/2016</td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#183" class="company">Navion Healthcare Solutions</a></td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Certified 01/23/15
+*                      <br><b>*Metric License </b></td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Certified 04/01/2013
+*                      <br><b>*Metric License </b></td>
+*                  <td>Certified 08/09/16
+*                      <br><b>*Metric License </b></td>
+*                  <td>Certified 04/19/2017</td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#199" class="company">Q-Centrix</a></td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Certified v2.4 05/17/2016
+*                      <br><b>*Metric License </b></td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Certified 04/28/16
+*                      <br><b>*Metric License </b></td>
+*                  <td>Certified 11/22/2016</td>
+*                  <td>Certified 10/12/2017</td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#138" class="company">Quantros, Inc.</a></td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Certified 09/30/2009</td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#153" class="company">Quintiles</a></td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Certified 03/10/15</td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#176" class="company">Scientific Software Solutions, Inc.</a></td>
+*                  <td>Certified 02/05/2016</td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#174" class="company">SoftLink International Inc.</a></td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Certified 05/02/2012</td>
+*                  <td>Certified 05/26/2016</td>
+*                  <td>Certified 05/26/2016</td>
+*              </tr>
+*          </tbody>
+*      </table>
+*  </div>
+*  
+**/
+.table-scrollable table {
+  display: block;
+  position: relative;
+  border: 1px solid #d6d4d4;
+  border-top: 0 none transparent; }
+.table-scrollable thead, .table-scrollable tbody {
+  display: block; }
+.table-scrollable thead {
+  width: 40%;
+  z-index: 2;
+  background-color: #eceaea;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 3px solid #0088aa; }
+  @media only screen and (min-width: 768px) {
+    .table-scrollable thead {
+      width: 18em; } }
+  .table-scrollable thead tr {
+    width: 100%;
+    display: block; }
+  .table-scrollable thead th {
+    display: block;
+    height: 6rem;
+    font-size: 16px;
+    line-height: 1.3; }
+    @media only screen and (min-width: 768px) {
+      .table-scrollable thead th {
+        height: 4rem; } }
+    @media only screen and (max-height: 768px) {
+      .table-scrollable thead th {
+        line-height: 1.15;
+        font-size: 14px;
+        height: 3.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis; } }
+    .table-scrollable thead th:nth-child(2n+2) {
+      background-color: #e5e7ea; }
+.table-scrollable tbody {
+  white-space: nowrap;
+  padding-left: 40%;
+  overflow-x: scroll; }
+  @media only screen and (min-width: 768px) {
+    .table-scrollable tbody {
+      padding-left: 18em; } }
+  .table-scrollable tbody tr {
+    width: 90%;
+    white-space: normal;
+    display: inline-block;
+    margin-right: -.125em; }
+    @media only screen and (min-width: 768px) {
+      .table-scrollable tbody tr {
+        width: 15em; } }
+  .table-scrollable tbody tr + tr {
+    border-left: #a4cded 1px solid; }
+  .table-scrollable tbody td {
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    line-height: 1.3;
+    height: 6rem; }
+    @media only screen and (min-width: 768px) {
+      .table-scrollable tbody td {
+        height: 4rem; } }
+    @media only screen and (max-height: 768px) {
+      .table-scrollable tbody td {
+        line-height: 1.15;
+        height: 3.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 11px; } }
+    .table-scrollable tbody td b {
+      color: #e87d1e; }
+    .table-scrollable tbody td:nth-child(2n+2) {
+      background-color: #f6fafd; }
+.table-scrollable th, .table-scrollable td {
+  padding: .5rem 1rem .25rem 1rem;
+  border-bottom: 1px solid #d6d4d4; }
+  @media only screen and (max-height: 768px) {
+    .table-scrollable th, .table-scrollable td {
+      padding: .25rem .5rem .125rem .5rem; } }
+.table-scrollable th {
+  border-bottom: 1px solid #a1a0a4; }
+.table-scrollable .instructions {
+  color: #e87d1e;
+  border: 1px solid #d6d4d4;
+  border-bottom: 2px solid #a1a0a4;
+  width: 100%;
+  text-align: center;
+  background-color: #eceaea;
+  display: block;
+  padding: .25rem 1rem;
+  font-size: 12px; }
+  .table-scrollable .instructions .fa {
+    margin: 0 .25rem; }
+
+.software-vendors .company {
+  font-size: 16px;
+  font-family: 'Muli', Verdana, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #047294; }
+  .software-vendors .company:after {
+    color: #e87d1e;
+    content: "\f05a"; }
+
 fieldset {
   margin: 0;
   padding: 0;
@@ -8993,7 +9358,6 @@ address.vcard {
   color: #2f2f2f; }
 @media only screen and (min-width: 1024px) {
   .nav-social-button .nav {
-    border-top: #d6d4d4 dotted 1px;
     padding: .25em; } }
 .nav-social-button .nav-item {
   margin: 0 .125rem 0;
@@ -9030,11 +9394,11 @@ address.vcard {
     width: 20px;
     height: 20px; }
 .nav-social-button.mono-teal .nav-item a {
-  background-color: #0088aa; }
+  background-color: #047294; }
 .nav-social-button.mono-orange .nav-item a {
   background-color: #e87d1e; }
 .nav-social-button.mono-grey .nav-item a {
-  background-color: #a1a0a4; }
+  background-color: #6f6b6f; }
 .nav-social-button.small .nav-item {
   margin: 0 2px 0; }
 .nav-social-button.small .nav-link {
@@ -9050,6 +9414,24 @@ address.vcard {
 .nav-social-button.flex-row .nav-link {
   width: 100%; }
 
+/**
+* Social engagement buttons small and colored.
+* 
+*	
+* @structure Social Buttons
+* @section Nav > Utility
+* @markup 
+*  <nav class="nav-social-button small mono-teal">
+*    <h4>Follow Accred</h4>
+*    <ul class="nav">
+*        <li class="nav-item twitter"><a class="nav-link" href="https://twitter.com/accintouch" target="_blank"><i class="fa fa-twitter"></i></a></li>
+*        <li class="nav-item facebook"><a class="nav-link" href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank"><i class="fa fa-facebook"></i></a></li>
+*        <li class="nav-item linkedin"><a  class="nav-link" href="http://www.linkedin.com/groups/American-College-Cardiology-732607?trk=myg_ugrp_ovr" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+*        <li class="nav-item youtube"><a  class="nav-link" href="http://www.youtube.com/user/ACCinTouch" target="_blank"><i class="fa fa-youtube"></i></a></li>
+*    </ul>
+*  </nav>
+* 
+**/
 /**
 * Navigation in the footer
 *
@@ -9404,7 +9786,7 @@ address.vcard {
  *           <div class="row">@{include:.nav-primary}</div>
  *      <div id="aux" class="row">@{include:.breadcrumb}</div>
  *      <div id="layout" class="row no-gutter">
- *          <div class="col-lg-2 p-0 d-none d-lg-block"> @{include:.nav-sub}</div>
+ *          <div class="col-lg-2 p-0 d-none d-lg-block"> @{include:.nav-sub}@{include:.nav-social-button.small}</div>
  *          <div class="col-lg-10 col"><div class="page-content"><h1>Sample Page</h1> @{include:dl.grouped-definision-list}</div></div>
  *      </div>
  *       @{include:#footer}
@@ -9741,5 +10123,8 @@ body, .body {
 .no-gutter > .sf_cols > [class*='col-'], .no-gutter > [class*='col-'] {
   padding-right: 0;
   padding-left: 0; }
+
+.no-margin {
+  margin: 0 !important; }
 
 /*# sourceMappingURL=index.css.map */
