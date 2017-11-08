@@ -18,6 +18,7 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: .5rem .75rem;
+    border:1px solid $off-white;
     .card-header{margin-left:-.75rem; margin-right:-.75rem;}
 
     h1, h2, h3, h4 {
@@ -50,7 +51,7 @@
 *
 * @molecule Score Box Accordion
 * @flag contained
-* @section Assessments > Score
+* @section Assessments > Box
 * @markup
 *  <div class="box score">
 *       <h3>@{lipsum:4:words}</h3>
@@ -74,25 +75,32 @@
 * The assessment box is defaultly white add the alt class to make it grey.
 *
 * @molecule Box Alt
+* @section Assessments > Box
 * @flag contained
-* @section Assessments > Score
 * @markup
 *  <div class="box alt">
-*      <h4  class="">View Previous Results:</h4>
-*      <div class="form-inline">
-*          <div class="form-group">
-*              <div class="input-group">
-*                   <select name="" id=""class="form-control">
-*                     <option value="">@{lipsum:3:words}</option>
-*                     <option value="">@{lipsum:3:words}</option>
-*                     <option value="">@{lipsum:3:words}</option>
-*                     <option value="">@{lipsum:3:words}</option>
-*                   </select>
-*              </div>
-*              <button type="submit" class="btn btn-primary">Go</button>
-*          </div>
-*          <button type="submit" class="btn btn-primary">Comparison Report</button>
-*      </div>
+*     <h3>Past Assessments</h3>
+*     <p>@{lipsum:2:paragraphs}</p>     
+*     <div class="row">
+*         <div class="col-sm-10 col-lg-6 p-r-0">
+*             <div class="form-group">
+*                 <div class="input-group expanded">
+*                     <select name="" id="" class="form-control">
+*                         <option value="">@{lipsum:3:words}</option>
+*                         <option value="">@{lipsum:3:words}</option>
+*                         <option value="">@{lipsum:3:words}</option>
+*                         <option value="">@{lipsum:3:words}</option>
+*                     </select>
+*                 </div>
+*             </div>
+*         </div>
+*         <div class="col-sm-2 col-lg-1 p-l-0">
+*           <button type="submit" class="btn btn-primary expanded">Go</button>      
+*         </div>
+*         <div class="col-sm-4 col-lg-5 pull-right">
+*             <button type="submit" class="btn btn-primary pull-right">Comparison Report</button>
+*         </div>
+*     </div>
 *  </div>
 */
 .box.alt{

@@ -3,3 +3,23 @@
     padding-left:0;
 }
 .no-margin{margin:0 !important;}
+
+.expanded{ width:100%;}
+.input-group.expanded{
+	width:100%;
+	 >*{
+	 	width:100%;
+	 }
+	}
+.p-0,.p-l-0{
+	padding-left:0;
+}
+.p-0,.p-r-0{
+	padding-right:0;
+}
+.p-0,.p-t-0{
+	padding-top:0;
+}
+.p-0,.p-b-0{
+	padding-bottom:0;
+}

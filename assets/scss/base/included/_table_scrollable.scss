@@ -259,6 +259,9 @@
 *  
 **/
 .table-scrollable {
+    &:after{content:"";
+display:table;
+clear:both;}
     table {
         display: block;
         position: relative;
