@@ -7817,13 +7817,7 @@ input {
 *  progress-bar-secondary color the bar to dark grey
 * @markup
 *  <div class="progress">
-*    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
-*  </div><br/>
-*  <div class="progress">
 *    <div class="progress-bar progress-bar-primary progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
-*  </div><br/>
-*  <div class="progress">
-*    <div class="progress-bar progress-bar-secondary progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
 *  </div>
 */
 .progress-bar.progress-bar-primary {
@@ -7847,6 +7841,12 @@ input {
 *    <div class="progress-bar progress-bar-danger" style="width: 10%">
 *      <span class="sr-only">10% Complete (danger)</span>
 *    </div>
+*  </div>><br/>
+*  <div class="progress">
+*    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+*  </div><br/>
+*  <div class="progress">
+*    <div class="progress-bar progress-bar-secondary progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
 *  </div>
 **/
 .card {
@@ -8364,6 +8364,25 @@ input {
   .undecorated.card .card-header.triangle:before {
     display: none; }
 
+/**
+* "Wizard Navigation"  This is a combination of .box, .progress-bar and .button to create a navigation that goes between a collection of pages that need to be sequentially stepped through.
+*
+* @structure Wizard Navigation 
+* @section Nav > Page 
+* @markup
+*  <div class="box alt">
+*    	<div class="row">
+*    		<div class="col-sm-5 col-md-4 col-lg-2"><strong class="pull-right">Completed:</strong></div>
+*    		<div class="col-sm-6 col-md-7 col-lg-9">@{include:.progress-bar}</div>
+*    	</div>
+ *    	<hr class="m-t-0"/>
+*     	<div class="row">
+*     		<div class="col-sm-6"><a href="" class="btn pull-left btn-secondary"><i class="fa fa-arrow-left"></i> Previous</a></div>
+*     		<div class="col-sm-6"><a href="" class="btn pull-right btn-primary">Next <i class="fa fa-arrow-right"></i></a></div>
+*     	</div>
+*  </div>
+*
+*/
 /**
  * buttons are highly flexable and can be decorated by the modifiers to change size and color
  *
@@ -10391,12 +10410,29 @@ body, .body {
   font-size: 120%;
   color: #a00; }
 
-.no-gutter > .sf_cols > [class*='col-'], .no-gutter > [class*='col-'] {
-  padding-right: 0;
-  padding-left: 0; }
+.m-0, .no-margin, .m-l-0 {
+  margin-left: 0 !important; }
 
-.no-margin {
-  margin: 0 !important; }
+.m-0, .no-margin, .m-r-0 {
+  margin-right: 0 !important; }
+
+.m-0, .no-margin, .m-t-0 {
+  margin-top: 0 !important; }
+
+.m-0, .no-margin, .m-b-0 {
+  margin-bottom: 0 !important; }
+
+.p-0, .no-padding, .p-l-0, .no-gutter > .sf_cols > [class*='col-'], .no-gutter > [class*='col-'] {
+  padding-left: 0 !important; }
+
+.p-0, .no-padding, .p-r-0, .no-gutter > .sf_cols > [class*='col-'], .no-gutter > [class*='col-'] {
+  padding-right: 0 !important; }
+
+.p-0, .no-padding, .p-t-0 {
+  padding-top: 0 !important; }
+
+.p-0, .no-padding, .p-b-0 {
+  padding-bottom: 0 !important; }
 
 .expanded {
   width: 100%; }
@@ -10405,17 +10441,5 @@ body, .body {
   width: 100%; }
   .input-group.expanded > * {
     width: 100%; }
-
-.p-0, .p-l-0 {
-  padding-left: 0; }
-
-.p-0, .p-r-0 {
-  padding-right: 0; }
-
-.p-0, .p-t-0 {
-  padding-top: 0; }
-
-.p-0, .p-b-0 {
-  padding-bottom: 0; }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,9 +1,35 @@
-.no-gutter > .sf_cols > [class*='col-'],.no-gutter > [class*='col-'] {
-    padding-right:0;
-    padding-left:0;
+.m-0,.m-l-0{
+	margin-left:0 !important;
 }
-.no-margin{margin:0 !important;}
+.m-0,.m-r-0{
+	margin-right:0 !important;
+}
+.m-0,.m-t-0{
+	margin-top:0 !important;
+}
+.m-0,.m-b-0{
+	margin-bottom:0 !important;
+}
+.no-margin{@extend .m-0;}
 
+.p-0,.p-l-0{
+	padding-left:0 !important;
+}
+.p-0,.p-r-0{
+	padding-right:0 !important;
+}
+.p-0,.p-t-0{
+	padding-top:0 !important;
+}
+.p-0,.p-b-0{
+	padding-bottom:0 !important;
+}
+.no-padding{@extend .p-0;}
+
+.no-gutter > .sf_cols > [class*='col-'],.no-gutter > [class*='col-'] {
+    @extend .p-r-0;
+     @extend .p-l-0;
+}
 .expanded{ width:100%;}
 .input-group.expanded{
 	width:100%;
@@ -11,15 +37,3 @@
 	 	width:100%;
 	 }
 	}
-.p-0,.p-l-0{
-	padding-left:0;
-}
-.p-0,.p-r-0{
-	padding-right:0;
-}
-.p-0,.p-t-0{
-	padding-top:0;
-}
-.p-0,.p-b-0{
-	padding-bottom:0;
-}
