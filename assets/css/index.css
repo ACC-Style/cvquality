@@ -9328,7 +9328,6 @@ input {
 * Score Boxes can have Accodian's nested inside themselves.  The Accordion simplifies when it is with a box so it is cleaner. 
 *
 * @molecule Score Box Accordion
-* @flag contained
 * @section Assessments > Box
 * @markup
 *  <div class="box score">
@@ -9351,26 +9350,25 @@ input {
 *
 * @molecule Box Alt
 * @section Assessments > Box
-* @flag contained
 * @markup
 *  <div class="box alt">
 *     <h3>Past Assessments</h3>
 *     <p>@{lipsum:2:paragraphs}</p>     
 *     <div class="row">
-*         <div class="col-sm-10 col-lg-6 p-r-0">
+*         <div class="col-sm-9 col-lg-6 p-r-0">
 *             <div class="form-group">
-*                 <div class="input-group expanded">
+*                 <div class="input-group">
 *                     <select name="" id="" class="form-control">
 *                         <option value="">@{lipsum:3:words}</option>
 *                         <option value="">@{lipsum:3:words}</option>
 *                         <option value="">@{lipsum:3:words}</option>
 *                         <option value="">@{lipsum:3:words}</option>
 *                     </select>
+*         <span class="input-group-btn">
+*           <button type="submit" class="btn btn-primary expanded">Go</button>      
+*         </span>
 *                 </div>
 *             </div>
-*         </div>
-*         <div class="col-sm-2 col-lg-1 p-l-0">
-*           <button type="submit" class="btn btn-primary expanded">Go</button>      
 *         </div>
 *         <div class="col-sm-4 col-lg-5 pull-right">
 *             <button type="submit" class="btn btn-primary pull-right">Comparison Report</button>
