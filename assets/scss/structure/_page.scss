@@ -12,8 +12,8 @@
  *           <div class="row">@{include:.nav-primary}</div>
  *      <div id="aux" class="row">@{include:.breadcrumb}</div>
  *      <div id="layout" class="row no-gutter">
- *          <div class="col-lg-2 p-0 d-none d-lg-block"> @{include:.nav-sub}@{include:.nav-social-button.small}</div>
- *          <div class="col-lg-10 col"><div class="page-content"><h1>Sample Page</h1> @{include:dl.grouped-definision-list}</div></div>
+ *          <div class="col-lg-3 p-0 d-none d-lg-block"> @{include:.nav-sub}@{include:.nav-social-button.small}</div>
+ *          <div class="col-lg-9 col"><div class="page-content"><h1>Sample Page</h1> @{include:dl.grouped-definision-list}</div></div>
  *      </div>
  *       @{include:#footer}
  *  </div>
@@ -43,6 +43,7 @@
 .page-content{
     padding: .5rem  0 1rem;
    @include bp(md){ padding: .5rem 1rem 2rem;}
+   @include bp(lg){ padding: .5rem 2rem 2rem;}
     + .page-content{
         padding-top:0;
         @include bp(md){  margin-top:-1rem;}
@@ -86,3 +87,36 @@
  *  </div>
  */
 .homepage{}
+
+
+/**
+ * Page Layout for the Assements Score
+ * 
+ * @layouts Assessments
+ * @section Layouts
+ * @flag full-width
+ * @markup
+ *  <div class="body">
+ *      <div class="wrapper container-fluid">
+ *           @{include:#header}
+ *           <div class="row">@{include:.nav-primary}</div>
+ *      <div id="aux" class="row">@{include:.breadcrumb}</div>
+ *      <div id="layout" class="row no-gutter">
+ *          <div class="col-lg-3 p-0 d-none d-lg-block"> @{include:.nav-sub}</div>
+ *          <div class="col-lg-9 col"><div class="page-content">
+ *          <h1>Assements Page</h1>  
+ *          <p><strong>User:</strong> @{lipsum:2:words}</p>
+ *          <p><strong>Facility Site:</strong> @{lipsum:5:words}</p>
+ *          <p><strong>You have completed the Assessment on the following dates:</strong></p>
+ *          <ul><li>Oct 23, 2017 (Q4 - 2017)</li><li>Oct 23, 2017 (Q4 - 2017)</li><li>Jun 20, 2017 (Q2 - 2017)</li><li>Jun 16, 2017 (Q2 - 2017)</li><li>Jun 09, 2017 (Q2 - 2017)</li><li>May 24, 2017 (Q2 - 2017)</li><li>May 18, 2017 (Q2 - 2017)</li><li>May 09, 2017 (Q2 - 2017)</li><li>May 09, 2017 (Q2 - 2017)</li><li>May 09, 2017 (Q2 - 2017)</li><li>May 03, 2017 (Q2 - 2017)</li><li>May 03, 2017 (Q2 - 2017)</li><li>May 03, 2017 (Q2 - 2017)</li><li>Mar 22, 2017 (Q1 - 2017)</li><li>Mar 21, 2017 (Q1 - 2017)</li><li>Mar 13, 2017 (Q1 - 2017)</li><li>Jan 30, 2017 (Q1 - 2017)</li><li>Apr 18, 2016 (Q2 - 2016)</li></ul>    
+ *          @{include:.box.alt}
+ *          @{include:.overall-score.box}
+ *           @{include:.box.score.accordion}
+ *          </div></div>
+ *      </div>
+ *       @{include:#footer}
+ *  </div>
+ *  </div>
+ */
+
+ .assessment{}

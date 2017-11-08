@@ -8365,25 +8365,6 @@ input {
     display: none; }
 
 /**
-* "Wizard Navigation"  This is a combination of .box, .progress-bar and .button to create a navigation that goes between a collection of pages that need to be sequentially stepped through.
-*
-* @structure Wizard Navigation 
-* @section Nav > Page 
-* @markup
-*  <div class="box alt">
-*    	<div class="row">
-*    		<div class="col-sm-5 col-md-4 col-lg-2"><strong class="pull-right">Completed:</strong></div>
-*    		<div class="col-sm-6 col-md-7 col-lg-9">@{include:.progress-bar}</div>
-*    	</div>
- *    	<hr class="m-t-0"/>
-*     	<div class="row">
-*     		<div class="col-sm-6"><a href="" class="btn pull-left btn-secondary"><i class="fa fa-arrow-left"></i> Previous</a></div>
-*     		<div class="col-sm-6"><a href="" class="btn pull-right btn-primary">Next <i class="fa fa-arrow-right"></i></a></div>
-*     	</div>
-*  </div>
-*
-*/
-/**
  * buttons are highly flexable and can be decorated by the modifiers to change size and color
  *
  * @atom .btn\.button\button
@@ -9459,6 +9440,25 @@ input {
     .score .points-possible h1, .score .points-possible h2, .score .points-possible h3, .score .points-possible h4 {
       background-color: #eceaea; }
 
+/**
+* "Wizard Navigation"  This is a combination of .box, .progress-bar and .button to create a navigation that goes between a collection of pages that need to be sequentially stepped through.
+*
+* @structure Wizard Navigation 
+* @section Nav > Page 
+* @markup
+*  <div class="box alt">
+*      <div class="row">
+*          <div class="col-sm-5 col-md-4 col-lg-2"><strong class="pull-right">Completed:</strong></div>
+*          <div class="col-sm-6 col-md-7 col-lg-9">@{include:.progress-bar}</div>
+*      </div>
+ *     <hr class="m-t-0"/>
+*      <div class="row">
+*          <div class="col-sm-6"><a href="" class="btn pull-left btn-secondary"><i class="fa fa-arrow-left"></i> Previous</a></div>
+*          <div class="col-sm-6"><a href="" class="btn pull-right btn-primary">Next <i class="fa fa-arrow-right"></i></a></div>
+*      </div>
+*  </div>
+*
+*/
 /* Footer */
 /**
  * Address blocks are well formated microformat to optimum usage in browsers.
@@ -10074,8 +10074,8 @@ address.vcard {
  *           <div class="row">@{include:.nav-primary}</div>
  *      <div id="aux" class="row">@{include:.breadcrumb}</div>
  *      <div id="layout" class="row no-gutter">
- *          <div class="col-lg-2 p-0 d-none d-lg-block"> @{include:.nav-sub}@{include:.nav-social-button.small}</div>
- *          <div class="col-lg-10 col"><div class="page-content"><h1>Sample Page</h1> @{include:dl.grouped-definision-list}</div></div>
+ *          <div class="col-lg-3 p-0 d-none d-lg-block"> @{include:.nav-sub}@{include:.nav-social-button.small}</div>
+ *          <div class="col-lg-9 col"><div class="page-content"><h1>Sample Page</h1> @{include:dl.grouped-definision-list}</div></div>
  *      </div>
  *       @{include:#footer}
  *  </div>
@@ -10121,6 +10121,9 @@ body, .body {
   @media only screen and (min-width: 768px) {
     .page-content {
       padding: .5rem 1rem 2rem; } }
+  @media only screen and (min-width: 1024px) {
+    .page-content {
+      padding: .5rem 2rem 2rem; } }
   .page-content + .page-content {
     padding-top: 0; }
     @media only screen and (min-width: 768px) {
@@ -10159,6 +10162,35 @@ body, .body {
  *          </div>
  *       @{include:#footer}
  *      </div>
+ *  </div>
+ *  </div>
+ */
+/**
+ * Page Layout for the Assements Score
+ * 
+ * @layouts Assessments
+ * @section Layouts
+ * @flag full-width
+ * @markup
+ *  <div class="body">
+ *      <div class="wrapper container-fluid">
+ *           @{include:#header}
+ *           <div class="row">@{include:.nav-primary}</div>
+ *      <div id="aux" class="row">@{include:.breadcrumb}</div>
+ *      <div id="layout" class="row no-gutter">
+ *          <div class="col-lg-3 p-0 d-none d-lg-block"> @{include:.nav-sub}</div>
+ *          <div class="col-lg-9 col"><div class="page-content">
+ *          <h1>Assements Page</h1>  
+ *          <p><strong>User:</strong> @{lipsum:2:words}</p>
+ *          <p><strong>Facility Site:</strong> @{lipsum:5:words}</p>
+ *          <p><strong>You have completed the Assessment on the following dates:</strong></p>
+ *          <ul><li>Oct 23, 2017 (Q4 - 2017)</li><li>Oct 23, 2017 (Q4 - 2017)</li><li>Jun 20, 2017 (Q2 - 2017)</li><li>Jun 16, 2017 (Q2 - 2017)</li><li>Jun 09, 2017 (Q2 - 2017)</li><li>May 24, 2017 (Q2 - 2017)</li><li>May 18, 2017 (Q2 - 2017)</li><li>May 09, 2017 (Q2 - 2017)</li><li>May 09, 2017 (Q2 - 2017)</li><li>May 09, 2017 (Q2 - 2017)</li><li>May 03, 2017 (Q2 - 2017)</li><li>May 03, 2017 (Q2 - 2017)</li><li>May 03, 2017 (Q2 - 2017)</li><li>Mar 22, 2017 (Q1 - 2017)</li><li>Mar 21, 2017 (Q1 - 2017)</li><li>Mar 13, 2017 (Q1 - 2017)</li><li>Jan 30, 2017 (Q1 - 2017)</li><li>Apr 18, 2016 (Q2 - 2016)</li></ul>    
+ *          @{include:.box.alt}
+ *          @{include:.overall-score.box}
+ *           @{include:.box.score.accordion}
+ *          </div></div>
+ *      </div>
+ *       @{include:#footer}
  *  </div>
  *  </div>
  */

@@ -197,3 +197,24 @@
         .overall-score &{}
     }
 }
+
+ /**
+ * "Wizard Navigation"  This is a combination of .box, .progress-bar and .button to create a navigation that goes between a collection of pages that need to be sequentially stepped through.
+ *
+ * @structure Wizard Navigation 
+ * @section Nav > Page 
+ * @markup
+ *  <div class="box alt">
+ *      <div class="row">
+ *          <div class="col-sm-5 col-md-4 col-lg-2"><strong class="pull-right">Completed:</strong></div>
+ *          <div class="col-sm-6 col-md-7 col-lg-9">@{include:.progress-bar}</div>
+ *      </div>
+  *     <hr class="m-t-0"/>
+ *      <div class="row">
+ *          <div class="col-sm-6"><a href="" class="btn pull-left btn-secondary"><i class="fa fa-arrow-left"></i> Previous</a></div>
+ *          <div class="col-sm-6"><a href="" class="btn pull-right btn-primary">Next <i class="fa fa-arrow-right"></i></a></div>
+ *      </div>
+ *  </div>
+ *
+ */
+.wizard.box{}
