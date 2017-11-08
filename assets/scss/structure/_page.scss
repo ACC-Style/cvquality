@@ -43,11 +43,12 @@
 .page-content{
     padding: .5rem  0 1rem;
    @include bp(md){ padding: .5rem 1rem 2rem;}
-   @include bp(lg){ padding: .5rem 2rem 2rem;}
+   @include bp(lg){ padding: .5rem 2.5rem 2rem;}
     + .page-content{
         padding-top:0;
         @include bp(md){  margin-top:-1rem;}
     }
+    &.full-screen{   @include bp(lg){ padding: .5rem 1rem 2rem;}}
 }
 
 
@@ -63,7 +64,7 @@
  *           @{include:#header}
  *          <div class="row">@{include:.nav-primary}</div>
  *          <div id="layout">
- *              <div class="page-content">
+ *              <div class="page-content full-screen">
  *                  <div class="row">
  *                      <div class="col-lg-4">
  *                          @{include:.featured.card}</div>
