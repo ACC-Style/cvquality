@@ -1,12 +1,12 @@
 @charset "UTF-8";
 /**
- * Header Orange
+ * Orange - Dark (Headers)
  *
  * @color 
  * @section QII Brand
  */
 /**
- * Highlight Orange
+ * Orange - Light (Highlights)
  *
  * @color 
  * @section QII Brand
@@ -24,13 +24,13 @@
 * @section QII Brand
 */
  /**
-* Warm Light Grey
+* Warm  Grey - Light
 *
 * @color 
 * @section QII Alternate Colors
 */
  /**
-* Warm Dark Grey
+* Warm  Grey - Dark
 *
 * @color 
 * @section QII Alternate Colors
@@ -72,13 +72,13 @@
 * @section Scrub Teal	
 */
 /**
-* Scrub Light Teal 
+* Scrub  Teal - Light
 *
 * @color 
 * @section Scrub Teal		
 */
 /**
- * Scrub Dark Teal 
+ * ScrubTeal - Dark
  *
  * @color
  * @section Scrub Teal	 	
@@ -8092,15 +8092,16 @@ input {
  *              </div>
  *              <div class="event-details">
  *                  <div class="title">@{lipsum:8:words}</div>
- *                  <div class="location">Cincinnati, OH <span class="full-date">May 12, 2018</span></div>
- *                  
+ *                  <div class="location-title">Grand Hayatt</div>
+ *                  <div class="location">Cincinnati, OH </div>
+ *                  <span class="full-date">May 12, 2018</span><span class="time"><span class="begin">8:00AM</span> - <span class="end">2:00PM</span> <span class="timezone">(EST)</span></span>
  *              </div>
  *      </div>
  *      <div class="card-body">     
  *          <p>@{lipsum:1:paragraphs}</p>
  *      </div>
- *      <div class="card-action"><i class="fa fa-calendar"></i> <strong>Add to Calendar: </strong><a class="link">Outlook</a> | <a class="link">Google</a> | <a class="link">iCal</a></div>
- *  </div>
+ *      <div class="card-action"><strong>Add to Calendar: </strong><a class="link">Outlook</a> | <a class="link">Google</a> | <a class="link">iCal</a></div>
+ *      <div class="card-action"><a class="btn btn-default btn-sm">Register</a></div>
  *
  */
 .card.event {
@@ -8126,6 +8127,8 @@ input {
     padding-right: 1rem;
     text-align: center;
     width: 1%; }
+  .card.event .event-details {
+    padding-bottom: .75rem; }
   .card.event .card-body {
     text-align: left;
     clear: both;
@@ -8139,18 +8142,25 @@ input {
     margin-top: 0;
     margin-bottom: .25rem;
     font-size: 20px; }
-  .card.event .location {
+  .card.event .location-title {
     font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
     font-weight: 700;
+    color: #047294;
     font-size: 16px;
+    line-height: 1.15; }
+  .card.event .location {
+    font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
     line-height: 1.15;
     color: #2f2f2f; }
   .card.event .full-date {
-    display: none;
+    display: none; }
+  .card.event .full-date, .card.event .time {
     font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    color: #047294;
+    font-weight: 400;
+    font-size: 12px;
+    color: #2f2f2f;
     line-height: 1.3;
     font-style: italic;
     margin-bottom: 1em; }
@@ -8165,6 +8175,8 @@ input {
       @media only screen and (min-width: 768px) {
         .card.event .card-action strong {
           display: inline; } }
+    .card.event .card-action .btn, .card.event .card-action .button {
+      width: 100%; }
 
 .event .date {
   max-width: 120px;
@@ -8229,24 +8241,29 @@ input {
  *              </div>
  *              <div class="event-details">
  *                  <div class="title">@{lipsum:8:words}</div>
- *                  <div class="location">Cincinnati, OH <span class="full-date">May 12, 2018</span></div>
- *                  
+*                  <div class="location-title">Grand Hayatt</div>
+ *                  <div class="location">Cincinnati, OH </div>
+ *                  <span class="full-date">May 12, 2018</span><span class="time"><span class="begin">8:00AM</span> - <span class="end">2:00PM</span> <span class="timezone">(EST)</span></span>
  *              </div>
  *      </div>
  *      <div class="card-body">     
  *          <p>@{lipsum:1:paragraphs}</p>
  *      </div>
  *      <div class="card-action"><strong>Add to Calendar: </strong><a class="link">Outlook</a> | <a class="link">Google</a> | <a class="link">iCal</a></div>
+ *      <div class="card-action"><a class="btn btn-default btn-sm">Register</a></div>
  *  </div>
  *
  */
 .card.event.undecorated .event-date {
   display: none; }
 .card.event.undecorated .location {
-  font-size: 14px; }
-.card.event.undecorated .full-date {
+  font-size: 12px;
+  display: inline; }
+.card.event.undecorated .full-date, .card.event.undecorated .time {
   display: inline;
   margin-left: .25rem; }
+.card.event.undecorated .event-details {
+  padding-bottom: 0; }
 .card.event.undecorated .card-header {
   padding-right: 0;
   padding-left: 0;
@@ -8265,6 +8282,8 @@ input {
   padding-top: .125rem;
   padding-bottom: .125rem;
   text-align: left; }
+  .card.event.undecorated .card-action .btn, .card.event.undecorated .card-action .button {
+    width: 200px; }
 
 .card.event.undecorated + .card.event.undecorated {
   border-top: 1px dotted #047294; }
@@ -8402,8 +8421,10 @@ input {
     .card.testimonial.horizontal .blockquote-cite {
       text-align: right; } }
 
-.card.testimonial.horizontal.undecorated .card-header, .card.testimonial.undecorated .card-header {
-  display: none !important; }
+.card.testimonial.horizontal.undecorated, .card.testimonial.undecorated {
+  margin-top: 0; }
+  .card.testimonial.horizontal.undecorated .card-header, .card.testimonial.undecorated .card-header {
+    display: none !important; }
 
 /**
  * The "Facility Card" is a combination of cards and ui to make the UI element that is found on the home page. 
@@ -10536,6 +10557,13 @@ body, .body {
   font-size: 120%;
   color: #a00; }
 
+/**
+* Some times the defualt margin needs to be removed.  Adding these class will selectivly remove the margin of the DOM item it is placed on. 
+*
+* @nuclide .m-0
+* @section Helpers > trumps
+* 
+*/
 .m-0, .no-margin, .m-l-0 {
   margin-left: 0 !important; }
 

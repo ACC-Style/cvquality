@@ -326,15 +326,16 @@
  *              </div>
  *              <div class="event-details">
  *                  <div class="title">@{lipsum:8:words}</div>
- *                  <div class="location">Cincinnati, OH <span class="full-date">May 12, 2018</span></div>
- *                  
+ *                  <div class="location-title">Grand Hayatt</div>
+ *                  <div class="location">Cincinnati, OH </div>
+ *                  <span class="full-date">May 12, 2018</span><span class="time"><span class="begin">8:00AM</span> - <span class="end">2:00PM</span> <span class="timezone">(EST)</span></span>
  *              </div>
  *      </div>
  *      <div class="card-body">     
  *          <p>@{lipsum:1:paragraphs}</p>
  *      </div>
- *      <div class="card-action"><i class="fa fa-calendar"></i> <strong>Add to Calendar: </strong><a class="link">Outlook</a> | <a class="link">Google</a> | <a class="link">iCal</a></div>
- *  </div>
+ *      <div class="card-action"><strong>Add to Calendar: </strong><a class="link">Outlook</a> | <a class="link">Google</a> | <a class="link">iCal</a></div>
+ *      <div class="card-action"><a class="btn btn-default btn-sm">Register</a></div>
  *
  */
 .card.event {
@@ -370,7 +371,7 @@
     }
 
     .event-details {
-
+        padding-bottom:.75rem;
     }
 
     .card-body {
@@ -394,18 +395,23 @@
         font-size: ms(3);
     }
 
-    .location {
+    .location-title{
         @include font("bold");
+        color:$scrub-teal-dark;
         font-size: ms(1);
+        line-height: $crunched;
+    }
+    .location {
+        @include font("regular");
+        font-size: ms(0);
         line-height: $crunched;
         color: $off-black;
     }
-
-    .full-date {
-        display: none;
-        @include font("bold");
-        font-size: ms(0);
-        color: $scrub-teal-dark;
+    .full-date{display: none;}
+    .full-date,.time {
+        @include font("regular");
+        font-size: ms(-1);
+        color: $off-black;
         line-height: $tight;
         font-style: italic;
         margin-bottom: 1em;
@@ -423,6 +429,7 @@
                 display: inline;
             }
         }
+        .btn{ width:100%;}
     }
 }
 
@@ -491,21 +498,24 @@
  *              </div>
  *              <div class="event-details">
  *                  <div class="title">@{lipsum:8:words}</div>
- *                  <div class="location">Cincinnati, OH <span class="full-date">May 12, 2018</span></div>
- *                  
+*                  <div class="location-title">Grand Hayatt</div>
+ *                  <div class="location">Cincinnati, OH </div>
+ *                  <span class="full-date">May 12, 2018</span><span class="time"><span class="begin">8:00AM</span> - <span class="end">2:00PM</span> <span class="timezone">(EST)</span></span>
  *              </div>
  *      </div>
  *      <div class="card-body">     
  *          <p>@{lipsum:1:paragraphs}</p>
  *      </div>
  *      <div class="card-action"><strong>Add to Calendar: </strong><a class="link">Outlook</a> | <a class="link">Google</a> | <a class="link">iCal</a></div>
+ *      <div class="card-action"><a class="btn btn-default btn-sm">Register</a></div>
  *  </div>
  *
  */
 .card.event.undecorated{
     .event-date{display:none;}
-    .location{font-size:ms(0);}
-    .full-date{display:inline;margin-left:.25rem;}
+    .location{font-size:ms(-1); display:inline;}
+    .full-date,.time{display:inline;margin-left:.25rem;}
+    .event-details {padding-bottom:0;}
     .card-header{
         padding-right:0;
         padding-left:0;
@@ -526,7 +536,7 @@
         padding-top:.125rem;
         padding-bottom:.125rem;
         text-align: left;
-
+        .btn{ width:200px;}
     }
 }
 .card.event.undecorated + .card.event.undecorated{border-top:1px dotted $scrub-teal-dark;}
@@ -712,6 +722,7 @@
     }
 }
 .card.testimonial.horizontal.undecorated,.card.testimonial.undecorated{
+    margin-top:0;
     .card-header{display:none!important;}
 }
 /**
