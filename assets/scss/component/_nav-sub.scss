@@ -61,8 +61,8 @@
         }
     }
     >.nav{
-        border-top: solid 1px $dark-orange;
-        border-bottom: solid 1px $dark-orange;
+        border-top: solid 1px $orange-dark;
+        border-bottom: solid 1px $orange-dark;
 
     }
     ul {
@@ -109,7 +109,7 @@
         &.active{color:$off-black;}
         &.current>a, &.current>a:hover{
 
-            color:$dark-orange;
+            color:$orange-dark;
         }        
     }
     li>a{padding: 3px 10px 3px 1.5em;}

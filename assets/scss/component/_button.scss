@@ -28,12 +28,12 @@
 	background:none transparent;
 }
 .btn.btn-outline-primary{
-	border-color:$scrubteal;
-	color:$scrubteal;
+	border-color:$scrub-teal;
+	color:$scrub-teal;
 	background:none;
 	&:visited,&:hover{
-		border-color:$scrubteal-dark;
-		color:$scrubteal-dark;
+		border-color:$scrub-teal-dark;
+		color:$scrub-teal-dark;
 		background-color: rgba(255,255,255,.2);
 	}
 }

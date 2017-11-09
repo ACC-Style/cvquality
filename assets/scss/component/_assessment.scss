@@ -24,7 +24,7 @@
     h1, h2, h3, h4 {
         &:first-child{margin-top:.5rem;}
         font-weight: bold;
-        color: $dark-orange;
+        color: $orange-dark;
     }
 }
 /**
@@ -133,7 +133,7 @@
     line-height: $normal;
     text-align: right;
     text-transform: uppercase;
-    color: $dark-orange;
+    color: $orange-dark;
     border-bottom: solid 2px $warm-grey-dark;
 
     &:before {
@@ -172,7 +172,7 @@
         background-color: $soft-grey;
     }
     .overall-score & {
-        background-color: $dark-orange;
+        background-color: $orange-dark;
         padding: .75rem .5rem;
         color: white;
         font-weight: bold;

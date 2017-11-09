@@ -4,7 +4,7 @@
  * @color 
  * @section QII Brand
  */
- $dark-orange: #e87d1e;
+ $orange-dark: #e87d1e;
 
 /**
  * Highlight Orange
@@ -12,7 +12,7 @@
  * @color 
  * @section QII Brand
  */
- $light-orange: #ffc425;
+ $orange-light: #ffc425;
  /**
  * ACC Blue
  *
@@ -85,14 +85,14 @@ $warm-grey-light: #d6d4d4;
  * @color 
  * @section Scrub Teal	
  */
- $scrubteal:#0088aa;
+ $scrub-teal:#0088aa;
  /**
  * Scrub Light Teal 
  *
  * @color 
  * @section Scrub Teal		
  */
- $scrubteal-light:#05aee5;
+ $scrub-teal-light:#05aee5;
 
 /**
  * Scrub Dark Teal 
@@ -100,43 +100,43 @@ $warm-grey-light: #d6d4d4;
  * @color
  * @section Scrub Teal	 	
  */
- $scrubteal-dark:#047294;
+ $scrub-teal-dark:#047294;
 
 
  @mixin teal-gradient{
-    background: $scrubteal-dark;
+    background: $scrub-teal-dark;
     /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1YWVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjgzYWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(top, $scrubteal-light 0%, $scrubteal-dark 100%);
+    background: -moz-linear-gradient(top, $scrub-teal-light 0%, $scrub-teal-dark 100%);
     /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $scrubteal-light), color-stop(100%, $scrubteal-dark));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $scrub-teal-light), color-stop(100%, $scrub-teal-dark));
     /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, $scrubteal-light 0%, $scrubteal-dark 100%);
+    background: -webkit-linear-gradient(top, $scrub-teal-light 0%, $scrub-teal-dark 100%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, $scrubteal-light 0%, $scrubteal-dark 100%);
+    background: -o-linear-gradient(top, $scrub-teal-light 0%, $scrub-teal-dark 100%);
     /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, $scrubteal-light 0%, $scrubteal-dark 100%);
+    background: -ms-linear-gradient(top, $scrub-teal-light 0%, $scrub-teal-dark 100%);
     /* IE10+ */
-    background: linear-gradient(to bottom, $scrubteal-light 0%, $scrubteal-dark 100%);
+    background: linear-gradient(to bottom, $scrub-teal-light 0%, $scrub-teal-dark 100%);
     /* W3C */
  }
   @mixin teal-gradient-reverse{
-    background: $scrubteal-dark;
+    background: $scrub-teal-dark;
     /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1YWVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjgzYWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(top, $scrubteal-dark 0%, $scrubteal 100%);
+    background: -moz-linear-gradient(top, $scrub-teal-dark 0%, $scrub-teal 100%);
     /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $scrubteal-dark), color-stop(100%, $scrubteal));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $scrub-teal-dark), color-stop(100%, $scrub-teal));
     /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, $scrubteal-dark 0%, $scrubteal 100%);
+    background: -webkit-linear-gradient(top, $scrub-teal-dark 0%, $scrub-teal 100%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, $scrubteal-dark 0%, $scrubteal 100%);
+    background: -o-linear-gradient(top, $scrub-teal-dark 0%, $scrub-teal 100%);
     /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, $scrubteal-dark 0%, $scrubteal 100%);
+    background: -ms-linear-gradient(top, $scrub-teal-dark 0%, $scrub-teal 100%);
     /* IE10+ */
-    background: linear-gradient(to bottom, $scrubteal-dark 0%, $scrubteal 100%);
+    background: linear-gradient(to bottom, $scrub-teal-dark 0%, $scrub-teal 100%);
     /* W3C */
  }
   @mixin grey-gradient{

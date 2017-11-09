@@ -312,7 +312,7 @@ clear:both;}
             }
         }
 
-        border-right: 3px solid $scrubteal;
+        border-right: 3px solid $scrub-teal;
     }
 
     tbody {
@@ -360,7 +360,7 @@ clear:both;}
 	            font-size: ms(-2);
 	        };
             b {
-                color: $dark-orange;
+                color: $orange-dark;
             }
 
             &:nth-child(2n+2) {
@@ -382,7 +382,7 @@ clear:both;}
     }
 
     .instructions {
-        color: $dark-orange;
+        color: $orange-dark;
         border: 1px solid $warm-grey-light;
         border-bottom: 2px solid $warm-grey;
         width: 100%;
@@ -404,12 +404,12 @@ clear:both;}
 
         @include font-display(bold);
 
-        color: $scrubteal-dark;
+        color: $scrub-teal-dark;
 
         @extend .icon-after;
 
         &:after {
-            color: $dark-orange;
+            color: $orange-dark;
             content: "\f05a";
         }
     }

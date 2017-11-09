@@ -39,12 +39,12 @@
 	.panel-heading{
 		background-color: $soft-grey;
 		border:$warm-grey-light 1px solid;
-		border-bottom: $scrubteal-light 2px solid;
+		border-bottom: $scrub-teal-light 2px solid;
 		padding:0;
 		&:hover{
 			background-color:$soft-blue;
-			border: $scrubteal-light 1px solid;
-			border-bottom: $scrubteal 2px solid;
+			border: $scrub-teal-light 1px solid;
+			border-bottom: $scrub-teal 2px solid;
 		}
 		.panel-title{
 			&:hover, a:hover, a:focus, a:active{

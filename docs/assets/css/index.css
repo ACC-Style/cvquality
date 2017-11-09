@@ -175,7 +175,7 @@ html {
   display: block;
   box-sizing: border-box;
   font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1.5;
   font-size: 14px;
   margin: 0;
@@ -8079,105 +8079,195 @@ input {
  * @section Card 
  * @flag contained
  * @modifiers
- *  .compressed arranges the container to take up less room.
+ *  .undecorated    removes the card decoration( background colors, borders & graphic date) to make it listable. 
  * @markup
- *	<div class="card event">
- *		<div class="card-header">
- *			<div class="row">
- *			    <div class="column col-sm-6 col-md-4 col-lg-3">
- *			        <div class="date">
- *			            <span class="month">May</span>
- *			            <span class="day">12</span>
- *			            <span class="year">2018</span>
- *			        </div>
- *			    </div>
- *			    <div class="column col-sm-6 col-md-8 col-lg-9">
- *			        <div class="title">@{lipsum:8:words}</div>
- *			        <div class="location">Cincinnati, OH</div>
- *			        <div class="full-date">May 12, 2018</div>
- *			    </div>
- *			</div>
- *		</div>
- *		<div class="card-body">		
- *			<p>@{lipsum:1:paragraphs}</p>
- *		</div>
- *		<div class="card-action"><strong>Add to Calendar: </strong><a class="link">Outlook</a> | <a class="link">Google Calendar</a> | <a class="link">iCal</a></div>
- *	</div>
+ *  <div class="card event">
+ *      <div class="card-header">
+ *              <div class="event-date">
+ *                  <div class="date">
+ *                      <span class="month">May</span>
+ *                      <span class="day">12</span>
+ *                      <span class="year">2018</span>
+ *                  </div>
+ *              </div>
+ *              <div class="event-details">
+ *                  <div class="title">@{lipsum:8:words}</div>
+ *                  <div class="location">Cincinnati, OH <span class="full-date">May 12, 2018</span></div>
+ *                  
+ *              </div>
+ *      </div>
+ *      <div class="card-body">     
+ *          <p>@{lipsum:1:paragraphs}</p>
+ *      </div>
+ *      <div class="card-action"><i class="fa fa-calendar"></i> <strong>Add to Calendar: </strong><a class="link">Outlook</a> | <a class="link">Google</a> | <a class="link">iCal</a></div>
+ *  </div>
  *
  */
 .card.event {
   border-style: solid;
   border-width: 1px;
   position: relative; }
+  @media only screen and (min-width: 768px) {
+    .card.event i.fa.fa-calendar {
+      display: none; } }
   .card.event .card-header {
     padding-top: 1rem;
     text-align: left;
-    background-color: #eceaea; }
+    background-color: #eceaea;
+    display: table; }
+    .card.event .card-header:after {
+      content: "";
+      clear: both;
+      display: table; }
+  .card.event .event-date, .card.event .event-details {
+    display: table-cell;
+    vertical-align: top; }
+  .card.event .event-date {
+    padding-right: 1rem;
+    text-align: center;
+    width: 1%; }
   .card.event .card-body {
     text-align: left;
     clear: both;
     padding-top: .5rem; }
-  .card.event .date {
-    max-width: 120px;
-    margin: 0px auto 10px; }
   .card.event .title {
+    font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color: #e87d1e;
+    line-height: 1.15;
+    text-transform: capitalize;
     margin-top: 0;
     margin-bottom: .25rem;
-    font-size: 20px;
-    color: #e87d1e;
-    font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
-    font-weight: normal;
-    line-height: 1.15;
-    text-transform: capitalize; }
+    font-size: 20px; }
   .card.event .location {
     font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 16px;
-    line-height: 1.15; }
+    line-height: 1.15;
+    color: #2f2f2f; }
   .card.event .full-date {
+    display: none;
     font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    color: #6f6b6f;
+    font-weight: 700;
+    font-size: 14px;
+    color: #047294;
     line-height: 1.3;
     font-style: italic;
     margin-bottom: 1em; }
-  .card.event .leed {
-    font-size: 16px;
-    line-height: normal;
-    color: #02394a; }
   .card.event .card-action {
     text-align: center;
     background-color: #fafafa;
     padding-top: .5rem;
     padding-bottom: .5rem;
     color: #6f6b6f; }
+    .card.event .card-action strong {
+      display: none; }
+      @media only screen and (min-width: 768px) {
+        .card.event .card-action strong {
+          display: inline; } }
 
 .event .date {
-  font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  font-size: 22px;
+  max-width: 120px;
+  margin-bottom: .75rem;
   background-color: #fafafa;
   text-align: center;
-  border: 4px solid #0088aa;
-  display: block; }
+  border: 2px solid #0088aa;
+  display: inline-block; }
+  @media only screen and (min-width: 768px) {
+    .event .date {
+      border-width: 4px; } }
 .event .day, .event .month, .event .year {
   display: block;
   clear: both;
-  line-height: 1; }
+  line-height: 1;
+  padding-right: 5px;
+  padding-left: 5px; }
 .event .day {
-  font-size: 36px;
-  margin-top: 3px;
+  font-family: 'Muli', Verdana, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
   font-weight: bold; }
+  @media only screen and (min-width: 768px) {
+    .event .day {
+      font-size: 32px; } }
 .event .month {
-  font-size: 18px;
-  margin-bottom: 4px; }
+  font-family: 'Muli', Verdana, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  padding-top: 2px;
+  padding-bottom: 2px; }
+  @media only screen and (min-width: 768px) {
+    .event .month {
+      font-size: 18px; } }
 .event .year {
-  display: block;
-  width: 100%;
+  font-family: 'Muli', Verdana, Helvetica, Arial, sans-serif;
+  font-weight: 700;
   background-color: #0088aa;
   color: #fafafa;
-  padding: 4px 0 0; }
+  font-size: 12px;
+  padding-top: 3px; }
+  @media only screen and (min-width: 768px) {
+    .event .year {
+      padding-right: 10px;
+      padding-left: 10px;
+      font-size: 18px; } }
+
+/**
+ * Undecorated Event Cards Are for Listing alot of events together 
+ *
+ * @molecule Event Card (Undecorated)
+ * @section Card 
+ * @markup
+ *  <div class="card event undecorated">
+ *      <div class="card-header">
+ *              <div class="event-date">
+ *                  <div class="date">
+ *                      <span class="month">May</span>
+ *                      <span class="day">12</span>
+ *                      <span class="year">2018</span>
+ *                  </div>
+ *              </div>
+ *              <div class="event-details">
+ *                  <div class="title">@{lipsum:8:words}</div>
+ *                  <div class="location">Cincinnati, OH <span class="full-date">May 12, 2018</span></div>
+ *                  
+ *              </div>
+ *      </div>
+ *      <div class="card-body">     
+ *          <p>@{lipsum:1:paragraphs}</p>
+ *      </div>
+ *      <div class="card-action"><strong>Add to Calendar: </strong><a class="link">Outlook</a> | <a class="link">Google</a> | <a class="link">iCal</a></div>
+ *  </div>
+ *
+ */
+.card.event.undecorated .event-date {
+  display: none; }
+.card.event.undecorated .location {
+  font-size: 14px; }
+.card.event.undecorated .full-date {
+  display: inline;
+  margin-left: .25rem; }
+.card.event.undecorated .card-header {
+  padding-right: 0;
+  padding-left: 0;
+  background-color: transparent; }
+.card.event.undecorated .card-body {
+  padding-right: 0;
+  padding-left: 0;
+  border-top: 1px solid #d6d4d4;
+  padding-top: .125rem;
+  padding-bottom: .125rem; }
+.card.event.undecorated .card-action {
+  padding-right: 0;
+  padding-left: 0;
+  background-color: transparent;
+  font-size: 12px;
+  padding-top: .125rem;
+  padding-bottom: .125rem;
+  text-align: left; }
+
+.card.event.undecorated + .card.event.undecorated {
+  border-top: 1px dotted #047294; }
 
 /**
  * Testemonial Card are containers for Testemonial Data Type 
@@ -8186,11 +8276,13 @@ input {
  * @section Card 
  * @flag contained
  * @modifiers
- *  .horizontal - alignment of image to the right of the testimonial
+ *  .horizontal     Aligns the image to the left of the testimonial.
+ *  .img-circle     Converts the image into a circle.
+ *  .undecorated    Removes the image and outline all together leaving behind only the quote and citation.
  * @markup
  *  <div class="card testimonial">
  *    <header class="card-header">
- *    	<img class="card-img img-circle img-thumbnail" src="@{image:200:200}"/>
+ *      <img class="card-img img-circle img-thumbnail" src="@{image:200:200}"/>
  *    </header>
  *    <div class="card-body">
  *      <article class="blockquote">
@@ -8269,12 +8361,10 @@ input {
 * @molecule Testimonial Card (.horizontal)
 * @section Card 
 * @flag contained
-* @modifiers
-*  .horizontal - alignment of image to the right of the testimonial
 * @markup
 *  <div class="card testimonial horizontal">
 *    <header class="card-header">
-*    	<img class="card-img  img-thumbnail" src="@{image:200:200}"/>
+*       <img class="card-img  img-thumbnail" src="@{image:200:200}"/>
 *    </header>
 *    <div class="card-body">
 *      <article class="blockquote">
@@ -8312,6 +8402,9 @@ input {
     .card.testimonial.horizontal .blockquote-cite {
       text-align: right; } }
 
+.card.testimonial.horizontal.undecorated .card-header, .card.testimonial.undecorated .card-header {
+  display: none !important; }
+
 /**
  * The "Facility Card" is a combination of cards and ui to make the UI element that is found on the home page. 
  *
@@ -8323,19 +8416,19 @@ input {
  *   <h3 class="card-header">Does My Facility Participate?</h3>
  *    <div class="card-body">
  *      <p>Search for your facility by typing your <strong>facility name</strong> or <strong>participant ID</strong> below to create an ACC Quality Improvement for Institutions account.</p>
- *		<div class="form-group">
- *			<label for="exampleInputFacility">Search your Facility:</label>
- *			<input type="email" class="form-control" id="exampleInputFacility" placeholder="Start Typing your facility name" autocomplete="on">
- *		</div>
+ *      <div class="form-group">
+ *          <label for="exampleInputFacility">Search your Facility:</label>
+ *          <input type="email" class="form-control" id="exampleInputFacility" placeholder="Start Typing your facility name" autocomplete="on">
+ *      </div>
  *    </div>
  *     <div class="card-action"><a class="btn btn-primary btn-block">Search</a></div>
  *     <div class="card">
- *     	<h3 class="card-header">
- *			Can't find your facility?
- *		</h3>
- *		<div class="card-body">
- *			<p>If your facility is not a participant with NCDR or PINNACLE, please <a href="#" class="link">submit a request</a> to get more information and gain access. </p>
- *		</div>
+ *      <h3 class="card-header">
+ *          Can't find your facility?
+ *      </h3>
+ *      <div class="card-body">
+ *          <p>If your facility is not a participant with NCDR or PINNACLE, please <a href="#" class="link">submit a request</a> to get more information and gain access. </p>
+ *      </div>
  *     </div>
  *  </div>
  *
@@ -9488,7 +9581,7 @@ input {
 */
 address.vcard {
   font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   color: #2f2f2f;
   margin-bottom: 0; }

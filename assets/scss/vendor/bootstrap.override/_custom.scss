@@ -30,11 +30,11 @@ $red:     $error-color;
 $orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
 $green:   #28a745 !default;
-$teal:   $scrubteal;
+$teal:   $scrub-teal;
 $cyan:    #17a2b8 !default;
 //4.0 Colors
 $theme-colors: (
-  primary: $scrubteal,
+  primary: $scrub-teal,
   secondary: $warm-grey-light,
   success: $green,
   info: $cyan,
@@ -45,7 +45,7 @@ $theme-colors: (
 );
 //3.3.7 Colors
 
-$brand-primary:$scrubteal;
+$brand-primary:$scrub-teal;
 $brand-success: $green;
 $brand-info:$cyan;
 $brand-warning:$yellow;
@@ -132,7 +132,7 @@ $breadcrumb-padding-vertical:   .5rem;
 
 
 $breadcrumb-bg:                 #fff;
-$breadcrumb-color:              $scrubteal;
+$breadcrumb-color:              $scrub-teal;
 $breadcrumb-divider-color:      $warm-grey;
 $breadcrumb-active-color:       $warm-grey-dark;
 $breadcrumb-separator:            "\f054";
@@ -142,7 +142,7 @@ $breadcrumb-separator:            "\f054";
 
 $progress-bg:                   $warm-grey-light;
 $progress-bar-color:            $white;
-$progress-bar-bg:               $dark-orange;
+$progress-bar-bg:               $orange-dark;
 $progress-box-shadow:           inset 0 .1rem .1rem rgba($off-black,.25);
 
 

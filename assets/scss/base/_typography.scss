@@ -29,10 +29,10 @@
 
     %header-link {
         a {
-            color: $scrubteal;
+            color: $scrub-teal;
             text-decoration: none;
             &:hover {
-                color: $scrubteal-dark;
+                color: $scrub-teal-dark;
                 text-decoration: underline
             }
         }
@@ -42,7 +42,7 @@
     h1 {
         @extend %header-link;
         @include font-display(regular);
-        color: $dark-orange;
+        color: $orange-dark;
         &.display-4{ font-size:ms(7, $ms-base, $ms-ratio-4);}
         &.display-3{ font-size:ms(7, $ms-base, $ms-ratio-3);}
         &.display-2{ font-size:ms(7, $ms-base, $ms-ratio-2);} 
@@ -62,7 +62,7 @@
     h3 {
         @extend %header-link;
         @include font-display(regular);
-        color: $dark-orange;
+        color: $orange-dark;
         &.display-4{ font-size:ms(3, $ms-base, $ms-ratio-4);}
         &.display-3{ font-size:ms(3, $ms-base, $ms-ratio-3);}
         &.display-2{ font-size:ms(3, $ms-base,$ms-ratio-2);} 
@@ -99,7 +99,7 @@
 // style all typograpy content inside of the containing div to remove scope from the rest of the design. 
 
         a {
-            color: $scrubteal;
+            color: $scrub-teal;
             &.more {
                 @include font(bold);
                 display: inline-block;

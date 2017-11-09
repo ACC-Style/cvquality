@@ -1,70 +1,131 @@
-.card{
-	float:none;
-	width:100%;
-	margin:0;
-	display:block;
-	padding-top:1px;
-	padding-bottom:1px;
-	transition:width 1s ease-out;
-	-webkit-transition:width 1s ease-out;
-	-moz-transition:width 1s ease-out;
-	border-color:$warm-grey;
-	background-color:white;
-	position:relative;
-	margin-bottom:1rem;
-	 .triangle:before{
-	 	border-color: transparent transparent transparent $warm-grey;
-	 }
-	.card-header{
-		padding:0 1rem;
-		text-align:center;
-		position:relative;
-		&.triangle{padding-left:1.5rem}
-		&.triangle:before{
-	 	content:"";
-	 	width: 0;
-		height: 0;
-		border-style: solid;
-		border-width: .5em 0 .5em .75em;	
-		position:absolute;
-		left:0;
-	 }
-		
-	}
-	.card-body{
-		padding:0 1rem 1.25rem;
-		text-align: center;
-	}
-	.card-action{
-		padding:0 2rem 1.25rem;
-	}
-	.card-body + .card-action{margin-top:-.75rem;}
-	>.card{
-		margin:0 1rem 1rem;
-		width:auto;
-	}
+.card {
+    float: none;
+    width: 100%;
+    margin: 0;
+    display: block;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    transition: width 1s ease-out;
+    -webkit-transition: width 1s ease-out;
+    -moz-transition: width 1s ease-out;
+    border-color: $warm-grey;
+    background-color: white;
+    position: relative;
+    margin-bottom: 1rem;
 
-	&.position-right{
-		float: right; clear:right; width:45%;margin-left:5%;margin-bottom:1em;
-	}
-	&.position-left{
-		float: left; clear:left; width:45%;margin-right:5%;margin-bottom:1em;
-	}
-	@include bp(sm){
-		&.position-right,&.position-right-sm{float: right; clear:right; width:40%; margin-left:1.5em;margin-bottom:1em;}
-		&.position-left,&.position-left-sm{float: left; clear:left; width:40%;margin-right:1.5em;margin-bottom:1em;}
+    .triangle:before {
+        border-color: transparent transparent transparent $warm-grey;
+    }
 
-	}
-	@include bp(md){
-		&.position-right,&.position-right-sm,&.position-right-md{float: right; clear:right; width:33%; margin-left:1.5em;margin-bottom:1em;}
+    .card-header {
+        padding: 0 1rem;
+        text-align: center;
+        position: relative;
 
-		&.position-left,&.position-left-sm,&.position-left-md{float: left; clear:left; width:33%;margin-right:1.5em;margin-bottom:1em;}
-	}
-	@include bp(lg){
-		&.position-right,&.position-right-sm,&.position-right-md,&.position-right-lg{float: right; clear:right; width:20%; margin-left:1.5em;margin-bottom:1em;}
-		&.position-left,&.position-left-sm,&.position-left-md,&.position-left-lg{float: left; clear:left; width:20%;margin-right:1.5em;margin-bottom:1em;}
-	}
+        &.triangle {
+            padding-left: 1.5rem;
+        }
 
+        &.triangle:before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: .5em 0 .5em .75em;
+            position: absolute;
+            left: 0;
+        }
+    }
+
+    .card-body {
+        padding: 0 1rem 1.25rem;
+        text-align: center;
+    }
+
+    .card-action {
+        padding: 0 2rem 1.25rem;
+    }
+
+    .card-body + .card-action {
+        margin-top: -.75rem;
+    }
+
+    > .card {
+        margin: 0 1rem 1rem;
+        width: auto;
+    }
+
+    &.position-right {
+        float: right;
+        clear: right;
+        width: 45%;
+        margin-left: 5%;
+        margin-bottom: 1em;
+    }
+
+    &.position-left {
+        float: left;
+        clear: left;
+        width: 45%;
+        margin-right: 5%;
+        margin-bottom: 1em;
+    }
+
+    @include bp(sm) {
+        &.position-right, &.position-right-sm {
+            float: right;
+            clear: right;
+            width: 40%;
+            margin-left: 1.5em;
+            margin-bottom: 1em;
+        }
+
+        &.position-left, &.position-left-sm {
+            float: left;
+            clear: left;
+            width: 40%;
+            margin-right: 1.5em;
+            margin-bottom: 1em;
+        }
+    }
+
+
+    @include bp(md) {
+        &.position-right, &.position-right-sm, &.position-right-md {
+            float: right;
+            clear: right;
+            width: 33%;
+            margin-left: 1.5em;
+            margin-bottom: 1em;
+        }
+
+        &.position-left, &.position-left-sm, &.position-left-md {
+            float: left;
+            clear: left;
+            width: 33%;
+            margin-right: 1.5em;
+            margin-bottom: 1em;
+        }
+    }
+
+
+    @include bp(lg) {
+        &.position-right, &.position-right-sm, &.position-right-md, &.position-right-lg {
+            float: right;
+            clear: right;
+            width: 20%;
+            margin-left: 1.5em;
+            margin-bottom: 1em;
+        }
+
+        &.position-left, &.position-left-sm, &.position-left-md, &.position-left-lg {
+            float: left;
+            clear: left;
+            width: 20%;
+            margin-right: 1.5em;
+            margin-bottom: 1em;
+        }
+    }
 }
 
 /**
@@ -89,27 +150,55 @@
  *  </div>
  *
  */
-.highlighted.card{
-	h1,h2,h3,h4{
-		line-height: $crunched;
-	}
-	h1,h3{
-		color:$dark-orange;
-	}
-	h2,h4{
-		color: $off-black;
-	}
-	h2{font-size:ms(6);}
-	h3{font-size:ms(5);}
-	h4{font-size:ms(4);}
-	p{font-size:ms(2);}
-	border-color:$soft-blue;
-	.card-header{text-transform:uppercase;@include font-display("regular");}
-	background-color:mix($soft-blue, white);
-	.card-header,.card-body{text-align:left;}
-	.card-action{padding-right:1em;padding-left:1em;}
+.highlighted.card {
+    h1, h2, h3, h4 {
+        line-height: $crunched;
+    }
 
+    h1, h3 {
+        color: $orange-dark;
+    }
+
+    h2, h4 {
+        color: $off-black;
+    }
+
+    h2 {
+        font-size: ms(6);
+    }
+
+    h3 {
+        font-size: ms(5);
+    }
+
+    h4 {
+        font-size: ms(4);
+    }
+
+    p {
+        font-size: ms(2);
+    }
+
+    border-color: $soft-blue;
+
+    .card-header {
+        text-transform: uppercase;
+
+        @include font-display("regular");
+    }
+
+    background-color: mix($soft-blue, white);
+
+    .card-header, .card-body {
+        text-align: left;
+    }
+
+    .card-action {
+        padding-right: 1em;
+        padding-left: 1em;
+    }
 }
+
 /**
  * Info Cards are stylized cards with a warm grey background and changes all headers are bold.
  *
@@ -126,16 +215,28 @@
  *  </div>
  *
  */
-.info.card{
-		 .triangle:before{
-	 	border-color: transparent transparent transparent $warm-grey;
-	 }
-	border-color:$warm-grey;
-	.card-header{color:$off-black;font-weight:900; }
-	background-color:$warm-grey-light;
-	.card-header,.card-body{text-align:left;}
-	.card-action{padding-right:1em;padding-left:1em;}
+.info.card {
+    .triangle:before {
+        border-color: transparent transparent transparent $warm-grey;
+    }
 
+    border-color: $warm-grey;
+
+    .card-header {
+        color: $off-black;
+        font-weight: 900;
+    }
+
+    background-color: $warm-grey-light;
+
+    .card-header, .card-body {
+        text-align: left;
+    }
+
+    .card-action {
+        padding-right: 1em;
+        padding-left: 1em;
+    }
 }
 
 /**
@@ -154,23 +255,28 @@
  *  </div>
  *
  */
-.card.notice{}
-.card.notice, .card.notice.alt{
+.card.notice {}
 
-	 .card-header{
-	 	text-transform:capitalize;
-	 	font-weight: normal;
-	 }
+.card.notice, .card.notice.alt {
+    .card-header {
+        text-transform: capitalize;
+        font-weight: normal;
+    }
 }
-.card.notice{
-	 background-color: mix($soft-blue,white);
-	 border-color:$soft-blue;
-	 .triangle:before{
-	 	border-color: transparent transparent transparent $soft-grey;
-	 }
-	  .card-header{color:$scrubteal-dark;}
 
+.card.notice {
+    background-color: mix($soft-blue, white);
+    border-color: $soft-blue;
+
+    .triangle:before {
+        border-color: transparent transparent transparent $soft-grey;
+    }
+
+    .card-header {
+        color: $scrub-teal-dark;
+    }
 }
+
 /**
  * Notice Cards with the alt class modifies the style of notice cards by changing thie background to soft grey background with an orange triangle.
  *
@@ -187,15 +293,19 @@
  *  </div>
  *
  */
-.card.alt{
-	 background-color: $soft-grey;
-	 border-color:$warm-grey-light;
-	 .triangle:before{
-	 	border-color: transparent transparent transparent $light-orange;
-	 }
-	  .card-header{color:$dark-orange;}
+.card.alt {
+    background-color: $soft-grey;
+    border-color: $warm-grey-light;
 
+    .triangle:before {
+        border-color: transparent transparent transparent $orange-light;
+    }
+
+    .card-header {
+        color: $orange-dark;
+    }
 }
+
 /**
  * Event Cards are containers for Event Data Type 
  *
@@ -203,118 +313,223 @@
  * @section Card 
  * @flag contained
  * @modifiers
- *  .compressed arranges the container to take up less room.
+ *  .undecorated    removes the card decoration( background colors, borders & graphic date) to make it listable. 
  * @markup
- *	<div class="card event">
- *		<div class="card-header">
- *			<div class="row">
- *			    <div class="column col-sm-6 col-md-4 col-lg-3">
- *			        <div class="date">
- *			            <span class="month">May</span>
- *			            <span class="day">12</span>
- *			            <span class="year">2018</span>
- *			        </div>
- *			    </div>
- *			    <div class="column col-sm-6 col-md-8 col-lg-9">
- *			        <div class="title">@{lipsum:8:words}</div>
- *			        <div class="location">Cincinnati, OH</div>
- *			        <div class="full-date">May 12, 2018</div>
- *			    </div>
- *			</div>
- *		</div>
- *		<div class="card-body">		
- *			<p>@{lipsum:1:paragraphs}</p>
- *		</div>
- *		<div class="card-action"><strong>Add to Calendar: </strong><a class="link">Outlook</a> | <a class="link">Google Calendar</a> | <a class="link">iCal</a></div>
- *	</div>
+ *  <div class="card event">
+ *      <div class="card-header">
+ *              <div class="event-date">
+ *                  <div class="date">
+ *                      <span class="month">May</span>
+ *                      <span class="day">12</span>
+ *                      <span class="year">2018</span>
+ *                  </div>
+ *              </div>
+ *              <div class="event-details">
+ *                  <div class="title">@{lipsum:8:words}</div>
+ *                  <div class="location">Cincinnati, OH <span class="full-date">May 12, 2018</span></div>
+ *                  
+ *              </div>
+ *      </div>
+ *      <div class="card-body">     
+ *          <p>@{lipsum:1:paragraphs}</p>
+ *      </div>
+ *      <div class="card-action"><i class="fa fa-calendar"></i> <strong>Add to Calendar: </strong><a class="link">Outlook</a> | <a class="link">Google</a> | <a class="link">iCal</a></div>
+ *  </div>
  *
- */	
-.card.event{
-	border-style:solid;
-	border-width:1px;
-	position:relative;
-	.card-header{
-		padding-top:1rem;
-		text-align: left;
-		background-color:$soft-grey;
-		
-	}
-	.card-body{
-		text-align: left;
-		clear:both;
-		padding-top:.5rem;
-	}
-	.date{
-		max-width:120px;
-		margin:0px auto 10px;
-	}
-	.day{
-	}
-	.month{}
-	.year{
-	}
-	.title{
-		margin-top:0;
-		margin-bottom:.25rem;
-		font-size:ms(3);
-		 color:$dark-orange;
-		 @include font(normal);
-		 line-height: $crunched;
-		 text-transform: capitalize;
-		}
-	.location{
-		 @include font(regular);
-		 font-size: ms(1);
-		 line-height: $crunched;
-		 }
-	.full-date{
-		@include font(regular);
-		font-size: ms(-1);
-		color:$warm-grey-dark;
-		line-height: $tight;
-		font-style: italic;
-		margin-bottom:1em;
-	}
+ */
+.card.event {
+    border-style: solid;
+    border-width: 1px;
+    position: relative;
 
-	.leed{font-size:ms(1); line-height:normal; color:mix($scrubteal-dark, black);}
+    i.fa.fa-calendar {
+        @include bp(md) {
+            display: none;
+        }
+    }
 
-	.card-action{ text-align:center; background-color:$off-white; padding-top:.5rem; padding-bottom:.5rem; color:$warm-grey-dark;}
+    .card-header {
+        padding-top: 1rem;
+        text-align: left;
+        background-color: $soft-grey;
+        display: table;
+        &:after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    }
+    .event-date, .event-details{
+        display: table-cell;
+        vertical-align: top;
+    }
+    .event-date {
+        padding-right:1rem;
+        text-align: center;
+        width:1%;
+    }
+
+    .event-details {
+
+    }
+
+    .card-body {
+        text-align: left;
+        clear: both;
+        padding-top: .5rem;
+    }
+
+    .date {
+
+    }
+
+
+    .title {
+        @include font("regular");
+        color: $orange-dark;
+        line-height: $crunched;
+        text-transform: capitalize;
+        margin-top: 0;
+        margin-bottom: .25rem;
+        font-size: ms(3);
+    }
+
+    .location {
+        @include font("bold");
+        font-size: ms(1);
+        line-height: $crunched;
+        color: $off-black;
+    }
+
+    .full-date {
+        display: none;
+        @include font("bold");
+        font-size: ms(0);
+        color: $scrub-teal-dark;
+        line-height: $tight;
+        font-style: italic;
+        margin-bottom: 1em;
+    }
+
+    .card-action {
+        text-align: center;
+        background-color: $off-white;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        color: $warm-grey-dark;
+        strong {
+            display: none;
+            @include bp(md) {
+                display: inline;
+            }
+        }
+    }
 }
-.event{
-	.date{
-		@include font("bold");
-		font-size: ms(4);
-		background-color:$off-white;
-		text-align: center;
-		border:4px solid $scrubteal;
-		display: block;
-		
-	}
-	.day,.month,.year{
-		display: block;
-		clear:both;
-		line-height: 1;
-	}
-	.day{
-		font-size: ms(8);
-		margin-top:3px;
-		font-weight: bold;
 
-	}
-	.month{
-		font-size: ms(2);
-		margin-bottom:4px;
+.event {
+    .date {
+        max-width: 120px;
+        margin-bottom:.75rem;  
+        background-color: $off-white;
+        text-align: center;
+        border: 2px solid $scrub-teal;
+        @include bp(md){ border-width:4px;}
+        display: inline-block;
+    }
 
-	}
-	.year{
-		display: block;
-		width: 100%;
-		background-color:$scrubteal;
-		color:$off-white;
-		padding:4px 0 0;
+    .day, .month, .year {
+        display: block;
+        clear: both;
+        line-height: 1;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
 
-	}
+    .day {
+        @include font-display("regular");  
+        font-size: ms(3);
+        font-weight: bold;
+        @include bp(md){ font-size: ms(7);}
+    }
+
+    .month {
+       @include font-display("bold"); 
+       font-size: ms(-1); 
+       padding-top: 2px;
+       padding-bottom: 2px;
+       @include bp(md){ font-size: ms(2);}
+    }
+
+    .year {
+        @include font-display("bold");  
+        background-color: $scrub-teal;
+        color: $off-white;
+        font-size: ms(-1);
+        padding-top: 3px;
+        @include bp(md){
+            padding-right:10px;
+            padding-left:10px;
+            font-size: ms(2);
+        }
+    }
 }
+
+/**
+ * Undecorated Event Cards Are for Listing alot of events together 
+ *
+ * @molecule Event Card (Undecorated)
+ * @section Card 
+ * @markup
+ *  <div class="card event undecorated">
+ *      <div class="card-header">
+ *              <div class="event-date">
+ *                  <div class="date">
+ *                      <span class="month">May</span>
+ *                      <span class="day">12</span>
+ *                      <span class="year">2018</span>
+ *                  </div>
+ *              </div>
+ *              <div class="event-details">
+ *                  <div class="title">@{lipsum:8:words}</div>
+ *                  <div class="location">Cincinnati, OH <span class="full-date">May 12, 2018</span></div>
+ *                  
+ *              </div>
+ *      </div>
+ *      <div class="card-body">     
+ *          <p>@{lipsum:1:paragraphs}</p>
+ *      </div>
+ *      <div class="card-action"><strong>Add to Calendar: </strong><a class="link">Outlook</a> | <a class="link">Google</a> | <a class="link">iCal</a></div>
+ *  </div>
+ *
+ */
+.card.event.undecorated{
+    .event-date{display:none;}
+    .location{font-size:ms(0);}
+    .full-date{display:inline;margin-left:.25rem;}
+    .card-header{
+        padding-right:0;
+        padding-left:0;
+        background-color:transparent;
+    }
+    .card-body{
+        padding-right:0;
+        padding-left:0;
+        border-top:1px solid $warm-grey-light;
+        padding-top:.125rem;
+        padding-bottom:.125rem;
+    }
+    .card-action{
+        padding-right:0;
+        padding-left:0;
+        background-color:transparent;
+        font-size: ms(-1);
+        padding-top:.125rem;
+        padding-bottom:.125rem;
+        text-align: left;
+
+    }
+}
+.card.event.undecorated + .card.event.undecorated{border-top:1px dotted $scrub-teal-dark;}
 
 /**
  * Testemonial Card are containers for Testemonial Data Type 
@@ -323,11 +538,13 @@
  * @section Card 
  * @flag contained
  * @modifiers
- *  .horizontal - alignment of image to the right of the testimonial
+ *  .horizontal     Aligns the image to the left of the testimonial.
+ *  .img-circle     Converts the image into a circle.
+ *  .undecorated    Removes the image and outline all together leaving behind only the quote and citation.
  * @markup
  *  <div class="card testimonial">
  *    <header class="card-header">
- *    	<img class="card-img img-circle img-thumbnail" src="@{image:200:200}"/>
+ *      <img class="card-img img-circle img-thumbnail" src="@{image:200:200}"/>
  *    </header>
  *    <div class="card-body">
  *      <article class="blockquote">
@@ -339,142 +556,164 @@
  *
  */
 
- .card.testimonial{
-	border-style:solid;
-	border-width:1px;
- 	margin-top: 0;
- 	padding:0;
- 	@include bp(md){
-		margin-top:100px;
-	}
- 	.card-header{
- 		background-color:$soft-blue;
- 		margin-bottom:75px;
- 		@include bp(md){
- 			margin-bottom:0;
- 		}
- 	}
- 	.card-img{
- 		margin: 20px auto -50px;
- 		width:100px;
- 		height:100px;
- 		@include bp(md){
- 			margin: -100px auto 20px;
-	 		width:200px;
-	 		height:200px;
- 		}
+.card.testimonial {
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 0;
+    padding: 0;
 
- 	}
- 	.card-body{
- 		padding:10px 1em 1em;
- 		position:relative;
- 	}
- 	
+    @include bp(md) {
+        margin-top: 100px;
+    }
 
- 	.blockquote{
- 		position:relative;
- 		text-align:center;
- 	}
- 	.blockquote p,.blockquote-cite{
-		&:before,&:after{
-			display: inline-block;
-			font: normal normal normal 14px/1 FontAwesome;
-			font-size: inherit;
-			text-rendering: auto;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-			transform: translate(0, 0);
-			width: 1.28571429em;
-			text-align: center;
-		}
- 	}
- 	.blockquote p{
- 		font-size:ms(1);
- 		&:before,&:after{
- 			color:$light-orange;
- 		}
-		&:before{
-			margin-right: .5em;
-			content:"\f10d";
-		}
-		&:after{
-			margin-left: .5em;
-			content:"\f10e";
-		}
- 	}
- 	.blockquote-cite{
- 		font-size:ms(0);
- 		position:absolute;
- 		right:0;
- 		color:$warm-grey;
- 		bottom:-1.75em;
-		@include bp(md){
-			bottom:-1.5em;
-		}
-		&:after{
-			margin-right: .5em;
-		    content: "\f007";
 
-		}
- 	}
- }
+    .card-header {
+        background-color: $soft-blue;
+        margin-bottom: 75px;
 
- /**
- * Horizontal Testimonial are compact containers for Testemonial Data Type 
- *
- * @molecule Testimonial Card (.horizontal)
- * @section Card 
- * @flag contained
- * @modifiers
- *  .horizontal - alignment of image to the right of the testimonial
- * @markup
- *  <div class="card testimonial horizontal">
- *    <header class="card-header">
- *    	<img class="card-img  img-thumbnail" src="@{image:200:200}"/>
- *    </header>
- *    <div class="card-body">
- *      <article class="blockquote">
- *        <p>@{lipsum:15:words}</p>
- *        <cite class="blockquote-cite">Someone famous</cite>
- *      </article>
- *    </div>
- *  </div>
- *
- */
-.card.testimonial.horizontal{
-	@include bp(md){
-		display: block;
-		margin-top:0;
-		display: table;
-		.card-header,.card-body{
-			display: table-cell;
-		    width: unset;
-		    padding: 10px;
-		    margin: 0;
-		    vertical-align: middle;
-		    float:none;
-		}
-		.card-img{
-			margin: 10px;
-			height: 125px;
-			width:125px;
+        @include bp(md) {
+            margin-bottom: 0;
+        }
+    }
 
-		}
-		.card-header{
-			min-width: 160px;
+    .card-img {
+        margin: 20px auto -50px;
+        width: 100px;
+        height: 100px;
 
-		}
-		.card-body{
-			text-align: left;
-			.blockquote-cite{float:right;}
-		}
-		.blockquote{
-			text-align: left;
-		}
-		.blockquote-cite{text-align:right;}
-	}
+        @include bp(md) {
+            margin: -100px auto 20px;
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    .card-body {
+        padding: 10px 1em 1em;
+        position: relative;
+    }
+
+    .blockquote {
+        position: relative;
+        text-align: center;
+    }
+
+    .blockquote p, .blockquote-cite {
+        &:before, &:after {
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            transform: translate(0, 0);
+            width: 1.28571429em;
+            text-align: center;
+        }
+    }
+
+    .blockquote p {
+        font-size: ms(1);
+
+        &:before, &:after {
+            color: $orange-light;
+        }
+
+        &:before {
+            margin-right: .5em;
+            content: "\f10d";
+        }
+
+        &:after {
+            margin-left: .5em;
+            content: "\f10e";
+        }
+    }
+
+    .blockquote-cite {
+        font-size: ms(0);
+        position: absolute;
+        right: 0;
+        color: $warm-grey;
+        bottom: -1.75em;
+
+        @include bp(md) {
+            bottom: -1.5em;
+        }
+
+
+        &:after {
+            margin-right: .5em;
+            content: "\f007";
+        }
+    }
 }
 
+/**
+* Horizontal Testimonial are compact containers for Testemonial Data Type 
+*
+* @molecule Testimonial Card (.horizontal)
+* @section Card 
+* @flag contained
+* @markup
+*  <div class="card testimonial horizontal">
+*    <header class="card-header">
+*       <img class="card-img  img-thumbnail" src="@{image:200:200}"/>
+*    </header>
+*    <div class="card-body">
+*      <article class="blockquote">
+*        <p>@{lipsum:15:words}</p>
+*        <cite class="blockquote-cite">Someone famous</cite>
+*      </article>
+*    </div>
+*  </div>
+*
+*/
+.card.testimonial.horizontal {
+    @include bp(md) {
+        display: block;
+        margin-top: 0;
+        display: table;
+
+        .card-header, .card-body {
+            display: table-cell;
+            width: unset;
+            padding: 10px;
+            margin: 0;
+            vertical-align: middle;
+            float: none;
+        }
+
+        .card-img {
+            margin: 10px;
+            height: 125px;
+            width: 125px;
+        }
+
+        .card-header {
+            min-width: 160px;
+        }
+
+        .card-body {
+            text-align: left;
+
+            .blockquote-cite {
+                float: right;
+            }
+        }
+
+        .blockquote {
+            text-align: left;
+        }
+
+        .blockquote-cite {
+            text-align: right;
+        }
+    }
+}
+.card.testimonial.horizontal.undecorated,.card.testimonial.undecorated{
+    .card-header{display:none!important;}
+}
 /**
  * The "Facility Card" is a combination of cards and ui to make the UI element that is found on the home page. 
  *
@@ -486,24 +725,24 @@
  *   <h3 class="card-header">Does My Facility Participate?</h3>
  *    <div class="card-body">
  *      <p>Search for your facility by typing your <strong>facility name</strong> or <strong>participant ID</strong> below to create an ACC Quality Improvement for Institutions account.</p>
- *		<div class="form-group">
- *			<label for="exampleInputFacility">Search your Facility:</label>
- *			<input type="email" class="form-control" id="exampleInputFacility" placeholder="Start Typing your facility name" autocomplete="on">
- *		</div>
+ *      <div class="form-group">
+ *          <label for="exampleInputFacility">Search your Facility:</label>
+ *          <input type="email" class="form-control" id="exampleInputFacility" placeholder="Start Typing your facility name" autocomplete="on">
+ *      </div>
  *    </div>
  *     <div class="card-action"><a class="btn btn-primary btn-block">Search</a></div>
  *     <div class="card">
- *     	<h3 class="card-header">
- *			Can't find your facility?
- *		</h3>
- *		<div class="card-body">
- *			<p>If your facility is not a participant with NCDR or PINNACLE, please <a href="#" class="link">submit a request</a> to get more information and gain access. </p>
- *		</div>
+ *      <h3 class="card-header">
+ *          Can't find your facility?
+ *      </h3>
+ *      <div class="card-body">
+ *          <p>If your facility is not a participant with NCDR or PINNACLE, please <a href="#" class="link">submit a request</a> to get more information and gain access. </p>
+ *      </div>
  *     </div>
  *  </div>
  *
  */
-.featured.card{}
+.featured.card {}
 
 /**
  * "Undecorated" cards remove the background,padding and border of cards with leaving behind all of the typography treatment of card.  This is mosly used on the homepage in combination with the highlighted card 
@@ -522,9 +761,12 @@
  *
  *
  */
- .undecorated.card{
- 	border-width: 0;
- 	background-color:transparent;
- 	padding:0;
- 	.card-header.triangle:before{ display:none;}
- }
+.undecorated.card {
+    border-width: 0;
+    background-color: transparent;
+    padding: 0;
+
+    .card-header.triangle:before {
+        display: none;
+    }
+}

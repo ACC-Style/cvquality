@@ -50,7 +50,7 @@
     @include nav-mobile-basic;
     font-size: ms(0);
     background: $warm-grey;
-    border-top: $light-orange 4px solid;
+    border-top: $orange-light 4px solid;
     margin-bottom:.5rem;
 
     .nav{
@@ -132,14 +132,14 @@
         min-width: 100%;
         left:auto;
         right:0;
-        background-color:mix($warm-grey-dark,$scrubteal);
+        background-color:mix($warm-grey-dark,$scrub-teal);
         
         .dropdown-item{
             color:$off-white;
             padding-right:8em;
             &:hover{
                 color:white;
-                background-color:$dark-orange;
+                background-color:$orange-dark;
                 text-decoration: none;
             }
             small{
