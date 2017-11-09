@@ -1,12 +1,75 @@
 /**
 * toolkit-sublisting 
 *
-* @molecule  toolkit-sublisting
-* @section Content Blocks
+* @structure  toolkit-sublisting
+* @section Advanced Containers
 * @modifiers
 *  .holder this is for future use
-* @markup
-*  <h1>Todo</h1>
+* @markup  
+*   <div class="panel-group toolkit-sublisting accordion" id="accordion" role="tablist" aria-multiselectable="true">
+*     <div class="panel panel-default">
+*       <div class="panel-heading" role="tab" id="headingOne">
+*         <h4 class="panel-title">
+*           <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+*             Collapsible Group Item #1
+*           </a>
+*         </h4>
+*       </div>
+*       <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+*         <div class="panel-body">
+*               <h4>@{lipsum:5:words}</h4>
+*               <ol >    
+*                    <li style="page-break-inside: avoid">
+*                         <a href="#.pdf" class="link" target="_blank">@{lipsum:3:words}</a>
+*                    </li>
+*                    <li style="page-break-inside: avoid">
+*                        <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*                    </li>
+*                    <li style="page-break-inside: avoid">
+*                        <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*                    </li>
+*               </ol>
+*         </div>
+*       </div>
+*     </div>
+*     <div class="panel panel-default">
+*       <div class="panel-heading" role="tab" id="headingTwo">
+*         <h4 class="panel-title">
+*           <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+*             Collapsible Group Item #2
+*           </a>
+*         </h4>
+*       </div>
+*       <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+*         <div class="panel-body">
+*               <h4>@{lipsum:5:words}</h4>
+*               <ol >    
+*                    <li style="page-break-inside: avoid">
+*                        <a href="#.pdf" class="link" target="_blank">@{lipsum:3:words}</a>
+*                    </li>
+*                    <li style="page-break-inside: avoid">
+*                        <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*                    </li>
+*                    <li style="page-break-inside: avoid">
+*                        <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*                    </li>
+*               </ol>
+*         </div>
+*       </div>
+*     </div>
+*   </div>
 * 
 */
-.toolkit-sublisting{}
+.accordion.toolkit-sublisting{
+	border-radius:8px;
+	padding:5px;
+	border:1px solid $warm-grey-light;
+	counter-reset: my-awesome-counter;
+	.panel{
+	    counter-increment: item;
+		
+	}
+	.panel-heading:before{    
+		content: counter(item);
+	}
+} 
