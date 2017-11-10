@@ -5,11 +5,11 @@
 * @section Advanced Containers
 * @markup
 *  <div class="panel-group accordion">
-*   <div class="panel" id="accordion" role="tablist" aria-multiselectable="true">
+*   <div class="panel" id="accordion2" role="tablist" aria-multiselectable="true">
 *   	<div class="panel-heading" role="tab" id="headingOne">
 *   	  <h4 class="panel-title">
 *   	    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
-*   	      Collapsible Group Item #1
+*   	      <span class="text">Collapsible Group Item #1</span>
 *   	    </a>
 *   	  </h4>
 *   	</div>

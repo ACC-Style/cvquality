@@ -85,6 +85,7 @@
  */
 @import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Muli:200,400,700");
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700");
 /**
  * used in css to set the font and weight.
  *
@@ -109,7 +110,7 @@
   width: 1.28571429em;
   text-align: center; }
 
-.icon-after:after, a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:after, .software-vendors .company:after {
+.icon-after:after, a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:after, .software-vendors .company:after, .accordion.fancy .panel-title a:after {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -264,15 +265,15 @@ span {
  *	</div>
  */
 .font-display {
-  font-family: 'Muli', Verdana, Helvetica, Arial, sans-serif;
+  font-family: 'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
   font-weight: 200; }
 
 /**
- * @atom Muli, Verdana, Helvetica, sans-serif;
+ * @atom Maven Pro, Verdana, Helvetica, sans-serif;
  * @section Fonts & Branding
  * @markup 
  *  <div class="alphabet-display row font-display">
- *	  <div class="ms12 col-md-4 col-sm-6 col-lg-3 font--dropcase_2x">Mu</div>
+ *	  <div class="ms12 col-md-4 col-sm-6 col-lg-3 font--dropcase_2x">MP</div>
  *	  <div class="col-md-8 col-sm-6 col-lg-9 font--example">
  *   	<h3>Headers & Secondary Navs</h3>
  *  	  <div class="font--lowercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
@@ -6837,7 +6838,7 @@ h1.inline, h2.inline, h3.inline, h4.inline {
   display: inline; }
 
 h1 {
-  font-family: 'Muli', Verdana, Helvetica, Arial, sans-serif;
+  font-family: 'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
   font-weight: 400;
   color: #e87d1e; }
   h1.display-4 {
@@ -6850,8 +6851,8 @@ h1 {
     font-weight: 100; }
 
 h2 {
-  font-family: 'Muli', Verdana, Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-family: 'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
+  font-weight: 500;
   color: #6f6b6f; }
   h2.display-4 {
     font-size: 69px; }
@@ -6863,7 +6864,7 @@ h2 {
     font-weight: 300; }
 
 h3 {
-  font-family: 'Muli', Verdana, Helvetica, Arial, sans-serif;
+  font-family: 'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
   font-weight: 400;
   color: #e87d1e; }
   h3.display-4 {
@@ -6876,8 +6877,8 @@ h3 {
     font-weight: 100; }
 
 h4 {
-  font-family: 'Muli', Verdana, Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-family: 'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
+  font-weight: 500;
   color: #6f6b6f; }
   h4.display-4 {
     font-size: 26px; }
@@ -6963,7 +6964,7 @@ hr {
 * @section Typography > Decorators
 * @markup
 *  <div><strong>Strong: @{lipsum:4:words}  <a href="">@{lipsum:1:words}</a></strong></div>
-*  <div><b>Bold: @{lipsum:4:words} <a href="">@{lipsum:1:words}</a></b></div>
+*  <div><b>"Bold": @{lipsum:4:words} <a href="">@{lipsum:1:words}</a></b></div>
 *  <div><small>Small: @{lipsum:4:words}  <a href="">@{lipsum:1:words}</a></small></div>
 *  <div><em>Em: @{lipsum:4:words}  <a href="">@{lipsum:1:words}</a></em></div>
 */
@@ -7655,7 +7656,7 @@ dl.grouped-definision-list.term-sq-lg dd {
 
 .software-vendors .company {
   font-size: 16px;
-  font-family: 'Muli', Verdana, Helvetica, Arial, sans-serif;
+  font-family: 'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
   font-weight: 700;
   color: #047294; }
   .software-vendors .company:after {
@@ -7722,11 +7723,11 @@ input {
 * @section Advanced Containers
 * @markup
 *  <div class="panel-group accordion">
-*   <div class="panel" id="accordion" role="tablist" aria-multiselectable="true">
+*   <div class="panel" id="accordion2" role="tablist" aria-multiselectable="true">
 *   	<div class="panel-heading" role="tab" id="headingOne">
 *   	  <h4 class="panel-title">
 *   	    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
-*   	      Collapsible Group Item #1
+*   	      <span class="text">Collapsible Group Item #1</span>
 *   	    </a>
 *   	  </h4>
 *   	</div>
@@ -7803,7 +7804,9 @@ input {
   padding-top: 0.5em;
   padding-bottom: 1.5em;
   overflow: auto;
-  text-align: center; }
+  text-align: center;
+  font-family: 'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
+  font-weight: 500; }
 
 /**
 * show the completion or loading progress of a task or system.
@@ -7945,7 +7948,7 @@ input {
  * Highlighted Cards are stylized cards with a soft blue background and changes all header sizes and text to a bit larger. These cards are used as hero area or of extra interst.
  *
  * @molecule Highlighted Card 
- * @section Card 
+ * @section Card > Basic 
  * @flag contained
  * @modifiers
  *  .position-right-[size] floats the card to the right so text will wrap around the left when the veiw port is above the size.
@@ -7982,8 +7985,8 @@ input {
     font-size: 18px; }
   .highlighted.card .card-header {
     text-transform: uppercase;
-    font-family: 'Muli', Verdana, Helvetica, Arial, sans-serif;
-    font-weight: 400; }
+    font-family: 'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
+    font-weight: 500; }
   .highlighted.card .card-header, .highlighted.card .card-body {
     text-align: left; }
   .highlighted.card .card-action {
@@ -7994,7 +7997,7 @@ input {
  * Info Cards are stylized cards with a warm grey background and changes all headers are bold.
  *
  * @molecule Info Card 
- * @section Card 
+ * @section Card > Basic 
  * @flag contained
  * @markup
  *  <div class="card info">
@@ -8024,7 +8027,7 @@ input {
  * Notice Cards are stylized cards with a soft blue background and grey triangle to cause it to stand out from surrounding text
  *
  * @molecule Notice Card 
- * @section Card 
+ * @section Card > Basic 
  * @flag contained
  * @markup
  *  <div class="card notice">
@@ -8052,7 +8055,7 @@ input {
  * Notice Cards with the alt class modifies the style of notice cards by changing thie background to soft grey background with an orange triangle.
  *
  * @molecule Notice Card Alt 
- * @section Card 
+ * @section Card > Basic
  * @flag contained
  * @markup
  *  <div class="card notice alt">
@@ -8076,7 +8079,7 @@ input {
  * Event Cards are containers for Event Data Type 
  *
  * @molecule Event Card 
- * @section Card 
+ * @section Card > Event
  * @flag contained
  * @modifiers
  *  .undecorated    removes the card decoration( background colors, borders & graphic date) to make it listable. 
@@ -8195,7 +8198,7 @@ input {
   padding-right: 5px;
   padding-left: 5px; }
 .event .day {
-  font-family: 'Muli', Verdana, Helvetica, Arial, sans-serif;
+  font-family: 'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 20px;
   font-weight: bold; }
@@ -8203,8 +8206,8 @@ input {
     .event .day {
       font-size: 32px; } }
 .event .month {
-  font-family: 'Muli', Verdana, Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-family: 'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
+  font-weight: 500;
   font-size: 12px;
   padding-top: 2px;
   padding-bottom: 2px; }
@@ -8212,7 +8215,7 @@ input {
     .event .month {
       font-size: 18px; } }
 .event .year {
-  font-family: 'Muli', Verdana, Helvetica, Arial, sans-serif;
+  font-family: 'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
   font-weight: 700;
   background-color: #0088aa;
   color: #fafafa;
@@ -8228,7 +8231,7 @@ input {
  * Undecorated Event Cards Are for Listing alot of events together 
  *
  * @molecule Event Card (Undecorated)
- * @section Card 
+ * @section Card > Event
  * @markup
  *  <div class="card event undecorated">
  *      <div class="card-header">
@@ -8292,7 +8295,7 @@ input {
  * Testemonial Card are containers for Testemonial Data Type 
  *
  * @molecule Testimonial Card 
- * @section Card 
+ * @section Card > Testemonial
  * @flag contained
  * @modifiers
  *  .horizontal     Aligns the image to the left of the testimonial.
@@ -8378,7 +8381,7 @@ input {
 * Horizontal Testimonial are compact containers for Testemonial Data Type 
 *
 * @molecule Testimonial Card (.horizontal)
-* @section Card 
+* @section Card > Testemonial
 * @flag contained
 * @markup
 *  <div class="card testimonial horizontal">
@@ -8458,7 +8461,7 @@ input {
  * "Undecorated" cards remove the background,padding and border of cards with leaving behind all of the typography treatment of card.  This is mosly used on the homepage in combination with the highlighted card 
  *
  * @molecule Undecorated Highlighted Card 
- * @section Card 
+ * @section Card > Basic 
  * @flag contained
  * @markup
  *  <div class="card highlighted undecorated">
@@ -8713,8 +8716,8 @@ input {
 */
 .nav-utility {
   background-color: #d6d4d4;
-  font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-family: 'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
+  font-weight: 400;
   font-size: 16px; }
   .nav-utility .nav, .nav-utility .nav-item, .nav-utility .nav-link {
     display: block;
@@ -9332,41 +9335,46 @@ input {
 * @structure  toolkit-sublisting
 * @section Advanced Containers
 * @modifiers
-*  .holder this is for future use
+*  .fancy this is for fancy accordians used on toolkits
 * @markup  
-*   <div class="panel-group toolkit-sublisting accordion" id="accordion" role="tablist" aria-multiselectable="true">
+*   <div class="panel-group fancy accordion" id="accordion" role="tablist" aria-multiselectable="true">
 *     <div class="panel panel-default">
 *       <div class="panel-heading" role="tab" id="headingOne">
-*         <h4 class="panel-title">
+*         <h3 class="panel-title">
 *           <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-*             Collapsible Group Item #1
+*             <span class="text">Collapsible Group Item #1</span>
 *           </a>
-*         </h4>
+*         </h3>
 *       </div>
 *       <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 *         <div class="panel-body">
-*               <h4>@{lipsum:5:words}</h4>
-*               <ol >    
-*                    <li style="page-break-inside: avoid">
-*                         <a href="#.pdf" class="link" target="_blank">@{lipsum:3:words}</a>
-*                    </li>
-*                    <li style="page-break-inside: avoid">
-*                        <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
-*                    </li>
-*                    <li style="page-break-inside: avoid">
-*                        <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
-*                    </li>
-*               </ol>
+*               <div class="row">
+*                   <div class="col-md-6"><img src="@{image:200:200}" alt=""></div>
+*                   <div class="col-md-6">
+*                       <h4>@{lipsum:5:words}</h4>
+*                       <ol>
+*                           <li style="page-break-inside: avoid">
+*                               <a href="#.pdf" class="link" target="_blank">@{lipsum:3:words}</a>
+*                           </li>
+*                           <li style="page-break-inside: avoid">
+*                               <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*                           </li>
+*                           <li style="page-break-inside: avoid">
+*                               <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*                           </li>
+*                       </ol>
+*                   </div>
+*               </div>
 *         </div>
 *       </div>
 *     </div>
 *     <div class="panel panel-default">
 *       <div class="panel-heading" role="tab" id="headingTwo">
-*         <h4 class="panel-title">
+*         <h3 class="panel-title">
 *           <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-*             Collapsible Group Item #2
+*              <span class="text">@{lipsum:1:paragraphs}</span>
 *           </a>
-*         </h4>
+*         </h3>
 *       </div>
 *       <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 *         <div class="panel-body">
@@ -9388,16 +9396,108 @@ input {
 *   </div>
 * 
 */
-.accordion.toolkit-sublisting {
+.accordion.fancy {
   border-radius: 8px;
   padding: 5px;
   border: 1px solid #d6d4d4;
-  counter-reset: my-awesome-counter; }
-  .accordion.toolkit-sublisting .panel {
-    counter-increment: item; }
-  .accordion.toolkit-sublisting .panel-heading:before {
-    content: counter(item); }
+  counter-reset: item; }
+  .accordion.fancy .panel {
+    counter-increment: item;
+    counter-reset: subitem; }
+    .accordion.fancy .panel ol li {
+      counter-increment: subitem;
+      list-style: none; }
+      .accordion.fancy .panel ol li:before {
+        content: counter(item) counter(subitem,lower-alpha) "."; }
+  .accordion.fancy .panel-title a {
+    display: table;
+    padding: 0;
+    vertical-align: middle;
+    font-family: 'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
+    font-weight: 500; }
+  .accordion.fancy .panel-title a {
+    color: #fafafa;
+    background-color: #047294; }
+  .accordion.fancy .panel-title a:after {
+    content: "\f078";
+    transition: transform 0.25s ease-out;
+    -moz-transition: transform 0.25s ease-out;
+    -webkit-transition: transform 0.25s ease-out;
+    background-color: #e87d1e;
+    color: white;
+    padding: 1rem;
+    width: 3em;
+    text-align: center; }
+  .accordion.fancy .panel-title a:before {
+    content: counter(item);
+    font-family: 'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    color: #fafafa;
+    font-size: 32px;
+    padding: 1rem 1rem;
+    text-align: center;
+    min-width: 4rem; }
+  .accordion.fancy .panel-title span.text {
+    padding: 1rem 1rem 1rem 0; }
+  .accordion.fancy .panel-title a:before, .accordion.fancy .panel-title a:after, .accordion.fancy .panel-title span.text {
+    display: table-cell;
+    vertical-align: middle; }
+  .accordion.fancy .panel-title a.collapsed {
+    background-color: #fafafa;
+    color: #2f2f2f; }
+    .accordion.fancy .panel-title a.collapsed:before {
+      color: #047294;
+      transform: rotate(0);
+      -moz-transform: rotate(0);
+      -webkit-transform: rotate(0); }
+    .accordion.fancy .panel-title a.collapsed:after {
+      content: "\f054";
+      transform: rotate(0);
+      -moz-transform: rotate(0);
+      -webkit-transform: rotate(0);
+      background-color: #047294;
+      color: white; }
+  .accordion.fancy .panel-heading {
+    border-bottom: 2px solid #a1a0a4; }
+  .accordion.fancy .panel-heading:active, .accordion.fancy .panel-heading:focus, .accordion.fancy .panel-heading:hover, .accordion.fancy .panel-heading:active, .accordion.fancy .panel-heading:focus, .accordion.fancy .panel-heading:hover, .accordion.fancy .panel-heading:active, .accordion.fancy .panel-heading:focus, .accordion.fancy .panel-heading:hover {
+    border-color: #e87d1e; }
+    .accordion.fancy .panel-heading:active .panel-title a, .accordion.fancy .panel-heading:focus .panel-title a, .accordion.fancy .panel-heading:hover .panel-title a, .accordion.fancy .panel-heading:active .panel-title a, .accordion.fancy .panel-heading:focus .panel-title a, .accordion.fancy .panel-heading:hover .panel-title a, .accordion.fancy .panel-heading:active .panel-title a, .accordion.fancy .panel-heading:focus .panel-title a, .accordion.fancy .panel-heading:hover .panel-title a {
+      color: #fafafa;
+      background-color: #047294; }
+    .accordion.fancy .panel-heading:active .panel-title a:after, .accordion.fancy .panel-heading:focus .panel-title a:after, .accordion.fancy .panel-heading:hover .panel-title a:after, .accordion.fancy .panel-heading:active .panel-title a:after, .accordion.fancy .panel-heading:focus .panel-title a:after, .accordion.fancy .panel-heading:hover .panel-title a:after, .accordion.fancy .panel-heading:active .panel-title a:after, .accordion.fancy .panel-heading:focus .panel-title a:after, .accordion.fancy .panel-heading:hover .panel-title a:after {
+      background-color: #e87d1e;
+      color: white; }
+    .accordion.fancy .panel-heading:active .panel-title a:before, .accordion.fancy .panel-heading:focus .panel-title a:before, .accordion.fancy .panel-heading:hover .panel-title a:before, .accordion.fancy .panel-heading:active .panel-title a:before, .accordion.fancy .panel-heading:focus .panel-title a:before, .accordion.fancy .panel-heading:hover .panel-title a:before, .accordion.fancy .panel-heading:active .panel-title a:before, .accordion.fancy .panel-heading:focus .panel-title a:before, .accordion.fancy .panel-heading:hover .panel-title a:before {
+      color: white; }
+  .accordion.fancy .panel-heading:hover .panel-title a:after {
+    animation: btn-bounce .3s ease-in 2;
+    -webkit-animation: btn-bounce .3s ease-in 2;
+    -moz-animation: btn-bounce 0.3s ease-in 2; }
+  .accordion.fancy .panel-body {
+    background: #ffffff;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlY2VhZWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #ffffff 0%, #eceaea 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #eceaea));
+    background: -webkit-linear-gradient(top, #ffffff 0%, #eceaea 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #eceaea 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%, #eceaea 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #eceaea 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr=' $soft-grey', GradientType=0);
+    border: 1px solid #d6d4d4;
+    padding: 2rem 1rem;
+    line-height: 1.65; }
 
+@keyframes btn-bounce {
+  0% {
+    padding-top: 19px; }
+  25% {
+    padding-top: 30px; }
+  50% {
+    padding-top: 19px; }
+  75% {
+    padding-top: 5px; }
+  100% {
+    padding-top: 19px; } }
 /**
 * charts
 *
@@ -10083,7 +10183,7 @@ address.vcard {
     right: 0;
     background-color: rgba(0, 0, 0, 0.75);
     line-height: 1.3;
-    font-family: 'Muli', Verdana, Helvetica, Arial, sans-serif;
+    font-family: 'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-size: 14px;
     padding: 10px 1em 25px;
@@ -10097,7 +10197,7 @@ address.vcard {
       margin-bottom: .25em;
       font-size: 20px;
       display: block;
-      font-family: 'Muli', Verdana, Helvetica, Arial, sans-serif;
+      font-family: 'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
       font-weight: 100;
       line-height: 1.15; }
       @media only screen and (min-width: 768px) {
@@ -10622,9 +10722,16 @@ body, .body {
 
 /**
 * Some times the defualt margin needs to be removed.  Adding these class will selectivly remove the margin of the DOM item it is placed on. 
+* ~~ Open the example to see the other class and how they will effect the design ~~
 *
-* @nuclide .m-0
 * @section Helpers > trumps
+* @mixin No Margin
+* @example
+*  class="m-0"	will remove the margin on all sides
+*  class="m-l-0"	 will remove the margin on the left
+*  class="m-r-0" 	will remove the margin on the right
+*  class="m-t-0" 	will remove the margin on the top
+*  class="m-b-0" 	will remove the margin on the bottom 
 * 
 */
 .m-0, .no-margin, .m-l-0 {

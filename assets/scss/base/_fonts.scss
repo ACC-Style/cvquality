@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Muli:200,400,700");
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700");
+
+
 
 
 @mixin font ( $weight : 400) {
@@ -23,13 +26,24 @@
  *  @include monospace();
  *  @include monospace(300);
  */
+// @mixin font-display ($weight : 200) {
+// 	@if ($weight == "bold"){$weight:700;}
+// 	@else if ($weight == "regular"){$weight:400;}
+// 	@else if ($weight == "normal"){$weight:400;}
+// 	@else if ($weight == "light"){$weight:200;}
+// 	@else{$weight:$weight;}
+// 	font-family:  'Muli', Verdana, Helvetica, Arial, sans-serif;
+// 	font-weight: $weight;
+// }
+
+
 @mixin font-display ($weight : 200) {
 	@if ($weight == "bold"){$weight:700;}
-	@else if ($weight == "regular"){$weight:400;}
-	@else if ($weight == "normal"){$weight:400;}
-	@else if ($weight == "light"){$weight:200;}
+	@else if ($weight == "regular"){$weight:500;}
+	@else if ($weight == "normal"){$weight:500;}
+	@else if ($weight == "light"){$weight:400;}
 	@else{$weight:$weight;}
-	font-family:  'Muli', Verdana, Helvetica, Arial, sans-serif;
+	font-family:  'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
 	font-weight: $weight;
 }
 

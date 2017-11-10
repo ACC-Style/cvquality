@@ -27,7 +27,7 @@
    .nav{} 
     // Phone Mode
     background-color:$warm-grey-light;
-    @include font(700);
+    @include font-display("light");
     font-size: ms(1);
     .nav-link{
         color: $off-black

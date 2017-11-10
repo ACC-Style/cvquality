@@ -132,7 +132,7 @@
  * Highlighted Cards are stylized cards with a soft blue background and changes all header sizes and text to a bit larger. These cards are used as hero area or of extra interst.
  *
  * @molecule Highlighted Card 
- * @section Card 
+ * @section Card > Basic 
  * @flag contained
  * @modifiers
  *  .position-right-[size] floats the card to the right so text will wrap around the left when the veiw port is above the size.
@@ -203,7 +203,7 @@
  * Info Cards are stylized cards with a warm grey background and changes all headers are bold.
  *
  * @molecule Info Card 
- * @section Card 
+ * @section Card > Basic 
  * @flag contained
  * @markup
  *  <div class="card info">
@@ -243,7 +243,7 @@
  * Notice Cards are stylized cards with a soft blue background and grey triangle to cause it to stand out from surrounding text
  *
  * @molecule Notice Card 
- * @section Card 
+ * @section Card > Basic 
  * @flag contained
  * @markup
  *  <div class="card notice">
@@ -281,7 +281,7 @@
  * Notice Cards with the alt class modifies the style of notice cards by changing thie background to soft grey background with an orange triangle.
  *
  * @molecule Notice Card Alt 
- * @section Card 
+ * @section Card > Basic
  * @flag contained
  * @markup
  *  <div class="card notice alt">
@@ -310,7 +310,7 @@
  * Event Cards are containers for Event Data Type 
  *
  * @molecule Event Card 
- * @section Card 
+ * @section Card > Event
  * @flag contained
  * @modifiers
  *  .undecorated    removes the card decoration( background colors, borders & graphic date) to make it listable. 
@@ -453,14 +453,14 @@
     }
 
     .day {
-        @include font-display("regular");  
+        @include font-display("light");  
         font-size: ms(3);
         font-weight: bold;
         @include bp(md){ font-size: ms(7);}
     }
 
     .month {
-       @include font-display("bold"); 
+       @include font-display("regular"); 
        font-size: ms(-1); 
        padding-top: 2px;
        padding-bottom: 2px;
@@ -485,7 +485,7 @@
  * Undecorated Event Cards Are for Listing alot of events together 
  *
  * @molecule Event Card (Undecorated)
- * @section Card 
+ * @section Card > Event
  * @markup
  *  <div class="card event undecorated">
  *      <div class="card-header">
@@ -545,7 +545,7 @@
  * Testemonial Card are containers for Testemonial Data Type 
  *
  * @molecule Testimonial Card 
- * @section Card 
+ * @section Card > Testemonial
  * @flag contained
  * @modifiers
  *  .horizontal     Aligns the image to the left of the testimonial.
@@ -663,7 +663,7 @@
 * Horizontal Testimonial are compact containers for Testemonial Data Type 
 *
 * @molecule Testimonial Card (.horizontal)
-* @section Card 
+* @section Card > Testemonial
 * @flag contained
 * @markup
 *  <div class="card testimonial horizontal">
@@ -759,7 +759,7 @@
  * "Undecorated" cards remove the background,padding and border of cards with leaving behind all of the typography treatment of card.  This is mosly used on the homepage in combination with the highlighted card 
  *
  * @molecule Undecorated Highlighted Card 
- * @section Card 
+ * @section Card > Basic 
  * @flag contained
  * @markup
  *  <div class="card highlighted undecorated">

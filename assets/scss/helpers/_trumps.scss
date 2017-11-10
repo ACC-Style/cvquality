@@ -1,10 +1,19 @@
 /**
 * Some times the defualt margin needs to be removed.  Adding these class will selectivly remove the margin of the DOM item it is placed on. 
+* ~~ Open the example to see the other class and how they will effect the design ~~
 *
-* @nuclide .m-0
 * @section Helpers > trumps
+* @mixin No Margin
+* @example
+*  class="m-0"	will remove the margin on all sides
+*  class="m-l-0"	 will remove the margin on the left
+*  class="m-r-0" 	will remove the margin on the right
+*  class="m-t-0" 	will remove the margin on the top
+*  class="m-b-0" 	will remove the margin on the bottom 
 * 
 */
+.no-margin{}
+.m-0{@extend .no-margin; }
 .m-0,.m-l-0{
 	margin-left:0 !important;
 }

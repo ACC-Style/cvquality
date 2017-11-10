@@ -41,7 +41,7 @@
     
     h1 {
         @extend %header-link;
-        @include font-display(regular);
+        @include font-display("light");
         color: $orange-dark;
         &.display-4{ font-size:ms(7, $ms-base, $ms-ratio-4);}
         &.display-3{ font-size:ms(7, $ms-base, $ms-ratio-3);}
@@ -51,7 +51,7 @@
 
     h2 {
         @extend %header-link;
-        @include font-display(bold);
+        @include font-display("regular");
         color: $warm-grey-dark;
         &.display-4{ font-size:ms(5, $ms-base, $ms-ratio-4);}
         &.display-3{ font-size:ms(5, $ms-base, $ms-ratio-3);}
@@ -61,7 +61,7 @@
 
     h3 {
         @extend %header-link;
-        @include font-display(regular);
+        @include font-display("light");
         color: $orange-dark;
         &.display-4{ font-size:ms(3, $ms-base, $ms-ratio-4);}
         &.display-3{ font-size:ms(3, $ms-base, $ms-ratio-3);}
@@ -70,7 +70,7 @@
     }
     h4 {
         @extend %header-link;
-        @include font-display(bold);
+        @include font-display("regular");
         color: $warm-grey-dark;
         &.display-4{ font-size:ms(2, $ms-base, $ms-ratio-4);}
         &.display-3{ font-size:ms(2, $ms-base, $ms-ratio-3);}
@@ -101,7 +101,7 @@
         a {
             color: $scrub-teal;
             &.more {
-                @include font(bold);
+                @include font("bold");
                 display: inline-block;
                 text-decoration: none;
             }
@@ -163,7 +163,7 @@ hr {
 * @section Typography > Decorators
 * @markup
 *  <div><strong>Strong: @{lipsum:4:words}  <a href="">@{lipsum:1:words}</a></strong></div>
-*  <div><b>Bold: @{lipsum:4:words} <a href="">@{lipsum:1:words}</a></b></div>
+*  <div><b>"Bold": @{lipsum:4:words} <a href="">@{lipsum:1:words}</a></b></div>
 *  <div><small>Small: @{lipsum:4:words}  <a href="">@{lipsum:1:words}</a></small></div>
 *  <div><em>Em: @{lipsum:4:words}  <a href="">@{lipsum:1:words}</a></em></div>
 */
