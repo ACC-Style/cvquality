@@ -8,13 +8,8 @@ img {
   display: block;
 }
 
-/* Added by Thomas Taylor, 3/31/2015 */
-/**
-* Used for the removal of floats when needed to correct flow of document
-*
-* @nuclide ClearFix
-* @section Helpers > fixes
-*/
+
+
 .clearfix{
   &:before {
     content: "";

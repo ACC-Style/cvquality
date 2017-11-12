@@ -1,12 +1,12 @@
 /**
-* toolkit-sublisting 
+* accordians that are used in  the toolkit 
 *
-* @structure  toolkit-sublisting
+* @structure  Accordian (Fancy)
 * @section Advanced Containers
 * @modifiers
 *  .fancy this is for fancy accordians used on toolkits
 * @markup  
-*   <div class="panel-group fancy accordion" id="accordion" role="tablist" aria-multiselectable="true">
+*   <div class="panel-group fancy accordion" id="fancyaccordion" role="tablist" aria-multiselectable="true">
 *     <div class="panel panel-default">
 *       <div class="panel-heading" role="tab" id="headingOne">
 *         <h3 class="panel-title">
@@ -94,7 +94,7 @@
             background-color: $scrub-teal-dark;
         }
          a:after {
-                @extend .icon-after;
+               
                 content: "\f078";
                 transition: transform 0.25s ease-out;
                 -moz-transition: transform 0.25s ease-out;
@@ -125,23 +125,22 @@
     .panel-title a.collapsed{
         background-color:$off-white;
         color:$off-black;
+        &:before, &:after{
+            transform: rotate(0) !important;
+            -moz-transform: rotate(0) !important;
+            -webkit-transform: rotate(0) !important;
+        }
          &:before {
             color:$scrub-teal-dark;
-            transform: rotate(0);
-            -moz-transform: rotate(0);
-            -webkit-transform: rotate(0);
         }
         &:after {
             content: "\f054";
-            transform: rotate(0);
-            -moz-transform: rotate(0);
-            -webkit-transform: rotate(0);
             background-color: $scrub-teal-dark;
             color: white;
         }
     }
     .panel-heading{
-        border-bottom:2px solid $warm-grey;
+        border-bottom:0 solid $warm-grey;
     }
     .panel-heading,.panel-heading,.panel-heading {
         &:active,&:focus,&:hover{

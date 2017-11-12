@@ -110,7 +110,7 @@
   width: 1.28571429em;
   text-align: center; }
 
-.icon-after:after, a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:after, .software-vendors .company:after, .accordion.fancy .panel-title a:after {
+.icon-after:after, a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:after, .software-vendors .company:after, .accordion .panel-title a:after {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -190,13 +190,6 @@ html {
 img {
   display: block; }
 
-/* Added by Thomas Taylor, 3/31/2015 */
-/**
-* Used for the removal of floats when needed to correct flow of document
-*
-* @nuclide ClearFix
-* @section Helpers > fixes
-*/
 .clearfix {
   zoom: 1;
   /* For IE 6/7 (trigger hasLayout) */ }
@@ -7717,23 +7710,26 @@ input {
     right: 0; }
 
 /**
-* Collapse page content with header.
-*
+* Collapse content with header section. Vanilla collapse just has a headline and the collapsed content
 * @structure Accordion
 * @section Advanced Containers
+* @modifiers 
+*   .fancy          used on toolkits the design is bigger and graphic
+*   .basic          gives a little bit of animation and wiggle, and ads the cheveron indicator if it is open or closed.
+*   .simple         removes all of the container decoration and converts the header into a more link.
 * @markup
 *  <div class="panel-group accordion">
-*   <div class="panel" id="accordion2" role="tablist" aria-multiselectable="true">
-*   	<div class="panel-heading" role="tab" id="headingOne">
-*   	  <h4 class="panel-title">
-*   	    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
-*   	      <span class="text">Collapsible Group Item #1</span>
-*   	    </a>
-*   	  </h4>
-*   	</div>
-*   	<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
-*   	  <div class="panel-body">
-*   	    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+*   <div class="panel" id="accordion" role="tablist" aria-multiselectable="true">
+*       <div class="panel-heading" role="tab" id="headingOne">
+*         <h4 class="panel-title">
+*           <a role="button" data-toggle="collapse" data-parent="#accordion" href="#accordion2" aria-expanded="true" aria-controls="accordion2" class="collapsed">
+*             <span class="text">Collapsible Group Item #1</span>
+*           </a>
+*         </h4>
+*       </div>
+*       <div id="accordion2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+*         <div class="panel-body">
+*           <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
 *           <ul class="no-bullets">    
 *             <li style="page-break-inside: avoid">
 *                 <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
@@ -7745,8 +7741,8 @@ input {
 *                 <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
 *             </li>
 *           </ul>
-*   	  </div>
-*   	</div>
+*         </div>
+*       </div>
 *   </div>
 *  </div>
 *
@@ -7767,15 +7763,155 @@ input {
   padding: 10px 15px;
   display: block;
   width: 100%; }
-.accordion .panel-title a:before {
-  content: "\f13a";
-  transition: transform 0.25s ease-out;
-  -moz-transition: transform 0.25s ease-out;
-  -webkit-transition: transform 0.25s ease-out; }
-.accordion .panel-title a.collapsed:before {
-  transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg); }
+
+/**
+* Collapse page content with header. Adding .basic will give a little bit of wiggle
+*
+* @structure Accordion (Basic with a little bit of wiggle)
+* @section Advanced Containers
+* @markup
+*  <div class="panel-group accordion basic">
+*   <div class="panel" id="accordion" role="tablist" aria-multiselectable="true">
+*       <div class="panel-heading" role="tab" id="headingOne">
+*         <h4 class="panel-title">
+*           <a role="button" data-toggle="collapse" data-parent="#accordion" href="#accordionbasic" aria-expanded="true" aria-controls="accordionbasic" class="collapsed">
+*             <span class="text">Collapsible Group Item #1</span>
+*           </a>
+*         </h4>
+*       </div>
+*       <div id="accordionbasic" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+*         <div class="panel-body">
+*           <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+*           <ul class="no-bullets">    
+*             <li style="page-break-inside: avoid">
+*                 <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*             </li>
+*             <li style="page-break-inside: avoid">
+*                 <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*             </li>
+*             <li style="page-break-inside: avoid">
+*                 <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*             </li>
+*           </ul>
+*         </div>
+*       </div>
+*   </div>
+*  </div>
+*
+*/
+.accordion.basic .panel-title a:before {
+  content: "\f078"; }
+.accordion.basic .panel-title a.collapsed:before {
+  content: "\f054"; }
+.accordion.basic .panel-title:hover a:before {
+  animation: wiggle .75s ease-in 2;
+  -webkit-animation: wiggle .75s ease-in 2;
+  -moz-animation: wiggle 0.75s ease-in 2; }
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg); }
+  30% {
+    transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg); }
+  50% {
+    transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg); }
+  70% {
+    transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg); }
+  100% {
+    transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg); } }
+@keyframes wiggle-colapsed {
+  0% {
+    transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg); }
+  30% {
+    transform: rotate(-105deg);
+    -moz-transform: rotate(-105deg);
+    -webkit-transform: rotate(-105deg); }
+  50% {
+    transform: rotate(-75deg);
+    -moz-transform: rotate(-75deg);
+    -webkit-transform: rotate(-75deg); }
+  70% {
+    transform: rotate(-105deg);
+    -moz-transform: rotate(-105deg);
+    -webkit-transform: rotate(-105deg); }
+  100% {
+    transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg); } }
+/**
+* Collapse can also be used for small peices of content when you want someone to do more.
+*
+* @structure Accordion (simple the more link)
+* @section Advanced Containers
+* @markup
+*  <div class="panel-group accordion simple">
+*   <div class="panel" id="accordion" role="tablist" aria-multiselectable="true">
+*       <div class="panel-heading" role="tab" id="headingOne">
+*         <h4 class="panel-title">
+*           <a role="button" data-toggle="collapse" data-parent="#accordion" href="#accordionsimple" aria-expanded="true" aria-controls="accordionsimple" class="collapsed">
+*             <span class="text">Find Out</span>
+*           </a>
+*         </h4>
+*       </div>
+*       <div id="accordionsimple" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+*         <div class="panel-body">
+*           <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+*           <ul class="no-bullets">    
+*             <li style="page-break-inside: avoid">
+*                 <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*             </li>
+*             <li style="page-break-inside: avoid">
+*                 <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*             </li>
+*             <li style="page-break-inside: avoid">
+*                 <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*             </li>
+*           </ul>
+*         </div>
+*       </div>
+*   </div>
+*  </div>
+*
+*/
+.accordion.simple .panel {
+  border-radius: 0px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0); }
+.accordion.simple .panel-heading, .accordion.simple .panel-body {
+  background: none;
+  border: none; }
+.accordion.simple .panel-title a:before {
+  content: "\f147";
+  margin-right: 0.125; }
+.accordion.simple .panel-title:hover a:before {
+  content: "\f146"; }
+.accordion.simple .panel-title a.collapsed:before {
+  content: "\f196"; }
+.accordion.simple .panel-title:hover a.collapsed:before {
+  content: "\f0fe"; }
+.accordion.simple .panel-title a .text, .accordion.simple .panel-title a:after, .accordion.simple .panel-title a:before {
+  display: inline-block;
+  width: auto;
+  font-size: 12px;
+  color: #047294; }
+.accordion.simple .panel-title a .text, .accordion.simple .panel-title a:after {
+  font-family: 'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-transform: lowercase; }
+.accordion.simple .panel-title a:after {
+  content: "more..."; }
 
 /**
 * Navigaion between dynamic or category collected pages when the collection is above the count of 10.
@@ -9330,14 +9466,14 @@ input {
   border-radius: 2px; }
 
 /**
-* toolkit-sublisting 
+* accordians that are used in  the toolkit 
 *
-* @structure  toolkit-sublisting
+* @structure  Accordian (Fancy)
 * @section Advanced Containers
 * @modifiers
 *  .fancy this is for fancy accordians used on toolkits
 * @markup  
-*   <div class="panel-group fancy accordion" id="accordion" role="tablist" aria-multiselectable="true">
+*   <div class="panel-group fancy accordion" id="fancyaccordion" role="tablist" aria-multiselectable="true">
 *     <div class="panel panel-default">
 *       <div class="panel-heading" role="tab" id="headingOne">
 *         <h3 class="panel-title">
@@ -9445,20 +9581,18 @@ input {
   .accordion.fancy .panel-title a.collapsed {
     background-color: #fafafa;
     color: #2f2f2f; }
+    .accordion.fancy .panel-title a.collapsed:before, .accordion.fancy .panel-title a.collapsed:after {
+      transform: rotate(0) !important;
+      -moz-transform: rotate(0) !important;
+      -webkit-transform: rotate(0) !important; }
     .accordion.fancy .panel-title a.collapsed:before {
-      color: #047294;
-      transform: rotate(0);
-      -moz-transform: rotate(0);
-      -webkit-transform: rotate(0); }
+      color: #047294; }
     .accordion.fancy .panel-title a.collapsed:after {
       content: "\f054";
-      transform: rotate(0);
-      -moz-transform: rotate(0);
-      -webkit-transform: rotate(0);
       background-color: #047294;
       color: white; }
   .accordion.fancy .panel-heading {
-    border-bottom: 2px solid #a1a0a4; }
+    border-bottom: 0 solid #a1a0a4; }
   .accordion.fancy .panel-heading:active, .accordion.fancy .panel-heading:focus, .accordion.fancy .panel-heading:hover, .accordion.fancy .panel-heading:active, .accordion.fancy .panel-heading:focus, .accordion.fancy .panel-heading:hover, .accordion.fancy .panel-heading:active, .accordion.fancy .panel-heading:focus, .accordion.fancy .panel-heading:hover {
     border-color: #e87d1e; }
     .accordion.fancy .panel-heading:active .panel-title a, .accordion.fancy .panel-heading:focus .panel-title a, .accordion.fancy .panel-heading:hover .panel-title a, .accordion.fancy .panel-heading:active .panel-title a, .accordion.fancy .panel-heading:focus .panel-title a, .accordion.fancy .panel-heading:hover .panel-title a, .accordion.fancy .panel-heading:active .panel-title a, .accordion.fancy .panel-heading:focus .panel-title a, .accordion.fancy .panel-heading:hover .panel-title a {

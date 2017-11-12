@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"no",
+				"no-margin"
+			],
+			[
+				"panel",
+				"panel-heading"
+			],
+			[
+				"coun",
+				"counter-increment"
+			],
+			[
+				"count",
+				"counter-reset"
+			],
+			[
 				"inline",
 				"inline-block"
 			],
@@ -212,10 +228,6 @@
 				"max-width"
 			],
 			[
-				"no",
-				"no-gutter"
-			],
-			[
 				"lin",
 				"line-height"
 			],
@@ -282,7 +294,7 @@
 			"file": "assets/scss/component/_toolkit-sublisting.scss",
 			"settings":
 			{
-				"buffer_size": 2922,
+				"buffer_size": 6261,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -296,18 +308,18 @@
 			}
 		},
 		{
-			"contents": "<div class=\"panel-group toolkit-sublisting\" id=\"accordion\" role=\"tablist\" aria-multiselectable=\"true\">\n  <div class=\"panel panel-default\">\n    <div class=\"panel-heading\" role=\"tab\" id=\"headingOne\">\n      <h4 class=\"panel-title\">\n        <a role=\"button\" data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapseOne\" aria-expanded=\"true\" aria-controls=\"collapseOne\">\n          Collapsible Group Item #1\n        </a>\n      </h4>\n    </div>\n    <div id=\"collapseOne\" class=\"panel-collapse collapse in\" role=\"tabpanel\" aria-labelledby=\"headingOne\">\n      <div class=\"panel-body\">\n            <h4>@{lipsum:5:words}</h4>\n            <ol >    \n                 <li style=\"page-break-inside: avoid\">\n                      <a href=\"#.pdf\" class=\"link\" target=\"_blank\">@{lipsum:3:words}</a>\n                 </li>\n                 <li style=\"page-break-inside: avoid\">\n                     <a href=\"#.pdf\" class=\"link\" target=\"_blank\">@{lipsum:5:words}</a>\n                 </li>\n                 <li style=\"page-break-inside: avoid\">\n                     <a href=\"#.pdf\" class=\"link\" target=\"_blank\">@{lipsum:5:words}</a>\n                 </li>\n            </ol>\n      </div>\n    </div>\n  </div>\n  <div class=\"panel panel-default\">\n    <div class=\"panel-heading\" role=\"tab\" id=\"headingTwo\">\n      <h4 class=\"panel-title\">\n        <a class=\"collapsed\" role=\"button\" data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapseTwo\" aria-expanded=\"false\" aria-controls=\"collapseTwo\">\n          Collapsible Group Item #2\n        </a>\n      </h4>\n    </div>\n    <div id=\"collapseTwo\" class=\"panel-collapse collapse\" role=\"tabpanel\" aria-labelledby=\"headingTwo\">\n      <div class=\"panel-body\">\n            <h4>@{lipsum:5:words}</h4>\n            <ol >    \n                 <li style=\"page-break-inside: avoid\">\n                     <a href=\"#.pdf\" class=\"link\" target=\"_blank\">@{lipsum:3:words}</a>\n                 </li>\n                 <li style=\"page-break-inside: avoid\">\n                     <a href=\"#.pdf\" class=\"link\" target=\"_blank\">@{lipsum:5:words}</a>\n                 </li>\n                 <li style=\"page-break-inside: avoid\">\n                     <a href=\"#.pdf\" class=\"link\" target=\"_blank\">@{lipsum:5:words}</a>\n                 </li>\n            </ol>\n      </div>\n    </div>\n  </div>\n</div>",
+			"contents": "",
 			"settings":
 			{
-				"buffer_size": 2304,
+				"buffer_size": 0,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "Searching 239 files for \"page-content\"\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\structure\\_page.scss:\n   14   *      <div id=\"layout\" class=\"row no-gutter\">\n   15   *          <div class=\"col-lg-3 p-0 d-none d-lg-block\"> @{include:.nav-sub}@{include:.nav-social-button.small}</div>\n   16:  *          <div class=\"col-lg-9 col\"><div class=\"page-content\"><h1>Sample Page</h1> @{include:dl.grouped-definision-list}</div></div>\n   17   *      </div>\n   18   *       @{include:#footer}\n   ..\n   41  }\n   42  \n   43: .page-content{\n   44      padding: .5rem  0 1rem;\n   45     @include bp(md){ padding: .5rem 1rem 2rem;}\n   46:     + .page-content{\n   47          padding-top:0;\n   48          @include bp(md){  margin-top:-1rem;}\n   ..\n   63   *          <div class=\"row\">@{include:.nav-primary}</div>\n   64   *          <div id=\"layout\">\n   65:  *              <div class=\"page-content\">\n   66   *                  <div class=\"row\">\n   67   *                      <div class=\"col-lg-4\">\n   ..\n  103   *      <div id=\"layout\" class=\"row no-gutter\">\n  104   *          <div class=\"col-lg-3 p-0 d-none d-lg-block\"> @{include:.nav-sub}</div>\n  105:  *          <div class=\"col-lg-9 col\"><div class=\"page-content\">\n  106   *          <h1>Assements Page</h1>  \n  107   *          <p><strong>User:</strong> @{lipsum:2:words}</p>\n\n5 matches in 1 file\n\n\nSearching 239 files for \".clearfix\"\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\helpers\\_fixes.scss:\n   16  * @section Helpers > fixes\n   17  */\n   18: .clearfix{\n   19    &:before {\n   20      content: \"\";\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\_utilities.scss:\n    7  // -------------------------\n    8  \n    9: .clearfix {\n   10    @include clearfix;\n   11  }\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\utilities\\_clearfix.scss:\n    1: .clearfix {\n    2    @include clearfix();\n    3  }\n\n3 matches across 3 files\n",
+			"contents": "Searching 239 files for \"page-content\"\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\structure\\_page.scss:\n   14   *      <div id=\"layout\" class=\"row no-gutter\">\n   15   *          <div class=\"col-lg-3 p-0 d-none d-lg-block\"> @{include:.nav-sub}@{include:.nav-social-button.small}</div>\n   16:  *          <div class=\"col-lg-9 col\"><div class=\"page-content\"><h1>Sample Page</h1> @{include:dl.grouped-definision-list}</div></div>\n   17   *      </div>\n   18   *       @{include:#footer}\n   ..\n   41  }\n   42  \n   43: .page-content{\n   44      padding: .5rem  0 1rem;\n   45     @include bp(md){ padding: .5rem 1rem 2rem;}\n   46:     + .page-content{\n   47          padding-top:0;\n   48          @include bp(md){  margin-top:-1rem;}\n   ..\n   63   *          <div class=\"row\">@{include:.nav-primary}</div>\n   64   *          <div id=\"layout\">\n   65:  *              <div class=\"page-content\">\n   66   *                  <div class=\"row\">\n   67   *                      <div class=\"col-lg-4\">\n   ..\n  103   *      <div id=\"layout\" class=\"row no-gutter\">\n  104   *          <div class=\"col-lg-3 p-0 d-none d-lg-block\"> @{include:.nav-sub}</div>\n  105:  *          <div class=\"col-lg-9 col\"><div class=\"page-content\">\n  106   *          <h1>Assements Page</h1>  \n  107   *          <p><strong>User:</strong> @{lipsum:2:words}</p>\n\n5 matches in 1 file\n\n\nSearching 239 files for \".clearfix\"\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\helpers\\_fixes.scss:\n   16  * @section Helpers > fixes\n   17  */\n   18: .clearfix{\n   19    &:before {\n   20      content: \"\";\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\_utilities.scss:\n    7  // -------------------------\n    8  \n    9: .clearfix {\n   10    @include clearfix;\n   11  }\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\utilities\\_clearfix.scss:\n    1: .clearfix {\n    2    @include clearfix();\n    3  }\n\n3 matches across 3 files\n\n\nSearching 239 files for \"font-display(\"\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\base\\_typography.scss:\n   42      h1 {\n   43          @extend %header-link;\n   44:         @include font-display(regular);\n   45          color: $orange-dark;\n   46          &.display-4{ font-size:ms(7, $ms-base, $ms-ratio-4);}\n   ..\n   52      h2 {\n   53          @extend %header-link;\n   54:         @include font-display(bold);\n   55          color: $warm-grey-dark;\n   56          &.display-4{ font-size:ms(5, $ms-base, $ms-ratio-4);}\n   ..\n   62      h3 {\n   63          @extend %header-link;\n   64:         @include font-display(regular);\n   65          color: $orange-dark;\n   66          &.display-4{ font-size:ms(3, $ms-base, $ms-ratio-4);}\n   ..\n   71      h4 {\n   72          @extend %header-link;\n   73:         @include font-display(bold);\n   74          color: $warm-grey-dark;\n   75          &.display-4{ font-size:ms(2, $ms-base, $ms-ratio-4);}\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\base\\included\\_table_scrollable.scss:\n  403          font-size: ms(1);\n  404  \n  405:         @include font-display(bold);\n  406  \n  407          color: $scrub-teal-dark;\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\component\\_card.scss:\n  185          text-transform: uppercase;\n  186  \n  187:         @include font-display(\"regular\");\n  188      }\n  189  \n  ...\n  454  \n  455      .day {\n  456:         @include font-display(\"regular\");  \n  457          font-size: ms(3);\n  458          font-weight: bold;\n  ...\n  461  \n  462      .month {\n  463:        @include font-display(\"bold\"); \n  464         font-size: ms(-1); \n  465         padding-top: 2px;\n  ...\n  469  \n  470      .year {\n  471:         @include font-display(\"bold\");  \n  472          background-color: $scrub-teal;\n  473          color: $off-white;\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\component\\_carousel.scss:\n  115          line-height: $tight;\n  116  \n  117:         @include font-display(300);\n  118  \n  119          font-size: ms(0);\n  ...\n  133              display: block;\n  134  \n  135:             @include font-display(100);\n  136  \n  137              line-height: $crunched;\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\component\\_toolkit-sublisting.scss:\n   79          padding: 0;\n   80          vertical-align: middle;\n   81:         @include font-display(500);\n   82  \n   83      }\n   ..\n  101  \t\t a:before {\n  102  \t        content: counter(item);\n  103: \t        @include font-display(300);\n  104  \t\t\tcolor:$off-white;\n  105  \t        font-size: ms(7);\n\n13 matches across 5 files\n\n\nSearching 239 files for \" @include font-display(\"bold\");\"\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\component\\_card.scss:\n  461  \n  462      .month {\n  463:        @include font-display(\"bold\"); \n  464         font-size: ms(-1); \n  465         padding-top: 2px;\n  ...\n  469  \n  470      .year {\n  471:         @include font-display(\"bold\");  \n  472          background-color: $scrub-teal;\n  473          color: $off-white;\n\n2 matches in 1 file\n",
 			"settings":
 			{
-				"buffer_size": 1930,
+				"buffer_size": 4944,
 				"line_ending": "Windows",
 				"name": "Find Results",
 				"scratch": true
@@ -328,9 +340,18 @@
 			"file": "assets/scss/helpers/_trumps.scss",
 			"settings":
 			{
-				"buffer_size": 797,
+				"buffer_size": 1201,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": ".sass-cache/79c50d697742f97fc26abd9806e1b64aa8267bf1/_collapse.override.scssc",
+			"settings":
+			{
+				"buffer_size": 15792,
+				"encoding": "Western (Windows 1252)",
+				"line_ending": "Unix"
 			}
 		},
 		{
@@ -400,7 +421,7 @@
 			"file": "assets/scss/component/_card.scss",
 			"settings":
 			{
-				"buffer_size": 19589,
+				"buffer_size": 19669,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -427,7 +448,16 @@
 			"file": "assets/scss/component/_nav-utility.scss",
 			"settings":
 			{
-				"buffer_size": 2243,
+				"buffer_size": 2255,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/vendor/bootstrap.override/_pagination.override.scss",
+			"settings":
+			{
+				"buffer_size": 1845,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -442,58 +472,13 @@
 			}
 		},
 		{
-			"contents": "/**\n* Collapse page content with header.\n*\n* @structure Accordion\n* @section Advanced Containers\n* @markup\n*  <div class=\"panel-group accordion\">\n*   <div class=\"panel\" id=\"accordion2\" role=\"tablist\" aria-multiselectable=\"true\">\n*   \t<div class=\"panel-heading\" role=\"tab\" id=\"headingOne\">\n*   \t  <h4 class=\"panel-title\">\n*   \t    <a role=\"button\" data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapseOne\" aria-expanded=\"true\" aria-controls=\"collapseOne\" class=\"collapsed\">\n*   \t      Collapsible Group Item #1\n*   \t    </a>\n*   \t  </h4>\n*   \t</div>\n*   \t<div id=\"collapseOne\" class=\"panel-collapse collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" aria-expanded=\"true\">\n*   \t  <div class=\"panel-body\">\n*   \t    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>\n*           <ul class=\"no-bullets\">    \n*             <li style=\"page-break-inside: avoid\">\n*                 <a href=\"#.pdf\" class=\"link\" target=\"_blank\">@{lipsum:5:words}</a>\n*             </li>\n*             <li style=\"page-break-inside: avoid\">\n*                 <a href=\"#.pdf\" class=\"link\" target=\"_blank\">@{lipsum:5:words}</a>\n*             </li>\n*             <li style=\"page-break-inside: avoid\">\n*                 <a href=\"#.pdf\" class=\"link\" target=\"_blank\">@{lipsum:5:words}</a>\n*             </li>\n*           </ul>\n*   \t  </div>\n*   \t</div>\n*   </div>\n*  </div>\n*\n*/\n\n.accordion{\n\t@extend .panel-group;\n\t.panel-heading{\n\t\tbackground-color: $soft-grey;\n\t\tborder:$warm-grey-light 1px solid;\n\t\tborder-bottom: $scrub-teal-light 2px solid;\n\t\tpadding:0;\n\t\t&:hover{\n\t\t\tbackground-color:$soft-blue;\n\t\t\tborder: $scrub-teal-light 1px solid;\n\t\t\tborder-bottom: $scrub-teal 2px solid;\n\t\t}\n\t\t.panel-title{\n\t\t\t&:hover, a:hover, a:focus, a:active{\n\t\t\t\tcolor:$off-black;\n\t\t\t\ttext-decoration:none;\n\t\t\t}\n\t\t}\n\t}\n\t.panel-title a{\n\t\t    padding: 10px 15px;\n\t\t    display: block;\n\t\t    width:100%;\n\t}\n\t.panel-title a:before{\n\t\t@extend .icon-before;\n\t    content: \"\\f13a\";\n\t\ttransition:transform 0.25s ease-out;\n\t\t-moz-transition:transform 0.25s ease-out;\n\t\t-webkit-transition:transform 0.25s ease-out;\n\t}\n\t.panel-title a.collapsed:before{\n\t\ttransform: rotate(-90deg);\n\t\t-moz-transform: rotate(-90deg);\n\t\t-webkit-transform: rotate(-90deg);\n\t}\n}",
+			"contents": "/**\n* Collapse page content with header.\n*\n* @structure Accordion\n* @section Advanced Containers\n* @markup\n*  <div class=\"panel-group accordion\">\n*   <div class=\"panel\" id=\"accordion2\" role=\"tablist\" aria-multiselectable=\"true\">\n*   \t<div class=\"panel-heading\" role=\"tab\" id=\"headingOne\">\n*   \t  <h4 class=\"panel-title\">\n*   \t    <a role=\"button\" data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapseOne\" aria-expanded=\"true\" aria-controls=\"collapseOne\" class=\"collapsed\">\n*   \t      <span class=\"text\">Collapsible Group Item #1</span>\n*   \t    </a>\n*   \t  </h4>\n*   \t</div>\n*   \t<div id=\"collapseOne\" class=\"panel-collapse collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" aria-expanded=\"true\">\n*   \t  <div class=\"panel-body\">\n*   \t    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>\n*           <ul class=\"no-bullets\">    \n*             <li style=\"page-break-inside: avoid\">\n*                 <a href=\"#.pdf\" class=\"link\" target=\"_blank\">@{lipsum:5:words}</a>\n*             </li>\n*             <li style=\"page-break-inside: avoid\">\n*                 <a href=\"#.pdf\" class=\"link\" target=\"_blank\">@{lipsum:5:words}</a>\n*             </li>\n*             <li style=\"page-break-inside: avoid\">\n*                 <a href=\"#.pdf\" class=\"link\" target=\"_blank\">@{lipsum:5:words}</a>\n*             </li>\n*           </ul>\n*   \t  </div>\n*   \t</div>\n*   </div>\n*  </div>\n*\n*/\n\n.accordion{\n\t@extend .panel-group;\n\t.panel-heading{\n\t\tbackground-color: $soft-grey;\n\t\tborder:$warm-grey-light 1px solid;\n\t\tborder-bottom: $scrub-teal-light 2px solid;\n\t\tpadding:0;\n\t\t&:hover{\n\t\t\tbackground-color:$soft-blue;\n\t\t\tborder: $scrub-teal-light 1px solid;\n\t\t\tborder-bottom: $scrub-teal 2px solid;\n\t\t}\n\t\t.panel-title{\n\t\t\t&:hover, a:hover, a:focus, a:active{\n\t\t\t\tcolor:$off-black;\n\t\t\t\ttext-decoration:none;\n\t\t\t}\n\t\t}\n\t}\n\t.panel-title a{\n\t\t    padding: 10px 15px;\n\t\t    display: block;\n\t\t    width:100%;\n\t}\n\t.panel-title a:before{\n\t\t@extend .icon-before;\n\t    content: \"\\f13a\";\n\t\ttransition:transform 0.25s ease-out;\n\t\t-moz-transition:transform 0.25s ease-out;\n\t\t-webkit-transition:transform 0.25s ease-out;\n\t}\n\t.panel-title a.collapsed:before{\n\t\ttransform: rotate(-90deg);\n\t\t-moz-transform: rotate(-90deg);\n\t\t-webkit-transform: rotate(-90deg);\n\t}\n}",
 			"file": "assets/scss/vendor/bootstrap.override/_collapse.override.scss",
-			"file_size": 2841,
-			"file_write_time": 131547152787585737,
+			"file_size": 2868,
+			"file_write_time": 131547494201593757,
 			"settings":
 			{
-				"buffer_size": 2770,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/vendor/bootstrap.override/_dropdown.override.scss",
-			"settings":
-			{
-				"buffer_size": 256,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/component/_nav-social-buttons.scss",
-			"settings":
-			{
-				"buffer_size": 3791,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/component/_searchbar.scss",
-			"settings":
-			{
-				"buffer_size": 745,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/component/_user-status-container.scss",
-			"settings":
-			{
-				"buffer_size": 2465,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/structure/_mobile-menu-toggle-container.scss",
-			"settings":
-			{
-				"buffer_size": 2188,
+				"buffer_size": 2796,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -520,7 +505,7 @@
 			"file": "assets/scss/base/_fonts.kitchensink.scss",
 			"settings":
 			{
-				"buffer_size": 2229,
+				"buffer_size": 2234,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -529,7 +514,7 @@
 			"file": "assets/scss/base/_typography.scss",
 			"settings":
 			{
-				"buffer_size": 12172,
+				"buffer_size": 12186,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -538,7 +523,7 @@
 			"file": "assets/scss/base/_fonts.scss",
 			"settings":
 			{
-				"buffer_size": 1015,
+				"buffer_size": 1456,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -551,10 +536,22 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 389.0,
-		"last_filter": "PRETT",
+		"height": 490.0,
+		"last_filter": "con",
 		"selected_items":
 		[
+			[
+				"con",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"sass",
+				"SassBeautify"
+			],
 			[
 				"PRETT",
 				"HTMLPrettify"
@@ -564,20 +561,8 @@
 				"Set Syntax: HTML (Tcl)"
 			],
 			[
-				"con",
-				"Indentation: Convert to Spaces"
-			],
-			[
-				"sass",
-				"SassBeautify"
-			],
-			[
 				"set html",
 				"Set Syntax: HTML"
-			],
-			[
-				"html",
-				"HTMLPrettify"
 			],
 			[
 				"prett",
@@ -648,7 +633,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 572.0
+		"width": 785.0
 	},
 	"console":
 	{
@@ -669,17 +654,16 @@
 	"expanded_folders":
 	[
 		"/C/Users/mwatier/Repo/cvquality",
-		"/C/Users/mwatier/Repo/cvquality/assets",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/base",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/component",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/helpers",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/modular-scale"
+		"/C/Users/mwatier/Repo/cvquality/assets"
 	],
 	"file_history":
 	[
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_ads.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_dropdown.override.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_nav-social-buttons.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_searchbar.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_user-status-container.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/structure/_mobile-menu-toggle-container.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_breadcrumbs.override.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/_oldshame.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/_setup.scss",
@@ -692,10 +676,8 @@
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_address.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_nav-sub.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_card.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_nav-social-buttons.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/structure/_page.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_carousel.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_ads.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/structure/_header.scss",
 		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/assets/views/common/components.pug",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/included/_table_scrollable.scss",
@@ -723,7 +705,6 @@
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_toolkit-sublisting.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_video-player.scss",
 		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/assets/styles/molecules/tables.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/structure/_mobile-menu-toggle-container.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_assessment.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_mobile-menu-toggle.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_nav-footer.scss",
@@ -744,15 +725,12 @@
 		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/assets/styles/atoms/typography.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap/_kitchensink.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_nav-utility.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_searchbar.scss",
 		"/C/Users/mwatier/Repo/cvquality/config.nucleus.json",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap-sass-3.3.7/sass/bootstrap/_panels.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/_nav-basic.scss",
 		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/src/entities/Icon.js",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_dropdown.override.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/structure/_footer.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap-sass-3.3.7/sass/bootstrap/mixins/_buttons.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_user-status-container.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_nav-basic.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap-sass-3.3.7/javascripts/bootstrap/button.js",
 		"/C/Users/mwatier/Repo/Bristol/templates/includes/layouts/base-layout.liquid",
@@ -794,7 +772,7 @@
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 52.0
 	},
 	"find_in_files":
 	{
@@ -817,6 +795,22 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"*",
+			"0",
+			"*  ",
+			" @include font-display(\"bold\");",
+			"regular",
+			"Bold",
+			"bold",
+			"regular",
+			"font-display(",
+			"btn-hover",
+			"hover",
+			".panel-title ",
+			"    .panel-title ",
+			"<h4 class=\"panel-title\">",
+			"-90deg",
+			"before",
 			"panel-header",
 			" <h4>>@{lipsum:5:words}</h4>",
 			"<a href=\"#.pdf\" class=\"link\" target=\"_blank\"</a>",
@@ -928,23 +922,7 @@
 			"dark",
 			"margin-top:-1",
 			"margin-top\"-1",
-			"font-display",
-			"medium-",
-			"*",
-			";",
-			"</p>",
-			"<p",
-			"p",
-			"even",
-			"no-bullets",
-			"list",
-			"f054",
-			"carousel-control",
-			"text-indicators",
-			"indecators",
-			"List with No Bullets",
-			"no-bul",
-			"xm"
+			"font-display"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -993,7 +971,7 @@
 						"translation.y": 180.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
@@ -1022,7 +1000,7 @@
 						"translation.y": 2151.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 27,
+					"stack_index": 25,
 					"type": "text"
 				},
 				{
@@ -1052,7 +1030,7 @@
 						"translation.y": 1231.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
@@ -1061,23 +1039,24 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2922,
+						"buffer_size": 6261,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2782,
-								2782
+								939,
+								939
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 270.0,
+						"translation.y": 77.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1109,7 +1088,7 @@
 						"translation.y": 1665.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
@@ -1117,14 +1096,14 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2304,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2304,
+								0,
 								0
 							]
 						],
@@ -1146,7 +1125,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1930,
+						"buffer_size": 4944,
 						"regions":
 						{
 							"match":
@@ -1185,6 +1164,66 @@
 									[
 										1853,
 										1862
+									],
+									[
+										2117,
+										2130
+									],
+									[
+										2328,
+										2341
+									],
+									[
+										2539,
+										2552
+									],
+									[
+										2750,
+										2763
+									],
+									[
+										3026,
+										3039
+									],
+									[
+										3235,
+										3248
+									],
+									[
+										3337,
+										3350
+									],
+									[
+										3488,
+										3501
+									],
+									[
+										3634,
+										3647
+									],
+									[
+										3877,
+										3890
+									],
+									[
+										4014,
+										4027
+									],
+									[
+										4255,
+										4268
+									],
+									[
+										4387,
+										4400
+									],
+									[
+										4663,
+										4694
+									],
+									[
+										4809,
+										4840
 									]
 								],
 								"scope": ""
@@ -1193,15 +1232,15 @@
 						"selection":
 						[
 							[
-								1386,
-								1386
+								4689,
+								4689
 							]
 						],
 						"settings":
 						{
 							"detect_indentation": false,
 							"line_numbers": false,
-							"output_tag": 2,
+							"output_tag": 4,
 							"result_base_dir": "",
 							"result_file_regex": "^([^ \t].*):$",
 							"result_line_regex": "^ +([0-9]+):",
@@ -1209,7 +1248,7 @@
 							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 456.0,
+						"translation.y": 2880.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 8,
@@ -1242,7 +1281,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
@@ -1251,15 +1290,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 797,
+						"buffer_size": 1201,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								436,
-								436
+								150,
+								150
 							]
 						],
 						"settings":
@@ -1271,11 +1310,40 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 9,
+					"file": ".sass-cache/79c50d697742f97fc26abd9806e1b64aa8267bf1/_collapse.override.scssc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15792,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
 					"file": "assets/scss/component/_charts.scss",
 					"semi_transient": false,
 					"settings":
@@ -1299,11 +1367,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 29,
+					"stack_index": 26,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 11,
 					"file": "assets/scss/vendor/bootstrap.override/_progress-bar.override.scss",
 					"semi_transient": false,
 					"settings":
@@ -1327,11 +1395,11 @@
 						"translation.y": 15.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 12,
 					"file": "docs/scripts/appfunctions.js",
 					"semi_transient": false,
 					"settings":
@@ -1355,11 +1423,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 30,
+					"stack_index": 27,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 13,
 					"file": "config.nucleus.json",
 					"semi_transient": false,
 					"settings":
@@ -1385,11 +1453,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 31,
+					"stack_index": 28,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 14,
 					"file": "assets/scss/base/included/_table_scrollable.scss",
 					"semi_transient": false,
 					"settings":
@@ -1415,11 +1483,11 @@
 						"translation.y": 4655.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 21,
+					"stack_index": 22,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 15,
 					"file": "assets/scss/component/_button.scss",
 					"semi_transient": false,
 					"settings":
@@ -1444,11 +1512,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 20,
+					"stack_index": 21,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 16,
 					"file": "assets/scss/vendor/bootstrap.override/_custom.scss",
 					"semi_transient": false,
 					"settings":
@@ -1474,24 +1542,24 @@
 						"translation.y": 1665.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 17,
 					"file": "assets/scss/component/_card.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 19589,
+						"buffer_size": 19669,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11553,
-								11553
+								241,
+								241
 							]
 						],
 						"settings":
@@ -1499,15 +1567,15 @@
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 231.0,
-						"translation.y": 7040.0,
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 18,
 					"file": "assets/scss/component/_carousel.scss",
 					"semi_transient": false,
 					"settings":
@@ -1533,11 +1601,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 25,
+					"stack_index": 23,
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 19,
 					"file": "assets/scss/component/_nav-primary.scss",
 					"semi_transient": false,
 					"settings":
@@ -1563,24 +1631,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 19,
+					"stack_index": 20,
 					"type": "text"
 				},
 				{
-					"buffer": 19,
+					"buffer": 20,
 					"file": "assets/scss/component/_nav-utility.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2243,
+						"buffer_size": 2255,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								385,
+								385
 							]
 						],
 						"settings":
@@ -1593,11 +1661,39 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 24,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 20,
+					"buffer": 21,
+					"file": "assets/scss/vendor/bootstrap.override/_pagination.override.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1845,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1276,
+								1276
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 341.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
 					"file": "assets/scss/styleguide.scss",
 					"semi_transient": false,
 					"settings":
@@ -1623,24 +1719,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
-					"buffer": 21,
+					"buffer": 23,
 					"file": "assets/scss/vendor/bootstrap.override/_collapse.override.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2770,
+						"buffer_size": 2796,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1864,
-								717
+								2796,
+								2796
 							]
 						],
 						"settings":
@@ -1649,160 +1745,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1147.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 22,
-					"file": "assets/scss/vendor/bootstrap.override/_dropdown.override.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 256,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 23,
-					"type": "text"
-				},
-				{
-					"buffer": 23,
-					"file": "assets/scss/component/_nav-social-buttons.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3791,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 18,
-					"type": "text"
-				},
-				{
 					"buffer": 24,
-					"file": "assets/scss/component/_searchbar.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 745,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
-					"type": "text"
-				},
-				{
-					"buffer": 25,
-					"file": "assets/scss/component/_user-status-container.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2465,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 26,
-					"file": "assets/scss/structure/_mobile-menu-toggle-container.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2188,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 15,
-					"type": "text"
-				},
-				{
-					"buffer": 27,
 					"file": "assets/scss/component/_nav-sub.scss",
 					"semi_transient": false,
 					"settings":
@@ -1828,11 +1778,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 26,
+					"stack_index": 24,
 					"type": "text"
 				},
 				{
-					"buffer": 28,
+					"buffer": 25,
 					"file": "assets/scss/base/_colors.scss",
 					"semi_transient": false,
 					"settings":
@@ -1844,8 +1794,8 @@
 						"selection":
 						[
 							[
-								226,
-								226
+								8258,
+								8276
 							]
 						],
 						"settings":
@@ -1853,6 +1803,35 @@
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3671.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "assets/scss/base/_fonts.kitchensink.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2234,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1144,
+								1021
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1862,49 +1841,24 @@
 					"type": "text"
 				},
 				{
-					"buffer": 29,
-					"file": "assets/scss/base/_fonts.kitchensink.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2229,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 28,
-					"type": "text"
-				},
-				{
-					"buffer": 30,
+					"buffer": 27,
 					"file": "assets/scss/base/_typography.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 12172,
+						"buffer_size": 12186,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1691,
+								1691
+							],
+							[
+								2428,
+								2428
 							]
 						],
 						"settings":
@@ -1914,27 +1868,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1388.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 22,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 31,
+					"buffer": 28,
 					"file": "assets/scss/base/_fonts.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1015,
+						"buffer_size": 1456,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1015,
-								1015
+								1157,
+								1157
 							]
 						],
 						"settings":
@@ -1943,10 +1897,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 18.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 11,
 					"type": "text"
 				}
 			]
@@ -1954,7 +1908,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 30.0
 	},
 	"input":
 	{
@@ -1991,7 +1945,7 @@
 	"project": "cvquality.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 55.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -2000,6 +1954,42 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"assads",
+				"assets\\scss\\component\\_ads.scss"
+			],
+			[
+				"toolkit",
+				"assets\\scss\\component\\_toolkit-sublisting.scss"
+			],
+			[
+				"collover",
+				"assets\\scss\\vendor\\bootstrap.override\\_collapse.override.scss"
+			],
+			[
+				"trumps",
+				"assets\\scss\\helpers\\_trumps.scss"
+			],
+			[
+				"paginat",
+				"assets\\scss\\vendor\\bootstrap.override\\_pagination.override.scss"
+			],
+			[
+				"navut",
+				"assets\\scss\\component\\_nav-utility.scss"
+			],
+			[
+				"cards",
+				"assets\\scss\\component\\_card.scss"
+			],
+			[
+				"",
+				"assets\\scss\\component\\_toolkit-sublisting.scss"
+			],
+			[
+				"asscolo",
+				"assets\\scss\\base\\_colors.scss"
+			],
 			[
 				"page",
 				"assets\\scss\\structure\\_page.scss"
@@ -2027,10 +2017,6 @@
 			[
 				"trump",
 				"assets\\scss\\helpers\\_trumps.scss"
-			],
-			[
-				"",
-				"untitled"
 			],
 			[
 				"card.scss",
@@ -2075,10 +2061,6 @@
 			[
 				"social",
 				"assets\\scss\\component\\_nav-social-buttons.scss"
-			],
-			[
-				"cards",
-				"assets\\scss\\component\\_card.scss"
 			],
 			[
 				"typogra",
