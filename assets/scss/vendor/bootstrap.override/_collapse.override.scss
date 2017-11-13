@@ -176,6 +176,10 @@
 *
 * @structure Accordion (simple the more link)
 * @section Advanced Containers
+* @modifiers
+*  .left-align      The "More" text will align to the left of the container it is in.  This is default for the accordion.
+*  .right-align     The "More" text will align to the right.
+*  .center-align     The "More" text will align to the center.
 * @markup
 *  <div class="panel-group accordion simple">
 *   <div class="panel" id="accordion" role="tablist" aria-multiselectable="true">
@@ -188,18 +192,7 @@
 *       </div>
 *       <div id="accordionsimple" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
 *         <div class="panel-body">
-*           <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
-*           <ul class="no-bullets">    
-*             <li style="page-break-inside: avoid">
-*                 <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
-*             </li>
-*             <li style="page-break-inside: avoid">
-*                 <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
-*             </li>
-*             <li style="page-break-inside: avoid">
-*                 <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
-*             </li>
-*           </ul>
+*           <p>@{lipsum:3:sentences}.</p>
 *         </div>
 *       </div>
 *   </div>
@@ -218,6 +211,7 @@
         background:none;
         border:none;
     }
+    .panel-title a{padding:.125em 0;}
     .panel-title a:before{
         // fa-minus-square-o
         content: "\f147";
@@ -246,5 +240,8 @@
     }
      .panel-title a:after{
         content:"more...";
-     }
+    }
+    &.left-align .panel-title a{text-align:left;}
+    &.center-align .panel-title a{text-align:center;}
+    &.right-align .panel-title a{text-align:right;}
 }

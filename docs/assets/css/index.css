@@ -6908,7 +6908,10 @@ a {
     text-decoration: underline; }
 
 p {
-  margin: 0 0 1em 0; }
+  margin: 0 0 .5em 0; }
+
+p + p {
+  margin-top: .5rem; }
 
 ol,
 ul {
@@ -7057,16 +7060,15 @@ ul.generic-list {
 *          </h2>
 *            <p>@{lipsum:3:sentences}
 *            </p>
-*            <a>more <i class="fa fa-arrow-right"></i></a>
 *        </dd>
 *        <dt><img src="@{image:100:100}" alt="..."></dt> 
 *        <dd>
 *            <h2>
 *          <a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a>
 *          </h2>
-*            <p>@{lipsum:3:sentences}
-*            </p>
-*            <a>more <i class="fa fa-arrow-right"></i></a>
+*            <p>@{lipsum:3:sentences}</p>
+*            <p>@{lipsum:3:sentences}</p>
+*           @{include:.accordion.simple}
 *        </dd>
 *    </dl>
 */
@@ -7855,6 +7857,10 @@ input {
 *
 * @structure Accordion (simple the more link)
 * @section Advanced Containers
+* @modifiers
+*  .left-align      The "More" text will align to the left of the container it is in.  This is default for the accordion.
+*  .right-align     The "More" text will align to the right.
+*  .center-align     The "More" text will align to the center.
 * @markup
 *  <div class="panel-group accordion simple">
 *   <div class="panel" id="accordion" role="tablist" aria-multiselectable="true">
@@ -7867,18 +7873,7 @@ input {
 *       </div>
 *       <div id="accordionsimple" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
 *         <div class="panel-body">
-*           <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
-*           <ul class="no-bullets">    
-*             <li style="page-break-inside: avoid">
-*                 <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
-*             </li>
-*             <li style="page-break-inside: avoid">
-*                 <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
-*             </li>
-*             <li style="page-break-inside: avoid">
-*                 <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
-*             </li>
-*           </ul>
+*           <p>@{lipsum:3:sentences}.</p>
 *         </div>
 *       </div>
 *   </div>
@@ -7892,6 +7887,8 @@ input {
 .accordion.simple .panel-heading, .accordion.simple .panel-body {
   background: none;
   border: none; }
+.accordion.simple .panel-title a {
+  padding: .125em 0; }
 .accordion.simple .panel-title a:before {
   content: "\f147";
   margin-right: 0.125; }
@@ -7912,6 +7909,12 @@ input {
   text-transform: lowercase; }
 .accordion.simple .panel-title a:after {
   content: "more..."; }
+.accordion.simple.left-align .panel-title a {
+  text-align: left; }
+.accordion.simple.center-align .panel-title a {
+  text-align: center; }
+.accordion.simple.right-align .panel-title a {
+  text-align: right; }
 
 /**
 * Navigaion between dynamic or category collected pages when the collection is above the count of 10.

@@ -111,8 +111,9 @@
             }
         }
         p {
-            margin: 0 0 1em 0;
+            margin: 0 0 .5em 0;
         }
+        p + p{margin-top:.5rem;}
         ol,
         ul {
             margin-bottom: 1em;
@@ -282,16 +283,15 @@ ul.generic-list{
 *          </h2>
 *            <p>@{lipsum:3:sentences}
 *            </p>
-*            <a>more <i class="fa fa-arrow-right"></i></a>
 *        </dd>
 *        <dt><img src="@{image:100:100}" alt="..."></dt> 
 *        <dd>
 *            <h2>
 *          <a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a>
 *          </h2>
-*            <p>@{lipsum:3:sentences}
-*            </p>
-*            <a>more <i class="fa fa-arrow-right"></i></a>
+*            <p>@{lipsum:3:sentences}</p>
+*            <p>@{lipsum:3:sentences}</p>
+*           @{include:.accordion.simple}
 *        </dd>
 *    </dl>
 */
