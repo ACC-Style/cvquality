@@ -9729,7 +9729,7 @@ input {
 *           <span class="points-possible">(18 possible points)</span>
 *           <span class="points-total">0</span>
 *       </div>
-*       @{include:.accordion}
+*       @{include:.accordion.basic}
 *  </div>
 */
 .box .accordion .panel-heading, .card .accordion .panel-heading {
