@@ -98,7 +98,7 @@
  *  @include monospace(300);
  */
 @import "https://use.fontawesome.com/972bb54a90.css";
-.icon-before:before, a.link:before, .accordion .panel-title a:before {
+.icon-before:before, a.link:before, .accordion .panel-title a:before, .k-map .k-marker:before {
   display: inline-block;
   margin-right: .5em;
   font: normal normal normal 14px/1 FontAwesome;
@@ -110,7 +110,7 @@
   width: 1.28571429em;
   text-align: center; }
 
-.icon-after:after, a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:after, .software-vendors .company:after, .accordion .panel-title a:after {
+.icon-after:after, a.link[target=_blank]:after, a.link[href^="http"]:after, a.link[href^="https"]:after, .software-vendors .company:after, .accordion .panel-title a:after, .multiselect.btn:after, .multiselect.button:after {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -6937,7 +6937,7 @@ address {
 
 img, a img {
   height: auto;
-  max-width: 100%; }
+  width: 100%; }
 
 .login-box ul li {
   /* per http://jira.beaconfire.us/browse/ACCQII-457 */
@@ -7001,8 +7001,18 @@ a.link[href^="tel:"]:before {
 a.link[href^="fax:"]:before {
   content: "\f1ac"; }
 
-ul.no-bullets, ul.no-bullets li {
-  list-style: none; }
+ul.no-bullets, ul.no-bullets li, ul.multiselect-container, ul.multiselect-container li, ul.generic-list, ul.generic-list li {
+  list-style: none;
+  list-style-type: none; }
+
+ul.multiselect-container, ul.generic-list {
+  margin: 0;
+  padding: 0; }
+  ul.multiselect-container, ul.multiselect-container li, ul.generic-list, ul.generic-list li {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0; }
 
 /**
 * Semantic List for content that shouldn't be bulleted or indented. 
@@ -7030,17 +7040,12 @@ ul.no-bullets, ul.no-bullets li {
 *    </ul>
 */
 ul.generic-list {
-  /*.layout-listing #colone ul.generic-list,*/
-  margin-top: 1em; }
+  margin-top: 1em;
+  margin-bottom: 1em; }
   ul.generic-list li {
-    /*.layout-listing #colone ul.generic-list li, */
-    margin: 0 0 1em;
-    overflow: auto;
+    margin: 0 0 .5em;
+    overflow: visible;
     list-style-type: none; }
-    ul.generic-list li img {
-      /*.layout-listing ul.generic-list li img, */
-      margin: 0 14px 6px 0;
-      float: left; }
   ul.generic-list > li + li {
     margin-top: .5rem;
     border-top: 1px dashed #d6d4d4;
@@ -9670,6 +9675,192 @@ input {
 *         chart.draw(data, google.charts.Bar.convertOptions(options));
 *     }
 */
+/**
+* Tooltips are the elements that expand from pins on the map
+*
+* @molecule Map Tooltip
+* @section Map > Tooltip
+* @markup
+*   <div role="tooltip" class="k-widget k-tooltip k-popup k-group k-reset" data-role="popup">
+*       <div class="k-tooltip-content">
+*           <strong>West Valley Medical Center</strong>
+*           <br> 1717 Arlington Avenue<br>
+*            Caldwell, ID &nbsp; 83605<br>
+*           <div class="mapsealscontainer">
+*               <div class="mapsealbox">
+*                   <img src="http://accreditation.acc.org/images/facilitymap/CP.png" alt="" class="mapseal">
+*                   <br>2014</div>
+*               <div class="mapsealbox">
+*                   <img src="http://accreditation.acc.org/images/facilitymap/AF.png" alt="" class="mapseal">
+*                   <br>2016
+*               </div>
+*               <div class="clearfloat"></div>
+*           </div>
+*       </div>
+*       <div class="k-callout k-callout-s" style="left: 140px;"></div>
+*   </div>
+*/
+/**
+* Result lists is the list view of all of the pins on the map
+*
+* @molecule Map Result List
+* @section Map > Result List
+* @markup
+*    <ul class="result-list">
+*        <li class="address">
+*            <div class="name">@{lipsum:4:words}</div> 
+*            <div class="address-line">@{lipsum:4:words}</div>
+*            <div class="address-line">@{lipsum:4:words}</div>
+*        </li>
+*    </ul>
+*/
+ul.result-list,
+ul.result-list li {
+  list-style: none;
+  margin: 0; }
+ul.result-list .address {
+  padding: .25rem .5rem;
+  border: 1px solid #d6d4d4;
+  background-color: #d6d4d4; }
+  ul.result-list .address .name {
+    line-height: 1.2;
+    color: #047294;
+    margin: 0;
+    margin-bottom: .25em;
+    font-size: 18px; }
+  ul.result-list .address .address-line {
+    line-height: 1.25;
+    font-size: 16px; }
+  ul.result-list .address:hover {
+    background-color: #6f6b6f;
+    border-right: #e87d1e 10px solid;
+    padding-right: 10px; }
+    ul.result-list .address:hover .address-line, ul.result-list .address:hover .name {
+      color: #fafafa; }
+ul.result-list .address + .address {
+  margin-top: 1px; }
+
+.kendo-map .searchbar.box {
+  border: 1px #6f6b6f solid;
+  border-top: 2px solid #e87d1e;
+  margin: -1px 0 0; }
+
+.map-container {
+  width: 100%;
+  border-bottom: 2px solid #e87d1e; }
+  .map-container:after {
+    display: table;
+    clear: both;
+    content: ""; }
+  .map-container,
+  .map-container .map,
+  .map-container .result-list-container {
+    height: 600px;
+    max-height: 75vh;
+    transition: max-height 1s ease-out;
+    -webkit-transition: max-height 1s ease-out;
+    -moz-transition: max-height 1s ease-out;
+    transition: width 1s ease-out;
+    -webkit-transition: width 1s ease-out;
+    -moz-transition: width 1s ease-out;
+    background-color: #6f6b6f; }
+  .map-container .map {
+    border: 1px #6f6b6f solid;
+    float: left;
+    width: 100%; }
+    .results .map-container .map {
+      width: 75%; }
+  .map-container .result-list-container {
+    border: 1px #6f6b6f solid;
+    border-left: 0 none;
+    display: block;
+    height: 600px;
+    overflow: hidden;
+    width: 0; }
+    .results .map-container .result-list-container {
+      width: 25%; }
+    .map-container .result-list-container .map-toggle .active {
+      background-color: #e87d1e;
+      color: #fafafa; }
+
+/**
+* Multiselect
+*
+* @molecule Map Multi Select
+* @section Map > Dropdown
+* @markup
+*   <ul class="multiselect-container dropdown-menu">
+*       <li class="multiselect-item multiselect-all"><a tabindex="0" class="multiselect-all"><label class="checkbox"><input type="checkbox" name="select-all" value="multiselect-all">  Select all</label></a></li>
+*       <li class=""><a tabindex="0"><label class="checkbox"><input type="checkbox" value="@{lipsum:2:words}"> @{lipsum:2:words}</label></a></li>
+*       <li class=""><a tabindex="0"><label class="checkbox"><input type="checkbox" value="@{lipsum:2:words}"> @{lipsum:2:words}</label></a></li>
+*       <li class="active"><a tabindex="0"><label class="checkbox"><input type="checkbox" value="@{lipsum:2:words}"> @{lipsum:2:words}</label></a></li>
+*       <li class="active"><a tabindex="0"><label class="checkbox"><input type="checkbox" value="@{lipsum:2:words}"> @{lipsum:2:words}</label></a></li>
+*   </ul>
+ */
+ul.multiselect-container li a {
+  padding: .125em .125em; }
+  ul.multiselect-container li a > label {
+    padding: .25em .125em .25em 2em; }
+ul.multiselect-container li.active a {
+  background-color: #ffe292;
+  color: #2f2f2f; }
+
+.k-map .k-marker {
+  font-size: 40px;
+  color: #e87d1e;
+  background-image: none !important;
+  text-align: center;
+  overflow: visible; }
+  .k-map .k-marker :hover {
+    color: #ffc425; }
+  .k-map .k-marker:before {
+    margin: 0;
+    text-align: center;
+    vertical-align: bottom;
+    display: inline;
+    height: 40px;
+    width: 28px;
+    line-height: 40px;
+    margin: 0;
+    content: "\f041"; }
+.k-map.zoom-8 .k-marker {
+  font-size: 30px; }
+.k-map.zoom-7 .k-marker {
+  font-size: 20px; }
+.k-map.zoom-6 .k-marker {
+  font-size: 14px; }
+.k-map.zoom-5 .k-marker {
+  font-size: 11px; }
+.k-map.zoom-4 .k-marker, .k-map.zoom-3 .k-marker, .k-map.zoom-2 .k-marker, .k-map.zoom-1 .k-marker {
+  font-size: 4px; }
+  .k-map.zoom-4 .k-marker:before, .k-map.zoom-3 .k-marker:before, .k-map.zoom-2 .k-marker:before, .k-map.zoom-1 .k-marker:before {
+    line-height: 80px;
+    content: "\f111"; }
+
+.multiselect.btn .caret, .multiselect.button .caret {
+  display: none; }
+.multiselect.btn:after, .multiselect.button:after {
+  content: "\f0d7"; }
+
+.k-tooltip-content {
+  min-width: 200px; }
+
+.mapsealscontainer {
+  margin: .5rem .25rem;
+  display: table;
+  width: 100%; }
+  .mapsealscontainer .mapsealbox {
+    display: table-cell;
+    padding: 0 .5rem; }
+    .mapsealscontainer .mapsealbox .mapseal {
+      width: 100%;
+      max-width: 100px;
+      margin: 0 auto; }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), not all {
+  .k-map .k-marker:before {
+    height: 80px;
+    width: 56px; } }
 /* Legacy Support */
 /**
  * ".box"  Boxes are a simple decorator that has internal padding, a colored background, and fills its parent container. Boxes are a simpler version of .cards when the structured DOM is either unnessary or would conflict with the internal content.
@@ -10864,11 +11055,11 @@ body, .body {
 * @section Helpers > trumps
 * @mixin No Margin
 * @example
-*  class="m-0"	will remove the margin on all sides
-*  class="m-l-0"	 will remove the margin on the left
-*  class="m-r-0" 	will remove the margin on the right
-*  class="m-t-0" 	will remove the margin on the top
-*  class="m-b-0" 	will remove the margin on the bottom 
+*  class="m-0"      will remove the margin on all sides
+*  class="m-l-0"    will remove the margin on the left
+*  class="m-r-0"    will remove the margin on the right
+*  class="m-t-0"    will remove the margin on the top
+*  class="m-b-0"    will remove the margin on the bottom 
 * 
 */
 .m-0, .no-margin, .m-l-0 {
@@ -10902,5 +11093,27 @@ body, .body {
   width: 100%; }
   .input-group.expanded > * {
     width: 100%; }
+
+/**
+* Content padding often you will need to inject some spacing into the left and right of a container so the content and container do not collide. 
+* ~~ Open the example to see the other class and how they will effect the design ~~
+*
+* @section Helpers > trumps
+* @mixin Content Padding
+* @example
+*  class="content-padding"              will add a full gutter space on the left and right inside a container
+*  class="content-padding half"         will add a 1/2 the  gutter space on the left and right inside a container
+*  class="content-padding quarter"      will add a 1/4 gutter space on the left and right inside a container
+* 
+*/
+.content-padding {
+  padding-left: 18px;
+  padding-right: 18px; }
+  .content-padding.half {
+    padding-left: 9px;
+    padding-right: 9px; }
+  .content-padding.quarter {
+    padding-left: 4.5px;
+    padding-right: 4.5px; }
 
 /*# sourceMappingURL=index.css.map */

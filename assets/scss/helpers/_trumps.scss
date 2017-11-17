@@ -5,40 +5,40 @@
 * @section Helpers > trumps
 * @mixin No Margin
 * @example
-*  class="m-0"	will remove the margin on all sides
-*  class="m-l-0"	 will remove the margin on the left
-*  class="m-r-0" 	will remove the margin on the right
-*  class="m-t-0" 	will remove the margin on the top
-*  class="m-b-0" 	will remove the margin on the bottom 
+*  class="m-0"      will remove the margin on all sides
+*  class="m-l-0"    will remove the margin on the left
+*  class="m-r-0"    will remove the margin on the right
+*  class="m-t-0"    will remove the margin on the top
+*  class="m-b-0"    will remove the margin on the bottom 
 * 
 */
 .no-margin{}
 .m-0{@extend .no-margin; }
 .m-0,.m-l-0{
-	margin-left:0 !important;
+    margin-left:0 !important;
 }
 .m-0,.m-r-0{
-	margin-right:0 !important;
+    margin-right:0 !important;
 }
 .m-0,.m-t-0{
-	margin-top:0 !important;
+    margin-top:0 !important;
 }
 .m-0,.m-b-0{
-	margin-bottom:0 !important;
+    margin-bottom:0 !important;
 }
 .no-margin{@extend .m-0;}
 
 .p-0,.p-l-0{
-	padding-left:0 !important;
+    padding-left:0 !important;
 }
 .p-0,.p-r-0{
-	padding-right:0 !important;
+    padding-right:0 !important;
 }
 .p-0,.p-t-0{
-	padding-top:0 !important;
+    padding-top:0 !important;
 }
 .p-0,.p-b-0{
-	padding-bottom:0 !important;
+    padding-bottom:0 !important;
 }
 .no-padding{@extend .p-0;}
 
@@ -48,8 +48,32 @@
 }
 .expanded{ width:100%;}
 .input-group.expanded{
-	width:100%;
-	 >*{
-	 	width:100%;
-	 }
-	}
+    width:100%;
+     >*{
+        width:100%;
+     }
+    }
+/**
+* Content padding often you will need to inject some spacing into the left and right of a container so the content and container do not collide. 
+* ~~ Open the example to see the other class and how they will effect the design ~~
+*
+* @section Helpers > trumps
+* @mixin Content Padding
+* @example
+*  class="content-padding"              will add a full gutter space on the left and right inside a container
+*  class="content-padding half"         will add a 1/2 the  gutter space on the left and right inside a container
+*  class="content-padding quarter"      will add a 1/4 gutter space on the left and right inside a container
+* 
+*/
+.content-padding{
+    padding-left:$grid-gutter-width;
+    padding-right:$grid-gutter-width;
+    &.half{
+        padding-left:$grid-gutter-width/2;
+        padding-right:$grid-gutter-width/2;
+    }
+    &.quarter{
+        padding-left:$grid-gutter-width/4;
+        padding-right:$grid-gutter-width/4;
+    }
+}

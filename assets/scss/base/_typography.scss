@@ -138,7 +138,7 @@
         }
         img,a img {
             height: auto;
-            max-width: 100%;
+            width: 100%;
         }
 
      .login-box ul li {
@@ -222,9 +222,14 @@ a.link{
 }
 
 
-ul.no-bullets{
-    &, li{list-style:none;}
+ul.no-bullets,ul.multiselect-container,ul.generic-list{
+    &, li{list-style:none;list-style-type:none;}
 }
+ul.multiselect-container,ul.generic-list{
+    margin:0;padding:0;
+    &,li{margin-left:0;margin-right:0;padding-left:0;padding-right:0;}
+}
+
 
 /**
 * Semantic List for content that shouldn't be bulleted or indented. 
@@ -253,18 +258,12 @@ ul.no-bullets{
 */
 
 ul.generic-list{
-    /*.layout-listing #colone ul.generic-list,*/
     margin-top: 1em;
-    li {
-        /*.layout-listing #colone ul.generic-list li, */
-        margin: 0 0 1em;
-        overflow: auto;
+    margin-bottom: 1em;
+    li {       
+        margin: 0 0 .5em;
+        overflow: visible;
         list-style-type: none;
-        img {
-            /*.layout-listing ul.generic-list li img, */
-            margin: 0 14px 6px 0;
-            float: left;
-        }
     }
     >li + li{ margin-top:.5rem; border-top:1px dashed $warm-grey-light; padding-top:.5rem;}
 }
