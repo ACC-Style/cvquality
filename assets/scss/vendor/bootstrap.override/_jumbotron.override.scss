@@ -12,13 +12,15 @@
 *  .soft				softens the edges of the triangles in the background 
 *  .blur 				blurs the back to a smooth gradient
 * @markup
-*  <div class="jumbotron blue-grey">
-*    	<div class="container">
-*  			<h1>I am a Jumbotron!</h1>
-*  			<p>@{lipsum:2:sentence}</p>
-*  			<p><a class="btn" href="#" role="button">Learn more</a></p>
+*  <div class="container">
+*  		<div class="jumbotron blue-grey">
+*    		<div class="container">
+*  				<h1>I am a Jumbotron!</h1>
+*  				<p>@{lipsum:2:sentence}</p>
+*  				<p><a class="btn" href="#" role="button">Learn more</a></p>
+*  			</div>
 *  		</div>
-*  </div>
+ *  </div>
 **/
 .jumbotron{
 	position:relative;
@@ -31,10 +33,6 @@
 		background: $warm-grey-dark; color:$off-white; font-size:ms(4); padding:.2em .75em;
 		&:hover{background:$off-black; color:#fff;}
 	}
-	&.radius{
-		border-radius:10px;
-		margin:.5rem;
-	}
 	&:before{
 		content: "";
 		position: absolute;
@@ -44,20 +42,21 @@
 		bottom:0;
 		z-index: -1;
 		display: block;
-		background-image: url("../images/pattern-grey.svg");
-		background-attachment: fixed;
-		background-repeat: no-repeat;
-		background-size: 100 100;	
+		background: url("../images/pattern-grey.png") no-repeat center center;
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
 	}
 
 	&.orange-blue:before{
-		background-image: url("../images/pattern-orange-blue.svg");
+		background-image: url("../images/pattern-orange-blue.png");
 	}
 	&.orange-grey:before{
-		background-image: url("../images/pattern-orange-grey.svg");
+		background-image: url("../images/pattern-orange-grey.png");
 	}
 	&.blue-grey:before{
-		background-image: url("../images/pattern-blue-grey.svg");
+		background-image: url("../images/pattern-blue-grey.png");
 	}
 
 	&.soft:before{
@@ -91,4 +90,23 @@
 	p{
 		@include font("normal");
 	}
+}
+
+/*
+* Jumbotron Fluid go full width  with in the page layout and are great at the head of page content from edge to edge of the page.
+*
+* @molecule Bootstrap Jumbotron Fluid
+* @section Bootstrap > Jumbotron
+* @markup
+*  <div class="jumbotron orange-blue jumbotron-fluid">
+*    	<div class="container">
+*  			<h1>I am a Jumbotron Fluid!</h1>
+*  			<p>@{lipsum:2:sentence}</p>
+*  			<p><a class="btn" href="#" role="button">Learn more</a></p>
+*  		</div>
+*  </div>
+**/
+.jumbotron-fluid{
+	&.jumbotron{border-radius: 0;}
+	#layout .page-content & {margin: -24px -25px 1rem;}
 }

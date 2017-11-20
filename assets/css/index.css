@@ -6276,13 +6276,15 @@ blockquote {
 *  .soft				softens the edges of the triangles in the background 
 *  .blur 				blurs the back to a smooth gradient
 * @markup
-*  <div class="jumbotron blue-grey">
-*    	<div class="container">
-*  			<h1>I am a Jumbotron!</h1>
-*  			<p>@{lipsum:2:sentence}</p>
-*  			<p><a class="btn" href="#" role="button">Learn more</a></p>
+*  <div class="container">
+*  		<div class="jumbotron blue-grey">
+*    		<div class="container">
+*  				<h1>I am a Jumbotron!</h1>
+*  				<p>@{lipsum:2:sentence}</p>
+*  				<p><a class="btn" href="#" role="button">Learn more</a></p>
+*  			</div>
 *  		</div>
-*  </div>
+ *  </div>
 **/
 .jumbotron {
   position: relative;
@@ -6301,9 +6303,6 @@ blockquote {
     .jumbotron .btn:hover, .jumbotron .button:hover {
       background: #2f2f2f;
       color: #fff; }
-  .jumbotron.radius {
-    border-radius: 10px;
-    margin: .5rem; }
   .jumbotron:before {
     content: "";
     position: absolute;
@@ -6313,16 +6312,17 @@ blockquote {
     bottom: 0;
     z-index: -1;
     display: block;
-    background-image: url("../images/pattern-grey.svg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100 100; }
+    background: url("../images/pattern-grey.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
   .jumbotron.orange-blue:before {
-    background-image: url("../images/pattern-orange-blue.svg"); }
+    background-image: url("../images/pattern-orange-blue.png"); }
   .jumbotron.orange-grey:before {
-    background-image: url("../images/pattern-orange-grey.svg"); }
+    background-image: url("../images/pattern-orange-grey.png"); }
   .jumbotron.blue-grey:before {
-    background-image: url("../images/pattern-blue-grey.svg"); }
+    background-image: url("../images/pattern-blue-grey.png"); }
   .jumbotron.soft:before {
     -webkit-filter: blur(3px);
     -moz-filter: blur(3px);
@@ -6351,6 +6351,25 @@ blockquote {
   .jumbotron p {
     font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
     font-weight: 400; }
+
+/*
+* Jumbotron Fluid go full width  with in the page layout and are great at the head of page content from edge to edge of the page.
+*
+* @molecule Bootstrap Jumbotron Fluid
+* @section Bootstrap > Jumbotron
+* @markup
+*  <div class="jumbotron orange-blue jumbotron-fluid">
+*    	<div class="container">
+*  			<h1>I am a Jumbotron Fluid!</h1>
+*  			<p>@{lipsum:2:sentence}</p>
+*  			<p><a class="btn" href="#" role="button">Learn more</a></p>
+*  		</div>
+*  </div>
+**/
+.jumbotron-fluid.jumbotron {
+  border-radius: 0; }
+#layout .page-content .jumbotron-fluid {
+  margin: -24px -25px 1rem; }
 
 /*
 * Forms are just a pure version of bootstrap where you can see more exapnded documentation https://bootstrapdocs.com/v3.3.6/docs/css/#forms. 
@@ -10511,8 +10530,8 @@ body, .body {
  *          <div class="row">@{include:.nav-primary}</div>
  *          <div id="layout">
  *              <div class="page-content full-screen">
+ *                  @{include:.jumbotron-fluid}
  *                  <div class="row">
- *                  <div class="col-lg-12">@{include:.jumbotron}</div>
  *                      <div class="col-lg-4">
  *                          @{include:.featured.card}</div>
  *                      <div class="col-lg-8">
