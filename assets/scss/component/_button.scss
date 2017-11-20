@@ -65,3 +65,39 @@
 	@extend .btn;
 }
 
+/**
+ * icon buttons are a slightly more complicated DOM so they will show up properly in screen readers. 
+ *
+ * @atom .btn.icon-btn
+ * @section Buttons & Links
+ * @markup
+ *		<a class="btn icon-btn"><i class="fa fa-print"></i><span class="text">Print</span></a>
+ *		<a class="btn icon-btn"><i class="fa fa-download"></i><span class="text">Download</span></a>
+
+ */
+
+.btn.icon-btn{
+	height: ms(7);
+		width:  ms(7);
+		padding: ( ms(7) - ms(3) )/2;
+		display: inline-block;
+		text-align: center;
+		background-color: $off-white;
+		.text{display:none}
+		i{
+			display: inline-block;
+			color: $scrub-teal;
+		    font-size: ms(3);
+		    text-align: center;
+		    line-height: 1;
+		    width: ms(3);
+		    height: ms(3);
+		}
+		&:hover{
+			background-color:$soft-grey;
+			i{
+				color: $scrub-teal-dark;
+			}
+		}
+
+}

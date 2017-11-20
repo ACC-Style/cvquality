@@ -43,7 +43,8 @@
 */
 
 ul.result-list {
-
+    overflow-y: scroll;
+    overflow-x: hidden;
 
     &,
     li {
@@ -51,9 +52,11 @@ ul.result-list {
         margin: 0;
     }
     .address {
-
+        background-color:$warm-grey-light;
         padding: .25rem .5rem;
-        border: 1px solid $warm-grey-light;
+        border: 1px solid $soft-grey;
+        cursor: pointer;
+
         .name {
             line-height: 1.2;
             color: $scrub-teal-dark;
@@ -65,13 +68,13 @@ ul.result-list {
             line-height: 1.25;
             font-size: ms(1);
         }
-        background-color:$warm-grey-light;
         &:hover {
-            background-color: $warm-grey-dark;
-           
+            background-color: $warm-grey-dark;  
+            border-color:$off-white;        
             border-right: $orange-dark 10px solid;
             padding-right: 10px;
-            .address-line,.name{color:$off-white;}
+            .address-line{color: $orange-light;}
+            .name{color:$off-white;}
         }
     }
     .address+.address {
@@ -84,6 +87,9 @@ ul.result-list {
         border: 1px $warm-grey-dark solid;
         border-top: 2px solid $orange-dark;
         margin: -1px 0 0;
+    }
+    a.btn.map-toggle {
+       &.active{@include orange-gradient; color:$off-black;}
     }
 }
 
@@ -113,7 +119,10 @@ ul.result-list {
         float: left;
         width: 100%;
         .results & {
-            width: 75%;
+            width: 50%;
+            @include bp(md){
+                width:75%;
+            }
         }
     }
     .result-list-container {
@@ -124,11 +133,12 @@ ul.result-list {
         overflow: hidden;
         width: 0;
         .results & {
-            width: 25%;
+            width: 50%;
+            @include bp(md){
+                width:25%;
+            }
         }
-        .map-toggle {
-           .active{background-color:$orange-dark; color:$off-white;}
-        }
+       
     }
 }
 

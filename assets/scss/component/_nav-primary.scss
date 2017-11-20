@@ -132,14 +132,14 @@
         min-width: 100%;
         left:auto;
         right:0;
-        background-color:mix($warm-grey-dark,$scrub-teal);
+        background-color:mix($scrub-teal, $off-black, 70%);
         
         .dropdown-item{
             color:$off-white;
             padding-right:8em;
             &:hover{
                 color:white;
-                background-color:$orange-dark;
+                 background-color:mix($scrub-teal, $off-black, 40%);
                 text-decoration: none;
             }
             small{
@@ -151,10 +151,10 @@
                  right:1rem;
             }
             &.alt{
-                background-color: $warm-grey-dark;
+                background-color:$orange-dark;
                 
                 &:hover{
-                    background-color:$off-black;
+                   background-color:mix($orange-dark, $off-black, 40%);
                 }
             }
         }
