@@ -5,64 +5,64 @@
  * @section Buttons & Links
  * @markup
  *  <div>
- *		<button type="button" class="btn ">Undecorated</button>
- *		<button type="button" class="btn btn-default">Default</button>
- *		<button type="button" class="btn btn-primary">Primary</button>
- *		<button type="button" class="btn btn-secondary">Secondary</button>
- *		<button type="button" class="btn btn-success">Success</button>
- *		<button type="button" class="btn btn-info">Info</button>
- *		<button type="button" class="btn btn-warning">Warning</button>
- *		<button type="button" class="btn btn-danger">Danger</button>
- *		<button type="button" class="btn btn-link">Link</button>
- *	</div>
+ *      <button type="button" class="btn ">Undecorated</button>
+ *      <button type="button" class="btn btn-default">Default</button>
+ *      <button type="button" class="btn btn-primary">Primary</button>
+ *      <button type="button" class="btn btn-secondary">Secondary</button>
+ *      <button type="button" class="btn btn-success">Success</button>
+ *      <button type="button" class="btn btn-info">Info</button>
+ *      <button type="button" class="btn btn-warning">Warning</button>
+ *      <button type="button" class="btn btn-danger">Danger</button>
+ *      <button type="button" class="btn btn-link">Link</button>
+ *  </div>
  */
 .btn { 
-	border:0 none transparent;
+    border:0 none transparent;
 }
 .btn-block{display:inline-block;}
 .btn.btn-link{
-	background:none transparent;
-	border:none transparent 0px;
+    background:none transparent;
+    border:none transparent 0px;
 }
 .btn.btn-outline-primary,.btn.btn-outline-secondary{
-	background:none transparent;
+    background:none transparent;
 }
 .btn.btn-outline-primary{
-	border-color:$scrub-teal;
-	color:$scrub-teal;
-	background:none;
-	&:visited,&:hover{
-		border-color:$scrub-teal-dark;
-		color:$scrub-teal-dark;
-		background-color: rgba(255,255,255,.2);
-	}
+    border-color:$scrub-teal;
+    color:$scrub-teal;
+    background:none;
+    &:visited,&:hover{
+        border-color:$scrub-teal-dark;
+        color:$scrub-teal-dark;
+        background-color: rgba(255,255,255,.2);
+    }
 }
 .btn.btn-outline-secondary{
-	border-color:$warm-grey-dark;
-	color:$warm-grey-dark;
-	background:none;
-	&:visited,&:hover{
-		border-color:$off-black;
-		color:$off-black;
-		background-color: rgba(255,255,255,.2);
-	}
+    border-color:$warm-grey-dark;
+    color:$warm-grey-dark;
+    background:none;
+    &:visited,&:hover{
+        border-color:$off-black;
+        color:$off-black;
+        background-color: rgba(255,255,255,.2);
+    }
 }
 
 .btn.btn-secondary,.btn.btn-default{
-	@include warmgrey-gradient;
-	&:visited, &{color:$off-black;}
+    @include warmgrey-gradient;
+    &:visited, &{color:$off-black;}
 
-	&:hover,&:active,&:focus{@include warmgrey-gradient-reverse;color:#000;}
+    &:hover,&:active,&:focus{@include warmgrey-gradient-reverse;color:#000;}
 }
 
 .btn.btn-primary {
-	@include teal-gradient;
-	&:visited{color:$off-white;}
-	&:hover{@include teal-gradient-reverse;}
+    @include teal-gradient;
+    &:visited{color:$off-white;}
+    &:hover{@include teal-gradient-reverse;}
 }
 
 .button{
-	@extend .btn;
+    @extend .btn;
 }
 
 /**
@@ -71,33 +71,32 @@
  * @atom .btn.icon-btn
  * @section Buttons & Links
  * @markup
- *		<a class="btn icon-btn"><i class="fa fa-print"></i><span class="text">Print</span></a>
- *		<a class="btn icon-btn"><i class="fa fa-download"></i><span class="text">Download</span></a>
-
+ *  <a class="btn icon-btn"><i class="fa fa-print"></i><span class="text">Print</span></a>
+ *  <a class="btn icon-btn"><i class="fa fa-download"></i><span class="text">Download</span></a>
  */
 
 .btn.icon-btn{
-	height: ms(7);
-		width:  ms(7);
-		padding: ( ms(7) - ms(3) )/2;
-		display: inline-block;
-		text-align: center;
-		background-color: $off-white;
-		.text{display:none}
-		i{
-			display: inline-block;
-			color: $scrub-teal;
-		    font-size: ms(3);
-		    text-align: center;
-		    line-height: 1;
-		    width: ms(3);
-		    height: ms(3);
-		}
-		&:hover{
-			background-color:$soft-grey;
-			i{
-				color: $scrub-teal-dark;
-			}
-		}
+    height: ms(7);
+        width:  ms(7);
+        padding: ( ms(7) - ms(3) )/2;
+        display: inline-block;
+        text-align: center;
+        background-color: $off-white;
+        .text{display:none}
+        i{
+            display: inline-block;
+            color: $scrub-teal;
+            font-size: ms(3);
+            text-align: center;
+            line-height: 1;
+            width: ms(3);
+            height: ms(3);
+        }
+        &:hover{
+            background-color:$soft-grey;
+            i{
+                color: $scrub-teal-dark;
+            }
+        }
 
 }

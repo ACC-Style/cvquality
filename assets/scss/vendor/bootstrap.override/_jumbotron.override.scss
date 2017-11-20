@@ -1,0 +1,93 @@
+/*
+* Jumbotron are hero places that can have larger marketing text with a colored background.
+* By default Jumbotron is dark text on a light grey background the modifiers add some predefined colored backgrounds using the brand colors. The backgrounds were generated here https://qrohlf.com/trianglify-generator/.
+*
+* @molecule Bootstrap Jumbotron
+* @section Bootstrap > Jumbotron
+* @modifiers
+*  .orange-blue 		orange to blue background
+*  .orange-grey 		orange to grey background
+*  .blue-grey 			blue to grey background
+*  .radius 				makes the corners round and gives some spacing so it can be placed inside a column
+*  .soft				softens the edges of the triangles in the background 
+*  .blur 				blurs the back to a smooth gradient
+* @markup
+*  <div class="jumbotron blue-grey">
+*    	<div class="container">
+*  			<h1>I am a Jumbotron!</h1>
+*  			<p>@{lipsum:1:sentence}</p>
+*  			<p><a class="btn" href="#" role="button">Learn more</a></p>
+*  		</div>
+*  </div>
+**/
+.jumbotron-kitchensink{}
+.jumbotron{
+	position:relative;
+	overflow:hidden;
+	background:none;
+	h1{font-size:ms(12);}
+	p{font-size:ms(3);}
+	.btn{ 
+		background: $warm-grey-dark; color:$off-white; font-size:ms(4); padding:.2em .75em;
+		&:hover{background:$off-black; color:#fff;}
+	}
+	&.radius{
+		border-radius:10px;
+		margin:.5rem;
+	}
+	&:before{
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		top:0;
+		bottom:0;
+		z-index: -1;
+		display: block;
+		background-image: url("../images/pattern-grey.svg");
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: 100% 100vh;	
+	}
+
+	&.orange-blue:before{
+		background-image: url("../images/pattern-orange-blue.svg");
+	}
+	&.orange-grey:before{
+		background-image: url("../images/pattern-orange-grey.svg");
+	}
+	&.blue-grey:before{
+		background-image: url("../images/pattern-blue-grey.svg");
+	}
+
+	&.soft:before{
+		-webkit-filter: blur(3px);
+		-moz-filter: blur(3px);
+		-o-filter: blur(3px);
+		-ms-filter: blur(3px);
+		filter: blur(3px);
+		top:-3px;
+		bottom:-3px;
+		left:-3px;
+		right:-3px;
+	}
+	&.blur:before{
+		-webkit-filter: blur(25px);
+		-moz-filter: blur(25px);
+		-o-filter: blur(25px);
+		-ms-filter: blur(25px);
+		filter: blur(25px);
+		top:-25px;
+		bottom:-25px;
+		left:-25px;
+		right:-25px;
+	}
+	.container{
+	padding-left:1rem;
+	padding-right:1rem;
+	max-width:980px
+	}
+	p{
+		@include font("normal");
+	}
+}
