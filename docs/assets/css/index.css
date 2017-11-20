@@ -6272,14 +6272,14 @@ blockquote {
 *  .orange-blue 		orange to blue background
 *  .orange-grey 		orange to grey background
 *  .blue-grey 			blue to grey background
-*  .radius 				makes the corners round and gives some spacing so it can be placed inside a column
+*  .jumbotron-fluid		removes the border radius and space from the sides so it goes full width.
 *  .soft				softens the edges of the triangles in the background 
 *  .blur 				blurs the back to a smooth gradient
 * @markup
 *  <div class="jumbotron blue-grey">
 *    	<div class="container">
 *  			<h1>I am a Jumbotron!</h1>
-*  			<p>@{lipsum:1:sentence}</p>
+*  			<p>@{lipsum:2:sentence}</p>
 *  			<p><a class="btn" href="#" role="button">Learn more</a></p>
 *  		</div>
 *  </div>
@@ -6287,7 +6287,8 @@ blockquote {
 .jumbotron {
   position: relative;
   overflow: hidden;
-  background: none; }
+  background: none;
+  z-index: 1; }
   .jumbotron h1 {
     font-size: 58px; }
   .jumbotron p {
@@ -6315,7 +6316,7 @@ blockquote {
     background-image: url("../images/pattern-grey.svg");
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 100% 100vh; }
+    background-size: 100 100; }
   .jumbotron.orange-blue:before {
     background-image: url("../images/pattern-orange-blue.svg"); }
   .jumbotron.orange-grey:before {
@@ -6343,6 +6344,7 @@ blockquote {
     left: -25px;
     right: -25px; }
   .jumbotron .container {
+    z-index: 3;
     padding-left: 1rem;
     padding-right: 1rem;
     max-width: 980px; }
@@ -10493,6 +10495,42 @@ body, .body {
  *          </div></div>
  *      </div>
  *       @{include:#footer}
+ *  </div>
+ *  </div>
+ */
+/**
+ * Primary pages can have more graphic layouts with adding the jumbotron.
+ * 
+ * @layouts Jumbotron Page
+ * @section Layouts
+ * @flag full-width
+ * @markup
+ *  <div class="body">
+ *      <div class="wrapper container-fluid">
+ *           @{include:#header}
+ *          <div class="row">@{include:.nav-primary}</div>
+ *          <div id="layout">
+ *              <div class="page-content full-screen">
+ *                  <div class="row">
+ *                  <div class="col-lg-12">@{include:.jumbotron}</div>
+ *                      <div class="col-lg-4">
+ *                          @{include:.featured.card}</div>
+ *                      <div class="col-lg-8">
+ *                          @{include:.carousel}
+ *                          @{include:.leaderboard-lg}
+ *                      </div>
+ *                  </div>
+ *                  <div class="row vh_40">
+ *                      <div class="col-lg-8 col-md-7">@{include:.undecorated.card}</div> 
+ *                      <div class="col-lg-4 col-md-5">@{include:.highlighted.card}</div>
+ *                  </div><div class="row vh_40">
+ *                      <div class="col-lg-4 col-md-5">@{include:.highlighted.card}</div>
+ *                      <div class="col-lg-8 col-md-7">@{include:.undecorated.card}</div>
+ *                  </div>
+ *              </div>           
+ *          </div>
+ *       @{include:#footer}
+ *      </div>
  *  </div>
  *  </div>
  */

@@ -8,23 +8,23 @@
 *  .orange-blue 		orange to blue background
 *  .orange-grey 		orange to grey background
 *  .blue-grey 			blue to grey background
-*  .radius 				makes the corners round and gives some spacing so it can be placed inside a column
+*  .jumbotron-fluid		removes the border radius and space from the sides so it goes full width.
 *  .soft				softens the edges of the triangles in the background 
 *  .blur 				blurs the back to a smooth gradient
 * @markup
 *  <div class="jumbotron blue-grey">
 *    	<div class="container">
 *  			<h1>I am a Jumbotron!</h1>
-*  			<p>@{lipsum:1:sentence}</p>
+*  			<p>@{lipsum:2:sentence}</p>
 *  			<p><a class="btn" href="#" role="button">Learn more</a></p>
 *  		</div>
 *  </div>
 **/
-.jumbotron-kitchensink{}
 .jumbotron{
 	position:relative;
 	overflow:hidden;
 	background:none;
+	z-index:1;
 	h1{font-size:ms(12);}
 	p{font-size:ms(3);}
 	.btn{ 
@@ -47,7 +47,7 @@
 		background-image: url("../images/pattern-grey.svg");
 		background-attachment: fixed;
 		background-repeat: no-repeat;
-		background-size: 100% 100vh;	
+		background-size: 100 100;	
 	}
 
 	&.orange-blue:before{
@@ -83,6 +83,7 @@
 		right:-25px;
 	}
 	.container{
+		z-index: 3;
 	padding-left:1rem;
 	padding-right:1rem;
 	max-width:980px
