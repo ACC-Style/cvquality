@@ -114,7 +114,7 @@
  *          @{include:.overall-score.box}
  *           @{include:.box.score.accordion}
  *           @{include:.box.score.accordion}
- *           @{include:.box.score.accordion}
+ *           @{include:.wizard.box}
  *          </div></div>
  *      </div>
  *       @{include:#footer}
@@ -138,14 +138,6 @@
  *          <div id="layout">
  *              <div class="page-content full-screen">
  *                  @{include:.jumbotron-fluid}
- *                  <div class="row">
- *                      <div class="col-lg-4">
- *                          @{include:.featured.card}</div>
- *                      <div class="col-lg-8">
- *                          @{include:.carousel}
- *                          @{include:.leaderboard-lg}
- *                      </div>
- *                  </div>
  *                  <div class="row vh_40">
  *                      <div class="col-lg-8 col-md-7">@{include:.undecorated.card}</div> 
  *                      <div class="col-lg-4 col-md-5">@{include:.highlighted.card}</div>
