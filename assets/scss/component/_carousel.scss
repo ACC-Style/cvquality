@@ -1,12 +1,12 @@
 /**
- * A slideshow component for cycling through groups of images and text.
+ * A slide-show component for cycling through groups of images and text.
  *
  * @structure Carousel
  * @section Advanced Containers > Carousel
  * @modifiers
- *  .no-controls will remove left and right arrow
- *  .text-indicators converts the circle indicators to text tabs that lock to the right side of the images.
- *  .chevron-on  Adds a light orange chevron on the active inidicator to increase it's impact.
+ *  .no-controls            Will remove left and right arrow
+ *  .text-indicators        Converts the circle indicators to text tabs that lock to the right side of the images.
+ *  .chevron-on             Adds a light orange chevron on the '.active' indicator to increase its impact.
  * @markup
  *  <div id="carousel-example-generic" class="carousel slide no-controls text-indicators chevron-on" data-ride="carousel ">
  *    <!-- Indicators -->

@@ -84,19 +84,7 @@
  * @section Scrub Teal	 	
  */
 @import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i");
-@import url("https://fonts.googleapis.com/css?family=Muli:200,400,700");
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700");
-/**
- * used in css to set the font and weight.
- *
- * @mixin
- * @section Fonts
- * @param $weight
- *  The font weight to be used.
- * @example
- *  @include monospace();
- *  @include monospace(300);
- */
 @import "https://use.fontawesome.com/972bb54a90.css";
 .icon-before:before, a.link:before, .accordion .panel-title a:before, .k-map .k-marker:before {
   display: inline-block;
@@ -7353,12 +7341,12 @@ input {
     right: 0; }
 
 /**
-* Accordion collapse thier content by a header bar. Vanilla accordion just has a plain headline with no indicators. Most of the time adding the `.basic` class will make an user experiance that is expected from the accordian widget.
+* Accordion collapse their content by a header bar. Vanilla accordion just has a plain headline with no indicators. Most of the time adding the class  `.basic` will make UI conform to expected user's experience.
 * @structure Accordion
 * @section Advanced Containers > Accordion
 * @modifiers 
 *  .fancy          used on toolkits the design is bigger and graphic
-*  .basic          gives a little bit of animation and wiggle, and ads the cheveron indicator if it is open or closed.
+*  .basic          gives a little bit of animation and wiggle, and ads the chevron indicator if it is open or closed.
 *  .simple         removes all of the container decoration and converts the header into a more link.
 * @markup
 *  <div class="panel-group accordion">
@@ -7410,7 +7398,7 @@ input {
   width: 100%; }
 
 /**
-* Collapse page content with header. Adding `.basic` will give a little bit of wiggle
+* Collapse page content with the header. Adding `.basic` will give a chevron and a little bit of wiggle.
 *
 * @structure Accordion (Basic with a little bit of wiggle)
 * @section Advanced Containers > Accordion
@@ -7496,14 +7484,14 @@ input {
     -moz-transform: rotate(0deg);
     -webkit-transform: rotate(0deg); } }
 /**
-* Collapse can also be used for small peices of content when you want someone to do more.
+* Collapse can also be used for small pieces of content when you want someone to do more.
 *
 * @structure Accordion (simple the more link)
 * @section Advanced Containers > Accordion
 * @modifiers
-*  .left-align      The "More" text will align to the left of the container it is in.  This is default for the accordion.
-*  .right-align     The "More" text will align to the right.
-*  .center-align     The "More" text will align to the center.
+*  .left-align       The "More" text will align to the left of the container it is in. This is the default for the simple accordion.
+*  .right-align      The "More" text will align to the right.
+*  .center-align     The "More" text will align with the center.
 * @markup
 *  <div class="panel-group accordion simple">
 *   <div class="panel" id="accordion" role="tablist" aria-multiselectable="true">
@@ -7903,11 +7891,11 @@ input {
  * @section Card > Basic 
  * @flag contained
  * @modifiers
- *  .position-right-[size] floats the card to the right so text will wrap around the left when the veiw port is above the size.
+ *  .position-right-[size] floats the card to the right so text will wrap around the left when the view port is above the size.
  *  .position-right-lg the float appears large up.
  *  .position-right-md the float appears medium up.
  *  .position-right-sm the float appears small up.
- *  .position-left-[size] floats the card to the left so text will wrap around the right when the veiw port is above the size.
+ *  .position-left-[size] floats the card to the left so text will wrap around the right when the view port is above the size.
  * @markup
  *  <div class="card highlighted">
  *   <h3 class="card-header">Highlighted Card</h3>
@@ -8004,7 +7992,7 @@ input {
     color: #047294; }
 
 /**
- * Notice Cards with the alt class modifies the style of notice cards by changing thie background to soft grey background with an orange triangle.
+ * Notice Cards with the alt class modifies the style of notice cards by changing the background to soft grey background with an orange triangle.
  *
  * @molecule Notice Card Alt 
  * @section Card > Basic
@@ -8034,7 +8022,7 @@ input {
  * @section Card > Event
  * @flag contained
  * @modifiers
- *  .undecorated    removes the card decoration( background colors, borders & graphic date) to make it listable. 
+ *  .undecorated    removes the card decoration( background colors, borders & graphic date) to make it list-able. 
  * @markup
  *  <div class="card event">
  *      <div class="card-header">
@@ -8180,7 +8168,7 @@ input {
       font-size: 18px; } }
 
 /**
- * Undecorated Event Cards Are for Listing alot of events together 
+ * Undecorated event cards are for listing a lot of events together.
  *
  * @molecule Event Card (Undecorated)
  * @section Card > Event
@@ -8196,7 +8184,7 @@ input {
  *              </div>
  *              <div class="event-details">
  *                  <div class="title">@{lipsum:8:words}</div>
-*                  <div class="location-title">Grand Hayatt</div>
+*                  <div class="location-title">Grand Hyatt</div>
  *                  <div class="location">Cincinnati, OH </div>
  *                  <span class="full-date">May 12, 2018</span><span class="time"><span class="begin">8:00AM</span> - <span class="end">2:00PM</span> <span class="timezone">(EST)</span></span>
  *              </div>
@@ -8244,10 +8232,10 @@ input {
   border-top: 1px dotted #047294; }
 
 /**
- * Testemonial Card are containers for Testemonial Data Type 
+ * Testimonial Card are containers for Testimonial Data Type 
  *
  * @molecule Testimonial Card 
- * @section Card > Testemonial
+ * @section Card > Testimonial
  * @flag contained
  * @modifiers
  *  .horizontal     Aligns the image to the left of the testimonial.
@@ -8330,10 +8318,10 @@ input {
       content: "\f007"; }
 
 /**
-* Horizontal Testimonial are compact containers for Testemonial Data Type 
+* Horizontal Testimonial are compact containers for Testimonial Data Type 
 *
 * @molecule Testimonial Card (.horizontal)
-* @section Card > Testemonial
+* @section Card > Testimonial
 * @flag contained
 * @markup
 *  <div class="card testimonial horizontal">
@@ -8434,7 +8422,7 @@ input {
     display: none; }
 
 /**
- * buttons are highly flexable and can be decorated by the modifiers to change size and color
+ * buttons are highly flexible and can be decorated by the modifiers to change size and color
  *
  * @atom .btn\.button\button
  * @section Buttons & Links
@@ -8589,7 +8577,7 @@ input {
       color: #047294; }
 
 /**
-* User Status Container contains system feed back on what systems you may or may not be logged into. 
+* User status container contains system feed back on what systems you may or may not be logged into. 
 *
 *
 * @structure User Status
@@ -8676,9 +8664,9 @@ input {
     text-transform: uppercase; }
 
 /**
-* Utiltiy Nav at the top of the page. These are nav items are highly specialized and have been cherry picked out of site tree structure to give them global importance.
+* Utility Nav at the top of the page. These are nav items are highly specialized and have been cherry picked out of site tree structure to give them global importance.
 *
-* @structure  Utiltiy Nav 
+* @structure  Utility Nav 
 * @section Nav > Utility
 * @modifiers 
 *  .mobile - decorates the nav to look like mobile
@@ -8774,12 +8762,12 @@ input {
 /**
 * Primary Nav at the top of the page.
 *
-* @structure  Nav Primary
+* @structure  Primary Navigation
 * @section Nav > Page
 * @modifiers
 *  .active for use on marking when on page
-*  .disabled used to show when it is un-navigatable
-*  .alt used to make a standout button in the primary nav
+*  .disabled used to show when it is un-navigable
+*  .alt used to make a standout button in the primary navigation
 *  .alt.primary used to decorate the standout button to the positive flow
 *  .alt.secondary used to convert the standout button to the alternate flow
 * @markup 
@@ -9145,12 +9133,12 @@ input {
  * @molecule Advertisement
  * @section Content Blocks > Ads
  * @modifiers
- *  .mobile             Swaps the default visablity to show when smaller then tablet and hide when veiwport is larger then phone. 
- *  .skyscraper         600w x 160h ad that has default visablity
- *  .bigbox             300w x 200h ad that has default visablity
- *  .leaderboard        728w x 90h ad that has default visablity
- *  .leaderboard-lg     728w x 210h ad that has default visablity
- *  .full-banner        468w x 60h ad that has default visablity.  This size is commonly combined with .mobile so it shows up only on phones
+ *  .mobile             Swaps the default visibility to show when smaller then tablet and hide when viewport is larger then phone. 
+ *  .skyscraper         600w x 160h ad that has default visibility
+ *  .bigbox             300w x 200h ad that has default visibility
+ *  .leaderboard        728w x 90h ad that has default visibility
+ *  .leaderboard-lg     728w x 210h ad that has default visibility
+ *  .full-banner        468w x 60h ad that has default visibility.  This size is commonly combined with .mobile so it shows up only on phones
  * @flag contained
  *
  * @markup
@@ -9234,7 +9222,7 @@ input {
 
 /**
  * Advertisement Big Box 
- * @molecule Advertisement-BigBox
+ * @molecule Advertisement BigBox
  * @section Content Blocks > Ads
  * @flag contained
  * @markup
@@ -9249,7 +9237,7 @@ input {
 */
 /**
  * Advertisement Leaderboard 
- * @molecule Advertisement-Leaderboard
+ * @molecule Advertisement Leaderboard
  * @section Content Blocks > Ads
  * @markup
  *   <div class="ad-container leaderboard">
@@ -9263,7 +9251,7 @@ input {
 */
 /**
  * Advertisement Large Leaderboard 
- * @molecule Advertisement-Leaderboard
+ * @molecule Advertisement Leaderboard
  * @section Content Blocks > Ads
  * @markup
  *   <div class="ad-container leaderboard-lg">
@@ -9277,7 +9265,7 @@ input {
 */
 /**
  * Advertisement Full Banner 
- * @molecule Advertisement-Full-Banner
+ * @molecule Advertisement Full-Banner
  * @section Content Blocks > Ads
  * @flag contained
  * @markup
@@ -9355,10 +9343,10 @@ input {
 *     }
 */
 /**
-* Tooltips are the elements that expand from pins on the map
+* Tool-tips are the elements that expand from pins on the map
 *
-* @molecule Map Tooltip
-* @section Map > Tooltip
+* @molecule Map Tool-tips
+* @section Map > Tool-tips
 * @markup
 *   <div role="tooltip" class="style-guide-override k-widget k-tooltip k-popup k-group k-reset tooltip top" data-role="popup">
 *       <div class="tooltip-arrow"></div>
@@ -9492,10 +9480,10 @@ ul.result-list {
           width: 25%; } }
 
 /**
-* Multiselect
+* Multi-select
 *
-* @molecule Map Multi Select
-* @section Map > Dropdown
+* @molecule Map Multi-select
+* @section Map > Multi-select
 * @markup
 *   <ul class="multiselect-container dropdown-menu">
 *       <li class="multiselect-item multiselect-all"><a tabindex="0" class="multiselect-all"><label class="checkbox"><input type="checkbox" name="select-all" value="multiselect-all">  Select all</label></a></li>
@@ -9572,7 +9560,7 @@ ul.multiselect-container li.active a {
 /* Legacy Support */
 /**
  * Boxes(".box") are a simple decorator that has internal padding, a colored background, and fills its parent container. 
- * Boxes are a simpler version of ".cards" when the structured DOM is either unnessary or would conflict with the internal content.
+ * Boxes are a simpler version of ".cards" when the structured DOM is either unnecessary or would conflict with the internal content.
  *
  * @molecule box
  * @flag contained
@@ -9598,7 +9586,7 @@ ul.multiselect-container li.active a {
       margin-top: .5rem; }
 
 /**
-* The box is defaultly white add the ".alt" class to make it grey and remove the boarders.
+* The box is by default white add the ".alt" class to make it grey and remove the boarders.
 *
 * @molecule Box Alt
 * @section Box > Box
@@ -9632,7 +9620,7 @@ ul.multiselect-container li.active a {
   background-color: #eceaea; }
 
 /**
-* The Score Box Generic is currently used on the Assements Page. These repeated boxes are used to show the score with each section of the assessment.
+* The Score Box Generic is currently used on the Assessments Page. These repeated boxes are used to show the score with each section of the assessment.
 *
 * @molecule Score Box Generic
 * @section Box > Score Box
@@ -9654,7 +9642,7 @@ ul.multiselect-container li.active a {
       margin-top: .5rem; }
 
 /**
-* The Overall Score on the assements page is the wrap up of the score of all the sections
+* The Overall Score on the assessments page is the wrap up of the score of all the sections
 *
 * @molecule overall-score-box
 * @section Box > Score Box
@@ -9756,7 +9744,7 @@ ul.multiselect-container li.active a {
 * "Wizard Navigation"  This is a combination of .box, .progress-bar and .button to create a navigation that goes between a collection of pages that need to be sequentially stepped through.
 *
 * @structure Wizard Navigation 
-* @section Advanced Cards & Boxes > Wizard Nav 
+* @section Advanced Cards & Boxes > Wizard Navigation 
 * @markup
 *  <div class="box alt">
 *      <div class="row">
@@ -9772,7 +9760,7 @@ ul.multiselect-container li.active a {
 *
 */
 /**
-* Score Boxes can have Accodian's nested inside themselves.  The Accordion simplifies when it is with a box so it is cleaner. 
+* Score Boxes can have an accordion nested inside themselves.  Accordions simplifies in design when it is with a box so it is cleaner. 
 *
 * @structure Score Box Accordion
 * @section Advanced Cards & Boxes > Score Box
@@ -9794,7 +9782,7 @@ ul.multiselect-container li.active a {
 
 /* Footer */
 /**
- * Address blocks are well formated microformat to optimum usage in browsers.
+ * Address blocks are well formated micro-format to optimum usage in browsers.
  * @molecule address.vcard
  * @section Content Blocks
  * @flag contained
@@ -9958,11 +9946,11 @@ address.vcard {
 * @structure Social Buttons
 * @section Nav > Utility
 * @modifiers
-*  .mono-teal  added to the .nav-social-button container the class turns all of the buttons scrub teal
-*  .mono-orange  added to the .nav-social-button container the class turns all of the buttons dark orange
-*  .mono-grey  added to the .nav-social-button container the class turns all of the buttons grey
-*  .small  added to the .nav-social-button container the class turns all of the buttons small and more compact
-*  .flex-row add to .nav-social-button container  to make the nav full width of its parent container. Buttons will expand to take up the space and will flex instead of squares.
+*  .mono-teal  		the class turns all of the buttons scrub teal
+*  .mono-orange 	the class turns all of the buttons dark orange
+*  .mono-grey  		the class turns all of the buttons grey
+*  .small  			the class turns all of the buttons small and more compact
+*  .flex-row 		the class make the navigation full width of its parent container. Buttons will expand to take up the space and will flex instead of squares.
 * @markup 
 *  <nav class="nav-social-button">
 *    <h2>Stay Connected:</h2>
@@ -10023,13 +10011,16 @@ address.vcard {
 .nav-social-button.small .nav-item {
   margin: 0 2px 0; }
 .nav-social-button.small .nav-link {
-  height: 20px;
+  height: auto;
   width: 20px;
   padding: 2px; }
   .nav-social-button.small .nav-link i {
     width: 16px;
     height: 16px;
     font-size: 16px; }
+.nav-social-button.flex-row .nav {
+  display: flex;
+  flex-direction: row; }
 .nav-social-button.flex-row .nav-item {
   flex: 1 1 auto; }
 .nav-social-button.flex-row .nav-link {
@@ -10041,8 +10032,9 @@ address.vcard {
 *	
 * @structure Social Buttons
 * @section Nav > Utility
+* @flag contained
 * @markup 
-*  <nav class="nav-social-button small mono-teal">
+*  <nav class="nav-social-button small mono-teal flex-row">
 *    <h4>Follow Accred</h4>
 *    <ul class="nav">
 *        <li class="nav-item twitter"><a class="nav-link" href="https://twitter.com/accintouch" target="_blank"><i class="fa fa-twitter"></i></a></li>
@@ -10056,7 +10048,7 @@ address.vcard {
 /**
 * Navigation in the footer
 *
-* @structure  Nav Footer
+* @structure  Footer Navigation
 * @section Nav > Page
 * @markup
 *  <ul class="footer-sitemap">
@@ -10127,7 +10119,7 @@ address.vcard {
       .nav-footer:last-child {
         padding-right: 0; } }
   .nav-footer h2 {
-    /* allows for vertical align bottomw without extra DOM*/
+    /* allows for vertical align bottom without extra DOM*/
     color: #2f2f2f; }
   .nav-footer .nav {
     border-top: #d6d4d4 dotted 1px;
@@ -10145,14 +10137,14 @@ address.vcard {
 
 /*! Javascript Components */
 /**
- * A slideshow component for cycling through groups of images and text.
+ * A slide-show component for cycling through groups of images and text.
  *
  * @structure Carousel
  * @section Advanced Containers > Carousel
  * @modifiers
- *  .no-controls will remove left and right arrow
- *  .text-indicators converts the circle indicators to text tabs that lock to the right side of the images.
- *  .chevron-on  Adds a light orange chevron on the active inidicator to increase it's impact.
+ *  .no-controls            Will remove left and right arrow
+ *  .text-indicators        Converts the circle indicators to text tabs that lock to the right side of the images.
+ *  .chevron-on             Adds a light orange chevron on the '.active' indicator to increase its impact.
  * @markup
  *  <div id="carousel-example-generic" class="carousel slide no-controls text-indicators chevron-on" data-ride="carousel ">
  *    <!-- Indicators -->
@@ -10559,7 +10551,7 @@ body, .body {
  *  </div>
  */
 /**
- * Footer of CV Qaulity combines, footer-nav, socail-nav, and logos to make a renforcing page structure.
+ * Footer of CV Quality combines, footer-nav, social-nav, and logos to make a reinforcing page structure.
  * @structure Page Footer
  * @section Page Sections > Footer
  *

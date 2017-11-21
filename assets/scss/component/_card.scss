@@ -135,11 +135,11 @@
  * @section Card > Basic 
  * @flag contained
  * @modifiers
- *  .position-right-[size] floats the card to the right so text will wrap around the left when the veiw port is above the size.
+ *  .position-right-[size] floats the card to the right so text will wrap around the left when the view port is above the size.
  *  .position-right-lg the float appears large up.
  *  .position-right-md the float appears medium up.
  *  .position-right-sm the float appears small up.
- *  .position-left-[size] floats the card to the left so text will wrap around the right when the veiw port is above the size.
+ *  .position-left-[size] floats the card to the left so text will wrap around the right when the view port is above the size.
  * @markup
  *  <div class="card highlighted">
  *   <h3 class="card-header">Highlighted Card</h3>
@@ -278,7 +278,7 @@
 }
 
 /**
- * Notice Cards with the alt class modifies the style of notice cards by changing thie background to soft grey background with an orange triangle.
+ * Notice Cards with the alt class modifies the style of notice cards by changing the background to soft grey background with an orange triangle.
  *
  * @molecule Notice Card Alt 
  * @section Card > Basic
@@ -313,7 +313,7 @@
  * @section Card > Event
  * @flag contained
  * @modifiers
- *  .undecorated    removes the card decoration( background colors, borders & graphic date) to make it listable. 
+ *  .undecorated    removes the card decoration( background colors, borders & graphic date) to make it list-able. 
  * @markup
  *  <div class="card event">
  *      <div class="card-header">
@@ -482,7 +482,7 @@
 }
 
 /**
- * Undecorated Event Cards Are for Listing alot of events together 
+ * Undecorated event cards are for listing a lot of events together.
  *
  * @molecule Event Card (Undecorated)
  * @section Card > Event
@@ -498,7 +498,7 @@
  *              </div>
  *              <div class="event-details">
  *                  <div class="title">@{lipsum:8:words}</div>
-*                  <div class="location-title">Grand Hayatt</div>
+*                  <div class="location-title">Grand Hyatt</div>
  *                  <div class="location">Cincinnati, OH </div>
  *                  <span class="full-date">May 12, 2018</span><span class="time"><span class="begin">8:00AM</span> - <span class="end">2:00PM</span> <span class="timezone">(EST)</span></span>
  *              </div>
@@ -542,10 +542,10 @@
 .card.event.undecorated + .card.event.undecorated{border-top:1px dotted $scrub-teal-dark;}
 
 /**
- * Testemonial Card are containers for Testemonial Data Type 
+ * Testimonial Card are containers for Testimonial Data Type 
  *
  * @molecule Testimonial Card 
- * @section Card > Testemonial
+ * @section Card > Testimonial
  * @flag contained
  * @modifiers
  *  .horizontal     Aligns the image to the left of the testimonial.
@@ -660,10 +660,10 @@
 }
 
 /**
-* Horizontal Testimonial are compact containers for Testemonial Data Type 
+* Horizontal Testimonial are compact containers for Testimonial Data Type 
 *
 * @molecule Testimonial Card (.horizontal)
-* @section Card > Testemonial
+* @section Card > Testimonial
 * @flag contained
 * @markup
 *  <div class="card testimonial horizontal">

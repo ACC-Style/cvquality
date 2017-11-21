@@ -1,6 +1,6 @@
 /**
  * Boxes(".box") are a simple decorator that has internal padding, a colored background, and fills its parent container. 
- * Boxes are a simpler version of ".cards" when the structured DOM is either unnessary or would conflict with the internal content.
+ * Boxes are a simpler version of ".cards" when the structured DOM is either unnecessary or would conflict with the internal content.
  *
  * @molecule box
  * @flag contained
@@ -26,7 +26,7 @@
     }
 }
 /**
-* The box is defaultly white add the ".alt" class to make it grey and remove the boarders.
+* The box is by default white add the ".alt" class to make it grey and remove the boarders.
 *
 * @molecule Box Alt
 * @section Box > Box
@@ -60,7 +60,7 @@
     background-color: $soft-grey;
 }
 /**
-* The Score Box Generic is currently used on the Assements Page. These repeated boxes are used to show the score with each section of the assessment.
+* The Score Box Generic is currently used on the Assessments Page. These repeated boxes are used to show the score with each section of the assessment.
 *
 * @molecule Score Box Generic
 * @section Box > Score Box
@@ -86,7 +86,7 @@
 
 
 /**
-* The Overall Score on the assements page is the wrap up of the score of all the sections
+* The Overall Score on the assessments page is the wrap up of the score of all the sections
 *
 * @molecule overall-score-box
 * @section Box > Score Box
@@ -200,7 +200,7 @@
  * "Wizard Navigation"  This is a combination of .box, .progress-bar and .button to create a navigation that goes between a collection of pages that need to be sequentially stepped through.
  *
  * @structure Wizard Navigation 
- * @section Advanced Cards & Boxes > Wizard Nav 
+ * @section Advanced Cards & Boxes > Wizard Navigation 
  * @markup
  *  <div class="box alt">
  *      <div class="row">
@@ -218,7 +218,7 @@
 .wizard.box{}
 
 /**
-* Score Boxes can have Accodian's nested inside themselves.  The Accordion simplifies when it is with a box so it is cleaner. 
+* Score Boxes can have an accordion nested inside themselves.  Accordions simplifies in design when it is with a box so it is cleaner. 
 *
 * @structure Score Box Accordion
 * @section Advanced Cards & Boxes > Score Box

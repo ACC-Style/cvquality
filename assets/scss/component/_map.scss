@@ -1,8 +1,8 @@
 /**
-* Tooltips are the elements that expand from pins on the map
+* Tool-tips are the elements that expand from pins on the map
 *
-* @molecule Map Tooltip
-* @section Map > Tooltip
+* @molecule Map Tool-tips
+* @section Map > Tool-tips
 * @markup
 *   <div role="tooltip" class="style-guide-override k-widget k-tooltip k-popup k-group k-reset tooltip top" data-role="popup">
 *       <div class="tooltip-arrow"></div>
@@ -150,10 +150,10 @@ ul.result-list {
 
 
 /**
-* Multiselect
+* Multi-select
 *
-* @molecule Map Multi Select
-* @section Map > Dropdown
+* @molecule Map Multi-select
+* @section Map > Multi-select
 * @markup
 *   <ul class="multiselect-container dropdown-menu">
 *       <li class="multiselect-item multiselect-all"><a tabindex="0" class="multiselect-all"><label class="checkbox"><input type="checkbox" name="select-all" value="multiselect-all">  Select all</label></a></li>

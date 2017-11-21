@@ -1,10 +1,10 @@
 /**
-* Accordion collapse thier content by a header bar. Vanilla accordion just has a plain headline with no indicators. Most of the time adding the `.basic` class will make an user experiance that is expected from the accordian widget.
+* Accordion collapse their content by a header bar. Vanilla accordion just has a plain headline with no indicators. Most of the time adding the class  `.basic` will make UI conform to expected user's experience.
 * @structure Accordion
 * @section Advanced Containers > Accordion
 * @modifiers 
 *  .fancy          used on toolkits the design is bigger and graphic
-*  .basic          gives a little bit of animation and wiggle, and ads the cheveron indicator if it is open or closed.
+*  .basic          gives a little bit of animation and wiggle, and ads the chevron indicator if it is open or closed.
 *  .simple         removes all of the container decoration and converts the header into a more link.
 * @markup
 *  <div class="panel-group accordion">
@@ -69,7 +69,7 @@
     }
 }
 /**
-* Collapse page content with header. Adding `.basic` will give a little bit of wiggle
+* Collapse page content with the header. Adding `.basic` will give a chevron and a little bit of wiggle.
 *
 * @structure Accordion (Basic with a little bit of wiggle)
 * @section Advanced Containers > Accordion
@@ -173,14 +173,14 @@
     }
 }
 /**
-* Collapse can also be used for small peices of content when you want someone to do more.
+* Collapse can also be used for small pieces of content when you want someone to do more.
 *
 * @structure Accordion (simple the more link)
 * @section Advanced Containers > Accordion
 * @modifiers
-*  .left-align      The "More" text will align to the left of the container it is in.  This is default for the accordion.
-*  .right-align     The "More" text will align to the right.
-*  .center-align     The "More" text will align to the center.
+*  .left-align       The "More" text will align to the left of the container it is in. This is the default for the simple accordion.
+*  .right-align      The "More" text will align to the right.
+*  .center-align     The "More" text will align with the center.
 * @markup
 *  <div class="panel-group accordion simple">
 *   <div class="panel" id="accordion" role="tablist" aria-multiselectable="true">

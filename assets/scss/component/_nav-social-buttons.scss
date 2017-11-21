@@ -5,11 +5,11 @@
 * @structure Social Buttons
 * @section Nav > Utility
 * @modifiers
-*  .mono-teal  added to the .nav-social-button container the class turns all of the buttons scrub teal
-*  .mono-orange  added to the .nav-social-button container the class turns all of the buttons dark orange
-*  .mono-grey  added to the .nav-social-button container the class turns all of the buttons grey
-*  .small  added to the .nav-social-button container the class turns all of the buttons small and more compact
-*  .flex-row add to .nav-social-button container  to make the nav full width of its parent container. Buttons will expand to take up the space and will flex instead of squares.
+*  .mono-teal  		the class turns all of the buttons scrub teal
+*  .mono-orange 	the class turns all of the buttons dark orange
+*  .mono-grey  		the class turns all of the buttons grey
+*  .small  			the class turns all of the buttons small and more compact
+*  .flex-row 		the class make the navigation full width of its parent container. Buttons will expand to take up the space and will flex instead of squares.
 * @markup 
 *  <nav class="nav-social-button">
 *    <h2>Stay Connected:</h2>
@@ -90,7 +90,7 @@
 			margin:0 2px 0;
 		}
 		.nav-link{
-			height: ms(3);
+			height: auto;
 			width: ms(3);
 			padding: ( ms(3) - ms(1) )/2;
 			i{
@@ -101,6 +101,7 @@
 		}
 	}
 	&.flex-row{
+		.nav{display: flex; flex-direction:row;}
 		.nav-item{flex:1 1 auto;}
 		.nav-link{width:100%;}
 	}
@@ -113,8 +114,9 @@
 *	
 * @structure Social Buttons
 * @section Nav > Utility
+* @flag contained
 * @markup 
-*  <nav class="nav-social-button small mono-teal">
+*  <nav class="nav-social-button small mono-teal flex-row">
 *    <h4>Follow Accred</h4>
 *    <ul class="nav">
 *        <li class="nav-item twitter"><a class="nav-link" href="https://twitter.com/accintouch" target="_blank"><i class="fa fa-twitter"></i></a></li>

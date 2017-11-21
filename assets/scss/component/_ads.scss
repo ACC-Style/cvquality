@@ -3,12 +3,12 @@
  * @molecule Advertisement
  * @section Content Blocks > Ads
  * @modifiers
- *  .mobile             Swaps the default visablity to show when smaller then tablet and hide when veiwport is larger then phone. 
- *  .skyscraper         600w x 160h ad that has default visablity
- *  .bigbox             300w x 200h ad that has default visablity
- *  .leaderboard        728w x 90h ad that has default visablity
- *  .leaderboard-lg     728w x 210h ad that has default visablity
- *  .full-banner        468w x 60h ad that has default visablity.  This size is commonly combined with .mobile so it shows up only on phones
+ *  .mobile             Swaps the default visibility to show when smaller then tablet and hide when viewport is larger then phone. 
+ *  .skyscraper         600w x 160h ad that has default visibility
+ *  .bigbox             300w x 200h ad that has default visibility
+ *  .leaderboard        728w x 90h ad that has default visibility
+ *  .leaderboard-lg     728w x 210h ad that has default visibility
+ *  .full-banner        468w x 60h ad that has default visibility.  This size is commonly combined with .mobile so it shows up only on phones
  * @flag contained
  *
  * @markup
@@ -103,7 +103,7 @@
 
 /**
  * Advertisement Big Box 
- * @molecule Advertisement-BigBox
+ * @molecule Advertisement BigBox
  * @section Content Blocks > Ads
  * @flag contained
  * @markup
@@ -120,7 +120,7 @@
 
 /**
  * Advertisement Leaderboard 
- * @molecule Advertisement-Leaderboard
+ * @molecule Advertisement Leaderboard
  * @section Content Blocks > Ads
  * @markup
  *   <div class="ad-container leaderboard">
@@ -136,7 +136,7 @@
 
 /**
  * Advertisement Large Leaderboard 
- * @molecule Advertisement-Leaderboard
+ * @molecule Advertisement Leaderboard
  * @section Content Blocks > Ads
  * @markup
  *   <div class="ad-container leaderboard-lg">
@@ -152,7 +152,7 @@
 
 /**
  * Advertisement Full Banner 
- * @molecule Advertisement-Full-Banner
+ * @molecule Advertisement Full-Banner
  * @section Content Blocks > Ads
  * @flag contained
  * @markup
