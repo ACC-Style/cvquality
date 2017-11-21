@@ -177,7 +177,8 @@ body {
   max-width: 100%; }
 
 .SG-header {
-  padding: 0; }
+  padding: 0;
+  margin-bottom: 2rem; }
   .SG-header .SG-logo {
     margin-top: 0;
     padding: 11px 16px 0px;
@@ -199,6 +200,7 @@ body {
       border-bottom: 2px solid transparent;
       border-top: 2px solid transparent;
       width: 100%;
+      padding: 12px 10px 14px;
       margin: 0; }
       .SG-header .SG-nav .SG-nav__item:hover {
         border-top: #9b9b9b 2px solid;
@@ -223,7 +225,8 @@ body {
           position: relative;
           min-width: 0; }
         .SG-header .SG-nav .SG-nav__item {
-          width: auto; } }
+          width: auto;
+          padding: 22px 10px 24px; } }
   .SG-header .SG-nav-icons {
     padding-right: 25px;
     width: auto;

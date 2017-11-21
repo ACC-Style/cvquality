@@ -21,6 +21,7 @@ body {
 
 .SG-header {
     padding: 0;
+    margin-bottom:2rem;
     .SG-logo {
         margin-top: 0;
         padding: 11px 16px 0px;
@@ -44,6 +45,7 @@ body {
             border-bottom:2px solid transparent;
             border-top:2px solid transparent;
             width:100%;
+            padding: 12px 10px 14px;
             margin:0;
             &:hover{
                 border-top:#9b9b9b 2px solid;
@@ -69,7 +71,10 @@ body {
                 position: relative;
                 min-width: 0;
              }
-              .SG-nav__item{width:auto;}
+              .SG-nav__item{
+                width:auto;
+                padding: 22px 10px 24px;
+              }
          }
 
     }
