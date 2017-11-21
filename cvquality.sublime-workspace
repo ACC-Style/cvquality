@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"j",
+				"jumbotron"
+			],
+			[
+				"jum",
+				"jumbotron-fluid"
+			],
+			[
 				"back",
 				"background"
 			],
@@ -308,7 +316,7 @@
 			"file": "assets/scss/structure/_page.scss",
 			"settings":
 			{
-				"buffer_size": 5993,
+				"buffer_size": 5607,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -371,7 +379,7 @@
 			"file": "assets/scss/vendor/bootstrap.override/_jumbotron.override.scss",
 			"settings":
 			{
-				"buffer_size": 2324,
+				"buffer_size": 2973,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -402,10 +410,10 @@
 			}
 		},
 		{
-			"contents": "Searching 240 files for \"max-width:100%\"\n\n0 matches\n\nSearching 240 files for \"max-width: 100%;\"\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\_oldshame.scss:\n 1403      }\n 1404      img {\n 1405:         max-width: 100%;\n 1406      }\n 1407  }\n ....\n 2324      .content-featured-pic img {\n 2325          width: 100%;\n 2326:         max-width: 100%;\n 2327          height: auto;\n 2328      }\n ....\n 2330          img {\n 2331              width: 100%;\n 2332:             max-width: 100%;\n 2333              height: auto;\n 2334          }\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\base\\_typography.scss:\n  139          img,a img {\n  140              height: auto;\n  141:             max-width: 100%;\n  142          }\n  143  \n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\component\\_nav-sub.scss:\n   58  \n   59          img {\n   60:             max-width: 100%;\n   61          }\n   62      }\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\styleguide.scss:\n   17  \n   18  .SG-layout {\n   19:     max-width: 100%;\n   20  }\n   21  \n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\_button-groups.scss:\n  149      float: none;\n  150      width: 100%;\n  151:     max-width: 100%;\n  152    }\n  153  \n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\_forms.scss:\n   32  label {\n   33    display: inline-block;\n   34:   max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)\n   35    margin-bottom: 5px;\n   36    font-weight: bold;\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\_jumbotron.scss:\n   34  \n   35    .container {\n   36:     max-width: 100%;\n   37    }\n   38  \n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\_tables.scss:\n   22  .table {\n   23    width: 100%;\n   24:   max-width: 100%;\n   25    margin-bottom: $line-height-computed;\n   26    // Cells\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\mixins\\_image.scss:\n    9  @mixin img-responsive($display: block) {\n   10    display: $display;\n   11:   max-width: 100%; // Part 1: Set a maximum relative to the parent\n   12    height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching\n   13  }\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\_custom-forms.scss:\n  133  .custom-select {\n  134    display: inline-block;\n  135:   max-width: 100%;\n  136    height: $input-height;\n  137    padding: $custom-select-padding-y ($custom-select-padding-x + $custom-select-indicator-padding) $custom-select-padding-y $custom-select-padding-x;\n  ...\n  191    position: relative;\n  192    display: inline-block;\n  193:   max-width: 100%;\n  194    height: $custom-file-height;\n  195    margin-bottom: 0;\n  ...\n  198  .custom-file-input {\n  199    min-width: $custom-file-width;\n  200:   max-width: 100%;\n  201    height: $custom-file-height;\n  202    margin: 0;\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\_reboot.scss:\n  412    display: block;\n  413    width: 100%;\n  414:   max-width: 100%; // 1\n  415    padding: 0;\n  416    margin-bottom: .5rem;\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\_tables.scss:\n    5  .table {\n    6    width: 100%;\n    7:   max-width: 100%;\n    8    margin-bottom: $spacer;\n    9    background-color: $table-bg; // Reset for nesting within parents with `background-color`.\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\mixins\\_grid-framework.scss:\n   33          flex-basis: 0;\n   34          flex-grow: 1;\n   35:         max-width: 100%;\n   36        }\n   37        .col#{$infix}-auto {\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\mixins\\_image.scss:\n   10  @mixin img-fluid {\n   11    // Part 1: Set a maximum relative to the parent\n   12:   max-width: 100%;\n   13    // Part 2: Override the height to auto, otherwise images will be stretched\n   14    // when setting a width and height attribute on the img element.\n\n18 matches across 14 files\n",
+			"contents": "Searching 240 files for \"max-width:100%\"\n\n0 matches\n\nSearching 240 files for \"max-width: 100%;\"\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\_oldshame.scss:\n 1403      }\n 1404      img {\n 1405:         max-width: 100%;\n 1406      }\n 1407  }\n ....\n 2324      .content-featured-pic img {\n 2325          width: 100%;\n 2326:         max-width: 100%;\n 2327          height: auto;\n 2328      }\n ....\n 2330          img {\n 2331              width: 100%;\n 2332:             max-width: 100%;\n 2333              height: auto;\n 2334          }\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\base\\_typography.scss:\n  139          img,a img {\n  140              height: auto;\n  141:             max-width: 100%;\n  142          }\n  143  \n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\component\\_nav-sub.scss:\n   58  \n   59          img {\n   60:             max-width: 100%;\n   61          }\n   62      }\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\styleguide.scss:\n   17  \n   18  .SG-layout {\n   19:     max-width: 100%;\n   20  }\n   21  \n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\_button-groups.scss:\n  149      float: none;\n  150      width: 100%;\n  151:     max-width: 100%;\n  152    }\n  153  \n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\_forms.scss:\n   32  label {\n   33    display: inline-block;\n   34:   max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)\n   35    margin-bottom: 5px;\n   36    font-weight: bold;\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\_jumbotron.scss:\n   34  \n   35    .container {\n   36:     max-width: 100%;\n   37    }\n   38  \n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\_tables.scss:\n   22  .table {\n   23    width: 100%;\n   24:   max-width: 100%;\n   25    margin-bottom: $line-height-computed;\n   26    // Cells\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\mixins\\_image.scss:\n    9  @mixin img-responsive($display: block) {\n   10    display: $display;\n   11:   max-width: 100%; // Part 1: Set a maximum relative to the parent\n   12    height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching\n   13  }\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\_custom-forms.scss:\n  133  .custom-select {\n  134    display: inline-block;\n  135:   max-width: 100%;\n  136    height: $input-height;\n  137    padding: $custom-select-padding-y ($custom-select-padding-x + $custom-select-indicator-padding) $custom-select-padding-y $custom-select-padding-x;\n  ...\n  191    position: relative;\n  192    display: inline-block;\n  193:   max-width: 100%;\n  194    height: $custom-file-height;\n  195    margin-bottom: 0;\n  ...\n  198  .custom-file-input {\n  199    min-width: $custom-file-width;\n  200:   max-width: 100%;\n  201    height: $custom-file-height;\n  202    margin: 0;\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\_reboot.scss:\n  412    display: block;\n  413    width: 100%;\n  414:   max-width: 100%; // 1\n  415    padding: 0;\n  416    margin-bottom: .5rem;\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\_tables.scss:\n    5  .table {\n    6    width: 100%;\n    7:   max-width: 100%;\n    8    margin-bottom: $spacer;\n    9    background-color: $table-bg; // Reset for nesting within parents with `background-color`.\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\mixins\\_grid-framework.scss:\n   33          flex-basis: 0;\n   34          flex-grow: 1;\n   35:         max-width: 100%;\n   36        }\n   37        .col#{$infix}-auto {\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\mixins\\_image.scss:\n   10  @mixin img-fluid {\n   11    // Part 1: Set a maximum relative to the parent\n   12:   max-width: 100%;\n   13    // Part 2: Override the height to auto, otherwise images will be stretched\n   14    // when setting a width and height attribute on the img element.\n\n18 matches across 14 files\n\n\nSearching 242 files for \"wizard\"\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\component\\_assessment.scss:\n  200  \n  201   /**\n  202:  * \"Wizard Navigation\"  This is a combination of .box, .progress-bar and .button to create a navigation that goes between a collection of pages that need to be sequentially stepped through.\n  203   *\n  204:  * @structure Wizard Navigation \n  205   * @section Nav > Page \n  206   * @markup\n  ...\n  218   *\n  219   */\n  220: .wizard.box{}\n\n3 matches in 1 file\n",
 			"settings":
 			{
-				"buffer_size": 4082,
+				"buffer_size": 4575,
 				"line_ending": "Windows",
 				"name": "Find Results",
 				"scratch": true
@@ -601,7 +609,6 @@
 	[
 		"/C/Users/mwatier/Repo/cvquality",
 		"/C/Users/mwatier/Repo/cvquality/assets",
-		"/C/Users/mwatier/Repo/cvquality/assets/images",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/base",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/component",
@@ -755,6 +762,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"wizard",
+			"svg",
 			"25",
 			"20px",
 			"5px",
@@ -880,9 +889,7 @@
 			"This is an h1 heading",
 			" $major-third",
 			"$major-sixth",
-			"$major-seventh",
-			".1",
-			"1"
+			"$major-seventh"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -903,7 +910,7 @@
 	"groups":
 	[
 		{
-			"selected": 8,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -942,15 +949,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5993,
+						"buffer_size": 5607,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4725,
-								4725
+								4986,
+								4986
 							]
 						],
 						"settings":
@@ -960,10 +967,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1491.0,
+						"translation.y": 1470.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1053,7 +1060,7 @@
 						"translation.y": 315.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
@@ -1084,7 +1091,7 @@
 						"translation.y": 456.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -1114,7 +1121,7 @@
 						"translation.y": 1665.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -1143,7 +1150,7 @@
 						"translation.y": 795.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -1152,15 +1159,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2324,
+						"buffer_size": 2973,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1466,
-								1466
+								1992,
+								1992
 							]
 						],
 						"settings":
@@ -1168,10 +1175,10 @@
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 312.0,
+						"translation.y": 450.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -1201,7 +1208,7 @@
 						"translation.y": 2977.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
@@ -1231,7 +1238,7 @@
 						"translation.y": 2868.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
@@ -1261,7 +1268,7 @@
 						"translation.y": 659.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
@@ -1269,7 +1276,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4082,
+						"buffer_size": 4575,
 						"regions":
 						{
 							"match":
@@ -1348,6 +1355,18 @@
 									[
 										3879,
 										3895
+									],
+									[
+										4221,
+										4227
+									],
+									[
+										4438,
+										4444
+									],
+									[
+										4541,
+										4547
 									]
 								],
 								"scope": ""
@@ -1356,15 +1375,15 @@
 						"selection":
 						[
 							[
-								563,
-								563
+								4540,
+								4551
 							]
 						],
 						"settings":
 						{
 							"detect_indentation": false,
 							"line_numbers": false,
-							"output_tag": 2,
+							"output_tag": 3,
 							"result_base_dir": "",
 							"result_file_regex": "^([^ \t].*):$",
 							"result_line_regex": "^ +([0-9]+):",
@@ -1372,10 +1391,10 @@
 							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 45.0,
+						"translation.y": 1966.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -1435,7 +1454,7 @@
 						"translation.y": 5075.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -1463,7 +1482,7 @@
 						"translation.y": 52.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -1491,7 +1510,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -1576,6 +1595,18 @@
 		"selected_items":
 		[
 			[
+				"page",
+				"assets\\scss\\structure\\_page.scss"
+			],
+			[
+				"",
+				"assets\\scss\\vendor\\bootstrap.override\\_jumbotron.override.scss"
+			],
+			[
+				"pagescss",
+				"assets\\scss\\structure\\_page.scss"
+			],
+			[
 				"jumb",
 				"assets\\scss\\vendor\\bootstrap.override\\_jumbotron.override.scss"
 			],
@@ -1590,10 +1621,6 @@
 			[
 				"index",
 				"assets\\scss\\index.scss"
-			],
-			[
-				"",
-				"assets\\scss\\vendor\\bootstrap.override\\_jumbotron.kitchensink.scss"
 			],
 			[
 				"index.scss",
@@ -1650,10 +1677,6 @@
 			[
 				"ass.s",
 				"assets\\scss\\component\\_assessment.scss"
-			],
-			[
-				"page",
-				"assets\\scss\\structure\\_page.scss"
 			],
 			[
 				"overcoll",
@@ -1746,10 +1769,6 @@
 			[
 				"typogra",
 				"assets\\scss\\base\\_typography.scss"
-			],
-			[
-				"pagescss",
-				"assets\\scss\\structure\\_page.scss"
 			],
 			[
 				"custom.scss",

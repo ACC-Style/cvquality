@@ -4,8 +4,9 @@
 * @molecule Map Tooltip
 * @section Map > Tooltip
 * @markup
-*   <div role="tooltip" class="k-widget k-tooltip k-popup k-group k-reset" data-role="popup">
-*       <div class="k-tooltip-content">
+*   <div role="tooltip" class="style-guide-override k-widget k-tooltip k-popup k-group k-reset tooltip top" data-role="popup">
+*       <div class="tooltip-arrow"></div>
+*       <div class="k-tooltip-content tooltip-inner">
 *           <strong>West Valley Medical Center</strong>
 *           <br> 1717 Arlington Avenue<br>
 *            Caldwell, ID &nbsp; 83605<br>
@@ -17,15 +18,13 @@
 *                   <img src="http://accreditation.acc.org/images/facilitymap/AF.png" alt="" class="mapseal">
 *                   <br>2016
 *               </div>
-*               <div class="clearfloat"></div>
 *           </div>
 *       </div>
-*       <div class="k-callout k-callout-s" style="left: 140px;"></div>
 *   </div>
 */
 
 .k-tooltip {}
-
+.tooltip{}
 
 /**
 * Result lists is the list view of all of the pins on the map
@@ -54,7 +53,7 @@ ul.result-list {
     }
     .address {
         background-color:$warm-grey-light;
-        padding: .25rem .5rem;
+        padding: .375rem 20px .375rem .5rem ;
         border: 1px solid $soft-grey;
         cursor: pointer;
 
@@ -63,6 +62,7 @@ ul.result-list {
             color: $scrub-teal-dark;
             margin: 0;
             margin-bottom: .25em;
+            margin-top: .125em;
             font-size: ms(2);
         }
         .address-line {

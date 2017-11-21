@@ -51,26 +51,3 @@ span {
   -webkit-transform: translateZ(0);
   /* enables on GPU processing */
 }
-
-
-/**
- * Emulating Clear Fix
- *
- * @nuclide #layout .wrapper
- * @section Helpers > fixes
- * @deprecated
- */
-
-#layout .wrapper {
-    border-bottom: solid 20px #fff;
-    &:before {
-        content: "";
-        display: table;
-    }
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    *zoom: 1;
-}

@@ -30,18 +30,57 @@ body {
         background-color: $acc-blue;
     }
     .SG-nav {
+        background-color: grey(5);
+        position: relative;
         margin: 0;
-        left: 0;
-        text-align: left;
-        top: auto;
-        bottom: 0;
-        width: 75%;
-        display: inline-block;
+        max-width: 100%;
+        display: flex;
+        clear: both;
+        flex-direction: column;
+        width: 100%;
+        float: left;
+
+        .SG-nav__item{
+            border-bottom:2px solid transparent;
+            border-top:2px solid transparent;
+            width:100%;
+            margin:0;
+            &:hover{
+                border-top:#9b9b9b 2px solid;
+                border-bottom:#9b9b9b 2px solid;
+            }
+        }
+        .SG-nav__item.SG-nav__item--active{border-bottom:3px solid #a0518e;border-top:1px solid #a0518e; background-color:#fcecf8;}
+        li{
+                list-style: none;
+                flex: 0 1 auto;
+                position: relative;
+                min-width: 0;
+                margin:0;
+
+
+             }
+        @include bp(md){
+            flex-direction: row;
+            width: 100%;
+             li{
+                list-style: none;
+                flex: 0 1 auto;
+                position: relative;
+                min-width: 0;
+             }
+              .SG-nav__item{width:auto;}
+         }
+
     }
     .SG-nav-icons {
         padding-right: 25px;
-        width: 75%;
+        width: auto;
         display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        li{margin:.5rem;}
     }
 }
 
@@ -78,3 +117,9 @@ body {
     border-bottom: 1px solid $scrub-teal-light;
   }
 }
+
+.style-guide-override.tooltip{    
+    display: block;
+    position: relative;
+    opacity: 1;
+    width: 200px;}

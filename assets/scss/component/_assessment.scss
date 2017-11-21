@@ -1,16 +1,14 @@
 /**
- * ".box"  Boxes are a simple decorator that has internal padding, a colored background, and fills its parent container. Boxes are a simpler version of .cards when the structured DOM is either unnessary or would conflict with the internal content.
+ * Boxes(".box") are a simple decorator that has internal padding, a colored background, and fills its parent container. 
+ * Boxes are a simpler version of ".cards" when the structured DOM is either unnessary or would conflict with the internal content.
  *
  * @molecule box
  * @flag contained
- * @deprecated
- * @section Assessments
+ * @section Box > Box
  * @markup
  *   <div class="box">
- *      <h1>H1 Tag<h1>
- *      <h2>@{lipsum:4:words}</h2>
- *      <h3>@{lipsum:4:words}</h3>
- *      <h4>@{lipsum:4:words}</h4>
+ *      <h1>H1 Tag</h1>
+ *      <p>@{lipsum:20:words}</p>
  *   </div>
 */
 
@@ -18,7 +16,7 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: .5rem .75rem;
-    border:1px solid $off-white;
+    border:1px solid $soft-grey;
     .card-header{margin-left:-.75rem; margin-right:-.75rem;}
 
     h1, h2, h3, h4 {
@@ -28,56 +26,13 @@
     }
 }
 /**
-* The Score Box Generic is currently used on the Assessments Page. These repeated boxes are used to show the score with each section of the assessment.
-*
-* @molecule Score Box Generic
-* @section Assessments > Score
-* @markup
-*  <div class="box score">
-*       <h3>@{lipsum:4:words}</h3>
-*       <div class="results-points">
-*           <span class="points-possible">(18 possible points)</span>
-*           <span class="points-total">0</span>
-*       </div>
-*  </div>
-*/
-.box.score,.box.alt{
-    background-color: $soft-grey;
-}
-
-
-/**
-* Score Boxes can have Accodian's nested inside themselves.  The Accordion simplifies when it is with a box so it is cleaner. 
-*
-* @molecule Score Box Accordion
-* @section Assessments > Box
-* @markup
-*  <div class="box score">
-*       <h3>@{lipsum:4:words}</h3>
-*       <div class="results-points">
-*           <span class="points-possible">(18 possible points)</span>
-*           <span class="points-total">0</span>
-*       </div>
-*       @{include:.accordion.basic}
-*  </div>
-*/
-.box.score.accordion{}
-.box,.card{
-    .accordion .panel-heading{
-        border:0 none transparent;
-        background-color:transparent;
-        .panel-title{margin-top:0;}
-    }
-}
-
-/**
-* The assessment box is defaultly white add the alt class to make it grey.
+* The box is defaultly white add the ".alt" class to make it grey and remove the boarders.
 *
 * @molecule Box Alt
-* @section Assessments > Box
+* @section Box > Box
 * @markup
 *  <div class="box alt">
-*     <h3>Past Assessments</h3>
+*     <h3>Past Box</h3>
 *     <p>@{lipsum:2:paragraphs}</p>     
 *     <div class="row">
 *         <div class="col-sm-9 col-lg-6 p-r-0">
@@ -102,19 +57,45 @@
 *  </div>
 */
 .box.alt{
+    background-color: $soft-grey;
+}
+/**
+* The Score Box Generic is currently used on the Assements Page. These repeated boxes are used to show the score with each section of the assessment.
+*
+* @molecule Score Box Generic
+* @section Box > Score Box
+* @markup
+*  <div class="box score">
+*       <h3>@{lipsum:4:words}</h3>
+*       <div class="results-points">
+*           <span class="points-possible"><span class="points-breakdown">(0 of 96 possible points)</span></span>
+*           <span class="points-total">0</span>
+*       </div>
+*  </div>
+*/
+.box.score{
+    background-color: $soft-grey;
+    h1, h2, h3, h4 {
+        &:first-child{margin-top:.5rem;}
+        font-weight: bold;
+        color: $orange-dark;
+    }
 }
 
+
+
+
 /**
-* The Overall score of the assessments is the wrap of the sections with in the entire assesment
+* The Overall Score on the assements page is the wrap up of the score of all the sections
 *
 * @molecule overall-score-box
-* @section Assessments > Score
+* @section Box > Score Box
 * @markup
 *  <div class="overall-score box">
 *      <span class="your-score-label">Your Score</span>
 *      <div  class="results-points">
 *          <span class="points-possible">
-*                 <h1 class="">Overall Score</h1> (0 of 96 possible points)
+*                 <span class="title">Overall Score</span> <span class="points-breakdown">(0 of 96 possible points)</span>
 *          </span>
 *          <span class="points-total">
 *              0%
@@ -124,6 +105,7 @@
 */
 .overall-score.box {
     background-color: white;
+    border:0px none transparent;
 }
 
 .your-score-label {
@@ -155,19 +137,29 @@
     margin-bottom: 1rem;
     position: relative;
     color: $off-black;
-    border-bottom: dashed 1px $off-black;
     z-index:1;
     position:relative;
+    display: flex;
+    flex-direction: row;
+    &:after{
+        border-bottom: dashed 1px $off-black;
+        content:"";
+        width: 100%;
+        z-index: -1;
+        position:absolute;
+        left:0;
+        right:0;
+        bottom:.625em;
+    }
 }
 
 .points-total {
+    flex: 0 0 3rem;
+    text-align: center;
     color: $off-black;
     font-size: ms(2);
-    font-weight: normal;
-    float:right;
-    z-index:2;
+    font-weight: bold;
     padding: .25rem .125rem;
-    background-color:white;
     .score &{    
         background-color: $soft-grey;
     }
@@ -180,16 +172,22 @@
 }
 
 .points-possible {
-    vertical-align:bottom;
+    flex: 1 1 auto;
     padding:.5em .25em .5em 0;
     z-index:3;
-    background-color:white;
-    .score &{background-color: $soft-grey;}
+    .points-breakdown {
+        background-color:white;
+        padding-right:.25em;
+        .score &{background-color: $soft-grey;}
+    }
     .overall-score & {}
 
-    h1,h2,h3,h4{
+    .title{
+        font-size: ms(7);
+        @include font-display("bold");
+        color:$orange-dark;
         margin:0;
-        line-height: .75;
+        line-height: 1;
         vertical-align:bottom;
         background-color: white;
         display:inline-block;
@@ -202,7 +200,7 @@
  * "Wizard Navigation"  This is a combination of .box, .progress-bar and .button to create a navigation that goes between a collection of pages that need to be sequentially stepped through.
  *
  * @structure Wizard Navigation 
- * @section Nav > Page 
+ * @section Advanced Cards & Boxes > Wizard Nav 
  * @markup
  *  <div class="box alt">
  *      <div class="row">
@@ -218,3 +216,27 @@
  *
  */
 .wizard.box{}
+
+/**
+* Score Boxes can have Accodian's nested inside themselves.  The Accordion simplifies when it is with a box so it is cleaner. 
+*
+* @structure Score Box Accordion
+* @section Advanced Cards & Boxes > Score Box
+* @markup
+*  <div class="box score">
+*       <h3>@{lipsum:4:words}</h3>
+*       <div class="results-points">
+*           <span class="points-possible"><span class="points-breakdown">(0 of 96 possible points)</span></span>
+*           <span class="points-total">0</span>
+*       </div>
+*       @{include:.accordion.basic}
+*  </div>
+*/
+.box.score.accordion{}
+.box,.card{
+    .accordion .panel-heading{
+        border:0 none transparent;
+        background-color:transparent;
+        .panel-title{margin-top:0;}
+    }
+}

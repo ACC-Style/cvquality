@@ -2,7 +2,7 @@
 * show the completion or loading progress of a task or system.
 *
 * @molecule Progress Bar
-* @section Feed Back UI
+* @section Advanced Containers > Progress Bar
 * @modifiers
 *  progress-bar-striped decorate the bar with a diagonal stripe to the progress bar
 *  active animate the strips to show action
@@ -28,7 +28,7 @@
 * Progress bars can be stacked to show levels of completion.
 *
 * @molecule Progress Bar Stacked
-* @section Feed Back UI
+* @section Advanced Containers > Progress Bar
 * @markup
 *  <div class="progress">
 *    <div class="progress-bar progress-bar-success" style="width: 35%">

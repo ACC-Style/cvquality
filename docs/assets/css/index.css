@@ -222,24 +222,6 @@ span {
   /* enables on GPU processing */ }
 
 /**
- * Emulating Clear Fix
- *
- * @nuclide #layout .wrapper
- * @section Helpers > fixes
- * @deprecated
- */
-#layout .wrapper {
-  border-bottom: solid 20px #fff;
-  *zoom: 1; }
-  #layout .wrapper:before {
-    content: "";
-    display: table; }
-  #layout .wrapper:after {
-    content: "";
-    display: table;
-    clear: both; }
-
-/**
 
  * @atom Lato, Verdana, Helvetica, sans-serif
  * @section Fonts & Branding
@@ -1470,7 +1452,7 @@ img {
 .img-rounded {
   border-radius: 9px; }
 
-.img-thumbnail {
+.img-thumbnail, .toolkit-badge {
   padding: 4px;
   line-height: 1.5;
   background-color: #fff;
@@ -1483,7 +1465,7 @@ img {
   max-width: 100%;
   height: auto; }
 
-.img-circle {
+.img-circle, .toolkit-badge {
   border-radius: 50%; }
 
 hr {
@@ -4899,7 +4881,7 @@ a.thumbnail.active {
 
 .media-object {
   display: block; }
-  .media-object.img-thumbnail {
+  .media-object.img-thumbnail, .media-object.toolkit-badge {
     max-width: none; }
 
 .media-right,
@@ -5284,22 +5266,21 @@ button.list-group-item-danger {
   border: 0;
   margin-bottom: 0; }
 
-.panel-group, .accordion {
+.panel-group {
   margin-bottom: 24px; }
-  .panel-group .panel, .accordion .panel {
+  .panel-group .panel {
     margin-bottom: 0;
     border-radius: 6px; }
-    .panel-group .panel + .panel, .accordion .panel + .panel {
+    .panel-group .panel + .panel {
       margin-top: 5px; }
-  .panel-group .panel-heading, .accordion .panel-heading {
+  .panel-group .panel-heading {
     border-bottom: 0; }
-    .panel-group .panel-heading + .panel-collapse > .panel-body, .accordion .panel-heading + .panel-collapse > .panel-body,
-    .panel-group .panel-heading + .panel-collapse > .list-group,
-    .accordion .panel-heading + .panel-collapse > .list-group {
+    .panel-group .panel-heading + .panel-collapse > .panel-body,
+    .panel-group .panel-heading + .panel-collapse > .list-group {
       border-top: 1px solid #ddd; }
-  .panel-group .panel-footer, .accordion .panel-footer {
+  .panel-group .panel-footer {
     border-top: 0; }
-    .panel-group .panel-footer + .panel-collapse .panel-body, .accordion .panel-footer + .panel-collapse .panel-body {
+    .panel-group .panel-footer + .panel-collapse .panel-body {
       border-bottom: 1px solid #ddd; }
 
 .panel-default {
@@ -7372,13 +7353,13 @@ input {
     right: 0; }
 
 /**
-* Collapse content with header section. Vanilla collapse just has a headline and the collapsed content
+* Accordion collapse thier content by a header bar. Vanilla accordion just has a plain headline with no indicators. Most of the time adding the `.basic` class will make an user experiance that is expected from the accordian widget.
 * @structure Accordion
-* @section Advanced Containers
+* @section Advanced Containers > Accordion
 * @modifiers 
-*   .fancy          used on toolkits the design is bigger and graphic
-*   .basic          gives a little bit of animation and wiggle, and ads the cheveron indicator if it is open or closed.
-*   .simple         removes all of the container decoration and converts the header into a more link.
+*  .fancy          used on toolkits the design is bigger and graphic
+*  .basic          gives a little bit of animation and wiggle, and ads the cheveron indicator if it is open or closed.
+*  .simple         removes all of the container decoration and converts the header into a more link.
 * @markup
 *  <div class="panel-group accordion">
 *   <div class="panel" id="accordion" role="tablist" aria-multiselectable="true">
@@ -7391,7 +7372,7 @@ input {
 *       </div>
 *       <div id="accordion2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
 *         <div class="panel-body">
-*           <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+*           <p>@{lipsum:5:sentence}</p>
 *           <ul class="no-bullets">    
 *             <li style="page-break-inside: avoid">
 *                 <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
@@ -7418,7 +7399,9 @@ input {
     background-color: #a4cded;
     border: #05aee5 1px solid;
     border-bottom: #0088aa 2px solid; }
-  .accordion .panel-heading .panel-title:hover, .accordion .panel-heading .panel-title a:hover, .accordion .panel-heading .panel-title a:focus, .accordion .panel-heading .panel-title a:active {
+  .accordion .panel-heading .panel-title a {
+    text-decoration: none; }
+  .accordion .panel-heading .panel-title:hover, .accordion .panel-heading .panel-title a:hover {
     color: #2f2f2f;
     text-decoration: none; }
 .accordion .panel-title a {
@@ -7427,10 +7410,10 @@ input {
   width: 100%; }
 
 /**
-* Collapse page content with header. Adding .basic will give a little bit of wiggle
+* Collapse page content with header. Adding `.basic` will give a little bit of wiggle
 *
 * @structure Accordion (Basic with a little bit of wiggle)
-* @section Advanced Containers
+* @section Advanced Containers > Accordion
 * @markup
 *  <div class="panel-group accordion basic">
 *   <div class="panel" id="accordion" role="tablist" aria-multiselectable="true">
@@ -7443,7 +7426,7 @@ input {
 *       </div>
 *       <div id="accordionbasic" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
 *         <div class="panel-body">
-*           <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+*           <p>@{lipsum:5:sentence}</p>
 *           <ul class="no-bullets">    
 *             <li style="page-break-inside: avoid">
 *                 <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
@@ -7516,7 +7499,7 @@ input {
 * Collapse can also be used for small peices of content when you want someone to do more.
 *
 * @structure Accordion (simple the more link)
-* @section Advanced Containers
+* @section Advanced Containers > Accordion
 * @modifiers
 *  .left-align      The "More" text will align to the left of the container it is in.  This is default for the accordion.
 *  .right-align     The "More" text will align to the right.
@@ -7577,6 +7560,176 @@ input {
   text-align: right; }
 
 /**
+* Fancy Accordions are used in  the toolkit 
+*
+* @structure  Accordion (Fancy)
+* @section Advanced Containers > Accordion
+* @markup  
+*   <div class="panel-group fancy accordion" id="fancyaccordion" role="tablist" aria-multiselectable="true">
+*     <div class="panel panel-default">
+*       <div class="panel-heading" role="tab" id="headingOne">
+*         <h3 class="panel-title">
+*           <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+*             <span class="text">Collapsible Group Item #1</span>
+*           </a>
+*         </h3>
+*       </div>
+*       <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+*         <div class="panel-body">
+*               <div class="row">
+*                   <div class="col-md-6"><img src="@{image:200:200}" class="toolkit-badge"/></div>
+*                   <div class="col-md-6">
+*                       <h4>@{lipsum:5:words}</h4>
+*                       <ol>
+*                           <li style="page-break-inside: avoid">
+*                               <a href="#.pdf" class="link" target="_blank">@{lipsum:3:words}</a>
+*                           </li>
+*                           <li style="page-break-inside: avoid">
+*                               <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*                           </li>
+*                           <li style="page-break-inside: avoid">
+*                               <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*                           </li>
+*                       </ol>
+*                   </div>
+*               </div>
+*         </div>
+*       </div>
+*     </div>
+*     <div class="panel panel-default">
+*       <div class="panel-heading" role="tab" id="headingTwo">
+*         <h3 class="panel-title">
+*           <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+*              <span class="text">@{lipsum:1:paragraphs}</span>
+*           </a>
+*         </h3>
+*       </div>
+*       <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+*         <div class="panel-body">
+*               <div class="row">
+*                   <div class="col-md-6">&nbsp;</div>
+*                   <div class="col-md-6">
+*                       <h4>@{lipsum:5:words}</h4>
+*                       <ol>
+*                           <li style="page-break-inside: avoid">
+*                               <a href="#.pdf" class="link" target="_blank">@{lipsum:3:words}</a>
+*                           </li>
+*                           <li style="page-break-inside: avoid">
+*                               <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*                           </li>
+*                           <li style="page-break-inside: avoid">
+*                               <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*                           </li>
+*                       </ol>
+*                   </div>
+*               </div>
+*         </div>
+*       </div>
+*     </div>
+*   </div>
+* 
+*/
+.accordion.fancy {
+  border-radius: 8px;
+  padding: 5px;
+  border: 1px solid #d6d4d4;
+  counter-reset: item; }
+  .accordion.fancy .panel {
+    counter-increment: item;
+    counter-reset: subitem; }
+    .accordion.fancy .panel ol li {
+      counter-increment: subitem;
+      list-style: none; }
+      .accordion.fancy .panel ol li:before {
+        content: counter(item) counter(subitem,lower-alpha) "."; }
+  .accordion.fancy .panel-title a {
+    display: table;
+    padding: 0;
+    vertical-align: middle;
+    font-family: 'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
+    font-weight: 500; }
+  .accordion.fancy .panel-title a {
+    color: #fafafa;
+    background-color: #047294; }
+  .accordion.fancy .panel-title a:after {
+    content: "\f078";
+    transition: transform 0.25s ease-out;
+    -moz-transition: transform 0.25s ease-out;
+    -webkit-transition: transform 0.25s ease-out;
+    background-color: #e87d1e;
+    color: white;
+    padding: 1rem;
+    width: 3em;
+    text-align: center; }
+  .accordion.fancy .panel-title a:before {
+    content: counter(item);
+    font-family: 'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    color: #fafafa;
+    font-size: 32px;
+    padding: 1rem 1rem;
+    text-align: center;
+    min-width: 4rem; }
+  .accordion.fancy .panel-title span.text {
+    padding: 1rem 1rem 1rem 0; }
+  .accordion.fancy .panel-title a:before, .accordion.fancy .panel-title a:after, .accordion.fancy .panel-title span.text {
+    display: table-cell;
+    vertical-align: middle; }
+  .accordion.fancy .panel-title a.collapsed {
+    background-color: #fafafa;
+    color: #2f2f2f; }
+    .accordion.fancy .panel-title a.collapsed:before, .accordion.fancy .panel-title a.collapsed:after {
+      transform: rotate(0) !important;
+      -moz-transform: rotate(0) !important;
+      -webkit-transform: rotate(0) !important; }
+    .accordion.fancy .panel-title a.collapsed:before {
+      color: #047294; }
+    .accordion.fancy .panel-title a.collapsed:after {
+      content: "\f054";
+      background-color: #047294;
+      color: white; }
+  .accordion.fancy .panel-heading {
+    border-bottom: 0 solid #a1a0a4; }
+  .accordion.fancy .panel-heading:active, .accordion.fancy .panel-heading:focus, .accordion.fancy .panel-heading:hover, .accordion.fancy .panel-heading:active, .accordion.fancy .panel-heading:focus, .accordion.fancy .panel-heading:hover, .accordion.fancy .panel-heading:active, .accordion.fancy .panel-heading:focus, .accordion.fancy .panel-heading:hover {
+    border-color: #e87d1e; }
+    .accordion.fancy .panel-heading:active .panel-title a, .accordion.fancy .panel-heading:focus .panel-title a, .accordion.fancy .panel-heading:hover .panel-title a, .accordion.fancy .panel-heading:active .panel-title a, .accordion.fancy .panel-heading:focus .panel-title a, .accordion.fancy .panel-heading:hover .panel-title a, .accordion.fancy .panel-heading:active .panel-title a, .accordion.fancy .panel-heading:focus .panel-title a, .accordion.fancy .panel-heading:hover .panel-title a {
+      color: #fafafa;
+      background-color: #047294; }
+    .accordion.fancy .panel-heading:active .panel-title a:after, .accordion.fancy .panel-heading:focus .panel-title a:after, .accordion.fancy .panel-heading:hover .panel-title a:after, .accordion.fancy .panel-heading:active .panel-title a:after, .accordion.fancy .panel-heading:focus .panel-title a:after, .accordion.fancy .panel-heading:hover .panel-title a:after, .accordion.fancy .panel-heading:active .panel-title a:after, .accordion.fancy .panel-heading:focus .panel-title a:after, .accordion.fancy .panel-heading:hover .panel-title a:after {
+      background-color: #e87d1e;
+      color: white; }
+    .accordion.fancy .panel-heading:active .panel-title a:before, .accordion.fancy .panel-heading:focus .panel-title a:before, .accordion.fancy .panel-heading:hover .panel-title a:before, .accordion.fancy .panel-heading:active .panel-title a:before, .accordion.fancy .panel-heading:focus .panel-title a:before, .accordion.fancy .panel-heading:hover .panel-title a:before, .accordion.fancy .panel-heading:active .panel-title a:before, .accordion.fancy .panel-heading:focus .panel-title a:before, .accordion.fancy .panel-heading:hover .panel-title a:before {
+      color: white; }
+  .accordion.fancy .panel-heading:hover .panel-title a:after {
+    animation: btn-bounce .3s ease-in 2;
+    -webkit-animation: btn-bounce .3s ease-in 2;
+    -moz-animation: btn-bounce 0.3s ease-in 2; }
+  .accordion.fancy .panel-body {
+    background: #ffffff;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlY2VhZWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #ffffff 0%, #eceaea 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #eceaea));
+    background: -webkit-linear-gradient(top, #ffffff 0%, #eceaea 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #eceaea 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%, #eceaea 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #eceaea 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr=' $soft-grey', GradientType=0);
+    border: 1px solid #d6d4d4;
+    padding: 2rem 1rem;
+    line-height: 1.65; }
+
+@keyframes btn-bounce {
+  0% {
+    padding-top: 19px; }
+  25% {
+    padding-top: 30px; }
+  50% {
+    padding-top: 19px; }
+  75% {
+    padding-top: 5px; }
+  100% {
+    padding-top: 19px; } }
+/**
 * Navigaion between dynamic or category collected pages when the collection is above the count of 10.
 *
 * @structure Pagination
@@ -7611,7 +7764,7 @@ input {
 * show the completion or loading progress of a task or system.
 *
 * @molecule Progress Bar
-* @section Feed Back UI
+* @section Advanced Containers > Progress Bar
 * @modifiers
 *  progress-bar-striped decorate the bar with a diagonal stripe to the progress bar
 *  active animate the strips to show action
@@ -7631,7 +7784,7 @@ input {
 * Progress bars can be stacked to show levels of completion.
 *
 * @molecule Progress Bar Stacked
-* @section Feed Back UI
+* @section Advanced Containers > Progress Bar
 * @markup
 *  <div class="progress">
 *    <div class="progress-bar progress-bar-success" style="width: 35%">
@@ -8231,8 +8384,8 @@ input {
 /**
  * The "Facility Card" is a combination of cards and ui to make the UI element that is found on the home page. 
  *
- * @structure Highlighted Card "Facility" 
- * @section Card Stuctures 
+ * @structure Facility Card 
+ * @section Advanced Cards & Boxes > Facility Card 
  * @flag contained
  * @markup
  *  <div class="card highlighted">
@@ -8926,7 +9079,11 @@ input {
     .nav-sub li a {
       display: block;
       color: #6f6b6f;
-      text-decoration: none; }
+      text-decoration: none;
+      padding: 6px 10px; }
+      @media only screen and (min-width: 1024px) {
+        .nav-sub li a {
+          padding: 3px 10px; } }
       .nav-sub li a:hover {
         text-decoration: none;
         color: #2f2f2f; }
@@ -8935,13 +9092,13 @@ input {
     .nav-sub li.current > a, .nav-sub li.current > a:hover {
       color: #e87d1e; }
   .nav-sub li > a {
-    padding: 3px 10px 3px 1.5em; }
+    padding-left: 1.5em; }
   .nav-sub li li > a {
-    padding: 3px 10px 3px 2em; }
+    padding-left: 2em; }
   .nav-sub li li li > a {
-    padding: 3px 10px 3px 2.875em; }
+    padding-left: 2.875em; }
   .nav-sub li li li li > a {
-    padding: 3px 10px 3px 4em; }
+    padding-left: 4em; }
   .nav-sub .toggle {
     width: 1.25em;
     text-align: center;
@@ -9159,180 +9316,16 @@ input {
   color: #0088aa;
   border-radius: 2px; }
 
-/**
-* accordians that are used in  the toolkit 
-*
-* @structure  Accordian (Fancy)
-* @section Advanced Containers
-* @modifiers
-*  .fancy this is for fancy accordians used on toolkits
-* @markup  
-*   <div class="panel-group fancy accordion" id="fancyaccordion" role="tablist" aria-multiselectable="true">
-*     <div class="panel panel-default">
-*       <div class="panel-heading" role="tab" id="headingOne">
-*         <h3 class="panel-title">
-*           <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-*             <span class="text">Collapsible Group Item #1</span>
-*           </a>
-*         </h3>
-*       </div>
-*       <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-*         <div class="panel-body">
-*               <div class="row">
-*                   <div class="col-md-6"><img src="@{image:200:200}" alt=""style=" margin: 0 auto;"/></div>
-*                   <div class="col-md-6">
-*                       <h4>@{lipsum:5:words}</h4>
-*                       <ol>
-*                           <li style="page-break-inside: avoid">
-*                               <a href="#.pdf" class="link" target="_blank">@{lipsum:3:words}</a>
-*                           </li>
-*                           <li style="page-break-inside: avoid">
-*                               <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
-*                           </li>
-*                           <li style="page-break-inside: avoid">
-*                               <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
-*                           </li>
-*                       </ol>
-*                   </div>
-*               </div>
-*         </div>
-*       </div>
-*     </div>
-*     <div class="panel panel-default">
-*       <div class="panel-heading" role="tab" id="headingTwo">
-*         <h3 class="panel-title">
-*           <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-*              <span class="text">@{lipsum:1:paragraphs}</span>
-*           </a>
-*         </h3>
-*       </div>
-*       <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-*         <div class="panel-body">
-*               <h4>@{lipsum:5:words}</h4>
-*               <ol >    
-*                    <li style="page-break-inside: avoid">
-*                        <a href="#.pdf" class="link" target="_blank">@{lipsum:3:words}</a>
-*                    </li>
-*                    <li style="page-break-inside: avoid">
-*                        <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
-*                    </li>
-*                    <li style="page-break-inside: avoid">
-*                        <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
-*                    </li>
-*               </ol>
-*         </div>
-*       </div>
-*     </div>
-*   </div>
-* 
-*/
-.accordion.fancy {
-  border-radius: 8px;
-  padding: 5px;
-  border: 1px solid #d6d4d4;
-  counter-reset: item; }
-  .accordion.fancy .panel {
-    counter-increment: item;
-    counter-reset: subitem; }
-    .accordion.fancy .panel ol li {
-      counter-increment: subitem;
-      list-style: none; }
-      .accordion.fancy .panel ol li:before {
-        content: counter(item) counter(subitem,lower-alpha) "."; }
-  .accordion.fancy .panel-title a {
-    display: table;
-    padding: 0;
-    vertical-align: middle;
-    font-family: 'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
-    font-weight: 500; }
-  .accordion.fancy .panel-title a {
-    color: #fafafa;
-    background-color: #047294; }
-  .accordion.fancy .panel-title a:after {
-    content: "\f078";
-    transition: transform 0.25s ease-out;
-    -moz-transition: transform 0.25s ease-out;
-    -webkit-transition: transform 0.25s ease-out;
-    background-color: #e87d1e;
-    color: white;
-    padding: 1rem;
-    width: 3em;
-    text-align: center; }
-  .accordion.fancy .panel-title a:before {
-    content: counter(item);
-    font-family: 'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    color: #fafafa;
-    font-size: 32px;
-    padding: 1rem 1rem;
-    text-align: center;
-    min-width: 4rem; }
-  .accordion.fancy .panel-title span.text {
-    padding: 1rem 1rem 1rem 0; }
-  .accordion.fancy .panel-title a:before, .accordion.fancy .panel-title a:after, .accordion.fancy .panel-title span.text {
-    display: table-cell;
-    vertical-align: middle; }
-  .accordion.fancy .panel-title a.collapsed {
-    background-color: #fafafa;
-    color: #2f2f2f; }
-    .accordion.fancy .panel-title a.collapsed:before, .accordion.fancy .panel-title a.collapsed:after {
-      transform: rotate(0) !important;
-      -moz-transform: rotate(0) !important;
-      -webkit-transform: rotate(0) !important; }
-    .accordion.fancy .panel-title a.collapsed:before {
-      color: #047294; }
-    .accordion.fancy .panel-title a.collapsed:after {
-      content: "\f054";
-      background-color: #047294;
-      color: white; }
-  .accordion.fancy .panel-heading {
-    border-bottom: 0 solid #a1a0a4; }
-  .accordion.fancy .panel-heading:active, .accordion.fancy .panel-heading:focus, .accordion.fancy .panel-heading:hover, .accordion.fancy .panel-heading:active, .accordion.fancy .panel-heading:focus, .accordion.fancy .panel-heading:hover, .accordion.fancy .panel-heading:active, .accordion.fancy .panel-heading:focus, .accordion.fancy .panel-heading:hover {
-    border-color: #e87d1e; }
-    .accordion.fancy .panel-heading:active .panel-title a, .accordion.fancy .panel-heading:focus .panel-title a, .accordion.fancy .panel-heading:hover .panel-title a, .accordion.fancy .panel-heading:active .panel-title a, .accordion.fancy .panel-heading:focus .panel-title a, .accordion.fancy .panel-heading:hover .panel-title a, .accordion.fancy .panel-heading:active .panel-title a, .accordion.fancy .panel-heading:focus .panel-title a, .accordion.fancy .panel-heading:hover .panel-title a {
-      color: #fafafa;
-      background-color: #047294; }
-    .accordion.fancy .panel-heading:active .panel-title a:after, .accordion.fancy .panel-heading:focus .panel-title a:after, .accordion.fancy .panel-heading:hover .panel-title a:after, .accordion.fancy .panel-heading:active .panel-title a:after, .accordion.fancy .panel-heading:focus .panel-title a:after, .accordion.fancy .panel-heading:hover .panel-title a:after, .accordion.fancy .panel-heading:active .panel-title a:after, .accordion.fancy .panel-heading:focus .panel-title a:after, .accordion.fancy .panel-heading:hover .panel-title a:after {
-      background-color: #e87d1e;
-      color: white; }
-    .accordion.fancy .panel-heading:active .panel-title a:before, .accordion.fancy .panel-heading:focus .panel-title a:before, .accordion.fancy .panel-heading:hover .panel-title a:before, .accordion.fancy .panel-heading:active .panel-title a:before, .accordion.fancy .panel-heading:focus .panel-title a:before, .accordion.fancy .panel-heading:hover .panel-title a:before, .accordion.fancy .panel-heading:active .panel-title a:before, .accordion.fancy .panel-heading:focus .panel-title a:before, .accordion.fancy .panel-heading:hover .panel-title a:before {
-      color: white; }
-  .accordion.fancy .panel-heading:hover .panel-title a:after {
-    animation: btn-bounce .3s ease-in 2;
-    -webkit-animation: btn-bounce .3s ease-in 2;
-    -moz-animation: btn-bounce 0.3s ease-in 2; }
-  .accordion.fancy .panel-body {
-    background: #ffffff;
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlY2VhZWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(top, #ffffff 0%, #eceaea 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #eceaea));
-    background: -webkit-linear-gradient(top, #ffffff 0%, #eceaea 100%);
-    background: -o-linear-gradient(top, #ffffff 0%, #eceaea 100%);
-    background: -ms-linear-gradient(top, #ffffff 0%, #eceaea 100%);
-    background: linear-gradient(to bottom, #ffffff 0%, #eceaea 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr=' $soft-grey', GradientType=0);
-    border: 1px solid #d6d4d4;
-    padding: 2rem 1rem;
-    line-height: 1.65; }
+.toolkit-badge {
+  margin: 0 auto;
+  width: 225px;
+  display: block; }
 
-@keyframes btn-bounce {
-  0% {
-    padding-top: 19px; }
-  25% {
-    padding-top: 30px; }
-  50% {
-    padding-top: 19px; }
-  75% {
-    padding-top: 5px; }
-  100% {
-    padding-top: 19px; } }
 /**
 * charts
 *
 * @molecule charts
 * @section Content Blocks > Charts
-* @modifiers
-*  .holder this is for future use
 * @markup
 *  <div id="columnchart_material" style="width: 100%; height:400PX;"></div>
 * @script
@@ -9367,8 +9360,9 @@ input {
 * @molecule Map Tooltip
 * @section Map > Tooltip
 * @markup
-*   <div role="tooltip" class="k-widget k-tooltip k-popup k-group k-reset" data-role="popup">
-*       <div class="k-tooltip-content">
+*   <div role="tooltip" class="style-guide-override k-widget k-tooltip k-popup k-group k-reset tooltip top" data-role="popup">
+*       <div class="tooltip-arrow"></div>
+*       <div class="k-tooltip-content tooltip-inner">
 *           <strong>West Valley Medical Center</strong>
 *           <br> 1717 Arlington Avenue<br>
 *            Caldwell, ID &nbsp; 83605<br>
@@ -9380,10 +9374,8 @@ input {
 *                   <img src="http://accreditation.acc.org/images/facilitymap/AF.png" alt="" class="mapseal">
 *                   <br>2016
 *               </div>
-*               <div class="clearfloat"></div>
 *           </div>
 *       </div>
-*       <div class="k-callout k-callout-s" style="left: 140px;"></div>
 *   </div>
 */
 /**
@@ -9410,7 +9402,7 @@ ul.result-list {
     margin: 0; }
   ul.result-list .address {
     background-color: #d6d4d4;
-    padding: .25rem .5rem;
+    padding: 0.375rem 20px 0.375rem 0.5rem;
     border: 1px solid #eceaea;
     cursor: pointer; }
     ul.result-list .address .name {
@@ -9418,6 +9410,7 @@ ul.result-list {
       color: #047294;
       margin: 0;
       margin-bottom: .25em;
+      margin-top: .125em;
       font-size: 18px; }
     ul.result-list .address .address-line {
       line-height: 1.25;
@@ -9578,25 +9571,23 @@ ul.multiselect-container li.active a {
     width: 56px; } }
 /* Legacy Support */
 /**
- * ".box"  Boxes are a simple decorator that has internal padding, a colored background, and fills its parent container. Boxes are a simpler version of .cards when the structured DOM is either unnessary or would conflict with the internal content.
+ * Boxes(".box") are a simple decorator that has internal padding, a colored background, and fills its parent container. 
+ * Boxes are a simpler version of ".cards" when the structured DOM is either unnessary or would conflict with the internal content.
  *
  * @molecule box
  * @flag contained
- * @deprecated
- * @section Assessments
+ * @section Box > Box
  * @markup
  *   <div class="box">
- *      <h1>H1 Tag<h1>
- *      <h2>@{lipsum:4:words}</h2>
- *      <h3>@{lipsum:4:words}</h3>
- *      <h4>@{lipsum:4:words}</h4>
+ *      <h1>H1 Tag</h1>
+ *      <p>@{lipsum:20:words}</p>
  *   </div>
 */
 .box {
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: .5rem .75rem;
-  border: 1px solid #fafafa; }
+  border: 1px solid #eceaea; }
   .box .card-header {
     margin-left: -.75rem;
     margin-right: -.75rem; }
@@ -9607,51 +9598,13 @@ ul.multiselect-container li.active a {
       margin-top: .5rem; }
 
 /**
-* The Score Box Generic is currently used on the Assessments Page. These repeated boxes are used to show the score with each section of the assessment.
-*
-* @molecule Score Box Generic
-* @section Assessments > Score
-* @markup
-*  <div class="box score">
-*       <h3>@{lipsum:4:words}</h3>
-*       <div class="results-points">
-*           <span class="points-possible">(18 possible points)</span>
-*           <span class="points-total">0</span>
-*       </div>
-*  </div>
-*/
-.box.score, .box.alt {
-  background-color: #eceaea; }
-
-/**
-* Score Boxes can have Accodian's nested inside themselves.  The Accordion simplifies when it is with a box so it is cleaner. 
-*
-* @molecule Score Box Accordion
-* @section Assessments > Box
-* @markup
-*  <div class="box score">
-*       <h3>@{lipsum:4:words}</h3>
-*       <div class="results-points">
-*           <span class="points-possible">(18 possible points)</span>
-*           <span class="points-total">0</span>
-*       </div>
-*       @{include:.accordion.basic}
-*  </div>
-*/
-.box .accordion .panel-heading, .card .accordion .panel-heading {
-  border: 0 none transparent;
-  background-color: transparent; }
-  .box .accordion .panel-heading .panel-title, .card .accordion .panel-heading .panel-title {
-    margin-top: 0; }
-
-/**
-* The assessment box is defaultly white add the alt class to make it grey.
+* The box is defaultly white add the ".alt" class to make it grey and remove the boarders.
 *
 * @molecule Box Alt
-* @section Assessments > Box
+* @section Box > Box
 * @markup
 *  <div class="box alt">
-*     <h3>Past Assessments</h3>
+*     <h3>Past Box</h3>
 *     <p>@{lipsum:2:paragraphs}</p>     
 *     <div class="row">
 *         <div class="col-sm-9 col-lg-6 p-r-0">
@@ -9675,17 +9628,42 @@ ul.multiselect-container li.active a {
 *     </div>
 *  </div>
 */
+.box.alt {
+  background-color: #eceaea; }
+
 /**
-* The Overall score of the assessments is the wrap of the sections with in the entire assesment
+* The Score Box Generic is currently used on the Assements Page. These repeated boxes are used to show the score with each section of the assessment.
+*
+* @molecule Score Box Generic
+* @section Box > Score Box
+* @markup
+*  <div class="box score">
+*       <h3>@{lipsum:4:words}</h3>
+*       <div class="results-points">
+*           <span class="points-possible"><span class="points-breakdown">(0 of 96 possible points)</span></span>
+*           <span class="points-total">0</span>
+*       </div>
+*  </div>
+*/
+.box.score {
+  background-color: #eceaea; }
+  .box.score h1, .box.score h2, .box.score h3, .box.score h4 {
+    font-weight: bold;
+    color: #e87d1e; }
+    .box.score h1:first-child, .box.score h2:first-child, .box.score h3:first-child, .box.score h4:first-child {
+      margin-top: .5rem; }
+
+/**
+* The Overall Score on the assements page is the wrap up of the score of all the sections
 *
 * @molecule overall-score-box
-* @section Assessments > Score
+* @section Box > Score Box
 * @markup
 *  <div class="overall-score box">
 *      <span class="your-score-label">Your Score</span>
 *      <div  class="results-points">
 *          <span class="points-possible">
-*                 <h1 class="">Overall Score</h1> (0 of 96 possible points)
+*                 <span class="title">Overall Score</span> <span class="points-breakdown">(0 of 96 possible points)</span>
 *          </span>
 *          <span class="points-total">
 *              0%
@@ -9694,7 +9672,8 @@ ul.multiselect-container li.active a {
 *  </div>
 */
 .overall-score.box {
-  background-color: white; }
+  background-color: white;
+  border: 0px none transparent; }
 
 .your-score-label {
   margin-bottom: 1.5rem;
@@ -9722,18 +9701,27 @@ ul.multiselect-container li.active a {
   margin-bottom: 1rem;
   position: relative;
   color: #2f2f2f;
-  border-bottom: dashed 1px #2f2f2f;
   z-index: 1;
-  position: relative; }
+  position: relative;
+  display: flex;
+  flex-direction: row; }
+  .results-points:after {
+    border-bottom: dashed 1px #2f2f2f;
+    content: "";
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: .625em; }
 
 .points-total {
+  flex: 0 0 3rem;
+  text-align: center;
   color: #2f2f2f;
   font-size: 18px;
-  font-weight: normal;
-  float: right;
-  z-index: 2;
-  padding: .25rem .125rem;
-  background-color: white; }
+  font-weight: bold;
+  padding: .25rem .125rem; }
   .score .points-total {
     background-color: #eceaea; }
   .overall-score .points-total {
@@ -9743,26 +9731,32 @@ ul.multiselect-container li.active a {
     font-weight: bold; }
 
 .points-possible {
-  vertical-align: bottom;
+  flex: 1 1 auto;
   padding: .5em .25em .5em 0;
-  z-index: 3;
-  background-color: white; }
-  .score .points-possible {
-    background-color: #eceaea; }
-  .points-possible h1, .points-possible h2, .points-possible h3, .points-possible h4 {
+  z-index: 3; }
+  .points-possible .points-breakdown {
+    background-color: white;
+    padding-right: .25em; }
+    .score .points-possible .points-breakdown {
+      background-color: #eceaea; }
+  .points-possible .title {
+    font-size: 32px;
+    font-family: 'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    color: #e87d1e;
     margin: 0;
-    line-height: .75;
+    line-height: 1;
     vertical-align: bottom;
     background-color: white;
     display: inline-block; }
-    .score .points-possible h1, .score .points-possible h2, .score .points-possible h3, .score .points-possible h4 {
+    .score .points-possible .title {
       background-color: #eceaea; }
 
 /**
 * "Wizard Navigation"  This is a combination of .box, .progress-bar and .button to create a navigation that goes between a collection of pages that need to be sequentially stepped through.
 *
 * @structure Wizard Navigation 
-* @section Nav > Page 
+* @section Advanced Cards & Boxes > Wizard Nav 
 * @markup
 *  <div class="box alt">
 *      <div class="row">
@@ -9777,6 +9771,27 @@ ul.multiselect-container li.active a {
 *  </div>
 *
 */
+/**
+* Score Boxes can have Accodian's nested inside themselves.  The Accordion simplifies when it is with a box so it is cleaner. 
+*
+* @structure Score Box Accordion
+* @section Advanced Cards & Boxes > Score Box
+* @markup
+*  <div class="box score">
+*       <h3>@{lipsum:4:words}</h3>
+*       <div class="results-points">
+*           <span class="points-possible"><span class="points-breakdown">(0 of 96 possible points)</span></span>
+*           <span class="points-total">0</span>
+*       </div>
+*       @{include:.accordion.basic}
+*  </div>
+*/
+.box .accordion .panel-heading, .card .accordion .panel-heading {
+  border: 0 none transparent;
+  background-color: transparent; }
+  .box .accordion .panel-heading .panel-title, .card .accordion .panel-heading .panel-title {
+    margin-top: 0; }
+
 /* Footer */
 /**
  * Address blocks are well formated microformat to optimum usage in browsers.
@@ -10130,10 +10145,10 @@ address.vcard {
 
 /*! Javascript Components */
 /**
- * A slideshow component for cycling through elements, like a carousel. Nested carousels are not supported.
+ * A slideshow component for cycling through groups of images and text.
  *
  * @structure Carousel
- * @section Javascript
+ * @section Advanced Containers > Carousel
  * @modifiers
  *  .no-controls will remove left and right arrow
  *  .text-indicators converts the circle indicators to text tabs that lock to the right side of the images.
@@ -10547,8 +10562,8 @@ body, .body {
  */
 /**
  * Footer of CV Qaulity combines, footer-nav, socail-nav, and logos to make a renforcing page structure.
- * @structure Footer Nav
- * @section Page Section
+ * @structure Page Footer
+ * @section Page Sections > Footer
  *
  * @markup
  *  <footer id="footer" role="contentinfo" class="row">
@@ -10595,8 +10610,8 @@ body, .body {
 
 /**
  * Header of CV Qaulity combines, logo, header-nav, header-nav.mobile, user-status-containr, search and utility-nav to brand the page.
- * @structure Header Nav
- * @section Page Section
+ * @structure Page Header
+ * @section Page Sections > Header
  *
  * @markup
  *  <header id="header" role="contentinfo" class="row">
@@ -10679,7 +10694,7 @@ body, .body {
  * Container for the Menu Toggle for the Mobile Nav. ~Inline Style should be removed. Currently used so it will show on all screen dimensions~
  *
  * @structure Mobile Menu Toggle
- * @section Nav > Mobile
+ * @section Page Sections > Header
  * @markup
  *  <div class="mobile-menu-toggle-container row show-mobile">
  *      <div class="col-md-7">

@@ -1,0 +1,8 @@
+
+.toolkit-badge{
+    @extend .img-thumbnail;
+    @extend .img-circle;
+    margin:0 auto;
+    width:225px;
+    display: block;
+}
