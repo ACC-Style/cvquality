@@ -174,7 +174,7 @@ body {
   margin: 0; }
 
 .SG-layout {
-  max-width: 100%; }
+  max-width: 1150px; }
 
 .SG-header {
   padding: 0;
@@ -218,7 +218,11 @@ body {
     @media only screen and (min-width: 768px) {
       .SG-header .SG-nav {
         flex-direction: row;
-        width: 100%; }
+        width: 100%;
+        flex-direction: row;
+        width: 100%;
+        max-width: 1150px;
+        float: none; }
         .SG-header .SG-nav li {
           list-style: none;
           flex: 0 1 auto;
@@ -227,6 +231,9 @@ body {
         .SG-header .SG-nav .SG-nav__item {
           width: auto;
           padding: 22px 10px 24px; } }
+    @media only screen and (min-width: 768px) {
+      .SG-header .SG-nav .SG-nav__item {
+        padding: 22px 40px 24px; } }
   .SG-header .SG-nav-icons {
     padding-right: 25px;
     width: auto;
@@ -265,5 +272,8 @@ body {
   position: relative;
   opacity: 1;
   width: 200px; }
+
+.SG-toc > ul > li, .SG-toc > ul > li ul {
+  line-height: 1.5; }
 
 /*# sourceMappingURL=styleguide.css.map */

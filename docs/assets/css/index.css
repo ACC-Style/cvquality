@@ -10405,13 +10405,13 @@ address.vcard {
  *           @{include:#header}
  *           @{include:.mobile-menu-toggle-container}
  *           <div class="row">@{include:.nav-primary}</div>
- *      <div id="aux" class="row">@{include:.breadcrumb}</div>
- *      <div id="layout" class="row no-gutter">
- *          <div class="col-lg-3 p-0 d-none d-lg-block"> @{include:.nav-sub}@{include:.nav-social-button.small}</div>
- *          <div class="col-lg-9 col"><div class="page-content"><h1>Sample Page</h1> @{include:dl.grouped-definision-list}</div></div>
+ *           <div id="aux" class="row">@{include:.breadcrumb}</div>
+ *           <div id="layout" class="row no-gutter">
+ *              <div class="col-lg-3 p-0 d-none d-lg-block"> @{include:.nav-sub}@{include:.nav-social-button.small}</div>
+ *              <div class="col-lg-9 col"><div class="page-content"><h1>Sample Page</h1> @{include:dl.grouped-definision-list}</div></div>
+ *           </div>
+ *           @{include:#footer}
  *      </div>
- *       @{include:#footer}
- *  </div>
  *  </div>
  */
 body, .body {
@@ -10499,7 +10499,6 @@ body, .body {
  *       @{include:#footer}
  *      </div>
  *  </div>
- *  </div>
  */
 /**
  * Page Layout for the Assements Score
@@ -10557,7 +10556,6 @@ body, .body {
  *          </div>
  *       @{include:#footer}
  *      </div>
- *  </div>
  *  </div>
  */
 /**
