@@ -1,0 +1,166 @@
+/**
+* Timelines are highly impactiful listings of information 
+*
+*
+* @structure Timeline
+* @section Infographic > Timeline
+* @markup
+*  <div class="infographic timeline">
+*    <ol class="container">
+*    	<li class="node">
+*           <img  class="circle-img-badge" src="https://cvquality.acc.org/images/default-source/feature-listing-images/assessment-transparent" alt="Picture">
+*    	    <div class="content">
+*    	        <h2 class="title">@{lipsum:4:words}</h2>
+*    	        <p >@{lipsum:2:sentences}</p>
+*    	        <a class="link" href="#">Read more</a>
+*    	    </div>
+*    	</li>
+*    	<li class="node">
+*           <img class="circle-img-badge" src="https://cvquality.acc.org/images/default-source/feature-listing-images/toolbox-2-transparent" alt="Picture">
+*    	    <div class="content">
+*    	        <h2 class="title">@{lipsum:4:words}</h2>
+*    	        <p >@{lipsum:2:sentences}</p>
+*    	        <a class="link" href="#">Read more</a>
+*    	    </div>
+*    	</li>
+*    </ol>
+*  </div>
+*/
+
+.infographic.timeline {
+    .container {
+        width: 100%;
+    }
+    .node {
+        position: relative;
+        min-height: 240px;
+        clear: both;
+
+        .title {
+            margin: 0 0 .5em;
+            padding: .375em 1rem;
+            color: $off-white;
+            background-color: $scrub-teal-dark;
+            width: 100%;
+            position: relative;
+			border-radius:0 4px  4px 4px;
+
+
+            &:before {
+                position: absolute;
+                content: "";
+                width: 0;
+                height: 0;
+                border-style: solid;
+                top: 0;
+                left: -25px;
+                border-color: transparent  $scrub-teal-dark transparent transparent;
+                border-width: .875em 25px .875em 0;
+
+            }
+        }
+        .content{				
+			width: calc(100% - 120px);
+			float: right;
+			padding-top: 23px;
+			}
+		.circle-img-badge {float:left;}
+        &:nth-child(4n+1) {
+            .circle-img-badge {
+                background-color: $orange-light;
+            }
+        }
+
+        &:nth-child(4n+2) {
+            .circle-img-badge {
+                background-color: $mix-orange_teal;
+            }
+        }
+
+        &:nth-child(4n+3) {
+            .circle-img-badge {
+                background-color: $mix-teal_orange;
+            }
+        }
+
+        &:nth-child(4n+4) {
+            .circle-img-badge {
+                background-color: $scrub-teal-light;
+            }
+        }
+
+        @include bp(md) {
+			.content {
+			width: 50%;
+			padding-top: 55px;
+			}
+			.circle-img-badge{float:none;}
+            &:nth-child(odd) {
+                .content {
+                    padding-right: 120px;
+                    float: left;
+                }
+
+                .title {
+                    border-radius: 4px 0 4px 4px;
+
+                    &:before {
+                    	left: auto;
+                        right: -25px;
+                        border-color: transparent transparent transparent $scrub-teal-dark;
+                        border-width: .875em 0 .875em 25px;
+                    }
+                }
+            }
+
+            &:nth-child(even) {
+                .content {
+                    padding-left: 120px;
+                    float: right;
+                }
+
+                .title {
+                    border-radius: 0 4px 4px 4px;
+
+                    &:before {
+                        left: -25px;
+                        border-color: transparent $scrub-teal-dark transparent transparent;
+                        border-width: .875em 25px  .875em 0;
+                    }
+                }
+            }
+        }
+        @include bp(lg) {
+			.content {
+			padding-top: 80px;
+			}
+			&:nth-child(odd) {
+                .content {
+                    padding-right: 135px;
+
+                }
+            }
+			&:nth-child(even) {
+                .content {
+                    padding-left: 135px;
+
+                }
+            }
+		}
+        .circle-img-badge {
+            width: 80px;
+            border-width: 4px;
+            @include bp(md) {
+	            position: absolute;
+	            left: 50%;
+                border-width: 8px;
+                width: 150px;
+                margin-left: -75px;
+            }
+            @include bp(lg) {
+                width: 200px;
+                margin-left: -100px;
+            }
+        }
+    }
+}

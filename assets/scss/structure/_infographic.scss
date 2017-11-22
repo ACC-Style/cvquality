@@ -1,0 +1,19 @@
+// most infographics are lists this is the reset to move the list into 
+.infographic{
+	.container, .node{
+		list-style-type: none;
+		margin:0;
+		padding:0;
+	}
+}
+
+.circle-img-badge{
+	@extend .img-thumbnail;
+	@extend .img-circle;
+	max-width:200px;
+	max-height:200px;
+	border:10px solid white;
+	-webkit-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.75);
+}

@@ -101,7 +101,20 @@ $warm-grey-light: #d6d4d4;
  * @section Scrub Teal	 	
  */
  $scrub-teal-dark:#047294;
-
+/**
+ * ScrubTeal & Orange Light 30%
+ *
+ * @color
+ * @section Blends      
+ */
+ $mix-teal_orange:#58B5A5;
+ /**
+ *  Orange Light & ScrubTeal 30%
+ *
+ * @color
+ * @section Blends      
+ */
+ $mix-orange_teal:#ACBD65;
 
  @mixin teal-gradient{
   background: $scrub-teal-dark;

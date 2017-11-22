@@ -83,6 +83,18 @@
  * @color
  * @section Scrub Teal	 	
  */
+/**
+ * ScrubTeal & Orange Light 30%
+ *
+ * @color
+ * @section Blends      
+ */
+/**
+*  Orange Light & ScrubTeal 30%
+*
+* @color
+* @section Blends      
+*/
 @import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700");
 @import "https://use.fontawesome.com/972bb54a90.css";
@@ -1440,7 +1452,7 @@ img {
 .img-rounded {
   border-radius: 9px; }
 
-.img-thumbnail, .toolkit-badge {
+.img-thumbnail, .toolkit-badge, .circle-img-badge {
   padding: 4px;
   line-height: 1.5;
   background-color: #fff;
@@ -1453,7 +1465,7 @@ img {
   max-width: 100%;
   height: auto; }
 
-.img-circle, .toolkit-badge {
+.img-circle, .toolkit-badge, .circle-img-badge {
   border-radius: 50%; }
 
 hr {
@@ -4869,7 +4881,7 @@ a.thumbnail.active {
 
 .media-object {
   display: block; }
-  .media-object.img-thumbnail, .media-object.toolkit-badge {
+  .media-object.img-thumbnail, .media-object.toolkit-badge, .media-object.circle-img-badge {
     max-width: none; }
 
 .media-right,
@@ -10384,6 +10396,132 @@ address.vcard {
     margin-left: -10px; }
   .carousel-control.right .fa {
     margin-right: -10px; } }
+.infographic .container, .infographic .node {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.circle-img-badge {
+  max-width: 200px;
+  max-height: 200px;
+  border: 10px solid white;
+  -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.75); }
+
+/**
+* Timelines are highly impactiful listings of information 
+*
+*
+* @structure Timeline
+* @section Infographic > Timeline
+* @markup
+*  <div class="infographic timeline">
+*    <ol class="container">
+*    	<li class="node">
+*           <img  class="circle-img-badge" src="https://cvquality.acc.org/images/default-source/feature-listing-images/assessment-transparent" alt="Picture">
+*    	    <div class="content">
+*    	        <h2 class="title">@{lipsum:4:words}</h2>
+*    	        <p >@{lipsum:2:sentences}</p>
+*    	        <a class="link" href="#">Read more</a>
+*    	    </div>
+*    	</li>
+*    	<li class="node">
+*           <img class="circle-img-badge" src="https://cvquality.acc.org/images/default-source/feature-listing-images/toolbox-2-transparent" alt="Picture">
+*    	    <div class="content">
+*    	        <h2 class="title">@{lipsum:4:words}</h2>
+*    	        <p >@{lipsum:2:sentences}</p>
+*    	        <a class="link" href="#">Read more</a>
+*    	    </div>
+*    	</li>
+*    </ol>
+*  </div>
+*/
+.infographic.timeline .container {
+  width: 100%; }
+.infographic.timeline .node {
+  position: relative;
+  min-height: 240px;
+  clear: both; }
+  .infographic.timeline .node .title {
+    margin: 0 0 .5em;
+    padding: .375em 1rem;
+    color: #fafafa;
+    background-color: #047294;
+    width: 100%;
+    position: relative;
+    border-radius: 0 4px  4px 4px; }
+    .infographic.timeline .node .title:before {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      top: 0;
+      left: -25px;
+      border-color: transparent #047294 transparent transparent;
+      border-width: .875em 25px .875em 0; }
+  .infographic.timeline .node .content {
+    width: calc(100% - 120px);
+    float: right;
+    padding-top: 23px; }
+  .infographic.timeline .node .circle-img-badge {
+    float: left; }
+  .infographic.timeline .node:nth-child(4n+1) .circle-img-badge {
+    background-color: #ffc425; }
+  .infographic.timeline .node:nth-child(4n+2) .circle-img-badge {
+    background-color: #ACBD65; }
+  .infographic.timeline .node:nth-child(4n+3) .circle-img-badge {
+    background-color: #58B5A5; }
+  .infographic.timeline .node:nth-child(4n+4) .circle-img-badge {
+    background-color: #05aee5; }
+  @media only screen and (min-width: 768px) {
+    .infographic.timeline .node .content {
+      width: 50%;
+      padding-top: 55px; }
+    .infographic.timeline .node .circle-img-badge {
+      float: none; }
+    .infographic.timeline .node:nth-child(odd) .content {
+      padding-right: 120px;
+      float: left; }
+    .infographic.timeline .node:nth-child(odd) .title {
+      border-radius: 4px 0 4px 4px; }
+      .infographic.timeline .node:nth-child(odd) .title:before {
+        left: auto;
+        right: -25px;
+        border-color: transparent transparent transparent #047294;
+        border-width: .875em 0 .875em 25px; }
+    .infographic.timeline .node:nth-child(even) .content {
+      padding-left: 120px;
+      float: right; }
+    .infographic.timeline .node:nth-child(even) .title {
+      border-radius: 0 4px 4px 4px; }
+      .infographic.timeline .node:nth-child(even) .title:before {
+        left: -25px;
+        border-color: transparent #047294 transparent transparent;
+        border-width: .875em 25px  .875em 0; } }
+  @media only screen and (min-width: 1024px) {
+    .infographic.timeline .node .content {
+      padding-top: 80px; }
+    .infographic.timeline .node:nth-child(odd) .content {
+      padding-right: 135px; }
+    .infographic.timeline .node:nth-child(even) .content {
+      padding-left: 135px; } }
+  .infographic.timeline .node .circle-img-badge {
+    width: 80px;
+    border-width: 4px; }
+    @media only screen and (min-width: 768px) {
+      .infographic.timeline .node .circle-img-badge {
+        position: absolute;
+        left: 50%;
+        border-width: 8px;
+        width: 150px;
+        margin-left: -75px; } }
+    @media only screen and (min-width: 1024px) {
+      .infographic.timeline .node .circle-img-badge {
+        width: 200px;
+        margin-left: -100px; } }
+
 /*! Layouts */
 /**
  * Page Layout of a basic page
