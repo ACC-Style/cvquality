@@ -98,7 +98,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700");
 @import "https://use.fontawesome.com/972bb54a90.css";
-.icon-before:before, a.link:before, .accordion .panel-title a:before, .k-map .k-marker:before {
+.icon-before:before, a.link:before, .accordion .panel-title a:before, .k-map .k-marker:before, .infographic.timeline .node + .node:before {
   display: inline-block;
   margin-right: .5em;
   font: normal normal normal 14px/1 FontAwesome;
@@ -10434,11 +10434,42 @@ address.vcard {
 *    	        <a class="link" href="#">Read more</a>
 *    	    </div>
 *    	</li>
+*    	<li class="node">
+*           <img class="circle-img-badge" src="https://cvquality.acc.org/images/default-source/feature-listing-images/webinars-transparent" alt="Picture">
+*    	    <div class="content">
+*    	        <h2 class="title">@{lipsum:4:words}</h2>
+*    	        <p >@{lipsum:2:sentences}</p>
+*    	        <a class="link" href="#">Read more</a>
+*    	    </div>
+*    	</li>
+*    	<li class="node">
+*           <img class="circle-img-badge" src="https://cvquality.acc.org/images/default-source/feature-listing-images/assessment-transparent" alt="Picture">
+*    	    <div class="content">
+*    	        <h2 class="title">@{lipsum:4:words}</h2>
+*    	        <p >@{lipsum:2:sentences}</p>
+*    	        <a class="link" href="#">Read more</a>
+*    	    </div>
+*    	</li>
 *    </ol>
 *  </div>
 */
 .infographic.timeline .container {
   width: 100%; }
+.infographic.timeline .node + .node:before {
+  content: "\f01a";
+  color: #d6d4d4;
+  font-size: 32px;
+  position: absolute;
+  top: -120px;
+  left: 21px; }
+  @media only screen and (min-width: 768px) {
+    .infographic.timeline .node + .node:before {
+      left: 50%;
+      margin-left: -.625em;
+      top: -60px; } }
+  @media only screen and (min-width: 1024px) {
+    .infographic.timeline .node + .node:before {
+      top: -37px; } }
 .infographic.timeline .node {
   position: relative;
   min-height: 240px;
