@@ -7022,25 +7022,55 @@ dl.grouped-definision-list.term-sq-lg dd {
 *  </div>
 *  </div>
 **/
-hr {
-  margin: 12px 0 12px;
+/**
+* Horizontal spacers and rules are used to break up content.  
+*
+* @atom Horizontal Rules
+* @section Dividers
+* @markup
+*  <hr class="divider orange dotted">
+*  <hr class="divider grey dashed">
+*  <strong>There is a spacer between the two sentences</strong>
+*  <p>@{lipsum:sentence}</p>
+*  <hr class="line-spacer"/>
+*  <p>@{lipsum:sentences}</p>
+*  <hr class="section-divider">
+*
+* @modifiers
+*  .grey.dashed         Rules bettween items to items in lists use a grey dashed line
+*  .orange.dotted       Rules between groups to groups use orange dotted rules
+*  .teal.bold           Rules between Major Section to Section of Page are blue thick lines.  
+*  .space               Spacer with no decoration but increased space between objects
+*  .line-spacer         Alias for .divider.space
+*  .item-divider        Alias for .divider.grey.dashed
+*  .group-divider       Alias for .divider.orange.dotted
+*  .section-divider     Alias for .divider.teal.bold
+*/
+.divider, .line-spacer, .item-divider, .group-divider, .section-divider {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
   clear: both;
-  border-style: solid;
-  border-width: .5px;
-  color: inherit; }
-  hr.grey {
-    border-color: #d6d4d4; }
-  hr.teal {
-    border-color: #05aee5; }
-  hr.orange {
-    border-color: #ffc425; }
-  hr.dashed {
-    border-style: dashed; }
-  hr.dotted {
-    border-style: dotted; }
-  hr.space {
-    border: 0px none transparent;
-    margin: 14px 0 14px; }
+  border-bottom-style: solid;
+  border-bottom-width: .5px;
+  color: inherit;
+  border-top: none transparent 0; }
+
+.divider.grey, .item-divider {
+  border-bottom-color: #d6d4d4; }
+.divider.teal, .section-divider {
+  border-bottom-color: #05aee5; }
+.divider.orange, .group-divider {
+  border-bottom-color: #ffc425; }
+.divider.dashed, .item-divider {
+  border-bottom-style: dashed; }
+.divider.dotted, .group-divider {
+  border-bottom-style: dotted; }
+.divider.bold, .section-divider {
+  border-bottom-width: 2px; }
+.divider.space, .line-spacer {
+  border-bottom: 0px none transparent;
+  margin-bottom: 14px;
+  padding-bottom: 14px; }
 
 /**
 * @atom Tables

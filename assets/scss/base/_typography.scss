@@ -418,28 +418,59 @@ dl.grouped-definision-list{
 **/
 .typography-kitchensink{}
 
-
-hr{ 
-    margin:ms(-1) 0 ms(-1); 
+/**
+* Horizontal spacers and rules are used to break up content.  
+*
+* @atom Horizontal Rules
+* @section Dividers
+* @markup
+*  <hr class="divider orange dotted">
+*  <hr class="divider grey dashed">
+*  <strong>There is a spacer between the two sentences</strong>
+*  <p>@{lipsum:sentence}</p>
+*  <hr class="line-spacer"/>
+*  <p>@{lipsum:sentences}</p>
+*  <hr class="section-divider">
+*
+* @modifiers
+*  .grey.dashed         Rules bettween items to items in lists use a grey dashed line
+*  .orange.dotted       Rules between groups to groups use orange dotted rules
+*  .teal.bold           Rules between Major Section to Section of Page are blue thick lines.  
+*  .space               Spacer with no decoration but increased space between objects
+*  .line-spacer         Alias for .divider.space
+*  .item-divider        Alias for .divider.grey.dashed
+*  .group-divider       Alias for .divider.orange.dotted
+*  .section-divider     Alias for .divider.teal.bold
+*/
+.divider,.line-spacer,.item-divider, .group-divider,.section-divider{ 
+    margin-bottom:ms(-1); 
+    padding-bottom:ms(-1);
     clear:both;
-    border-style: solid;
-    border-width:.5px;
+    border-bottom-style: solid;
+    border-bottom-width:.5px;
     color: inherit;
- 
+    border-top:none transparent 0;
+} 
+.divider{ 
     &.grey{
-      border-color:$warm-grey-light;
+      border-bottom-color:$warm-grey-light;
     }
     &.teal{
-      border-color:$scrub-teal-light;
+      border-bottom-color:$scrub-teal-light;
     }
     &.orange{
-      border-color:$orange-light;
+      border-bottom-color:$orange-light;
     }
-    &.dashed{ border-style:dashed}
-    &.dotted{ border-style:dotted}
-    &.space{ border: 0px none transparent;margin:ms(0) 0 ms(0);}
-}
+    &.dashed{ border-bottom-style:dashed}
+    &.dotted{ border-bottom-style:dotted}
+    &.bold{ border-bottom-width:2px; }
+    &.space{ border-bottom: 0px none transparent;margin-bottom:ms(0); padding-bottom:ms(0);}
 
+}
+.line-spacer{@extend .divider.space;}
+.item-divider{@extend .divider.dashed; @extend .divider.grey;}
+.group-divider{@extend .divider.dotted; @extend .divider.orange;}
+.section-divider{ @extend .divider.bold; @extend .divider.teal;}
 
 
 @import "included/table";
