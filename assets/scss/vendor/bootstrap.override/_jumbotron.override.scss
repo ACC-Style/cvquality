@@ -4,6 +4,7 @@
 *
 * @molecule Bootstrap Jumbotron
 * @section Bootstrap > Jumbotron
+* @flag contains
 * @modifiers
 *  .orange-blue 		orange to blue background
 *  .orange-grey 		orange to grey background
@@ -12,7 +13,7 @@
 *  .soft				softens the edges of the triangles in the background 
 *  .blur 				blurs the back to a smooth gradient
 * @markup
-*  <div class="container">
+* 
 *  		<div class="jumbotron blue-grey">
 *    		<div class="container">
 *  				<h1>I am a Jumbotron!</h1>
@@ -20,7 +21,7 @@
 *  				<p><a class="btn" href="#" role="button">Learn more</a></p>
 *  			</div>
 *  		</div>
- *  </div>
+* 
 **/
 .jumbotron{
 	position:relative;
@@ -85,7 +86,8 @@
 		z-index: 3;
 	padding-left:1rem;
 	padding-right:1rem;
-	max-width:980px
+	max-width:980px;
+	width:auto;
 	}
 	p{
 		@include font("normal");

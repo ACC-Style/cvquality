@@ -2,7 +2,7 @@
  * Page Layout of a basic page
  * 
  * @layouts Page
- * @section Layouts
+ * @section Layouts > Products
  * @flag full-width
  * @markup
  *  <div class="body">
@@ -13,7 +13,7 @@
  *           <div id="aux" class="row">@{include:.breadcrumb}</div>
  *           <div id="layout" class="row no-gutter">
  *              <div class="col-lg-3 p-0 d-none d-lg-block"> @{include:.nav-sub}@{include:.nav-social-button.small}</div>
- *              <div class="col-lg-9 col"><div class="page-content"><h1>Sample Page</h1> @{include:dl.grouped-definision-list}</div></div>
+ *              <div class="col-lg-9 col"><div class="page-content"><h1>Sample Page</h1> @{include:dl.grouped-definision-list} @{include:dl.grouped-definision-list}</div></div>
  *           </div>
  *           @{include:#footer}
  *      </div>
@@ -57,7 +57,7 @@
  * Home page layout uses special cards to make more of a varried typography which doesn't exsist in sub pages. 
  * 
  * @layouts Home Page
- * @section Layouts
+ * @section Layouts > Home Page
  * @flag full-width
  * @markup
  *  <div class="body">
@@ -77,7 +77,7 @@
  *                  <div class="row vh_40">
  *                      <div class="col-lg-8 col-md-7">@{include:.undecorated.card}</div> 
  *                      <div class="col-lg-4 col-md-5">@{include:.highlighted.card}</div>
- *                  </div><div class="row vh_40">
+ *                  </div><hr class="section-divider"><div class="row vh_40">
  *                      <div class="col-lg-4 col-md-5">@{include:.highlighted.card}</div>
  *                      <div class="col-lg-8 col-md-7">@{include:.undecorated.card}</div>
  *                  </div>
@@ -94,7 +94,7 @@
  * Page Layout for the Assements Score
  * 
  * @layouts Assessments
- * @section Layouts
+ * @section Layouts > Asseements
  * @flag full-width
  * @markup
  *  <div class="body">
@@ -128,7 +128,7 @@
  * Primary pages can have more graphic layouts with adding the jumbotron.
  * 
  * @layouts Jumbotron Page
- * @section Layouts
+ * @section Layouts > Jumbotron Full
  * @flag full-width
  * @markup
  *  <div class="body">
@@ -141,9 +141,6 @@
  *                  <div class="row vh_40">
  *                      <div class="col-lg-8 col-md-7">@{include:.undecorated.card}</div> 
  *                      <div class="col-lg-4 col-md-5">@{include:.highlighted.card}</div>
- *                  </div><div class="row vh_40">
- *                      <div class="col-lg-4 col-md-5">@{include:.highlighted.card}</div>
- *                      <div class="col-lg-8 col-md-7">@{include:.undecorated.card}</div>
  *                  </div>
  *              </div>           
  *          </div>
@@ -153,13 +150,36 @@
  */
 
  .jumbo-pages{}
+/**
+ * Primary pages can have more graphic layouts with adding the jumbotron.
+ * 
+ * @layouts Jumbotron in Content
+ * @section Layouts > Jumbotron Full
+ * @flag full-width
+ * @markup
+ *  <div class="body">
+ *      <div class="wrapper container-fluid">
+ *           @{include:#header}
+ *          <div class="row">@{include:.nav-primary}</div>
+ *          <div id="layout" class="row no-gutter">
+ *          <div class="col-lg-3 col-xl-2 p-0 d-none d-lg-block"> @{include:.nav-sub}</div>
+ *          <div class="col-lg-9 col-xl-10 col"><div class="page-content">
+ *           @{include:.jumbotron}
+ *           <h1>@{lipsum:4:words}</h1><p>@{lipsum:4:paragraphs}</p><a class="btn btn-primary">@{lipsum:4:words}</a>
+ *          </div></div>
+ *      </div>
+ *       @{include:#footer}
+ *      </div>
+ *  </div>
+ */
 
+ .jumbo-content-pages{}
 
 /**
 * Layout for the wires. 
 * 
 * @layouts Test Wire Layout
-* @section Layouts
+* @section Wireframe Layouts
 * @flag full-width
 * @markup
 *  <div class="body afib">
