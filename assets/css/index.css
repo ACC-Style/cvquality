@@ -6779,16 +6779,16 @@ hr {
 hr, .divider, .line-spacer, .item-divider, dl.grouped-definision-list dt:after, dl.grouped-definision-list dd:after, .group-divider, .section-divider {
   margin-bottom: 12px;
   border-bottom-style: solid;
-  border-bottom-width: .5px;
+  border-bottom-width: 1px;
   color: inherit;
   border-top: none transparent 0; }
 
 .divider.grey, .item-divider, dl.grouped-definision-list dt:after, dl.grouped-definision-list dd:after, hr.grey {
   border-bottom-color: #d6d4d4; }
 .divider.teal, .section-divider, hr.teal {
-  border-bottom-color: #05aee5; }
+  border-bottom-color: rgba(5, 174, 229, 0.5); }
 .divider.orange, .group-divider, hr.orange {
-  border-bottom-color: #ffc425; }
+  border-bottom-color: rgba(255, 196, 37, 0.5); }
 .divider.dashed, .item-divider, dl.grouped-definision-list dt:after, dl.grouped-definision-list dd:after, hr.dashed {
   border-bottom-style: dashed; }
 .divider.dotted, .group-divider, hr.dotted {
@@ -10884,7 +10884,7 @@ body, .body {
       max-width: 1024px; } }
   @media only screen and (min-width: 1200px) {
     .wrapper {
-      max-width: 1300px; } }
+      max-width: 1200px; } }
   .wrapper:before {
     content: "";
     display: table; }
@@ -10924,9 +10924,9 @@ body, .body {
  *          <div id="layout">
  *              <div class="page-content full-screen">
  *                  <div class="row">
- *                      <div class="col-lg-4">
+ *                      <div class="col-lg-4 col-xl-5">
  *                          @{include:.featured.card}</div>
- *                      <div class="col-lg-8">
+ *                      <div class="col-lg-8 col-xl-7">
  *                          @{include:.carousel}
  *                          @{include:.leaderboard-lg}
  *                      </div>
@@ -11037,7 +11037,7 @@ body, .body {
 *              <div class="col-lg-3 col-xl-2 p-0 d-none d-lg-block">
 *               @{include:.nav-sub}
 *               @{include:.accred-address}
-*               @{include:.bigbox}
+*               @{include:.ad-container}
 *               </div>
 *              <div class="col-lg-9 col-xl-10 "><div class="page-content">
 *                    <h1> @{lipsum:5:words} </h1>
@@ -11056,6 +11056,7 @@ body, .body {
 *                        <div class="col-lg-8">
 *                        <h2>@{lipsum:4:words}</h2>
 *                        <p>@{lipsum:2:paragraphs}</p>
+*                        <hr class="item-divider"/>
 *                        <div class="card testimonial undecorated">
 *                            <div class="card-body">
 *                                <article class="blockquote">
@@ -11082,7 +11083,6 @@ body, .body {
 *                                </article>
 *                            </div>
 *                        </div>
-*                        <hr class="item-divider"/>
 *                        <a href="" class="btn btn-block btn-primary">@{lipsum:3:words}</a>
 *                    </div>
 *                    <div class="col-lg-4">@{include:.card.alt} @{include:.card.alt} </div>

@@ -190,7 +190,7 @@ hr {
 hr, .divider,.line-spacer,.item-divider, .group-divider,.section-divider{ 
     margin-bottom:ms(-1); 
     border-bottom-style: solid;
-    border-bottom-width:.5px;
+    border-bottom-width:1px;
     color: inherit;
     border-top:none transparent 0;
 } 
@@ -199,10 +199,10 @@ hr, .divider,.line-spacer,.item-divider, .group-divider,.section-divider{
       border-bottom-color:$warm-grey-light;
     }
     &.teal{
-      border-bottom-color:$scrub-teal-light;
+      border-bottom-color:rgba($scrub-teal-light,.5);
     }
     &.orange{
-      border-bottom-color:$orange-light;
+      border-bottom-color:rgba($orange-light,.5);
     }
     &.dashed{ border-bottom-style:dashed}
     &.dotted{ border-bottom-style:dotted}

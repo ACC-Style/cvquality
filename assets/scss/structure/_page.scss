@@ -28,7 +28,7 @@
     background: #fff;
     max-width:980px;
     @include bp(lg){max-width:1024px;}
-    @include bp(xl){max-width:1300px;}
+    @include bp(xl){max-width:1200px;}
     &:before {
         content: "";
         display: table;
@@ -67,9 +67,9 @@
  *          <div id="layout">
  *              <div class="page-content full-screen">
  *                  <div class="row">
- *                      <div class="col-lg-4">
+ *                      <div class="col-lg-4 col-xl-5">
  *                          @{include:.featured.card}</div>
- *                      <div class="col-lg-8">
+ *                      <div class="col-lg-8 col-xl-7">
  *                          @{include:.carousel}
  *                          @{include:.leaderboard-lg}
  *                      </div>
@@ -191,7 +191,7 @@
 *              <div class="col-lg-3 col-xl-2 p-0 d-none d-lg-block">
 *               @{include:.nav-sub}
 *               @{include:.accred-address}
-*               @{include:.bigbox}
+*               @{include:.ad-container}
 *               </div>
 *              <div class="col-lg-9 col-xl-10 "><div class="page-content">
 *                    <h1> @{lipsum:5:words} </h1>
@@ -210,6 +210,7 @@
 *                        <div class="col-lg-8">
 *                        <h2>@{lipsum:4:words}</h2>
 *                        <p>@{lipsum:2:paragraphs}</p>
+*                        <hr class="item-divider"/>
 *                        <div class="card testimonial undecorated">
 *                            <div class="card-body">
 *                                <article class="blockquote">
@@ -236,7 +237,6 @@
 *                                </article>
 *                            </div>
 *                        </div>
-*                        <hr class="item-divider"/>
 *                        <a href="" class="btn btn-block btn-primary">@{lipsum:3:words}</a>
 *                    </div>
 *                    <div class="col-lg-4">@{include:.card.alt} @{include:.card.alt} </div>
