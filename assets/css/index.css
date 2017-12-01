@@ -7046,7 +7046,7 @@ dl.grouped-definision-list.term-sq-lg dd {
 *  .group-divider       Alias for .divider.orange.dotted
 *  .section-divider     Alias for .divider.teal.bold
 */
-.divider, .line-spacer, .item-divider, .group-divider, .section-divider {
+hr, .divider, .line-spacer, .item-divider, .group-divider, .section-divider {
   margin-bottom: 12px;
   padding-bottom: 12px;
   clear: both;
@@ -7055,22 +7055,29 @@ dl.grouped-definision-list.term-sq-lg dd {
   color: inherit;
   border-top: none transparent 0; }
 
-.divider.grey, .item-divider {
+.divider.grey, .item-divider, hr.grey {
   border-bottom-color: #d6d4d4; }
-.divider.teal, .section-divider {
+.divider.teal, .section-divider, hr.teal {
   border-bottom-color: #05aee5; }
-.divider.orange, .group-divider {
+.divider.orange, .group-divider, hr.orange {
   border-bottom-color: #ffc425; }
-.divider.dashed, .item-divider {
+.divider.dashed, .item-divider, hr.dashed {
   border-bottom-style: dashed; }
-.divider.dotted, .group-divider {
+.divider.dotted, .group-divider, hr.dotted {
   border-bottom-style: dotted; }
-.divider.bold, .section-divider {
+.divider.bold, .section-divider, hr.bold {
   border-bottom-width: 2px; }
-.divider.space, .line-spacer {
+.divider.space, .line-spacer, hr.space {
   border-bottom: 0px none transparent;
   margin-bottom: 14px;
   padding-bottom: 14px; }
+
+hr {
+  padding-bottom: 0;
+  margin-top: 12px; }
+  hr.space, hr.line-spacer {
+    padding-bottom: 0;
+    margin-top: 14px; }
 
 /**
 * @atom Tables
@@ -10993,7 +11000,6 @@ body, .body {
 *  <div class="body afib">
 *      <div class="wrapper container-fluid">
 *           @{include:#header}
-*           @{include:.mobile-menu-toggle-container}
 *           <div class="row">@{include:.nav-primary}</div>
 *           <div id="aux" class="row">@{include:.breadcrumb}</div>
 *           <div id="layout" class="row no-gutter">
@@ -11011,11 +11017,11 @@ body, .body {
 *                        </div>
 *                        <div class="col-lg-6">
 *                            <img src="@{image:400:200}" alt="">
-*                            <hr class="space"/>
+*                            <hr class="line-spacer"/>
 *                            <a href="" class="btn btn-primary btn-block">@{lipsum:3:words}</a>
 *                        </div>
 *                    </div>
-*                    <hr class="grey">
+*                    <hr class="section-divder">
 *                    <div class="row">
 *                        <div class="col-lg-8">
 *                        <h2>@{lipsum:4:words}</h2>
@@ -11028,11 +11034,30 @@ body, .body {
 *                                </article>
 *                            </div>
 *                        </div>
+*                        <hr class="item-divider"/>
+*                        <div class="card testimonial undecorated">
+*                            <div class="card-body">
+*                                <article class="blockquote">
+*                                    <p>@{lipsum:15:words}</p>
+*                                    <cite class="blockquote-cite">Someone famous</cite>
+*                                </article>
+*                            </div>
+*                        </div>
+*                        <hr class="item-divider"/>
+*                         <div class="card testimonial undecorated">
+*                            <div class="card-body">
+*                                <article class="blockquote">
+*                                    <p>@{lipsum:15:words}</p>
+*                                    <cite class="blockquote-cite">Someone famous</cite>
+*                                </article>
+*                            </div>
+*                        </div>
+*                        <hr class="item-divider"/>
 *                        <a href="" class="btn btn-block btn-primary">@{lipsum:3:words}</a>
 *                    </div>
 *                    <div class="col-lg-4">@{include:.card.alt} @{include:.card.alt} </div>
 *                    </div>
-*                    <hr class="grey"/>
+*                    <hr class="group-divider"/>
 *                        <h2>@{lipsum:4:words}</h2>                   
 *                    <div class="panel-group accordion basic">
 *                     <div class="panel" id="testpage1" role="tablist" aria-multiselectable="true">

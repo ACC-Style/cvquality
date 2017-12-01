@@ -442,7 +442,7 @@ dl.grouped-definision-list{
 *  .group-divider       Alias for .divider.orange.dotted
 *  .section-divider     Alias for .divider.teal.bold
 */
-.divider,.line-spacer,.item-divider, .group-divider,.section-divider{ 
+hr, .divider,.line-spacer,.item-divider, .group-divider,.section-divider{ 
     margin-bottom:ms(-1); 
     padding-bottom:ms(-1);
     clear:both;
@@ -451,7 +451,7 @@ dl.grouped-definision-list{
     color: inherit;
     border-top:none transparent 0;
 } 
-.divider{ 
+.divider,hr{ 
     &.grey{
       border-bottom-color:$warm-grey-light;
     }
@@ -466,6 +466,11 @@ dl.grouped-definision-list{
     &.bold{ border-bottom-width:2px; }
     &.space{ border-bottom: 0px none transparent;margin-bottom:ms(0); padding-bottom:ms(0);}
 
+}
+hr{
+    padding-bottom: 0;
+    margin-top: ms(-1);
+    &.space,&.line-spacer{padding-bottom:0; margin-top:ms(0);}
 }
 .line-spacer{@extend .divider.space;}
 .item-divider{@extend .divider.dashed; @extend .divider.grey;}
