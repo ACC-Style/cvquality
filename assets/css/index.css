@@ -10991,9 +10991,9 @@ body, .body {
  *  </div>
  */
 /**
-* Page Layout For Afib
+* Layout for the wires. 
 * 
-* @layouts Page
+* @layouts Test Wire Layout
 * @section Layouts
 * @flag full-width
 * @markup
@@ -11017,11 +11017,10 @@ body, .body {
 *                        </div>
 *                        <div class="col-lg-6">
 *                            <img src="@{image:400:200}" alt="">
-*                            <hr class="line-spacer"/>
 *                            <a href="" class="btn btn-primary btn-block">@{lipsum:3:words}</a>
 *                        </div>
 *                    </div>
-*                    <hr class="section-divder">
+*                    <hr class="group-divider">
 *                    <div class="row">
 *                        <div class="col-lg-8">
 *                        <h2>@{lipsum:4:words}</h2>
@@ -11058,7 +11057,7 @@ body, .body {
 *                    <div class="col-lg-4">@{include:.card.alt} @{include:.card.alt} </div>
 *                    </div>
 *                    <hr class="group-divider"/>
-*                        <h2>@{lipsum:4:words}</h2>                   
+*                        <h2>@{lipsum:4:words}</h2> <p>@{lipsum:4:sentences}</p>                  
 *                    <div class="panel-group accordion basic">
 *                     <div class="panel" id="testpage1" role="tablist" aria-multiselectable="true">
 *                         <div class="panel-heading" role="tab" id="headingOne">
@@ -11432,5 +11431,9 @@ body, .body {
   .content-padding.quarter {
     padding-left: 4.5px;
     padding-right: 4.5px; }
+
+img + .btn.btn-block, img + .btn-block.button {
+  line-height: 1.75;
+  margin-top: 4px; }
 
 /*# sourceMappingURL=index.css.map */
