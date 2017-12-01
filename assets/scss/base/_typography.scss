@@ -159,6 +159,69 @@ hr {
     border: 3px $off-black dashed !important;
 }
 
+
+/**
+* Horizontal spacers and rules are used to break up content.  
+*
+* @atom Horizontal Rules
+* @section Dividers
+* @markup
+*  <hr class="divider orange dotted">
+*  <hr class="divider grey dashed">
+*  <strong>There is a spacer between the two sentences</strong>
+*  <p>@{lipsum:sentence}</p>
+*  <hr class="line-spacer"/>
+*  <p>@{lipsum:sentences}</p>
+*  <hr class="section-divider">
+*
+* @modifiers
+*  .grey.dashed         Rules bettween items to items in lists use a grey dashed line
+*  .orange.dotted       Rules between groups to groups use orange dotted rules
+*  .teal.bold           Rules between Major Section to Section of Page are blue thick lines.  
+*  .space               Spacer with no decoration but increased space between objects
+*  .line-spacer         Alias for .divider.space
+*  .item-divider        Alias for .divider.grey.dashed
+*  .group-divider       Alias for .divider.orange.dotted
+*  .section-divider     Alias for .divider.teal.bold
+*/
+.divider{
+    padding-bottom:ms(-1);
+}
+hr, .divider,.line-spacer,.item-divider, .group-divider,.section-divider{ 
+    margin-bottom:ms(-1); 
+    border-bottom-style: solid;
+    border-bottom-width:.5px;
+    color: inherit;
+    border-top:none transparent 0;
+} 
+.divider,hr{ 
+    &.grey{
+      border-bottom-color:$warm-grey-light;
+    }
+    &.teal{
+      border-bottom-color:$scrub-teal-light;
+    }
+    &.orange{
+      border-bottom-color:$orange-light;
+    }
+    &.dashed{ border-bottom-style:dashed}
+    &.dotted{ border-bottom-style:dotted}
+    &.bold{ border-bottom-width:2px; }
+    &.space{ border-bottom: 0px none transparent;margin-bottom:ms(0); padding-bottom:ms(0);}
+
+}
+
+.line-spacer{@extend .divider.space;}
+.item-divider{@extend .divider.dashed; @extend .divider.grey;}
+.group-divider{@extend .divider.dotted; @extend .divider.orange;}
+.section-divider{ @extend .divider.bold; @extend .divider.teal;}
+
+hr{
+    padding-bottom: 0;
+    margin-top: ms(-1);
+    &.space,&.line-spacer{padding-bottom:0; margin-top:ms(0);}
+}
+
 /**
 * @atom Text Decoration
 * @section Typography > Decorators
@@ -272,6 +335,8 @@ ul.generic-list{
     >li + li{ margin-top:.5rem; border-top:1px dashed $warm-grey-light; padding-top:.5rem;}
 }
 
+
+
 /**
 * Definision List are groups of an item and the description.  Classic definision list is Q&A 
 *
@@ -281,11 +346,18 @@ ul.generic-list{
 *    <dl class="grouped-definision-list term-xs">
 *        <dt><img src="@{image:100:100}" alt="..."></dt> 
 *        <dd>
-*            <h2>
-*          <a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a>
-*          </h2>
-*            <p>@{lipsum:3:sentences}
-*            </p>
+*            <h2><a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a></h2>
+*            <p>@{lipsum:3:sentences}</p>
+*        </dd>
+*        <dt><img src="@{image:100:100}" alt="..."></dt> 
+*        <dd>
+*            <h2><a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a></h2>
+*            <p>@{lipsum:1:sentences}</p><p>@{lipsum:2:sentences}</p>
+*        </dd>
+*        <dt><img src="@{image:100:100}" alt="..."></dt> 
+*        <dd>
+*            <h2><a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a></h2>
+*            <p>@{lipsum:3:sentences}</p>
 *        </dd>
 *        <dt><img src="@{image:100:100}" alt="..."></dt> 
 *        <dd>
@@ -308,15 +380,19 @@ dl.grouped-definision-list{
         >*{margin:0 auto;}
     }
     dd{
-        float:left; padding-left:$grid-gutter-width;
+        
+        float:left;
+        padding-left:$grid-gutter-width;
         >*:first-child{margin-top:0;}
     }
     dt,dd{
         &:after{
-            padding-top:$grid-gutter-width;
+            
             content:"";
             display: table;
             width: 100%;
+            border-width:1px;
+            @extend .item-divider;
         }
     }
     &.term-xs{dt{width:30%}dd{width:70%}}
@@ -340,6 +416,11 @@ dl.grouped-definision-list{
 }
 
 
+
+
+
+@import "included/table";
+@import "included/table_scrollable";
 
 /**
 * @atom Typography Kitchen Sink
@@ -417,66 +498,3 @@ dl.grouped-definision-list{
 *  </div>
 **/
 .typography-kitchensink{}
-
-/**
-* Horizontal spacers and rules are used to break up content.  
-*
-* @atom Horizontal Rules
-* @section Dividers
-* @markup
-*  <hr class="divider orange dotted">
-*  <hr class="divider grey dashed">
-*  <strong>There is a spacer between the two sentences</strong>
-*  <p>@{lipsum:sentence}</p>
-*  <hr class="line-spacer"/>
-*  <p>@{lipsum:sentences}</p>
-*  <hr class="section-divider">
-*
-* @modifiers
-*  .grey.dashed         Rules bettween items to items in lists use a grey dashed line
-*  .orange.dotted       Rules between groups to groups use orange dotted rules
-*  .teal.bold           Rules between Major Section to Section of Page are blue thick lines.  
-*  .space               Spacer with no decoration but increased space between objects
-*  .line-spacer         Alias for .divider.space
-*  .item-divider        Alias for .divider.grey.dashed
-*  .group-divider       Alias for .divider.orange.dotted
-*  .section-divider     Alias for .divider.teal.bold
-*/
-hr, .divider,.line-spacer,.item-divider, .group-divider,.section-divider{ 
-    margin-bottom:ms(-1); 
-    padding-bottom:ms(-1);
-    clear:both;
-    border-bottom-style: solid;
-    border-bottom-width:.5px;
-    color: inherit;
-    border-top:none transparent 0;
-} 
-.divider,hr{ 
-    &.grey{
-      border-bottom-color:$warm-grey-light;
-    }
-    &.teal{
-      border-bottom-color:$scrub-teal-light;
-    }
-    &.orange{
-      border-bottom-color:$orange-light;
-    }
-    &.dashed{ border-bottom-style:dashed}
-    &.dotted{ border-bottom-style:dotted}
-    &.bold{ border-bottom-width:2px; }
-    &.space{ border-bottom: 0px none transparent;margin-bottom:ms(0); padding-bottom:ms(0);}
-
-}
-hr{
-    padding-bottom: 0;
-    margin-top: ms(-1);
-    &.space,&.line-spacer{padding-bottom:0; margin-top:ms(0);}
-}
-.line-spacer{@extend .divider.space;}
-.item-divider{@extend .divider.dashed; @extend .divider.grey;}
-.group-divider{@extend .divider.dotted; @extend .divider.orange;}
-.section-divider{ @extend .divider.bold; @extend .divider.teal;}
-
-
-@import "included/table";
-@import "included/table_scrollable";

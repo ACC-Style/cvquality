@@ -207,7 +207,6 @@
 *  </div>
 *
 */
-
 .accordion.simple{
     .panel{
         border-radius:0px;
@@ -218,7 +217,10 @@
     .panel-heading,.panel-body{
         background:none;
         border:none;
+
     }
+    .panel-body{}
+    .panel-heading + .panel-collapse > .panel-body, .panel-heading + .panel-collapse > .list-group{border-top:1px solid rgba($scrub-teal-light,.25);}
     .panel-title a{padding:.125em 0;}
     .panel-title a:before{
         // fa-minus-square-o

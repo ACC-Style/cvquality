@@ -6750,6 +6750,64 @@ hr {
   border: 3px #2f2f2f dashed !important; }
 
 /**
+* Horizontal spacers and rules are used to break up content.  
+*
+* @atom Horizontal Rules
+* @section Dividers
+* @markup
+*  <hr class="divider orange dotted">
+*  <hr class="divider grey dashed">
+*  <strong>There is a spacer between the two sentences</strong>
+*  <p>@{lipsum:sentence}</p>
+*  <hr class="line-spacer"/>
+*  <p>@{lipsum:sentences}</p>
+*  <hr class="section-divider">
+*
+* @modifiers
+*  .grey.dashed         Rules bettween items to items in lists use a grey dashed line
+*  .orange.dotted       Rules between groups to groups use orange dotted rules
+*  .teal.bold           Rules between Major Section to Section of Page are blue thick lines.  
+*  .space               Spacer with no decoration but increased space between objects
+*  .line-spacer         Alias for .divider.space
+*  .item-divider        Alias for .divider.grey.dashed
+*  .group-divider       Alias for .divider.orange.dotted
+*  .section-divider     Alias for .divider.teal.bold
+*/
+.divider {
+  padding-bottom: 12px; }
+
+hr, .divider, .line-spacer, .item-divider, dl.grouped-definision-list dt:after, dl.grouped-definision-list dd:after, .group-divider, .section-divider {
+  margin-bottom: 12px;
+  border-bottom-style: solid;
+  border-bottom-width: .5px;
+  color: inherit;
+  border-top: none transparent 0; }
+
+.divider.grey, .item-divider, dl.grouped-definision-list dt:after, dl.grouped-definision-list dd:after, hr.grey {
+  border-bottom-color: #d6d4d4; }
+.divider.teal, .section-divider, hr.teal {
+  border-bottom-color: #05aee5; }
+.divider.orange, .group-divider, hr.orange {
+  border-bottom-color: #ffc425; }
+.divider.dashed, .item-divider, dl.grouped-definision-list dt:after, dl.grouped-definision-list dd:after, hr.dashed {
+  border-bottom-style: dashed; }
+.divider.dotted, .group-divider, hr.dotted {
+  border-bottom-style: dotted; }
+.divider.bold, .section-divider, hr.bold {
+  border-bottom-width: 2px; }
+.divider.space, .line-spacer, hr.space {
+  border-bottom: 0px none transparent;
+  margin-bottom: 14px;
+  padding-bottom: 14px; }
+
+hr {
+  padding-bottom: 0;
+  margin-top: 12px; }
+  hr.space, hr.line-spacer {
+    padding-bottom: 0;
+    margin-top: 14px; }
+
+/**
 * @atom Text Decoration
 * @section Typography > Decorators
 * @markup
@@ -6857,11 +6915,18 @@ ul.generic-list {
 *    <dl class="grouped-definision-list term-xs">
 *        <dt><img src="@{image:100:100}" alt="..."></dt> 
 *        <dd>
-*            <h2>
-*          <a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a>
-*          </h2>
-*            <p>@{lipsum:3:sentences}
-*            </p>
+*            <h2><a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a></h2>
+*            <p>@{lipsum:3:sentences}</p>
+*        </dd>
+*        <dt><img src="@{image:100:100}" alt="..."></dt> 
+*        <dd>
+*            <h2><a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a></h2>
+*            <p>@{lipsum:1:sentences}</p><p>@{lipsum:2:sentences}</p>
+*        </dd>
+*        <dt><img src="@{image:100:100}" alt="..."></dt> 
+*        <dd>
+*            <h2><a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a></h2>
+*            <p>@{lipsum:3:sentences}</p>
 *        </dd>
 *        <dt><img src="@{image:100:100}" alt="..."></dt> 
 *        <dd>
@@ -6887,10 +6952,10 @@ dl.grouped-definision-list dd {
   dl.grouped-definision-list dd > *:first-child {
     margin-top: 0; }
 dl.grouped-definision-list dt:after, dl.grouped-definision-list dd:after {
-  padding-top: 18px;
   content: "";
   display: table;
-  width: 100%; }
+  width: 100%;
+  border-width: 1px; }
 dl.grouped-definision-list.term-xs dt {
   width: 30%; }
 dl.grouped-definision-list.term-xs dd {
@@ -6948,138 +7013,6 @@ dl.grouped-definision-list.term-sq-lg dt {
   width: 20%; }
 dl.grouped-definision-list.term-sq-lg dd {
   width: 80%; }
-
-/**
-* @atom Typography Kitchen Sink
-* @section Typography > kitchensink
-* @markup
-*  <section>
-*      <h4>Headers</h4>
-*      <hr>
-*      <h1>Header 1</h1>
-*      <h2>Header 2</h2>
-*      <h3>Header 3</h3>
-*      <h4>Header 4</h4>
-*      <h5>Header 5</h5>
-*      <h6>Header 6</h6>
-*  </section>
-*  <section>
-*      <h4>Lists</h4>
-*      <hr>
-*      <ul>
-*          <li>Item 1</li>
-*          <ul>
-*              <li>Item 1</li>
-*              <li>Item 2</li>
-*          </ul>
-*          <li>Item 2</li>
-*          <li>Item 3</li>
-*          <li>Item 4</li>
-*      </ul>
-*      <ol>
-*          <li>Item 1</li>
-*          <ol>
-*              <li>Item 1</li>
-*              <li>Item 2</li>
-*          </ol>
-*          <li>Item 2</li>
-*          <li>Item 3</li>
-*          <li>Item 4</li>
-*      </ol>
-*  </section>
-*  <section>
-*      <h4>Code Block</h4>
-*      <hr>
-*      <pre><code>header {
-*      width:100%;
-*      height:100vh;
-*  }
-*  
-*  </code></pre>
-*  </section>
-*  </div>
-*  <div class="col-md-6">
-*      <section>
-*          <h4>Paragraphs</h4>
-*          <hr>
-*          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit inventore rerum, ad eos ex harum, debitis adipisci ut <a href="#">laboriosam placeat</a> at fugiat earum, impedit quidem dicta repellendus vitae! Esse, quos.</p>
-*          <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Duis mollis, <code>est non commodo</code> luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum <a href="#">dolor sit amet</a>, consectetur adipiscing elit.</p>
-*      </section>
-*      <section>
-*          <h4>Blockquotes</h4>
-*          <hr>
-*          <blockquote>
-*              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cras mattis consectetur purus sit amet fermentum.
-*          </blockquote>
-*      </section>
-*      <section>
-*          <h4>Image Caption</h4>
-*          <hr>
-*          <figure>
-*              <img src="http://placehold.it/700x300">
-*              <figcaption>Fig1. - A view of the pulpit rock in Norway.</figcaption>
-*          </figure>
-*          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non totam cumque numquam eligendi a vitae ex. Dolorum hic itaque consequuntur mollitia nisi voluptatem in est, soluta eos molestias. Suscipit, consectetur.</p>
-*      </section>
-*  </div>
-*  </div>
-**/
-/**
-* Horizontal spacers and rules are used to break up content.  
-*
-* @atom Horizontal Rules
-* @section Dividers
-* @markup
-*  <hr class="divider orange dotted">
-*  <hr class="divider grey dashed">
-*  <strong>There is a spacer between the two sentences</strong>
-*  <p>@{lipsum:sentence}</p>
-*  <hr class="line-spacer"/>
-*  <p>@{lipsum:sentences}</p>
-*  <hr class="section-divider">
-*
-* @modifiers
-*  .grey.dashed         Rules bettween items to items in lists use a grey dashed line
-*  .orange.dotted       Rules between groups to groups use orange dotted rules
-*  .teal.bold           Rules between Major Section to Section of Page are blue thick lines.  
-*  .space               Spacer with no decoration but increased space between objects
-*  .line-spacer         Alias for .divider.space
-*  .item-divider        Alias for .divider.grey.dashed
-*  .group-divider       Alias for .divider.orange.dotted
-*  .section-divider     Alias for .divider.teal.bold
-*/
-hr, .divider, .line-spacer, .item-divider, .group-divider, .section-divider {
-  margin-bottom: 12px;
-  padding-bottom: 12px;
-  clear: both;
-  border-bottom-style: solid;
-  border-bottom-width: .5px;
-  color: inherit;
-  border-top: none transparent 0; }
-
-.divider.grey, .item-divider, hr.grey {
-  border-bottom-color: #d6d4d4; }
-.divider.teal, .section-divider, hr.teal {
-  border-bottom-color: #05aee5; }
-.divider.orange, .group-divider, hr.orange {
-  border-bottom-color: #ffc425; }
-.divider.dashed, .item-divider, hr.dashed {
-  border-bottom-style: dashed; }
-.divider.dotted, .group-divider, hr.dotted {
-  border-bottom-style: dotted; }
-.divider.bold, .section-divider, hr.bold {
-  border-bottom-width: 2px; }
-.divider.space, .line-spacer, hr.space {
-  border-bottom: 0px none transparent;
-  margin-bottom: 14px;
-  padding-bottom: 14px; }
-
-hr {
-  padding-bottom: 0;
-  margin-top: 12px; }
-  hr.space, hr.line-spacer {
-    padding-bottom: 0;
-    margin-top: 14px; }
 
 /**
 * @atom Tables
@@ -7517,6 +7450,81 @@ hr {
     color: #e87d1e;
     content: "\f05a"; }
 
+/**
+* @atom Typography Kitchen Sink
+* @section Typography > kitchensink
+* @markup
+*  <section>
+*      <h4>Headers</h4>
+*      <hr>
+*      <h1>Header 1</h1>
+*      <h2>Header 2</h2>
+*      <h3>Header 3</h3>
+*      <h4>Header 4</h4>
+*      <h5>Header 5</h5>
+*      <h6>Header 6</h6>
+*  </section>
+*  <section>
+*      <h4>Lists</h4>
+*      <hr>
+*      <ul>
+*          <li>Item 1</li>
+*          <ul>
+*              <li>Item 1</li>
+*              <li>Item 2</li>
+*          </ul>
+*          <li>Item 2</li>
+*          <li>Item 3</li>
+*          <li>Item 4</li>
+*      </ul>
+*      <ol>
+*          <li>Item 1</li>
+*          <ol>
+*              <li>Item 1</li>
+*              <li>Item 2</li>
+*          </ol>
+*          <li>Item 2</li>
+*          <li>Item 3</li>
+*          <li>Item 4</li>
+*      </ol>
+*  </section>
+*  <section>
+*      <h4>Code Block</h4>
+*      <hr>
+*      <pre><code>header {
+*      width:100%;
+*      height:100vh;
+*  }
+*  
+*  </code></pre>
+*  </section>
+*  </div>
+*  <div class="col-md-6">
+*      <section>
+*          <h4>Paragraphs</h4>
+*          <hr>
+*          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit inventore rerum, ad eos ex harum, debitis adipisci ut <a href="#">laboriosam placeat</a> at fugiat earum, impedit quidem dicta repellendus vitae! Esse, quos.</p>
+*          <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Duis mollis, <code>est non commodo</code> luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum <a href="#">dolor sit amet</a>, consectetur adipiscing elit.</p>
+*      </section>
+*      <section>
+*          <h4>Blockquotes</h4>
+*          <hr>
+*          <blockquote>
+*              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cras mattis consectetur purus sit amet fermentum.
+*          </blockquote>
+*      </section>
+*      <section>
+*          <h4>Image Caption</h4>
+*          <hr>
+*          <figure>
+*              <img src="http://placehold.it/700x300">
+*              <figcaption>Fig1. - A view of the pulpit rock in Norway.</figcaption>
+*          </figure>
+*          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non totam cumque numquam eligendi a vitae ex. Dolorum hic itaque consequuntur mollitia nisi voluptatem in est, soluta eos molestias. Suscipit, consectetur.</p>
+*      </section>
+*  </div>
+*  </div>
+**/
 fieldset {
   margin: 0;
   padding: 0;
@@ -7755,6 +7763,8 @@ input {
 .accordion.simple .panel-heading, .accordion.simple .panel-body {
   background: none;
   border: none; }
+.accordion.simple .panel-heading + .panel-collapse > .panel-body, .accordion.simple .panel-heading + .panel-collapse > .list-group {
+  border-top: 1px solid rgba(5, 174, 229, 0.25); }
 .accordion.simple .panel-title a {
   padding: .125em 0; }
 .accordion.simple .panel-title a:before {
@@ -8042,7 +8052,7 @@ input {
   border-color: #a1a0a4;
   background-color: white;
   position: relative;
-  margin-bottom: 1rem; }
+  margin-bottom: 2px; }
   .card .triangle:before {
     border-color: transparent transparent transparent #a1a0a4; }
   .card .card-header {
@@ -10190,7 +10200,7 @@ address.vcard {
  *
  * @markup
  *  <div class="box alt">
- *      <h3 class="m-b-0">Questions About Accreditation?</h3>
+ *      <h4 class="m-b-0">Questions About Accreditation?</h4>
  *      <div class="card-body">
  *          <address class="vcard">
  *              <div class="contact">
