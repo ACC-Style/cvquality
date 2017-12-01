@@ -189,6 +189,7 @@ strong{}
 *  .ppt Power Points
 *  mailto: email links
 *  tel: Telephone 
+*  fax: Fax 
 *  _blank External Link icons will appear after any link that has target blank, or the href begins with http, or https
  */
 
@@ -219,13 +220,16 @@ a.link{
     &[href^="fax:"]:before{ 
         content: "\f1ac";
     }
+    &:hover{
+        text-decoration: underline;
+    }
 }
 
 
 ul.no-bullets,ul.multiselect-container,ul.generic-list{
     &, li{list-style:none;list-style-type:none;}
 }
-ul.multiselect-container,ul.generic-list{
+ul.no-indent,ul.multiselect-container,ul.generic-list{
     margin:0;padding:0;
     &,li{margin-left:0;margin-right:0;padding-left:0;padding-right:0;}
 }
@@ -337,7 +341,6 @@ dl.grouped-definision-list{
 
 
 
-
 /**
 * @atom Typography Kitchen Sink
 * @section Typography > kitchensink
@@ -414,6 +417,30 @@ dl.grouped-definision-list{
 *  </div>
 **/
 .typography-kitchensink{}
+
+
+hr{ 
+    margin:ms(-1) 0 ms(-1); 
+    clear:both;
+    border-style: solid;
+    border-width:.5px;
+    color: inherit;
+ 
+    &.grey{
+      border-color:$warm-grey-light;
+    }
+    &.teal{
+      border-color:$scrub-teal-light;
+    }
+    &.orange{
+      border-color:$orange-light;
+    }
+    &.dashed{ border-style:dashed}
+    &.dotted{ border-style:dotted}
+    &.space{ border: 0px none transparent;margin:ms(0) 0 ms(0);}
+}
+
+
 
 @import "included/table";
 @import "included/table_scrollable";

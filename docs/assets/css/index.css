@@ -98,7 +98,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700");
 @import "https://use.fontawesome.com/972bb54a90.css";
-.icon-before:before, a.link:before, .accordion .panel-title a:before, .k-map .k-marker:before, .infographic.timeline .node + .node:before {
+.icon-before:before, a.link:before, .accordion .panel-title a:before, .k-map .k-marker:before, .infographic.treelist .node + .node:before {
   display: inline-block;
   margin-right: .5em;
   font: normal normal normal 14px/1 FontAwesome;
@@ -2524,6 +2524,162 @@ pre {
     margin-left: 91.6666666667%; }
 
   .col-lg-offset-12 {
+    margin-left: 100%; } }
+@media (min-width: 1200px) {
+  .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
+    float: left; }
+
+  .col-xl-1 {
+    width: 8.3333333333%; }
+
+  .col-xl-2 {
+    width: 16.6666666667%; }
+
+  .col-xl-3 {
+    width: 25%; }
+
+  .col-xl-4 {
+    width: 33.3333333333%; }
+
+  .col-xl-5 {
+    width: 41.6666666667%; }
+
+  .col-xl-6 {
+    width: 50%; }
+
+  .col-xl-7 {
+    width: 58.3333333333%; }
+
+  .col-xl-8 {
+    width: 66.6666666667%; }
+
+  .col-xl-9 {
+    width: 75%; }
+
+  .col-xl-10 {
+    width: 83.3333333333%; }
+
+  .col-xl-11 {
+    width: 91.6666666667%; }
+
+  .col-xl-12 {
+    width: 100%; }
+
+  .col-xl-pull-0 {
+    right: auto; }
+
+  .col-xl-pull-1 {
+    right: 8.3333333333%; }
+
+  .col-xl-pull-2 {
+    right: 16.6666666667%; }
+
+  .col-xl-pull-3 {
+    right: 25%; }
+
+  .col-xl-pull-4 {
+    right: 33.3333333333%; }
+
+  .col-xl-pull-5 {
+    right: 41.6666666667%; }
+
+  .col-xl-pull-6 {
+    right: 50%; }
+
+  .col-xl-pull-7 {
+    right: 58.3333333333%; }
+
+  .col-xl-pull-8 {
+    right: 66.6666666667%; }
+
+  .col-xl-pull-9 {
+    right: 75%; }
+
+  .col-xl-pull-10 {
+    right: 83.3333333333%; }
+
+  .col-xl-pull-11 {
+    right: 91.6666666667%; }
+
+  .col-xl-pull-12 {
+    right: 100%; }
+
+  .col-xl-push-0 {
+    left: auto; }
+
+  .col-xl-push-1 {
+    left: 8.3333333333%; }
+
+  .col-xl-push-2 {
+    left: 16.6666666667%; }
+
+  .col-xl-push-3 {
+    left: 25%; }
+
+  .col-xl-push-4 {
+    left: 33.3333333333%; }
+
+  .col-xl-push-5 {
+    left: 41.6666666667%; }
+
+  .col-xl-push-6 {
+    left: 50%; }
+
+  .col-xl-push-7 {
+    left: 58.3333333333%; }
+
+  .col-xl-push-8 {
+    left: 66.6666666667%; }
+
+  .col-xl-push-9 {
+    left: 75%; }
+
+  .col-xl-push-10 {
+    left: 83.3333333333%; }
+
+  .col-xl-push-11 {
+    left: 91.6666666667%; }
+
+  .col-xl-push-12 {
+    left: 100%; }
+
+  .col-xl-offset-0 {
+    margin-left: 0%; }
+
+  .col-xl-offset-1 {
+    margin-left: 8.3333333333%; }
+
+  .col-xl-offset-2 {
+    margin-left: 16.6666666667%; }
+
+  .col-xl-offset-3 {
+    margin-left: 25%; }
+
+  .col-xl-offset-4 {
+    margin-left: 33.3333333333%; }
+
+  .col-xl-offset-5 {
+    margin-left: 41.6666666667%; }
+
+  .col-xl-offset-6 {
+    margin-left: 50%; }
+
+  .col-xl-offset-7 {
+    margin-left: 58.3333333333%; }
+
+  .col-xl-offset-8 {
+    margin-left: 66.6666666667%; }
+
+  .col-xl-offset-9 {
+    margin-left: 75%; }
+
+  .col-xl-offset-10 {
+    margin-left: 83.3333333333%; }
+
+  .col-xl-offset-11 {
+    margin-left: 91.6666666667%; }
+
+  .col-xl-offset-12 {
     margin-left: 100%; } }
 table {
   background-color: transparent; }
@@ -6618,6 +6774,7 @@ hr {
 *  .ppt Power Points
 *  mailto: email links
 *  tel: Telephone 
+*  fax: Fax 
 *  _blank External Link icons will appear after any link that has target blank, or the href begins with http, or https
  */
 a.link[href$=".pdf"]:before {
@@ -6636,15 +6793,17 @@ a.link[href^="tel:"]:before {
   content: "\f095"; }
 a.link[href^="fax:"]:before {
   content: "\f1ac"; }
+a.link:hover {
+  text-decoration: underline; }
 
 ul.no-bullets, ul.no-bullets li, ul.multiselect-container, ul.multiselect-container li, ul.generic-list, ul.generic-list li {
   list-style: none;
   list-style-type: none; }
 
-ul.multiselect-container, ul.generic-list {
+ul.no-indent, ul.multiselect-container, ul.generic-list {
   margin: 0;
   padding: 0; }
-  ul.multiselect-container, ul.multiselect-container li, ul.generic-list, ul.generic-list li {
+  ul.no-indent, ul.no-indent li, ul.multiselect-container, ul.multiselect-container li, ul.generic-list, ul.generic-list li {
     margin-left: 0;
     margin-right: 0;
     padding-left: 0;
@@ -6863,6 +7022,26 @@ dl.grouped-definision-list.term-sq-lg dd {
 *  </div>
 *  </div>
 **/
+hr {
+  margin: 12px 0 12px;
+  clear: both;
+  border-style: solid;
+  border-width: .5px;
+  color: inherit; }
+  hr.grey {
+    border-color: #d6d4d4; }
+  hr.teal {
+    border-color: #05aee5; }
+  hr.orange {
+    border-color: #ffc425; }
+  hr.dashed {
+    border-style: dashed; }
+  hr.dotted {
+    border-style: dotted; }
+  hr.space {
+    border: 0px none transparent;
+    margin: 14px 0 14px; }
+
 /**
 * @atom Tables
 * @section Typography > Tables
@@ -7390,24 +7569,31 @@ input {
 *  </div>
 *
 */
-.accordion .panel-heading {
-  background-color: #eceaea;
-  border: #d6d4d4 1px solid;
-  border-bottom: #05aee5 2px solid;
-  padding: 0; }
-  .accordion .panel-heading:hover {
-    background-color: #a4cded;
-    border: #05aee5 1px solid;
-    border-bottom: #0088aa 2px solid; }
-  .accordion .panel-heading .panel-title a {
-    text-decoration: none; }
-  .accordion .panel-heading .panel-title:hover, .accordion .panel-heading .panel-title a:hover {
-    color: #2f2f2f;
-    text-decoration: none; }
-.accordion .panel-title a {
-  padding: 10px 15px;
-  display: block;
-  width: 100%; }
+.accordion {
+  margin-bottom: 1rem; }
+  .accordion .panel-heading {
+    background-color: #eceaea;
+    border: #d6d4d4 1px solid;
+    border-bottom: #05aee5 2px solid;
+    padding: 0; }
+    .accordion .panel-heading:hover {
+      background-color: #a4cded;
+      border: #05aee5 1px solid;
+      border-bottom: #0088aa 2px solid; }
+    .accordion .panel-heading .panel-title a {
+      text-decoration: none; }
+    .accordion .panel-heading .panel-title:hover, .accordion .panel-heading .panel-title a:hover {
+      color: #2f2f2f;
+      text-decoration: none; }
+  .accordion .panel-title a {
+    padding: 10px 15px;
+    display: block;
+    width: 100%; }
+  .accordion + .accordion {
+    margin-top: -1rem; }
+    .accordion + .accordion .panel-heading {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0; }
 
 /**
 * Collapse page content with the header. Adding `.basic` will give a chevron and a little bit of wiggle.
@@ -9032,7 +9218,7 @@ input {
  *  });
  */
 .nav-sub {
-  padding-bottom: 1.5rem; }
+  padding-bottom: .5rem; }
   .nav-sub h2 {
     padding: 16px 1em 16px 1em; }
     .nav-sub h2 img {
@@ -9800,7 +9986,7 @@ ul.multiselect-container li.active a {
  * @flag contained
  *
  * @markup
- *  <address class="vcard">
+ *  <address class="vcard with-photo">
  *     <!-- http://microformats.org/wiki/hcard -->
  *     <a class="photo" href="http://www.acc.org" target="_blank">
  *         <img alt="" src="assets/images/acc-logo-footer.png">
@@ -9822,7 +10008,7 @@ ul.multiselect-container li.active a {
 address.vcard {
   font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   color: #2f2f2f;
   margin-bottom: 0; }
   address.vcard a {
@@ -9839,118 +10025,163 @@ address.vcard {
       display: inline-block; }
     address.vcard .adr span.street-address {
       width: 100%; }
-  address.vcard .photo {
+  address.vcard .org {
+    font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3; }
+  address.vcard .adr {
+    font-size: 16px;
+    line-height: 1.3; }
+  address.vcard.with-photo .photo {
     display: inline-block;
     float: left;
     width: 48px;
     height: 48px;
     margin: 6px 12px 6px 0; }
     @media only screen and (min-width: 768px) {
-      address.vcard .photo {
+      address.vcard.with-photo .photo {
         width: 72px;
         height: 72px; } }
     @media only screen and (min-width: 1024px) {
-      address.vcard .photo {
+      address.vcard.with-photo .photo {
         display: block;
         text-align: center;
         margin: 1rem auto .5rem;
         float: none; } }
-  address.vcard .org {
+  address.vcard.with-photo .adr {
     font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 1.3;
     display: inline-block;
-    float: right;
     width: calc(100% - 60px); }
     @media only screen and (min-width: 768px) {
-      address.vcard .org {
+      address.vcard.with-photo .adr {
         width: calc(100% - 84px); } }
     @media only screen and (min-width: 1024px) {
-      address.vcard .org {
-        display: none; } }
-  address.vcard .adr {
-    display: inline-block;
-    float: right;
-    width: calc(100% - 60px); }
-    @media only screen and (min-width: 768px) {
-      address.vcard .adr {
-        width: calc(100% - 84px); } }
-    @media only screen and (min-width: 1024px) {
-      address.vcard .adr {
-        font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
-        font-weight: 700;
+      address.vcard.with-photo .adr {
         width: 100%;
         float: none;
-        display: block;
-        text-align: center;
-        font-size: 16px;
-        line-height: 1.3; } }
-  address.vcard .contact:before {
-    content: "";
-    display: table;
-    clear: both; }
-  address.vcard .email, address.vcard .tel {
-    color: #2f2f2f;
-    background-color: #fafafa;
-    border-color: #6f6b6f;
-    padding: 7px 0.875px;
-    font-size: 12px;
-    line-height: 1;
-    border-radius: 0.2rem;
-    border-width: 1px;
-    border-style: solid;
-    width: 48%;
-    text-align: center; }
-    address.vcard .email:focus, address.vcard .email.focus, address.vcard .tel:focus, address.vcard .tel.focus {
-      color: #2f2f2f;
-      background-color: #e1e1e1;
-      border-color: #2e2c2e; }
-    address.vcard .email:hover, address.vcard .tel:hover {
-      color: #2f2f2f;
-      background-color: #e1e1e1;
-      border-color: #504d50; }
-    address.vcard .email:active, address.vcard .email.active, .open > address.vcard .email.dropdown-toggle, address.vcard .tel:active, address.vcard .tel.active, .open > address.vcard .tel.dropdown-toggle {
-      color: #2f2f2f;
-      background-color: #e1e1e1;
-      border-color: #504d50; }
-      address.vcard .email:active:hover, address.vcard .email:active:focus, address.vcard .email:active.focus, address.vcard .email.active:hover, address.vcard .email.active:focus, address.vcard .email.active.focus, .open > address.vcard .email.dropdown-toggle:hover, .open > address.vcard .email.dropdown-toggle:focus, .open > address.vcard .email.dropdown-toggle.focus, address.vcard .tel:active:hover, address.vcard .tel:active:focus, address.vcard .tel:active.focus, address.vcard .tel.active:hover, address.vcard .tel.active:focus, address.vcard .tel.active.focus, .open > address.vcard .tel.dropdown-toggle:hover, .open > address.vcard .tel.dropdown-toggle:focus, .open > address.vcard .tel.dropdown-toggle.focus {
-        color: #2f2f2f;
-        background-color: #cfcfcf;
-        border-color: #2e2c2e; }
-    address.vcard .email:active, address.vcard .email.active, .open > address.vcard .email.dropdown-toggle, address.vcard .tel:active, address.vcard .tel.active, .open > address.vcard .tel.dropdown-toggle {
-      background-image: none; }
-    address.vcard .email.disabled:hover, address.vcard .email.disabled:focus, address.vcard .email.disabled.focus, address.vcard .email[disabled]:hover, address.vcard .email[disabled]:focus, address.vcard .email[disabled].focus, fieldset[disabled] address.vcard .email:hover, fieldset[disabled] address.vcard .email:focus, fieldset[disabled] address.vcard .email.focus, address.vcard .tel.disabled:hover, address.vcard .tel.disabled:focus, address.vcard .tel.disabled.focus, address.vcard .tel[disabled]:hover, address.vcard .tel[disabled]:focus, address.vcard .tel[disabled].focus, fieldset[disabled] address.vcard .tel:hover, fieldset[disabled] address.vcard .tel:focus, fieldset[disabled] address.vcard .tel.focus {
-      background-color: #fafafa;
-      border-color: #6f6b6f; }
-    address.vcard .email .badge, address.vcard .tel .badge {
-      color: #fafafa;
-      background-color: #2f2f2f; }
-    address.vcard .email + .email, address.vcard .email + .tel, address.vcard .tel + .email, address.vcard .tel + .tel {
-      margin-left: 2%; }
+        display: block; } }
+  address.vcard.with-photo .org {
+    display: inline-block;
+    float: right;
+    width: calc(100% - 60px); }
     @media only screen and (min-width: 768px) {
-      address.vcard .email, address.vcard .tel {
-        border: 0 none transparent;
-        background: none transparent; } }
+      address.vcard.with-photo .org {
+        width: calc(100% - 84px); } }
     @media only screen and (min-width: 1024px) {
-      address.vcard .email, address.vcard .tel {
-        display: inline-block;
-        width: 100%;
-        line-height: 1.3;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 14px;
-        color: #2f2f2f;
-        text-decoration: none; }
-        address.vcard .email, address.vcard .email + .email, address.vcard .email + .tel, address.vcard .tel, address.vcard .tel + .email, address.vcard .tel + .tel {
-          margin: 0; }
-        address.vcard .email:hover, address.vcard .email:focus, address.vcard .email:active, address.vcard .tel:hover, address.vcard .tel:focus, address.vcard .tel:active {
-          background: none;
-          color: #2f2f2f;
-          text-decoration: underline; } }
+      address.vcard.with-photo .org {
+        display: none; } }
+  address.vcard .contact {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 14px;
+    color: #2f2f2f;
+    text-decoration: none;
+    width: 100%;
+    line-height: 1.3; }
+    address.vcard .contact:before {
+      content: "";
+      display: table;
+      clear: both; }
 
+#footer .adr {
+  text-align: center;
+  font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
+  font-weight: 700; }
+#footer .email, #footer .tel {
+  color: #2f2f2f;
+  background-color: #fafafa;
+  border-color: #6f6b6f;
+  padding: 7px 0.875px;
+  font-size: 12px;
+  line-height: 1;
+  border-radius: 0.2rem;
+  border-width: 1px;
+  border-style: solid;
+  width: 48%;
+  text-align: center; }
+  #footer .email:focus, #footer .email.focus, #footer .tel:focus, #footer .tel.focus {
+    color: #2f2f2f;
+    background-color: #e1e1e1;
+    border-color: #2e2c2e; }
+  #footer .email:hover, #footer .tel:hover {
+    color: #2f2f2f;
+    background-color: #e1e1e1;
+    border-color: #504d50; }
+  #footer .email:active, #footer .email.active, .open > #footer .email.dropdown-toggle, #footer .tel:active, #footer .tel.active, .open > #footer .tel.dropdown-toggle {
+    color: #2f2f2f;
+    background-color: #e1e1e1;
+    border-color: #504d50; }
+    #footer .email:active:hover, #footer .email:active:focus, #footer .email:active.focus, #footer .email.active:hover, #footer .email.active:focus, #footer .email.active.focus, .open > #footer .email.dropdown-toggle:hover, .open > #footer .email.dropdown-toggle:focus, .open > #footer .email.dropdown-toggle.focus, #footer .tel:active:hover, #footer .tel:active:focus, #footer .tel:active.focus, #footer .tel.active:hover, #footer .tel.active:focus, #footer .tel.active.focus, .open > #footer .tel.dropdown-toggle:hover, .open > #footer .tel.dropdown-toggle:focus, .open > #footer .tel.dropdown-toggle.focus {
+      color: #2f2f2f;
+      background-color: #cfcfcf;
+      border-color: #2e2c2e; }
+  #footer .email:active, #footer .email.active, .open > #footer .email.dropdown-toggle, #footer .tel:active, #footer .tel.active, .open > #footer .tel.dropdown-toggle {
+    background-image: none; }
+  #footer .email.disabled:hover, #footer .email.disabled:focus, #footer .email.disabled.focus, #footer .email[disabled]:hover, #footer .email[disabled]:focus, #footer .email[disabled].focus, fieldset[disabled] #footer .email:hover, fieldset[disabled] #footer .email:focus, fieldset[disabled] #footer .email.focus, #footer .tel.disabled:hover, #footer .tel.disabled:focus, #footer .tel.disabled.focus, #footer .tel[disabled]:hover, #footer .tel[disabled]:focus, #footer .tel[disabled].focus, fieldset[disabled] #footer .tel:hover, fieldset[disabled] #footer .tel:focus, fieldset[disabled] #footer .tel.focus {
+    background-color: #fafafa;
+    border-color: #6f6b6f; }
+  #footer .email .badge, #footer .tel .badge {
+    color: #fafafa;
+    background-color: #2f2f2f; }
+  #footer .email + .email, #footer .email + .tel, #footer .tel + .email, #footer .tel + .tel {
+    margin-left: 2%; }
+  @media only screen and (min-width: 768px) {
+    #footer .email, #footer .tel {
+      border: 0 none transparent;
+      background: none transparent; } }
+  @media only screen and (min-width: 1024px) {
+    #footer .email, #footer .tel {
+      display: inline-block;
+      text-align: center; }
+      #footer .email, #footer .email + .email, #footer .email + .tel, #footer .tel, #footer .tel + .email, #footer .tel + .tel {
+        margin: 0; }
+      #footer .email:hover, #footer .email:focus, #footer .email:active, #footer .tel:hover, #footer .tel:focus, #footer .tel:active {
+        background: none;
+        color: #2f2f2f;
+        text-decoration: underline; } }
+
+/**
+ * Accred Boxed Address
+ * @molecule Accred Questions
+ * @section Content Blocks
+ * @flag contained
+ *
+ * @markup
+ *  <div class="box alt">
+ *      <h3 class="m-b-0">Questions About Accreditation?</h3>
+ *      <div class="card-body">
+ *          <address class="vcard">
+ *              <div class="contact">
+ *                  <ul class="no-bullets no-indent">
+ *                      <li><a href="mailto:" class="link email">@{lipsum:1:words}@.org</a></li>
+ *                      <li><a href="tel:" class="link tel">55-555-55555</a></li>
+ *                      <li><a href="fax:" class="link fax">55-444-55555</a></li>
+ *                  </ul>
+ *              </div>
+ *              <h4 class="m-b-0">Office Hours:</h4>
+ *              <div class="openning-hours">
+ *                  <span>
+ *                    <span class="time">8:00am - 4pm EST</span><br><span class="days">Monday - Firday</span>
+ *                  </span>
+ *                  <a href="blank.pdf" class="link">Holiday Schedule  &nbsp;<i class="fa fa-calendar"></i></a>
+ *              </div>
+ *              <h4 class="m-b-0">Mailing &amp; Shipping</h4>
+ *              <span class=".org"></span>
+ *              <span class="adr">
+ *                <span class="street-address">2400 N St. NW</span>
+ *                <span class="locality">Washington</span>,
+ *                <span class="country-name"><abbr title="District of Colombia">DC</abbr></span>
+ *                <span class="postal-code hidden"></span>
+ *              </span>
+ *          </address>
+ *          <hr class="space"/>
+ *          @{include:.nav-social-button.small}
+ *      </div>
+ *  </div>
+*/
 /**
 * Social engagement buttons.
 * 
@@ -10046,8 +10277,8 @@ address.vcard {
 * @section Nav > Utility
 * @flag contained
 * @markup 
-*  <nav class="nav-social-button small mono-teal flex-row">
-*    <h4>Follow Accred</h4>
+*  <nav class="nav-social-button mono-grey">
+*    <h4 class="m-b-0">Follow Us</h4>
 *    <ul class="nav">
 *        <li class="nav-item twitter"><a class="nav-link" href="https://twitter.com/accintouch" target="_blank"><i class="fa fa-twitter"></i></a></li>
 *        <li class="nav-item facebook"><a class="nav-link" href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank"><i class="fa fa-facebook"></i></a></li>
@@ -10410,13 +10641,13 @@ address.vcard {
   box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.75); }
 
 /**
-* Timelines are highly impactiful listings of information 
+* Treelist are highly impactful listings of information 
 *
 *
-* @structure Timeline
-* @section Infographic > Timeline
+* @structure Treelist
+* @section Infographic > Treelist
 * @markup
-*  <div class="infographic timeline">
+*  <div class="infographic treelist">
 *    <ol class="container">
 *    	<li class="node">
 *           <img  class="circle-img-badge" src="https://cvquality.acc.org/images/default-source/feature-listing-images/assessment-transparent" alt="Picture">
@@ -10453,28 +10684,28 @@ address.vcard {
 *    </ol>
 *  </div>
 */
-.infographic.timeline .container {
+.infographic.treelist .container {
   width: 100%; }
-.infographic.timeline .node + .node:before {
-  content: "\f01a";
+.infographic.treelist .node + .node:before {
+  content: "\f07d";
   color: #d6d4d4;
   font-size: 32px;
   position: absolute;
   top: -100px;
   left: 21px; }
   @media only screen and (min-width: 768px) {
-    .infographic.timeline .node + .node:before {
+    .infographic.treelist .node + .node:before {
       left: 50%;
       margin-left: -.625em;
       top: -60px; } }
   @media only screen and (min-width: 1024px) {
-    .infographic.timeline .node + .node:before {
+    .infographic.treelist .node + .node:before {
       top: -37px; } }
-.infographic.timeline .node {
+.infographic.treelist .node {
   position: relative;
   min-height: 240px;
   clear: both; }
-  .infographic.timeline .node .title {
+  .infographic.treelist .node .title {
     margin: 0 0 .5em;
     padding: .375em 1rem;
     color: #fafafa;
@@ -10482,7 +10713,7 @@ address.vcard {
     width: 100%;
     position: relative;
     border-radius: 0 4px  4px 4px; }
-    .infographic.timeline .node .title:before {
+    .infographic.treelist .node .title:before {
       position: absolute;
       content: "";
       width: 0;
@@ -10492,64 +10723,64 @@ address.vcard {
       left: -25px;
       border-color: transparent #047294 transparent transparent;
       border-width: .875em 25px .875em 0; }
-  .infographic.timeline .node .content {
+  .infographic.treelist .node .content {
     width: calc(100% - 120px);
     float: right;
     padding-top: 23px; }
-  .infographic.timeline .node .circle-img-badge {
+  .infographic.treelist .node .circle-img-badge {
     float: left; }
-  .infographic.timeline .node:nth-child(4n+1) .circle-img-badge {
+  .infographic.treelist .node:nth-child(4n+1) .circle-img-badge {
     background-color: #ffc425; }
-  .infographic.timeline .node:nth-child(4n+2) .circle-img-badge {
+  .infographic.treelist .node:nth-child(4n+2) .circle-img-badge {
     background-color: #ACBD65; }
-  .infographic.timeline .node:nth-child(4n+3) .circle-img-badge {
+  .infographic.treelist .node:nth-child(4n+3) .circle-img-badge {
     background-color: #58B5A5; }
-  .infographic.timeline .node:nth-child(4n+4) .circle-img-badge {
+  .infographic.treelist .node:nth-child(4n+4) .circle-img-badge {
     background-color: #05aee5; }
   @media only screen and (min-width: 768px) {
-    .infographic.timeline .node .content {
+    .infographic.treelist .node .content {
       width: 50%;
       padding-top: 55px; }
-    .infographic.timeline .node .circle-img-badge {
+    .infographic.treelist .node .circle-img-badge {
       float: none; }
-    .infographic.timeline .node:nth-child(odd) .content {
+    .infographic.treelist .node:nth-child(odd) .content {
       padding-right: 120px;
       float: left; }
-    .infographic.timeline .node:nth-child(odd) .title {
+    .infographic.treelist .node:nth-child(odd) .title {
       border-radius: 4px 0 4px 4px; }
-      .infographic.timeline .node:nth-child(odd) .title:before {
+      .infographic.treelist .node:nth-child(odd) .title:before {
         left: auto;
         right: -25px;
         border-color: transparent transparent transparent #047294;
         border-width: .875em 0 .875em 25px; }
-    .infographic.timeline .node:nth-child(even) .content {
+    .infographic.treelist .node:nth-child(even) .content {
       padding-left: 120px;
       float: right; }
-    .infographic.timeline .node:nth-child(even) .title {
+    .infographic.treelist .node:nth-child(even) .title {
       border-radius: 0 4px 4px 4px; }
-      .infographic.timeline .node:nth-child(even) .title:before {
+      .infographic.treelist .node:nth-child(even) .title:before {
         left: -25px;
         border-color: transparent #047294 transparent transparent;
         border-width: .875em 25px  .875em 0; } }
   @media only screen and (min-width: 1024px) {
-    .infographic.timeline .node .content {
+    .infographic.treelist .node .content {
       padding-top: 80px; }
-    .infographic.timeline .node:nth-child(odd) .content {
+    .infographic.treelist .node:nth-child(odd) .content {
       padding-right: 135px; }
-    .infographic.timeline .node:nth-child(even) .content {
+    .infographic.treelist .node:nth-child(even) .content {
       padding-left: 135px; } }
-  .infographic.timeline .node .circle-img-badge {
+  .infographic.treelist .node .circle-img-badge {
     width: 80px;
     border-width: 4px; }
     @media only screen and (min-width: 768px) {
-      .infographic.timeline .node .circle-img-badge {
+      .infographic.treelist .node .circle-img-badge {
         position: absolute;
         left: 50%;
         border-width: 8px;
         width: 150px;
         margin-left: -75px; } }
     @media only screen and (min-width: 1024px) {
-      .infographic.timeline .node .circle-img-badge {
+      .infographic.treelist .node .circle-img-badge {
         width: 200px;
         margin-left: -100px; } }
 
@@ -10596,12 +10827,15 @@ body, .body {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 1020px;
   background: #fff;
+  max-width: 980px;
   *zoom: 1; }
+  @media only screen and (min-width: 1024px) {
+    .wrapper {
+      max-width: 1024px; } }
   @media only screen and (min-width: 1200px) {
     .wrapper {
-      max-width: 1150px; } }
+      max-width: 1300px; } }
   .wrapper:before {
     content: "";
     display: table; }
@@ -10719,6 +10953,117 @@ body, .body {
  *      </div>
  *  </div>
  */
+/**
+* Page Layout For Afib
+* 
+* @layouts Page
+* @section Layouts
+* @flag full-width
+* @markup
+*  <div class="body afib">
+*      <div class="wrapper container-fluid">
+*           @{include:#header}
+*           @{include:.mobile-menu-toggle-container}
+*           <div class="row">@{include:.nav-primary}</div>
+*           <div id="aux" class="row">@{include:.breadcrumb}</div>
+*           <div id="layout" class="row no-gutter">
+*              <div class="col-lg-3 col-xl-2 p-0 d-none d-lg-block">
+*               @{include:.nav-sub}
+*               @{include:.accred-address}
+*               @{include:.bigbox}
+*               </div>
+*              <div class="col-lg-9 col-xl-10 "><div class="page-content">
+*                    <h1> @{lipsum:5:words} </h1>
+*                    <div class="row">
+*                        <div class="col-lg-6">
+*                            <p>@{lipsum:1:paragraphs}</p>
+*                            <p>@{lipsum:1:paragraphs}</p>
+*                        </div>
+*                        <div class="col-lg-6">
+*                            <img src="@{image:400:200}" alt="">
+*                            <hr class="space"/>
+*                            <a href="" class="btn btn-primary btn-block">@{lipsum:3:words}</a>
+*                        </div>
+*                    </div>
+*                    <hr class="grey">
+*                    <div class="row">
+*                        <div class="col-lg-8">
+*                        <h2>@{lipsum:4:words}</h2>
+*                        <p>@{lipsum:2:paragraphs}</p>
+*                        <div class="card testimonial undecorated">
+*                            <div class="card-body">
+*                                <article class="blockquote">
+*                                    <p>@{lipsum:15:words}</p>
+*                                    <cite class="blockquote-cite">Someone famous</cite>
+*                                </article>
+*                            </div>
+*                        </div>
+*                        <a href="" class="btn btn-block btn-primary">@{lipsum:3:words}</a>
+*                    </div>
+*                    <div class="col-lg-4">@{include:.card.alt} @{include:.card.alt} </div>
+*                    </div>
+*                    <hr class="grey"/>
+*                        <h2>@{lipsum:4:words}</h2>                   
+*                    <div class="panel-group accordion basic">
+*                     <div class="panel" id="testpage1" role="tablist" aria-multiselectable="true">
+*                         <div class="panel-heading" role="tab" id="headingOne">
+*                           <h4 class="panel-title">
+*                             <a role="button" data-toggle="collapse" data-parent="#testpage1" href="#accordionbasic-testpage1" aria-expanded="true" aria-controls="accordionbasic-testpage1" class="collapsed">
+*                               <span class="text">@{lipsum:5:words}</span>
+*                             </a>
+*                           </h4>
+*                         </div>
+*                         <div id="accordionbasic-testpage1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+*                           <div class="panel-body">
+*                             <p>@{lipsum:5:sentence}</p>
+*                             <ul class="no-bullets">    
+*                               <li style="page-break-inside: avoid">
+*                                   <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*                               </li>
+*                               <li style="page-break-inside: avoid">
+*                                   <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*                               </li>
+*                               <li style="page-break-inside: avoid">
+*                                   <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*                               </li>
+*                             </ul>
+*                           </div>
+*                         </div>
+*                     </div>
+*                    </div>
+*                    <div class="panel-group accordion basic">
+*                     <div class="panel" id="testpage2" role="tablist" aria-multiselectable="true">
+*                         <div class="panel-heading" role="tab" id="headingOne">
+*                           <h4 class="panel-title">
+*                             <a role="button" data-toggle="collapse" data-parent="#testpage2" href="#accordionbasic-testpage2" aria-expanded="true" aria-controls="accordionbasic-testpage2" class="collapsed">
+*                               <span class="text">@{lipsum:5:words}</span>
+*                             </a>
+*                           </h4>
+*                         </div>
+*                         <div id="accordionbasic-testpage2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+*                           <div class="panel-body">
+*                             <p>@{lipsum:5:sentence}</p>
+*                             <ul class="no-bullets">    
+*                               <li style="page-break-inside: avoid">
+*                                   <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*                               </li>
+*                               <li style="page-break-inside: avoid">
+*                                   <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*                               </li>
+*                               <li style="page-break-inside: avoid">
+*                                   <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*                               </li>
+*                             </ul>
+*                           </div>
+*                         </div>
+*                     </div>
+*                    </div>
+*              </div></div>
+*           </div>
+*           @{include:#footer}
+*      </div>
+*  </div>
+*/
 /**
  * Footer of CV Quality combines, footer-nav, social-nav, and logos to make a reinforcing page structure.
  * @structure Page Footer

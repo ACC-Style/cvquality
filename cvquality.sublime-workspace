@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"war",
+				"warm-grey-dark"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"border",
+				"border-width"
+			],
+			[
+				"bor",
+				"border-style"
+			],
+			[
+				"sc",
+				"scrub-teal-dark"
+			],
+			[
+				"tra",
+				"transparent"
+			],
+			[
+				"tran",
+				"transparent"
+			],
+			[
+				"scur",
+				"scrub-teal-dark"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
 				"back",
 				"background-color"
 			],
@@ -56,10 +92,6 @@
 				"lowercase"
 			],
 			[
-				"sc",
-				"scrub-teal-light"
-			],
-			[
 				"panel",
 				"panel-title"
 			],
@@ -100,10 +132,6 @@
 				"margin-left"
 			],
 			[
-				"text",
-				"text-align"
-			],
-			[
 				"car",
 				"card-action"
 			],
@@ -132,10 +160,6 @@
 				"padding-left"
 			],
 			[
-				"war",
-				"warm-grey-light"
-			],
-			[
 				"points",
 				"points-possible"
 			],
@@ -146,10 +170,6 @@
 			[
 				"warm-gre",
 				"warm-grey-light"
-			],
-			[
-				"bor",
-				"border-right"
 			],
 			[
 				"flex-",
@@ -198,10 +218,6 @@
 			[
 				"block",
 				"blockquote"
-			],
-			[
-				"min",
-				"min-width"
 			],
 			[
 				"pso",
@@ -308,6 +324,144 @@
 			"settings":
 			{
 				"buffer_size": 5242,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/structure/_page.scss",
+			"settings":
+			{
+				"buffer_size": 11843,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/helpers/_breakpoints.scss",
+			"settings":
+			{
+				"buffer_size": 3014,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/vendor/bootstrap.override/_custom.scss",
+			"settings":
+			{
+				"buffer_size": 4747,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/vendor/bootstrap-sass-3.3.7/sass/bootstrap/_grid.scss",
+			"settings":
+			{
+				"buffer_size": 1604,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 81 files for \"col-lg\"\n\n0 matches\n\nSearching 81 files for \"col-\"\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\_forms.scss:\n   90  // For use with horizontal and inline forms, when you need the label text to\n   91  // align with the form controls.\n   92: .col-form-label {\n   93    padding-top: calc(#{$input-btn-padding-y} - #{$input-btn-border-width} * 2);\n   94    padding-bottom: calc(#{$input-btn-padding-y} - #{$input-btn-border-width} * 2);\n   ..\n   96  }\n   97  \n   98: .col-form-label-lg {\n   99    padding-top: calc(#{$input-btn-padding-y-lg} - #{$input-btn-border-width} * 2);\n  100    padding-bottom: calc(#{$input-btn-padding-y-lg} - #{$input-btn-border-width} * 2);\n  ...\n  102  }\n  103  \n  104: .col-form-label-sm {\n  105    padding-top: calc(#{$input-btn-padding-y-sm} - #{$input-btn-border-width} * 2);\n  106    padding-bottom: calc(#{$input-btn-padding-y-sm} - #{$input-btn-border-width} * 2);\n  ...\n  115  // For use with horizontal and inline forms, when you need the legend text to\n  116  // be the same size as regular labels, and to align with the form controls.\n  117: .col-form-legend {\n  118    padding-top: $input-btn-padding-y;\n  119    padding-bottom: $input-btn-padding-y;\n  ...\n  205  \n  206    > .col,\n  207:   > [class*=\"col-\"] {\n  208      padding-right: 5px;\n  209      padding-left: 5px;\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\_grid.scss:\n   38  \n   39      > .col,\n   40:     > [class*=\"col-\"] {\n   41        padding-right: 0;\n   42        padding-left: 0;\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\bootstrap-grid.scss:\n    2  //\n    3  // Includes relevant variables and mixins for the flexbox grid\n    4: // system, as well as the generated predefined classes (e.g., `.col-sm-4`).\n    5  \n    6  //\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\mixins\\_grid-framework.scss:\n   29  \n   30      @include media-breakpoint-up($breakpoint, $breakpoints) {\n   31:       // Provide basic `.col-{bp}` classes for equal-width flexbox columns\n   32        .col#{$infix} {\n   33          flex-basis: 0;\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\mixins\\_grid.scss:\n   28  }\n   29  \n   30: @mixin make-col-ready() {\n   31    position: relative;\n   32    // Prevent columns from becoming too narrow when at smaller grid tiers by\n\n9 matches across 5 files\n\n\nSearching 197 files for \"$infix\"\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\_navbar.scss:\n  135    @each $breakpoint in map-keys($grid-breakpoints) {\n  136      $next: breakpoint-next($breakpoint, $grid-breakpoints);\n  137:     $infix: breakpoint-infix($next, $grid-breakpoints);\n  138  \n  139:     &#{$infix} {\n  140        @include media-breakpoint-down($breakpoint) {\n  141          > .container,\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\mixins\\_grid-framework.scss:\n   15  \n   16    @each $breakpoint in map-keys($breakpoints) {\n   17:     $infix: breakpoint-infix($breakpoint, $breakpoints);\n   18  \n   19      // Allow columns to stretch full width below their breakpoints\n   20      @for $i from 1 through $columns {\n   21:       .col#{$infix}-#{$i} {\n   22          @extend %grid-column;\n   23        }\n   24      }\n   25:     .col#{$infix},\n   26:     .col#{$infix}-auto {\n   27        @extend %grid-column;\n   28      }\n   ..\n   30      @include media-breakpoint-up($breakpoint, $breakpoints) {\n   31        // Provide basic `.col-{bp}` classes for equal-width flexbox columns\n   32:       .col#{$infix} {\n   33          flex-basis: 0;\n   34          flex-grow: 1;\n   35          max-width: 100%;\n   36        }\n   37:       .col#{$infix}-auto {\n   38          flex: 0 0 auto;\n   39          width: auto;\n   ..\n   42  \n   43        @for $i from 1 through $columns {\n   44:         .col#{$infix}-#{$i} {\n   45            @include make-col($i, $columns);\n   46          }\n   ..\n   48  \n   49        @for $i from 1 through $columns {\n   50:         .order#{$infix}-#{$i} {\n   51            order: $i;\n   52          }\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\utilities\\_display.scss:\n    5  @each $breakpoint in map-keys($grid-breakpoints) {\n    6    @include media-breakpoint-up($breakpoint) {\n    7:     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);\n    8  \n    9:     .d#{$infix}-none         { display: none !important; }\n   10:     .d#{$infix}-inline       { display: inline !important; }\n   11:     .d#{$infix}-inline-block { display: inline-block !important; }\n   12:     .d#{$infix}-block        { display: block !important; }\n   13:     .d#{$infix}-table        { display: table !important; }\n   14:     .d#{$infix}-table-cell   { display: table-cell !important; }\n   15:     .d#{$infix}-flex         { display: flex !important; }\n   16:     .d#{$infix}-inline-flex  { display: inline-flex !important; }\n   17    }\n   18  }\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\utilities\\_flex.scss:\n    5  @each $breakpoint in map-keys($grid-breakpoints) {\n    6    @include media-breakpoint-up($breakpoint) {\n    7:     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);\n    8  \n    9:     .flex#{$infix}-row            { flex-direction: row !important; }\n   10:     .flex#{$infix}-column         { flex-direction: column !important; }\n   11:     .flex#{$infix}-row-reverse    { flex-direction: row-reverse !important; }\n   12:     .flex#{$infix}-column-reverse { flex-direction: column-reverse !important; }\n   13  \n   14:     .flex#{$infix}-wrap         { flex-wrap: wrap !important; }\n   15:     .flex#{$infix}-nowrap       { flex-wrap: nowrap !important; }\n   16:     .flex#{$infix}-wrap-reverse { flex-wrap: wrap-reverse !important; }\n   17  \n   18:     .justify-content#{$infix}-start   { justify-content: flex-start !important; }\n   19:     .justify-content#{$infix}-end     { justify-content: flex-end !important; }\n   20:     .justify-content#{$infix}-center  { justify-content: center !important; }\n   21:     .justify-content#{$infix}-between { justify-content: space-between !important; }\n   22:     .justify-content#{$infix}-around  { justify-content: space-around !important; }\n   23  \n   24:     .align-items#{$infix}-start    { align-items: flex-start !important; }\n   25:     .align-items#{$infix}-end      { align-items: flex-end !important; }\n   26:     .align-items#{$infix}-center   { align-items: center !important; }\n   27:     .align-items#{$infix}-baseline { align-items: baseline !important; }\n   28:     .align-items#{$infix}-stretch  { align-items: stretch !important; }\n   29  \n   30:     .align-content#{$infix}-start   { align-content: flex-start !important; }\n   31:     .align-content#{$infix}-end     { align-content: flex-end !important; }\n   32:     .align-content#{$infix}-center  { align-content: center !important; }\n   33:     .align-content#{$infix}-between { align-content: space-between !important; }\n   34:     .align-content#{$infix}-around  { align-content: space-around !important; }\n   35:     .align-content#{$infix}-stretch { align-content: stretch !important; }\n   36  \n   37:     .align-self#{$infix}-auto     { align-self: auto !important; }\n   38:     .align-self#{$infix}-start    { align-self: flex-start !important; }\n   39:     .align-self#{$infix}-end      { align-self: flex-end !important; }\n   40:     .align-self#{$infix}-center   { align-self: center !important; }\n   41:     .align-self#{$infix}-baseline { align-self: baseline !important; }\n   42:     .align-self#{$infix}-stretch  { align-self: stretch !important; }\n   43    }\n   44  }\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\utilities\\_float.scss:\n    1  @each $breakpoint in map-keys($grid-breakpoints) {\n    2    @include media-breakpoint-up($breakpoint) {\n    3:     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);\n    4  \n    5:     .float#{$infix}-left  { @include float-left; }\n    6:     .float#{$infix}-right { @include float-right; }\n    7:     .float#{$infix}-none  { @include float-none; }\n    8    }\n    9  }\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\utilities\\_spacing.scss:\n    3  @each $breakpoint in map-keys($grid-breakpoints) {\n    4    @include media-breakpoint-up($breakpoint) {\n    5:     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);\n    6  \n    7      @each $prop, $abbrev in (margin: m, padding: p) {\n    8        @each $size, $length in $spacers {\n    9  \n   10:         .#{$abbrev}#{$infix}-#{$size}  { #{$prop}:        $length !important; }\n   11:         .#{$abbrev}t#{$infix}-#{$size} { #{$prop}-top:    $length !important; }\n   12:         .#{$abbrev}r#{$infix}-#{$size} { #{$prop}-right:  $length !important; }\n   13:         .#{$abbrev}b#{$infix}-#{$size} { #{$prop}-bottom: $length !important; }\n   14:         .#{$abbrev}l#{$infix}-#{$size} { #{$prop}-left:   $length !important; }\n   15:         .#{$abbrev}x#{$infix}-#{$size} {\n   16            #{$prop}-right: $length !important;\n   17            #{$prop}-left:  $length !important;\n   18          }\n   19:         .#{$abbrev}y#{$infix}-#{$size} {\n   20            #{$prop}-top:    $length !important;\n   21            #{$prop}-bottom: $length !important;\n   ..\n   25  \n   26      // Some special margin utils\n   27:     .m#{$infix}-auto  { margin:        auto !important; }\n   28:     .mt#{$infix}-auto { margin-top:    auto !important; }\n   29:     .mr#{$infix}-auto { margin-right:  auto !important; }\n   30:     .mb#{$infix}-auto { margin-bottom: auto !important; }\n   31:     .ml#{$infix}-auto { margin-left:   auto !important; }\n   32:     .mx#{$infix}-auto {\n   33        margin-right: auto !important;\n   34        margin-left:  auto !important;\n   35      }\n   36:     .my#{$infix}-auto {\n   37        margin-top:    auto !important;\n   38        margin-bottom: auto !important;\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\utilities\\_text.scss:\n   13  @each $breakpoint in map-keys($grid-breakpoints) {\n   14    @include media-breakpoint-up($breakpoint) {\n   15:     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);\n   16  \n   17:     .text#{$infix}-left   { text-align: left !important; }\n   18:     .text#{$infix}-right  { text-align: right !important; }\n   19:     .text#{$infix}-center { text-align: center !important; }\n   20    }\n   21  }\n\n72 matches across 7 files\n\n\nSearching 197 files for \"breakpoint-infix\"\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\_navbar.scss:\n  135    @each $breakpoint in map-keys($grid-breakpoints) {\n  136      $next: breakpoint-next($breakpoint, $grid-breakpoints);\n  137:     $infix: breakpoint-infix($next, $grid-breakpoints);\n  138  \n  139      &#{$infix} {\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\mixins\\_breakpoints.scss:\n   42  // Useful for making responsive utilities.\n   43  //\n   44: //    >> breakpoint-infix(xs, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px))\n   45  //    \"\"  (Returns a blank string)\n   46: //    >> breakpoint-infix(sm, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px))\n   47  //    \"-sm\"\n   48: @function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {\n   49    @return if(breakpoint-min($name, $breakpoints) == null, \"\", \"-#{$name}\");\n   50  }\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\mixins\\_grid-framework.scss:\n   15  \n   16    @each $breakpoint in map-keys($breakpoints) {\n   17:     $infix: breakpoint-infix($breakpoint, $breakpoints);\n   18  \n   19      // Allow columns to stretch full width below their breakpoints\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\utilities\\_display.scss:\n    5  @each $breakpoint in map-keys($grid-breakpoints) {\n    6    @include media-breakpoint-up($breakpoint) {\n    7:     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);\n    8  \n    9      .d#{$infix}-none         { display: none !important; }\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\utilities\\_flex.scss:\n    5  @each $breakpoint in map-keys($grid-breakpoints) {\n    6    @include media-breakpoint-up($breakpoint) {\n    7:     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);\n    8  \n    9      .flex#{$infix}-row            { flex-direction: row !important; }\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\utilities\\_float.scss:\n    1  @each $breakpoint in map-keys($grid-breakpoints) {\n    2    @include media-breakpoint-up($breakpoint) {\n    3:     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);\n    4  \n    5      .float#{$infix}-left  { @include float-left; }\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\utilities\\_spacing.scss:\n    3  @each $breakpoint in map-keys($grid-breakpoints) {\n    4    @include media-breakpoint-up($breakpoint) {\n    5:     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);\n    6  \n    7      @each $prop, $abbrev in (margin: m, padding: p) {\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\utilities\\_text.scss:\n   13  @each $breakpoint in map-keys($grid-breakpoints) {\n   14    @include media-breakpoint-up($breakpoint) {\n   15:     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);\n   16  \n   17      .text#{$infix}-left   { text-align: left !important; }\n\n10 matches across 8 files\n",
+			"settings":
+			{
+				"buffer_size": 13294,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "assets/scss/vendor/bootstrap/mixins/_breakpoints.scss",
+			"settings":
+			{
+				"buffer_size": 3826,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/vendor/bootstrap/_variables.scss",
+			"settings":
+			{
+				"buffer_size": 30133,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/vendor/bootstrap/bootstrap-grid.scss",
+			"settings":
+			{
+				"buffer_size": 578,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/component/_ads.scss",
+			"settings":
+			{
+				"buffer_size": 4297,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/vendor/bootstrap.override/_collapse.override.scss",
+			"settings":
+			{
+				"buffer_size": 14943,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/structure/infographic/_timeline.scss",
+			"settings":
+			{
+				"buffer_size": 5537,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/component/_address.scss",
+			"settings":
+			{
+				"buffer_size": 5821,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/component/_nav-sub.scss",
+			"settings":
+			{
+				"buffer_size": 5963,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<h1>@{lipsum: 5: words}</h1>\n<div class=\"row\">\n    <div class=\"col-lg-6\">\n        <p>@{lipsum:1:paragraphs}</p>\n        <p>@{lipsum:1:paragraphs}</p>\n        <p>@{lipsum:1:paragraphs}</p>\n    </div>\n    <div class=\"col-lg-6\">\n        <img src=\"@{image:400:400}\" alt=\"\">\n        <hr class=\"space\" />\n        <a href=\"\" class=\"btn btn-primary btn-block\">@{lipsum:3:words}</a>\n    </div>\n</div>\n\n\n<div class=\"row\">\n    <h2>@{lipsum:4:words}</h2>\n    <p>@{lipsum:1:paragraphs}</p>\n    <div class=\"card testimonial undecorated\">\n        <div class=\"card-body\">\n            <article class=\"blockquote\">\n                <p>@{lipsum:15:words}</p>\n                <cite class=\"blockquote-cite\">Someone famous</cite>\n            </article>\n        </div>\n    </div>\n    <a href=\"\" class=\"btn btn-block\"></a>\n</div>",
+			"settings":
+			{
+				"buffer_size": 804,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/component/_card.scss",
+			"settings":
+			{
+				"buffer_size": 19679,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/base/_typography.scss",
+			"settings":
+			{
+				"buffer_size": 12664,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -316,24 +470,7 @@
 			"file": "assets/scss/component/_nav-social-buttons.scss",
 			"settings":
 			{
-				"buffer_size": 3678,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/index.scss",
-			"settings":
-			{
-				"buffer_size": 1781,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/component/_user-status-container.scss",
-			"settings":
-			{
-				"buffer_size": 2465,
+				"buffer_size": 3673,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -346,10 +483,42 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 285.0,
-		"last_filter": "lower",
+		"height": 392.0,
+		"last_filter": "html",
 		"selected_items":
 		[
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"covert spa",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"be",
+				"SassBeautify"
+			],
+			[
+				"pretty ",
+				"HTMLPrettify"
+			],
+			[
+				"set html",
+				"Set Syntax: HTML"
+			],
+			[
+				"bea",
+				"SassBeautify"
+			],
+			[
+				"set sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"set scss",
+				"Set Syntax: CSS"
+			],
 			[
 				"lower",
 				"Convert Case: Lower Case"
@@ -383,16 +552,8 @@
 				"Set Syntax: HTML (Tcl)"
 			],
 			[
-				"set html",
-				"Set Syntax: HTML"
-			],
-			[
 				"con",
 				"Indentation: Convert to Spaces"
-			],
-			[
-				"html",
-				"HTMLPrettify"
 			],
 			[
 				"sass",
@@ -417,10 +578,6 @@
 			[
 				"pre",
 				"HTMLPrettify: Set Prettify Preferences"
-			],
-			[
-				"bea",
-				"SassBeautify"
 			],
 			[
 				"ht",
@@ -459,15 +616,11 @@
 				"Package Control: Install Package"
 			],
 			[
-				"set scss",
-				"Set Syntax: CSS"
-			],
-			[
 				"in",
 				"Package Control: Install Package"
 			]
 		],
-		"width": 785.0
+		"width": 572.0
 	},
 	"console":
 	{
@@ -495,10 +648,21 @@
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/helpers",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/structure",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap-sass-3.3.7",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap-sass-3.3.7/sass",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap-sass-3.3.7/sass/bootstrap",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override",
 		"/C/Users/mwatier/Repo/cvquality/mods to node-styleguid"
 	],
 	"file_history":
 	[
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_user-status-container.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/_colors.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_nav-primary.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_nav-social-buttons.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/index.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/structure/_infographic.scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/structure/infographic/_timeline.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_assessment.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_button.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_card.scss",
@@ -516,15 +680,12 @@
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/helpers/_trumps.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/helpers/_fixes.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/styleguide.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_nav-primary.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_jumbotron.override.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/_colors.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_nav-sub.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/structure/_footer.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/structure/_header.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/structure/_mobile-menu-toggle-container.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_custom.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/index.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_collapse.override.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_nav-utility.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_progress-bar.override.scss",
@@ -538,9 +699,7 @@
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_pagination.override.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/_fonts.kitchensink.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_dropdown.override.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_nav-social-buttons.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_searchbar.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_user-status-container.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_breadcrumbs.override.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/_oldshame.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/_setup.scss",
@@ -621,13 +780,15 @@
 	],
 	"find":
 	{
-		"height": 52.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
 		"height": 134.0,
 		"where_history":
 		[
+			"C:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor",
+			"C:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap",
 			"C:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss",
 			"C:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\base",
 			"C:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss",
@@ -644,6 +805,33 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"-lg",
+			"breakpoint-infix",
+			"$infix",
+			"col-",
+			"col-lg",
+			"lg",
+			"notice",
+			"accordionbasic",
+			"5px",
+			"accordion",
+			"strong",
+			"list",
+			"Timeline",
+			"p",
+			"link ",
+			"orange",
+			"border:0 solid $orange-light;",
+			"scrub-teal-dark",
+			"border-color",
+			"-with-arrow",
+			"105px",
+			"{pa",
+			"250px",
+			"3n",
+			"{3n+0}",
+			"mind-your-meds/assessment",
+			"component",
 			"added to the .nav-social-button container ",
 			"Testemonial",
 			"veiw",
@@ -744,34 +932,7 @@
 			"<h4 class=\"panel-title\">",
 			"-90deg",
 			"before",
-			"panel-header",
-			" <h4>>@{lipsum:5:words}</h4>",
-			"<a href=\"#.pdf\" class=\"link\" target=\"_blank\"</a>",
-			"ul",
-			"toolkit",
-			"tool",
-			" href",
-			"target=\"_blank\"",
-			"href=\"",
-			"id=",
-			"<a ",
-			"                                                                                                         \n                           ",
-			"\n                                ",
-			"\n                                    ",
-			" *",
-			"location",
-			".clearfix",
-			"  ",
-			"$scrubteal",
-			"$light-orange",
-			"$dark-orange",
-			"1px",
-			"location",
-			"div",
-			" font-display(900)",
-			"\"normal\"",
-			"font(regular)",
-			" font(normal)"
+			"panel-header"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -793,7 +954,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -809,69 +970,624 @@
 						"selection":
 						[
 							[
-								269,
-								269
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"spell_check": true,
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3221.0,
+						"translation.y": 1736.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "assets/scss/component/_nav-social-buttons.scss",
+					"file": "assets/scss/structure/_page.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3678,
+						"buffer_size": 11843,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2682,
-								2682
+								55,
+								55
 							]
 						],
 						"settings":
 						{
-							"spell_check": true,
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2232.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "assets/scss/helpers/_breakpoints.scss",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 3014,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1622,
+								1622
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "assets/scss/vendor/bootstrap.override/_custom.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4747,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2510,
+								2510
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 900.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "assets/scss/index.scss",
-					"semi_transient": true,
+					"buffer": 4,
+					"file": "assets/scss/vendor/bootstrap-sass-3.3.7/sass/bootstrap/_grid.scss",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1781,
+						"buffer_size": 1604,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								698,
-								698
+								1301,
+								1301
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 540.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13294,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										281,
+										285
+									],
+									[
+										504,
+										508
+									],
+									[
+										736,
+										740
+									],
+									[
+										1119,
+										1123
+									],
+									[
+										1279,
+										1283
+									],
+									[
+										1472,
+										1476
+									],
+									[
+										1776,
+										1780
+									],
+									[
+										2006,
+										2010
+									],
+									[
+										2232,
+										2236
+									],
+									[
+										2633,
+										2639
+									],
+									[
+										2707,
+										2713
+									],
+									[
+										2970,
+										2976
+									],
+									[
+										3169,
+										3175
+									],
+									[
+										3267,
+										3273
+									],
+									[
+										3293,
+										3299
+									],
+									[
+										3532,
+										3538
+									],
+									[
+										3667,
+										3673
+									],
+									[
+										3823,
+										3829
+									],
+									[
+										3990,
+										3996
+									],
+									[
+										4260,
+										4266
+									],
+									[
+										4341,
+										4347
+									],
+									[
+										4407,
+										4413
+									],
+									[
+										4475,
+										4481
+									],
+									[
+										4549,
+										4555
+									],
+									[
+										4616,
+										4622
+									],
+									[
+										4683,
+										4689
+									],
+									[
+										4755,
+										4761
+									],
+									[
+										4821,
+										4827
+									],
+									[
+										5105,
+										5111
+									],
+									[
+										5189,
+										5195
+									],
+									[
+										5266,
+										5272
+									],
+									[
+										5346,
+										5352
+									],
+									[
+										5431,
+										5437
+									],
+									[
+										5527,
+										5533
+									],
+									[
+										5598,
+										5604
+									],
+									[
+										5671,
+										5677
+									],
+									[
+										5769,
+										5775
+									],
+									[
+										5858,
+										5864
+									],
+									[
+										5945,
+										5951
+									],
+									[
+										6030,
+										6036
+									],
+									[
+										6122,
+										6128
+									],
+									[
+										6217,
+										6223
+									],
+									[
+										6299,
+										6305
+									],
+									[
+										6379,
+										6385
+									],
+									[
+										6457,
+										6463
+									],
+									[
+										6537,
+										6543
+									],
+									[
+										6626,
+										6632
+									],
+									[
+										6711,
+										6717
+									],
+									[
+										6794,
+										6800
+									],
+									[
+										6875,
+										6881
+									],
+									[
+										6963,
+										6969
+									],
+									[
+										7050,
+										7056
+									],
+									[
+										7137,
+										7143
+									],
+									[
+										7211,
+										7217
+									],
+									[
+										7291,
+										7297
+									],
+									[
+										7369,
+										7375
+									],
+									[
+										7445,
+										7451
+									],
+									[
+										7523,
+										7529
+									],
+									[
+										7803,
+										7809
+									],
+									[
+										7888,
+										7894
+									],
+									[
+										7946,
+										7952
+									],
+									[
+										8005,
+										8011
+									],
+									[
+										8273,
+										8279
+									],
+									[
+										8484,
+										8490
+									],
+									[
+										8572,
+										8578
+									],
+									[
+										8659,
+										8665
+									],
+									[
+										8746,
+										8752
+									],
+									[
+										8833,
+										8839
+									],
+									[
+										8920,
+										8926
+									],
+									[
+										9091,
+										9097
+									],
+									[
+										9287,
+										9293
+									],
+									[
+										9353,
+										9359
+									],
+									[
+										9418,
+										9424
+									],
+									[
+										9483,
+										9489
+									],
+									[
+										9548,
+										9554
+									],
+									[
+										9613,
+										9619
+									],
+									[
+										9745,
+										9751
+									],
+									[
+										10056,
+										10062
+									],
+									[
+										10140,
+										10146
+									],
+									[
+										10206,
+										10212
+									],
+									[
+										10273,
+										10279
+									],
+									[
+										10637,
+										10653
+									],
+									[
+										10877,
+										10893
+									],
+									[
+										11010,
+										11026
+									],
+									[
+										11121,
+										11137
+									],
+									[
+										11445,
+										11461
+									],
+									[
+										11789,
+										11805
+									],
+									[
+										12127,
+										12143
+									],
+									[
+										12477,
+										12493
+									],
+									[
+										12810,
+										12826
+									],
+									[
+										13143,
+										13159
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								11128,
+								11128
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 4,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3630.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "assets/scss/vendor/bootstrap/mixins/_breakpoints.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3826,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								640,
+								644
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "assets/scss/vendor/bootstrap/_variables.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 30133,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4790,
+								4790
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3015.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "assets/scss/vendor/bootstrap/bootstrap-grid.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 578,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -882,38 +1598,273 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "assets/scss/component/_user-status-container.scss",
+					"buffer": 9,
+					"file": "assets/scss/component/_ads.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2465,
+						"buffer_size": 4297,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								109,
-								109
+								1023,
+								1010
 							]
 						],
 						"settings":
 						{
-							"spell_check": true,
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1454.0,
+						"translation.y": 1035.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "assets/scss/vendor/bootstrap.override/_collapse.override.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14943,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2848,
+								2682
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 765.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "assets/scss/structure/infographic/_timeline.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5537,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								902,
+								902
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "assets/scss/component/_address.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5821,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4147,
+								4147
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2631.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "assets/scss/component/_nav-sub.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5963,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3099,
+								3099
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 804,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								804,
+								394
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "assets/scss/component/_card.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19679,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5825,
+								5813
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3642.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "assets/scss/base/_typography.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12664,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12594,
+								12594
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5775.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "assets/scss/component/_nav-social-buttons.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3673,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2864,
+								2864
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1080.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
 					"type": "text"
 				}
 			]
@@ -921,7 +1872,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 30.0
+		"height": 23.0
 	},
 	"input":
 	{
@@ -958,7 +1909,7 @@
 	"project": "cvquality.sublime-project",
 	"replace":
 	{
-		"height": 55.0
+		"height": 72.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -968,12 +1919,52 @@
 		"selected_items":
 		[
 			[
-				"footer",
-				"assets\\scss\\component\\_nav-footer.scss"
+				"custom",
+				"assets\\scss\\vendor\\bootstrap.override\\_custom.scss"
+			],
+			[
+				"ads.scs",
+				"assets\\scss\\component\\_ads.scss"
 			],
 			[
 				"collapse",
 				"assets\\scss\\vendor\\bootstrap.override\\_collapse.override.scss"
+			],
+			[
+				"cards",
+				"assets\\scss\\component\\_card.scss"
+			],
+			[
+				"address",
+				"assets\\scss\\component\\_address.scss"
+			],
+			[
+				"nav-sub",
+				"assets\\scss\\component\\_nav-sub.scss"
+			],
+			[
+				"timeline",
+				"assets\\scss\\structure\\infographic\\_timeline.scss"
+			],
+			[
+				"typogra",
+				"assets\\scss\\base\\_typography.scss"
+			],
+			[
+				"navsoca",
+				"assets\\scss\\component\\_nav-social-buttons.scss"
+			],
+			[
+				"navprim",
+				"assets\\scss\\component\\_nav-primary.scss"
+			],
+			[
+				"color",
+				"assets\\scss\\base\\_colors.scss"
+			],
+			[
+				"footer",
+				"assets\\scss\\component\\_nav-footer.scss"
 			],
 			[
 				"pages",
@@ -1064,16 +2055,8 @@
 				"assets\\scss\\index.scss"
 			],
 			[
-				"color",
-				"assets\\scss\\base\\_colors.scss"
-			],
-			[
 				"caro",
 				"assets\\scss\\component\\_carousel.scss"
-			],
-			[
-				"nav-sub",
-				"assets\\scss\\component\\_nav-sub.scss"
 			],
 			[
 				"index.css",
@@ -1090,10 +2073,6 @@
 			[
 				"collapover",
 				"assets\\scss\\vendor\\bootstrap.override\\_collapse.override.scss"
-			],
-			[
-				"custom",
-				"assets\\scss\\vendor\\bootstrap.override\\_custom.scss"
 			],
 			[
 				"collapsovscs",
@@ -1126,10 +2105,6 @@
 			[
 				"navut",
 				"assets\\scss\\component\\_nav-utility.scss"
-			],
-			[
-				"cards",
-				"assets\\scss\\component\\_card.scss"
 			],
 			[
 				"asscolo",
@@ -1182,10 +2157,6 @@
 			[
 				"social",
 				"assets\\scss\\component\\_nav-social-buttons.scss"
-			],
-			[
-				"typogra",
-				"assets\\scss\\base\\_typography.scss"
 			],
 			[
 				"custom.scss",
@@ -1262,10 +2233,6 @@
 			[
 				"nodelip",
 				"node_modules\\.bin\\lorem-ipsum"
-			],
-			[
-				"address",
-				"assets\\scss\\component\\_address.scss"
 			],
 			[
 				"styleg",

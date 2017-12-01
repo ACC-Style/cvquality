@@ -5,7 +5,7 @@
  * @flag contained
  *
  * @markup
- *  <address class="vcard">
+ *  <address class="vcard with-photo">
  *     <!-- http://microformats.org/wiki/hcard -->
  *     <a class="photo" href="http://www.acc.org" target="_blank">
  *         <img alt="" src="assets/images/acc-logo-footer.png">
@@ -27,110 +27,193 @@
 
 address.vcard {
     @include font(normal);
-    font-size: ms(0);
+
+    font-size: ms(-1);
     color: $off-black;
-    margin-bottom:0;
-   a {
+    margin-bottom: 0;
+
+    a {
         color: #000;
         text-decoration: none;
         display: inline-block;
-        width:100%;
+        width: 100%;
     }
-     abbr[title] {
+
+    abbr[title] {
         text-decoration: none;
         border: 0;
     }
-    .adr{display:block;
-        span{display:inline-block;}
-        span.street-address{width:100%;}
 
-    }
-    .photo{
-        display: inline-block;
-        float: left;
-        width:48px;
-        height:48px;
-        margin:6px 12px 6px 0;
-        @include bp(md){
-            width:72px;
-            height:72px;
+    .adr {
+        display: block;
+
+        span {
+            display: inline-block;
         }
-        @include bp(lg){
-           display: block;
-           text-align: center;
-           margin:1rem auto .5rem;
-           float: none;
 
+        span.street-address {
+            width: 100%;
         }
     }
-    .org{ 
+
+    .org {
         @include font(bold);
-        font-size:ms(1);
-        line-height: $tight;
-        display: inline-block;
-        float:right;
-        width:calc(100% - 60px);
-         @include bp(md){
-           width:calc(100% - 84px);
-        }
-        @include bp(lg){
-           display: none;
-        }
-    }
-    .adr{
-         display: inline-block;
-        float:right;
-        width:calc(100% - 60px);
-         @include bp(md){
-           width:calc(100% - 84px);
-        }
-        @include bp(lg){
-            @include font(bold);
-           width:100%;
-           float:none;
-           display: block;
-           text-align:center;
-           font-size: ms(1);
-           line-height: $tight;
 
-        }
-       
+        font-size: ms(1);
+        line-height: $tight;
     }
-    .contact{
-         &:before{
-           content: "";
-           display: table;
-           clear:both;
+    .adr {
+        font-size: ms(1);
+        line-height: $tight;
+    }
+    &.with-photo {
+        .photo {
+            display: inline-block;
+            float: left;
+            width: 48px;
+            height: 48px;
+            margin: 6px 12px 6px 0;
+
+            @include bp(md) {
+                width: 72px;
+                height: 72px;
+            }
+
+
+            @include bp(lg) {
+                display: block;
+                text-align: center;
+                margin: 1rem auto .5rem;
+                float: none;
+            }
+        }
+
+        .adr {
+            @include font(bold);
+            display: inline-block;
+            width: calc(100% - 60px);
+            @include bp(md) {
+              width: calc(100% - 84px);
+            }
+            @include bp(lg){
+              width: 100%;
+              float: none;
+              display: block;
+            }
+        }
+
+        .org {
+            display: inline-block;
+            float: right;
+            width: calc(100% - 60px);
+
+            @include bp(md) {
+                width: calc(100% - 84px);
+            }
+
+
+            @include bp(lg) {
+                display: none;
+            }
         }
     }
-    .email,.tel{
-        @include  button-variant($off-black,$off-white,$warm-grey-dark);
-        @include button-size($padding-xs-horizontal,$padding-xs-vertical, ms(-1), 1, .2rem); 
-        border-width:1px;
-        border-style:solid;
-        width:48%;
-        + .email,+ .tel{margin-left:2%;}
+
+    .contact {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: ms(0);
+        color: $off-black;
+        text-decoration: none;
+        width: 100%;
+        line-height: $tight;
+        &:before {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
+
+
+}
+#footer{
+     .adr{
         text-align: center;
-        @include bp(md){
-            border:0 none transparent;
-            background:none transparent;
+        @include font(bold);
+      }  
+      .email, .tel {
+        @include button-variant($off-black, $off-white, $warm-grey-dark);
+        @include button-size($padding-xs-horizontal, $padding-xs-vertical, ms(-1), 1, 0.2rem);
+        border-width: 1px;
+        border-style: solid;
+        width: 48%;
+        text-align: center;
+        + .email, + .tel {
+            margin-left: 2%;
+        }
+        @include bp(md) {
+            border: 0 none transparent;
+            background: none transparent;
         }
         // transition the buttons into links when on large screen
-        @include bp(lg){
-           display: inline-block;
-           width:100%;
-           line-height: $tight;
-           text-align: center;
-           margin:0;
-           padding:0;
-           border:0;
-           font-size: ms(0);
-           color: $off-black;
-           text-decoration: none;
-           &, + .email,+ .tel{margin:0;}
-           &:hover,&:focus,&:active{background:none; color:$off-black; text-decoration:underline;}
+        @include bp(lg) {
+            display: inline-block;
+
+            text-align: center;
 
 
+            &, + .email, + .tel {
+                margin: 0;
+            }
+
+            &:hover, &:focus, &:active {
+                background: none;
+                color: $off-black;
+                text-decoration: underline;
+            }
         }
-    }
+    }         
+              
 }
+
+
+/**
+ * Accred Boxed Address
+ * @molecule Accred Questions
+ * @section Content Blocks
+ * @flag contained
+ *
+ * @markup
+ *  <div class="box alt">
+ *      <h3 class="m-b-0">Questions About Accreditation?</h3>
+ *      <div class="card-body">
+ *          <address class="vcard">
+ *              <div class="contact">
+ *                  <ul class="no-bullets no-indent">
+ *                      <li><a href="mailto:" class="link email">@{lipsum:1:words}@.org</a></li>
+ *                      <li><a href="tel:" class="link tel">55-555-55555</a></li>
+ *                      <li><a href="fax:" class="link fax">55-444-55555</a></li>
+ *                  </ul>
+ *              </div>
+ *              <h4 class="m-b-0">Office Hours:</h4>
+ *              <div class="openning-hours">
+ *                  <span>
+ *                    <span class="time">8:00am - 4pm EST</span><br><span class="days">Monday - Firday</span>
+ *                  </span>
+ *                  <a href="blank.pdf" class="link">Holiday Schedule  &nbsp;<i class="fa fa-calendar"></i></a>
+ *              </div>
+ *              <h4 class="m-b-0">Mailing &amp; Shipping</h4>
+ *              <span class=".org"></span>
+ *              <span class="adr">
+ *                <span class="street-address">2400 N St. NW</span>
+ *                <span class="locality">Washington</span>,
+ *                <span class="country-name"><abbr title="District of Colombia">DC</abbr></span>
+ *                <span class="postal-code hidden"></span>
+ *              </span>
+ *          </address>
+ *          <hr class="space"/>
+ *          @{include:.nav-social-button.small}
+ *      </div>
+ *  </div>
+*/
+.accred-address {}

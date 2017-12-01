@@ -1,11 +1,11 @@
 /**
-* Timelines are highly impactiful listings of information 
+* Treelist are highly impactful listings of information 
 *
 *
-* @structure Timeline
-* @section Infographic > Timeline
+* @structure Treelist
+* @section Infographic > Treelist
 * @markup
-*  <div class="infographic timeline">
+*  <div class="infographic treelist">
 *    <ol class="container">
 *    	<li class="node">
 *           <img  class="circle-img-badge" src="https://cvquality.acc.org/images/default-source/feature-listing-images/assessment-transparent" alt="Picture">
@@ -43,14 +43,14 @@
 *  </div>
 */
 
-.infographic.timeline {
+.infographic.treelist {
     .container {
         width: 100%;
     }
     .node + .node{
     	@extend .icon-before;
 		&:before{
-		    content: "\f01a";
+		    content: "\f07d";;
 		    color:$warm-grey-light;
 		    font-size: ms(7);
 		    position:absolute;

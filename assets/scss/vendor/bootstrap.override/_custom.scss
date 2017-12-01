@@ -65,7 +65,8 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 1024px,
-  xl: 1200px
+xl: 1200px,  
+xxl: 1400px
 );
  // bootstrap 3.37 breakpoints
  // // Extra small screen / phone
@@ -97,6 +98,11 @@ $screen-lg-min:              $screen-lg !default;
 //** Deprecated `$screen-lg-desktop` as of v3.0.1
 $screen-lg-desktop:          $screen-lg-min !default;
 
+// Large screen / wide desktop
+//** Deprecated `$screen-xl` as of v3.0.1
+$screen-xl:                  1200px !default;
+$screen-xl-min:              $screen-xl !default;
+$screen-xl-desktop:          $screen-xl-min !default;
 $grid-gutter-width: ms(2);
 
 // Fonts

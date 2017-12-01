@@ -25,9 +25,10 @@
 }
 .wrapper {
     margin: 0 auto;
-    max-width: 1020px;
     background: #fff;
-@include bp(xl){max-width:1150px;}
+    max-width:980px;
+    @include bp(lg){max-width:1024px;}
+    @include bp(xl){max-width:1300px;}
     &:before {
         content: "";
         display: table;
@@ -152,3 +153,117 @@
  */
 
  .jumbo-pages{}
+
+
+ /**
+ * Page Layout For Afib
+ * 
+ * @layouts Page
+ * @section Layouts
+ * @flag full-width
+ * @markup
+ *  <div class="body afib">
+ *      <div class="wrapper container-fluid">
+ *           @{include:#header}
+ *           @{include:.mobile-menu-toggle-container}
+ *           <div class="row">@{include:.nav-primary}</div>
+ *           <div id="aux" class="row">@{include:.breadcrumb}</div>
+ *           <div id="layout" class="row no-gutter">
+ *              <div class="col-lg-3 col-xl-2 p-0 d-none d-lg-block">
+ *               @{include:.nav-sub}
+ *               @{include:.accred-address}
+ *               @{include:.bigbox}
+ *               </div>
+ *              <div class="col-lg-9 col-xl-10 "><div class="page-content">
+ *                    <h1> @{lipsum:5:words} </h1>
+ *                    <div class="row">
+ *                        <div class="col-lg-6">
+ *                            <p>@{lipsum:1:paragraphs}</p>
+ *                            <p>@{lipsum:1:paragraphs}</p>
+ *                        </div>
+ *                        <div class="col-lg-6">
+ *                            <img src="@{image:400:200}" alt="">
+ *                            <hr class="space"/>
+ *                            <a href="" class="btn btn-primary btn-block">@{lipsum:3:words}</a>
+ *                        </div>
+ *                    </div>
+ *                    <hr class="grey">
+ *                    <div class="row">
+ *                        <div class="col-lg-8">
+ *                        <h2>@{lipsum:4:words}</h2>
+ *                        <p>@{lipsum:2:paragraphs}</p>
+ *                        <div class="card testimonial undecorated">
+ *                            <div class="card-body">
+ *                                <article class="blockquote">
+ *                                    <p>@{lipsum:15:words}</p>
+ *                                    <cite class="blockquote-cite">Someone famous</cite>
+ *                                </article>
+ *                            </div>
+ *                        </div>
+ *                        <a href="" class="btn btn-block btn-primary">@{lipsum:3:words}</a>
+ *                    </div>
+ *                    <div class="col-lg-4">@{include:.card.alt} @{include:.card.alt} </div>
+ *                    </div>
+ *                    <hr class="grey"/>
+ *                        <h2>@{lipsum:4:words}</h2>                   
+ *                    <div class="panel-group accordion basic">
+ *                     <div class="panel" id="testpage1" role="tablist" aria-multiselectable="true">
+ *                         <div class="panel-heading" role="tab" id="headingOne">
+ *                           <h4 class="panel-title">
+ *                             <a role="button" data-toggle="collapse" data-parent="#testpage1" href="#accordionbasic-testpage1" aria-expanded="true" aria-controls="accordionbasic-testpage1" class="collapsed">
+ *                               <span class="text">@{lipsum:5:words}</span>
+ *                             </a>
+ *                           </h4>
+ *                         </div>
+ *                         <div id="accordionbasic-testpage1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+ *                           <div class="panel-body">
+ *                             <p>@{lipsum:5:sentence}</p>
+ *                             <ul class="no-bullets">    
+ *                               <li style="page-break-inside: avoid">
+ *                                   <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+ *                               </li>
+ *                               <li style="page-break-inside: avoid">
+ *                                   <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+ *                               </li>
+ *                               <li style="page-break-inside: avoid">
+ *                                   <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+ *                               </li>
+ *                             </ul>
+ *                           </div>
+ *                         </div>
+ *                     </div>
+ *                    </div>
+ *                    <div class="panel-group accordion basic">
+ *                     <div class="panel" id="testpage2" role="tablist" aria-multiselectable="true">
+ *                         <div class="panel-heading" role="tab" id="headingOne">
+ *                           <h4 class="panel-title">
+ *                             <a role="button" data-toggle="collapse" data-parent="#testpage2" href="#accordionbasic-testpage2" aria-expanded="true" aria-controls="accordionbasic-testpage2" class="collapsed">
+ *                               <span class="text">@{lipsum:5:words}</span>
+ *                             </a>
+ *                           </h4>
+ *                         </div>
+ *                         <div id="accordionbasic-testpage2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+ *                           <div class="panel-body">
+ *                             <p>@{lipsum:5:sentence}</p>
+ *                             <ul class="no-bullets">    
+ *                               <li style="page-break-inside: avoid">
+ *                                   <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+ *                               </li>
+ *                               <li style="page-break-inside: avoid">
+ *                                   <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+ *                               </li>
+ *                               <li style="page-break-inside: avoid">
+ *                                   <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+ *                               </li>
+ *                             </ul>
+ *                           </div>
+ *                         </div>
+ *                     </div>
+ *                    </div>
+ *              </div></div>
+ *           </div>
+ *           @{include:#footer}
+ *      </div>
+ *  </div>
+ */
+ .afib{}

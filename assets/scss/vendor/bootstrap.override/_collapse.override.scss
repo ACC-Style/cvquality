@@ -37,7 +37,7 @@
 *
 */
 .accordion{
-
+    margin-bottom:1rem;
     .panel-heading{
         background-color: $soft-grey;
         border:$warm-grey-light 1px solid;
@@ -66,6 +66,13 @@
     }
     .panel-title a:before{
         @extend .icon-before;
+    }
+    +.accordion{margin-top:-1rem;
+        .panel-heading {
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+            
+        }
     }
 }
 /**
