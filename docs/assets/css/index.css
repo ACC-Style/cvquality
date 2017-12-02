@@ -2525,162 +2525,6 @@ pre {
 
   .col-lg-offset-12 {
     margin-left: 100%; } }
-@media (min-width: 1200px) {
-  .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
-    float: left; }
-
-  .col-xl-1 {
-    width: 8.3333333333%; }
-
-  .col-xl-2 {
-    width: 16.6666666667%; }
-
-  .col-xl-3 {
-    width: 25%; }
-
-  .col-xl-4 {
-    width: 33.3333333333%; }
-
-  .col-xl-5 {
-    width: 41.6666666667%; }
-
-  .col-xl-6 {
-    width: 50%; }
-
-  .col-xl-7 {
-    width: 58.3333333333%; }
-
-  .col-xl-8 {
-    width: 66.6666666667%; }
-
-  .col-xl-9 {
-    width: 75%; }
-
-  .col-xl-10 {
-    width: 83.3333333333%; }
-
-  .col-xl-11 {
-    width: 91.6666666667%; }
-
-  .col-xl-12 {
-    width: 100%; }
-
-  .col-xl-pull-0 {
-    right: auto; }
-
-  .col-xl-pull-1 {
-    right: 8.3333333333%; }
-
-  .col-xl-pull-2 {
-    right: 16.6666666667%; }
-
-  .col-xl-pull-3 {
-    right: 25%; }
-
-  .col-xl-pull-4 {
-    right: 33.3333333333%; }
-
-  .col-xl-pull-5 {
-    right: 41.6666666667%; }
-
-  .col-xl-pull-6 {
-    right: 50%; }
-
-  .col-xl-pull-7 {
-    right: 58.3333333333%; }
-
-  .col-xl-pull-8 {
-    right: 66.6666666667%; }
-
-  .col-xl-pull-9 {
-    right: 75%; }
-
-  .col-xl-pull-10 {
-    right: 83.3333333333%; }
-
-  .col-xl-pull-11 {
-    right: 91.6666666667%; }
-
-  .col-xl-pull-12 {
-    right: 100%; }
-
-  .col-xl-push-0 {
-    left: auto; }
-
-  .col-xl-push-1 {
-    left: 8.3333333333%; }
-
-  .col-xl-push-2 {
-    left: 16.6666666667%; }
-
-  .col-xl-push-3 {
-    left: 25%; }
-
-  .col-xl-push-4 {
-    left: 33.3333333333%; }
-
-  .col-xl-push-5 {
-    left: 41.6666666667%; }
-
-  .col-xl-push-6 {
-    left: 50%; }
-
-  .col-xl-push-7 {
-    left: 58.3333333333%; }
-
-  .col-xl-push-8 {
-    left: 66.6666666667%; }
-
-  .col-xl-push-9 {
-    left: 75%; }
-
-  .col-xl-push-10 {
-    left: 83.3333333333%; }
-
-  .col-xl-push-11 {
-    left: 91.6666666667%; }
-
-  .col-xl-push-12 {
-    left: 100%; }
-
-  .col-xl-offset-0 {
-    margin-left: 0%; }
-
-  .col-xl-offset-1 {
-    margin-left: 8.3333333333%; }
-
-  .col-xl-offset-2 {
-    margin-left: 16.6666666667%; }
-
-  .col-xl-offset-3 {
-    margin-left: 25%; }
-
-  .col-xl-offset-4 {
-    margin-left: 33.3333333333%; }
-
-  .col-xl-offset-5 {
-    margin-left: 41.6666666667%; }
-
-  .col-xl-offset-6 {
-    margin-left: 50%; }
-
-  .col-xl-offset-7 {
-    margin-left: 58.3333333333%; }
-
-  .col-xl-offset-8 {
-    margin-left: 66.6666666667%; }
-
-  .col-xl-offset-9 {
-    margin-left: 75%; }
-
-  .col-xl-offset-10 {
-    margin-left: 83.3333333333%; }
-
-  .col-xl-offset-11 {
-    margin-left: 91.6666666667%; }
-
-  .col-xl-offset-12 {
-    margin-left: 100%; } }
 table {
   background-color: transparent; }
 
@@ -6353,6 +6197,210 @@ button.close {
 .breadcrumb > li > a:focus, .pagination > li > a:focus, .nav-user-status > li > a:focus, .nav-utility > li > a:focus, .nav-sub > li > a:focus, .nav-social-button > li > a:focus, .nav-footer > li > a:focus, .breadcrumb > li > a:hover, .pagination > li > a:hover, .nav-user-status > li > a:hover, .nav-utility > li > a:hover, .nav-sub > li > a:hover, .nav-social-button > li > a:hover, .nav-footer > li > a:hover, .nav > li > a:focus, .nav > li > a:hover, .navbar-nav > li > a:focus, .navbar-nav > li > a:hover {
   background-color: transparent; }
 
+@media (min-width: 1200px) {
+  .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
+    float: left; }
+
+  .col-xl-1 {
+    width: 6.25%; }
+
+  .col-xl-2 {
+    width: 12.5%; }
+
+  .col-xl-3 {
+    width: 18.75%; }
+
+  .col-xl-4 {
+    width: 25%; }
+
+  .col-xl-5 {
+    width: 31.25%; }
+
+  .col-xl-6 {
+    width: 37.5%; }
+
+  .col-xl-7 {
+    width: 43.75%; }
+
+  .col-xl-8 {
+    width: 50%; }
+
+  .col-xl-9 {
+    width: 56.25%; }
+
+  .col-xl-10 {
+    width: 62.5%; }
+
+  .col-xl-11 {
+    width: 68.75%; }
+
+  .col-xl-12 {
+    width: 75%; }
+
+  .col-xl-13 {
+    width: 81.25%; }
+
+  .col-xl-14 {
+    width: 87.5%; }
+
+  .col-xl-15 {
+    width: 93.75%; }
+
+  .col-xl-16 {
+    width: 100%; }
+
+  .col-xl-pull-0 {
+    right: auto; }
+
+  .col-xl-pull-1 {
+    right: 6.25%; }
+
+  .col-xl-pull-2 {
+    right: 12.5%; }
+
+  .col-xl-pull-3 {
+    right: 18.75%; }
+
+  .col-xl-pull-4 {
+    right: 25%; }
+
+  .col-xl-pull-5 {
+    right: 31.25%; }
+
+  .col-xl-pull-6 {
+    right: 37.5%; }
+
+  .col-xl-pull-7 {
+    right: 43.75%; }
+
+  .col-xl-pull-8 {
+    right: 50%; }
+
+  .col-xl-pull-9 {
+    right: 56.25%; }
+
+  .col-xl-pull-10 {
+    right: 62.5%; }
+
+  .col-xl-pull-11 {
+    right: 68.75%; }
+
+  .col-xl-pull-12 {
+    right: 75%; }
+
+  .col-xl-pull-13 {
+    right: 81.25%; }
+
+  .col-xl-pull-14 {
+    right: 87.5%; }
+
+  .col-xl-pull-15 {
+    right: 93.75%; }
+
+  .col-xl-pull-16 {
+    right: 100%; }
+
+  .col-xl-push-0 {
+    left: auto; }
+
+  .col-xl-push-1 {
+    left: 6.25%; }
+
+  .col-xl-push-2 {
+    left: 12.5%; }
+
+  .col-xl-push-3 {
+    left: 18.75%; }
+
+  .col-xl-push-4 {
+    left: 25%; }
+
+  .col-xl-push-5 {
+    left: 31.25%; }
+
+  .col-xl-push-6 {
+    left: 37.5%; }
+
+  .col-xl-push-7 {
+    left: 43.75%; }
+
+  .col-xl-push-8 {
+    left: 50%; }
+
+  .col-xl-push-9 {
+    left: 56.25%; }
+
+  .col-xl-push-10 {
+    left: 62.5%; }
+
+  .col-xl-push-11 {
+    left: 68.75%; }
+
+  .col-xl-push-12 {
+    left: 75%; }
+
+  .col-xl-push-13 {
+    left: 81.25%; }
+
+  .col-xl-push-14 {
+    left: 87.5%; }
+
+  .col-xl-push-15 {
+    left: 93.75%; }
+
+  .col-xl-push-16 {
+    left: 100%; }
+
+  .col-xl-offset-0 {
+    margin-left: 0%; }
+
+  .col-xl-offset-1 {
+    margin-left: 6.25%; }
+
+  .col-xl-offset-2 {
+    margin-left: 12.5%; }
+
+  .col-xl-offset-3 {
+    margin-left: 18.75%; }
+
+  .col-xl-offset-4 {
+    margin-left: 25%; }
+
+  .col-xl-offset-5 {
+    margin-left: 31.25%; }
+
+  .col-xl-offset-6 {
+    margin-left: 37.5%; }
+
+  .col-xl-offset-7 {
+    margin-left: 43.75%; }
+
+  .col-xl-offset-8 {
+    margin-left: 50%; }
+
+  .col-xl-offset-9 {
+    margin-left: 56.25%; }
+
+  .col-xl-offset-10 {
+    margin-left: 62.5%; }
+
+  .col-xl-offset-11 {
+    margin-left: 68.75%; }
+
+  .col-xl-offset-12 {
+    margin-left: 75%; }
+
+  .col-xl-offset-13 {
+    margin-left: 81.25%; }
+
+  .col-xl-offset-14 {
+    margin-left: 87.5%; }
+
+  .col-xl-offset-15 {
+    margin-left: 93.75%; }
+
+  .col-xl-offset-16 {
+    margin-left: 100%; } }
 .dropdown:hover > .dropdown-menu {
   display: block; }
 
@@ -8052,7 +8100,7 @@ input {
   border-color: #a1a0a4;
   background-color: white;
   position: relative;
-  margin-bottom: 2px; }
+  margin-bottom: 1rem; }
   .card .triangle:before {
     border-color: transparent transparent transparent #a1a0a4; }
   .card .card-header {
@@ -9376,7 +9424,7 @@ input {
     height: 100% !important; }
 
 /**
- * Advertisement blocks are sized blocks that will by default hide when the view port is smaller then tablet
+ * Advertisement blocks are sized blocks that will by default hide when the view port is smaller then tablet.  Ads will center with in the space and expand by 125% from it's navtive size to try to fill the container space it is in.
  * @molecule Advertisement
  * @section Content Blocks > Ads
  * @modifiers
@@ -9418,23 +9466,23 @@ input {
     display: table;
     clear: both; }
   .ad-container.skyscraper {
-    max-width: 174px; }
+    max-width: 217.5px; }
     .ad-container.skyscraper .ad:before {
       padding-top: 375%; }
   .ad-container.bigbox {
-    max-width: 314px; }
+    max-width: 392.5px; }
     .ad-container.bigbox .ad:before {
       padding-top: 66.6666666667%; }
   .ad-container.leaderboard {
-    max-width: 742px; }
+    max-width: 927.5px; }
     .ad-container.leaderboard .ad:before {
       padding-top: 12.3626373626%; }
   .ad-container.leaderboard-lg {
-    max-width: 742px; }
+    max-width: 927.5px; }
     .ad-container.leaderboard-lg .ad:before {
       padding-top: 28.8461538462%; }
   .ad-container.full-banner {
-    max-width: 482px; }
+    max-width: 602.5px; }
     .ad-container.full-banner .ad:before {
       padding-top: 12.8205128205%; }
   .ad-container.mobile {
@@ -10834,27 +10882,6 @@ address.vcard {
         margin-left: -100px; } }
 
 /*! Layouts */
-/**
- * Page Layout of a basic page
- * 
- * @layouts Page
- * @section Layouts > Products
- * @flag full-width
- * @markup
- *  <div class="body">
- *      <div class="wrapper container-fluid">
- *           @{include:#header}
- *           @{include:.mobile-menu-toggle-container}
- *           <div class="row">@{include:.nav-primary}</div>
- *           <div id="aux" class="row">@{include:.breadcrumb}</div>
- *           <div id="layout" class="row no-gutter">
- *              <div class="col-lg-3 p-0 d-none d-lg-block"> @{include:.nav-sub}@{include:.nav-social-button.small}</div>
- *              <div class="col-lg-9 col"><div class="page-content"><h1>Sample Page</h1> @{include:dl.grouped-definision-list} @{include:dl.grouped-definision-list}</div></div>
- *           </div>
- *           @{include:#footer}
- *      </div>
- *  </div>
- */
 body, .body {
   background: #a4cded;
   /* Old browsers */
@@ -10926,17 +10953,16 @@ body, .body {
  *                  <div class="row">
  *                      <div class="col-lg-4 col-xl-5">
  *                          @{include:.featured.card}</div>
- *                      <div class="col-lg-8 col-xl-7">
+ *                      <div class="col-lg-8 col-xl-11">
  *                          @{include:.carousel}
  *                          @{include:.leaderboard-lg}
  *                      </div>
  *                  </div>
- *                  <div class="row vh_40">
- *                      <div class="col-lg-8 col-md-7">@{include:.undecorated.card}</div> 
- *                      <div class="col-lg-4 col-md-5">@{include:.highlighted.card}</div>
- *                  </div><hr class="section-divider"><div class="row vh_40">
- *                      <div class="col-lg-4 col-md-5">@{include:.highlighted.card}</div>
- *                      <div class="col-lg-8 col-md-7">@{include:.undecorated.card}</div>
+ *                  <div class="row vh_50">
+ *                      <div class="col-xl-4 col-lg-7 col-md-12">@{include:.highlighted.card}</div> 
+ *                      <div class="col-xl-4 col-lg-5 col-md-12">@{include:.highlighted.card}</div>
+ *                      <div class="col-xl-4 col-lg-5 col-md-12">@{include:.highlighted.card}</div>
+ *                      <div class="col-xl-4 col-lg-7 col-md-12">@{include:.highlighted.card}</div>
  *                  </div>
  *              </div>           
  *          </div>
@@ -10945,34 +10971,24 @@ body, .body {
  *  </div>
  */
 /**
- * Page Layout for the Assements Score
+ * Page layout product or page listing.
  * 
- * @layouts Assessments
- * @section Layouts > Asseements
+ * @layouts Page
+ * @section Layouts > Products
  * @flag full-width
  * @markup
  *  <div class="body">
  *      <div class="wrapper container-fluid">
  *           @{include:#header}
+ *           @{include:.mobile-menu-toggle-container}
  *           <div class="row">@{include:.nav-primary}</div>
- *      <div id="aux" class="row">@{include:.breadcrumb}</div>
- *      <div id="layout" class="row no-gutter">
- *          <div class="col-lg-3 p-0 d-none d-lg-block"> @{include:.nav-sub}</div>
- *          <div class="col-lg-9 col"><div class="page-content">
- *          <h1>Assements Page</h1>  
- *          <p><strong>User:</strong> @{lipsum:2:words}</p>
- *          <p><strong>Facility Site:</strong> @{lipsum:5:words}</p>
- *          <p><strong>You have completed the Assessment on the following dates:</strong></p>
- *          <ul><li>Oct 23, 2017 (Q4 - 2017)</li><li>Oct 23, 2017 (Q4 - 2017)</li><li>Jun 20, 2017 (Q2 - 2017)</li><li>Jun 16, 2017 (Q2 - 2017)</li><li>Jun 09, 2017 (Q2 - 2017)</li><li>May 24, 2017 (Q2 - 2017)</li><li>May 18, 2017 (Q2 - 2017)</li><li>May 09, 2017 (Q2 - 2017)</li><li>May 09, 2017 (Q2 - 2017)</li><li>May 09, 2017 (Q2 - 2017)</li><li>May 03, 2017 (Q2 - 2017)</li><li>May 03, 2017 (Q2 - 2017)</li><li>May 03, 2017 (Q2 - 2017)</li><li>Mar 22, 2017 (Q1 - 2017)</li><li>Mar 21, 2017 (Q1 - 2017)</li><li>Mar 13, 2017 (Q1 - 2017)</li><li>Jan 30, 2017 (Q1 - 2017)</li><li>Apr 18, 2016 (Q2 - 2016)</li></ul>    
- *          @{include:.box.alt}
- *          @{include:.overall-score.box}
- *           @{include:.box.score.accordion}
- *           @{include:.box.score.accordion}
- *           @{include:.wizard.box}
- *          </div></div>
+ *           <div id="aux" class="row">@{include:.breadcrumb}</div>
+ *           <div id="layout" class="row no-gutter">
+ *              <div class="col-lg-3 col-md-4 col-xl-3 p-0 d-none d-lg-block"> @{include:.nav-sub}@{include:.nav-social-button.small}</div>
+ *              <div class="col-lg-9 col-md-8 col-xl-13"><div class="page-content"><h1>Sample Page</h1> @{include:dl.grouped-definision-list} @{include:dl.grouped-definision-list}</div></div>
+ *           </div>
+ *           @{include:#footer}
  *      </div>
- *       @{include:#footer}
- *  </div>
  *  </div>
  */
 /**
@@ -11011,8 +11027,8 @@ body, .body {
  *           @{include:#header}
  *          <div class="row">@{include:.nav-primary}</div>
  *          <div id="layout" class="row no-gutter">
- *          <div class="col-lg-3 col-xl-2 p-0 d-none d-lg-block"> @{include:.nav-sub}</div>
- *          <div class="col-lg-9 col-xl-10 col"><div class="page-content">
+ *          <div class="col-lg-3 col-md-4 col-xl-3 d-none d-lg-block"> @{include:.nav-sub}</div>
+ *          <div class="col-lg-9 col-md-8 col-xl-13 col"><div class="page-content">
  *           @{include:.jumbotron}
  *           <h1>@{lipsum:4:words}</h1><p>@{lipsum:4:paragraphs}</p><a class="btn btn-primary">@{lipsum:4:words}</a>
  *          </div></div>
@@ -11034,12 +11050,12 @@ body, .body {
 *           <div class="row">@{include:.nav-primary}</div>
 *           <div id="aux" class="row">@{include:.breadcrumb}</div>
 *           <div id="layout" class="row no-gutter">
-*              <div class="col-lg-3 col-xl-2 p-0 d-none d-lg-block">
+*              <div class="col-lg-3 col-md-4 col-xl-3 p-0 d-none d-lg-block">
 *               @{include:.nav-sub}
 *               @{include:.accred-address}
 *               @{include:.ad-container}
 *               </div>
-*              <div class="col-lg-9 col-xl-10 "><div class="page-content">
+*              <div class="col-lg-9 col-md-8 col-xl-13 "><div class="page-content">
 *                    <h1> @{lipsum:5:words} </h1>
 *                    <div class="row">
 *                        <div class="col-lg-6">
@@ -11466,5 +11482,8 @@ body, .body {
 img + .btn.btn-block, img + .btn-block.button {
   line-height: 1.75;
   margin-top: 4px; }
+
+.card + .card {
+  margin-top: -.75rem; }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,5 +1,5 @@
 /**
- * Advertisement blocks are sized blocks that will by default hide when the view port is smaller then tablet
+ * Advertisement blocks are sized blocks that will by default hide when the view port is smaller then tablet.  Ads will center with in the space and expand by 125% from it's navtive size to try to fill the container space it is in.
  * @molecule Advertisement
  * @section Content Blocks > Ads
  * @modifiers
@@ -35,33 +35,33 @@
     @include bp(md){ display: block; }
     &:after{content:"";display:table;clear:both;}
     &.skyscraper{ 
-        max-width:160px + 14px;
+        max-width:(160px + 14px)*1.25;
         .ad:before {
           padding-top: (600/160) * 100%;
         }
     }
     &.bigbox{ 
-        max-width:300px + 14px;
+        max-width:(300px + 14px)*1.25;
         .ad:before {
           padding-top: (200/300) * 100%;
         }
     }
     &.leaderboard{ 
-        max-width:728px + 14px;
+        max-width:(728px + 14px)*1.25;
         .ad:before {
           padding-top: (90/728) * 100%;
         }
          
     }
     &.leaderboard-lg{ 
-        max-width:728px + 14px;
+        max-width:(728px + 14px)*1.25;
         .ad:before {
           padding-top: (210/728) * 100%;
         }
         
     }
     &.full-banner{
-        max-width:468px + 14px;
+        max-width:(468px + 14px)*1.25;
         .ad:before {
             padding-top: (60/468) * 100%;
         }
