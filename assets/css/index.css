@@ -6831,19 +6831,19 @@ hr, .divider, .line-spacer, .item-divider, dl.grouped-definision-list dt:after, 
   color: inherit;
   border-top: none transparent 0; }
 
-.divider.grey, .item-divider, dl.grouped-definision-list dt:after, dl.grouped-definision-list dd:after, hr.grey {
+.divider.grey, .divider.item-divider, dl.grouped-definision-list dt.divider:after, dl.grouped-definision-list dd.divider:after, hr.grey, hr.item-divider {
   border-bottom-color: #d6d4d4; }
-.divider.teal, .section-divider, hr.teal {
+.divider.teal, .divider.section-divider, hr.teal, hr.section-divider {
   border-bottom-color: rgba(5, 174, 229, 0.5); }
-.divider.orange, .group-divider, hr.orange {
+.divider.orange, .divider.group-divider, hr.orange, hr.group-divider {
   border-bottom-color: rgba(255, 196, 37, 0.5); }
-.divider.dashed, .item-divider, dl.grouped-definision-list dt:after, dl.grouped-definision-list dd:after, hr.dashed {
+.divider.dashed, .divider.item-divider, dl.grouped-definision-list dt.divider:after, dl.grouped-definision-list dd.divider:after, hr.dashed, hr.item-divider {
   border-bottom-style: dashed; }
-.divider.dotted, .group-divider, hr.dotted {
+.divider.dotted, .divider.group-divider, hr.dotted, hr.group-divider {
   border-bottom-style: dotted; }
-.divider.bold, .section-divider, hr.bold {
+.divider.bold, .divider.section-divider, hr.bold, hr.section-divider {
   border-bottom-width: 2px; }
-.divider.space, .line-spacer, hr.space {
+.divider.space, .divider.line-spacer, hr.space, hr.line-spacer {
   border-bottom: 0px none transparent;
   margin-bottom: 14px;
   padding-bottom: 14px; }
@@ -7498,6 +7498,29 @@ dl.grouped-definision-list.term-sq-lg dd {
     color: #e87d1e;
     content: "\f05a"; }
 
+@media print {
+  .table-scrollable .software-vendors .company {
+    padding: 1em; }
+  .table-scrollable .instructions {
+    display: none; }
+  .table-scrollable table {
+    width: 100%;
+    position: relative;
+    clear: both;
+    display: table; }
+    .table-scrollable table * {
+      width: auto;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      position: relative; }
+    .table-scrollable table thead, .table-scrollable table tbody, .table-scrollable table tfoot {
+      display: table-row-group; }
+    .table-scrollable table tr {
+      display: table-row; }
+    .table-scrollable table td, .table-scrollable table th {
+      display: table-cell;
+      padding: 5px; } }
 /**
 * @atom Typography Kitchen Sink
 * @section Typography > kitchensink
@@ -9437,7 +9460,7 @@ input {
  * @flag contained
  *
  * @markup
- *   <div class="ad-container skyscraper">
+ *   <div class="ad-container hidden-print skyscraper">
  *       <p>Advertisement</p>
  *       <div class="ad">
  *           <div class="ad-inner">
@@ -9521,7 +9544,7 @@ input {
  * @section Content Blocks > Ads
  * @flag contained
  * @markup
- *   <div class="ad-container bigbox">
+ *   <div class="ad-container hidden-print bigbox">
  *       <div class="ad">
  *           <div class="ad-inner">
  *               <a><img src="@{image:300:200}" alt="..."></a>
@@ -9535,7 +9558,7 @@ input {
  * @molecule Advertisement Leaderboard
  * @section Content Blocks > Ads
  * @markup
- *   <div class="ad-container leaderboard">
+ *   <div class="ad-container hidden-print leaderboard">
  *       <div class="ad">
  *           <div class="ad-inner">
  *               <a><img src="@{image:728:90}" alt="..."></a>
@@ -9549,7 +9572,7 @@ input {
  * @molecule Advertisement Leaderboard
  * @section Content Blocks > Ads
  * @markup
- *   <div class="ad-container leaderboard-lg">
+ *   <div class="ad-container hidden-print leaderboard-lg">
  *       <div class="ad">
  *           <div class="ad-inner">
  *               <a><img src="@{image:728:210}" alt="..."></a>
@@ -9564,7 +9587,7 @@ input {
  * @section Content Blocks > Ads
  * @flag contained
  * @markup
- *   <div class="ad-container full-banner">
+ *   <div class="ad-container hidden-print full-banner">
  *       <div class="ad">
  *           <div class="ad-inner">
  *               <a><img src="@{image:468:60}" alt="..."></a>
@@ -9679,13 +9702,12 @@ ul.result-list {
   overflow-y: scroll;
   overflow-x: hidden;
   height: 100%; }
-  ul.result-list,
-  ul.result-list li {
+  ul.result-list, ul.result-list li {
     list-style: none;
     margin: 0; }
   ul.result-list .address {
     background-color: #d6d4d4;
-    padding: 0.375rem 20px 0.375rem 0.5rem;
+    padding: .375rem 20px .375rem .5rem;
     border: 1px solid #eceaea;
     cursor: pointer; }
     ul.result-list .address .name {
@@ -9740,9 +9762,7 @@ ul.result-list {
     display: table;
     clear: both;
     content: ""; }
-  .map-container,
-  .map-container .map,
-  .map-container .result-list-container {
+  .map-container, .map-container .map, .map-container .result-list-container {
     height: 600px;
     max-height: 75vh;
     transition: max-height 1s ease-out;
@@ -9852,6 +9872,27 @@ ul.multiselect-container li.active a {
   .k-map .k-marker:before {
     height: 80px;
     width: 56px; } }
+@media print {
+  .map-container, .map-container .map, .map-container .result-list-container {
+    height: auto;
+    max-height: none;
+    overflow: visible;
+    border: none 0px transparent; }
+
+  .kendo-map .searchbar, .kendo-map .k-map {
+    display: none; }
+
+  .results .map-container .result-list-container, .results .map-container .result-list-container ul.result-list {
+    width: 100% !important;
+    margin: 0; }
+
+  ul.result-list .address {
+    width: 50%;
+    float: left;
+    border: 0px solid transparent;
+    border-top: 1px solid grey(60); }
+    ul.result-list .address:nth-child(odd) {
+      clear: both; } }
 /* Legacy Support */
 /**
  * Boxes(".box") are a simple decorator that has internal padding, a colored background, and fills its parent container. 
@@ -11410,6 +11451,20 @@ body, .body {
 .asterisk {
   font-size: 120%;
   color: #a00; }
+
+.site-logo-print {
+  max-height: 60px !important;
+  width: auto !important; }
+
+.sfPageEditor .visible-print-block {
+  display: block !important;
+  opacity: .7;
+  border: 1px dotted grey(60);
+  margin: 5px; }
+  .sfPageEditor .visible-print-block:after {
+    content: "displayed only when printing";
+    display: block;
+    position: relative; }
 
 /**
 * Some times the defualt margin needs to be removed.  Adding these class will selectivly remove the margin of the DOM item it is placed on. 

@@ -24,8 +24,7 @@
 */
 
 .k-tooltip {}
-.tooltip{}
-
+.tooltip {}
 /**
 * Result lists is the list view of all of the pins on the map
 *
@@ -45,18 +44,15 @@ ul.result-list {
     overflow-y: scroll;
     overflow-x: hidden;
     height: 100%;
-
-    &,
-    li {
+    &, li {
         list-style: none;
         margin: 0;
     }
     .address {
-        background-color:$warm-grey-light;
-        padding: .375rem 20px .375rem .5rem ;
+        background-color: $warm-grey-light;
+        padding: .375rem 20px .375rem .5rem;
         border: 1px solid $soft-grey;
         cursor: pointer;
-
         .name {
             line-height: 1.2;
             color: $scrub-teal-dark;
@@ -70,19 +66,22 @@ ul.result-list {
             font-size: ms(1);
         }
         &:hover {
-            background-color: $warm-grey-dark;  
-            border-color:$off-white;        
+            background-color: $warm-grey-dark;
+            border-color: $off-white;
             border-right: $orange-dark 10px solid;
             padding-right: 10px;
-            .address-line{color: $orange-light;}
-            .name{color:$off-white;}
+            .address-line {
+                color: $orange-light;
+            }
+            .name {
+                color: $off-white;
+            }
         }
     }
     .address+.address {
         margin-top: 1px;
     }
 }
-
 .kendo-map {
     .searchbar.box {
         border: 1px $warm-grey-dark solid;
@@ -90,10 +89,12 @@ ul.result-list {
         margin: -1px 0 0;
     }
     a.btn.map-toggle {
-       &.active{@include orange-gradient; color:$off-black;}
+        &.active {
+            @include orange-gradient;
+            color: $off-black;
+        }
     }
 }
-
 .map-container {
     width: 100%;
     border-bottom: 2px solid $orange-dark;
@@ -102,9 +103,7 @@ ul.result-list {
         clear: both;
         content: "";
     }
-    &,
-    .map,
-    .result-list-container {
+    &, .map, .result-list-container {
         height: 600px;
         max-height: 75vh;
         transition: max-height 1s ease-out;
@@ -121,8 +120,8 @@ ul.result-list {
         width: 100%;
         .results & {
             width: 50%;
-            @include bp(md){
-                width:75%;
+            @include bp(md) {
+                width: 75%;
             }
         }
     }
@@ -135,20 +134,12 @@ ul.result-list {
         width: 0;
         .results & {
             width: 50%;
-            @include bp(md){
-                width:25%;
+            @include bp(md) {
+                width: 25%;
             }
         }
-       
     }
 }
-
-
-
-
-
-
-
 /**
 * Multi-select
 *
@@ -178,18 +169,15 @@ ul.multiselect-container {
         }
     }
 }
-
-
 .k-map {
     .k-marker {
         @extend .icon-before;
-
         font-size: 40px;
         color: $orange-dark;
         background-image: none !important;
         text-align: center;
         overflow: visible;
-         :hover {
+        :hover {
             color: $orange-light;
         }
         &:before {
@@ -216,11 +204,7 @@ ul.multiselect-container {
     &.zoom-5 .k-marker {
         font-size: ms(-2);
     }
-    &.zoom-4,
-    ,
-    &.zoom-3,
-    &.zoom-2,
-    &.zoom-1 {
+    &.zoom-4, , &.zoom-3, &.zoom-2, &.zoom-1 {
         .k-marker {
             font-size: 4px;
             &:before {
@@ -230,7 +214,6 @@ ul.multiselect-container {
         }
     }
 }
-
 .multiselect.btn {
     .caret {
         display: none;
@@ -240,11 +223,9 @@ ul.multiselect-container {
         content: "\f0d7";
     }
 }
-
 .k-tooltip-content {
     min-width: 200px;
 }
-
 .mapsealscontainer {
     margin: .5rem .25rem;
     display: table;
@@ -259,11 +240,33 @@ ul.multiselect-container {
         }
     }
 }
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-not all {
+@media only screen and (-webkit-min-device-pixel-ratio: 2), not all {
     .k-map .k-marker:before {
         height: 80px;
         width: 56px;
+    }
+}
+@media print {
+    .map-container, .map-container .map, .map-container .result-list-container {
+        height: auto;
+        max-height: none;
+        overflow: visible;
+        border: none 0px transparent;
+    }
+    .kendo-map .searchbar, .kendo-map .k-map {
+        display: none;
+    }
+    .results .map-container .result-list-container, .results .map-container .result-list-container ul.result-list {
+        width: 100% !important;
+        margin: 0;
+    }
+    ul.result-list .address {
+        width: 50%;
+        float: left;
+        border: 0px solid transparent;
+        border-top: 1px solid grey(60);
+        &:nth-child(odd) {
+            clear: both;
+        }
     }
 }

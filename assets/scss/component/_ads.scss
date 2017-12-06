@@ -12,7 +12,7 @@
  * @flag contained
  *
  * @markup
- *   <div class="ad-container skyscraper">
+ *   <div class="ad-container hidden-print skyscraper">
  *       <p>Advertisement</p>
  *       <div class="ad">
  *           <div class="ad-inner">
@@ -107,7 +107,7 @@
  * @section Content Blocks > Ads
  * @flag contained
  * @markup
- *   <div class="ad-container bigbox">
+ *   <div class="ad-container hidden-print bigbox">
  *       <div class="ad">
  *           <div class="ad-inner">
  *               <a><img src="@{image:300:200}" alt="..."></a>
@@ -123,7 +123,7 @@
  * @molecule Advertisement Leaderboard
  * @section Content Blocks > Ads
  * @markup
- *   <div class="ad-container leaderboard">
+ *   <div class="ad-container hidden-print leaderboard">
  *       <div class="ad">
  *           <div class="ad-inner">
  *               <a><img src="@{image:728:90}" alt="..."></a>
@@ -139,7 +139,7 @@
  * @molecule Advertisement Leaderboard
  * @section Content Blocks > Ads
  * @markup
- *   <div class="ad-container leaderboard-lg">
+ *   <div class="ad-container hidden-print leaderboard-lg">
  *       <div class="ad">
  *           <div class="ad-inner">
  *               <a><img src="@{image:728:210}" alt="..."></a>
@@ -156,7 +156,7 @@
  * @section Content Blocks > Ads
  * @flag contained
  * @markup
- *   <div class="ad-container full-banner">
+ *   <div class="ad-container hidden-print full-banner">
  *       <div class="ad">
  *           <div class="ad-inner">
  *               <a><img src="@{image:468:60}" alt="..."></a>

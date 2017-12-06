@@ -195,26 +195,21 @@ hr, .divider,.line-spacer,.item-divider, .group-divider,.section-divider{
     border-top:none transparent 0;
 } 
 .divider,hr{ 
-    &.grey{
+    &.grey,&.item-divider{
       border-bottom-color:$warm-grey-light;
     }
-    &.teal{
+    &.teal,&.section-divider{
       border-bottom-color:rgba($scrub-teal-light,.5);
     }
-    &.orange{
+    &.orange,&.group-divider{
       border-bottom-color:rgba($orange-light,.5);
     }
-    &.dashed{ border-bottom-style:dashed}
-    &.dotted{ border-bottom-style:dotted}
-    &.bold{ border-bottom-width:2px; }
-    &.space{ border-bottom: 0px none transparent;margin-bottom:ms(0); padding-bottom:ms(0);}
+    &.dashed,&.item-divider{ border-bottom-style:dashed}
+    &.dotted,&.group-divider{ border-bottom-style:dotted}
+    &.bold,&.section-divider{ border-bottom-width:2px; }
+    &.space, &.line-spacer{ border-bottom: 0px none transparent;margin-bottom:ms(0); padding-bottom:ms(0);}
 
 }
-
-.line-spacer{@extend .divider.space;}
-.item-divider{@extend .divider.dashed; @extend .divider.grey;}
-.group-divider{@extend .divider.dotted; @extend .divider.orange;}
-.section-divider{ @extend .divider.bold; @extend .divider.teal;}
 
 hr{
     padding-bottom: 0;

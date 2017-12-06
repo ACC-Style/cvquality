@@ -343,7 +343,7 @@
 			"file": "assets/scss/structure/_page.scss",
 			"settings":
 			{
-				"buffer_size": 13500,
+				"buffer_size": 13588,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -370,19 +370,35 @@
 			"file": "assets/scss/vendor/bootstrap-sass-3.3.7/sass/bootstrap/_grid.scss",
 			"settings":
 			{
-				"buffer_size": 1604,
+				"buffer_size": 1445,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "Searching 81 files for \"col-lg\"\n\n0 matches\n\nSearching 81 files for \"col-\"\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\_forms.scss:\n   90  // For use with horizontal and inline forms, when you need the label text to\n   91  // align with the form controls.\n   92: .col-form-label {\n   93    padding-top: calc(#{$input-btn-padding-y} - #{$input-btn-border-width} * 2);\n   94    padding-bottom: calc(#{$input-btn-padding-y} - #{$input-btn-border-width} * 2);\n   ..\n   96  }\n   97  \n   98: .col-form-label-lg {\n   99    padding-top: calc(#{$input-btn-padding-y-lg} - #{$input-btn-border-width} * 2);\n  100    padding-bottom: calc(#{$input-btn-padding-y-lg} - #{$input-btn-border-width} * 2);\n  ...\n  102  }\n  103  \n  104: .col-form-label-sm {\n  105    padding-top: calc(#{$input-btn-padding-y-sm} - #{$input-btn-border-width} * 2);\n  106    padding-bottom: calc(#{$input-btn-padding-y-sm} - #{$input-btn-border-width} * 2);\n  ...\n  115  // For use with horizontal and inline forms, when you need the legend text to\n  116  // be the same size as regular labels, and to align with the form controls.\n  117: .col-form-legend {\n  118    padding-top: $input-btn-padding-y;\n  119    padding-bottom: $input-btn-padding-y;\n  ...\n  205  \n  206    > .col,\n  207:   > [class*=\"col-\"] {\n  208      padding-right: 5px;\n  209      padding-left: 5px;\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\_grid.scss:\n   38  \n   39      > .col,\n   40:     > [class*=\"col-\"] {\n   41        padding-right: 0;\n   42        padding-left: 0;\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\bootstrap-grid.scss:\n    2  //\n    3  // Includes relevant variables and mixins for the flexbox grid\n    4: // system, as well as the generated predefined classes (e.g., `.col-sm-4`).\n    5  \n    6  //\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\mixins\\_grid-framework.scss:\n   29  \n   30      @include media-breakpoint-up($breakpoint, $breakpoints) {\n   31:       // Provide basic `.col-{bp}` classes for equal-width flexbox columns\n   32        .col#{$infix} {\n   33          flex-basis: 0;\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\mixins\\_grid.scss:\n   28  }\n   29  \n   30: @mixin make-col-ready() {\n   31    position: relative;\n   32    // Prevent columns from becoming too narrow when at smaller grid tiers by\n\n9 matches across 5 files\n\n\nSearching 197 files for \"$infix\"\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\_navbar.scss:\n  135    @each $breakpoint in map-keys($grid-breakpoints) {\n  136      $next: breakpoint-next($breakpoint, $grid-breakpoints);\n  137:     $infix: breakpoint-infix($next, $grid-breakpoints);\n  138  \n  139:     &#{$infix} {\n  140        @include media-breakpoint-down($breakpoint) {\n  141          > .container,\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\mixins\\_grid-framework.scss:\n   15  \n   16    @each $breakpoint in map-keys($breakpoints) {\n   17:     $infix: breakpoint-infix($breakpoint, $breakpoints);\n   18  \n   19      // Allow columns to stretch full width below their breakpoints\n   20      @for $i from 1 through $columns {\n   21:       .col#{$infix}-#{$i} {\n   22          @extend %grid-column;\n   23        }\n   24      }\n   25:     .col#{$infix},\n   26:     .col#{$infix}-auto {\n   27        @extend %grid-column;\n   28      }\n   ..\n   30      @include media-breakpoint-up($breakpoint, $breakpoints) {\n   31        // Provide basic `.col-{bp}` classes for equal-width flexbox columns\n   32:       .col#{$infix} {\n   33          flex-basis: 0;\n   34          flex-grow: 1;\n   35          max-width: 100%;\n   36        }\n   37:       .col#{$infix}-auto {\n   38          flex: 0 0 auto;\n   39          width: auto;\n   ..\n   42  \n   43        @for $i from 1 through $columns {\n   44:         .col#{$infix}-#{$i} {\n   45            @include make-col($i, $columns);\n   46          }\n   ..\n   48  \n   49        @for $i from 1 through $columns {\n   50:         .order#{$infix}-#{$i} {\n   51            order: $i;\n   52          }\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\utilities\\_display.scss:\n    5  @each $breakpoint in map-keys($grid-breakpoints) {\n    6    @include media-breakpoint-up($breakpoint) {\n    7:     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);\n    8  \n    9:     .d#{$infix}-none         { display: none !important; }\n   10:     .d#{$infix}-inline       { display: inline !important; }\n   11:     .d#{$infix}-inline-block { display: inline-block !important; }\n   12:     .d#{$infix}-block        { display: block !important; }\n   13:     .d#{$infix}-table        { display: table !important; }\n   14:     .d#{$infix}-table-cell   { display: table-cell !important; }\n   15:     .d#{$infix}-flex         { display: flex !important; }\n   16:     .d#{$infix}-inline-flex  { display: inline-flex !important; }\n   17    }\n   18  }\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\utilities\\_flex.scss:\n    5  @each $breakpoint in map-keys($grid-breakpoints) {\n    6    @include media-breakpoint-up($breakpoint) {\n    7:     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);\n    8  \n    9:     .flex#{$infix}-row            { flex-direction: row !important; }\n   10:     .flex#{$infix}-column         { flex-direction: column !important; }\n   11:     .flex#{$infix}-row-reverse    { flex-direction: row-reverse !important; }\n   12:     .flex#{$infix}-column-reverse { flex-direction: column-reverse !important; }\n   13  \n   14:     .flex#{$infix}-wrap         { flex-wrap: wrap !important; }\n   15:     .flex#{$infix}-nowrap       { flex-wrap: nowrap !important; }\n   16:     .flex#{$infix}-wrap-reverse { flex-wrap: wrap-reverse !important; }\n   17  \n   18:     .justify-content#{$infix}-start   { justify-content: flex-start !important; }\n   19:     .justify-content#{$infix}-end     { justify-content: flex-end !important; }\n   20:     .justify-content#{$infix}-center  { justify-content: center !important; }\n   21:     .justify-content#{$infix}-between { justify-content: space-between !important; }\n   22:     .justify-content#{$infix}-around  { justify-content: space-around !important; }\n   23  \n   24:     .align-items#{$infix}-start    { align-items: flex-start !important; }\n   25:     .align-items#{$infix}-end      { align-items: flex-end !important; }\n   26:     .align-items#{$infix}-center   { align-items: center !important; }\n   27:     .align-items#{$infix}-baseline { align-items: baseline !important; }\n   28:     .align-items#{$infix}-stretch  { align-items: stretch !important; }\n   29  \n   30:     .align-content#{$infix}-start   { align-content: flex-start !important; }\n   31:     .align-content#{$infix}-end     { align-content: flex-end !important; }\n   32:     .align-content#{$infix}-center  { align-content: center !important; }\n   33:     .align-content#{$infix}-between { align-content: space-between !important; }\n   34:     .align-content#{$infix}-around  { align-content: space-around !important; }\n   35:     .align-content#{$infix}-stretch { align-content: stretch !important; }\n   36  \n   37:     .align-self#{$infix}-auto     { align-self: auto !important; }\n   38:     .align-self#{$infix}-start    { align-self: flex-start !important; }\n   39:     .align-self#{$infix}-end      { align-self: flex-end !important; }\n   40:     .align-self#{$infix}-center   { align-self: center !important; }\n   41:     .align-self#{$infix}-baseline { align-self: baseline !important; }\n   42:     .align-self#{$infix}-stretch  { align-self: stretch !important; }\n   43    }\n   44  }\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\utilities\\_float.scss:\n    1  @each $breakpoint in map-keys($grid-breakpoints) {\n    2    @include media-breakpoint-up($breakpoint) {\n    3:     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);\n    4  \n    5:     .float#{$infix}-left  { @include float-left; }\n    6:     .float#{$infix}-right { @include float-right; }\n    7:     .float#{$infix}-none  { @include float-none; }\n    8    }\n    9  }\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\utilities\\_spacing.scss:\n    3  @each $breakpoint in map-keys($grid-breakpoints) {\n    4    @include media-breakpoint-up($breakpoint) {\n    5:     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);\n    6  \n    7      @each $prop, $abbrev in (margin: m, padding: p) {\n    8        @each $size, $length in $spacers {\n    9  \n   10:         .#{$abbrev}#{$infix}-#{$size}  { #{$prop}:        $length !important; }\n   11:         .#{$abbrev}t#{$infix}-#{$size} { #{$prop}-top:    $length !important; }\n   12:         .#{$abbrev}r#{$infix}-#{$size} { #{$prop}-right:  $length !important; }\n   13:         .#{$abbrev}b#{$infix}-#{$size} { #{$prop}-bottom: $length !important; }\n   14:         .#{$abbrev}l#{$infix}-#{$size} { #{$prop}-left:   $length !important; }\n   15:         .#{$abbrev}x#{$infix}-#{$size} {\n   16            #{$prop}-right: $length !important;\n   17            #{$prop}-left:  $length !important;\n   18          }\n   19:         .#{$abbrev}y#{$infix}-#{$size} {\n   20            #{$prop}-top:    $length !important;\n   21            #{$prop}-bottom: $length !important;\n   ..\n   25  \n   26      // Some special margin utils\n   27:     .m#{$infix}-auto  { margin:        auto !important; }\n   28:     .mt#{$infix}-auto { margin-top:    auto !important; }\n   29:     .mr#{$infix}-auto { margin-right:  auto !important; }\n   30:     .mb#{$infix}-auto { margin-bottom: auto !important; }\n   31:     .ml#{$infix}-auto { margin-left:   auto !important; }\n   32:     .mx#{$infix}-auto {\n   33        margin-right: auto !important;\n   34        margin-left:  auto !important;\n   35      }\n   36:     .my#{$infix}-auto {\n   37        margin-top:    auto !important;\n   38        margin-bottom: auto !important;\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\utilities\\_text.scss:\n   13  @each $breakpoint in map-keys($grid-breakpoints) {\n   14    @include media-breakpoint-up($breakpoint) {\n   15:     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);\n   16  \n   17:     .text#{$infix}-left   { text-align: left !important; }\n   18:     .text#{$infix}-right  { text-align: right !important; }\n   19:     .text#{$infix}-center { text-align: center !important; }\n   20    }\n   21  }\n\n72 matches across 7 files\n\n\nSearching 197 files for \"breakpoint-infix\"\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\_navbar.scss:\n  135    @each $breakpoint in map-keys($grid-breakpoints) {\n  136      $next: breakpoint-next($breakpoint, $grid-breakpoints);\n  137:     $infix: breakpoint-infix($next, $grid-breakpoints);\n  138  \n  139      &#{$infix} {\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\mixins\\_breakpoints.scss:\n   42  // Useful for making responsive utilities.\n   43  //\n   44: //    >> breakpoint-infix(xs, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px))\n   45  //    \"\"  (Returns a blank string)\n   46: //    >> breakpoint-infix(sm, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px))\n   47  //    \"-sm\"\n   48: @function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {\n   49    @return if(breakpoint-min($name, $breakpoints) == null, \"\", \"-#{$name}\");\n   50  }\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\mixins\\_grid-framework.scss:\n   15  \n   16    @each $breakpoint in map-keys($breakpoints) {\n   17:     $infix: breakpoint-infix($breakpoint, $breakpoints);\n   18  \n   19      // Allow columns to stretch full width below their breakpoints\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\utilities\\_display.scss:\n    5  @each $breakpoint in map-keys($grid-breakpoints) {\n    6    @include media-breakpoint-up($breakpoint) {\n    7:     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);\n    8  \n    9      .d#{$infix}-none         { display: none !important; }\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\utilities\\_flex.scss:\n    5  @each $breakpoint in map-keys($grid-breakpoints) {\n    6    @include media-breakpoint-up($breakpoint) {\n    7:     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);\n    8  \n    9      .flex#{$infix}-row            { flex-direction: row !important; }\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\utilities\\_float.scss:\n    1  @each $breakpoint in map-keys($grid-breakpoints) {\n    2    @include media-breakpoint-up($breakpoint) {\n    3:     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);\n    4  \n    5      .float#{$infix}-left  { @include float-left; }\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\utilities\\_spacing.scss:\n    3  @each $breakpoint in map-keys($grid-breakpoints) {\n    4    @include media-breakpoint-up($breakpoint) {\n    5:     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);\n    6  \n    7      @each $prop, $abbrev in (margin: m, padding: p) {\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\utilities\\_text.scss:\n   13  @each $breakpoint in map-keys($grid-breakpoints) {\n   14    @include media-breakpoint-up($breakpoint) {\n   15:     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);\n   16  \n   17      .text#{$infix}-left   { text-align: left !important; }\n\n10 matches across 8 files\n",
+			"file": "assets/scss/vendor/bootstrap.override/_grid.override.scss",
 			"settings":
 			{
-				"buffer_size": 13294,
-				"line_ending": "Windows",
-				"name": "Find Results",
-				"scratch": true
+				"buffer_size": 1399,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/index.scss",
+			"settings":
+			{
+				"buffer_size": 1907,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/vendor/bootstrap-sass-3.3.7/sass/bootstrap/mixins/_grid-framework.scss",
+			"settings":
+			{
+				"buffer_size": 2360,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -414,7 +430,8 @@
 			"file": "assets/scss/component/_ads.scss",
 			"settings":
 			{
-				"buffer_size": 4297,
+				"buffer_size": 4455,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -472,6 +489,15 @@
 			}
 		},
 		{
+			"file": "assets/scss/helpers/_height-utiltiy.scss",
+			"settings":
+			{
+				"buffer_size": 945,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "assets/scss/base/_typography.scss",
 			"settings":
 			{
@@ -484,7 +510,7 @@
 			"file": "assets/scss/helpers/_trumps.scss",
 			"settings":
 			{
-				"buffer_size": 2278,
+				"buffer_size": 2321,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -666,10 +692,8 @@
 		"/C/Users/mwatier/Repo/cvquality",
 		"/C/Users/mwatier/Repo/cvquality/assets",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/base",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/component",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/helpers",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/structure",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap-sass-3.3.7",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap-sass-3.3.7/sass",
@@ -802,13 +826,19 @@
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
 		"height": 134.0,
 		"where_history":
 		[
+			"<open files>",
+			"",
+			"C:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap-sass-3.3.7",
+			"C:\\Users\\mwatier\\Repo\\cvquality\\assets",
+			"C:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap-sass-3.3.7",
+			"C:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass",
 			"C:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor",
 			"C:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap",
 			"C:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss",
@@ -827,6 +857,37 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"col-md-4",
+			"col-lg-9",
+			"col-lg-3 ",
+			"undecorated",
+			"7",
+			"md",
+			"7",
+			"lg",
+			"col-lg-8",
+			"col-xl-11",
+			"col-xl-5 ",
+			"<div class=\"col-lg-9",
+			"<div class=\"col-lg-9 ",
+			" <div class=\"col-lg-9 ",
+			" col-xl",
+			"<div class=\"col-lg-9 ",
+			"<div class=\"col-lg-9 col-xl-10",
+			"<div class=\"col-lg-3 ",
+			"<div class=\"col-lg-3 col-xl-4 p-0 d-none d-lg-block\">",
+			"-xl",
+			"15",
+			"loop-grid-columns",
+			"$grid-columns",
+			"calc-grid-column",
+			"loop-grid-columns",
+			"col-xl-offset-14",
+			"$grid-columns",
+			"loop-grid-columns",
+			"$grid-columns",
+			"$class",
+			"make-grid",
 			"<div class=\"card testimonial undecorated\">",
 			"divide",
 			"@extend .divider.bold;",
@@ -923,38 +984,7 @@
 			"basic",
 			"accordion",
 			"accordion2",
-			"#accordion2",
-			"wiggle",
-			"--105deg",
-			"15deg",
-			"15",
-			"-90deg",
-			"-105",
-			"-75",
-			"-105",
-			"collapseOne",
-			"15deg",
-			"-15deg",
-			"0deg",
-			"3s",
-			" btn-bounce ",
-			"btn-bounce",
-			"15deg",
-			"-90",
-			"    \t\t\ttransform: rotate(-90deg);\n\t\t-moz-transform: rotate(-90deg);\n\t\t-webkit-transform: rotate(-90deg);",
-			"padding-top:",
-			"*",
-			"0",
-			"*  ",
-			" @include font-display(\"bold\");",
-			"regular",
-			"Bold",
-			"bold",
-			"regular",
-			"font-display(",
-			"btn-hover",
-			"hover",
-			".panel-title "
+			"#accordion2"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -962,6 +992,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"-dynamic",
 			"Page Sections",
 			"$scrub-teal",
 			"$orange-light",
@@ -1006,7 +1037,7 @@
 						"translation.y": 1736.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
@@ -1015,15 +1046,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 13500,
+						"buffer_size": 13588,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1033,
-								1033
+								6472,
+								6472
 							]
 						],
 						"settings":
@@ -1033,7 +1064,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2553.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1065,7 +1096,7 @@
 						"translation.y": 945.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
@@ -1095,7 +1126,7 @@
 						"translation.y": 900.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
@@ -1104,15 +1135,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1604,
+						"buffer_size": 1445,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1301,
-								1301
+								1445,
+								1445
 							]
 						],
 						"settings":
@@ -1122,420 +1153,103 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 540.0,
+						"translation.y": 1036.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
 					"buffer": 5,
+					"file": "assets/scss/vendor/bootstrap.override/_grid.override.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 13294,
+						"buffer_size": 1399,
 						"regions":
 						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										281,
-										285
-									],
-									[
-										504,
-										508
-									],
-									[
-										736,
-										740
-									],
-									[
-										1119,
-										1123
-									],
-									[
-										1279,
-										1283
-									],
-									[
-										1472,
-										1476
-									],
-									[
-										1776,
-										1780
-									],
-									[
-										2006,
-										2010
-									],
-									[
-										2232,
-										2236
-									],
-									[
-										2633,
-										2639
-									],
-									[
-										2707,
-										2713
-									],
-									[
-										2970,
-										2976
-									],
-									[
-										3169,
-										3175
-									],
-									[
-										3267,
-										3273
-									],
-									[
-										3293,
-										3299
-									],
-									[
-										3532,
-										3538
-									],
-									[
-										3667,
-										3673
-									],
-									[
-										3823,
-										3829
-									],
-									[
-										3990,
-										3996
-									],
-									[
-										4260,
-										4266
-									],
-									[
-										4341,
-										4347
-									],
-									[
-										4407,
-										4413
-									],
-									[
-										4475,
-										4481
-									],
-									[
-										4549,
-										4555
-									],
-									[
-										4616,
-										4622
-									],
-									[
-										4683,
-										4689
-									],
-									[
-										4755,
-										4761
-									],
-									[
-										4821,
-										4827
-									],
-									[
-										5105,
-										5111
-									],
-									[
-										5189,
-										5195
-									],
-									[
-										5266,
-										5272
-									],
-									[
-										5346,
-										5352
-									],
-									[
-										5431,
-										5437
-									],
-									[
-										5527,
-										5533
-									],
-									[
-										5598,
-										5604
-									],
-									[
-										5671,
-										5677
-									],
-									[
-										5769,
-										5775
-									],
-									[
-										5858,
-										5864
-									],
-									[
-										5945,
-										5951
-									],
-									[
-										6030,
-										6036
-									],
-									[
-										6122,
-										6128
-									],
-									[
-										6217,
-										6223
-									],
-									[
-										6299,
-										6305
-									],
-									[
-										6379,
-										6385
-									],
-									[
-										6457,
-										6463
-									],
-									[
-										6537,
-										6543
-									],
-									[
-										6626,
-										6632
-									],
-									[
-										6711,
-										6717
-									],
-									[
-										6794,
-										6800
-									],
-									[
-										6875,
-										6881
-									],
-									[
-										6963,
-										6969
-									],
-									[
-										7050,
-										7056
-									],
-									[
-										7137,
-										7143
-									],
-									[
-										7211,
-										7217
-									],
-									[
-										7291,
-										7297
-									],
-									[
-										7369,
-										7375
-									],
-									[
-										7445,
-										7451
-									],
-									[
-										7523,
-										7529
-									],
-									[
-										7803,
-										7809
-									],
-									[
-										7888,
-										7894
-									],
-									[
-										7946,
-										7952
-									],
-									[
-										8005,
-										8011
-									],
-									[
-										8273,
-										8279
-									],
-									[
-										8484,
-										8490
-									],
-									[
-										8572,
-										8578
-									],
-									[
-										8659,
-										8665
-									],
-									[
-										8746,
-										8752
-									],
-									[
-										8833,
-										8839
-									],
-									[
-										8920,
-										8926
-									],
-									[
-										9091,
-										9097
-									],
-									[
-										9287,
-										9293
-									],
-									[
-										9353,
-										9359
-									],
-									[
-										9418,
-										9424
-									],
-									[
-										9483,
-										9489
-									],
-									[
-										9548,
-										9554
-									],
-									[
-										9613,
-										9619
-									],
-									[
-										9745,
-										9751
-									],
-									[
-										10056,
-										10062
-									],
-									[
-										10140,
-										10146
-									],
-									[
-										10206,
-										10212
-									],
-									[
-										10273,
-										10279
-									],
-									[
-										10637,
-										10653
-									],
-									[
-										10877,
-										10893
-									],
-									[
-										11010,
-										11026
-									],
-									[
-										11121,
-										11137
-									],
-									[
-										11445,
-										11461
-									],
-									[
-										11789,
-										11805
-									],
-									[
-										12127,
-										12143
-									],
-									[
-										12477,
-										12493
-									],
-									[
-										12810,
-										12826
-									],
-									[
-										13143,
-										13159
-									]
-								],
-								"scope": ""
-							}
 						},
 						"selection":
 						[
 							[
-								11128,
-								11128
+								727,
+								727
 							]
 						],
 						"settings":
 						{
-							"detect_indentation": false,
-							"line_numbers": false,
-							"output_tag": 4,
-							"result_base_dir": "",
-							"result_file_regex": "^([^ \t].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+							"_anf_new": "",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3630.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
 					"buffer": 6,
+					"file": "assets/scss/index.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1907,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								362,
+								362
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "assets/scss/vendor/bootstrap-sass-3.3.7/sass/bootstrap/mixins/_grid-framework.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2360,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1657,
+								1657
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 524.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
 					"file": "assets/scss/vendor/bootstrap/mixins/_breakpoints.scss",
 					"semi_transient": false,
 					"settings":
@@ -1561,11 +1275,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 9,
 					"file": "assets/scss/vendor/bootstrap/_variables.scss",
 					"semi_transient": false,
 					"settings":
@@ -1591,11 +1305,11 @@
 						"translation.y": 3015.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 10,
 					"file": "assets/scss/vendor/bootstrap/bootstrap-grid.scss",
 					"semi_transient": false,
 					"settings":
@@ -1619,24 +1333,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 11,
 					"file": "assets/scss/component/_ads.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4297,
+						"buffer_size": 4455,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								958,
-								958
+								1765,
+								1765
 							]
 						],
 						"settings":
@@ -1646,14 +1360,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 316.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 12,
 					"file": "assets/scss/vendor/bootstrap.override/_collapse.override.scss",
 					"semi_transient": false,
 					"settings":
@@ -1679,11 +1393,11 @@
 						"translation.y": 2975.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 13,
 					"file": "assets/scss/structure/infographic/_timeline.scss",
 					"semi_transient": false,
 					"settings":
@@ -1709,11 +1423,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 18,
+					"stack_index": 21,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 14,
 					"file": "assets/scss/component/_address.scss",
 					"semi_transient": false,
 					"settings":
@@ -1739,11 +1453,11 @@
 						"translation.y": 2588.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 15,
 					"file": "assets/scss/component/_nav-sub.scss",
 					"semi_transient": false,
 					"settings":
@@ -1769,11 +1483,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 16,
 					"semi_transient": false,
 					"settings":
 					{
@@ -1798,11 +1512,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 17,
 					"file": "assets/scss/component/_card.scss",
 					"semi_transient": false,
 					"settings":
@@ -1814,8 +1528,8 @@
 						"selection":
 						[
 							[
-								347,
-								347
+								300,
+								300
 							]
 						],
 						"settings":
@@ -1828,11 +1542,40 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 18,
+					"file": "assets/scss/helpers/_height-utiltiy.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 945,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								677,
+								677
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
 					"file": "assets/scss/base/_typography.scss",
 					"semi_transient": false,
 					"settings":
@@ -1858,24 +1601,24 @@
 						"translation.y": 2538.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 20,
 					"file": "assets/scss/helpers/_trumps.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2278,
+						"buffer_size": 2321,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2213,
-								2213
+								2205,
+								2205
 							]
 						],
 						"settings":
@@ -1885,14 +1628,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 585.0,
+						"translation.y": 902.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 21,
 					"file": "assets/scss/component/_nav-social-buttons.scss",
 					"semi_transient": false,
 					"settings":
@@ -1917,7 +1660,7 @@
 						"translation.y": 1080.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 17,
+					"stack_index": 20,
 					"type": "text"
 				}
 			]
@@ -1971,6 +1714,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"pages",
+				"assets\\scss\\structure\\_page.scss"
+			],
+			[
+				"index.scs",
+				"assets\\scss\\index.scss"
+			],
 			[
 				"collapseove",
 				"assets\\scss\\vendor\\bootstrap.override\\_collapse.override.scss"
@@ -2038,10 +1789,6 @@
 			[
 				"footer",
 				"assets\\scss\\component\\_nav-footer.scss"
-			],
-			[
-				"pages",
-				"assets\\scss\\structure\\_page.scss"
 			],
 			[
 				"charts.scss",
@@ -2117,10 +1864,6 @@
 			],
 			[
 				"index",
-				"assets\\scss\\index.scss"
-			],
-			[
-				"index.scs",
 				"assets\\scss\\index.scss"
 			],
 			[

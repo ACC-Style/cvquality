@@ -258,129 +258,113 @@
 *  </div>
 *  
 **/
+
 .table-scrollable {
-    &:after{content:"";
-display:table;
-clear:both;}
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
     table {
         display: block;
         position: relative;
         border: 1px solid $warm-grey-light;
         border-top: 0 none transparent;
     }
-
     thead, tbody {
         display: block;
     }
-
     thead {
         width: 40%;
-
         @include bp(md) {
             width: 18em;
         }
-
-
         z-index: 2;
         background-color: $soft-grey;
         position: absolute;
         top: 0;
         left: 0;
-
         tr {
             width: 100%;
             display: block;
         }
-
         th {
             display: block;
             height: 6rem;
-	        font-size: ms(1);
-	        line-height: $tight;
+            font-size: ms(1);
+            line-height: $tight;
             @include bp(md) {
-             height: 4rem;
-	        }
-	        @include bp(md-height-down){
-	        	line-height: $crunched;
-	        	font-size: ms(0);
-	            height: 3.5rem;
-	            overflow: hidden;
-	            text-overflow: ellipsis;
-	        };
+                height: 4rem;
+            }
+            @include bp(md-height-down) {
+                line-height: $crunched;
+                font-size: ms(0);
+                height: 3.5rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            ;
             &:nth-child(2n+2) {
                 background-color: mix($soft-blue, $soft-grey, 10);
             }
         }
-
         border-right: 3px solid $scrub-teal;
     }
-
     tbody {
         white-space: nowrap;
         padding-left: 40%;
-
         @include bp(md) {
             padding-left: 18em;
         }
-
-
         overflow-x: scroll;
-
         tr {
             width: 90%;
-
             @include bp(md) {
                 width: 15em;
             }
-
-
             white-space: normal;
             display: inline-block;
             margin-right: -.125em;
         }
-
-        tr + tr {
+        tr+tr {
             border-left: $soft-blue 1px solid;
         }
-
         td {
             display: block;
             width: 100%;
             font-size: ms(-1);
             line-height: $tight;
             height: 6rem;
-	        @include bp(md) {
-	             height: 4rem;
-	        }
-	        @include bp(md-height-down){
-	            line-height: $crunched;
-	            height: 3.5rem;
-	            overflow: hidden;
-	            text-overflow: ellipsis;
-	            font-size: ms(-2);
-	        };
+            @include bp(md) {
+                height: 4rem;
+            }
+            @include bp(md-height-down) {
+                line-height: $crunched;
+                height: 3.5rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: ms(-2);
+            }
+            ;
             b {
                 color: $orange-dark;
             }
-
             &:nth-child(2n+2) {
                 background-color: mix($soft-blue, white, 10);
             }
         }
     }
-
     th, td {
         padding: .5rem 1rem .25rem 1rem;
         border-bottom: 1px solid $warm-grey-light;
-        	        @include bp(md-height-down){
-	         padding: .25rem .5rem .125rem .5rem;
-	        };
+        @include bp(md-height-down) {
+            padding: .25rem .5rem .125rem .5rem;
+        }
+        ;
     }
-
     th {
         border-bottom: 1px solid $warm-grey;
     }
-
     .instructions {
         color: $orange-dark;
         border: 1px solid $warm-grey-light;
@@ -391,26 +375,49 @@ clear:both;}
         display: block;
         padding: .25rem 1rem;
         font-size: ms(-1);
-
         .fa {
             margin: 0 .25rem;
         }
     }
 }
-
 .software-vendors {
     .company {
         font-size: ms(1);
-
         @include font-display(bold);
-
         color: $scrub-teal-dark;
-
         @extend .icon-after;
-
         &:after {
             color: $orange-dark;
             content: "\f05a";
         }
     }
+}
+@media print {
+    .table-scrollable{ 
+        .software-vendors .company{padding:1em;}
+        .instructions{display:none;}
+        table {
+            width: 100%;
+            position:relative;
+            clear:both;
+           * {
+               width: auto;
+               height: auto;
+               margin: 0;
+               padding: 0;
+               position:relative;
+           }
+           display: table;
+           thead, tbody, tfoot {
+               display: table-row-group;
+           }
+           tr {
+               display: table-row;
+           }
+           td, th {
+               display: table-cell;
+               padding: 5px;
+           }
+       }
+   }
 }

@@ -1,0 +1,15 @@
+.site-logo-print{max-height:60px !important; width:auto!important;}
+.sfPageEditor .visible-print-block{
+    &:after {
+        content: "displayed only when printing";
+        display: block;
+        position: relative;
+    }
+
+    display: block !important;
+    opacity: .7;
+    border: 1px dotted grey(60);
+    margin:5px;
+}
+@media print {
+}
