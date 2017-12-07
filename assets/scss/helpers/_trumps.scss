@@ -87,3 +87,19 @@ img + .btn.btn-block {
 .card + .card {
     margin-top: -.75rem;
 }
+
+
+// Icon for Sitfinity 
+.ACCMvcIcn{position:relative;}
+.ACCMvcIcn:after {
+    content: "A-MVC";
+    display: block;
+    position: absolute;
+    padding: 1px 3px;
+    left: 15px;
+    bottom: 5px;
+    background: #ffc425;
+    color: #020202;
+    font-size: 9px;
+    font-weight: bold;
+}

@@ -377,8 +377,9 @@ dl.grouped-definision-list{
     dd{
         
         float:left;
-        padding-left:$grid-gutter-width;
+        margin-left:$grid-gutter-width;
         >*:first-child{margin-top:0;}
+        border-bottom:1px dashed $warm-grey-light;
     }
     dt,dd{
         &:after{
@@ -386,28 +387,27 @@ dl.grouped-definision-list{
             content:"";
             display: table;
             width: 100%;
-            border-width:1px;
-            @extend .item-divider;
+           
         }
     }
-    &.term-xs{dt{width:30%}dd{width:70%}}
-    &.term-sm{dt{width:40%}dd{width:60%}}
-    &.term-md,&.term-lg{dt,dd{width:100%; clear:both;}}
+    &.term-xs{dt{width:30%}dd{width:65%;width:calc(70% - $grid-gutter-width);}}
+    &.term-sm{dt{width:40%}dd{width:55%;width:calc(60% - $grid-gutter-width);}}
+    &.term-md,&.term-lg{dt,dd{width:100%; margin-left:0; clear:both;}}
     @include bp(md){
-         &.term-xs{dt{width:20%}dd{width:80%}}
-        &.term-sm{dt{width:30%}dd{width:70%}}
-        &.term-md{dt{width:40%}dd{width:80%}}
-        &.term-lg{dt{width:50%}dd{width:50%}}
+        &.term-xs{dt{width:20%}dd{width:75%;width:calc(80% - $grid-gutter-width);}}
+        &.term-sm{dt{width:30%}dd{width:65%;width:calc(70% - $grid-gutter-width);}}
+        &.term-md{dt{width:40%}dd{width:55%;width:calc(60% - $grid-gutter-width);}}
+        &.term-lg{dt{width:50%}dd{width:45%;width:calc(50% - $grid-gutter-width);}}
     }
      @include bp(lg){
-                 &.term-xs{dt{width:10%}dd{width:90%}}
-        &.term-sm{dt{width:20%}dd{width:80%}}
-        &.term-md{dt{width:30%}dd{width:70%}}
-        &.term-lg{dt{width:50%}dd{width:50%}}
+        &.term-xs{dt{width:10%}dd{width:85%;width:calc(90% - $grid-gutter-width);}}
+        &.term-sm{dt{width:20%}dd{width:75%;width:calc(80% - $grid-gutter-width);}}
+        &.term-md{dt{width:30%}dd{width:65%;width:calc(70% - $grid-gutter-width);}}
+        &.term-lg{dt{width:50%}dd{width:45%;width:calc(50% - $grid-gutter-width);}}
     }
-    &.term-sq-sm{dt{width:20%}dd{width:80%}}
-    &.term-sq-md{dt{width:20%}dd{width:80%}}
-    &.term-sq-lg{dt{width:20%}dd{width:80%}}
+    &.term-sq-sm{dt{width:20%}dd{width:80%;width:calc(80% - $grid-gutter-width);}}
+    &.term-sq-md{dt{width:20%}dd{width:80%;width:calc(80% - $grid-gutter-width);}}
+    &.term-sq-lg{dt{width:20%}dd{width:80%;width:calc(80% - $grid-gutter-width);}}
 }
 
 

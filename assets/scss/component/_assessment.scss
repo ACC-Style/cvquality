@@ -117,7 +117,7 @@
     text-transform: uppercase;
     color: $orange-dark;
     border-bottom: solid 2px $warm-grey-dark;
-
+   
     &:before {
         height: 0;
         width: 0;
@@ -150,6 +150,7 @@
         left:0;
         right:0;
         bottom:.625em;
+         @media print { width: 90%; right:auto;}
     }
 }
 

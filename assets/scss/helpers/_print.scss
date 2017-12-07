@@ -1,15 +1,22 @@
 .site-logo-print{max-height:60px !important; width:auto!important;}
 .sfPageEditor .visible-print-block{
+	img{display:none;}
     &:after {
-        content: "displayed only when printing";
+        content: "PRINT FRIENDLY AREA";
         display: block;
         position: relative;
+        font-size: ms(-1);
+        text-align: center;
     }
-
     display: block !important;
-    opacity: .7;
-    border: 1px dotted grey(60);
+    opacity: .5;
+    border: 2px dotted grey(60);
     margin:5px;
+    background:$warm-grey-light;
 }
+
+// these are trump fixes when printing. 
 @media print {
+	.panel-collapse.collapse{border:1px dotted grey(10);display:block}
+	.page-content{margin:0 .25in;}
 }

@@ -157,11 +157,13 @@ address.vcard {
         }
         // transition the buttons into links when on large screen
         @include bp(lg) {
-            display: inline-block;
-
+            display: block;
             text-align: center;
-
-
+            white-space: nowrap;
+            text-align: center;
+            width: 100%;
+            line-height: 1.5;
+            padding: 0;
             &, + .email, + .tel {
                 margin: 0;
             }
