@@ -2,7 +2,7 @@
     body {
         @include font;
         color: #333;
-        font-size: 1rem;
+        font-size:ms(0);
         line-height: 1.4rem;
     }
 
@@ -84,18 +84,7 @@
     }
 
 
-    ul {
-        margin: 0 0 1em 0;
-        padding: 0;
-        list-style-type: none;
-    }
 
-    a {
-        &:hover,
-        &:active {
-            outline: none;
-        }
-    }
 // style all typograpy content inside of the containing div to remove scope from the rest of the design. 
 
         a {
@@ -107,16 +96,19 @@
             }
             &:hover,
             &:active {
-                text-decoration: underline;
+                text-decoration: underline; outline: none;
             }
         }
         p {
             margin: 0 0 .5em 0;
+            line-height: $baseline-modifier;
         }
         p + p{margin-top:.5rem;}
         ol,
         ul {
-            margin-bottom: 1em;
+            margin: 0 0 1em 0;
+            padding: 0;
+            list-style-type: none;
             ol,
             ul {
                 margin-top: 0.25em;
@@ -141,23 +133,13 @@
             width: 100%;
         }
 
-     .login-box ul li {
-        /* per http://jira.beaconfire.us/browse/ACCQII-457 */
-        min-height: 30px;
-        list-style-type: none;
-    }
-    .login-box li input {
-    float: left;
-}
 
 hr {
     margin-bottom: 1em;
     border: solid 1px $warm-grey-light;
     border-width: 1px 0 0;
 }
-.border-dashed {
-    border: 3px $off-black dashed !important;
-}
+
 
 
 /**
