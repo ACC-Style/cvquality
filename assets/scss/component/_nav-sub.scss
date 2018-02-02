@@ -6,7 +6,7 @@
  * @flag contained
  * @markup
  *  <nav class="nav-sub">
- *      <h2>@{lipsum:3:words}</h2>
+ *      <h2 class="nav-sub-img">@{lipsum:3:words}</h2>
  *      <ul class="nav">
  *          <li class="nav-item parent active current">
  *            <a class="nav-link" ><i class="fa fa-holder toggle"></i>@{lipsum:3:words}</a>
@@ -48,6 +48,7 @@
  *     e.stopPropagation(); 
  *  });
  */
+
 .nav-sub {
     @extend %nav-basic;
     padding-bottom:.5rem;

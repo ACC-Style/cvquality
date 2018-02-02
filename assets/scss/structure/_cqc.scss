@@ -1,3 +1,26 @@
+/**
+ * Header of the practice dashbaord
+ * 
+ * @molecule CQC - practice Dashboard Header 
+ * @section Xtra > CQC 
+ * @markup
+ *  <header class="alt blue box practice-dashboard-header">
+ *       <div class="row">
+ *           <div class="col-sm-12 col-md-7">
+ *               <div class="form-group m-0 row">
+ *                 <label for="practiceSelect" class="col-lg-3 col-sm-4 control-label h5">Practice</label>
+ *                 <div class="col-lg-9 col-sm-8">
+ *                   <select name="practiceSelect" id="practiceSelect" class="form-control input-lg"><option>quis Lorem</option></select>
+ *                 </div>
+ *               </div>
+ *           </div>
+ *           <div class="col-sm-8 col-md-3"><a href="" class="btn btn-block btn-primary"><i class="fa fa-plus"></i> Add Clinician</a></div>
+ *           <div class="col-sm-4 col-md-2"><a href="" class="btn btn-block btn-secondary">Run Report</a></div>
+ *       </div>
+ *   </header>
+ **/
+ .practice-dashboard-header{}
+
 .clinician-overview,.clinician-list-header{
     .data{
         @include font('bold');
@@ -12,7 +35,7 @@
 }
 
 /**
- * the list of clinicians for the clinican dashboard
+ * The list of clinicians for the clinican dashboard
  * 
  * @molecule CQC - Clinician List Header 
  * @section Xtra > CQC 
@@ -20,13 +43,13 @@
  *  <div class="clinician-list-header row">
  *    <div class="col-sm-5"></div>
  *    <div class="col-sm-7 data-holder box alt m-0"><div class="row">
- *        <div class="col-sm-2 data-holder"><span class="data">Societies</span></div>
+ *        <div class="col-sm-2 data-holder"><span class="data">Boards</span></div>
  *        <div class="col-sm-2 data-holder"><span class="data">Certificates</span></div>
  *        <div class="col-sm-2 data-holder"><span class="data">Cont Edu</span></div>
  *        <div class="col-sm-2 data-holder"><span class="data">MOC II</span></div>
  *        <div class="col-sm-2 data-holder">
  *              <span class="data">CMS/MOC IV
- *                  <a href="" class="tooltip"><i class="fa fa-question-o"></i></a>
+ *                  <a href="" class="tooltip"><i class="fa fa-info-circle"></i></a>
  *              </span>
  *        </div>
  *        <div class="col-sm-2 data-holder"><span class="data">Active CQAs</span></div>
@@ -44,8 +67,11 @@
  * @markup
  *  <div class="clinician-overview row">
  *    <div class="col-sm-5 id">
- *          <h2 class="name"><input type="checkbox" class="checkbox"><a class="link">Kander, Nathan</a></h2>
- *          <h6 class="m-0 license">
+ *          <h2 class="name">
+ *              <input class="float-left" type="checkbox" class="checkbox">
+ *              <a class="link">@{lipsum:1:words},@{lipsum:2:words}</a>
+ *              </h2>
+ *          <ul class="no-bullets"><li><h6 class="m-0 license">
  *               License :
  *               <span class="value">
  *                   MD
@@ -56,22 +82,23 @@
  *               <a href="http://www.fsmb.org/policy/contacts" class="link">
  *                   Contact States
  *               </a>
- *           </h6>
- *           <h6 class="m-0 npi">
+ *           </h6></li>
+ *           <li><h6 class="m-0 npi">
  *               NPI:
  *               <span class="value">
- *                   1073518940
+ *                  @{lipsum:10:numbers}
  *               </span>
- *           </h6>
+ *           </h6></li>
+ *           </ul>
  *      <div class="more-link"> <a href="" class="link"><i class="fa fa-plus"></i> show more</a></div>
  *    </div>
  *    <div class="col-sm-7"><div class="row">
- *        <div class="col-sm-2 data-holder"><span class="data">0</span></div>
- *        <div class="col-sm-2 data-holder"><span class="data">5</span></div>
- *        <div class="col-sm-2 data-holder"><span class="data">5</span></div>
- *        <div class="col-sm-2 data-holder"><span class="data">3</span></div>
- *        <div class="col-sm-2 data-holder"><span class="data">2</span></div>
- *        <div class="col-sm-2 data-holder"><span class="data">54</span></div>
+ *        <div class="col-sm-2 data-holder"><span class="data">@{lipsum:1:numbers}</span></div>
+ *        <div class="col-sm-2 data-holder"><span class="data">@{lipsum:1:numbers}</span></div>
+ *        <div class="col-sm-2 data-holder"><span class="data">@{lipsum:1:numbers}</span></div>
+ *        <div class="col-sm-2 data-holder"><span class="data">@{lipsum:1:numbers}</span></div>
+ *        <div class="col-sm-2 data-holder"><span class="data">@{lipsum:1:numbers}</span></div>
+ *        <div class="col-sm-2 data-holder"><span class="data">@{lipsum:2:numbers}</span></div>
  *    </div></div>
  *  </div>
  * 
@@ -112,21 +139,21 @@
  *   <li>
  *      <div class="row">
  *        <div class="col-sm-7"><strong>@{lipsum:3:words}</strong></div>
- *        <div class="col-sm-2"><small>12/12/2017</small></div>
+ *        <div class="col-sm-2 text-right"><small><em>Started:</em> @{lipsum:1:numbers}/@{lipsum:1:numbers}/2017</small></div>
  *        <div class="col-sm-3">@{include:.progress-bar-primary}</div>
  *      </div>
  *   </li>
  *   <li>
  *      <div class="row">
  *        <div class="col-sm-7"><strong>@{lipsum:3:words}</strong></div>
- *        <div class="col-sm-2"><small>12/12/2017</small></div>
+ *        <div class="col-sm-2 text-right"><small><em>Started:</em> @{lipsum:1:numbers}/@{lipsum:1:numbers}/2017</small></div>
  *        <div class="col-sm-3">@{include:.progress-bar-primary}</div>
  *      </div> 
  *   </li>
  *   <li>
  *      <div class="row">
  *        <div class="col-sm-7"><strong>@{lipsum:3:words}</strong></div>
- *        <div class="col-sm-2"><small>12/12/2017</small></div>
+ *        <div class="col-sm-2 text-right"><small><em>Started:</em> @{lipsum:1:numbers}/@{lipsum:1:numbers}/2017</small></div>
  *        <div class="col-sm-3">@{include:.progress-bar-primary}</div>
  *      </div>
  *   </li>
@@ -145,7 +172,7 @@ ul.banded-list{
     }
     li{padding:.5rem 1rem;}
     li:nth-child(even){
-        background-color:$soft-grey;
+        background-color:mix($soft-blue,white,25%);
     }
     
 }
@@ -157,11 +184,124 @@ ul.banded-list{
  * @markup
  *  <div class="clinician-data row">
  *  <div class="panel-group accordion basic">
+ *       <div aria-multiselectable="true" class="panel" id="accordionboards" role="tablist">
+ *               <div class="panel-heading" id="headingOne" role="tab">
+ *                   <h4 class="panel-title">
+ *                       <a aria-controls="accordionboardsbasic" aria-expanded="true" class="collapsed" data-parent="#accordionboards" data-toggle="collapse" href="#accordionboardsbasic" role="button">
+ *                           <span class="text">
+ *                               Boards
+ *                           </span>
+ *                           <strong class="pull-right">
+ *                               2
+ *                           </strong>
+ *                       </a>
+ *                   </h4>
+ *               </div>
+ *               <div aria-expanded="true" aria-labelledby="headingOne" class="panel-collapse collapse" id="accordionboardsbasic" role="tabpanel">
+ *                   <div class="panel-body">
+ *                       <ul class="banded-list">
+ *                         <li>
+ *                               <div class="row">
+ *                                   <div class="col-sm-9">
+ *                                       <strong>
+ *                                           @{lipsum:3:words}
+ *                                       </strong>
+ *                                   </div>
+ *                                   <div class="col-sm-3 text-right">
+ *                                       <small>
+ *                                           <em>
+ *                                               Expires:
+ *                                           </em>
+ *                                           2/9/202@{lipsum:1:numbers}
+ *                                       </small>
+ *                                   </div>
+ *                               </div>
+ *                           </li>
+ *                           <li>
+ *                               <div class="row">
+ *                                   <div class="col-sm-9">
+ *                                       <strong>
+ *                                           @{lipsum:3:words}
+ *                                       </strong>
+ *                                   </div>
+ *                                   <div class="col-sm-3 text-right">
+ *                                       <small>
+ *                                           <em>
+ *                                               Expires:
+ *                                           </em>
+ *                                           2/9/202@{lipsum:1:numbers}
+ *                                       </small>
+ *                                   </div>
+ *                               </div>
+ *                           </li>
+ *                       </ul>
+ *                   </div>
+ *               </div>
+ *           </div>
+ *       </div>
+ *  <div class="panel-group accordion basic">
+ *       <div aria-multiselectable="true" class="panel" id="accordioncerts" role="tablist">
+ *               <div class="panel-heading" id="headingOne" role="tab">
+ *                   <h4 class="panel-title">
+ *                       <a aria-controls="accordioncertsbasic" aria-expanded="true" class="collapsed" data-parent="#accordioncerts" data-toggle="collapse" href="#accordioncertsbasic" role="button">
+ *                           <span class="text">
+ *                               Certificates
+ *                           </span>
+ *                           <strong class="pull-right">
+ *                               2
+ *                           </strong>
+ *                       </a>
+ *                   </h4>
+ *               </div>
+ *               <div aria-expanded="true" aria-labelledby="headingOne" class="panel-collapse collapse" id="accordioncertsbasic" role="tabpanel">
+ *                   <div class="panel-body">
+ *                       <ul class="banded-list">
+ *                         <li>
+ *                               <div class="row">
+ *                                   <div class="col-sm-9">
+ *                                       <strong>
+ *                                           @{lipsum:3:words}
+ *                                       </strong>
+ *                                   </div>
+ *                                   <div class="col-sm-3 text-right">
+ *                                       <small>
+ *                                           <em>
+ *                                               Expires:
+ *                                           </em>
+ *                                           2/9/202@{lipsum:1:numbers}
+ *                                       </small>
+ *                                   </div>
+ *                               </div>
+ *                           </li>
+ *                           <li>
+ *                               <div class="row">
+ *                                   <div class="col-sm-9">
+ *                                       <strong>
+ *                                           @{lipsum:3:words}
+ *                                       </strong>
+ *                                   </div>
+ *                                   <div class="col-sm-3 text-right">
+ *                                       <small>
+ *                                           <em>
+ *                                               Expires:
+ *                                           </em>
+ *                                           2/9/202@{lipsum:1:numbers}
+ *                                       </small>
+ *                                   </div>
+ *                               </div>
+ *                           </li>
+ *                       </ul>
+ *                   </div>
+ *               </div>
+ *           </div>
+ *       </div>
+ *  <div class="panel-group accordion basic">
  *   <div class="panel" id="accordionData" role="tablist" aria-multiselectable="true">
  *       <div class="panel-heading" role="tab" id="headingOne">
  *         <h4 class="panel-title">
  *           <a role="button" data-toggle="collapse" data-parent="#accordionData" href="#accordionDatabasic" aria-expanded="true" aria-controls="accordionDatabasic" class="collapsed">
  *             <span class="text">Active CQAs</span>
+ *             <strong class="pull-right">3</strong>
  *           </a>
  *         </h4>
  *       </div>
@@ -216,6 +356,7 @@ ul.banded-list{
  *              <div class="col-lg-3 col-md-4 col-xl-3 p-0 d-none d-lg-block"> @{include:.nav-sub}@{include:.nav-social-button.small}</div>
  *              <div class="col-lg-9 col-md-8 col-xl-13">
  *                  <div class="page-content">
+ *                      @{include:.practice-dashboard-header}
  *                      <h1>Clinician Dashboard</h1>
  *                      @{include:.clinicians-list}
  *                      @{include:.pagination}
@@ -226,4 +367,4 @@ ul.banded-list{
  *      </div>
  *  </div>
  */
- .product-page{}
+ .x-cqc-page{}
