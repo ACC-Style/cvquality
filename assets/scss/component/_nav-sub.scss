@@ -48,12 +48,6 @@
  *     e.stopPropagation(); 
  *  });
  */
-.nav-sub-img {
-        padding: 16px 1em 16px 1em;
-        img {
-            max-width: 100%;
-        }
-    }
 .nav-sub {
     @extend %nav-basic;
     padding-bottom:.5rem;
@@ -151,3 +145,9 @@
     }
 
 }
+.nav-sub-img {
+        padding: 16px 1em 16px 1em;
+        img {
+            max-width: 100%;
+        }
+    }

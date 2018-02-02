@@ -1,0 +1,229 @@
+.clinician-overview,.clinician-list-header{
+    .data{
+        @include font('bold');
+        font-size:ms(0);
+        text-align:center;
+        display:block;
+    }
+        .data-holder + .data-holder{
+        border-left:1px dotted white;
+        margin-left:-1px;
+    }
+}
+
+/**
+ * the list of clinicians for the clinican dashboard
+ * 
+ * @molecule CQC - Clinician List Header 
+ * @section Xtra > CQC 
+ * @markup
+ *  <div class="clinician-list-header row">
+ *    <div class="col-sm-5"></div>
+ *    <div class="col-sm-7 data-holder box alt m-0"><div class="row">
+ *        <div class="col-sm-2 data-holder"><span class="data">Societies</span></div>
+ *        <div class="col-sm-2 data-holder"><span class="data">Certificates</span></div>
+ *        <div class="col-sm-2 data-holder"><span class="data">Cont Edu</span></div>
+ *        <div class="col-sm-2 data-holder"><span class="data">MOC II</span></div>
+ *        <div class="col-sm-2 data-holder">
+ *              <span class="data">CMS/MOC IV
+ *                  <a href="" class="tooltip"><i class="fa fa-question-o"></i></a>
+ *              </span>
+ *        </div>
+ *        <div class="col-sm-2 data-holder"><span class="data">Active CQAs</span></div>
+ *    </div></div>
+ *  </div>
+ * 
+ * 
+ **/
+.clinicians-list-header{}
+/**
+ * The overview data of a clinician.
+ * 
+ * @molecule CQC - Clinician Overview 
+ * @section Xtra > CQC 
+ * @markup
+ *  <div class="clinician-overview row">
+ *    <div class="col-sm-5 id">
+ *          <h2 class="name"><input type="checkbox" class="checkbox"><a class="link">Kander, Nathan</a></h2>
+ *          <h6 class="m-0 license">
+ *               License :
+ *               <span class="value">
+ *                   MD
+ *               </span>
+ *               <span class="value">
+ *                   VA
+ *               </span>
+ *               <a href="http://www.fsmb.org/policy/contacts" class="link">
+ *                   Contact States
+ *               </a>
+ *           </h6>
+ *           <h6 class="m-0 npi">
+ *               NPI:
+ *               <span class="value">
+ *                   1073518940
+ *               </span>
+ *           </h6>
+ *      <div class="more-link"> <a href="" class="link"><i class="fa fa-plus"></i> show more</a></div>
+ *    </div>
+ *    <div class="col-sm-7"><div class="row">
+ *        <div class="col-sm-2 data-holder"><span class="data">0</span></div>
+ *        <div class="col-sm-2 data-holder"><span class="data">5</span></div>
+ *        <div class="col-sm-2 data-holder"><span class="data">5</span></div>
+ *        <div class="col-sm-2 data-holder"><span class="data">3</span></div>
+ *        <div class="col-sm-2 data-holder"><span class="data">2</span></div>
+ *        <div class="col-sm-2 data-holder"><span class="data">54</span></div>
+ *    </div></div>
+ *  </div>
+ * 
+ * 
+ **/
+.clinician-overview{
+    border-top:1px solid $scrub-teal-light;
+    border-bottom: 1px solid $warm-grey;
+    background:$soft-blue;
+    .name{margin:.5em 0 .25em;}
+    .data{
+        font-size:ms(4);
+        vertical-align:middle;
+        margin: 1.375em auto;
+        width: 1em;
+    }
+
+    .id{
+        background-color:white;
+        padding:.25em 0 0;
+    }
+
+}
+.more-link{
+    padding:.35rem;
+    margin-top:.75rem;
+    border-top: 1px solid $warm-grey;
+}
+
+
+/**
+ * Highly stylized list
+ * 
+ * @molecule Banded Lists
+ * @section Lists > Banded 
+ * @markup
+ *  <ul class="banded-list">
+ *   <li>
+ *      <div class="row">
+ *        <div class="col-sm-7"><strong>@{lipsum:3:words}</strong></div>
+ *        <div class="col-sm-2"><small>12/12/2017</small></div>
+ *        <div class="col-sm-3">@{include:.progress-bar-primary}</div>
+ *      </div>
+ *   </li>
+ *   <li>
+ *      <div class="row">
+ *        <div class="col-sm-7"><strong>@{lipsum:3:words}</strong></div>
+ *        <div class="col-sm-2"><small>12/12/2017</small></div>
+ *        <div class="col-sm-3">@{include:.progress-bar-primary}</div>
+ *      </div> 
+ *   </li>
+ *   <li>
+ *      <div class="row">
+ *        <div class="col-sm-7"><strong>@{lipsum:3:words}</strong></div>
+ *        <div class="col-sm-2"><small>12/12/2017</small></div>
+ *        <div class="col-sm-3">@{include:.progress-bar-primary}</div>
+ *      </div>
+ *   </li>
+ *  </ul>
+ **/
+ul.banded-list{
+    @extend .no-bullets;
+    @extend .no-indent;
+    .progress{
+        height:1rem;
+        margin-bottom:0;
+    }
+    .progress-bar{
+        font-size: ms(-3);
+        line-height: 1.75em;
+    }
+    li{padding:.5rem 1rem;}
+    li:nth-child(even){
+        background-color:$soft-grey;
+    }
+    
+}
+/**
+ * The expanded data of a clinician.
+ * 
+ * @molecule CQC - Clinician Data 
+ * @section Xtra > CQC 
+ * @markup
+ *  <div class="clinician-data row">
+ *  <div class="panel-group accordion basic">
+ *   <div class="panel" id="accordionData" role="tablist" aria-multiselectable="true">
+ *       <div class="panel-heading" role="tab" id="headingOne">
+ *         <h4 class="panel-title">
+ *           <a role="button" data-toggle="collapse" data-parent="#accordionData" href="#accordionDatabasic" aria-expanded="true" aria-controls="accordionDatabasic" class="collapsed">
+ *             <span class="text">Active CQAs</span>
+ *           </a>
+ *         </h4>
+ *       </div>
+ *       <div id="accordionDatabasic" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+ *         <div class="panel-body">
+ *          @{include:ul.banded-list}
+ *         </div>
+ *       </div>
+ *   </div>
+ *  </div>
+ *  </div>
+ **/
+.clinician-data{
+    .panel-group .panel{border-radius:0;border:0 none;}
+    .accordion .panel-heading{border-bottom:$warm-grey 2px solid;border-top:$warm-grey 2px solid;border-radius:0;}
+    .panel-body{padding:0;}
+    .panel-title{font-size:ms(1);}
+}
+
+
+/**
+ * the list of clinicians for the clinican dashboard
+ * 
+ * @structure CQC - Clinician List
+ * @section Xtra > CQC 
+ * @markup
+ *  <div class="clinician-list">
+ *     @{include:.clinicians-list-header}
+ *     <div class="cliician">
+ *     @{include:.clinician-overview}
+ *     @{include:.clinician-data}
+ *     </div>
+ *  </div>
+ *     
+ */
+.clinicians-list{}
+
+/**
+ * A mirco app inside the cvquality runs the administration of Clinical Quaility Coach.
+ * 
+ * @layouts CQC Page - Practice Dashboard
+ * @section Wireframes CQC > Practice Dashboard
+ * @flag full-width
+ * @markup
+ *  <div class="body">
+ *      <div class="wrapper container-fluid">
+ *           @{include:#header}
+ *           @{include:.mobile-menu-toggle-container}
+ *           <div class="row">@{include:.nav-primary}</div>
+ *           <div id="aux" class="row">@{include:.breadcrumb}</div>
+ *           <div id="layout" class="row no-gutter">
+ *              <div class="col-lg-3 col-md-4 col-xl-3 p-0 d-none d-lg-block"> @{include:.nav-sub}@{include:.nav-social-button.small}</div>
+ *              <div class="col-lg-9 col-md-8 col-xl-13">
+ *                  <div class="page-content">
+ *                      <h1>Clinician Dashboard</h1>
+ *                      @{include:.clinicians-list}
+ *                      @{include:.pagination}
+ *                  </div>
+ *              </div>
+ *           </div>
+ *           @{include:#footer}
+ *      </div>
+ *  </div>
+ */
+ .product-page{}

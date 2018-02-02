@@ -6889,14 +6889,14 @@ a.link[href^="fax:"]:before {
 a.link:hover {
   text-decoration: underline; }
 
-ul.no-bullets, ul.no-bullets li, ul.multiselect-container, ul.multiselect-container li, ul.generic-list, ul.generic-list li {
+ul.no-bullets, ul.banded-list, ul.no-bullets li, ul.banded-list li, ul.multiselect-container, ul.multiselect-container li, ul.generic-list, ul.generic-list li {
   list-style: none;
   list-style-type: none; }
 
-ul.no-indent, ul.multiselect-container, ul.generic-list {
+ul.no-indent, ul.banded-list, ul.multiselect-container, ul.generic-list {
   margin: 0;
   padding: 0; }
-  ul.no-indent, ul.no-indent li, ul.multiselect-container, ul.multiselect-container li, ul.generic-list, ul.generic-list li {
+  ul.no-indent, ul.banded-list, ul.no-indent li, ul.banded-list li, ul.multiselect-container, ul.multiselect-container li, ul.generic-list, ul.generic-list li {
     margin-left: 0;
     margin-right: 0;
     padding-left: 0;
@@ -8077,7 +8077,7 @@ input {
 *  progress-bar-secondary color the bar to dark grey
 * @markup
 *  <div class="progress">
-*    <div class="progress-bar progress-bar-primary progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+*    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
 *  </div>
 */
 .progress-bar.progress-bar-primary {
@@ -8085,6 +8085,16 @@ input {
 .progress-bar.progress-bar-secondary {
   background-color: #6f6b6f; }
 
+/**
+* show the completion or loading progress of a task or system.
+*
+* @molecule Progress Bar Primary
+* @section Advanced Containers > Progress Bar
+* @markup
+*  <div class="progress">
+*    <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+*  </div>
+*/
 /**
 * Progress bars can be stacked to show levels of completion.
 *
@@ -9342,11 +9352,6 @@ input {
  *     e.stopPropagation(); 
  *  });
  */
-.nav-sub-img {
-  padding: 16px 1em 16px 1em; }
-  .nav-sub-img img {
-    max-width: 100%; }
-
 .nav-sub {
   padding-bottom: .5rem; }
   .nav-sub > .nav {
@@ -9437,6 +9442,11 @@ input {
     transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -webkit-transform: rotate(90deg); }
+
+.nav-sub-img {
+  padding: 16px 1em 16px 1em; }
+  .nav-sub-img img {
+    max-width: 100%; }
 
 .video-wrapper {
   margin-bottom: 1em;
@@ -11412,6 +11422,221 @@ body, .body {
       .mobile-menu-toggle-container.show-mobile {
         display: block; } }
 
+.clinician-overview .data, .clinician-list-header .data {
+  font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  display: block; }
+.clinician-overview .data-holder + .data-holder, .clinician-list-header .data-holder + .data-holder {
+  border-left: 1px dotted white;
+  margin-left: -1px; }
+
+/**
+ * the list of clinicians for the clinican dashboard
+ * 
+ * @molecule CQC - Clinician List Header 
+ * @section Xtra > CQC 
+ * @markup
+ *  <div class="clinician-list-header row">
+ *    <div class="col-sm-5"></div>
+ *    <div class="col-sm-7 data-holder box alt m-0"><div class="row">
+ *        <div class="col-sm-2 data-holder"><span class="data">Societies</span></div>
+ *        <div class="col-sm-2 data-holder"><span class="data">Certificates</span></div>
+ *        <div class="col-sm-2 data-holder"><span class="data">Cont Edu</span></div>
+ *        <div class="col-sm-2 data-holder"><span class="data">MOC II</span></div>
+ *        <div class="col-sm-2 data-holder">
+ *              <span class="data">CMS/MOC IV
+ *                  <a href="" class="tooltip"><i class="fa fa-question-o"></i></a>
+ *              </span>
+ *        </div>
+ *        <div class="col-sm-2 data-holder"><span class="data">Active CQAs</span></div>
+ *    </div></div>
+ *  </div>
+ * 
+ * 
+ **/
+/**
+ * The overview data of a clinician.
+ * 
+ * @molecule CQC - Clinician Overview 
+ * @section Xtra > CQC 
+ * @markup
+ *  <div class="clinician-overview row">
+ *    <div class="col-sm-5 id">
+ *          <h2 class="name"><input type="checkbox" class="checkbox"><a class="link">Kander, Nathan</a></h2>
+ *          <h6 class="m-0 license">
+ *               License :
+ *               <span class="value">
+ *                   MD
+ *               </span>
+ *               <span class="value">
+ *                   VA
+ *               </span>
+ *               <a href="http://www.fsmb.org/policy/contacts" class="link">
+ *                   Contact States
+ *               </a>
+ *           </h6>
+ *           <h6 class="m-0 npi">
+ *               NPI:
+ *               <span class="value">
+ *                   1073518940
+ *               </span>
+ *           </h6>
+ *      <div class="more-link"> <a href="" class="link"><i class="fa fa-plus"></i> show more</a></div>
+ *    </div>
+ *    <div class="col-sm-7"><div class="row">
+ *        <div class="col-sm-2 data-holder"><span class="data">0</span></div>
+ *        <div class="col-sm-2 data-holder"><span class="data">5</span></div>
+ *        <div class="col-sm-2 data-holder"><span class="data">5</span></div>
+ *        <div class="col-sm-2 data-holder"><span class="data">3</span></div>
+ *        <div class="col-sm-2 data-holder"><span class="data">2</span></div>
+ *        <div class="col-sm-2 data-holder"><span class="data">54</span></div>
+ *    </div></div>
+ *  </div>
+ * 
+ * 
+ **/
+.clinician-overview {
+  border-top: 1px solid #05aee5;
+  border-bottom: 1px solid #a1a0a4;
+  background: #a4cded; }
+  .clinician-overview .name {
+    margin: .5em 0 .25em; }
+  .clinician-overview .data {
+    font-size: 22px;
+    vertical-align: middle;
+    margin: 1.375em auto;
+    width: 1em; }
+  .clinician-overview .id {
+    background-color: white;
+    padding: .25em 0 0; }
+
+.more-link {
+  padding: .35rem;
+  margin-top: .75rem;
+  border-top: 1px solid #a1a0a4; }
+
+/**
+ * Highly stylized list
+ * 
+ * @molecule Banded Lists
+ * @section Lists > Banded 
+ * @markup
+ *  <ul class="banded-list">
+ *   <li>
+ *      <div class="row">
+ *        <div class="col-sm-7"><strong>@{lipsum:3:words}</strong></div>
+ *        <div class="col-sm-2"><small>12/12/2017</small></div>
+ *        <div class="col-sm-3">@{include:.progress-bar-primary}</div>
+ *      </div>
+ *   </li>
+ *   <li>
+ *      <div class="row">
+ *        <div class="col-sm-7"><strong>@{lipsum:3:words}</strong></div>
+ *        <div class="col-sm-2"><small>12/12/2017</small></div>
+ *        <div class="col-sm-3">@{include:.progress-bar-primary}</div>
+ *      </div> 
+ *   </li>
+ *   <li>
+ *      <div class="row">
+ *        <div class="col-sm-7"><strong>@{lipsum:3:words}</strong></div>
+ *        <div class="col-sm-2"><small>12/12/2017</small></div>
+ *        <div class="col-sm-3">@{include:.progress-bar-primary}</div>
+ *      </div>
+ *   </li>
+ *  </ul>
+ **/
+ul.banded-list .progress {
+  height: 1rem;
+  margin-bottom: 0; }
+ul.banded-list .progress-bar {
+  font-size: 10px;
+  line-height: 1.75em; }
+ul.banded-list li {
+  padding: .5rem 1rem; }
+ul.banded-list li:nth-child(even) {
+  background-color: #eceaea; }
+
+/**
+ * The expanded data of a clinician.
+ * 
+ * @molecule CQC - Clinician Data 
+ * @section Xtra > CQC 
+ * @markup
+ *  <div class="clinician-data row">
+ *  <div class="panel-group accordion basic">
+ *   <div class="panel" id="accordionData" role="tablist" aria-multiselectable="true">
+ *       <div class="panel-heading" role="tab" id="headingOne">
+ *         <h4 class="panel-title">
+ *           <a role="button" data-toggle="collapse" data-parent="#accordionData" href="#accordionDatabasic" aria-expanded="true" aria-controls="accordionDatabasic" class="collapsed">
+ *             <span class="text">Active CQAs</span>
+ *           </a>
+ *         </h4>
+ *       </div>
+ *       <div id="accordionDatabasic" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+ *         <div class="panel-body">
+ *          @{include:ul.banded-list}
+ *         </div>
+ *       </div>
+ *   </div>
+ *  </div>
+ *  </div>
+ **/
+.clinician-data .panel-group .panel {
+  border-radius: 0;
+  border: 0 none; }
+.clinician-data .accordion .panel-heading {
+  border-bottom: #a1a0a4 2px solid;
+  border-top: #a1a0a4 2px solid;
+  border-radius: 0; }
+.clinician-data .panel-body {
+  padding: 0; }
+.clinician-data .panel-title {
+  font-size: 16px; }
+
+/**
+ * the list of clinicians for the clinican dashboard
+ * 
+ * @structure CQC - Clinician List
+ * @section Xtra > CQC 
+ * @markup
+ *  <div class="clinician-list">
+ *     @{include:.clinicians-list-header}
+ *     <div class="cliician">
+ *     @{include:.clinician-overview}
+ *     @{include:.clinician-data}
+ *     </div>
+ *  </div>
+ *     
+ */
+/**
+ * A mirco app inside the cvquality runs the administration of Clinical Quaility Coach.
+ * 
+ * @layouts CQC Page - Practice Dashboard
+ * @section Wireframes CQC > Practice Dashboard
+ * @flag full-width
+ * @markup
+ *  <div class="body">
+ *      <div class="wrapper container-fluid">
+ *           @{include:#header}
+ *           @{include:.mobile-menu-toggle-container}
+ *           <div class="row">@{include:.nav-primary}</div>
+ *           <div id="aux" class="row">@{include:.breadcrumb}</div>
+ *           <div id="layout" class="row no-gutter">
+ *              <div class="col-lg-3 col-md-4 col-xl-3 p-0 d-none d-lg-block"> @{include:.nav-sub}@{include:.nav-social-button.small}</div>
+ *              <div class="col-lg-9 col-md-8 col-xl-13">
+ *                  <div class="page-content">
+ *                      <h1>Clinician Dashboard</h1>
+ *                      @{include:.clinicians-list}
+ *                      @{include:.pagination}
+ *                  </div>
+ *              </div>
+ *           </div>
+ *           @{include:#footer}
+ *      </div>
+ *  </div>
+ */
 @media only screen and (min-width: 768px) {
   .row.vh_30 div[class^="col-"], .row.vh_30 .card {
     min-height: 30vh; }
@@ -11440,7 +11665,7 @@ body, .body {
     top: 0;
     bottom: 0; }
   div[class*="vh_"] .card-header {
-    flex: 0 1 25%; }
+    flex: 0 1 auto; }
   div[class*="vh_"] .card-body {
     flex: 1 1 auto;
     padding-bottom: 0; }
