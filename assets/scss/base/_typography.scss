@@ -181,10 +181,10 @@ hr, .divider,.line-spacer,.item-divider, .group-divider,.section-divider{
       border-bottom-color:$warm-grey-light;
     }
     &.teal,&.section-divider{
-      border-bottom-color:rgba($scrub-teal-light,.5);
+      border-bottom-color:rgba($scrub-teal,.5);
     }
     &.orange,&.group-divider{
-      border-bottom-color:rgba($orange-light,.5);
+      border-bottom-color:rgba($orange,.5);
     }
     &.dashed,&.item-divider{ border-bottom-style:dashed}
     &.dotted,&.group-divider{ border-bottom-style:dotted}

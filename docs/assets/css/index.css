@@ -6819,9 +6819,9 @@ hr, .divider, .line-spacer, .item-divider, .group-divider, .section-divider {
 .divider.grey, .divider.item-divider, hr.grey, hr.item-divider {
   border-bottom-color: #d6d4d4; }
 .divider.teal, .divider.section-divider, hr.teal, hr.section-divider {
-  border-bottom-color: rgba(5, 174, 229, 0.5); }
+  border-bottom-color: rgba(0, 136, 170, 0.5); }
 .divider.orange, .divider.group-divider, hr.orange, hr.group-divider {
-  border-bottom-color: rgba(255, 196, 37, 0.5); }
+  border-bottom-color: rgba(253, 126, 20, 0.5); }
 .divider.dashed, .divider.item-divider, hr.dashed, hr.item-divider {
   border-bottom-style: dashed; }
 .divider.dotted, .divider.group-divider, hr.dotted, hr.group-divider {
@@ -8119,6 +8119,9 @@ input {
 *    <div class="progress-bar progress-bar-secondary progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
 *  </div>
 **/
+.nav-pills li {
+  background-color: #fafafa; }
+
 .card {
   float: none;
   width: 100%;
@@ -9916,6 +9919,9 @@ ul.multiselect-container li.active a {
  *
  * @molecule box
  * @flag contained
+ * @modifiers
+ *  .alt    changes background to grey
+ *  .alt.blue changes background to blue
  * @section Box > Box
  * @markup
  *   <div class="box">
@@ -9970,6 +9976,8 @@ ul.multiselect-container li.active a {
 */
 .box.alt {
   background-color: #eceaea; }
+  .box.alt.blue {
+    background-color: #a4cded; }
 
 /**
 * The Score Box Generic is currently used on the Assessments Page. These repeated boxes are used to show the score with each section of the assessment.
@@ -11423,25 +11431,43 @@ body, .body {
         display: block; } }
 
 /**
- * Header of the practice dashbaord
+ * Header of the CQC so you can navigate between section of the micro app.
  * 
- * @molecule CQC - practice Dashboard Header 
+ * @molecule CQC - CQC Header 
  * @section Xtra > CQC 
  * @markup
- *  <header class="alt blue box practice-dashboard-header">
- *       <div class="row">
- *           <div class="col-sm-12 col-md-7">
- *               <div class="form-group m-0 row">
- *                 <label for="practiceSelect" class="col-lg-3 col-sm-4 control-label h5">Practice</label>
- *                 <div class="col-lg-9 col-sm-8">
- *                   <select name="practiceSelect" id="practiceSelect" class="form-control input-lg"><option>quis Lorem</option></select>
- *                 </div>
- *               </div>
+ *  <header class="cqc-header">
+ *   <hr class="divider teal bold m-t-0 row"/>
+ *       <div class="row m-t-0 m-b-0">
+ *          <ul class="nav-pills nav">
+ *              <li class="nav-item active"><a class="nav-link">Practice Dashboard</a></li>
+ *              <li class="nav-item"><a class="nav-link">Clnician Details</a></li>
+ *              <li class="nav-item"><a class="nav-link">Clinician Management</a></li>
+ *          </ul>
+ *       </div>
+ *   <hr class="divider teal bold m-t-0 row"/>
+ *   </header>
+ **/
+/**
+ * Header of the practice Dashboard.
+ * 
+ * @molecule CQC - Practice Dashbaord Header 
+ * @section Xtra > CQC 
+ * @markup
+ *  <header class="practice-dashboard-header">
+ *     <h1 class="m-b-0">Practice Dashboard</h1>
+ *       <hr class="divider orange bold m-t-0 m-b-0"/>
+ *       <div class="row box alt m-t-0 m-b-0">
+ *           <div class="col-sm-12 col-md-5">
+ *              <select name="practiceSelect" id="practiceSelect" class="form-control input-lg"><option>quis Lorem</option></select>
+ *              <small>select a practice to view its details</small>
  *           </div>
  *           <div class="col-sm-8 col-md-3"><a href="" class="btn btn-block btn-primary"><i class="fa fa-plus"></i> Add Clinician</a></div>
+ *           <div class="col-sm-8 col-md-2"><a href="" class="btn btn-block btn-primary"><i class="fa fa-filter"></i> Filter By Date</a></div>
  *           <div class="col-sm-4 col-md-2"><a href="" class="btn btn-block btn-secondary">Run Report</a></div>
- *       </div>
- *   </header>
+ *       </div>    
+ *  </header>
+ *  <hr class="space"/>
  **/
 .clinician-overview .data, .clinician-list-header .data {
   font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
@@ -11461,7 +11487,7 @@ body, .body {
  * @markup
  *  <div class="clinician-list-header row">
  *    <div class="col-sm-5"></div>
- *    <div class="col-sm-7 data-holder box alt m-0"><div class="row">
+ *    <div class="col-sm-7 data-holder box alt m-t-0 m-b-0"><div class="row">
  *        <div class="col-sm-2 data-holder"><span class="data">Boards</span></div>
  *        <div class="col-sm-2 data-holder"><span class="data">Certificates</span></div>
  *        <div class="col-sm-2 data-holder"><span class="data">Cont Edu</span></div>
@@ -11702,7 +11728,7 @@ ul.banded-list li:nth-child(even) {
  *               </div>
  *           </div>
  *       </div>
- *  <div class="panel-group accordion basic">
+ *  <div class="panel-group accordion basic m-b-0">
  *   <div class="panel" id="accordionData" role="tablist" aria-multiselectable="true">
  *       <div class="panel-heading" role="tab" id="headingOne">
  *         <h4 class="panel-title">
@@ -11745,6 +11771,10 @@ ul.banded-list li:nth-child(even) {
  *     @{include:.clinician-overview}
  *     @{include:.clinician-data}
  *     </div>
+ *     <div class="cliician">
+ *     @{include:.clinician-overview}
+ *     @{include:.clinician-data}
+ *     </div>
  *  </div>
  *     
  */
@@ -11765,10 +11795,11 @@ ul.banded-list li:nth-child(even) {
  *              <div class="col-lg-3 col-md-4 col-xl-3 p-0 d-none d-lg-block"> @{include:.nav-sub}@{include:.nav-social-button.small}</div>
  *              <div class="col-lg-9 col-md-8 col-xl-13">
  *                  <div class="page-content">
+ *                      @{include:.cqc-header} 
  *                      @{include:.practice-dashboard-header}
- *                      <h1>Clinician Dashboard</h1>
  *                      @{include:.clinicians-list}
- *                      @{include:.pagination}
+ *                      <hr class="divider bold teal row"/>
+ *                      <div class="pull-right">@{include:.pagination}</div>
  *                  </div>
  *              </div>
  *           </div>

@@ -1,26 +1,45 @@
 /**
- * Header of the practice dashbaord
+ * Header of the CQC so you can navigate between section of the micro app.
  * 
- * @molecule CQC - practice Dashboard Header 
+ * @molecule CQC - CQC Header 
  * @section Xtra > CQC 
  * @markup
- *  <header class="alt blue box practice-dashboard-header">
- *       <div class="row">
- *           <div class="col-sm-12 col-md-7">
- *               <div class="form-group m-0 row">
- *                 <label for="practiceSelect" class="col-lg-3 col-sm-4 control-label h5">Practice</label>
- *                 <div class="col-lg-9 col-sm-8">
- *                   <select name="practiceSelect" id="practiceSelect" class="form-control input-lg"><option>quis Lorem</option></select>
- *                 </div>
- *               </div>
- *           </div>
- *           <div class="col-sm-8 col-md-3"><a href="" class="btn btn-block btn-primary"><i class="fa fa-plus"></i> Add Clinician</a></div>
- *           <div class="col-sm-4 col-md-2"><a href="" class="btn btn-block btn-secondary">Run Report</a></div>
+ *  <header class="cqc-header">
+ *   <hr class="divider teal bold m-t-0 row"/>
+ *       <div class="row m-t-0 m-b-0">
+ *          <ul class="nav-pills nav">
+ *              <li class="nav-item active"><a class="nav-link">Practice Dashboard</a></li>
+ *              <li class="nav-item"><a class="nav-link">Clnician Details</a></li>
+ *              <li class="nav-item"><a class="nav-link">Clinician Management</a></li>
+ *          </ul>
  *       </div>
+ *   <hr class="divider teal bold m-t-0 row"/>
  *   </header>
  **/
- .practice-dashboard-header{}
+ .cqc-header{}
 
+/**
+ * Header of the practice Dashboard.
+ * 
+ * @molecule CQC - Practice Dashbaord Header 
+ * @section Xtra > CQC 
+ * @markup
+ *  <header class="practice-dashboard-header">
+ *     <h1 class="m-b-0">Practice Dashboard</h1>
+ *       <hr class="divider orange bold m-t-0 m-b-0 row"/>
+ *       <div class="row box alt m-t-0 m-b-0">
+ *           <div class="col-sm-12 col-md-5">
+ *              <select name="practiceSelect" id="practiceSelect" class="form-control input-lg"><option>quis Lorem</option></select>
+ *              <small>select a practice to view its details</small>
+ *           </div>
+ *           <div class="col-sm-8 col-md-3"><a href="" class="btn btn-block btn-primary"><i class="fa fa-plus"></i> Add Clinician</a></div>
+ *           <div class="col-sm-8 col-md-2"><a href="" class="btn btn-block btn-primary"><i class="fa fa-filter"></i> Filter By Date</a></div>
+ *           <div class="col-sm-4 col-md-2"><a href="" class="btn btn-block btn-secondary">Run Report</a></div>
+ *       </div>    
+ *  </header>
+ *  <hr class="space"/>
+ **/
+ .practice-dashboard-header{}
 .clinician-overview,.clinician-list-header{
     .data{
         @include font('bold');
@@ -42,7 +61,7 @@
  * @markup
  *  <div class="clinician-list-header row">
  *    <div class="col-sm-5"></div>
- *    <div class="col-sm-7 data-holder box alt m-0"><div class="row">
+ *    <div class="col-sm-7 data-holder box alt m-t-0 m-b-0"><div class="row">
  *        <div class="col-sm-2 data-holder"><span class="data">Boards</span></div>
  *        <div class="col-sm-2 data-holder"><span class="data">Certificates</span></div>
  *        <div class="col-sm-2 data-holder"><span class="data">Cont Edu</span></div>
@@ -295,7 +314,7 @@ ul.banded-list{
  *               </div>
  *           </div>
  *       </div>
- *  <div class="panel-group accordion basic">
+ *  <div class="panel-group accordion basic m-b-0">
  *   <div class="panel" id="accordionData" role="tablist" aria-multiselectable="true">
  *       <div class="panel-heading" role="tab" id="headingOne">
  *         <h4 class="panel-title">
@@ -334,6 +353,10 @@ ul.banded-list{
  *     @{include:.clinician-overview}
  *     @{include:.clinician-data}
  *     </div>
+ *     <div class="cliician">
+ *     @{include:.clinician-overview}
+ *     @{include:.clinician-data}
+ *     </div>
  *  </div>
  *     
  */
@@ -356,10 +379,11 @@ ul.banded-list{
  *              <div class="col-lg-3 col-md-4 col-xl-3 p-0 d-none d-lg-block"> @{include:.nav-sub}@{include:.nav-social-button.small}</div>
  *              <div class="col-lg-9 col-md-8 col-xl-13">
  *                  <div class="page-content">
+ *                      @{include:.cqc-header} 
  *                      @{include:.practice-dashboard-header}
- *                      <h1>Clinician Dashboard</h1>
  *                      @{include:.clinicians-list}
- *                      @{include:.pagination}
+ *                      <hr class="divider bold teal row"/>
+ *                      <div class="pull-right">@{include:.pagination}</div>
  *                  </div>
  *              </div>
  *           </div>

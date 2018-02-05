@@ -339,7 +339,16 @@
 			"file": "assets/scss/index.scss",
 			"settings":
 			{
-				"buffer_size": 1956,
+				"buffer_size": 2012,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/vendor/bootstrap.override/_nav-pills.override.scss",
+			"settings":
+			{
+				"buffer_size": 47,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -356,45 +365,9 @@
 			"file": "assets/scss/structure/_cqc.scss",
 			"settings":
 			{
-				"buffer_size": 14605,
+				"buffer_size": 15596,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "node_modules/lorem-ipsum/lib/generator.js",
-			"settings":
-			{
-				"buffer_size": 3838,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "node_modules/lorem-ipsum/bin/lorem-ipsum.bin.js",
-			"settings":
-			{
-				"buffer_size": 1015,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Searching 58 files for \"lipsum\"\n\nC:\\Users\\mwatier\\Repo\\cvquality\\node_modules\\nucleus-styleguide\\assets\\styles\\atoms\\typography.scss:\n   61  /**\n   62   * Generic paragraph style for medium to long blocks of text. This element\n   63:  * is using the @{lipsum} substitution to generate two blocks of text.\n   64   *\n   65   * @atom Paragraph\n   ..\n   67   * @markup\n   68   *  <div class=\"SG-p\">\n   69:  *    @{lipsum:2:paragraphs}\n   70   *  </div>\n   71   *  <div class=\"SG-p\">\n   72:  *    @{lipsum:1:paragraphs}\n   73   *  </div>\n   74   */\n   ..\n   90   * @markup\n   91   *  <div class=\"SG-hint SG-p\">\n   92:  *    @{lipsum:1:paragraphs}\n   93   *  </div>\n   94   */\n\n4 matches in 1 file\n\n\nSearching 1186 files for \"lipsum\"\n\nC:\\Users\\mwatier\\Repo\\cvquality\\node_modules\\nucleus-styleguide\\assets\\styles\\atoms\\typography.scss:\n   61  /**\n   62   * Generic paragraph style for medium to long blocks of text. This element\n   63:  * is using the @{lipsum} substitution to generate two blocks of text.\n   64   *\n   65   * @atom Paragraph\n   ..\n   67   * @markup\n   68   *  <div class=\"SG-p\">\n   69:  *    @{lipsum:2:paragraphs}\n   70   *  </div>\n   71   *  <div class=\"SG-p\">\n   72:  *    @{lipsum:1:paragraphs}\n   73   *  </div>\n   74   */\n   ..\n   90   * @markup\n   91   *  <div class=\"SG-hint SG-p\">\n   92:  *    @{lipsum:1:paragraphs}\n   93   *  </div>\n   94   */\n\nC:\\Users\\mwatier\\Repo\\cvquality\\node_modules\\nucleus-styleguide\\CHANGELOG.md:\n   88  * Fix crawler failing on files with Windows line endings\n   89  \n   90: * Fix lipsum quantity not being applied\n   91  \n   92  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\n\nC:\\Users\\mwatier\\Repo\\cvquality\\node_modules\\nucleus-styleguide\\coverage\\lcov-report\\src\\Substitute.js.html:\n  305    map: {},\n  306    methods: {},\n  307:   staticLipsum: false,\n  308    placeholderService: false\n  309  };\n  310  &nbsp;\n  311  Substitute.injectConfig = <span class=\"fstat-no\" title=\"function not covered\" >function ( config ) {</span>\n  312: <span class=\"cstat-no\" title=\"statement not covered\" >  this.staticLipsum = config.staticLipsum;</span>\n  313  <span class=\"cstat-no\" title=\"statement not covered\" >  this.placeholderService = config.placeholderService;</span>\n  314  <span class=\"cstat-no\" title=\"statement not covered\" >  return this;</span>\n  ...\n  365  };\n  366  &nbsp;\n  367: Substitute.methods.lipsum = function (quantity, type) {\n  368    quantity = Math.max(quantity, 1);\n  369    if(['paragraphs', 'words', 'sentences'].indexOf(type) === -1) {\n  ...\n  375      count: quantity,\n  376      units: type,\n  377:     random: this.staticLipsum ? <span class=\"fstat-no\" title=\"function not covered\" ><span class=\"branch-0 cbranch-no\" title=\"branch not covered\" >function() {</span></span>\n  378  <span class=\"cstat-no\" title=\"statement not covered\" >      if(rnd&gt;=1) <span class=\"cstat-no\" title=\"statement not covered\" >rnd = 0.01;</span></span>\n  379  <span class=\"cstat-no\" title=\"statement not covered\" >      rnd += 0.01;</span>\n  ...\n  402  <span class=\"cstat-no\" title=\"statement not covered\" >    return eval('`'+this.placeholderService+'`');</span>\n  403    } else {\n  404:     return 'https://unsplash.it/'+width+'/'+height+(this.staticLipsum ? <span class=\"branch-0 cbranch-no\" title=\"branch not covered\" >'' </span>: '?random=' + Math.random());\n  405    }\n  406  };\n\nC:\\Users\\mwatier\\Repo\\cvquality\\node_modules\\nucleus-styleguide\\default.nucleus.json:\n   10    \"verbose\" : 3,\n   11    \"counterCSS\" : null,\n   12:   \"staticLipsum\" : false,\n   13    \"placeholderService\" : false\n   14  }\n\nC:\\Users\\mwatier\\Repo\\cvquality\\node_modules\\nucleus-styleguide\\src\\Config.js:\n  134    if(argv.template)             cliConfig.template = argv.template;\n  135    if(argv.placeholderservice)   cliConfig.placeholderService = argv.placeholderservice;\n  136:   if(argv.norandom)             cliConfig.staticLipsum = !!argv.norandom;\n  137  \n  138    return cliConfig;\n\nC:\\Users\\mwatier\\Repo\\cvquality\\node_modules\\nucleus-styleguide\\src\\Substitute.js:\n   18    map: {},\n   19    methods: {},\n   20:   staticLipsum: false,\n   21    placeholderService: false\n   22  };\n   23  \n   24  Substitute.injectConfig = function ( config ) {\n   25:   this.staticLipsum = config.staticLipsum;\n   26    this.placeholderService = config.placeholderService;\n   27    return this;\n   ..\n   78  };\n   79  \n   80: Substitute.methods.lipsum = function (quantity, type) {\n   81    quantity = Math.max(quantity, 1);\n   82    if(['paragraphs', 'words', 'sentences'].indexOf(type) === -1) {\n   ..\n   88      count: quantity,\n   89      units: type,\n   90:     random: this.staticLipsum ? function() {\n   91        if(rnd>=1) rnd = 0.01;\n   92        rnd += 0.01;\n   ..\n  115      return eval('`'+this.placeholderService+'`');\n  116    } else {\n  117:     return 'https://unsplash.it/'+width+'/'+height+(this.staticLipsum ? '' : '?random=' + Math.random());\n  118    }\n  119  };\n\n19 matches across 6 files\n",
-			"settings":
-			{
-				"buffer_size": 4971,
-				"line_ending": "Windows",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "node_modules/nucleus-styleguide/src/Substitute.js",
-			"settings":
-			{
-				"buffer_size": 2977,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
 			}
 		},
 		{
@@ -495,8 +468,34 @@
 			"file": "assets/scss/component/_assessment.scss",
 			"settings":
 			{
-				"buffer_size": 6926,
+				"buffer_size": 7061,
 				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/helpers/_breakpoints.scss",
+			"settings":
+			{
+				"buffer_size": 3014,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 244 files for \"tabs\"\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\component\\_carousel.scss:\n    6   * @modifiers\n    7   *  .no-controls            Will remove left and right arrow\n    8:  *  .text-indicators        Converts the circle indicators to text tabs that lock to the right side of the images.\n    9   *  .chevron-on             Adds a light orange chevron on the '.active' indicator to increase its impact.\n   10   * @markup\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap-sass-3.3.7\\javascripts\\bootstrap.js:\n 2060  /* ========================================================================\n 2061   * Bootstrap: tab.js v3.3.7\n 2062:  * http://getbootstrap.com/javascript/#tabs\n 2063   * ========================================================================\n 2064   * Copyright 2011-2016 Twitter, Inc.\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap-sass-3.3.7\\javascripts\\bootstrap\\tab.js:\n    1  /* ========================================================================\n    2   * Bootstrap: tab.js v3.3.7\n    3:  * http://getbootstrap.com/javascript/#tabs\n    4   * ========================================================================\n    5   * Copyright 2011-2016 Twitter, Inc.\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\_navs.scss:\n   70  \n   71  \n   72: // Tabs\n   73  // -------------------------\n   74  \n   75: // Give the tabs something to sit on\n   76: .nav-tabs {\n   77:   border-bottom: 1px solid $nav-tabs-border-color;\n   78    > li {\n   79      float: left;\n   ..\n   81      margin-bottom: -1px;\n   82  \n   83:     // Actual tabs (as links)\n   84      > a {\n   85        margin-right: 2px;\n   ..\n   88        border-radius: $border-radius-base $border-radius-base 0 0;\n   89        &:hover {\n   90:         border-color: $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color;\n   91        }\n   92      }\n   ..\n   97        &:hover,\n   98        &:focus {\n   99:         color: $nav-tabs-active-link-hover-color;\n  100:         background-color: $nav-tabs-active-link-hover-bg;\n  101:         border: 1px solid $nav-tabs-active-link-hover-border-color;\n  102          border-bottom-color: transparent;\n  103          cursor: default;\n  ...\n  108    &.nav-justified {\n  109      @extend .nav-justified;\n  110:     @extend .nav-tabs-justified;\n  111    }\n  112  }\n  ...\n  187  // Move borders to anchors instead of bottom of list\n  188  //\n  189: // Mixin for adding on top the shared `.nav-justified` styles for our tabs\n  190: .nav-tabs-justified {\n  191    border-bottom: 0;\n  192  \n  193    > li > a {\n  194:     // Override margin from .nav-tabs\n  195      margin-right: 0;\n  196      border-radius: $border-radius-base;\n  ...\n  200    > .active > a:hover,\n  201    > .active > a:focus {\n  202:     border: 1px solid $nav-tabs-justified-link-border-color;\n  203    }\n  204  \n  205    @media (min-width: $screen-sm-min) {\n  206      > li > a {\n  207:       border-bottom: 1px solid $nav-tabs-justified-link-border-color;\n  208        border-radius: $border-radius-base $border-radius-base 0 0;\n  209      }\n  ...\n  211      > .active > a:hover,\n  212      > .active > a:focus {\n  213:       border-bottom-color: $nav-tabs-justified-active-link-border-color;\n  214      }\n  215    }\n  ...\n  217  \n  218  \n  219: // Tabbable tabs\n  220  // -------------------------\n  221  \n  ...\n  235  \n  236  // Specific dropdowns\n  237: .nav-tabs .dropdown-menu {\n  238    // make dropdown border overlap tab border\n  239    margin-top: -1px;\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\_variables.scss:\n  431  $nav-disabled-link-hover-color:             $gray-light !default;\n  432  \n  433: //== Tabs\n  434: $nav-tabs-border-color:                     #ddd !default;\n  435  \n  436: $nav-tabs-link-hover-border-color:          $gray-lighter !default;\n  437  \n  438: $nav-tabs-active-link-hover-bg:             $body-bg !default;\n  439: $nav-tabs-active-link-hover-color:          $gray !default;\n  440: $nav-tabs-active-link-hover-border-color:   #ddd !default;\n  441  \n  442: $nav-tabs-justified-link-border-color:            #ddd !default;\n  443: $nav-tabs-justified-active-link-border-color:     $body-bg !default;\n  444  \n  445  //== Pills\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\_card.scss:\n   90  //\n   91  \n   92: .card-header-tabs {\n   93    margin-right: -($card-spacer-x / 2);\n   94    margin-bottom: -$card-spacer-y;\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\_nav.scss:\n   27  \n   28  //\n   29: // Tabs\n   30  //\n   31  \n   32: .nav-tabs {\n   33:   border-bottom: $nav-tabs-border-width solid $nav-tabs-border-color;\n   34  \n   35    .nav-item {\n   36:     margin-bottom: -$nav-tabs-border-width;\n   37    }\n   38  \n   39    .nav-link {\n   40:     border: $nav-tabs-border-width solid transparent;\n   41:     @include border-top-radius($nav-tabs-border-radius);\n   42  \n   43      @include hover-focus {\n   44:       border-color: $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color;\n   45      }\n   46  \n   ..\n   54    .nav-link.active,\n   55    .nav-item.show .nav-link {\n   56:     color: $nav-tabs-link-active-color;\n   57:     background-color: $nav-tabs-link-active-bg;\n   58:     border-color: $nav-tabs-link-active-border-color $nav-tabs-link-active-border-color $nav-tabs-link-active-bg;\n   59    }\n   60  \n   61    .dropdown-menu {\n   62      // Make dropdown border overlap tab border\n   63:     margin-top: -$nav-tabs-border-width;\n   64      // Remove the top rounded corners here since there is a hard edge above the menu\n   65      @include border-top-radius(0);\n   ..\n  105  \n  106  \n  107: // Tabbable tabs\n  108  //\n  109  // Hide tabbable panes to start, show them when `.active`\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\_variables.scss:\n  535  $nav-link-disabled-color:       $gray-600 !default;\n  536  \n  537: $nav-tabs-border-color:                       #ddd !default;\n  538: $nav-tabs-border-width:                       $border-width !default;\n  539: $nav-tabs-border-radius:                      $border-radius !default;\n  540: $nav-tabs-link-hover-border-color:            $gray-200 !default;\n  541: $nav-tabs-link-active-color:                  $gray-700 !default;\n  542: $nav-tabs-link-active-bg:                     $body-bg !default;\n  543: $nav-tabs-link-active-border-color:           #ddd !default;\n  544  \n  545  $nav-pills-border-radius:     $border-radius !default;\n\n56 matches across 8 files\n\n\nSearching 245 files for \"divider\"\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\base\\_typography.scss:\n  147  *\n  148  * @atom Horizontal Rules\n  149: * @section Dividers\n  150  * @markup\n  151: *  <hr class=\"divider orange dotted\">\n  152: *  <hr class=\"divider grey dashed\">\n  153  *  <strong>There is a spacer between the two sentences</strong>\n  154  *  <p>@{lipsum:sentence}</p>\n  155  *  <hr class=\"line-spacer\"/>\n  156  *  <p>@{lipsum:sentences}</p>\n  157: *  <hr class=\"section-divider\">\n  158  *\n  159  * @modifiers\n  ...\n  162  *  .teal.bold           Rules between Major Section to Section of Page are blue thick lines.  \n  163  *  .space               Spacer with no decoration but increased space between objects\n  164: *  .line-spacer         Alias for .divider.space\n  165: *  .item-divider        Alias for .divider.grey.dashed\n  166: *  .group-divider       Alias for .divider.orange.dotted\n  167: *  .section-divider     Alias for .divider.teal.bold\n  168  */\n  169: .divider{\n  170      padding-bottom:ms(-1);\n  171  }\n  172: hr, .divider,.line-spacer,.item-divider, .group-divider,.section-divider{ \n  173      margin-bottom:ms(-1); \n  174      border-bottom-style: solid;\n  ...\n  177      border-top:none transparent 0;\n  178  } \n  179: .divider,hr{ \n  180:     &.grey,&.item-divider{\n  181        border-bottom-color:$warm-grey-light;\n  182      }\n  183:     &.teal,&.section-divider{\n  184        border-bottom-color:rgba($scrub-teal-light,.5);\n  185      }\n  186:     &.orange,&.group-divider{\n  187        border-bottom-color:rgba($orange-light,.5);\n  188      }\n  189:     &.dashed,&.item-divider{ border-bottom-style:dashed}\n  190:     &.dotted,&.group-divider{ border-bottom-style:dotted}\n  191:     &.bold,&.section-divider{ border-bottom-width:2px; }\n  192      &.space, &.line-spacer{ border-bottom: 0px none transparent;margin-bottom:ms(0); padding-bottom:ms(0);}\n  193  \n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\component\\_nav-primary.scss:\n  125              }\n  126          }\n  127:     .dropdown-divider{\n  128          border: 1px dotted $soft-blue;\n  129          }\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\structure\\_page.scss:\n  208  *                        </div>\n  209  *                    </div>\n  210: *                    <hr class=\"group-divider\">\n  211  *                    <div class=\"row\">\n  212  *                        <div class=\"col-lg-8\">\n  213  *                        <h2>@{lipsum:4:words}</h2>\n  214  *                        <p>@{lipsum:2:paragraphs}</p>\n  215: *                        <hr class=\"item-divider\"/>\n  216  *                        <div class=\"card testimonial undecorated\">\n  217  *                            <div class=\"card-body\">\n  ...\n  222  *                            </div>\n  223  *                        </div>\n  224: *                        <hr class=\"item-divider\"/>\n  225  *                        <div class=\"card testimonial undecorated\">\n  226  *                            <div class=\"card-body\">\n  ...\n  231  *                            </div>\n  232  *                        </div>\n  233: *                        <hr class=\"item-divider\"/>\n  234  *                         <div class=\"card testimonial undecorated\">\n  235  *                            <div class=\"card-body\">\n  ...\n  244  *                    <div class=\"col-lg-4\">@{include:.card.alt} @{include:.card.alt} </div>\n  245  *                    </div>\n  246: *                    <hr class=\"group-divider\"/>\n  247  *                        <h2>@{lipsum:4:words}</h2> <p>@{lipsum:4:sentences}</p>                  \n  248  *                    <div class=\"panel-group accordion basic\">\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\_dropdowns.scss:\n   57    }\n   58  \n   59:   // Dividers (basically an hr) within the dropdown\n   60:   .divider {\n   61:     @include nav-divider($dropdown-divider-bg);\n   62    }\n   63  \n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\_mixins.scss:\n   23  @import \"mixins/pagination\";\n   24  @import \"mixins/list-group\";\n   25: @import \"mixins/nav-divider\";\n   26  @import \"mixins/forms\";\n   27  @import \"mixins/progress-bar\";\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\_navbar.scss:\n  608            border-color: $navbar-inverse-border;\n  609          }\n  610:         .divider {\n  611            background-color: $navbar-inverse-border;\n  612          }\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\_navs.scss:\n   52    }\n   53  \n   54:   // Nav dividers (deprecated with v3.0.1)\n   55    //\n   56    // This should have been removed in v3 with the dropping of `.nav-list`, but\n   57    // we missed it. We don't currently support this anywhere, but in the interest\n   58    // of maintaining backward compatibility in case you use it, it's deprecated.\n   59:   .nav-divider {\n   60:     @include nav-divider;\n   61    }\n   62  \n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\_variables.scss:\n  243  //** Dropdown menu `border-color` **for IE8**.\n  244  $dropdown-fallback-border:       #ccc !default;\n  245: //** Divider color for between dropdown items.\n  246: $dropdown-divider-bg:            #e5e5e5 !default;\n  247  \n  248  //** Dropdown link text color.\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\mixins\\_nav-divider.scss:\n    1: // Horizontal dividers\n    2  //\n    3: // Dividers (basically an hr) within dropdowns and nav lists\n    4  \n    5: @mixin nav-divider($color: #e5e5e5) {\n    6    height: 1px;\n    7    margin: (($line-height-computed / 2) - 1) 0;\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap.override\\_custom.scss:\n  139  $breadcrumb-bg:                 #fff;\n  140  $breadcrumb-color:              $scrub-teal;\n  141: $breadcrumb-divider-color:      $warm-grey;\n  142  $breadcrumb-active-color:       $warm-grey-dark;\n  143  $breadcrumb-separator:            \"\\f054\";\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap.override\\_dropdown.override.scss:\n   13  }\n   14  \n   15: .dropdown-divider {\n   16      border-color: $orange-light;\n   17      margin: 0;\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\_breadcrumb.scss:\n   16      padding-right: $breadcrumb-item-padding;\n   17      padding-left: $breadcrumb-item-padding;\n   18:     color: $breadcrumb-divider-color;\n   19:     content: \"#{$breadcrumb-divider}\";\n   20    }\n   21  \n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\_dropdown.scss:\n   62  }\n   63  \n   64: // Dividers (basically an `<hr>`) within the dropdown\n   65: .dropdown-divider {\n   66:   @include nav-divider($dropdown-divider-bg);\n   67  }\n   68  \n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\_mixins.scss:\n   23  @import \"mixins/lists\";\n   24  @import \"mixins/list-group\";\n   25: @import \"mixins/nav-divider\";\n   26  @import \"mixins/forms\";\n   27  @import \"mixins/table-row\";\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\_navbar.scss:\n    5  // Navbar nav\n    6  // Navbar text\n    7: // Navbar divider\n    8  // Responsive navbar\n    9  // Navbar position\n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\_variables.scss:\n  498  $dropdown-border-color:          rgba($black,.15) !default;\n  499  $dropdown-border-width:          $border-width !default;\n  500: $dropdown-divider-bg:            $gray-200 !default;\n  501  $dropdown-box-shadow:            0 .5rem 1rem rgba($black,.175) !default;\n  502  \n  ...\n  791  \n  792  $breadcrumb-bg:                 $gray-200 !default;\n  793: $breadcrumb-divider-color:      $gray-600 !default;\n  794  $breadcrumb-active-color:       $gray-600 !default;\n  795: $breadcrumb-divider:            \"/\" !default;\n  796  \n  797  \n\nC:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss\\vendor\\bootstrap\\mixins\\_nav-divider.scss:\n    1: // Horizontal dividers\n    2  //\n    3: // Dividers (basically an hr) within dropdowns and nav lists\n    4  \n    5: @mixin nav-divider($color: #e5e5e5) {\n    6    height: 0;\n    7    margin: ($spacer / 2) 0;\n\n59 matches across 17 files\n",
+			"settings":
+			{
+				"buffer_size": 14840,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "assets/scss/vendor/bootstrap-sass-3.3.7/sass/bootstrap/_navs.scss",
+			"settings":
+			{
+				"buffer_size": 4950,
 				"line_ending": "Windows"
 			}
 		},
@@ -522,7 +521,7 @@
 			"file": "assets/scss/base/_typography.scss",
 			"settings":
 			{
-				"buffer_size": 14774,
+				"buffer_size": 14762,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -571,10 +570,18 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 421.0,
-		"last_filter": "foram",
+		"height": 490.0,
+		"last_filter": "set",
 		"selected_items":
 		[
+			[
+				"set",
+				"Set Syntax: SCSS"
+			],
+			[
+				"sent scss",
+				"Set Syntax: SCSS"
+			],
 			[
 				"foram",
 				"CodeFormatter: Format Code"
@@ -746,14 +753,12 @@
 	[
 		"/C/Users/mwatier/Repo/cvquality",
 		"/C/Users/mwatier/Repo/cvquality/assets",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/helpers",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/shame",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor",
 		"/C/Users/mwatier/Repo/cvquality/node_modules"
 	],
 	"file_history":
 	[
+		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/src/Substitute.js",
+		"/C/Users/mwatier/Repo/cvquality/node_modules/lorem-ipsum/lib/generator.js",
 		"/C/Users/mwatier/Repo/cvquality/mods to node-styleguid/nucleus-styleguide/assets/styles/nuclides/colors.scss",
 		"/C/Users/mwatier/Repo/cvquality/node_modules/lorem-ipsum/lib/dictionary.js",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/helpers/_height-utiltiy.scss",
@@ -879,9 +884,7 @@
 		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/assets/views/layouts.pug",
 		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/index.js",
 		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/assets/views/common/sections.pug",
-		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/assets/views/common/header.pug",
-		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/assets/views/structures.pug",
-		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/src/Transform.js"
+		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/assets/views/common/header.pug"
 	],
 	"find":
 	{
@@ -892,6 +895,7 @@
 		"height": 158.0,
 		"where_history":
 		[
+			"C:\\Users\\mwatier\\Repo\\cvquality\\assets\\scss",
 			"C:\\Users\\mwatier\\Repo\\cvquality\\node_modules\\nucleus-styleguide",
 			"C:\\Users\\mwatier\\Repo\\cvquality\\node_modules\\nucleus-styleguide\\assets",
 			"C:\\Users\\mwatier\\Repo\\cvquality\\node_modules\\lorem-ipsum",
@@ -920,6 +924,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"<hr",
+			"hr",
+			"m-0",
+			"divider",
+			"tabs",
+			"@modifier",
+			".box",
 			"button",
 			"clinician",
 			"Clinician",
@@ -1040,14 +1051,7 @@
 			"3n",
 			"{3n+0}",
 			"mind-your-meds/assessment",
-			"component",
-			"added to the .nav-social-button container ",
-			"Testemonial",
-			"veiw",
-			"Leader-board",
-			"Advertisement-",
-			"visablity",
-			"utility"
+			"component"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1070,7 +1074,7 @@
 	"groups":
 	[
 		{
-			"selected": 9,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -1079,15 +1083,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1956,
+						"buffer_size": 2012,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1820,
-								1796
+								989,
+								989
 							]
 						],
 						"settings":
@@ -1095,14 +1099,43 @@
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1381.0,
+						"translation.y": 644.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "assets/scss/vendor/bootstrap.override/_nav-pills.override.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 47,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								43,
+								43
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "assets/scss/structure/_page.scss",
 					"semi_transient": false,
 					"settings":
@@ -1128,24 +1161,24 @@
 						"translation.y": 1571.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "assets/scss/structure/_cqc.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 14605,
+						"buffer_size": 15596,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								961,
-								961
+								962,
+								962
 							]
 						],
 						"settings":
@@ -1156,236 +1189,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 773.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "node_modules/lorem-ipsum/lib/generator.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3838,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								502,
-								502
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "node_modules/lorem-ipsum/bin/lorem-ipsum.bin.js",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 1015,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 388.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4971,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										252,
-										258
-									],
-									[
-										410,
-										416
-									],
-									[
-										494,
-										500
-									],
-									[
-										621,
-										627
-									],
-									[
-										948,
-										954
-									],
-									[
-										1106,
-										1112
-									],
-									[
-										1190,
-										1196
-									],
-									[
-										1317,
-										1323
-									],
-									[
-										1531,
-										1537
-									],
-									[
-										1824,
-										1830
-									],
-									[
-										2087,
-										2093
-									],
-									[
-										2109,
-										2115
-									],
-									[
-										2386,
-										2392
-									],
-									[
-										2627,
-										2633
-									],
-									[
-										3238,
-										3244
-									],
-									[
-										3528,
-										3534
-									],
-									[
-										3897,
-										3903
-									],
-									[
-										4097,
-										4103
-									],
-									[
-										4240,
-										4246
-									],
-									[
-										4262,
-										4268
-									],
-									[
-										4404,
-										4410
-									],
-									[
-										4645,
-										4651
-									],
-									[
-										4880,
-										4886
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								3987,
-								3987
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"line_numbers": false,
-							"output_tag": 2,
-							"result_base_dir": "",
-							"result_file_regex": "^([^ \t].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 3769.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "node_modules/nucleus-styleguide/src/Substitute.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2977,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2009,
-								2009
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2358.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
 					"file": "assets/scss/vendor/bootstrap.override/_progress-bar.override.scss",
 					"semi_transient": false,
 					"settings":
@@ -1409,11 +1220,11 @@
 						"translation.y": 810.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 5,
 					"file": "assets/scss/vendor/bootstrap.override/_collapse.override.scss",
 					"semi_transient": false,
 					"settings":
@@ -1439,11 +1250,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 6,
 					"semi_transient": false,
 					"settings":
 					{
@@ -1463,14 +1274,14 @@
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 9316.0,
+						"translation.y": 9350.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 7,
 					"semi_transient": false,
 					"settings":
 					{
@@ -1495,11 +1306,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 8,
 					"file": "assets/scss/vendor/bootstrap.override/_pagination.override.scss",
 					"semi_transient": false,
 					"settings":
@@ -1523,11 +1334,11 @@
 						"translation.y": 564.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 9,
 					"file": "assets/scss/base/_colors.scss",
 					"semi_transient": false,
 					"settings":
@@ -1553,11 +1364,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 10,
 					"semi_transient": false,
 					"settings":
 					{
@@ -1582,11 +1393,11 @@
 						"translation.y": 386.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 11,
 					"file": "assets/scss/helpers/_print.scss",
 					"semi_transient": false,
 					"settings":
@@ -1613,11 +1424,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 21,
+					"stack_index": 22,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 12,
 					"file": "assets/scss/helpers/_trumps.scss",
 					"semi_transient": false,
 					"settings":
@@ -1643,11 +1454,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 18,
+					"stack_index": 20,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 13,
 					"file": "assets/scss/component/_address.scss",
 					"semi_transient": false,
 					"settings":
@@ -1673,11 +1484,11 @@
 						"translation.y": 1800.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 20,
+					"stack_index": 21,
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 14,
 					"file": "assets/scss/base/included/_table_scrollable.scss",
 					"semi_transient": false,
 					"settings":
@@ -1707,33 +1518,595 @@
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 15,
 					"file": "assets/scss/component/_assessment.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6926,
+						"buffer_size": 7061,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4315,
-								4315
+								2081,
+								2081
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 900.0,
+						"translation.y": 1784.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 22,
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "assets/scss/helpers/_breakpoints.scss",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 3014,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14840,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										265,
+										269
+									],
+									[
+										708,
+										712
+									],
+									[
+										1107,
+										1111
+									],
+									[
+										1365,
+										1369
+									],
+									[
+										1433,
+										1437
+									],
+									[
+										1470,
+										1474
+									],
+									[
+										1516,
+										1520
+									],
+									[
+										1642,
+										1646
+									],
+									[
+										1843,
+										1847
+									],
+									[
+										1877,
+										1881
+									],
+									[
+										1911,
+										1915
+									],
+									[
+										2036,
+										2040
+									],
+									[
+										2104,
+										2108
+									],
+									[
+										2169,
+										2173
+									],
+									[
+										2379,
+										2383
+									],
+									[
+										2568,
+										2572
+									],
+									[
+										2585,
+										2589
+									],
+									[
+										2697,
+										2701
+									],
+									[
+										2878,
+										2882
+									],
+									[
+										3042,
+										3046
+									],
+									[
+										3272,
+										3276
+									],
+									[
+										3378,
+										3382
+									],
+									[
+										3482,
+										3486
+									],
+									[
+										3781,
+										3785
+									],
+									[
+										3798,
+										3802
+									],
+									[
+										3872,
+										3876
+									],
+									[
+										3955,
+										3959
+									],
+									[
+										4025,
+										4029
+									],
+									[
+										4092,
+										4096
+									],
+									[
+										4166,
+										4170
+									],
+									[
+										4238,
+										4242
+									],
+									[
+										4440,
+										4444
+									],
+									[
+										4635,
+										4639
+									],
+									[
+										4670,
+										4674
+									],
+									[
+										4706,
+										4710
+									],
+									[
+										4735,
+										4739
+									],
+									[
+										4815,
+										4819
+									],
+									[
+										4898,
+										4902
+									],
+									[
+										4978,
+										4982
+									],
+									[
+										5073,
+										5077
+									],
+									[
+										5107,
+										5111
+									],
+									[
+										5141,
+										5145
+									],
+									[
+										5273,
+										5277
+									],
+									[
+										5331,
+										5335
+									],
+									[
+										5382,
+										5386
+									],
+									[
+										5417,
+										5421
+									],
+									[
+										5452,
+										5456
+									],
+									[
+										5601,
+										5605
+									],
+									[
+										5795,
+										5799
+									],
+									[
+										6033,
+										6037
+									],
+									[
+										6101,
+										6105
+									],
+									[
+										6178,
+										6182
+									],
+									[
+										6256,
+										6260
+									],
+									[
+										6329,
+										6333
+									],
+									[
+										6402,
+										6406
+									],
+									[
+										6474,
+										6478
+									],
+									[
+										6790,
+										6797
+									],
+									[
+										6837,
+										6844
+									],
+									[
+										6882,
+										6889
+									],
+									[
+										7113,
+										7120
+									],
+									[
+										7395,
+										7402
+									],
+									[
+										7425,
+										7432
+									],
+									[
+										7451,
+										7458
+									],
+									[
+										7488,
+										7495
+									],
+									[
+										7513,
+										7520
+									],
+									[
+										7554,
+										7561
+									],
+									[
+										7577,
+										7584
+									],
+									[
+										7613,
+										7620
+									],
+									[
+										7677,
+										7684
+									],
+									[
+										7704,
+										7711
+									],
+									[
+										7720,
+										7727
+									],
+									[
+										7737,
+										7744
+									],
+									[
+										7886,
+										7893
+									],
+									[
+										7924,
+										7931
+									],
+									[
+										8025,
+										8032
+									],
+									[
+										8136,
+										8143
+									],
+									[
+										8242,
+										8249
+									],
+									[
+										8307,
+										8314
+									],
+									[
+										8372,
+										8379
+									],
+									[
+										8664,
+										8671
+									],
+									[
+										8922,
+										8929
+									],
+									[
+										9202,
+										9209
+									],
+									[
+										9484,
+										9491
+									],
+									[
+										9766,
+										9773
+									],
+									[
+										10098,
+										10105
+									],
+									[
+										10421,
+										10428
+									],
+									[
+										10478,
+										10485
+									],
+									[
+										10512,
+										10519
+									],
+									[
+										10530,
+										10537
+									],
+									[
+										10763,
+										10770
+									],
+									[
+										11032,
+										11039
+									],
+									[
+										11253,
+										11260
+									],
+									[
+										11574,
+										11581
+									],
+									[
+										11608,
+										11615
+									],
+									[
+										11862,
+										11869
+									],
+									[
+										11921,
+										11928
+									],
+									[
+										12143,
+										12150
+									],
+									[
+										12172,
+										12179
+									],
+									[
+										12256,
+										12263
+									],
+									[
+										12560,
+										12567
+									],
+									[
+										12828,
+										12835
+									],
+									[
+										13113,
+										13120
+									],
+									[
+										13163,
+										13170
+									],
+									[
+										13298,
+										13305
+									],
+									[
+										13366,
+										13373
+									],
+									[
+										13398,
+										13405
+									],
+									[
+										13416,
+										13423
+									],
+									[
+										13616,
+										13623
+									],
+									[
+										13828,
+										13835
+									],
+									[
+										14117,
+										14124
+									],
+									[
+										14341,
+										14348
+									],
+									[
+										14459,
+										14466
+									],
+									[
+										14618,
+										14625
+									],
+									[
+										14647,
+										14654
+									],
+									[
+										14731,
+										14738
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								6681,
+								6681
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 2,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 6494.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "assets/scss/vendor/bootstrap-sass-3.3.7/sass/bootstrap/_navs.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4950,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3657.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -1802,28 +2175,28 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 14774,
+						"buffer_size": 14762,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8165,
-								8152
+								5345,
+								5345
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 16251.0,
+						"translation.y": 5775.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -1851,7 +2224,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
@@ -1881,7 +2254,7 @@
 						"translation.y": 2179.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 17,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
@@ -1908,10 +2281,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1012.0,
+						"translation.y": 434.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 19,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
@@ -1941,7 +2314,7 @@
 						"translation.y": 858.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 13,
 					"type": "text"
 				}
 			]
@@ -1953,7 +2326,7 @@
 	},
 	"input":
 	{
-		"height": 47.0
+		"height": 60.0
 	},
 	"layout":
 	{
@@ -1996,6 +2369,18 @@
 		"selected_items":
 		[
 			[
+				"",
+				"assets\\scss\\structure\\_cqc.scss"
+			],
+			[
+				"index.scss",
+				"assets\\scss\\index.scss"
+			],
+			[
+				"card.scss",
+				"assets\\scss\\component\\_card.scss"
+			],
+			[
 				"color",
 				"assets\\scss\\base\\_colors.scss"
 			],
@@ -2018,10 +2403,6 @@
 			[
 				"navsub",
 				"assets\\scss\\component\\_nav-sub.scss"
-			],
-			[
-				"",
-				"assets\\scss\\base\\_typography.scss"
 			],
 			[
 				"progreover",
@@ -2172,10 +2553,6 @@
 				"assets\\scss\\vendor\\bootstrap.override\\_collapse.override.scss"
 			],
 			[
-				"index.scss",
-				"assets\\scss\\index.scss"
-			],
-			[
 				"toolkit",
 				"assets\\scss\\component\\_toolkit-sublisting.scss"
 			],
@@ -2270,10 +2647,6 @@
 			[
 				"trump",
 				"assets\\scss\\helpers\\_trumps.scss"
-			],
-			[
-				"card.scss",
-				"assets\\scss\\component\\_card.scss"
 			],
 			[
 				"overprogress",

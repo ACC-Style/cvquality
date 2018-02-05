@@ -4,6 +4,9 @@
  *
  * @molecule box
  * @flag contained
+ * @modifiers
+ *  .alt    changes background to grey
+ *  .alt.blue changes background to blue
  * @section Box > Box
  * @markup
  *   <div class="box">
@@ -58,6 +61,7 @@
 */
 .box.alt{
     background-color: $soft-grey;
+    &.blue{background-color:$soft-blue;}
 }
 /**
 * The Score Box Generic is currently used on the Assessments Page. These repeated boxes are used to show the score with each section of the assessment.
