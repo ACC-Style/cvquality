@@ -11436,16 +11436,17 @@ body, .body {
  * @molecule CQC - CQC Header 
  * @section Xtra > CQC 
  * @markup
- *  <header class="cqc-header">
- *   <hr class="divider teal bold m-t-0 row"/>
- *       <div class="row m-t-0 m-b-0">
+ *  <header class="cqc-header row">
+ *   <hr class="divider teal bold m-t-0 "/>
+ *       <div class="m-t-0 m-b-0">
  *          <ul class="nav-pills nav">
  *              <li class="nav-item active"><a class="nav-link">Practice Dashboard</a></li>
  *              <li class="nav-item"><a class="nav-link">Clnician Details</a></li>
  *              <li class="nav-item"><a class="nav-link">Clinician Management</a></li>
+ *              <li class="nav-tiem"><a href="" class="nav-link float-right pull-right"><i class="fa fa-plus"></i> Add Clinician</a></li>
  *          </ul>
  *       </div>
- *   <hr class="divider teal bold m-t-0 row"/>
+ *   <hr class="divider teal bold m-t-0"/>
  *   </header>
  **/
 /**
@@ -11454,18 +11455,16 @@ body, .body {
  * @molecule CQC - Practice Dashbaord Header 
  * @section Xtra > CQC 
  * @markup
- *  <header class="practice-dashboard-header">
+ *  <header class="practice-dashboard-header row">
  *     <h1 class="m-b-0">Practice Dashboard</h1>
- *       <hr class="divider orange bold m-t-0 m-b-0 row"/>
- *       <div class="row box alt m-t-0 m-b-0">
- *           <div class="col-sm-12 col-md-5">
+ *       <hr class="divider orange bold m-t-0 m-b-0 "/>
+ *       <div class="box alt m-t-0 m-b-0 col-sm-12">
+ *           <div class="row"><div class="col-sm-12 col-lg-8">
  *              <select name="practiceSelect" id="practiceSelect" class="form-control input-lg"><option>quis Lorem</option></select>
  *              <small>select a practice to view its details</small>
  *           </div>
- *           <div class="col-sm-8 col-md-3"><a href="" class="btn btn-block btn-primary"><i class="fa fa-plus"></i> Add Clinician</a></div>
- *           <div class="col-sm-8 col-md-2"><a href="" class="btn btn-block btn-primary"><i class="fa fa-filter"></i> Filter By Date</a></div>
- *           <div class="col-sm-4 col-md-2"><a href="" class="btn btn-block btn-secondary">Run Report</a></div>
- *       </div>    
+ *           <div class="col-sm-6 col-lg-4"><a href="" class="btn btn-block btn-primary"><i class="fa fa-filter"></i> Filter By Date</a></div>
+ *       </div> </div>    
  *  </header>
  *  <hr class="space"/>
  **/
@@ -11486,7 +11485,7 @@ body, .body {
  * @section Xtra > CQC 
  * @markup
  *  <div class="clinician-list-header row">
- *    <div class="col-sm-5"></div>
+ *    <div class="col-sm-5"><a href="" class="btn btn-block btn-secondary">Run Report</a></div>
  *    <div class="col-sm-7 data-holder box alt m-t-0 m-b-0"><div class="row">
  *        <div class="col-sm-2 data-holder"><span class="data">Boards</span></div>
  *        <div class="col-sm-2 data-holder"><span class="data">Certificates</span></div>
@@ -11508,7 +11507,6 @@ body, .body {
  *  <div class="clinician-overview row">
  *    <div class="col-sm-5 id">
  *          <h2 class="name">
- *              <input class="float-left" type="checkbox" class="checkbox">
  *              <a class="link">@{lipsum:1:words},@{lipsum:2:words}</a>
  *              </h2>
  *          <ul class="no-bullets"><li><h6 class="m-0 license">
@@ -11519,8 +11517,8 @@ body, .body {
  *               <span class="value">
  *                   VA
  *               </span>
- *               <a href="http://www.fsmb.org/policy/contacts" class="link">
- *                   Contact States
+ *               <a href="http://www.fsmb.org/policy/contacts">
+ *                  <sup><i class="fa fa-info-circle"></i></sup>
  *               </a>
  *           </h6></li>
  *           <li><h6 class="m-0 npi">
@@ -11530,7 +11528,7 @@ body, .body {
  *               </span>
  *           </h6></li>
  *           </ul>
- *      <div class="more-link"> <a href="" class="link"><i class="fa fa-plus"></i> show more</a></div>
+ *      <div class="more-link"> <a href="" class="link"><i class="fa fa-plus"></i> Show Detail Data</a></div>
  *    </div>
  *    <div class="col-sm-7"><div class="row">
  *        <div class="col-sm-2 data-holder"><span class="data">@{lipsum:1:numbers}</span></div>
@@ -11639,9 +11637,9 @@ ul.banded-list li:nth-child(even) {
  *                                   <div class="col-sm-3 text-right">
  *                                       <small>
  *                                           <em>
- *                                               Expires:
+ *                                               Diplomate #:
  *                                           </em>
- *                                           2/9/202@{lipsum:1:numbers}
+ *                                           @{lipsum:9:numbers}
  *                                       </small>
  *                                   </div>
  *                               </div>
@@ -11656,9 +11654,9 @@ ul.banded-list li:nth-child(even) {
  *                                   <div class="col-sm-3 text-right">
  *                                       <small>
  *                                           <em>
- *                                               Expires:
+ *                                               Diplomate #:
  *                                           </em>
- *                                           2/9/202@{lipsum:1:numbers}
+ *                                           @{lipsum:9:numbers}
  *                                       </small>
  *                                   </div>
  *                               </div>
