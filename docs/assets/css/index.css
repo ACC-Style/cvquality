@@ -11456,7 +11456,7 @@ body, .body {
  * @markup
  *  <header class="practice-dashboard-header">
  *     <h1 class="m-b-0">Practice Dashboard</h1>
- *       <hr class="divider orange bold m-t-0 m-b-0"/>
+ *       <hr class="divider orange bold m-t-0 m-b-0 row"/>
  *       <div class="row box alt m-t-0 m-b-0">
  *           <div class="col-sm-12 col-md-5">
  *              <select name="practiceSelect" id="practiceSelect" class="form-control input-lg"><option>quis Lorem</option></select>
@@ -11491,11 +11491,9 @@ body, .body {
  *        <div class="col-sm-2 data-holder"><span class="data">Boards</span></div>
  *        <div class="col-sm-2 data-holder"><span class="data">Certificates</span></div>
  *        <div class="col-sm-2 data-holder"><span class="data">Cont Edu</span></div>
- *        <div class="col-sm-2 data-holder"><span class="data">MOC II</span></div>
+ *        <div class="col-sm-2 data-holder"><span class="data">MOC II<a href="" class=""><i class="fa fa-info-circle"></i></a></span></div>
  *        <div class="col-sm-2 data-holder">
- *              <span class="data">CMS/MOC IV
- *                  <a href="" class="tooltip"><i class="fa fa-info-circle"></i></a>
- *              </span>
+ *              <span class="data">CMS/MOC IV</span>
  *        </div>
  *        <div class="col-sm-2 data-holder"><span class="data">Active CQAs</span></div>
  *    </div></div>
