@@ -8119,8 +8119,14 @@ input {
 *    <div class="progress-bar progress-bar-secondary progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
 *  </div>
 **/
-.nav-pills li {
+.nav-pills .nav-link {
   background-color: #fafafa; }
+.nav-pills .nav-link.alt {
+  background-color: #a1a0a4;
+  color: #000; }
+  .nav-pills .nav-link.alt:hover {
+    background-color: #6f6b6f;
+    color: #fafafa; }
 
 .card {
   float: none;
@@ -11443,7 +11449,7 @@ body, .body {
  *              <li class="nav-item active"><a class="nav-link">Practice Dashboard</a></li>
  *              <li class="nav-item"><a class="nav-link">Clnician Details</a></li>
  *              <li class="nav-item"><a class="nav-link">Clinician Management</a></li>
- *              <li class="nav-tiem"><a href="" class="nav-link float-right pull-right"><i class="fa fa-plus"></i> Add Clinician</a></li>
+ *              <li class="nav-item pull-right"><a href="" class="nav-link alt"><i class="fa fa-plus"></i> Add Clinician</a></li>
  *          </ul>
  *       </div>
  *   <hr class="divider teal bold m-t-0"/>
@@ -11486,13 +11492,13 @@ body, .body {
  * @markup
  *  <div class="clinician-list-header row">
  *    <div class="col-sm-5"><a href="" class="btn btn-block btn-secondary">Run Report</a></div>
- *    <div class="col-sm-7 data-holder box alt m-t-0 m-b-0"><div class="row">
- *        <div class="col-sm-2 data-holder"><span class="data">Boards</span></div>
- *        <div class="col-sm-2 data-holder"><span class="data">Certificates</span></div>
- *        <div class="col-sm-2 data-holder"><span class="data">Cont Edu</span></div>
- *        <div class="col-sm-2 data-holder"><span class="data">MOC II<a href="" class=""><sup><i class="fa fa-info-circle"></i></sup></a></span></div>
- *        <div class="col-sm-2 data-holder"><span class="data">CMS/MOC IV</span></div>
- *        <div class="col-sm-2 data-holder"><span class="data">Active CQAs</span></div>
+ *    <div class="col-sm-7 data-holder box alt m-t-0 m-b-0 swappable medium"><div class="row">
+ *        <div class="col-sm-2 data-holder"><span class="data long-text">Boards</span><span class="data short-text">Board</span></div>
+ *        <div class="col-sm-2 data-holder"><span class="data long-text">Certificates</span><span class="data short-text">Cert</span></div>
+ *        <div class="col-sm-2 data-holder"><span class="data long-text">Continued Education</span><span class="data short-text">C. Edu</span></div>
+ *        <div class="col-sm-2 data-holder"><span class="data long-text">MOC II<a href="" class=""><sup><i class="fa fa-info-circle"></i></sup></a></span><span class="data short-text">MOC2<a href="" class=""><sup><i class="fa fa-info-circle"></i></sup></a></span></div>
+ *        <div class="col-sm-2 data-holder"><span class="data long-text">CMS/MOC IV</span><span class="data short-text">MOC4</span></div>
+ *        <div class="col-sm-2 data-holder"><span class="data long-text">Active CQAs</span><span class="data short-text">CQAs</span></div>
  *    </div></div>
  *  </div>
  * 
@@ -11882,6 +11888,31 @@ ul.banded-list li:nth-child(even) {
 
   .page-content {
     margin: 0 .25in; } }
+.swappable .long-text {
+  display: inline; }
+.swappable .short-text {
+  display: none; }
+@media only screen and (max-width: 320px) {
+  .swappable .short-text {
+    display: inline; }
+  .swappable .long-text {
+    display: none; } }
+@media only screen and (max-width: 768px) {
+  .swappable.small .short-text {
+    display: inline; }
+  .swappable.small .long-text {
+    display: none; } }
+@media only screen and (max-width: 1024px) {
+  .swappable.medium .short-text {
+    display: inline; }
+  .swappable.medium .long-text {
+    display: none; } }
+@media only screen and (max-width: 1200px) {
+  .swappable.large .short-text {
+    display: inline; }
+  .swappable.large .long-text {
+    display: none; } }
+
 /**
 * Some times the defualt margin needs to be removed.  Adding these class will selectivly remove the margin of the DOM item it is placed on. 
 * ~~ Open the example to see the other class and how they will effect the design ~~

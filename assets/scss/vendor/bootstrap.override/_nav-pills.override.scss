@@ -1,3 +1,11 @@
 .nav-pills{
-	li{background-color:$off-white;}
+	.nav-link{background-color:$off-white;}
+	.nav-link.alt{
+		background-color:$warm-grey;
+		color:$black;
+		&:hover{
+		background-color:$warm-grey-dark;
+		color:$off-white;	
+		}
+	}
 }

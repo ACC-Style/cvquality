@@ -1,0 +1,29 @@
+.swappable{
+	.long-text{ display:inline;}
+	.short-text{ display: none;}
+	@include bp(xs-down){
+		.short-text{ display: inline;}
+		.long-text{ display:none;}
+	}
+
+	&.small{
+		@include bp(sm-down){
+			.short-text{ display: inline;}
+			.long-text{ display:none;}
+		}
+	}
+
+	&.medium{
+		@include bp(md-down){
+			.short-text{ display: inline;}
+			.long-text{ display:none;}
+		}
+	}
+
+	&.large{
+		@include bp(lg-down){
+			.short-text{ display: inline;}
+			.long-text{ display:none;}
+		}
+	}
+}

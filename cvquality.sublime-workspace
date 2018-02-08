@@ -335,6 +335,50 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "assets/scss/structure/_cqc.scss",
+			"settings":
+			{
+				"buffer_size": 15843,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/index.scss",
+			"settings":
+			{
+				"buffer_size": 2041,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/helpers/_trumps.scss",
+			"settings":
+			{
+				"buffer_size": 2607,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/helpers/_swappable.scss",
+			"settings":
+			{
+				"buffer_size": 480,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/vendor/bootstrap.override/_nav-pills.override.scss",
+			"settings":
+			{
+				"buffer_size": 192,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -344,9 +388,17 @@
 	"command_palette":
 	{
 		"height": 490.0,
-		"last_filter": "set",
+		"last_filter": "fomr",
 		"selected_items":
 		[
+			[
+				"fomr",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"foram",
+				"CodeFormatter: Format Code"
+			],
 			[
 				"set",
 				"Set Syntax: SCSS"
@@ -354,10 +406,6 @@
 			[
 				"sent scss",
 				"Set Syntax: SCSS"
-			],
-			[
-				"foram",
-				"CodeFormatter: Format Code"
 			],
 			[
 				"set html",
@@ -504,7 +552,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 785.0
+		"width": 730.0
 	},
 	"console":
 	{
@@ -526,14 +574,23 @@
 	[
 		"/C/Users/mwatier/Repo/cvquality",
 		"/C/Users/mwatier/Repo/cvquality/assets",
-		"/C/Users/mwatier/Repo/cvquality/node_modules"
+		"/C/Users/mwatier/Repo/cvquality/assets/scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/helpers",
+		"/C/Users/mwatier/source/repos/accConnect/res",
+		"/C/Users/mwatier/source/repos/accConnect/res/screen",
+		"/C/Users/mwatier/source/repos/accConnect/res/screen/android"
 	],
 	"file_history":
 	[
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/structure/_cqc.scss",
+		"/C/Users/mwatier/source/repos/ACC Connect/app_build/config.xml",
+		"/C/Users/mwatier/source/repos/ACC Connect/matts-config.xml",
+		"/C/Users/mwatier/source/repos/ACC Connect/build/config.xml",
+		"/C/Users/mwatier/source/repos/accConnect/config.xml",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/index.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_nav-pills.override.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/structure/_page.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/structure/_cqc.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_progress-bar.override.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_collapse.override.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_pagination.override.scss",
@@ -653,11 +710,7 @@
 		"/C/Users/mwatier/Repo/bristol/templates/index.liquid",
 		"/C/Users/mwatier/Repo/bristol/.gitignore",
 		"/C/Users/mwatier/Repo/bristol/templates/test.liquid",
-		"/C/Users/mwatier/Repo/cvquality/mods to node-styleguid/nucleus-styleguide/assets/views/entities/nuclides.pug",
-		"/C/Users/mwatier/Repo/cvquality/mods to node-styleguid/nucleus-styleguide/index.js",
-		"/C/Users/mwatier/Repo/cvquality/mods to node-styleguid/nucleus-styleguide/init.js",
-		"/C/Users/mwatier/Repo/cvquality/mods to node-styleguid/nucleus-styleguide/default.nucleus.json",
-		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/src/entities/Layouts.js"
+		"/C/Users/mwatier/Repo/cvquality/mods to node-styleguid/nucleus-styleguide/assets/views/entities/nuclides.pug"
 	],
 	"find":
 	{
@@ -697,6 +750,34 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"180",
+			"120",
+			"60",
+			"icon-60",
+			"152",
+			"144",
+			"72",
+			"120",
+			"60",
+			"114",
+			"57",
+			"100",
+			"50",
+			"80",
+			"40",
+			"114",
+			"icon@2",
+			"icon",
+			"57",
+			"180",
+			"portrait",
+			"Default",
+			"ios",
+			"\"res/",
+			">\n",
+			"md",
+			"tooltip",
+			"cqc",
 			"<hr",
 			"hr",
 			"m-0",
@@ -796,35 +877,7 @@
 			"<div class=\"card testimonial undecorated\">",
 			"divide",
 			"@extend .divider.bold;",
-			" *  *",
-			"-bottom",
-			"-lg",
-			"breakpoint-infix",
-			"$infix",
-			"col-",
-			"col-lg",
-			"lg",
-			"notice",
-			"accordionbasic",
-			"5px",
-			"accordion",
-			"strong",
-			"list",
-			"Timeline",
-			"p",
-			"link ",
-			"orange",
-			"border:0 solid $orange-light;",
-			"scrub-teal-dark",
-			"border-color",
-			"-with-arrow",
-			"105px",
-			"{pa",
-			"250px",
-			"3n",
-			"{3n+0}",
-			"mind-your-meds/assessment",
-			"component"
+			" *  *"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -847,8 +900,155 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "assets/scss/structure/_cqc.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15843,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2439,
+								2439
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 1263.0,
+						"translation.y": 1418.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "assets/scss/index.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2041,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1988,
+								1988
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1629.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "assets/scss/helpers/_trumps.scss",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 2607,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								570,
+								570
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "assets/scss/helpers/_swappable.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 480,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								480,
+								480
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 60.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "assets/scss/vendor/bootstrap.override/_nav-pills.override.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 192,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								63,
+								63
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -901,12 +1101,20 @@
 		"selected_items":
 		[
 			[
-				"",
-				"assets\\scss\\structure\\_cqc.scss"
+				"index.scss",
+				"cvquality\\assets\\scss\\index.scss"
 			],
 			[
-				"index.scss",
-				"assets\\scss\\index.scss"
+				"nav-pill",
+				"cvquality\\assets\\scss\\vendor\\bootstrap.override\\_nav-pills.override.scss"
+			],
+			[
+				"cqc",
+				"cvquality\\assets\\scss\\structure\\_cqc.scss"
+			],
+			[
+				"",
+				"assets\\scss\\structure\\_cqc.scss"
 			],
 			[
 				"card.scss",
@@ -1403,14 +1611,6 @@
 			[
 				"nav-basic",
 				"assets\\scss\\component\\_nav-basic.scss"
-			],
-			[
-				"brisindex.scss",
-				"Bristol\\Assets\\scss\\index.scss"
-			],
-			[
-				"footer.scs",
-				"assets\\scss\\structure\\_footer.scss"
 			]
 		],
 		"width": 0.0
@@ -1441,7 +1641,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 353.0,
+	"side_bar_width": 472.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
