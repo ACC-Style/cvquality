@@ -8597,65 +8597,63 @@ input {
  *  </div>
  *
  */
-.card.testimonial {
+.card.testimonial, .card.product {
   border-style: solid;
   border-width: 1px;
   margin-top: 0;
   padding: 0; }
   @media only screen and (min-width: 768px) {
-    .card.testimonial {
+    .card.testimonial, .card.product {
       margin-top: 100px; } }
-  .card.testimonial .card-header {
+  .card.testimonial .card-header, .card.product .card-header {
     background-color: #a4cded;
     margin-bottom: 75px; }
     @media only screen and (min-width: 768px) {
-      .card.testimonial .card-header {
+      .card.testimonial .card-header, .card.product .card-header {
         margin-bottom: 0; } }
-  .card.testimonial .card-img {
+  .card.testimonial .card-img, .card.product .card-img {
     margin: 20px auto -50px;
     width: 100px;
     height: 100px; }
     @media only screen and (min-width: 768px) {
-      .card.testimonial .card-img {
+      .card.testimonial .card-img, .card.product .card-img {
         margin: -100px auto 20px;
         width: 200px;
         height: 200px; } }
-  .card.testimonial .card-body {
+  .card.testimonial .card-body, .card.product .card-body {
     padding: 10px 1em 1em;
     position: relative; }
-  .card.testimonial .blockquote {
+  .card.testimonial .blockquote, .card.product .blockquote {
     position: relative;
     text-align: center; }
-  .card.testimonial .blockquote p:before, .card.testimonial .blockquote p:after, .card.testimonial .blockquote-cite:before, .card.testimonial .blockquote-cite:after {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    transform: translate(0, 0);
-    width: 1.28571429em;
-    text-align: center; }
-  .card.testimonial .blockquote p {
+  .card.testimonial .blockquote p, .card.testimonial .blockquote-cite, .card.product .blockquote p, .card.product .blockquote-cite {
+    display: block; }
+    .card.testimonial .blockquote p:before, .card.testimonial .blockquote p:after, .card.testimonial .blockquote-cite:before, .card.testimonial .blockquote-cite:after, .card.product .blockquote p:before, .card.product .blockquote p:after, .card.product .blockquote-cite:before, .card.product .blockquote-cite:after {
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      transform: translate(0, 0);
+      width: 1.28571429em;
+      text-align: center; }
+  .card.testimonial .blockquote p, .card.product .blockquote p {
     font-size: 16px; }
-    .card.testimonial .blockquote p:before, .card.testimonial .blockquote p:after {
+    .card.testimonial .blockquote p:before, .card.testimonial .blockquote p:after, .card.product .blockquote p:before, .card.product .blockquote p:after {
       color: #ffc425; }
-    .card.testimonial .blockquote p:before {
+    .card.testimonial .blockquote p:before, .card.product .blockquote p:before {
       margin-right: .5em;
       content: "\f10d"; }
-    .card.testimonial .blockquote p:after {
+    .card.testimonial .blockquote p:after, .card.product .blockquote p:after {
       margin-left: .5em;
       content: "\f10e"; }
-  .card.testimonial .blockquote-cite {
+  .card.testimonial .blockquote-cite, .card.product .blockquote-cite {
     font-size: 14px;
-    position: absolute;
+    position: relative;
     right: 0;
-    color: #a1a0a4;
-    bottom: -1.75em; }
-    @media only screen and (min-width: 768px) {
-      .card.testimonial .blockquote-cite {
-        bottom: -1.5em; } }
-    .card.testimonial .blockquote-cite:after {
+    color: #a1a0a4; }
+    .card.testimonial .blockquote-cite:after, .card.product .blockquote-cite:after {
       margin-right: .5em;
       content: "\f007"; }
 
@@ -8680,31 +8678,32 @@ input {
 *
 */
 @media only screen and (min-width: 768px) {
-  .card.testimonial.horizontal {
+  .card.testimonial.horizontal, .card.product {
     display: block;
     margin-top: 0;
     display: table; }
-    .card.testimonial.horizontal .card-header, .card.testimonial.horizontal .card-body {
+    .card.testimonial.horizontal .card-header, .card.testimonial.horizontal .card-body, .card.product .card-header, .card.product .card-body {
       display: table-cell;
       width: unset;
       padding: 10px;
       margin: 0;
       vertical-align: middle;
       float: none; }
-    .card.testimonial.horizontal .card-img {
+    .card.testimonial.horizontal .card-img, .card.product .card-img {
       margin: 10px;
       height: 125px;
       width: 125px; }
-    .card.testimonial.horizontal .card-header {
+    .card.testimonial.horizontal .card-header, .card.product .card-header {
       min-width: 160px; }
-    .card.testimonial.horizontal .card-body {
+    .card.testimonial.horizontal .card-body, .card.product .card-body {
       text-align: left; }
-      .card.testimonial.horizontal .card-body .blockquote-cite {
-        float: right; }
-    .card.testimonial.horizontal .blockquote {
+      .card.testimonial.horizontal .card-body .blockquote-cite, .card.product .card-body .blockquote-cite {
+        float: none; }
+    .card.testimonial.horizontal .blockquote, .card.product .blockquote {
       text-align: left; }
-    .card.testimonial.horizontal .blockquote-cite {
-      text-align: right; } }
+    .card.testimonial.horizontal .blockquote-cite, .card.product .blockquote-cite {
+      text-align: right;
+      display: block; } }
 
 .card.testimonial.horizontal.undecorated, .card.testimonial.undecorated {
   margin-top: 0; }
@@ -8762,6 +8761,36 @@ input {
   padding: 0; }
   .undecorated.card .card-header.triangle:before {
     display: none; }
+
+/**
+* Products are compact containers for Testimonial Data Type 
+*
+* @molecule Product Card
+* @section Card > Product
+* @flag contained
+* @markup
+*  <div class="card product">
+*    <header class="card-header">
+*       <img src="http://accreditation.acc.org/images/facilitymap/AF.png" alt="" class="mapseal">
+*    </header>
+*    <div class="card-body">
+*      <article>
+*       <h2 class="m-0">@{lipsum:3:words}</h2>
+*        <p>@{lipsum:15:words}</p>
+*        <a class="btn btn-primary">Link To Product <i class="fa fa-external-link-square"></i></a>
+*      </article>
+*    </div>
+*  </div>
+*
+*/
+.card.product .card-header {
+  margin-bottom: 0;
+  background-color: #d6d4d4; }
+.card.product .card-header img {
+  max-height: 200px;
+  width: auto;
+  margin: 0 auto;
+  padding: 10px 0; }
 
 /**
  * buttons are highly flexible and can be decorated by the modifiers to change size and color

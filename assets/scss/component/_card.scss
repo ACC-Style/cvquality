@@ -570,8 +570,8 @@
  *  </div>
  *
  */
-
-.card.testimonial {
+.card.testimonial{}
+.card.testimonial,.card.product {
     border-style: solid;
     border-width: 1px;
     margin-top: 0;
@@ -614,6 +614,7 @@
     }
 
     .blockquote p, .blockquote-cite {
+        display:block;
         &:before, &:after {
             display: inline-block;
             font: normal normal normal 14px/1 FontAwesome;
@@ -647,14 +648,9 @@
 
     .blockquote-cite {
         font-size: ms(0);
-        position: absolute;
+        position: relative;
         right: 0;
         color: $warm-grey;
-        bottom: -1.75em;
-
-        @include bp(md) {
-            bottom: -1.5em;
-        }
 
 
         &:after {
@@ -684,7 +680,8 @@
 *  </div>
 *
 */
-.card.testimonial.horizontal {
+.card.testimonial.horizontal{}
+.card.testimonial.horizontal, .card.product{
     @include bp(md) {
         display: block;
         margin-top: 0;
@@ -713,7 +710,7 @@
             text-align: left;
 
             .blockquote-cite {
-                float: right;
+                float: none;
             }
         }
 
@@ -723,6 +720,7 @@
 
         .blockquote-cite {
             text-align: right;
+            display:block;
         }
     }
 }
@@ -785,4 +783,30 @@
     .card-header.triangle:before {
         display: none;
     }
+}
+
+/**
+* Products are compact containers for Testimonial Data Type 
+*
+* @molecule Product Card
+* @section Card > Product
+* @flag contained
+* @markup
+*  <div class="card product">
+*    <header class="card-header">
+*       <img src="http://accreditation.acc.org/images/facilitymap/AF.png" alt="" class="mapseal">
+*    </header>
+*    <div class="card-body">
+*      <article>
+*       <h2 class="m-0">@{lipsum:3:words}</h2>
+*        <p>@{lipsum:15:words}</p>
+*        <a class="btn btn-primary">Link To Product <i class="fa fa-external-link-square"></i></a>
+*      </article>
+*    </div>
+*  </div>
+*
+*/
+.card.product{
+    .card-header{margin-bottom:0; background-color:$warm-grey-light;}
+    .card-header img{max-height:200px; width:auto;margin:0 auto; padding:10px 0;}
 }
