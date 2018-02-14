@@ -13,18 +13,23 @@
 *  &.display-[x] Produces large display sized text where x is a number 2 through 4. Thins only works on h1,h2,h3,h4 and p.
 *  a.tag  Produces the header tag in the dark teal color of the site with an underline on hover. 
 * @markup
-*  <div><h1 class="display-4 inline">display-4</h1>
-*  <h1 class="display-3 inline">display-3</h1>
-*  <h1 class="display-2 inline">display-2</h1>
-*  <h1 class="inline">H1 Tag</h1></div>
-*  <div><h2 class="display-4 inline">display-4</h2>
-*  <h2 class="display-3 inline">display-3</h2>
-*  <h2 class="display-2 inline">display-2</h2>
-*  <h2 class="inline">h2  <a href="">@{lipsum:1:words}</a></h2></div>
+*  <h1>This is an h1 heading</h1>
+*  <h2>This is an h2 heading</h2>
 *  <h3>This is an h3 heading</h3>
 *  <h4>This is an h4 heading</h4>
 *  <h5>This is an h5 heading</h5>
 *  <h6>This is an h6 heading</h6>
+*  <hr class="section-divider"/>
+*  <div>
+*  <h1 class="display-4 inline">display-4</h1>
+*  <h1 class="display-3 inline">display-3</h1>
+*  <h1 class="display-2 inline">display-2</h1>
+*  <h1 class="inline">H1 Tag</h1></div>
+*  <div>
+*  <h2 class="display-4 inline">display-4</h2>
+*  <h2 class="display-3 inline">display-3</h2>
+*  <h2 class="display-2 inline">display-2</h2>
+*  <h2 class="inline">h2  <a href="">@{lipsum:1:words}</a></h2></div>
 */
 
     %header-link {
@@ -51,12 +56,12 @@
 
     h2 {
         @extend %header-link;
-        @include font-display("regular");
-        color: $warm-grey-dark;
+        @include font-display("light");
+        color: $orange-dark;
         &.display-4{ font-size:ms(5, $ms-base, $ms-ratio-4);}
         &.display-3{ font-size:ms(5, $ms-base, $ms-ratio-3);}
         &.display-2{ font-size:ms(5, $ms-base,$ms-ratio-2);} 
-         &.display-4,&.display-3,&.display-2{font-weight:300;}  
+        &.display-4,&.display-3,&.display-2{font-weight:100;}  
     }
 
     h3 {
