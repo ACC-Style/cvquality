@@ -810,3 +810,70 @@
     .card-header{margin-bottom:0; background-color:$warm-grey-light;}
     .card-header img{max-height:200px; width:auto;margin:0 auto; padding:10px 0;}
 }
+
+
+/**
+ * Boxes(".box") are a simple decorator that has internal padding, a colored background, and fills its parent container. 
+ * Boxes are a simpler version of ".cards" when the structured DOM is either unnecessary or would conflict with the internal content.
+ *
+ * @molecule box
+ * @flag contained
+ * @modifiers
+ *  .alt    changes background to grey
+ *  .alt.blue changes background to blue
+ * @section Box > Box
+ * @markup
+ *   <div class="box">
+ *      <h1>H1 Tag</h1>
+ *      <p>@{lipsum:20:words}</p>
+ *   </div>
+*/
+
+.box {
+    margin-bottom: 1rem;
+    padding: .5rem .75rem;
+    border:1px solid $soft-grey;
+    .card-header{margin-left:-.75rem; margin-right:-.75rem;}
+
+    h1, h2, h3, h4 {
+        &:first-child{margin-top:.5rem;}
+        font-weight: bold;
+        color: $orange-dark;
+    }
+    + .box{ margin-top:.5rem;}
+}
+/**
+* The box is by default white add the ".alt" class to make it grey and remove the boarders.
+*
+* @molecule Box Alt
+* @section Box > Box
+* @markup
+*  <div class="box alt">
+*     <h3>Past Box</h3>
+*     <p>@{lipsum:2:paragraphs}</p>     
+*     <div class="row">
+*         <div class="col-sm-9 col-lg-6 p-r-0">
+*             <div class="form-group">
+*                 <div class="input-group">
+*                     <select name="" id="" class="form-control">
+*                         <option value="">@{lipsum:3:words}</option>
+*                         <option value="">@{lipsum:3:words}</option>
+*                         <option value="">@{lipsum:3:words}</option>
+*                         <option value="">@{lipsum:3:words}</option>
+*                     </select>
+*         <span class="input-group-btn">
+*           <button type="submit" class="btn btn-primary expanded">Go</button>      
+*         </span>
+*                 </div>
+*             </div>
+*         </div>
+*         <div class="col-sm-4 col-lg-5 pull-right">
+*             <button type="submit" class="btn btn-primary pull-right">Comparison Report</button>
+*         </div>
+*     </div>
+*  </div>
+*/
+.box.alt{
+    background-color: $soft-grey;
+    &.blue{background-color:$soft-blue;}
+}

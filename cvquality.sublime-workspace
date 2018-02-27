@@ -335,6 +335,32 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "assets/scss/base/_typography.scss",
+			"settings":
+			{
+				"buffer_size": 14865,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/component/_button.scss",
+			"settings":
+			{
+				"buffer_size": 2860,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/index.scss",
+			"settings":
+			{
+				"buffer_size": 2041,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -528,15 +554,11 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/mwatier/source/repos/ACC Connect",
-		"/C/Users/mwatier/source/repos/ACC Connect/htmlsource",
-		"/C/Users/mwatier/source/repos/ACC Connect/htmlsource/assets",
-		"/C/Users/mwatier/source/repos/ACC Connect/htmlsource/assets/scss",
-		"/C/Users/mwatier/source/repos/ACC Connect/htmlsource/assets/scss/components",
-		"/C/Users/mwatier/source/repos/ACC Connect/htmlsource/assets/scss/components/elements",
-		"/C/Users/mwatier/source/repos/ACC Connect/htmlsource/assets/scss/structures",
-		"/C/Users/mwatier/source/repos/ACC Connect/htmlsource/assets/scss/trumps",
-		"/C/Users/mwatier/source/repos/ACC Connect/htmlsource/templates"
+		"/C/Users/mwatier/Repo/cvquality",
+		"/C/Users/mwatier/Repo/cvquality/assets",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/base",
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component"
 	],
 	"file_history":
 	[
@@ -671,7 +693,7 @@
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 61.0
 	},
 	"find_in_files":
 	{
@@ -857,14 +879,103 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "assets/scss/base/_typography.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14865,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2076,
+								2076
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1801.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "assets/scss/component/_button.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2860,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								905,
+								905
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 352.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "assets/scss/index.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2041,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								666,
+								677
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 35.0
+		"height": 44.0
 	},
 	"input":
 	{
@@ -901,7 +1012,7 @@
 	"project": "cvquality.sublime-project",
 	"replace":
 	{
-		"height": 66.0
+		"height": 83.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -910,6 +1021,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"indexscss",
+				"assets\\scss\\index.scss"
+			],
 			[
 				"index.scss",
 				"cvquality\\assets\\scss\\index.scss"
@@ -1417,10 +1532,6 @@
 			[
 				"boot3var",
 				"assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\_variables.scss"
-			],
-			[
-				"nav-basic",
-				"assets\\scss\\component\\_nav-basic.scss"
 			]
 		],
 		"width": 0.0
