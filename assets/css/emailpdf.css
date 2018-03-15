@@ -12146,4 +12146,17 @@ svg:not(:root) {
   padding: 5px 0 0;
   overflow: visible; }
 
-/*# sourceMappingURL=index.css.map */
+.hidden-print {
+  display: none !important; }
+
+.visible-print-block {
+  display: block !important; }
+
+#layout [class*="col-"] {
+  width: 100% !important; }
+
+.panel-collapse.collapse {
+  border: 1px dotted grey(20) !important;
+  display: block !important; }
+
+/*# sourceMappingURL=emailpdf.css.map */

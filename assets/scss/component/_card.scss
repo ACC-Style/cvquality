@@ -728,6 +728,9 @@
     margin-top:0;
     .card-header{display:none!important;}
 }
+.card.testimonial.vertical-spacing {
+    margin-bottom: 120px;
+}
 /**
  * The "Facility Card" is a combination of cards and ui to make the UI element that is found on the home page. 
  *
@@ -833,7 +836,7 @@
     margin-bottom: 1rem;
     padding: .5rem .75rem;
     border:1px solid $soft-grey;
-    .card-header{margin-left:-.75rem; margin-right:-.75rem;}
+    .card-header{margin-left:0; margin-right:0;}
 
     h1, h2, h3, h4 {
         &:first-child{margin-top:.5rem;}

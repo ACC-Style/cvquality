@@ -1,0 +1,7 @@
+﻿.hidden-print{display:none !important;}
+.visible-print-block{display:block !important;}
+#layout [class*="col-"]{width:100% !important;}
+.panel-collapse.collapse {
+    border: 1px dotted grey(20) !important;
+    display: block !important;
+}

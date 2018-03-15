@@ -34,3 +34,10 @@
     @include font-display("regular");
 }
 
+.pagination > li > a, .pagination > li > span {
+
+}
+/*<ul class="pagination" >
+    <li class="active" > <a href="/testpageuma/1" > 1 <span class="sr-only" > (current)</span > </a > </li >
+    <li > <a href="/testpageuma/2" > 2</a > </li > <li > <a href="/testpageuma/3" > 3</a > </li >
+</ul >*/

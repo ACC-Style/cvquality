@@ -6667,6 +6667,10 @@ body {
 *  <h2 class="display-3 inline">display-3</h2>
 *  <h2 class="display-2 inline">display-2</h2>
 *  <h2 class="inline">h2  <a href="">@{lipsum:1:words}</a></h2></div>
+*  <h3>This is an h3 heading</h3>
+*  <h4>This is an h4 heading</h4>
+*  <h5>This is an h5 heading</h5>
+*  <h6>This is an h6 heading</h6>
 */
 h1 a, h2 a, h3 a, h4 a {
   color: #0088aa;
@@ -8070,6 +8074,10 @@ input {
   font-family: 'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
   font-weight: 500; }
 
+/*<ul class="pagination" >
+    <li class="active" > <a href="/testpageuma/1" > 1 <span class="sr-only" > (current)</span > </a > </li >
+    <li > <a href="/testpageuma/2" > 2</a > </li > <li > <a href="/testpageuma/3" > 3</a > </li >
+</ul >*/
 /**
 * show the completion or loading progress of a task or system.
 *
@@ -8715,6 +8723,9 @@ input {
   .card.testimonial.horizontal.undecorated .card-header, .card.testimonial.undecorated .card-header {
     display: none !important; }
 
+.card.testimonial.vertical-spacing {
+  margin-bottom: 120px; }
+
 /**
  * The "Facility Card" is a combination of cards and ui to make the UI element that is found on the home page. 
  *
@@ -8796,6 +8807,73 @@ input {
   width: auto;
   margin: 0 auto;
   padding: 10px 0; }
+
+/**
+ * Boxes(".box") are a simple decorator that has internal padding, a colored background, and fills its parent container. 
+ * Boxes are a simpler version of ".cards" when the structured DOM is either unnecessary or would conflict with the internal content.
+ *
+ * @molecule box
+ * @flag contained
+ * @modifiers
+ *  .alt    changes background to grey
+ *  .alt.blue changes background to blue
+ * @section Box > Box
+ * @markup
+ *   <div class="box">
+ *      <h1>H1 Tag</h1>
+ *      <p>@{lipsum:20:words}</p>
+ *   </div>
+*/
+.box {
+  margin-bottom: 1rem;
+  padding: .5rem .75rem;
+  border: 1px solid #eceaea; }
+  .box .card-header {
+    margin-left: 0;
+    margin-right: 0; }
+  .box h1, .box h2, .box h3, .box h4 {
+    font-weight: bold;
+    color: #e87d1e; }
+    .box h1:first-child, .box h2:first-child, .box h3:first-child, .box h4:first-child {
+      margin-top: .5rem; }
+  .box + .box {
+    margin-top: .5rem; }
+
+/**
+* The box is by default white add the ".alt" class to make it grey and remove the boarders.
+*
+* @molecule Box Alt
+* @section Box > Box
+* @markup
+*  <div class="box alt">
+*     <h3>Past Box</h3>
+*     <p>@{lipsum:2:paragraphs}</p>     
+*     <div class="row">
+*         <div class="col-sm-9 col-lg-6 p-r-0">
+*             <div class="form-group">
+*                 <div class="input-group">
+*                     <select name="" id="" class="form-control">
+*                         <option value="">@{lipsum:3:words}</option>
+*                         <option value="">@{lipsum:3:words}</option>
+*                         <option value="">@{lipsum:3:words}</option>
+*                         <option value="">@{lipsum:3:words}</option>
+*                     </select>
+*         <span class="input-group-btn">
+*           <button type="submit" class="btn btn-primary expanded">Go</button>      
+*         </span>
+*                 </div>
+*             </div>
+*         </div>
+*         <div class="col-sm-4 col-lg-5 pull-right">
+*             <button type="submit" class="btn btn-primary pull-right">Comparison Report</button>
+*         </div>
+*     </div>
+*  </div>
+*/
+.box.alt {
+  background-color: #eceaea; }
+  .box.alt.blue {
+    background-color: #a4cded; }
 
 /**
  * buttons are highly flexible and can be decorated by the modifiers to change size and color
@@ -9970,7 +10048,6 @@ ul.multiselect-container li.active a {
  *   </div>
 */
 .box {
-  margin-top: 1rem;
   margin-bottom: 1rem;
   padding: .5rem .75rem;
   border: 1px solid #eceaea; }
@@ -9982,6 +10059,8 @@ ul.multiselect-container li.active a {
     color: #e87d1e; }
     .box h1:first-child, .box h2:first-child, .box h3:first-child, .box h4:first-child {
       margin-top: .5rem; }
+  .box + .box {
+    margin-top: .5rem; }
 
 /**
 * The box is by default white add the ".alt" class to make it grey and remove the boarders.
@@ -11893,8 +11972,8 @@ ul.banded-list li:nth-child(even) {
 .note span,
 .required,
 .asterisk {
-  font-size: 120%;
-  color: #a00; }
+  font-size: 11px;
+  color: #e87d1e; }
 
 .site-logo-print {
   max-height: 60px !important;
@@ -11993,6 +12072,24 @@ ul.banded-list li:nth-child(even) {
   .input-group.expanded > * {
     width: 100%; }
 
+@media only screen and (min-width: 768px) {
+  .multi-column-md-2 {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    -moz-column-gap: 10px;
+    -webkit-column-gap: 10px;
+    column-gap: 10px; } }
+
+@media only screen and (min-width: 1024px) {
+  .multi-column-lg-2 {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    -moz-column-gap: 10px;
+    -webkit-column-gap: 10px;
+    column-gap: 10px; } }
+
 /**
 * Content padding often you will need to inject some spacing into the left and right of a container so the content and container do not collide. 
 * ~~ Open the example to see the other class and how they will effect the design ~~
@@ -12030,11 +12127,23 @@ img + .btn.btn-block, img + .btn-block.button {
   display: block;
   position: absolute;
   padding: 1px 3px;
-  left: 15px;
+  left: 16px;
   bottom: 5px;
   background: #ffc425;
   color: #020202;
   font-size: 9px;
   font-weight: bold; }
+
+select#SelectedQuarters {
+  width: 100%; }
+
+select#SelectedQuarters option {
+  width: 100%;
+  padding: 4px 10px;
+  border-bottom: 1px dotted lightgrey; }
+
+svg:not(:root) {
+  padding: 5px 0 0;
+  overflow: visible; }
 
 /*# sourceMappingURL=index.css.map */

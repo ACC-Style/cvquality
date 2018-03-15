@@ -16,7 +16,6 @@
 */
 
 .box {
-    margin-top: 1rem;
     margin-bottom: 1rem;
     padding: .5rem .75rem;
     border:1px solid $soft-grey;
@@ -26,6 +25,10 @@
         &:first-child{margin-top:.5rem;}
         font-weight: bold;
         color: $orange-dark;
+    }
+
+    + .box {
+        margin-top: .5rem;
     }
 }
 /**

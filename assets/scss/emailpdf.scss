@@ -9,7 +9,7 @@
 @import "base/fonts.kitchensink";
 @import "vendor/bootstrap.override/custom";
 @import "vendor/bootstrap-sass-3.3.7/sass/bootstrap";
-// starts to overide the basic nav decorations
+// starts to overide the basic nav decorations  
 @import "base/nav-basic";
 @import "vendor/bootstrap.override/grid.override";
 @import "vendor/bootstrap.override/dropdown.override";
@@ -42,7 +42,6 @@
 @import "component/charts";
 @import "component/map";
 
-
 /* Legacy Support */ 
 @import "component/assessment";
 //@import "shame/assessment";
@@ -72,3 +71,4 @@
 
 
 @import "_shame";
+@import "shame/_emailpdf";

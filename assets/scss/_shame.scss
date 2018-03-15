@@ -1,0 +1,13 @@
+select#SelectedQuarters {
+    width: 100%;
+}
+
+select#SelectedQuarters option {
+    width: 100%;
+    padding: 4px 10px;
+    border-bottom: 1px dotted lightgrey;
+}
+svg:not(:root) {
+    padding: 5px 0 0;
+    overflow: visible;
+}

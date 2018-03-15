@@ -53,6 +53,27 @@
         width:100%;
      }
     }
+.multi-column-md-2 {
+    @include bp(md) {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+        -moz-column-gap: 10px;
+        -webkit-column-gap: 10px;
+        column-gap: 10px;
+    }
+}
+.multi-column-lg-2 {
+    @include bp(lg) {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+        -moz-column-gap: 10px;
+        -webkit-column-gap: 10px;
+        column-gap: 10px;
+    }
+}
+
 /**
 * Content padding often you will need to inject some spacing into the left and right of a container so the content and container do not collide. 
 * ~~ Open the example to see the other class and how they will effect the design ~~
@@ -96,7 +117,7 @@ img + .btn.btn-block {
     display: block;
     position: absolute;
     padding: 1px 3px;
-    left: 15px;
+    left: 16px;
     bottom: 5px;
     background: #ffc425;
     color: #020202;
