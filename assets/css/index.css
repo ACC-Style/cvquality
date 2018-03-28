@@ -11929,6 +11929,25 @@ ul.banded-list li:nth-child(even) {
  *      </div>
  *  </div>
  */
+/**
+ * Header of the CQC Clincian Mangagment
+ * 
+ * @molecule CQC - CQC Header TBD (Clints Work)
+ * @section Xtra > CQC Clinician 
+ * @markup
+ *  <header class="cqc-header-clinicain row">
+ *   <hr class="divider teal bold m-t-0 "/>
+ *       <div class="m-t-0 m-b-0">
+ *          <ul class="nav-pills nav">
+ *              <li class="nav-item active"><a class="nav-link">Practice Dashboard</a></li>
+ *              <li class="nav-item"><a class="nav-link">Clnician Details</a></li>
+ *              <li class="nav-item"><a class="nav-link">Clinician Management</a></li>
+ *              <li class="nav-item pull-right"><a href="" class="nav-link alt"><i class="fa fa-plus"></i> Add Clinician</a></li>
+ *          </ul>
+ *       </div>
+ *   <hr class="divider teal bold m-t-0"/>
+ *   </header>
+ **/
 @media only screen and (min-width: 768px) {
   .row.vh_30 div[class^="col-"], .row.vh_30 .card {
     min-height: 30vh; }
