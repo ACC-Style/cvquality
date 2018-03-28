@@ -86,16 +86,16 @@
 *  class="content-padding quarter"      will add a 1/4 gutter space on the left and right inside a container
 * 
 */
-.content-padding{
-    padding-left:$grid-gutter-width;
-    padding-right:$grid-gutter-width;
-    &.half{
-        padding-left:$grid-gutter-width/2;
-        padding-right:$grid-gutter-width/2;
+.content-padding {
+    padding-left: $grid-gutter-width;
+    padding-right: $grid-gutter-width;
+    &.half {
+        padding-left: $grid-gutter-width/2;
+        padding-right: $grid-gutter-width/2;
     }
-    &.quarter{
-        padding-left:$grid-gutter-width/4;
-        padding-right:$grid-gutter-width/4;
+    &.quarter {
+        padding-left: $grid-gutter-width/4;
+        padding-right: $grid-gutter-width/4;
     }
 }
 
@@ -110,7 +110,7 @@ img + .btn.btn-block {
 }
 
 
-// Icon for Sitfinity 
+// Icon for Sitfinity
 .ACCMvcIcn{position:relative;}
 .ACCMvcIcn:after {
     content: "A-MVC";

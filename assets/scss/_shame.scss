@@ -11,3 +11,45 @@ svg:not(:root) {
     padding: 5px 0 0;
     overflow: visible;
 }
+
+
+.sfPageEditor .visible-authenticated-block {
+    img {
+        display: none;
+    }
+
+    &:after, &:before {
+        content: "AUTHENTICATED CONTENT - REMBER TO CHANGE PERMISIONS OF CONTENT IN AREA - Permision/Role/Authenticated";
+        display: block;
+        position: relative;
+        font-size: ms(-1);
+        text-align: center;
+        color: $scrub-teal-dark;
+    }
+
+    display: block !important;
+    opacity: .75;
+    border: 2px dotted $mix-teal_orange;
+    margin: 5px;
+    background: mix($mix-teal_orange,white,10%);
+}
+.sfPageEditor .visible-anonymous-block {
+    img {
+        display: none;
+    }
+
+    &:after, &:before {
+        content: "ANONYMOUS CONTENT - REMBER TO CHANGE PERMISIONS OF CONTENT IN AREA - Permision/Role/Anonymous";
+        display: block;
+        position: relative;
+        font-size: ms(-1);
+        text-align: center;
+        color: $orange-dark;
+    }
+
+    display: block !important;
+    opacity: .75;
+    border: 2px dotted $orange-light;
+    margin: 5px;
+    background: mix($orange-light,white,10%);
+}

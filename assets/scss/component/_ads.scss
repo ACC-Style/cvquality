@@ -22,82 +22,134 @@
  *   </div>
 */
 .ad-container {
-    border:5px solid $off-white;
+    border: 5px solid $off-white;
     background-color: $off-white;
     margin: 0 auto;
     text-align: center;
     position: relative;
     display: none;
-    margin-top:.25rem;
+    margin-top: .25rem;
     margin-bottom: .5rem;
-    width:100%;
-    img{width:100%;}
-    @include bp(md){ display: block; }
-    &:after{content:"";display:table;clear:both;}
-    &.skyscraper{ 
-        max-width:(160px + 14px)*1.25;
+    width: 100%;
+
+    img {
+        width: 100%;
+    }
+
+    .ad {
+        margin: 0 auto;
+    }
+
+    @include bp(md) {
+        display: block;
+    }
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    &.skyscraper {
+        max-width: (160px + 14px)*1.5;
+
+        .ad {
+            max-width: 160px + 4px
+        }
+
         .ad:before {
-          padding-top: (600/160) * 100%;
+            padding-top: (600/160) * 100%;
         }
     }
-    &.bigbox{ 
-        max-width:(300px + 14px)*1.25;
+
+    &.bigbox {
+        max-width: (300px + 14px)*1.5;
+
+        .ad {
+            max-width: 300px + 4px
+        }
+
         .ad:before {
-          padding-top: (200/300) * 100%;
+            padding-top: (200/300) * 100%;
         }
     }
-    &.leaderboard{ 
-        max-width:(728px + 14px)*1.25;
-        .ad:before {
-          padding-top: (90/728) * 100%;
+
+    &.leaderboard {
+        max-width: (728px + 14px)*1.5;
+
+        .ad {
+            max-width: 728px + 4px
         }
-         
-    }
-    &.leaderboard-lg{ 
-        max-width:(728px + 14px)*1.25;
+
         .ad:before {
-          padding-top: (210/728) * 100%;
+            padding-top: (90/728) * 100%;
         }
-        
     }
-    &.full-banner{
-        max-width:(468px + 14px)*1.25;
+
+    &.leaderboard-lg {
+        max-width: (728px + 14px)*1.5;
+
+        .ad {
+            max-width: 728px + 4px
+        }
+
+        .ad:before {
+            padding-top: (210/728) * 100%;
+        }
+    }
+
+    &.full-banner {
+        max-width: (468px + 14px)*1.5;
+
+        .ad {
+            max-width: 468px + 4px
+        }
+
         .ad:before {
             padding-top: (60/468) * 100%;
         }
     }
-    &.mobile{
-        display:block;
-        @include bp(md){
+
+    &.mobile {
+        display: block;
+
+        @include bp(md) {
             display: none;
         }
     }
+
     p {
         clear: both;
         font-size: ms(-3);
         line-height: $crunched;
-        padding-bottom:4px;
+        padding-bottom: 4px;
         color: $warm-grey;
         text-transform: uppercase;
     }
-    .ad + p{padding-bottom:0; padding-top:4px;}
-    .ad{
-        border:2px solid mix($warm-grey-light, $off-white);
-        position:relative;
+
+    .ad + p {
+        padding-bottom: 0;
+        padding-top: 4px;
+    }
+
+    .ad {
+        border: 2px solid mix($warm-grey-light, $off-white);
+        position: relative;
+
         &:before {
-          display: block;
-          content: "";
-          width: 100%;
-          position:relative;
-      }
-        .ad-inner{
+            display: block;
+            content: "";
+            width: 100%;
+            position: relative;
+        }
+
+        .ad-inner {
             position: absolute;
             top: 0;
             right: 0;
             bottom: 0;
             left: 0;
         }
-
     }
 }
 

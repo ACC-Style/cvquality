@@ -33,9 +33,19 @@
     text-align: center;
     @include font-display("regular");
 }
-
-.pagination > li > a, .pagination > li > span {
-
+.pagination  li { 
+    display:inline-block;
+}
+.pagination  li a {
+    position: relative;
+    float: left;
+    padding: 3.5px 14px;
+    line-height: 1.5;
+    text-decoration: none;
+    color: #0088aa;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-left: -1px;
 }
 
 /**

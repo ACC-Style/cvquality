@@ -6,6 +6,13 @@
 .dropdown:hover > .dropdown-menu {
   display: block;
 }
+@include bp(sm-down) {
+    .dropdown.open > .dropdown-menu {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+}
 
 .dropdown-menu {
     background-color: $off-white;

@@ -1,0 +1,32 @@
+/* Styleguide */
+
+#styleguide {
+    margin-top: 2em;
+    width: 100%;
+    >tbody>tr {
+        &:nth-child(2n) {
+            background: none repeat scroll 0 0 #ECECEC;
+        }
+        >td {
+            padding: 1em;
+            vertical-align: top;
+        }
+    }
+    .styleguide-example {
+        width: 40%;
+    }
+    .styleguide-code {
+        width: 35%;
+    }
+    .styleguide-style {
+        width: 25%;
+    }
+    textarea {
+        height: 100%;
+        width: 100%;
+    }
+    caption {
+        padding-bottom: 2em;
+        text-align: left;
+    }
+}
