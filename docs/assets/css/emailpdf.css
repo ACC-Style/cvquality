@@ -6404,6 +6404,11 @@ button.close {
 .dropdown:hover > .dropdown-menu {
   display: block; }
 
+@media only screen and (max-width: 768px) {
+  .dropdown.open > .dropdown-menu {
+    display: block;
+    width: 100%;
+    position: relative; } }
 .dropdown-menu {
   background-color: #fafafa;
   border: 0px; }
@@ -8074,6 +8079,20 @@ input {
   font-family: 'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
   font-weight: 500; }
 
+.pagination li {
+  display: inline-block; }
+
+.pagination li a {
+  position: relative;
+  float: left;
+  padding: 3.5px 14px;
+  line-height: 1.5;
+  text-decoration: none;
+  color: #0088aa;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-left: -1px; }
+
 /**
 * Sitefnity has a basic pagination that is built in. The look and feel tries to match as well as it can. 
 *
@@ -9395,6 +9414,13 @@ input {
     background-color: #eceaea;
     padding: 0;
     margin: 0;
+    min-width: 20vw;
+    width: 100%;
+    width: intrinsic;
+    /* Safari/WebKit uses a non-standard name */
+    width: -moz-max-content;
+    /* Firefox/Gecko */
+    width: -webkit-max-content;
     width: max-content; }
   .nav-primary .dropdown-item {
     font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
@@ -9627,6 +9653,8 @@ input {
   width: 100%; }
   .ad-container img {
     width: 100%; }
+  .ad-container .ad {
+    margin: 0 auto; }
   @media only screen and (min-width: 768px) {
     .ad-container {
       display: block; } }
@@ -9635,23 +9663,33 @@ input {
     display: table;
     clear: both; }
   .ad-container.skyscraper {
-    max-width: 217.5px; }
+    max-width: 261px; }
+    .ad-container.skyscraper .ad {
+      max-width: 164px; }
     .ad-container.skyscraper .ad:before {
       padding-top: 375%; }
   .ad-container.bigbox {
-    max-width: 392.5px; }
+    max-width: 471px; }
+    .ad-container.bigbox .ad {
+      max-width: 304px; }
     .ad-container.bigbox .ad:before {
       padding-top: 66.6666666667%; }
   .ad-container.leaderboard {
-    max-width: 927.5px; }
+    max-width: 1113px; }
+    .ad-container.leaderboard .ad {
+      max-width: 732px; }
     .ad-container.leaderboard .ad:before {
       padding-top: 12.3626373626%; }
   .ad-container.leaderboard-lg {
-    max-width: 927.5px; }
+    max-width: 1113px; }
+    .ad-container.leaderboard-lg .ad {
+      max-width: 732px; }
     .ad-container.leaderboard-lg .ad:before {
       padding-top: 28.8461538462%; }
   .ad-container.full-banner {
-    max-width: 602.5px; }
+    max-width: 723px; }
+    .ad-container.full-banner .ad {
+      max-width: 472px; }
     .ad-container.full-banner .ad:before {
       padding-top: 12.8205128205%; }
   .ad-container.mobile {
@@ -12154,6 +12192,38 @@ select#SelectedQuarters option {
 svg:not(:root) {
   padding: 5px 0 0;
   overflow: visible; }
+
+.sfPageEditor .visible-authenticated-block {
+  display: block !important;
+  opacity: .75;
+  border: 2px dotted #58B5A5;
+  margin: 5px;
+  background: #eef8f6; }
+  .sfPageEditor .visible-authenticated-block img {
+    display: none; }
+  .sfPageEditor .visible-authenticated-block:after, .sfPageEditor .visible-authenticated-block:before {
+    content: "AUTHENTICATED CONTENT - REMBER TO CHANGE PERMISIONS OF CONTENT IN AREA - Permision/Role/Authenticated";
+    display: block;
+    position: relative;
+    font-size: 12px;
+    text-align: center;
+    color: #047294; }
+
+.sfPageEditor .visible-anonymous-block {
+  display: block !important;
+  opacity: .75;
+  border: 2px dotted #ffc425;
+  margin: 5px;
+  background: #fff9e9; }
+  .sfPageEditor .visible-anonymous-block img {
+    display: none; }
+  .sfPageEditor .visible-anonymous-block:after, .sfPageEditor .visible-anonymous-block:before {
+    content: "ANONYMOUS CONTENT - REMBER TO CHANGE PERMISIONS OF CONTENT IN AREA - Permision/Role/Anonymous";
+    display: block;
+    position: relative;
+    font-size: 12px;
+    text-align: center;
+    color: #e87d1e; }
 
 .hidden-print {
   display: none !important; }
