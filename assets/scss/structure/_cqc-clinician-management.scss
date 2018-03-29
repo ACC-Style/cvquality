@@ -1,20 +1,69 @@
 /**
  * Header of the CQC Clincian Mangagment
  * 
- * @molecule CQC - CQC Header TBD (Clints Work)
- * @section Xtra > CQC Clinician 
+ * @molecule Banded Lists Extra
+ * @section Lists > Banded Extra
  * @markup
- *  <header class="cqc-header-clinicain row">
- *   <hr class="divider teal bold m-t-0 "/>
- *       <div class="m-t-0 m-b-0">
- *          <ul class="nav-pills nav">
- *              <li class="nav-item active"><a class="nav-link">Practice Dashboard</a></li>
- *              <li class="nav-item"><a class="nav-link">Clnician Details</a></li>
- *              <li class="nav-item"><a class="nav-link">Clinician Management</a></li>
- *              <li class="nav-item pull-right"><a href="" class="nav-link alt"><i class="fa fa-plus"></i> Add Clinician</a></li>
- *          </ul>
- *       </div>
- *   <hr class="divider teal bold m-t-0"/>
- *   </header>
+ *  <ul class="banded-list banded-extra">
+ *      <li class="bg-warm-grey-dark">
+ *          <div class="row">
+ *               <div class="col-xs-12">
+ *                   <strong>
+ *                       License
+ *                   </strong>
+ *               </div>
+ *          </div>
+ *      </li>
+ *     	<li class="bg-warm-grey">
+ *     		 <div class="row">
+ *          	<div class="col-xs-4">
+ *          		<strong>License     </strong>
+ *          	</div>	
+ *          	<div class="col-xs-4 text-center">
+ *          		<strong>License Number</strong>
+ *          	</div>
+ *          	<div class="col-xs-4 text-right">
+ *          		<strong>Issue date</strong>
+ *          	</div>
+ *          </div>
+ *      </li>
+ *      <li>
+ *     	    <div class="row">
+ *          	<div class="col-xs-4">
+ *          		<strong>Maryland</strong>
+ *          	</div>	
+ *          	<div class="col-xs-4 text-center">
+ *          		<strong>1475309</strong>
+ *          	</div>
+ *          	<div class="col-xs-4 text-right">
+ *          		<strong>6/8/2008</strong>
+ *          	</div>
+ *          </div>
+ *      </li><li>
+ *          <div class="row">
+ *          	<div class="col-xs-4">
+ *          		<strong>DC</strong>
+ *          	</div>	
+ *          	<div class="col-xs-4 text-center">
+ *          		<strong>1475309</strong>
+ *          	</div>
+ *          	<div class="col-xs-4 text-right">
+ *          		<strong>6/8/2008</strong>
+ *          	</div>
+ *          </div>
+ *      </li><li>
+ *          <div class="row">
+ *          	<div class="col-xs-4">
+ *          		<strong>Verginia</strong>
+ *          	</div>	
+ *          	<div class="col-xs-4 text-center">
+ *          		<strong>1475309</strong>
+ *          	</div>
+ *          	<div class="col-xs-4 text-right">
+ *          		<strong>6/8/2008</strong>
+ *          	</div>
+ *          </div>
+ *      </li> 
+ *  </ul>
  **/
- .cqc-header-clinicain{}
+ .banded-extra{}

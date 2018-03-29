@@ -7725,23 +7725,27 @@ input {
     .accordion + .accordion .panel-heading {
       border-top-right-radius: 0;
       border-top-left-radius: 0; }
+  .accordion .accordion .panel-title {
+    font-size: 14px; }
+  .accordion .accordion .panel-title a {
+    padding: 5px 15px; }
 
 /**
-* Collapse page content with the header. Adding `.basic` will give a chevron and a little bit of wiggle.
+* Collapse page content with the header. Adding `.basic` will give a chevron and a little bit of wiggle. You can also nest accordians and they will style a bit smaller.
 *
 * @structure Accordion (Basic with a little bit of wiggle)
 * @section Advanced Containers > Accordion
 * @markup
 *  <div class="panel-group accordion basic">
-*   <div class="panel" id="accordion" role="tablist" aria-multiselectable="true">
+*   <div class="panel" id="accordion-wiggle" role="tablist" aria-multiselectable="true">
 *       <div class="panel-heading" role="tab" id="headingOne">
 *         <h4 class="panel-title">
-*           <a role="button" data-toggle="collapse" data-parent="#accordion" href="#accordionbasic" aria-expanded="true" aria-controls="accordionbasic" class="collapsed">
+*           <a role="button" data-toggle="collapse" data-parent="#accordion-wiggle" href="#accordion-wiggle-inside" aria-expanded="true" aria-controls="accordion-wiggle-inside" class="collapsed">
 *             <span class="text">Collapsible Group Item #1</span>
 *           </a>
 *         </h4>
 *       </div>
-*       <div id="accordionbasic" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+*       <div id="accordion-wiggle-inside" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
 *         <div class="panel-body">
 *           <p>@{lipsum:5:sentence}</p>
 *           <ul class="no-bullets">    
@@ -7755,6 +7759,33 @@ input {
 *                 <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
 *             </li>
 *           </ul>
+*           <div class="panel-group accordion basic">
+*            <div class="panel" id="accordion-accordion" role="tablist" aria-multiselectable="true">
+*                <div class="panel-heading" role="tab" id="headingOne">
+*                  <h4 class="panel-title">
+*                    <a role="button" data-toggle="collapse" data-parent="#accordion-accordion" href="#accordionbasicinside" aria-expanded="true" aria-controls="accordionbasicinside" class="collapsed">
+*                      <span class="text">Collapsible Group Item #1</span>
+*                    </a>
+*                  </h4>
+*                </div>
+*                <div id="accordionbasicinside" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+*                  <div class="panel-body">
+*                    <p>@{lipsum:5:sentence}</p>
+*                    <ul class="no-bullets">    
+*                      <li style="page-break-inside: avoid">
+*                          <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*                      </li>
+*                      <li style="page-break-inside: avoid">
+*                          <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*                      </li>
+*                      <li style="page-break-inside: avoid">
+*                          <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*                      </li>
+*                    </ul>
+*                  </div>
+*                </div>
+*            </div>
+*           </div>
 *         </div>
 *       </div>
 *   </div>
@@ -7769,6 +7800,10 @@ input {
   animation: wiggle .75s ease-in 2;
   -webkit-animation: wiggle .75s ease-in 2;
   -moz-animation: wiggle 0.75s ease-in 2; }
+.accordion.basic .accordion .panel-title a:before {
+  content: "\f0d7"; }
+.accordion.basic .accordion .panel-title a.collapsed:before {
+  content: "\f0da"; }
 
 @keyframes wiggle {
   0% {
@@ -11733,6 +11768,16 @@ body, .body {
  * 
  * @molecule Banded Lists
  * @section Lists > Banded 
+* @modifiers
+ *  .bg-orange-dark decorator class that turns the Li background to orange-dark.
+ *  .bg-orange-light decorator class that turns the Li background to orange-light.
+ *  .bg-pink decorator class that turns the Li background to pink.
+ *  .bg-blue decorator class that turns the Li background to blue.
+ *  .bg-warm-grey-dark decorator class that turns the Li background to warm-grey-dark.
+ *  .bg-warm-grey decorator class that turns the Li background to warm-grey.
+ *  .bg-scrub-teal decorator class that turns the Li background to scrub-teal.
+ *  .bg-mix-teal_orange decorator class that turns the Li background to mix-teal_orange.
+ *  .bg-mix-orange_teal decorator class that turns the Li background to mix-orange_teal.
  * @markup
  *  <ul class="banded-list">
  *   <li>
@@ -11764,10 +11809,37 @@ ul.banded-list .progress {
 ul.banded-list .progress-bar {
   font-size: 10px;
   line-height: 1.75em; }
-ul.banded-list li {
-  padding: .5rem 1rem; }
 ul.banded-list li:nth-child(even) {
   background-color: #e8f3fb; }
+ul.banded-list li, ul.banded-list li:nth-child(even) {
+  padding: .5rem 1rem; }
+  ul.banded-list li.bg-warm-grey, ul.banded-list li:nth-child(even).bg-warm-grey {
+    background-color: #a1a0a4;
+    color: #fafafa; }
+  ul.banded-list li.bg-warm-grey-dark, ul.banded-list li:nth-child(even).bg-warm-grey-dark {
+    background-color: #6f6b6f;
+    color: #fafafa; }
+  ul.banded-list li.bg-orange-dark, ul.banded-list li:nth-child(even).bg-orange-dark {
+    background-color: #e87d1e;
+    color: #fafafa; }
+  ul.banded-list li.bg-orange-light, ul.banded-list li:nth-child(even).bg-orange-light {
+    background-color: #ffc425;
+    color: #2f2f2f; }
+  ul.banded-list li.bg-scrub-teal, ul.banded-list li:nth-child(even).bg-scrub-teal {
+    background-color: #0088aa;
+    color: #fafafa; }
+  ul.banded-list li.mix-teal_orange, ul.banded-list li:nth-child(even).mix-teal_orange {
+    background-color: #58B5A5;
+    color: #fafafa; }
+  ul.banded-list li.mix-orange_teal, ul.banded-list li:nth-child(even).mix-orange_teal {
+    background-color: #ACBD65;
+    color: #fafafa; }
+  ul.banded-list li.bg-pink, ul.banded-list li:nth-child(even).bg-pink {
+    background-color: #e91e63;
+    color: white; }
+  ul.banded-list li.bg-blue, ul.banded-list li:nth-child(even).bg-blue {
+    background-color: #e91e63;
+    color: white; }
 
 /**
  * The expanded data of a clinician.
@@ -11970,21 +12042,70 @@ ul.banded-list li:nth-child(even) {
 /**
  * Header of the CQC Clincian Mangagment
  * 
- * @molecule CQC - CQC Header TBD (Clints Work)
- * @section Xtra > CQC Clinician 
+ * @molecule CQC - Banded with Modifiers
+ * @section List > Banded List Extra
  * @markup
- *  <header class="cqc-header-clinicain row">
- *   <hr class="divider teal bold m-t-0 "/>
- *       <div class="m-t-0 m-b-0">
- *          <ul class="nav-pills nav">
- *              <li class="nav-item active"><a class="nav-link">Practice Dashboard</a></li>
- *              <li class="nav-item"><a class="nav-link">Clnician Details</a></li>
- *              <li class="nav-item"><a class="nav-link">Clinician Management</a></li>
- *              <li class="nav-item pull-right"><a href="" class="nav-link alt"><i class="fa fa-plus"></i> Add Clinician</a></li>
- *          </ul>
- *       </div>
- *   <hr class="divider teal bold m-t-0"/>
- *   </header>
+ *  <ul class="banded-list banded-extra">
+ *      <li class="bg-warm-grey-dark">
+ *          <div class="row">
+ *               <div class="col-xs-12">
+ *                   <strong>
+ *                       License
+ *                   </strong>
+ *               </div>
+ *          </div>
+ *      </li>
+ *     	<li class="bg-warm-grey">
+ *     		 <div class="row">
+ *          	<div class="col-xs-4">
+ *          		<strong>License     </strong>
+ *          	</div>	
+ *          	<div class="col-xs-4 text-center">
+ *          		<strong>License Number</strong>
+ *          	</div>
+ *          	<div class="col-xs-4 text-right">
+ *          		<strong>Issue date</strong>
+ *          	</div>
+ *          </div>
+ *      </li>
+ *      <li>
+ *     	    <div class="row">
+ *          	<div class="col-xs-4">
+ *          		<strong>Maryland</strong>
+ *          	</div>	
+ *          	<div class="col-xs-4 text-center">
+ *          		<strong>1475309</strong>
+ *          	</div>
+ *          	<div class="col-xs-4 text-right">
+ *          		<strong>6/8/2008</strong>
+ *          	</div>
+ *          </div>
+ *      </li><li>
+ *          <div class="row">
+ *          	<div class="col-xs-4">
+ *          		<strong>DC</strong>
+ *          	</div>	
+ *          	<div class="col-xs-4 text-center">
+ *          		<strong>1475309</strong>
+ *          	</div>
+ *          	<div class="col-xs-4 text-right">
+ *          		<strong>6/8/2008</strong>
+ *          	</div>
+ *          </div>
+ *      </li><li>
+ *          <div class="row">
+ *          	<div class="col-xs-4">
+ *          		<strong>Verginia</strong>
+ *          	</div>	
+ *          	<div class="col-xs-4 text-center">
+ *          		<strong>1475309</strong>
+ *          	</div>
+ *          	<div class="col-xs-4 text-right">
+ *          		<strong>6/8/2008</strong>
+ *          	</div>
+ *          </div>
+ *      </li> 
+ *  </ul>
  **/
 @media only screen and (min-width: 768px) {
   .row.vh_30 div[class^="col-"], .row.vh_30 .card {

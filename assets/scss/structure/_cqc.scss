@@ -147,6 +147,16 @@
  * 
  * @molecule Banded Lists
  * @section Lists > Banded 
+* @modifiers
+ *  .bg-orange-dark decorator class that turns the Li background to orange-dark.
+ *  .bg-orange-light decorator class that turns the Li background to orange-light.
+ *  .bg-pink decorator class that turns the Li background to pink.
+ *  .bg-blue decorator class that turns the Li background to blue.
+ *  .bg-warm-grey-dark decorator class that turns the Li background to warm-grey-dark.
+ *  .bg-warm-grey decorator class that turns the Li background to warm-grey.
+ *  .bg-scrub-teal decorator class that turns the Li background to scrub-teal.
+ *  .bg-mix-teal_orange decorator class that turns the Li background to mix-teal_orange.
+ *  .bg-mix-orange_teal decorator class that turns the Li background to mix-orange_teal.
  * @markup
  *  <ul class="banded-list">
  *   <li>
@@ -183,10 +193,25 @@ ul.banded-list{
         font-size: ms(-3);
         line-height: 1.75em;
     }
-    li{padding:.5rem 1rem;}
+
     li:nth-child(even){
         background-color:mix($soft-blue,white,25%);
     }
+    li, li:nth-child(even){
+
+        padding:.5rem 1rem;
+        &.bg-warm-grey{ background-color: $warm-grey; color: $off-white}
+        &.bg-warm-grey-dark{ background-color: $warm-grey-dark; color: $off-white}
+        &.bg-orange-dark{ background-color: $orange-dark; color: $off-white}
+        &.bg-orange-light{ background-color: $orange-light; color: $off-black}
+        &.bg-scrub-teal{ background-color: $scrub-teal; color: $off-white}
+        &.mix-teal_orange{background-color:$mix-teal_orange; color: $off-white}
+        &.mix-orange_teal{background-color:$mix-orange_teal; color: $off-white}
+        &.bg-pink{background-color: #e91e63; color:white;}
+        &.bg-blue{background-color: #e91e63; color:white;}
+
+    }
+
     
 }
 /**

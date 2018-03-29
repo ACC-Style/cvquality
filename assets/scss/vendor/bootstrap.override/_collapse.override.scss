@@ -74,23 +74,29 @@
             
         }
     }
+    .accordion{
+        .panel-title{ font-size:ms(0);}
+        .panel-title a{
+            padding:5px 15px;
+        }
+    }
 }
 /**
-* Collapse page content with the header. Adding `.basic` will give a chevron and a little bit of wiggle.
+* Collapse page content with the header. Adding `.basic` will give a chevron and a little bit of wiggle. You can also nest accordians and they will style a bit smaller.
 *
 * @structure Accordion (Basic with a little bit of wiggle)
 * @section Advanced Containers > Accordion
 * @markup
 *  <div class="panel-group accordion basic">
-*   <div class="panel" id="accordion" role="tablist" aria-multiselectable="true">
+*   <div class="panel" id="accordion-wiggle" role="tablist" aria-multiselectable="true">
 *       <div class="panel-heading" role="tab" id="headingOne">
 *         <h4 class="panel-title">
-*           <a role="button" data-toggle="collapse" data-parent="#accordion" href="#accordionbasic" aria-expanded="true" aria-controls="accordionbasic" class="collapsed">
+*           <a role="button" data-toggle="collapse" data-parent="#accordion-wiggle" href="#accordion-wiggle-inside" aria-expanded="true" aria-controls="accordion-wiggle-inside" class="collapsed">
 *             <span class="text">Collapsible Group Item #1</span>
 *           </a>
 *         </h4>
 *       </div>
-*       <div id="accordionbasic" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+*       <div id="accordion-wiggle-inside" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
 *         <div class="panel-body">
 *           <p>@{lipsum:5:sentence}</p>
 *           <ul class="no-bullets">    
@@ -104,6 +110,33 @@
 *                 <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
 *             </li>
 *           </ul>
+*           <div class="panel-group accordion basic">
+*            <div class="panel" id="accordion-accordion" role="tablist" aria-multiselectable="true">
+*                <div class="panel-heading" role="tab" id="headingOne">
+*                  <h4 class="panel-title">
+*                    <a role="button" data-toggle="collapse" data-parent="#accordion-accordion" href="#accordionbasicinside" aria-expanded="true" aria-controls="accordionbasicinside" class="collapsed">
+*                      <span class="text">Collapsible Group Item #1</span>
+*                    </a>
+*                  </h4>
+*                </div>
+*                <div id="accordionbasicinside" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+*                  <div class="panel-body">
+*                    <p>@{lipsum:5:sentence}</p>
+*                    <ul class="no-bullets">    
+*                      <li style="page-break-inside: avoid">
+*                          <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*                      </li>
+*                      <li style="page-break-inside: avoid">
+*                          <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*                      </li>
+*                      <li style="page-break-inside: avoid">
+*                          <a href="#.pdf" class="link" target="_blank">@{lipsum:5:words}</a>
+*                      </li>
+*                    </ul>
+*                  </div>
+*                </div>
+*            </div>
+*           </div>
 *         </div>
 *       </div>
 *   </div>
@@ -123,7 +156,16 @@
             -webkit-animation: wiggle .75s ease-in 2;
             -moz-animation: wiggle 0.75s ease-in 2;
         }
+    } 
+    .accordion{
+        .panel-title a:before{
+            content: "\f0d7";
+        }
+        .panel-title a.collapsed:before{
+            content: "\f0da";
+        }
     }
+
 }
 @keyframes wiggle {
     0% {
