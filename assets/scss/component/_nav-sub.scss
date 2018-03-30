@@ -31,6 +31,8 @@
  *              </ul>
  *          </li>
  *          <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *          <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:3:words}</a></li>
+ *          <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
  *          <li class="nav-item parent">
  *              <a class="nav-link" ><i class="fa fa-holder toggle"></i>@{lipsum:5:words}</a>
  *               <ul class="nav flex-column">
@@ -114,7 +116,7 @@
     li li li li>a{padding-left: 4em;}
 
     .toggle{
-        width: 1.25em;
+        width: 1.5em;
         text-align: center;
         display:none;
         transition:transform 0.25s ease-out;

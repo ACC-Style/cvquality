@@ -182,7 +182,6 @@ hr, .divider,.line-spacer,.item-divider, .group-divider,.section-divider{
     margin-bottom:ms(-1); 
     border-bottom-style: solid;
     border-bottom-width:1px;
-    color: inherit;
     border-top:none transparent 0;
 } 
 .divider,hr{ 
@@ -287,8 +286,8 @@ ul.no-indent,ul.multiselect-container,ul.generic-list{
 /**
 * Semantic List for content that shouldn't be bulleted or indented. 
 *
-* @atom Generic List
-* @section Typography > Lists
+* @molecule Generic List
+* @section Typography > Generic List
 * @markup
 *    <ul class="generic-list">
 *        <li>
@@ -326,8 +325,8 @@ ul.generic-list{
 /**
 * Definision List are groups of an item and the description.  Classic definision list is Q&A 
 *
-* @atom Definision List
-* @section Typography > Lists
+* @molecule Definision List
+* @section Typography > Definision List
 * @markup
 *    <dl class="grouped-definision-list term-xs">
 *        <dt><img src="@{image:100:100}" alt="..."></dt> 
@@ -402,8 +401,69 @@ dl.grouped-definision-list{
 }
 
 
+/**
+* Sitefinity Expanding List
+*
+* @molecule Expanding List
+* @section Typography > Exapnding Lists
+* @markup
+*  <div data-sf-role="lists" class="expanding-list">
+*          <h3>
+*              <span>
+*                  Learn more about QII. Click the questions below to expose their answer.
+*              </span>
+*          </h3>
+*              <div>
+*                  <a href="javascript:void(0)" data-sf-role="toggleLink" class="expanded">What is Quality Improvement for Institutions?</a>
+*                  <div style="display: block;">
+*                      <p>Quality Improvement for Institutions is a suite of registries, quality campaigns, accreditation services and clinical toolkits offered to health care facilities and their staff in a convenient, single website.&nbsp; These online assets are intended to inspire and accelerate quality improvement in the facility while saving staff time and energy by providing ready-to-go, off-the-shelf programs and tools.</p>
+*                  </div>
+*              </div>
+*              <div>
+*                  <a href="javascript:void(0)" data-sf-role="toggleLink">How do I access Quality Improvement for Institutions online?</a>
+*                  <div style="display:none;">
+*                      The website for Quality Improvement for Institutions is CVQuality.ACC.org.&nbsp;
+*                  </div>
+*              </div>
+*              <div>
+*                  <a href="javascript:void(0)" data-sf-role="toggleLink">Who is eligible to participate in Quality Improvement for Institutions?</a>
+*                  <div style="display:none;">
+*                      <p style="background: white;">Individuals from&nbsp;<strong>NCDR Registry participating hospitals&nbsp;</strong>have access to the program as part of their NCDR fee.</p> Individuals from&nbsp;<strong>participating PINNACLE Registry practices</strong>&nbsp;have access to the program as part of their PINNACLE Registry association. <br><br>Hospitals that do not participate in an NCDR hospital registry or PINNACLE Registry can join Quality Improvement for Institutions for an annual fee. <br><br>*At this time, hospitals accredited through ACC Accreditation services do not have access to the quality improvement resources available on <em>CVQuality.ACC.org</em>, unless they are also part of an NCDR registry. The ACC is working to provide access to ACC Accredited facilities.
+*                  </div>
+*              </div>
+*      <p data-sf-role="expandAll" style="display: block;">Expand all</p>
+*      <p data-sf-role="collapseAll" style="display:none;">Collapse all</p>
+*  </div>
+*/
+.expanding-list{
+    h3{
+        font-size:ms(4);
+        @extend .divider;
+        @extend .orange;
+        @extend .bold;
+        color: $orange-dark;
+    }
+    [data-sf-role="toggleLink"]{
+        font-size: ms(2);
+        line-height: $baseline-modifier;
+        &:before{
+            // fa-plus-square-o  
+            @extend .icon-before;  
+            content: "\f196";   
+        }     
+        &.expanded{
+            &:before{
+            // fa-minus-square-o
+            content: "\f147";  
+            }
 
+        }
 
+   }
+   [ data-sf-role="toggleLink"] + div{padding:.75rem 1.5rem .5rem 2.25rem;}
+    >div + div{ margin-top:.5rem; border-top:1px dashed $warm-grey-light; padding-top:.5rem;}
+}
+[ data-sf-role="expandAll"],[data-sf-role="collapseAll"]{@extend .btn; @extend .btn-secondary; margin-top: 1rem;}
 
 @import "included/table";
 @import "included/table_scrollable";
