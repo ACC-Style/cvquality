@@ -336,64 +336,31 @@
 	"buffers":
 	[
 		{
-			"file": "assets/scss/index.scss",
+			"file": "assets/scss/base/_fonts.scss",
 			"settings":
 			{
-				"buffer_size": 2085,
+				"buffer_size": 825,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "assets/scss/structure/_cqc-clinician-management.scss",
+			"contents": "Searching 170 files for \"banded\"\n\nC:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss\\structure\\_cqc-clinician-management.scss:\n    2   * Header of the CQC Clincian Mangagment\n    3   * \n    4:  * @molecule Banded Lists Extra\n    5:  * @section Lists > Banded Extra\n    6   * @markup\n    7:  *  <ul class=\"banded-list banded-extra\">\n    8   *      <li class=\"bg-warm-grey-dark\">\n    9   *          <div class=\"row\">\n   ..\n   67   *  </ul>\n   68   **/\n   69:  .banded-extra{}\n   70  \n\nC:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss\\structure\\_cqc.scss:\n  146   * Highly stylized list\n  147   * \n  148:  * @molecule Banded Lists\n  149:  * @section Lists > Banded \n  150  * @modifiers\n  151   *  .bg-orange-dark decorator class that turns the Li background to orange-dark.\n  ...\n  159   *  .bg-mix-orange_teal decorator class that turns the Li background to mix-orange_teal.\n  160   * @markup\n  161:  *  <ul class=\"banded-list\">\n  162   *   <li>\n  163   *      <div class=\"row\">\n  ...\n  183   *  </ul>\n  184   **/\n  185: ul.banded-list{\n  186      @extend .no-bullets;\n  187      @extend .no-indent;\n  ...\n  238   *               <div aria-expanded=\"true\" aria-labelledby=\"headingOne\" class=\"panel-collapse collapse\" id=\"accordionboardsbasic\" role=\"tabpanel\">\n  239   *                   <div class=\"panel-body\">\n  240:  *                       <ul class=\"banded-list\">\n  241   *                         <li>\n  242   *                               <div class=\"row\">\n  ...\n  294   *               <div aria-expanded=\"true\" aria-labelledby=\"headingOne\" class=\"panel-collapse collapse\" id=\"accordioncertsbasic\" role=\"tabpanel\">\n  295   *                   <div class=\"panel-body\">\n  296:  *                       <ul class=\"banded-list\">\n  297   *                         <li>\n  298   *                               <div class=\"row\">\n  ...\n  346   *       <div id=\"accordionDatabasic\" class=\"panel-collapse collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" aria-expanded=\"true\">\n  347   *         <div class=\"panel-body\">\n  348:  *          @{include:ul.banded-list}\n  349   *         </div>\n  350   *       </div>\n\n12 matches across 2 files\n",
 			"settings":
 			{
-				"buffer_size": 2017,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
+				"buffer_size": 2134,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
 			}
 		},
 		{
-			"contents": "/**\n * Header of the CQC so you can navigate between section of the micro app.\n * \n * @molecule CQC - CQC Header \n * @section Xtra > CQC \n * @markup\n *  <header class=\"cqc-header row\">\n *   <hr class=\"divider teal bold m-t-0 \"/>\n *       <div class=\"m-t-0 m-b-0\">\n *          <ul class=\"nav-pills nav\">\n *              <li class=\"nav-item active\"><a class=\"nav-link\">Practice Dashboard</a></li>\n *              <li class=\"nav-item\"><a class=\"nav-link\">Clnician Details</a></li>\n *              <li class=\"nav-item\"><a class=\"nav-link\">Clinician Management</a></li>\n *              <li class=\"nav-item pull-right\"><a href=\"\" class=\"nav-link alt\"><i class=\"fa fa-plus\"></i> Add Clinician</a></li>\n *          </ul>\n *       </div>\n *   <hr class=\"divider teal bold m-t-0\"/>\n *   </header>\n **/\n .cqc-header{}\n\n/**\n * Header of the practice Dashboard.\n * \n * @molecule CQC - Practice Dashbaord Header \n * @section Xtra > CQC \n * @markup\n *  <header class=\"practice-dashboard-header row\">\n *     <h1 class=\"m-b-0\">Practice Dashboard</h1>\n *       <hr class=\"divider orange bold m-t-0 m-b-0 \"/>\n *       <div class=\"box alt m-t-0 m-b-0 col-sm-12\">\n *           <div class=\"row\"><div class=\"col-sm-12 col-lg-8\">\n *              <select name=\"practiceSelect\" id=\"practiceSelect\" class=\"form-control input-lg\"><option>quis Lorem</option></select>\n *              <small>select a practice to view its details</small>\n *           </div>\n *           <div class=\"col-sm-6 col-lg-4\"><a href=\"\" class=\"btn btn-block btn-primary\"><i class=\"fa fa-filter\"></i> Filter By Date</a></div>\n *       </div> </div>    \n *  </header>\n *  <hr class=\"space\"/>\n **/\n .practice-dashboard-header{}\n.clinician-overview,.clinician-list-header{\n    .data{\n        @include font('bold');\n        font-size:ms(0);\n        text-align:center;\n        display:block;\n    }\n        .data-holder + .data-holder{\n        border-left:1px dotted white;\n        margin-left:-1px;\n    }\n}\n\n/**\n * The list of clinicians for the clinican dashboard\n * \n * @molecule CQC - Clinician List Header \n * @section Xtra > CQC \n * @markup\n *  <div class=\"clinician-list-header row\">\n *    <div class=\"col-sm-5\"><a href=\"\" class=\"btn btn-block btn-secondary\">Run Report</a></div>\n *    <div class=\"col-sm-7 data-holder box alt m-t-0 m-b-0 swappable medium\"><div class=\"row\">\n *        <div class=\"col-sm-2 data-holder\"><span class=\"data long-text\">Boards</span><span class=\"data short-text\">Board</span></div>\n *        <div class=\"col-sm-2 data-holder\"><span class=\"data long-text\">Certificates</span><span class=\"data short-text\">Cert</span></div>\n *        <div class=\"col-sm-2 data-holder\"><span class=\"data long-text\">Continued Education</span><span class=\"data short-text\">C. Edu</span></div>\n *        <div class=\"col-sm-2 data-holder\"><span class=\"data long-text\">MOC II<a href=\"\" class=\"\"><sup><i class=\"fa fa-info-circle\"></i></sup></a></span><span class=\"data short-text\">MOC2<a href=\"\" class=\"\"><sup><i class=\"fa fa-info-circle\"></i></sup></a></span></div>\n *        <div class=\"col-sm-2 data-holder\"><span class=\"data long-text\">CMS/MOC IV</span><span class=\"data short-text\">MOC4</span></div>\n *        <div class=\"col-sm-2 data-holder\"><span class=\"data long-text\">Active CQAs</span><span class=\"data short-text\">CQAs</span></div>\n *    </div></div>\n *  </div>\n * \n * \n **/\n.clinicians-list-header{}\n/**\n * The overview data of a clinician.\n * \n * @molecule CQC - Clinician Overview \n * @section Xtra > CQC \n * @markup\n *  <div class=\"clinician-overview row\">\n *    <div class=\"col-sm-5 id\">\n *          <h2 class=\"name\">\n *              <a class=\"link\">@{lipsum:1:words},@{lipsum:2:words}</a>\n *              </h2>\n *          <ul class=\"no-bullets\"><li><h6 class=\"m-0 license\">\n *               License :\n *               <span class=\"value\">\n *                   MD\n *               </span>\n *               <span class=\"value\">\n *                   VA\n *               </span>\n *               <a href=\"http://www.fsmb.org/policy/contacts\">\n *                  <sup><i class=\"fa fa-info-circle\"></i></sup>\n *               </a>\n *           </h6></li>\n *           <li><h6 class=\"m-0 npi\">\n *               NPI:\n *               <span class=\"value\">\n *                  @{lipsum:10:numbers}\n *               </span>\n *           </h6></li>\n *           </ul>\n *      <div class=\"more-link\"> <a href=\"\" class=\"link\"><i class=\"fa fa-plus\"></i> Show Detail Data</a></div>\n *    </div>\n *    <div class=\"col-sm-7\"><div class=\"row\">\n *        <div class=\"col-sm-2 data-holder\"><span class=\"data\">@{lipsum:1:numbers}</span></div>\n *        <div class=\"col-sm-2 data-holder\"><span class=\"data\">@{lipsum:1:numbers}</span></div>\n *        <div class=\"col-sm-2 data-holder\"><span class=\"data\">@{lipsum:1:numbers}</span></div>\n *        <div class=\"col-sm-2 data-holder\"><span class=\"data\">@{lipsum:1:numbers}</span></div>\n *        <div class=\"col-sm-2 data-holder\"><span class=\"data\">@{lipsum:1:numbers}</span></div>\n *        <div class=\"col-sm-2 data-holder\"><span class=\"data\">@{lipsum:2:numbers}</span></div>\n *    </div></div>\n *  </div>\n * \n * \n **/\n.clinician-overview{\n    border-top:1px solid $scrub-teal-light;\n    border-bottom: 1px solid $warm-grey;\n    background:$soft-blue;\n    .name{margin:.5em 0 .25em;}\n    .data{\n        font-size:ms(4);\n        vertical-align:middle;\n        margin: 1.375em auto;\n        width: 1em;\n    }\n\n    .id{\n        background-color:white;\n        padding:.25em 0 0;\n    }\n\n}\n.more-link{\n    padding:.35rem;\n    margin-top:.75rem;\n    border-top: 1px solid $warm-grey;\n}\n\n\n/**\n * Highly stylized list\n * \n * @molecule Banded Lists\n * @section Lists > Banded \n* @modifiers\n *  .bg-orange-dark decorator class that turns the Li background to orange-dark.\n *  .bg-orange-light decorator class that turns the Li background to orange-light.\n *  .bg-pink decorator class that turns the Li background to pink.\n *  .bg-blue decorator class that turns the Li background to blue.\n *  .bg-warm-grey-dark decorator class that turns the Li background to warm-grey-dark.\n *  .bg-warm-grey decorator class that turns the Li background to warm-grey.\n *  .bg-scrub-teal decorator class that turns the Li background to scrub-teal.\n *  .bg-mix-teal_orange decorator class that turns the Li background to mix-teal_orange.\n *  .bg-mix-orange_teal decorator class that turns the Li background to mix-orange_teal.\n * @markup\n *  <ul class=\"banded-list\">\n *   <li>\n *      <div class=\"row\">\n *        <div class=\"col-sm-7\"><strong>@{lipsum:3:words}</strong></div>\n *        <div class=\"col-sm-2 text-right\"><small><em>Started:</em> @{lipsum:1:numbers}/@{lipsum:1:numbers}/2017</small></div>\n *        <div class=\"col-sm-3\">@{include:.progress-bar-primary}</div>\n *      </div>\n *   </li>\n *   <li>\n *      <div class=\"row\">\n *        <div class=\"col-sm-7\"><strong>@{lipsum:3:words}</strong></div>\n *        <div class=\"col-sm-2 text-right\"><small><em>Started:</em> @{lipsum:1:numbers}/@{lipsum:1:numbers}/2017</small></div>\n *        <div class=\"col-sm-3\">@{include:.progress-bar-primary}</div>\n *      </div> \n *   </li>\n *   <li>\n *      <div class=\"row\">\n *        <div class=\"col-sm-7\"><strong>@{lipsum:3:words}</strong></div>\n *        <div class=\"col-sm-2 text-right\"><small><em>Started:</em> @{lipsum:1:numbers}/@{lipsum:1:numbers}/2017</small></div>\n *        <div class=\"col-sm-3\">@{include:.progress-bar-primary}</div>\n *      </div>\n *   </li>\n *  </ul>\n **/\nul.banded-list{\n    @extend .no-bullets;\n    @extend .no-indent;\n    .progress{\n        height:1rem;\n        margin-bottom:0;\n    }\n    .progress-bar{\n        font-size: ms(-3);\n        line-height: 1.75em;\n    }\n\n    li:nth-child(even){\n        background-color:mix($soft-blue,white,25%);\n    }\n    li, li:nth-child(even){\n\n        padding:.5rem 1rem;\n        &.bg-warm-grey{ background-color: $warm-grey; color: $off-white}\n        &.bg-warm-grey-dark{ background-color: $warm-grey-dark; color: $off-white}\n        &.bg-orange-dark{ background-color: $orange-dark; color: $off-white}\n        &.bg-orange-light{ background-color: $orange-light; color: $off-black}\n        &.bg-scrub-teal{ background-color: $scrub-teal; color: $off-white}\n        &.bg-mix-teal_orange{background-color:$mix-teal_orange; color: $off-white}\n        &.bg-mix-orange_teal{background-color:$mix-orange_teal; color: $off-white}\n        &.bg-pink{background-color: #e91e63; color:white;}\n        &.bg-blue{background-color: #e91e63; color:white;}\n\n    }\n\n    \n}\n/**\n * The expanded data of a clinician.\n * \n * @molecule CQC - Clinician Data \n * @section Xtra > CQC \n * @markup\n *  <div class=\"clinician-data row\">\n *  <div class=\"panel-group accordion basic\">\n *       <div aria-multiselectable=\"true\" class=\"panel\" id=\"accordionboards\" role=\"tablist\">\n *               <div class=\"panel-heading\" id=\"headingOne\" role=\"tab\">\n *                   <h4 class=\"panel-title\">\n *                       <a aria-controls=\"accordionboardsbasic\" aria-expanded=\"true\" class=\"collapsed\" data-parent=\"#accordionboards\" data-toggle=\"collapse\" href=\"#accordionboardsbasic\" role=\"button\">\n *                           <span class=\"text\">\n *                               Boards\n *                           </span>\n *                           <strong class=\"pull-right\">\n *                               2\n *                           </strong>\n *                       </a>\n *                   </h4>\n *               </div>\n *               <div aria-expanded=\"true\" aria-labelledby=\"headingOne\" class=\"panel-collapse collapse\" id=\"accordionboardsbasic\" role=\"tabpanel\">\n *                   <div class=\"panel-body\">\n *                       <ul class=\"banded-list\">\n *                         <li>\n *                               <div class=\"row\">\n *                                   <div class=\"col-sm-9\">\n *                                       <strong>\n *                                           @{lipsum:3:words}\n *                                       </strong>\n *                                   </div>\n *                                   <div class=\"col-sm-3 text-right\">\n *                                       <small>\n *                                           <em>\n *                                               Diplomate #:\n *                                           </em>\n *                                           @{lipsum:9:numbers}\n *                                       </small>\n *                                   </div>\n *                               </div>\n *                           </li>\n *                           <li>\n *                               <div class=\"row\">\n *                                   <div class=\"col-sm-9\">\n *                                       <strong>\n *                                           @{lipsum:3:words}\n *                                       </strong>\n *                                   </div>\n *                                   <div class=\"col-sm-3 text-right\">\n *                                       <small>\n *                                           <em>\n *                                               Diplomate #:\n *                                           </em>\n *                                           @{lipsum:9:numbers}\n *                                       </small>\n *                                   </div>\n *                               </div>\n *                           </li>\n *                       </ul>\n *                   </div>\n *               </div>\n *           </div>\n *       </div>\n *  <div class=\"panel-group accordion basic\">\n *       <div aria-multiselectable=\"true\" class=\"panel\" id=\"accordioncerts\" role=\"tablist\">\n *               <div class=\"panel-heading\" id=\"headingOne\" role=\"tab\">\n *                   <h4 class=\"panel-title\">\n *                       <a aria-controls=\"accordioncertsbasic\" aria-expanded=\"true\" class=\"collapsed\" data-parent=\"#accordioncerts\" data-toggle=\"collapse\" href=\"#accordioncertsbasic\" role=\"button\">\n *                           <span class=\"text\">\n *                               Certificates\n *                           </span>\n *                           <strong class=\"pull-right\">\n *                               2\n *                           </strong>\n *                       </a>\n *                   </h4>\n *               </div>\n *               <div aria-expanded=\"true\" aria-labelledby=\"headingOne\" class=\"panel-collapse collapse\" id=\"accordioncertsbasic\" role=\"tabpanel\">\n *                   <div class=\"panel-body\">\n *                       <ul class=\"banded-list\">\n *                         <li>\n *                               <div class=\"row\">\n *                                   <div class=\"col-sm-9\">\n *                                       <strong>\n *                                           @{lipsum:3:words}\n *                                       </strong>\n *                                   </div>\n *                                   <div class=\"col-sm-3 text-right\">\n *                                       <small>\n *                                           <em>\n *                                               Expires:\n *                                           </em>\n *                                           2/9/202@{lipsum:1:numbers}\n *                                       </small>\n *                                   </div>\n *                               </div>\n *                           </li>\n *                           <li>\n *                               <div class=\"row\">\n *                                   <div class=\"col-sm-9\">\n *                                       <strong>\n *                                           @{lipsum:3:words}\n *                                       </strong>\n *                                   </div>\n *                                   <div class=\"col-sm-3 text-right\">\n *                                       <small>\n *                                           <em>\n *                                               Expires:\n *                                           </em>\n *                                           2/9/202@{lipsum:1:numbers}\n *                                       </small>\n *                                   </div>\n *                               </div>\n *                           </li>\n *                       </ul>\n *                   </div>\n *               </div>\n *           </div>\n *       </div>\n *  <div class=\"panel-group accordion basic m-b-0\">\n *   <div class=\"panel\" id=\"accordionData\" role=\"tablist\" aria-multiselectable=\"true\">\n *       <div class=\"panel-heading\" role=\"tab\" id=\"headingOne\">\n *         <h4 class=\"panel-title\">\n *           <a role=\"button\" data-toggle=\"collapse\" data-parent=\"#accordionData\" href=\"#accordionDatabasic\" aria-expanded=\"true\" aria-controls=\"accordionDatabasic\" class=\"collapsed\">\n *             <span class=\"text\">Active CQAs</span>\n *             <strong class=\"pull-right\">3</strong>\n *           </a>\n *         </h4>\n *       </div>\n *       <div id=\"accordionDatabasic\" class=\"panel-collapse collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" aria-expanded=\"true\">\n *         <div class=\"panel-body\">\n *          @{include:ul.banded-list}\n *         </div>\n *       </div>\n *   </div>\n *  </div>\n *  </div>\n **/\n.clinician-data{\n    .panel-group .panel{border-radius:0;border:0 none;}\n    .accordion .panel-heading{border-bottom:$warm-grey 2px solid;border-top:$warm-grey 2px solid;border-radius:0;}\n    .panel-body{padding:0;}\n    .panel-title{font-size:ms(1);}\n}\n\n\n/**\n * the list of clinicians for the clinican dashboard\n * \n * @structure CQC - Clinician List\n * @section Xtra > CQC \n * @markup\n *  <div class=\"clinician-list\">\n *     @{include:.clinicians-list-header}\n *     <div class=\"cliician\">\n *     @{include:.clinician-overview}\n *     @{include:.clinician-data}\n *     </div>\n *     <div class=\"cliician\">\n *     @{include:.clinician-overview}\n *     @{include:.clinician-data}\n *     </div>\n *  </div>\n *     \n */\n.clinicians-list{}\n\n/**\n * A mirco app inside the cvquality runs the administration of Clinical Quaility Coach.\n * \n * @layouts CQC Page - Practice Dashboard\n * @section Wireframes CQC > Practice Dashboard\n * @flag full-width\n * @markup\n *  <div class=\"body\">\n *      <div class=\"wrapper container-fluid\">\n *           @{include:#header}\n *           @{include:.mobile-menu-toggle-container}\n *           <div class=\"row\">@{include:.nav-primary}</div>\n *           <div id=\"aux\" class=\"row\">@{include:.breadcrumb}</div>\n *           <div id=\"layout\" class=\"row no-gutter\">\n *              <div class=\"col-lg-3 col-md-4 col-xl-3 p-0 d-none d-lg-block\"> @{include:.nav-sub}@{include:.nav-social-button.small}</div>\n *              <div class=\"col-lg-9 col-md-8 col-xl-13\">\n *                  <div class=\"page-content\">\n *                      @{include:.cqc-header} \n *                      @{include:.practice-dashboard-header}\n *                      @{include:.clinicians-list}\n *                      <hr class=\"divider bold teal row\"/>\n *                      <div class=\"pull-right\">@{include:.pagination}</div>\n *                  </div>\n *              </div>\n *           </div>\n *           @{include:#footer}\n *      </div>\n *  </div>\n */\n .x-cqc-page{}\n",
+			"contents": "/**\n * Header of the CQC so you can navigate between section of the micro app.\n * \n * @molecule CQC - CQC Header \n * @section Xtra > CQC \n * @markup\n *  <header class=\"cqc-header row\">\n *   <hr class=\"divider teal bold m-t-0 \"/>\n *       <div class=\"m-t-0 m-b-0\">\n *          <ul class=\"nav-pills nav\">\n *              <li class=\"nav-item active\"><a class=\"nav-link\">Practice Dashboard</a></li>\n *              <li class=\"nav-item\"><a class=\"nav-link\">Clnician Details</a></li>\n *              <li class=\"nav-item\"><a class=\"nav-link\">Clinician Management</a></li>\n *              <li class=\"nav-item pull-right\"><a href=\"\" class=\"nav-link alt\"><i class=\"fa fa-plus\"></i> Add Clinician</a></li>\n *          </ul>\n *       </div>\n *   <hr class=\"divider teal bold m-t-0\"/>\n *   </header>\n **/\n .cqc-header{}\n\n/**\n * Header of the practice Dashboard.\n * \n * @molecule CQC - Practice Dashbaord Header \n * @section Xtra > CQC \n * @markup\n *  <header class=\"practice-dashboard-header row\">\n *     <h1 class=\"m-b-0\">Practice Dashboard</h1>\n *       <hr class=\"divider orange bold m-t-0 m-b-0 \"/>\n *       <div class=\"box alt m-t-0 m-b-0 col-sm-12\">\n *           <div class=\"row\"><div class=\"col-sm-12 col-lg-8\">\n *              <select name=\"practiceSelect\" id=\"practiceSelect\" class=\"form-control input-lg\"><option>quis Lorem</option></select>\n *              <small>select a practice to view its details</small>\n *           </div>\n *           <div class=\"col-sm-6 col-lg-4\"><a href=\"\" class=\"btn btn-block btn-primary\"><i class=\"fa fa-filter\"></i> Filter By Date</a></div>\n *       </div> </div>    \n *  </header>\n *  <hr class=\"space\"/>\n **/\n .practice-dashboard-header{}\n.clinician-overview,.clinician-list-header{\n    .data{\n        @include font('bold');\n        font-size:ms(0);\n        text-align:center;\n        display:block;\n    }\n        .data-holder + .data-holder{\n        border-left:1px dotted white;\n        margin-left:-1px;\n    }\n}\n\n/**\n * The list of clinicians for the clinican dashboard\n * \n * @molecule CQC - Clinician List Header \n * @section Xtra > CQC \n * @markup\n *  <div class=\"clinician-list-header row\">\n *    <div class=\"col-sm-5\"><a href=\"\" class=\"btn btn-block btn-secondary\">Run Report</a></div>\n *    <div class=\"col-sm-7 data-holder box alt m-t-0 m-b-0 swappable medium\"><div class=\"row\">\n *        <div class=\"col-sm-2 data-holder\"><span class=\"data long-text\">Boards</span><span class=\"data short-text\">Board</span></div>\n *        <div class=\"col-sm-2 data-holder\"><span class=\"data long-text\">Certificates</span><span class=\"data short-text\">Cert</span></div>\n *        <div class=\"col-sm-2 data-holder\"><span class=\"data long-text\">Continued Education</span><span class=\"data short-text\">C. Edu</span></div>\n *        <div class=\"col-sm-2 data-holder\"><span class=\"data long-text\">MOC II<a href=\"\" class=\"\"><sup><i class=\"fa fa-info-circle\"></i></sup></a></span><span class=\"data short-text\">MOC2<a href=\"\" class=\"\"><sup><i class=\"fa fa-info-circle\"></i></sup></a></span></div>\n *        <div class=\"col-sm-2 data-holder\"><span class=\"data long-text\">CMS/MOC IV</span><span class=\"data short-text\">MOC4</span></div>\n *        <div class=\"col-sm-2 data-holder\"><span class=\"data long-text\">Active CQAs</span><span class=\"data short-text\">CQAs</span></div>\n *    </div></div>\n *  </div>\n * \n * \n **/\n.clinicians-list-header{}\n/**\n * The overview data of a clinician.\n * \n * @molecule CQC - Clinician Overview \n * @section Xtra > CQC \n * @markup\n *  <div class=\"clinician-overview row\">\n *    <div class=\"col-sm-5 id\">\n *          <h2 class=\"name\">\n *              <a class=\"link\">@{lipsum:1:words},@{lipsum:2:words}</a>\n *              </h2>\n *          <ul class=\"no-bullets\"><li><h6 class=\"m-0 license\">\n *               License :\n *               <span class=\"value\">\n *                   MD\n *               </span>\n *               <span class=\"value\">\n *                   VA\n *               </span>\n *               <a href=\"http://www.fsmb.org/policy/contacts\">\n *                  <sup><i class=\"fa fa-info-circle\"></i></sup>\n *               </a>\n *           </h6></li>\n *           <li><h6 class=\"m-0 npi\">\n *               NPI:\n *               <span class=\"value\">\n *                  @{lipsum:10:numbers}\n *               </span>\n *           </h6></li>\n *           </ul>\n *      <div class=\"more-link\"> <a href=\"\" class=\"link\"><i class=\"fa fa-plus\"></i> Show Detail Data</a></div>\n *    </div>\n *    <div class=\"col-sm-7\"><div class=\"row\">\n *        <div class=\"col-sm-2 data-holder\"><span class=\"data\">@{lipsum:1:numbers}</span></div>\n *        <div class=\"col-sm-2 data-holder\"><span class=\"data\">@{lipsum:1:numbers}</span></div>\n *        <div class=\"col-sm-2 data-holder\"><span class=\"data\">@{lipsum:1:numbers}</span></div>\n *        <div class=\"col-sm-2 data-holder\"><span class=\"data\">@{lipsum:1:numbers}</span></div>\n *        <div class=\"col-sm-2 data-holder\"><span class=\"data\">@{lipsum:1:numbers}</span></div>\n *        <div class=\"col-sm-2 data-holder\"><span class=\"data\">@{lipsum:2:numbers}</span></div>\n *    </div></div>\n *  </div>\n * \n * \n **/\n.clinician-overview{\n    border-top:1px solid $scrub-teal-light;\n    border-bottom: 1px solid $warm-grey;\n    background:$soft-blue;\n    .name{margin:.5em 0 .25em;}\n    .data{\n        font-size:ms(4);\n        vertical-align:middle;\n        margin: 1.375em auto;\n        width: 1em;\n    }\n\n    .id{\n        background-color:white;\n        padding:.25em 0 0;\n    }\n\n}\n.more-link{\n    padding:.35rem;\n    margin-top:.75rem;\n    border-top: 1px solid $warm-grey;\n}\n\n\n/**\n * Highly stylized list\n * \n * @molecule Banded Lists\n * @section Lists > Banded \n* @modifiers\n *  .bg-orange-dark decorator class that turns the Li background to orange-dark.\n *  .bg-orange-light decorator class that turns the Li background to orange-light.\n *  .bg-pink decorator class that turns the Li background to pink.\n *  .bg-blue decorator class that turns the Li background to blue.\n *  .bg-warm-grey-dark decorator class that turns the Li background to warm-grey-dark.\n *  .bg-warm-grey decorator class that turns the Li background to warm-grey.\n *  .bg-scrub-teal decorator class that turns the Li background to scrub-teal.\n *  .bg-mix-teal_orange decorator class that turns the Li background to mix-teal_orange.\n *  .bg-mix-orange_teal decorator class that turns the Li background to mix-orange_teal.\n * @markup\n *  <ul class=\"banded-list\">\n *   <li>\n *      <div class=\"row\">\n *        <div class=\"col-sm-7\"><strong>@{lipsum:3:words}</strong></div>\n *        <div class=\"col-sm-2 text-right\"><small><em>Started:</em> @{lipsum:1:numbers}/@{lipsum:1:numbers}/2017</small></div>\n *        <div class=\"col-sm-3\">@{include:.progress-bar-primary}</div>\n *      </div>\n *   </li>\n *   <li>\n *      <div class=\"row\">\n *        <div class=\"col-sm-7\"><strong>@{lipsum:3:words}</strong></div>\n *        <div class=\"col-sm-2 text-right\"><small><em>Started:</em> @{lipsum:1:numbers}/@{lipsum:1:numbers}/2017</small></div>\n *        <div class=\"col-sm-3\">@{include:.progress-bar-primary}</div>\n *      </div> \n *   </li>\n *   <li>\n *      <div class=\"row\">\n *        <div class=\"col-sm-7\"><strong>@{lipsum:3:words}</strong></div>\n *        <div class=\"col-sm-2 text-right\"><small><em>Started:</em> @{lipsum:1:numbers}/@{lipsum:1:numbers}/2017</small></div>\n *        <div class=\"col-sm-3\">@{include:.progress-bar-primary}</div>\n *      </div>\n *   </li>\n *  </ul>\n **/\nul.banded-list{\n    @extend .no-bullets;\n    @extend .no-indent;\n    .progress{\n        height:1rem;\n        margin-bottom:0;\n    }\n    .progress-bar{\n        font-size: ms(-3);\n        line-height: 1.75em;\n    }\n\n    li:nth-child(even){\n        background-color:mix($soft-blue,white,25%);\n    }\n    li, li:nth-child(even){\n\n        padding:.5rem 1rem;\n        &.bg-warm-grey{ background-color: $warm-grey; color: $off-white}\n        &.bg-warm-grey-dark{ background-color: $warm-grey-dark; color: $off-white}\n        &.bg-orange-dark{ background-color: $orange-dark; color: $off-white}\n        &.bg-orange-light{ background-color: $orange-light; color: $off-black}\n        &.bg-scrub-teal{ background-color: $scrub-teal; color: $off-white}\n        &.bg-mix-teal_orange{background-color:$mix-teal_orange; color: $off-white}\n        &.bg-mix-orange_teal{background-color:$mix-orange_teal; color: $off-white}\n        &.bg-pink{background-color: #e91e63; color:white;}\n        &.bg-blue{background-color: #e91e63; color:white;}\n\n    }\n\n    \n}\n\n/*******  >>>>>>>>>>>>>>>>>>>>   TO DO <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n **      Create these alias\n **      CME    AMA PRA Category 1TM Credit(s)  #00a15b     \n **     COP Participation   #775891 \n **     CE  CE  #a8a8a8 This is the old name for what is currently called CNE. We don’t grant this anymore, but it is still in the system. \n **     MOC ABIM MOC Part II    #9a1267 Usually for MOC II \n **     CNE     CNE     #198dae    \n**/\n\n\n/*******  >>>>>>>>>>>>>>>>>>>>   TO DO <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n **     Move all list to a _list.scss file.   There is some in typography and here. \n**/\n\n\n/**\n * The expanded data of a clinician.\n * \n * @molecule CQC - Clinician Data \n * @section Xtra > CQC \n * @markup\n *  <div class=\"clinician-data row\">\n *  <div class=\"panel-group accordion basic\">\n *       <div aria-multiselectable=\"true\" class=\"panel\" id=\"accordionboards\" role=\"tablist\">\n *               <div class=\"panel-heading\" id=\"headingOne\" role=\"tab\">\n *                   <h4 class=\"panel-title\">\n *                       <a aria-controls=\"accordionboardsbasic\" aria-expanded=\"true\" class=\"collapsed\" data-parent=\"#accordionboards\" data-toggle=\"collapse\" href=\"#accordionboardsbasic\" role=\"button\">\n *                           <span class=\"text\">\n *                               Boards\n *                           </span>\n *                           <strong class=\"pull-right\">\n *                               2\n *                           </strong>\n *                       </a>\n *                   </h4>\n *               </div>\n *               <div aria-expanded=\"true\" aria-labelledby=\"headingOne\" class=\"panel-collapse collapse\" id=\"accordionboardsbasic\" role=\"tabpanel\">\n *                   <div class=\"panel-body\">\n *                       <ul class=\"banded-list\">\n *                         <li>\n *                               <div class=\"row\">\n *                                   <div class=\"col-sm-9\">\n *                                       <strong>\n *                                           @{lipsum:3:words}\n *                                       </strong>\n *                                   </div>\n *                                   <div class=\"col-sm-3 text-right\">\n *                                       <small>\n *                                           <em>\n *                                               Diplomate #:\n *                                           </em>\n *                                           @{lipsum:9:numbers}\n *                                       </small>\n *                                   </div>\n *                               </div>\n *                           </li>\n *                           <li>\n *                               <div class=\"row\">\n *                                   <div class=\"col-sm-9\">\n *                                       <strong>\n *                                           @{lipsum:3:words}\n *                                       </strong>\n *                                   </div>\n *                                   <div class=\"col-sm-3 text-right\">\n *                                       <small>\n *                                           <em>\n *                                               Diplomate #:\n *                                           </em>\n *                                           @{lipsum:9:numbers}\n *                                       </small>\n *                                   </div>\n *                               </div>\n *                           </li>\n *                       </ul>\n *                   </div>\n *               </div>\n *           </div>\n *       </div>\n *  <div class=\"panel-group accordion basic\">\n *       <div aria-multiselectable=\"true\" class=\"panel\" id=\"accordioncerts\" role=\"tablist\">\n *               <div class=\"panel-heading\" id=\"headingOne\" role=\"tab\">\n *                   <h4 class=\"panel-title\">\n *                       <a aria-controls=\"accordioncertsbasic\" aria-expanded=\"true\" class=\"collapsed\" data-parent=\"#accordioncerts\" data-toggle=\"collapse\" href=\"#accordioncertsbasic\" role=\"button\">\n *                           <span class=\"text\">\n *                               Certificates\n *                           </span>\n *                           <strong class=\"pull-right\">\n *                               2\n *                           </strong>\n *                       </a>\n *                   </h4>\n *               </div>\n *               <div aria-expanded=\"true\" aria-labelledby=\"headingOne\" class=\"panel-collapse collapse\" id=\"accordioncertsbasic\" role=\"tabpanel\">\n *                   <div class=\"panel-body\">\n *                       <ul class=\"banded-list\">\n *                         <li>\n *                               <div class=\"row\">\n *                                   <div class=\"col-sm-9\">\n *                                       <strong>\n *                                           @{lipsum:3:words}\n *                                       </strong>\n *                                   </div>\n *                                   <div class=\"col-sm-3 text-right\">\n *                                       <small>\n *                                           <em>\n *                                               Expires:\n *                                           </em>\n *                                           2/9/202@{lipsum:1:numbers}\n *                                       </small>\n *                                   </div>\n *                               </div>\n *                           </li>\n *                           <li>\n *                               <div class=\"row\">\n *                                   <div class=\"col-sm-9\">\n *                                       <strong>\n *                                           @{lipsum:3:words}\n *                                       </strong>\n *                                   </div>\n *                                   <div class=\"col-sm-3 text-right\">\n *                                       <small>\n *                                           <em>\n *                                               Expires:\n *                                           </em>\n *                                           2/9/202@{lipsum:1:numbers}\n *                                       </small>\n *                                   </div>\n *                               </div>\n *                           </li>\n *                       </ul>\n *                   </div>\n *               </div>\n *           </div>\n *       </div>\n *  <div class=\"panel-group accordion basic m-b-0\">\n *   <div class=\"panel\" id=\"accordionData\" role=\"tablist\" aria-multiselectable=\"true\">\n *       <div class=\"panel-heading\" role=\"tab\" id=\"headingOne\">\n *         <h4 class=\"panel-title\">\n *           <a role=\"button\" data-toggle=\"collapse\" data-parent=\"#accordionData\" href=\"#accordionDatabasic\" aria-expanded=\"true\" aria-controls=\"accordionDatabasic\" class=\"collapsed\">\n *             <span class=\"text\">Active CQAs</span>\n *             <strong class=\"pull-right\">3</strong>\n *           </a>\n *         </h4>\n *       </div>\n *       <div id=\"accordionDatabasic\" class=\"panel-collapse collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" aria-expanded=\"true\">\n *         <div class=\"panel-body\">\n *          @{include:ul.banded-list}\n *         </div>\n *       </div>\n *   </div>\n *  </div>\n *  </div>\n **/\n.clinician-data{\n    .panel-group .panel{border-radius:0;border:0 none;}\n    .accordion .panel-heading{border-bottom:$warm-grey 2px solid;border-top:$warm-grey 2px solid;border-radius:0;}\n    .panel-body{padding:0;}\n    .panel-title{font-size:ms(1);}\n}\n\n\n/**\n * the list of clinicians for the clinican dashboard\n * \n * @structure CQC - Clinician List\n * @section Xtra > CQC \n * @markup\n *  <div class=\"clinician-list\">\n *     @{include:.clinicians-list-header}\n *     <div class=\"cliician\">\n *     @{include:.clinician-overview}\n *     @{include:.clinician-data}\n *     </div>\n *     <div class=\"cliician\">\n *     @{include:.clinician-overview}\n *     @{include:.clinician-data}\n *     </div>\n *  </div>\n *     \n */\n.clinicians-list{}\n\n/**\n * A mirco app inside the cvquality runs the administration of Clinical Quaility Coach.\n * \n * @layouts CQC Page - Practice Dashboard\n * @section Wireframes CQC > Practice Dashboard\n * @flag full-width\n * @markup\n *  <div class=\"body\">\n *      <div class=\"wrapper container-fluid\">\n *           @{include:#header}\n *           @{include:.mobile-menu-toggle-container}\n *           <div class=\"row\">@{include:.nav-primary}</div>\n *           <div id=\"aux\" class=\"row\">@{include:.breadcrumb}</div>\n *           <div id=\"layout\" class=\"row no-gutter\">\n *              <div class=\"col-lg-3 col-md-4 col-xl-3 p-0 d-none d-lg-block\"> @{include:.nav-sub}@{include:.nav-social-button.small}</div>\n *              <div class=\"col-lg-9 col-md-8 col-xl-13\">\n *                  <div class=\"page-content\">\n *                      @{include:.cqc-header} \n *                      @{include:.practice-dashboard-header}\n *                      @{include:.clinicians-list}\n *                      <hr class=\"divider bold teal row\"/>\n *                      <div class=\"pull-right\">@{include:.pagination}</div>\n *                  </div>\n *              </div>\n *           </div>\n *           @{include:#footer}\n *      </div>\n *  </div>\n */\n .x-cqc-page{}\n",
 			"file": "assets/scss/structure/_cqc.scss",
-			"file_size": 17278,
-			"file_write_time": 131668192978005332,
+			"file_size": 17284,
+			"file_write_time": 131668911664904126,
 			"settings":
 			{
-				"buffer_size": 17284,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/scss/component/_card.scss",
-			"settings":
-			{
-				"buffer_size": 22803,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/Users/mwatier/Desktop/Sitemenu.txt",
-			"settings":
-			{
-				"buffer_size": 3330,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "<ul class=\"banded-list\">\n    <li class=\"bg-warm-grey-dark\">\n        <div class=\"row\">\n             <div class=\"col-xs-12\">\n                 <strong>\n                     License\n                 </strong>\n             </div>\n        </div>\n    </li>\n   \t<li class=\"bg-warm-grey\">\n   \t\t <div class=\"row\">\n        \t<div class=\"col-xs-4\">\n        \t\t<strong>License     </strong>\n        \t</div>\t\n        \t<div class=\"col-xs-4 text-center\">\n        \t\t<strong>License Number</strong>\n        \t</div>\n        \t<div class=\"col-xs-4 text-right\">\n        \t\t<strong>Issue date</strong>\n        \t</div>\n        </div>\n    </li>\n    <li>\n   \t    <div class=\"row\">\n        \t<div class=\"col-xs-4\">\n        \t\t<strong>Maryland</strong>\n        \t</div>\t\n        \t<div class=\"col-xs-4 text-center\">\n        \t\t<strong>1475309</strong>\n        \t</div>\n        \t<div class=\"col-xs-4 text-right\">\n        \t\t<strong>6/8/2008</strong>\n        \t</div>\n        </div>\n    </li><li>\n        <div class=\"row\">\n        \t<div class=\"col-xs-4\">\n        \t\t<strong>DC</strong>\n        \t</div>\t\n        \t<div class=\"col-xs-4 text-center\">\n        \t\t<strong>1475309</strong>\n        \t</div>\n        \t<div class=\"col-xs-4 text-right\">\n        \t\t<strong>6/8/2008</strong>\n        \t</div>\n        </div>\n    </li><li>\n        <div class=\"row\">\n        \t<div class=\"col-xs-4\">\n        \t\t<strong>Verginia</strong>\n        \t</div>\t\n        \t<div class=\"col-xs-4 text-center\">\n        \t\t<strong>1475309</strong>\n        \t</div>\n        \t<div class=\"col-xs-4 text-right\">\n        \t\t<strong>6/8/2008</strong>\n        \t</div>\n        </div>\n    </li> \n</ul>",
-			"settings":
-			{
-				"buffer_size": 1612,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/vendor/bootstrap.override/_collapse.override.scss",
-			"settings":
-			{
-				"buffer_size": 15477,
-				"encoding": "UTF-8",
+				"buffer_size": 17906,
 				"line_ending": "Unix"
 			}
 		}
@@ -595,26 +562,24 @@
 	"expanded_folders":
 	[
 		"/C/Users/mwatier/REPOS/cvquality",
-		"/C/Users/mwatier/REPOS/cvquality/assets",
-		"/C/Users/mwatier/REPOS/cvquality/assets/scss",
-		"/C/Users/mwatier/REPOS/cvquality/assets/scss/base",
-		"/C/Users/mwatier/REPOS/cvquality/assets/scss/component",
-		"/C/Users/mwatier/REPOS/cvquality/assets/scss/helpers",
-		"/C/Users/mwatier/REPOS/cvquality/assets/scss/structure",
-		"/C/Users/mwatier/REPOS/cvquality/assets/scss/vendor",
-		"/C/Users/mwatier/REPOS/cvquality/assets/scss/vendor/bootstrap.override"
+		"/C/Users/mwatier/REPOS/cvquality/assets"
 	],
 	"file_history":
 	[
-		"/C/Users/mwatier/REPOS/cvquality/assets/scss/base/_colors.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/component/_nav-sub.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/index.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/structure/_cqc-clinician-management.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/structure/_cqc.scss",
 		"/C/Users/mwatier/REPOS/cvquality/assets/scss/base/_typography.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/_setup.scss",
+		"/C/Users/mwatier/Desktop/Sitemenu.txt",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/vendor/bootstrap.override/_collapse.override.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/base/_colors.scss",
 		"/C/Users/mwatier/REPOS/cvquality/assets/scss/component/_button.scss",
 		"/C/Users/mwatier/REPOS/cvquality/node_modules/nucleus-styleguide/src/Substitute.js",
 		"/C/Users/mwatier/REPOS/cvquality/mods to node-styleguid/generator.js",
 		"/C/Users/mwatier/REPOS/cvquality/assets/scss/vendor/bootstrap.override/_pagination.override.scss",
 		"/C/Users/mwatier/REPOS/cvquality/mods to node-styleguid/nucleus-styleguide/src/Substitute.js",
-		"/C/Users/mwatier/REPOS/cvquality/assets/scss/structure/_cqc.scss",
-		"/C/Users/mwatier/REPOS/cvquality/assets/scss/index.scss",
 		"/C/Users/mwatier/REPOS/cvquality/node_modules/nucleus-styleguide/coverage/lcov-report/src/Substitute.js.html",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/structure/_cqc.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_card.scss",
@@ -728,22 +693,20 @@
 		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/src/entities/Icon.js",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap-sass-3.3.7/sass/bootstrap/mixins/_buttons.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_nav-basic.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap-sass-3.3.7/javascripts/bootstrap/button.js",
-		"/C/Users/mwatier/Repo/Bristol/templates/includes/layouts/base-layout.liquid",
-		"/C/Users/mwatier/Repo/Bristol/GruntFile.js",
-		"/C/Users/mwatier/Repo/Bristol/package.json",
-		"/C/Users/mwatier/Repo/Bristol/templates/index.liquid",
-		"/C/Users/mwatier/Repo/Bristol/Assets/scss/index.scss"
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap-sass-3.3.7/javascripts/bootstrap/button.js"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
 		"height": 158.0,
 		"where_history":
 		[
+			"C:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss",
+			"C:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss\\base",
+			"C:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss",
 			"C:\\Users\\mwatier\\REPOS\\cvquality\\node_modules\\nucleus-styleguide",
 			"C:\\Users\\mwatier\\REPOS\\cvquality\\mods to node-styleguid\\nucleus-styleguide",
 			"C:\\Users\\mwatier\\REPOS\\cvquality\\mods to node-styleguid\\nucleus-styleguide\\src",
@@ -779,6 +742,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"banded",
+			"toggle",
+			"divider",
+			"divid",
+			"divider",
+			"@olecules",
+			"list",
 			"accordionbasic",
 			"accordion",
 			"grey-bg",
@@ -899,14 +869,7 @@
 			"dd{width",
 			"width",
 			"border-bottom-style",
-			"item-divider",
-			"print",
-			"class=\"ad-container ",
-			"col-md-4",
-			"col-lg-9",
-			"col-lg-3 ",
-			"undecorated",
-			"7"
+			"item-divider"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -934,55 +897,116 @@
 			[
 				{
 					"buffer": 0,
-					"file": "assets/scss/index.scss",
-					"semi_transient": false,
+					"file": "assets/scss/base/_fonts.scss",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 2085,
+						"buffer_size": 825,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1368,
-								1368
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1522240418.96,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+							"markdonw_live_preview_last_run": 1522425457.6,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 662.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "assets/scss/structure/_cqc-clinician-management.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2017,
+						"buffer_size": 2134,
 						"regions":
 						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										200,
+										206
+									],
+									[
+										246,
+										252
+									],
+									[
+										299,
+										305
+									],
+									[
+										311,
+										317
+									],
+									[
+										453,
+										459
+									],
+									[
+										605,
+										611
+									],
+									[
+										645,
+										651
+									],
+									[
+										903,
+										909
+									],
+									[
+										1012,
+										1018
+									],
+									[
+										1344,
+										1350
+									],
+									[
+										1710,
+										1716
+									],
+									[
+										2046,
+										2052
+									]
+								],
+								"scope": ""
+							}
 						},
 						"selection":
 						[
 							[
-								306,
-								306
+								509,
+								509
 							]
 						],
 						"settings":
 						{
-							"_anf_new": "",
-							"markdonw_live_preview_last_run": 1522240520.22,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -997,147 +1021,29 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 17284,
+						"buffer_size": 17906,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8288,
-								8288
+								9106,
+								9106
 							]
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1522240531.09,
+							"markdonw_live_preview_last_run": 1522425467.92,
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1892.0,
+						"translation.y": 2706.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "assets/scss/component/_card.scss",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 22803,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3691,
-								3269
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522345395.2,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1710.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/C/Users/mwatier/Desktop/Sitemenu.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3330,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3330,
-								3330
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 469.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1612,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1612,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "assets/scss/vendor/bootstrap.override/_collapse.override.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 15477,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522338680.36,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 989.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1192,6 +1098,18 @@
 		"selected_items":
 		[
 			[
+				"nav-su",
+				"assets\\scss\\component\\_nav-sub.scss"
+			],
+			[
+				"",
+				"assets\\scss\\base\\_typography.scss"
+			],
+			[
+				"setup",
+				"assets\\scss\\_setup.scss"
+			],
+			[
 				"color",
 				"assets\\scss\\base\\_colors.scss"
 			],
@@ -1210,10 +1128,6 @@
 			[
 				"nav-pill",
 				"cvquality\\assets\\scss\\vendor\\bootstrap.override\\_nav-pills.override.scss"
-			],
-			[
-				"",
-				"assets\\scss\\structure\\_cqc.scss"
 			],
 			[
 				"card.scss",
@@ -1694,14 +1608,6 @@
 			[
 				"boot3button",
 				"assets\\scss\\vendor\\bootstrap-sass-3.3.7\\javascripts\\bootstrap\\button.js"
-			],
-			[
-				"nav-basi",
-				"assets\\scss\\component\\_nav-basic.scss"
-			],
-			[
-				"boot3var",
-				"assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\_variables.scss"
 			]
 		],
 		"width": 0.0
