@@ -38,6 +38,7 @@
 */
 .accordion{
     margin-bottom:1rem;
+    clear:both;
     .panel-heading{
         background-color: $soft-grey;
         border:$warm-grey-light 1px solid;
@@ -116,85 +117,98 @@
 *  </div>
 *
 */
-.accordion.basic{
-    .panel-title a:before{
+.accordion.basic {
+    .panel-title a:before {
         content: "\f078";
     }
-    .panel-title a.collapsed:before{
+
+    .panel-title a.collapsed:before {
         content: "\f054";
     }
-    .panel-title{
-        &:hover a:before{
+
+    .panel-title {
+        &:hover a:before {
             animation: wiggle .75s ease-in 2;
             -webkit-animation: wiggle .75s ease-in 2;
             -moz-animation: wiggle 0.75s ease-in 2;
         }
-    } 
-    .accordion{
-        .panel-title a:before{
+    }
+
+    .accordion {
+        .panel-title a:before {
             content: "\f0d7";
         }
-        .panel-title a.collapsed:before{
+
+        .panel-title a.collapsed:before {
             content: "\f0da";
         }
     }
+}
 
-}
-@keyframes wiggle {
-    0% {
-        transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
+    @keyframes wiggle {
+        0% {
+            transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+        }
+
+        30% {
+            transform: rotate(15deg);
+            -moz-transform: rotate(15deg);
+            -webkit-transform: rotate(15deg);
+        }
+
+        50% {
+            transform: rotate(-15deg);
+            -moz-transform: rotate(-15deg);
+            -webkit-transform: rotate(-15deg);
+        }
+
+        70% {
+            transform: rotate(15deg);
+            -moz-transform: rotate(15deg);
+            -webkit-transform: rotate(15deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+        }
     }
-    30% {
-        transform: rotate(15deg);
-        -moz-transform: rotate(15deg);
-        -webkit-transform: rotate(15deg);
+
+    @keyframes wiggle-colapsed {
+        0% {
+            transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+        }
+
+        30% {
+            transform: rotate(-105deg);
+            -moz-transform: rotate(-105deg);
+            -webkit-transform: rotate(-105deg);
+        }
+
+        50% {
+            transform: rotate(-75deg);
+            -moz-transform: rotate(-75deg);
+            -webkit-transform: rotate(-75deg);
+        }
+
+        70% {
+            transform: rotate(-105deg);
+            -moz-transform: rotate(-105deg);
+            -webkit-transform: rotate(-105deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+        }
     }
-    50% {
-        transform: rotate(-15deg);
-        -moz-transform: rotate(-15deg);
-        -webkit-transform: rotate(-15deg);
-    }
-    70% {
-        transform: rotate(15deg);
-        -moz-transform: rotate(15deg);
-        -webkit-transform: rotate(15deg);
-    }
-    100% {
-        transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-    }
-}
-@keyframes wiggle-colapsed {
-     0% {
-        transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-    }
-    30% {
-        transform: rotate(-105deg);
-        -moz-transform: rotate(-105deg);
-        -webkit-transform: rotate(-105deg);
-    }
-    50% {
-        transform: rotate(-75deg);
-        -moz-transform: rotate(-75deg);
-        -webkit-transform: rotate(-75deg);
-    }
-    70% {
-        transform: rotate(-105deg);
-        -moz-transform: rotate(-105deg);
-        -webkit-transform: rotate(-105deg);
-    }
-    100% {
-        transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-    }
-}
-/**
+    /**
 * Collapse can also be used for small pieces of content when you want someone to do more.
 *
 * @structure Accordion (simple the more link)
@@ -222,55 +236,77 @@
 *  </div>
 *
 */
-.accordion.simple{
-    .panel{
-        border-radius:0px;
-        -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
+    .accordion.simple {
+        .panel {
+            border-radius: 0px;
+            -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
+        }
 
-    }
-    .panel-heading,.panel-body{
-        background:none;
-        border:none;
+        .panel-heading, .panel-body {
+            background: none;
+            border: none;
+        }
 
+        .panel-body {
+        }
+
+        .panel-heading + .panel-collapse > .panel-body, .panel-heading + .panel-collapse > .list-group {
+            border-top: 1px solid rgba($scrub-teal-light,.25);
+        }
+
+        .panel-title a {
+            padding: .125em 0;
+        }
+
+        .panel-title a:before {
+            // fa-minus-square-o
+            content: "\f147";
+            margin-right: .125
+        }
+
+        .panel-title:hover a:before {
+            content: "\f146";
+        }
+
+        .panel-title a.collapsed:before {
+            // fa-plus-square-o
+            content: "\f196";
+        }
+
+        .panel-title:hover a.collapsed:before {
+            content: "\f0fe";
+        }
+
+        .panel-title a .text, .panel-title a:after, .panel-title a:before {
+            display: inline-block;
+            width: auto;
+            font-size: ms(-1);
+            color: $scrub-teal-dark;
+        }
+
+        .panel-title a .text, .panel-title a:after {
+            @include font-display("light");
+            text-transform: lowercase;
+        }
+
+        .panel-title a:after {
+            content: "more...";
+        }
+
+        &.left-align .panel-title a {
+            text-align: left;
+        }
+
+        &.center-align .panel-title a {
+            text-align: center;
+        }
+
+        &.right-align .panel-title a {
+            text-align: right;
+        }
     }
-    .panel-body{}
-    .panel-heading + .panel-collapse > .panel-body, .panel-heading + .panel-collapse > .list-group{border-top:1px solid rgba($scrub-teal-light,.25);}
-    .panel-title a{padding:.125em 0;}
-    .panel-title a:before{
-        // fa-minus-square-o
-        content: "\f147";
-        margin-right:.125
-        
-    }
-    .panel-title:hover a:before{
-       content: "\f146";
-    }
-    .panel-title a.collapsed:before{
-        // fa-plus-square-o    
-        content: "\f196";
-    }
-    .panel-title:hover  a.collapsed:before{
-       content: "\f0fe";
-    }
-     .panel-title a .text, .panel-title a:after,.panel-title a:before{
-        display:inline-block;
-        width:auto;
-        font-size: ms(-1);
-        color:$scrub-teal-dark;
-    }
-    .panel-title a .text, .panel-title a:after{
-        @include font-display("light");
-        text-transform: lowercase;
-    }
-     .panel-title a:after{
-        content:"more...";
-    }
-    &.left-align .panel-title a{text-align:left;}
-    &.center-align .panel-title a{text-align:center;}
-    &.right-align .panel-title a{text-align:right;}
-}
-/**
+    /**
 * Fancy Accordions are used in  the toolkit 
 *
 * @structure  Accordion (Fancy)
@@ -340,36 +376,40 @@
 *   </div>
 * 
 */
-.accordion.fancy {
-    border-radius: 8px;
-    padding: 5px;
-    border: 1px solid $warm-grey-light;
-    counter-reset:item;
+    .accordion.fancy {
+        border-radius: 8px;
+        padding: 5px;
+        border: 1px solid $warm-grey-light;
+        counter-reset: item;
 
-    .panel {
-        counter-increment: item;
-        counter-reset: subitem;
-        ol li{ 
-            counter-increment: subitem;
-            list-style: none;
-            &:before{    content: counter(item) counter(subitem, lower-alpha) '.';}
+        .panel {
+            counter-increment: item;
+            counter-reset: subitem;
+
+            ol li {
+                counter-increment: subitem;
+                list-style: none;
+
+                &:before {
+                    content: counter(item) counter(subitem, lower-alpha) '.';
+                }
+            }
         }
-    }
 
-    .panel-title a {
-        display: table;
-        padding: 0;
-        vertical-align: middle;
-        @include font-display(500);
-
-    }
-    .panel-title{
-        a{
-            color: $off-white;
-            background-color: $scrub-teal-dark;
+        .panel-title a {
+            display: table;
+            padding: 0;
+            vertical-align: middle;
+            @include font-display(500);
         }
-         a:after {
-               
+
+        .panel-title {
+            a {
+                color: $off-white;
+                background-color: $scrub-teal-dark;
+            }
+
+            a:after {
                 content: "\f078";
                 transition: transform 0.25s ease-out;
                 -moz-transition: transform 0.25s ease-out;
@@ -377,83 +417,109 @@
                 background-color: $orange-dark;
                 color: white;
                 padding: 1rem;
-                width:3em;
+                width: 3em;
                 text-align: center;
             }
-         a:before {
-            content: counter(item);
-            @include font-display("regular");
-            color:$off-white;
-            font-size: ms(7);
-            padding:  1rem 1rem;
-            text-align: center;
-            min-width:4rem;
-        }
-        span.text{
-            padding:1rem 1rem 1rem 0;
-        }
-        a:before, a:after, span.text, {
-            display: table-cell; vertical-align:middle;
-        }
-    }
 
-    .panel-title a.collapsed{
-        background-color:$off-white;
-        color:$off-black;
-        &:before, &:after{
-            transform: rotate(0) !important;
-            -moz-transform: rotate(0) !important;
-            -webkit-transform: rotate(0) !important;
-        }
-         &:before {
-            color:$scrub-teal-dark;
-        }
-        &:after {
-            content: "\f054";
-            background-color: $scrub-teal-dark;
-            color: white;
-        }
-    }
-    .panel-heading{
-        border-bottom:0 solid $warm-grey;
-    }
-    .panel-heading,.panel-heading,.panel-heading {
-        &:active,&:focus,&:hover{
-            border-color:$orange-dark;
-            .panel-title {
-                a {
-                    color: $off-white;
-                    background-color: $scrub-teal-dark;
-                }
+            a:before {
+                content: counter(item);
+                @include font-display("regular");
+                color: $off-white;
+                font-size: ms(7);
+                padding: 1rem 1rem;
+                text-align: center;
+                min-width: 4rem;
+            }
 
-                a:after {
-                    background-color: $orange-dark;
-                    color: white;
-                }
-                 a:before {
-                    color: white;
+            span.text {
+                padding: 1rem 1rem 1rem 0;
+            }
+
+            a:before, a:after, span.text, {
+                display: table-cell;
+                vertical-align: middle;
+            }
+        }
+
+        .panel-title a.collapsed {
+            background-color: $off-white;
+            color: $off-black;
+
+            &:before, &:after {
+                transform: rotate(0) !important;
+                -moz-transform: rotate(0) !important;
+                -webkit-transform: rotate(0) !important;
+            }
+
+            &:before {
+                color: $scrub-teal-dark;
+            }
+
+            &:after {
+                content: "\f054";
+                background-color: $scrub-teal-dark;
+                color: white;
+            }
+        }
+
+        .panel-heading {
+            border-bottom: 0 solid $warm-grey;
+        }
+
+        .panel-heading, .panel-heading, .panel-heading {
+            &:active, &:focus, &:hover {
+                border-color: $orange-dark;
+
+                .panel-title {
+                    a {
+                        color: $off-white;
+                        background-color: $scrub-teal-dark;
+                    }
+
+                    a:after {
+                        background-color: $orange-dark;
+                        color: white;
+                    }
+
+                    a:before {
+                        color: white;
+                    }
                 }
             }
         }
-    }
-    .panel-heading:hover .panel-title a:after {
-        animation: btn-bounce .3s ease-in 2;
-        -webkit-animation: btn-bounce .3s ease-in 2;
-        -moz-animation: btn-bounce 0.3s ease-in 2;
+
+        .panel-heading:hover .panel-title a:after {
+            animation: btn-bounce .3s ease-in 2;
+            -webkit-animation: btn-bounce .3s ease-in 2;
+            -moz-animation: btn-bounce 0.3s ease-in 2;
+        }
+
+        .panel-body {
+            @include lightgrey-gradient;
+            border: 1px solid $warm-grey-light;
+            padding: 2rem 1rem;
+            line-height: $loose
+        }
     }
 
-    .panel-body {
-        @include lightgrey-gradient;
-        border:1px solid $warm-grey-light;
-        padding:2rem 1rem;
-        line-height: $loose
+    @keyframes btn-bounce {
+        0% {
+            padding-top: 19px;
+        }
 
+        25% {
+            padding-top: 30px;
+        }
+
+        50% {
+            padding-top: 19px;
+        }
+
+        75% {
+            padding-top: 5px;
+        }
+
+        100% {
+            padding-top: 19px;
+        }
     }
-}
-@keyframes btn-bounce {
-    0% {padding-top: 19px;}
-    25% {padding-top: 30px;}
-    50% {padding-top: 19px;}
-    75% {padding-top: 5px;}
-    100% {padding-top: 19px;}
-}

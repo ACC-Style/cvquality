@@ -17,6 +17,18 @@
 
 // these are trump fixes when printing. 
 @media print {
-	.panel-collapse.collapse{border:1px dotted grey(10);display:block}
-	.page-content{margin:0 .25in;}
+    .accordion {
+        .panel-collapse, .panel-collapse.collapse {
+            border: 1px dotted grey(10);
+            display: block
+        }
+
+        .page-content {
+            margin: 0 .25in;
+        }
+
+        .panel-title a:before {
+            content: "\f078" !important;
+        }
+    }
 }
