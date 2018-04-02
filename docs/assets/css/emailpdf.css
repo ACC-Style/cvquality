@@ -7842,7 +7842,8 @@ input {
 *
 */
 .accordion {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  clear: both; }
   .accordion .panel-heading {
     background-color: #eceaea;
     border: #d6d4d4 1px solid;
@@ -7961,7 +7962,7 @@ input {
     transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -webkit-transform: rotate(0deg); } }
-/**
+    /**
 * Collapse can also be used for small pieces of content when you want someone to do more.
 *
 * @structure Accordion (simple the more link)
@@ -8027,7 +8028,7 @@ input {
 .accordion.simple.right-align .panel-title a {
   text-align: right; }
 
-/**
+    /**
 * Fancy Accordions are used in  the toolkit 
 *
 * @structure  Accordion (Fancy)
@@ -11957,6 +11958,17 @@ ul.banded-list li, ul.banded-list li:nth-child(even) {
     background-color: #e91e63;
     color: white; }
 
+/*******  >>>>>>>>>>>>>>>>>>>>   TO DO <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ **      Create these alias
+ **      CME    AMA PRA Category 1TM Credit(s)  #00a15b     
+ **     COP Participation   #775891 
+ **     CE  CE  #a8a8a8 This is the old name for what is currently called CNE. We donΓÇÖt grant this anymore, but it is still in the system. 
+ **     MOC ABIM MOC Part II    #9a1267 Usually for MOC II 
+ **     CNE     CNE     #198dae    
+**/
+/*******  >>>>>>>>>>>>>>>>>>>>   TO DO <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ **     Move all list to a _list.scss file.   There is some in typography and here. 
+**/
 /**
  * The expanded data of a clinician.
  * 
@@ -12230,12 +12242,13 @@ ul.banded-list li, ul.banded-list li:nth-child(even) {
     text-align: center; }
 
 @media print {
-  .panel-collapse.collapse {
+  .accordion .panel-collapse, .accordion .panel-collapse.collapse {
     border: 1px dotted grey(10);
     display: block; }
-
-  .page-content {
-    margin: 0 .25in; } }
+  .accordion .page-content {
+    margin: 0 .25in; }
+  .accordion .panel-title a:before {
+    content: "\f078" !important; } }
 .swappable .long-text {
   display: inline; }
 .swappable .short-text {

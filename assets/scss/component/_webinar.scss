@@ -1,0 +1,40 @@
+/**
+ * Webinars are pretty little boxes that show a video after you register for them.
+ * 
+ * @molecule Webinar
+ * @section Webinar
+ * @modifiers
+ *  .cp
+ *  .afib
+ *  .highlighted
+ * @markup
+ *  <div class="Cardio primary webinar">
+ *      <div class="icon">
+ *          <i class="fa fa-3x fa-play"></i>
+ *      </div>
+ *      <div class="data">
+ *          <div class="title">
+ *          	<a>This is the title of this Video</a>
+ *          </div>
+ *          <div class="view-time"><strong>View Time:</strong>&nbsp;<span>62 minutes</span></div>
+ *  		<div class="action">
+ *  			<a class="btn btn-secondary">View On Demand</a>
+ *  		</div>
+ *      </div>
+ *  </div>
+ */
+
+ .webinar{
+ 	@extend .box;
+ 	@include acc-flexbox();
+ 	align-items: center;
+ 	.icon{@include acc-flex(0 1 150px);}
+ 	.data{@include acc-flex( 0 1 auto);}
+ 	.title{ 
+ 		@extend h3;
+ 		line-height: 1;
+ 		}
+ 	.view-time{ 
+ 		font-size: ms(1);
+ 		}
+ }
