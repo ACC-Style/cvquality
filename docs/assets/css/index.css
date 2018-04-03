@@ -163,7 +163,7 @@
  * @markup
  *  <i class="fa fa-arrow-circle-right"></i>
  */
-h1, h2, h3, .webinar .title, h4, h5, h6, p, td, th {
+h1, h2, h3, h4, .webinar .title a, h5, h6, p, td, th {
   -webkit-transition: line-height 1s;
   /* Safari */
   transition: line-height 1s;
@@ -568,14 +568,12 @@ th {
 
   p,
   h2,
-  h3,
-  .webinar .title {
+  h3 {
     orphans: 3;
     widows: 3; }
 
   h2,
-  h3,
-  .webinar .title {
+  h3 {
     page-break-after: avoid; }
 
   .navbar {
@@ -1499,7 +1497,7 @@ hr {
 [role="button"] {
   cursor: pointer; }
 
-h1, h2, h3, .webinar .title, h4, h5, h6,
+h1, h2, h3, h4, .webinar .title a, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Muli", Verdana, Helvetica, sans-serif;
   font-weight: 500;
@@ -1507,10 +1505,10 @@ h1, h2, h3, .webinar .title, h4, h5, h6,
   color: inherit; }
   h1 small,
   h1 .small, h2 small,
-  h2 .small, h3 small, .webinar .title small,
-  h3 .small,
-  .webinar .title .small, h4 small,
-  h4 .small, h5 small,
+  h2 .small, h3 small,
+  h3 .small, h4 small, .webinar .title a small,
+  h4 .small,
+  .webinar .title a .small, h5 small,
   h5 .small, h6 small,
   h6 .small,
   .h1 small,
@@ -1526,8 +1524,7 @@ h1, h2, h3, .webinar .title, h4, h5, h6,
 
 h1, .h1,
 h2, .h2,
-h3,
-.webinar .title, .h3 {
+h3, .h3 {
   margin-top: 24px;
   margin-bottom: 12px; }
   h1 small,
@@ -1537,19 +1534,18 @@ h3,
   h2 .small, .h2 small,
   .h2 .small,
   h3 small,
-  .webinar .title small,
-  h3 .small,
-  .webinar .title .small, .h3 small,
+  h3 .small, .h3 small,
   .h3 .small {
     font-size: 65%; }
 
-h4, .h4,
+h4, .webinar .title a, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 12px;
   margin-bottom: 12px; }
-  h4 small,
-  h4 .small, .h4 small,
+  h4 small, .webinar .title a small,
+  h4 .small,
+  .webinar .title a .small, .h4 small,
   .h4 .small,
   h5 small,
   h5 .small, .h5 small,
@@ -1565,10 +1561,10 @@ h1, .h1 {
 h2, .h2 {
   font-size: 25px; }
 
-h3, .webinar .title, .h3 {
+h3, .h3 {
   font-size: 20px; }
 
-h4, .h4 {
+h4, .webinar .title a, .h4 {
   font-size: 18px; }
 
 h5, .h5 {
@@ -3343,61 +3339,61 @@ a.btn.disabled, a.disabled[data-sf-role="expandAll"], a.disabled[data-sf-role="c
     color: #fff;
     background-color: #333; }
 
-.btn-primary {
+.btn-primary, .webinar.primary .action a.btn, .webinar.primary .action a[data-sf-role="expandAll"], .webinar.primary .action a[data-sf-role="collapseAll"], .webinar.primary .action a.button {
   color: #fff;
   background-color: #0088aa;
   border-color: #007491; }
-  .btn-primary:focus, .btn-primary.focus {
+  .btn-primary:focus, .webinar.primary .action a.btn:focus, .webinar.primary .action a[data-sf-role="expandAll"]:focus, .webinar.primary .action a[data-sf-role="collapseAll"]:focus, .webinar.primary .action a.button:focus, .btn-primary.focus, .webinar.primary .action a.focus.btn, .webinar.primary .action a.focus[data-sf-role="expandAll"], .webinar.primary .action a.focus[data-sf-role="collapseAll"], .webinar.primary .action a.focus.button {
     color: #fff;
     background-color: #005f77;
     border-color: #000e11; }
-  .btn-primary:hover {
+  .btn-primary:hover, .webinar.primary .action a.btn:hover, .webinar.primary .action a[data-sf-role="expandAll"]:hover, .webinar.primary .action a[data-sf-role="collapseAll"]:hover, .webinar.primary .action a.button:hover {
     color: #fff;
     background-color: #005f77;
     border-color: #004353; }
-  .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
+  .btn-primary:active, .webinar.primary .action a.btn:active, .webinar.primary .action a[data-sf-role="expandAll"]:active, .webinar.primary .action a[data-sf-role="collapseAll"]:active, .webinar.primary .action a.button:active, .btn-primary.active, .webinar.primary .action a.active.btn, .webinar.primary .action a.active[data-sf-role="expandAll"], .webinar.primary .action a.active[data-sf-role="collapseAll"], .webinar.primary .action a.active.button, .open > .btn-primary.dropdown-toggle, .webinar.primary .action .open > a.dropdown-toggle.btn, .webinar.primary .action .open > a.dropdown-toggle[data-sf-role="expandAll"], .webinar.primary .action .open > a.dropdown-toggle[data-sf-role="collapseAll"], .webinar.primary .action .open > a.dropdown-toggle.button {
     color: #fff;
     background-color: #005f77;
     border-color: #004353; }
-    .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus, .open > .btn-primary.dropdown-toggle:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle.focus {
+    .btn-primary:active:hover, .webinar.primary .action a.btn:active:hover, .webinar.primary .action a[data-sf-role="expandAll"]:active:hover, .webinar.primary .action a[data-sf-role="collapseAll"]:active:hover, .webinar.primary .action a.button:active:hover, .btn-primary:active:focus, .webinar.primary .action a.btn:active:focus, .webinar.primary .action a[data-sf-role="expandAll"]:active:focus, .webinar.primary .action a[data-sf-role="collapseAll"]:active:focus, .webinar.primary .action a.button:active:focus, .btn-primary:active.focus, .webinar.primary .action a.btn:active.focus, .webinar.primary .action a[data-sf-role="expandAll"]:active.focus, .webinar.primary .action a[data-sf-role="collapseAll"]:active.focus, .webinar.primary .action a.button:active.focus, .btn-primary.active:hover, .webinar.primary .action a.active.btn:hover, .webinar.primary .action a.active[data-sf-role="expandAll"]:hover, .webinar.primary .action a.active[data-sf-role="collapseAll"]:hover, .webinar.primary .action a.active.button:hover, .btn-primary.active:focus, .webinar.primary .action a.active.btn:focus, .webinar.primary .action a.active[data-sf-role="expandAll"]:focus, .webinar.primary .action a.active[data-sf-role="collapseAll"]:focus, .webinar.primary .action a.active.button:focus, .btn-primary.active.focus, .webinar.primary .action a.active.focus.btn, .webinar.primary .action a.active.focus[data-sf-role="expandAll"], .webinar.primary .action a.active.focus[data-sf-role="collapseAll"], .webinar.primary .action a.active.focus.button, .open > .btn-primary.dropdown-toggle:hover, .webinar.primary .action .open > a.dropdown-toggle.btn:hover, .webinar.primary .action .open > a.dropdown-toggle[data-sf-role="expandAll"]:hover, .webinar.primary .action .open > a.dropdown-toggle[data-sf-role="collapseAll"]:hover, .webinar.primary .action .open > a.dropdown-toggle.button:hover, .open > .btn-primary.dropdown-toggle:focus, .webinar.primary .action .open > a.dropdown-toggle.btn:focus, .webinar.primary .action .open > a.dropdown-toggle[data-sf-role="expandAll"]:focus, .webinar.primary .action .open > a.dropdown-toggle[data-sf-role="collapseAll"]:focus, .webinar.primary .action .open > a.dropdown-toggle.button:focus, .open > .btn-primary.dropdown-toggle.focus, .webinar.primary .action .open > a.dropdown-toggle.focus.btn, .webinar.primary .action .open > a.dropdown-toggle.focus[data-sf-role="expandAll"], .webinar.primary .action .open > a.dropdown-toggle.focus[data-sf-role="collapseAll"], .webinar.primary .action .open > a.dropdown-toggle.focus.button {
       color: #fff;
       background-color: #004353;
       border-color: #000e11; }
-  .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
+  .btn-primary:active, .webinar.primary .action a.btn:active, .webinar.primary .action a[data-sf-role="expandAll"]:active, .webinar.primary .action a[data-sf-role="collapseAll"]:active, .webinar.primary .action a.button:active, .btn-primary.active, .webinar.primary .action a.active.btn, .webinar.primary .action a.active[data-sf-role="expandAll"], .webinar.primary .action a.active[data-sf-role="collapseAll"], .webinar.primary .action a.active.button, .open > .btn-primary.dropdown-toggle, .webinar.primary .action .open > a.dropdown-toggle.btn, .webinar.primary .action .open > a.dropdown-toggle[data-sf-role="expandAll"], .webinar.primary .action .open > a.dropdown-toggle[data-sf-role="collapseAll"], .webinar.primary .action .open > a.dropdown-toggle.button {
     background-image: none; }
-  .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus {
+  .btn-primary.disabled:hover, .webinar.primary .action a.disabled.btn:hover, .webinar.primary .action a.disabled[data-sf-role="expandAll"]:hover, .webinar.primary .action a.disabled[data-sf-role="collapseAll"]:hover, .webinar.primary .action a.disabled.button:hover, .btn-primary.disabled:focus, .webinar.primary .action a.disabled.btn:focus, .webinar.primary .action a.disabled[data-sf-role="expandAll"]:focus, .webinar.primary .action a.disabled[data-sf-role="collapseAll"]:focus, .webinar.primary .action a.disabled.button:focus, .btn-primary.disabled.focus, .webinar.primary .action a.disabled.focus.btn, .webinar.primary .action a.disabled.focus[data-sf-role="expandAll"], .webinar.primary .action a.disabled.focus[data-sf-role="collapseAll"], .webinar.primary .action a.disabled.focus.button, .btn-primary[disabled]:hover, .webinar.primary .action a[disabled].btn:hover, .webinar.primary .action a[disabled][data-sf-role="expandAll"]:hover, .webinar.primary .action a[disabled][data-sf-role="collapseAll"]:hover, .webinar.primary .action a[disabled].button:hover, .btn-primary[disabled]:focus, .webinar.primary .action a[disabled].btn:focus, .webinar.primary .action a[disabled][data-sf-role="expandAll"]:focus, .webinar.primary .action a[disabled][data-sf-role="collapseAll"]:focus, .webinar.primary .action a[disabled].button:focus, .btn-primary[disabled].focus, .webinar.primary .action a[disabled].focus.btn, .webinar.primary .action a[disabled].focus[data-sf-role="expandAll"], .webinar.primary .action a[disabled].focus[data-sf-role="collapseAll"], .webinar.primary .action a[disabled].focus.button, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .webinar.primary .action a.btn:hover, .webinar.primary .action fieldset[disabled] a.btn:hover, fieldset[disabled] .webinar.primary .action a[data-sf-role="expandAll"]:hover, .webinar.primary .action fieldset[disabled] a[data-sf-role="expandAll"]:hover, fieldset[disabled] .webinar.primary .action a[data-sf-role="collapseAll"]:hover, .webinar.primary .action fieldset[disabled] a[data-sf-role="collapseAll"]:hover, fieldset[disabled] .webinar.primary .action a.button:hover, .webinar.primary .action fieldset[disabled] a.button:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .webinar.primary .action a.btn:focus, .webinar.primary .action fieldset[disabled] a.btn:focus, fieldset[disabled] .webinar.primary .action a[data-sf-role="expandAll"]:focus, .webinar.primary .action fieldset[disabled] a[data-sf-role="expandAll"]:focus, fieldset[disabled] .webinar.primary .action a[data-sf-role="collapseAll"]:focus, .webinar.primary .action fieldset[disabled] a[data-sf-role="collapseAll"]:focus, fieldset[disabled] .webinar.primary .action a.button:focus, .webinar.primary .action fieldset[disabled] a.button:focus, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .webinar.primary .action a.focus.btn, .webinar.primary .action fieldset[disabled] a.focus.btn, fieldset[disabled] .webinar.primary .action a.focus[data-sf-role="expandAll"], .webinar.primary .action fieldset[disabled] a.focus[data-sf-role="expandAll"], fieldset[disabled] .webinar.primary .action a.focus[data-sf-role="collapseAll"], .webinar.primary .action fieldset[disabled] a.focus[data-sf-role="collapseAll"], fieldset[disabled] .webinar.primary .action a.focus.button, .webinar.primary .action fieldset[disabled] a.focus.button {
     background-color: #0088aa;
     border-color: #007491; }
-  .btn-primary .badge {
+  .btn-primary .badge, .webinar.primary .action a.btn .badge, .webinar.primary .action a[data-sf-role="expandAll"] .badge, .webinar.primary .action a[data-sf-role="collapseAll"] .badge, .webinar.primary .action a.button .badge {
     color: #0088aa;
     background-color: #fff; }
 
-.btn-success {
+.btn-success, .webinar.success .action a.btn, .webinar.success .action a[data-sf-role="expandAll"], .webinar.success .action a[data-sf-role="collapseAll"], .webinar.success .action a.button {
   color: #fff;
   background-color: #28a745;
   border-color: #23923d; }
-  .btn-success:focus, .btn-success.focus {
+  .btn-success:focus, .webinar.success .action a.btn:focus, .webinar.success .action a[data-sf-role="expandAll"]:focus, .webinar.success .action a[data-sf-role="collapseAll"]:focus, .webinar.success .action a.button:focus, .btn-success.focus, .webinar.success .action a.focus.btn, .webinar.success .action a.focus[data-sf-role="expandAll"], .webinar.success .action a.focus[data-sf-role="collapseAll"], .webinar.success .action a.focus.button {
     color: #fff;
     background-color: #1e7e34;
     border-color: #0a2c12; }
-  .btn-success:hover {
+  .btn-success:hover, .webinar.success .action a.btn:hover, .webinar.success .action a[data-sf-role="expandAll"]:hover, .webinar.success .action a[data-sf-role="collapseAll"]:hover, .webinar.success .action a.button:hover {
     color: #fff;
     background-color: #1e7e34;
     border-color: #176128; }
-  .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
+  .btn-success:active, .webinar.success .action a.btn:active, .webinar.success .action a[data-sf-role="expandAll"]:active, .webinar.success .action a[data-sf-role="collapseAll"]:active, .webinar.success .action a.button:active, .btn-success.active, .webinar.success .action a.active.btn, .webinar.success .action a.active[data-sf-role="expandAll"], .webinar.success .action a.active[data-sf-role="collapseAll"], .webinar.success .action a.active.button, .open > .btn-success.dropdown-toggle, .webinar.success .action .open > a.dropdown-toggle.btn, .webinar.success .action .open > a.dropdown-toggle[data-sf-role="expandAll"], .webinar.success .action .open > a.dropdown-toggle[data-sf-role="collapseAll"], .webinar.success .action .open > a.dropdown-toggle.button {
     color: #fff;
     background-color: #1e7e34;
     border-color: #176128; }
-    .btn-success:active:hover, .btn-success:active:focus, .btn-success:active.focus, .btn-success.active:hover, .btn-success.active:focus, .btn-success.active.focus, .open > .btn-success.dropdown-toggle:hover, .open > .btn-success.dropdown-toggle:focus, .open > .btn-success.dropdown-toggle.focus {
+    .btn-success:active:hover, .webinar.success .action a.btn:active:hover, .webinar.success .action a[data-sf-role="expandAll"]:active:hover, .webinar.success .action a[data-sf-role="collapseAll"]:active:hover, .webinar.success .action a.button:active:hover, .btn-success:active:focus, .webinar.success .action a.btn:active:focus, .webinar.success .action a[data-sf-role="expandAll"]:active:focus, .webinar.success .action a[data-sf-role="collapseAll"]:active:focus, .webinar.success .action a.button:active:focus, .btn-success:active.focus, .webinar.success .action a.btn:active.focus, .webinar.success .action a[data-sf-role="expandAll"]:active.focus, .webinar.success .action a[data-sf-role="collapseAll"]:active.focus, .webinar.success .action a.button:active.focus, .btn-success.active:hover, .webinar.success .action a.active.btn:hover, .webinar.success .action a.active[data-sf-role="expandAll"]:hover, .webinar.success .action a.active[data-sf-role="collapseAll"]:hover, .webinar.success .action a.active.button:hover, .btn-success.active:focus, .webinar.success .action a.active.btn:focus, .webinar.success .action a.active[data-sf-role="expandAll"]:focus, .webinar.success .action a.active[data-sf-role="collapseAll"]:focus, .webinar.success .action a.active.button:focus, .btn-success.active.focus, .webinar.success .action a.active.focus.btn, .webinar.success .action a.active.focus[data-sf-role="expandAll"], .webinar.success .action a.active.focus[data-sf-role="collapseAll"], .webinar.success .action a.active.focus.button, .open > .btn-success.dropdown-toggle:hover, .webinar.success .action .open > a.dropdown-toggle.btn:hover, .webinar.success .action .open > a.dropdown-toggle[data-sf-role="expandAll"]:hover, .webinar.success .action .open > a.dropdown-toggle[data-sf-role="collapseAll"]:hover, .webinar.success .action .open > a.dropdown-toggle.button:hover, .open > .btn-success.dropdown-toggle:focus, .webinar.success .action .open > a.dropdown-toggle.btn:focus, .webinar.success .action .open > a.dropdown-toggle[data-sf-role="expandAll"]:focus, .webinar.success .action .open > a.dropdown-toggle[data-sf-role="collapseAll"]:focus, .webinar.success .action .open > a.dropdown-toggle.button:focus, .open > .btn-success.dropdown-toggle.focus, .webinar.success .action .open > a.dropdown-toggle.focus.btn, .webinar.success .action .open > a.dropdown-toggle.focus[data-sf-role="expandAll"], .webinar.success .action .open > a.dropdown-toggle.focus[data-sf-role="collapseAll"], .webinar.success .action .open > a.dropdown-toggle.focus.button {
       color: #fff;
       background-color: #176128;
       border-color: #0a2c12; }
-  .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
+  .btn-success:active, .webinar.success .action a.btn:active, .webinar.success .action a[data-sf-role="expandAll"]:active, .webinar.success .action a[data-sf-role="collapseAll"]:active, .webinar.success .action a.button:active, .btn-success.active, .webinar.success .action a.active.btn, .webinar.success .action a.active[data-sf-role="expandAll"], .webinar.success .action a.active[data-sf-role="collapseAll"], .webinar.success .action a.active.button, .open > .btn-success.dropdown-toggle, .webinar.success .action .open > a.dropdown-toggle.btn, .webinar.success .action .open > a.dropdown-toggle[data-sf-role="expandAll"], .webinar.success .action .open > a.dropdown-toggle[data-sf-role="collapseAll"], .webinar.success .action .open > a.dropdown-toggle.button {
     background-image: none; }
-  .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled.focus, .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled].focus, fieldset[disabled] .btn-success:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success.focus {
+  .btn-success.disabled:hover, .webinar.success .action a.disabled.btn:hover, .webinar.success .action a.disabled[data-sf-role="expandAll"]:hover, .webinar.success .action a.disabled[data-sf-role="collapseAll"]:hover, .webinar.success .action a.disabled.button:hover, .btn-success.disabled:focus, .webinar.success .action a.disabled.btn:focus, .webinar.success .action a.disabled[data-sf-role="expandAll"]:focus, .webinar.success .action a.disabled[data-sf-role="collapseAll"]:focus, .webinar.success .action a.disabled.button:focus, .btn-success.disabled.focus, .webinar.success .action a.disabled.focus.btn, .webinar.success .action a.disabled.focus[data-sf-role="expandAll"], .webinar.success .action a.disabled.focus[data-sf-role="collapseAll"], .webinar.success .action a.disabled.focus.button, .btn-success[disabled]:hover, .webinar.success .action a[disabled].btn:hover, .webinar.success .action a[disabled][data-sf-role="expandAll"]:hover, .webinar.success .action a[disabled][data-sf-role="collapseAll"]:hover, .webinar.success .action a[disabled].button:hover, .btn-success[disabled]:focus, .webinar.success .action a[disabled].btn:focus, .webinar.success .action a[disabled][data-sf-role="expandAll"]:focus, .webinar.success .action a[disabled][data-sf-role="collapseAll"]:focus, .webinar.success .action a[disabled].button:focus, .btn-success[disabled].focus, .webinar.success .action a[disabled].focus.btn, .webinar.success .action a[disabled].focus[data-sf-role="expandAll"], .webinar.success .action a[disabled].focus[data-sf-role="collapseAll"], .webinar.success .action a[disabled].focus.button, fieldset[disabled] .btn-success:hover, fieldset[disabled] .webinar.success .action a.btn:hover, .webinar.success .action fieldset[disabled] a.btn:hover, fieldset[disabled] .webinar.success .action a[data-sf-role="expandAll"]:hover, .webinar.success .action fieldset[disabled] a[data-sf-role="expandAll"]:hover, fieldset[disabled] .webinar.success .action a[data-sf-role="collapseAll"]:hover, .webinar.success .action fieldset[disabled] a[data-sf-role="collapseAll"]:hover, fieldset[disabled] .webinar.success .action a.button:hover, .webinar.success .action fieldset[disabled] a.button:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .webinar.success .action a.btn:focus, .webinar.success .action fieldset[disabled] a.btn:focus, fieldset[disabled] .webinar.success .action a[data-sf-role="expandAll"]:focus, .webinar.success .action fieldset[disabled] a[data-sf-role="expandAll"]:focus, fieldset[disabled] .webinar.success .action a[data-sf-role="collapseAll"]:focus, .webinar.success .action fieldset[disabled] a[data-sf-role="collapseAll"]:focus, fieldset[disabled] .webinar.success .action a.button:focus, .webinar.success .action fieldset[disabled] a.button:focus, fieldset[disabled] .btn-success.focus, fieldset[disabled] .webinar.success .action a.focus.btn, .webinar.success .action fieldset[disabled] a.focus.btn, fieldset[disabled] .webinar.success .action a.focus[data-sf-role="expandAll"], .webinar.success .action fieldset[disabled] a.focus[data-sf-role="expandAll"], fieldset[disabled] .webinar.success .action a.focus[data-sf-role="collapseAll"], .webinar.success .action fieldset[disabled] a.focus[data-sf-role="collapseAll"], fieldset[disabled] .webinar.success .action a.focus.button, .webinar.success .action fieldset[disabled] a.focus.button {
     background-color: #28a745;
     border-color: #23923d; }
-  .btn-success .badge {
+  .btn-success .badge, .webinar.success .action a.btn .badge, .webinar.success .action a[data-sf-role="expandAll"] .badge, .webinar.success .action a[data-sf-role="collapseAll"] .badge, .webinar.success .action a.button .badge {
     color: #28a745;
     background-color: #fff; }
 
@@ -3607,7 +3603,7 @@ tbody.collapse.in {
   .dropdown-menu.pull-right {
     right: 0;
     left: auto; }
-  .dropdown-menu .divider, .dropdown-menu .expanding-list h3, .expanding-list .dropdown-menu h3, .dropdown-menu .expanding-list .webinar .title, .expanding-list .webinar .dropdown-menu .title, .dropdown-menu .webinar .expanding-list .title, .webinar .expanding-list .dropdown-menu .title {
+  .dropdown-menu .divider, .dropdown-menu .expanding-list h3, .expanding-list .dropdown-menu h3 {
     height: 1px;
     margin: 11px 0;
     overflow: hidden;
@@ -4518,7 +4514,7 @@ tbody.collapse.in {
   @media (max-width: 575px) {
     .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
       border-color: #090909; }
-    .navbar-inverse .navbar-nav .open .dropdown-menu .divider, .navbar-inverse .navbar-nav .open .dropdown-menu .expanding-list h3, .expanding-list .navbar-inverse .navbar-nav .open .dropdown-menu h3, .navbar-inverse .navbar-nav .open .dropdown-menu .expanding-list .webinar .title, .expanding-list .webinar .navbar-inverse .navbar-nav .open .dropdown-menu .title, .navbar-inverse .navbar-nav .open .dropdown-menu .webinar .expanding-list .title, .webinar .expanding-list .navbar-inverse .navbar-nav .open .dropdown-menu .title {
+    .navbar-inverse .navbar-nav .open .dropdown-menu .divider, .navbar-inverse .navbar-nav .open .dropdown-menu .expanding-list h3, .expanding-list .navbar-inverse .navbar-nav .open .dropdown-menu h3 {
       background-color: #090909; }
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
       color: #9d9d9d; }
@@ -4828,7 +4824,7 @@ a.thumbnail.active {
   margin-bottom: 24px;
   border: 1px solid transparent;
   border-radius: 6px; }
-  .alert h4 {
+  .alert h4, .alert .webinar .title a, .webinar .title .alert a {
     margin-top: 0;
     color: inherit; }
   .alert .alert-link {
@@ -6771,13 +6767,13 @@ body {
 *  <h5>This is an h5 heading</h5>
 *  <h6>This is an h6 heading</h6>
 */
-h1 a, h2 a, h3 a, .webinar .title a, h4 a {
+h1 a, h2 a, h3 a, h4 a, .webinar .title a a {
   color: #0088aa;
   text-decoration: none; }
-  h1 a:hover, h2 a:hover, h3 a:hover, .webinar .title a:hover, h4 a:hover {
+  h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, .webinar .title a a:hover {
     color: #047294;
     text-decoration: underline; }
-h1.inline, h2.inline, h3.inline, .webinar .inline.title, h4.inline {
+h1.inline, h2.inline, h3.inline, h4.inline, .webinar .title a.inline {
   display: inline; }
 
 h1 {
@@ -6806,30 +6802,30 @@ h2 {
   h2.display-4, h2.display-3, h2.display-2 {
     font-weight: 100; }
 
-h3, .webinar .title {
+h3 {
   font-family: 'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
   font-weight: 400;
   color: #e87d1e; }
-  h3.display-4, .webinar .display-4.title {
+  h3.display-4 {
     font-size: 36px; }
-  h3.display-3, .webinar .display-3.title {
+  h3.display-3 {
     font-size: 30px; }
-  h3.display-2, .webinar .display-2.title {
+  h3.display-2 {
     font-size: 25px; }
-  h3.display-4, .webinar .display-4.title, h3.display-3, .webinar .display-3.title, h3.display-2, .webinar .display-2.title {
+  h3.display-4, h3.display-3, h3.display-2 {
     font-weight: 100; }
 
-h4 {
+h4, .webinar .title a {
   font-family: 'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
   font-weight: 500;
   color: #6f6b6f; }
-  h4.display-4 {
+  h4.display-4, .webinar .title a.display-4 {
     font-size: 26px; }
-  h4.display-3 {
+  h4.display-3, .webinar .title a.display-3 {
     font-size: 23px; }
-  h4.display-2 {
+  h4.display-2, .webinar .title a.display-2 {
     font-size: 20px; }
-  h4.display-4, h4.display-3, h4.display-2 {
+  h4.display-4, .webinar .title a.display-4, h4.display-3, .webinar .title a.display-3, h4.display-2, .webinar .title a.display-2 {
     font-weight: 300; }
 
 p.display-4 {
@@ -6914,28 +6910,28 @@ hr {
 *  .group-divider       Alias for .divider.orange.dotted
 *  .section-divider     Alias for .divider.teal.bold
 */
-.divider, .expanding-list h3, .expanding-list .webinar .title, .webinar .expanding-list .title {
+.divider, .expanding-list h3 {
   padding-bottom: 12px; }
 
-hr, .divider, .expanding-list h3, .expanding-list .webinar .title, .webinar .expanding-list .title, .line-spacer, .item-divider, .group-divider, .section-divider {
+hr, .divider, .expanding-list h3, .line-spacer, .item-divider, .group-divider, .section-divider {
   margin-bottom: 12px;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-top: none transparent 0; }
 
-.divider.grey, .expanding-list h3.grey, .expanding-list .webinar .grey.title, .webinar .expanding-list .grey.title, .divider.item-divider, .expanding-list h3.item-divider, .expanding-list .webinar .item-divider.title, .webinar .expanding-list .item-divider.title, hr.grey, hr.item-divider {
+.divider.grey, .expanding-list h3.grey, .divider.item-divider, .expanding-list h3.item-divider, hr.grey, hr.item-divider {
   border-bottom-color: #d6d4d4; }
-.divider.teal, .expanding-list h3.teal, .expanding-list .webinar .teal.title, .webinar .expanding-list .teal.title, .divider.section-divider, .expanding-list h3.section-divider, .expanding-list .webinar .section-divider.title, .webinar .expanding-list .section-divider.title, hr.teal, hr.section-divider {
+.divider.teal, .expanding-list h3.teal, .divider.section-divider, .expanding-list h3.section-divider, hr.teal, hr.section-divider {
   border-bottom-color: rgba(0, 136, 170, 0.5); }
-.divider.orange, .expanding-list h3, .expanding-list .webinar .title, .webinar .expanding-list .title, .divider.group-divider, .expanding-list h3.group-divider, .expanding-list .webinar .group-divider.title, .webinar .expanding-list .group-divider.title, hr.orange, hr.group-divider {
+.divider.orange, .expanding-list h3, .divider.group-divider, .expanding-list h3.group-divider, hr.orange, hr.group-divider {
   border-bottom-color: rgba(253, 126, 20, 0.5); }
-.divider.dashed, .expanding-list h3.dashed, .expanding-list .webinar .dashed.title, .webinar .expanding-list .dashed.title, .divider.item-divider, .expanding-list h3.item-divider, .expanding-list .webinar .item-divider.title, .webinar .expanding-list .item-divider.title, hr.dashed, hr.item-divider {
+.divider.dashed, .expanding-list h3.dashed, .divider.item-divider, .expanding-list h3.item-divider, hr.dashed, hr.item-divider {
   border-bottom-style: dashed; }
-.divider.dotted, .expanding-list h3.dotted, .expanding-list .webinar .dotted.title, .webinar .expanding-list .dotted.title, .divider.group-divider, .expanding-list h3.group-divider, .expanding-list .webinar .group-divider.title, .webinar .expanding-list .group-divider.title, hr.dotted, hr.group-divider {
+.divider.dotted, .expanding-list h3.dotted, .divider.group-divider, .expanding-list h3.group-divider, hr.dotted, hr.group-divider {
   border-bottom-style: dotted; }
-.divider.bold, .expanding-list h3, .expanding-list .webinar .title, .webinar .expanding-list .title, .divider.section-divider, .expanding-list h3.section-divider, .expanding-list .webinar .section-divider.title, .webinar .expanding-list .section-divider.title, hr.bold, hr.section-divider {
+.divider.bold, .expanding-list h3, .divider.section-divider, .expanding-list h3.section-divider, hr.bold, hr.section-divider {
   border-bottom-width: 2px; }
-.divider.space, .expanding-list h3.space, .expanding-list .webinar .space.title, .webinar .expanding-list .space.title, .divider.line-spacer, .expanding-list h3.line-spacer, .expanding-list .webinar .line-spacer.title, .webinar .expanding-list .line-spacer.title, hr.space, hr.line-spacer {
+.divider.space, .expanding-list h3.space, .divider.line-spacer, .expanding-list h3.line-spacer, hr.space, hr.line-spacer {
   border-bottom: 0px none transparent;
   margin-bottom: 14px;
   padding-bottom: 14px; }
@@ -7202,7 +7198,7 @@ dl.grouped-definision-list.term-sq-lg dd {
 *      <p data-sf-role="collapseAll" style="display:none;">Collapse all</p>
 *  </div>
 */
-.expanding-list h3, .expanding-list .webinar .title, .webinar .expanding-list .title {
+.expanding-list h3 {
   font-size: 22px;
   color: #e87d1e; }
 .expanding-list [data-sf-role="toggleLink"] {
@@ -8448,17 +8444,17 @@ input {
 .highlighted.card {
   border-color: #a4cded;
   background-color: #d2e6f6; }
-  .highlighted.card h1, .highlighted.card h2, .highlighted.card h3, .highlighted.card .webinar .title, .webinar .highlighted.card .title, .highlighted.card h4 {
+  .highlighted.card h1, .highlighted.card h2, .highlighted.card h3, .highlighted.card h4, .highlighted.card .webinar .title a, .webinar .title .highlighted.card a {
     line-height: 1.15; }
-  .highlighted.card h1, .highlighted.card h3, .highlighted.card .webinar .title, .webinar .highlighted.card .title {
+  .highlighted.card h1, .highlighted.card h3 {
     color: #e87d1e; }
-  .highlighted.card h2, .highlighted.card h4 {
+  .highlighted.card h2, .highlighted.card h4, .highlighted.card .webinar .title a, .webinar .title .highlighted.card a {
     color: #2f2f2f; }
   .highlighted.card h2 {
     font-size: 28px; }
-  .highlighted.card h3, .highlighted.card .webinar .title, .webinar .highlighted.card .title {
+  .highlighted.card h3 {
     font-size: 25px; }
-  .highlighted.card h4 {
+  .highlighted.card h4, .highlighted.card .webinar .title a, .webinar .title .highlighted.card a {
     font-size: 22px; }
   .highlighted.card p {
     font-size: 18px; }
@@ -9008,19 +9004,19 @@ input {
  *      <p>@{lipsum:20:words}</p>
  *   </div>
 */
-.box, .webinar {
+.box {
   margin-bottom: 1rem;
   padding: .5rem .75rem;
   border: 1px solid #eceaea; }
-  .box .card-header, .webinar .card-header {
+  .box .card-header {
     margin-left: 0;
     margin-right: 0; }
-  .box h1, .webinar h1, .box h2, .webinar h2, .box h3, .webinar h3, .webinar .title, .box h4, .webinar h4 {
+  .box h1, .box h2, .box h3, .box h4, .box .webinar .title a, .webinar .title .box a {
     font-weight: bold;
     color: #e87d1e; }
-    .box h1:first-child, .webinar h1:first-child, .box h2:first-child, .webinar h2:first-child, .box h3:first-child, .webinar h3:first-child, .webinar .title:first-child, .box h4:first-child, .webinar h4:first-child {
+    .box h1:first-child, .box h2:first-child, .box h3:first-child, .box h4:first-child, .box .webinar .title a:first-child, .webinar .title .box a:first-child {
       margin-top: .5rem; }
-  .box + .box, .webinar + .box, .box + .webinar, .webinar + .webinar {
+  .box + .box {
     margin-top: .5rem; }
 
 /**
@@ -9054,9 +9050,9 @@ input {
 *     </div>
 *  </div>
 */
-.box.alt, .alt.webinar {
+.box.alt {
   background-color: #eceaea; }
-  .box.alt.blue, .alt.blue.webinar {
+  .box.alt.blue {
     background-color: #a4cded; }
 
 /**
@@ -9108,7 +9104,7 @@ input {
     color: #2f2f2f;
     background-color: rgba(255, 255, 255, 0.2); }
 
-.btn.btn-secondary, [data-sf-role="expandAll"], [data-sf-role="collapseAll"], .btn-secondary.button, .btn.btn-default, .btn-default[data-sf-role="expandAll"], .btn-default[data-sf-role="collapseAll"], .btn-default.button {
+.btn.btn-secondary, [data-sf-role="expandAll"], [data-sf-role="collapseAll"], .btn-secondary.button, .webinar.secondary .action a.btn, .webinar.secondary .action a[data-sf-role="expandAll"], .webinar.secondary .action a[data-sf-role="collapseAll"], .webinar.secondary .action a.button, .btn.btn-default, .btn-default[data-sf-role="expandAll"], .btn-default[data-sf-role="collapseAll"], .btn-default.button {
   background: #a1a0a4;
   /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -9125,9 +9121,9 @@ input {
   /* IE10+ */
   background: linear-gradient(to bottom, #d6d4d4 0%, #a1a0a4 100%);
   /* W3C */ }
-  .btn.btn-secondary:visited, [data-sf-role="expandAll"]:visited, [data-sf-role="collapseAll"]:visited, .btn-secondary.button:visited, .btn.btn-secondary, [data-sf-role="expandAll"], [data-sf-role="collapseAll"], .btn-secondary.button, .btn.btn-default:visited, .btn-default[data-sf-role="expandAll"]:visited, .btn-default[data-sf-role="collapseAll"]:visited, .btn-default.button:visited, .btn.btn-default, .btn-default[data-sf-role="expandAll"], .btn-default[data-sf-role="collapseAll"], .btn-default.button {
+  .btn.btn-secondary:visited, [data-sf-role="expandAll"]:visited, [data-sf-role="collapseAll"]:visited, .btn-secondary.button:visited, .webinar.secondary .action a.btn:visited, .webinar.secondary .action a[data-sf-role="expandAll"]:visited, .webinar.secondary .action a[data-sf-role="collapseAll"]:visited, .webinar.secondary .action a.button:visited, .btn.btn-secondary, [data-sf-role="expandAll"], [data-sf-role="collapseAll"], .btn-secondary.button, .webinar.secondary .action a.btn, .webinar.secondary .action a[data-sf-role="expandAll"], .webinar.secondary .action a[data-sf-role="collapseAll"], .webinar.secondary .action a.button, .btn.btn-default:visited, .btn-default[data-sf-role="expandAll"]:visited, .btn-default[data-sf-role="collapseAll"]:visited, .btn-default.button:visited, .btn.btn-default, .btn-default[data-sf-role="expandAll"], .btn-default[data-sf-role="collapseAll"], .btn-default.button {
     color: #2f2f2f; }
-  .btn.btn-secondary:hover, [data-sf-role="expandAll"]:hover, [data-sf-role="collapseAll"]:hover, .btn-secondary.button:hover, .btn.btn-secondary:active, [data-sf-role="expandAll"]:active, [data-sf-role="collapseAll"]:active, .btn-secondary.button:active, .btn.btn-secondary:focus, [data-sf-role="expandAll"]:focus, [data-sf-role="collapseAll"]:focus, .btn-secondary.button:focus, .btn.btn-default:hover, .btn-default[data-sf-role="expandAll"]:hover, .btn-default[data-sf-role="collapseAll"]:hover, .btn-default.button:hover, .btn.btn-default:active, .btn-default[data-sf-role="expandAll"]:active, .btn-default[data-sf-role="collapseAll"]:active, .btn-default.button:active, .btn.btn-default:focus, .btn-default[data-sf-role="expandAll"]:focus, .btn-default[data-sf-role="collapseAll"]:focus, .btn-default.button:focus {
+  .btn.btn-secondary:hover, [data-sf-role="expandAll"]:hover, [data-sf-role="collapseAll"]:hover, .btn-secondary.button:hover, .webinar.secondary .action a.btn:hover, .webinar.secondary .action a[data-sf-role="expandAll"]:hover, .webinar.secondary .action a[data-sf-role="collapseAll"]:hover, .webinar.secondary .action a.button:hover, .btn.btn-secondary:active, [data-sf-role="expandAll"]:active, [data-sf-role="collapseAll"]:active, .btn-secondary.button:active, .webinar.secondary .action a.btn:active, .webinar.secondary .action a[data-sf-role="expandAll"]:active, .webinar.secondary .action a[data-sf-role="collapseAll"]:active, .webinar.secondary .action a.button:active, .btn.btn-secondary:focus, [data-sf-role="expandAll"]:focus, [data-sf-role="collapseAll"]:focus, .btn-secondary.button:focus, .webinar.secondary .action a.btn:focus, .webinar.secondary .action a[data-sf-role="expandAll"]:focus, .webinar.secondary .action a[data-sf-role="collapseAll"]:focus, .webinar.secondary .action a.button:focus, .btn.btn-default:hover, .btn-default[data-sf-role="expandAll"]:hover, .btn-default[data-sf-role="collapseAll"]:hover, .btn-default.button:hover, .btn.btn-default:active, .btn-default[data-sf-role="expandAll"]:active, .btn-default[data-sf-role="collapseAll"]:active, .btn-default.button:active, .btn.btn-default:focus, .btn-default[data-sf-role="expandAll"]:focus, .btn-default[data-sf-role="collapseAll"]:focus, .btn-default.button:focus {
     background: #a1a0a4;
     /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -9146,7 +9142,7 @@ input {
     /* W3C */
     color: #000; }
 
-.btn.btn-primary, .btn-primary[data-sf-role="expandAll"], .btn-primary[data-sf-role="collapseAll"], .btn-primary.button {
+.btn.btn-primary, .btn-primary[data-sf-role="expandAll"], .btn-primary[data-sf-role="collapseAll"], .btn-primary.button, .webinar.primary .action a.btn, .webinar.primary .action a[data-sf-role="expandAll"], .webinar.primary .action a[data-sf-role="collapseAll"], .webinar.primary .action a.button {
   background: #047294;
   /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -9163,9 +9159,9 @@ input {
   /* IE10+ */
   background: linear-gradient(to bottom, #05aee5 0%, #047294 100%);
   /* W3C */ }
-  .btn.btn-primary:visited, .btn-primary[data-sf-role="expandAll"]:visited, .btn-primary[data-sf-role="collapseAll"]:visited, .btn-primary.button:visited {
+  .btn.btn-primary:visited, .btn-primary[data-sf-role="expandAll"]:visited, .btn-primary[data-sf-role="collapseAll"]:visited, .btn-primary.button:visited, .webinar.primary .action a.btn:visited, .webinar.primary .action a[data-sf-role="expandAll"]:visited, .webinar.primary .action a[data-sf-role="collapseAll"]:visited, .webinar.primary .action a.button:visited {
     color: #fafafa; }
-  .btn.btn-primary:hover, .btn-primary[data-sf-role="expandAll"]:hover, .btn-primary[data-sf-role="collapseAll"]:hover, .btn-primary.button:hover {
+  .btn.btn-primary:hover, .btn-primary[data-sf-role="expandAll"]:hover, .btn-primary[data-sf-role="collapseAll"]:hover, .btn-primary.button:hover, .webinar.primary .action a.btn:hover, .webinar.primary .action a[data-sf-role="expandAll"]:hover, .webinar.primary .action a[data-sf-role="collapseAll"]:hover, .webinar.primary .action a.button:hover {
     background: #047294;
     /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -9957,7 +9953,7 @@ input {
  */
 .searchbar .input-group-addon, .searchbar input, .searchbar .input-group-btn {
   border-color: #0088aa; }
-.searchbar .input-group-addon.btn.btn-primary, .searchbar .input-group-addon.btn-primary[data-sf-role="expandAll"], .searchbar .input-group-addon.btn-primary[data-sf-role="collapseAll"], .searchbar .input-group-addon.btn-primary.button {
+.searchbar .input-group-addon.btn.btn-primary, .searchbar .input-group-addon.btn-primary[data-sf-role="expandAll"], .searchbar .input-group-addon.btn-primary[data-sf-role="collapseAll"], .searchbar .input-group-addon.btn-primary.button, .searchbar .webinar.primary .action a.input-group-addon.btn, .webinar.primary .action .searchbar a.input-group-addon.btn, .searchbar .webinar.primary .action a.input-group-addon[data-sf-role="expandAll"], .webinar.primary .action .searchbar a.input-group-addon[data-sf-role="expandAll"], .searchbar .webinar.primary .action a.input-group-addon[data-sf-role="collapseAll"], .webinar.primary .action .searchbar a.input-group-addon[data-sf-role="collapseAll"], .searchbar .webinar.primary .action a.input-group-addon.button, .webinar.primary .action .searchbar a.input-group-addon.button {
   color: white; }
 .searchbar .input-group-addon {
   background-color: #a4cded;
@@ -10074,7 +10070,7 @@ ul.result-list {
   ul.result-list .address + .address {
     margin-top: 1px; }
 
-.kendo-map .searchbar.box, .kendo-map .searchbar.webinar {
+.kendo-map .searchbar.box {
   border: 1px #6f6b6f solid;
   border-top: 2px solid #e87d1e;
   margin: -1px 0 0; }
@@ -10241,48 +10237,107 @@ ul.multiselect-container li.active a {
  * @molecule Webinar
  * @section Webinar
  * @modifiers
- *  .cp
- *  .afib
- *  .highlighted
+ *  .primary			Alters the button style to a btn-primary instead of just a link.
+ *  .secondary			Alters the button style to a btn-secondary instead of just a link.
+ *  .success			Alters the button style to a btn-success instead of just a link.
+ *  .ep-webinar      	Changes the graphic to display the product in the icon area.
+ *  .afib-webinar     	Changes the graphic to display the product in the icon area.  
+ *  .cathlab-webinar  	Changes the graphic to display the product in the icon area.     
+ *  .cpc-webinar     	Changes the graphic to display the product in the icon area. 
+ *  .fsed-webinar    	Changes the graphic to display the product in the icon area.  
+ *  .hf-webinar     	Changes the graphic to display the product in the icon area. 
  * @markup
- *  <div class="Cardio primary webinar">
+ *  <div class="ep-webinar primary webinar">
  *      <div class="icon">
- *          <i class="fa fa-3x fa-play"></i>
+ *          <i class="product"></i>
+ *		<div class="action">
+ *			<a class="btn btn-block">View Webinar <i class="fa fa-play-circle" aria-hidden="true"></i></a>
+ *		</div>
  *      </div>
  *      <div class="data">
  *          <div class="title">
- *          	<a>This is the title of this Video</a>
+ *          	<a>@{lipsum:12:words}</a>
  *          </div>
- *          <div class="view-time"><strong>View Time:</strong>&nbsp;<span>62 minutes</span></div>
- *  		<div class="action">
- *  			<a class="btn btn-secondary">View On Demand</a>
- *  		</div>
+ *          <div class="view-time"><strong>View Time:</strong>&nbsp;<span>@{lipsum:2:numbers} minutes</span></div>
  *      </div>
  *  </div>
  */
 .webinar {
+  margin-bottom: 1rem;
+  padding: .5rem .75rem;
+  clear: both;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex !important;
-  align-items: center; }
+  background-color: #fafafa;
+  border: 6px solid #eceaea;
+  align-items: stretch;
+  justify-content: stretch;
+  flex-wrap: wrap;
+  flex-flow: column;
+  box-shadow: 0px 3px 3px #999;
+  -webkit-box-shadow: 0px 3px 3px #999;
+  -moz-box-shadow: 0px 3px 3px #999; }
+  @media only screen and (min-width: 768px) {
+    .webinar {
+      align-items: center;
+      justify-content: stretch;
+      flex-flow: row; } }
   .webinar .icon {
-    -webkit-box-flex: 0 1 150px;
-    -moz-box-flex: 0 1 150px;
-    -webkit-flex: 0 1 150px;
-    -ms-flex: 0 1 150px;
-    flex: 0 1 150px; }
+    -webkit-box-flex: 1 1 150px;
+    -moz-box-flex: 1 1 150px;
+    -webkit-flex: 1 1 150px;
+    -ms-flex: 1 1 150px;
+    flex: 1 1 150px; }
+    @media only screen and (min-width: 768px) {
+      .webinar .icon {
+        max-width: 300px; } }
+    .webinar .icon .product {
+      width: 100%;
+      height: 140px;
+      display: block;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-color: white;
+      border: 2px solid #eceaea; }
   .webinar .data {
-    -webkit-box-flex: 0 1 auto;
-    -moz-box-flex: 0 1 auto;
-    -webkit-flex: 0 1 auto;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto; }
-  .webinar .title {
-    line-height: 1; }
+    -webkit-box-flex: 1 1 auto;
+    -moz-box-flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: .5rem 0rem;
+    justify-self: left;
+    align-self: flex-start; }
+    @media only screen and (min-width: 768px) {
+      .webinar .data {
+        padding: 0 1rem; } }
+  .webinar .action {
+    padding: .5rem 0; }
+  .webinar .title a {
+    font-family: 'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    line-height: 1.25;
+    margin: 0;
+    color: #e87d1e; }
   .webinar .view-time {
-    font-size: 16px; }
+    font-size: 12px;
+    color: #6f6b6f; }
+  .webinar.ep-webinar .icon .product {
+    background-image: url(../images/ep-webinar-thumbnail.jpg); }
+  .webinar.afib-webinar .icon .product {
+    background-image: url(../images/afib-webinar-thumbnail.jpg); }
+  .webinar.cathlab-webinar .icon .product {
+    background-image: url(../images/cathlab-webinar-thumbnail.jpg); }
+  .webinar.cpc-webinar .icon .product {
+    background-image: url(../images/cpc-webinar-thumbnail.jpg); }
+  .webinar.fsed-webinar .icon .product {
+    background-image: url(../images/fsed-webinar-thumbnail.jpg); }
+  .webinar.hf-webinar .icon .product {
+    background-image: url(../images/hf-webinar-thumbnail.jpg); }
 
 /* Legacy Support */
 /**
@@ -10301,19 +10356,19 @@ ul.multiselect-container li.active a {
  *      <p>@{lipsum:20:words}</p>
  *   </div>
 */
-.box, .webinar {
+.box {
   margin-bottom: 1rem;
   padding: .5rem .75rem;
   border: 1px solid #eceaea; }
-  .box .card-header, .webinar .card-header {
+  .box .card-header {
     margin-left: -.75rem;
     margin-right: -.75rem; }
-  .box h1, .webinar h1, .box h2, .webinar h2, .box h3, .webinar h3, .webinar .title, .box h4, .webinar h4 {
+  .box h1, .box h2, .box h3, .box h4, .box .webinar .title a, .webinar .title .box a {
     font-weight: bold;
     color: #e87d1e; }
-    .box h1:first-child, .webinar h1:first-child, .box h2:first-child, .webinar h2:first-child, .box h3:first-child, .webinar h3:first-child, .webinar .title:first-child, .box h4:first-child, .webinar h4:first-child {
+    .box h1:first-child, .box h2:first-child, .box h3:first-child, .box h4:first-child, .box .webinar .title a:first-child, .webinar .title .box a:first-child {
       margin-top: .5rem; }
-  .box + .box, .webinar + .box, .box + .webinar, .webinar + .webinar {
+  .box + .box {
     margin-top: .5rem; }
 
 /**
@@ -10347,9 +10402,9 @@ ul.multiselect-container li.active a {
 *     </div>
 *  </div>
 */
-.box.alt, .alt.webinar {
+.box.alt {
   background-color: #eceaea; }
-  .box.alt.blue, .alt.blue.webinar {
+  .box.alt.blue {
     background-color: #a4cded; }
 
 /**
@@ -10366,12 +10421,12 @@ ul.multiselect-container li.active a {
 *       </div>
 *  </div>
 */
-.box.score, .score.webinar {
+.box.score {
   background-color: #eceaea; }
-  .box.score h1, .score.webinar h1, .box.score h2, .score.webinar h2, .box.score h3, .score.webinar h3, .box.score .webinar .title, .webinar .box.score .title, .score.webinar .title, .box.score h4, .score.webinar h4 {
+  .box.score h1, .box.score h2, .box.score h3, .box.score h4, .box.score .webinar .title a, .webinar .title .box.score a {
     font-weight: bold;
     color: #e87d1e; }
-    .box.score h1:first-child, .score.webinar h1:first-child, .box.score h2:first-child, .score.webinar h2:first-child, .box.score h3:first-child, .score.webinar h3:first-child, .box.score .webinar .title:first-child, .webinar .box.score .title:first-child, .score.webinar .title:first-child, .box.score h4:first-child, .score.webinar h4:first-child {
+    .box.score h1:first-child, .box.score h2:first-child, .box.score h3:first-child, .box.score h4:first-child, .box.score .webinar .title a:first-child, .webinar .title .box.score a:first-child {
       margin-top: .5rem; }
 
 /**
@@ -10392,7 +10447,7 @@ ul.multiselect-container li.active a {
 *      </div>
 *  </div>
 */
-.overall-score.box, .overall-score.webinar {
+.overall-score.box {
   background-color: white;
   border: 0px none transparent; }
 
@@ -10511,10 +10566,10 @@ ul.multiselect-container li.active a {
 *       @{include:.accordion.basic}
 *  </div>
 */
-.box .accordion .panel-heading, .webinar .accordion .panel-heading, .card .accordion .panel-heading {
+.box .accordion .panel-heading, .card .accordion .panel-heading {
   border: 0 none transparent;
   background-color: transparent; }
-  .box .accordion .panel-heading .panel-title, .webinar .accordion .panel-heading .panel-title, .card .accordion .panel-heading .panel-title {
+  .box .accordion .panel-heading .panel-title, .card .accordion .panel-heading .panel-title {
     margin-top: 0; }
 
 /* Footer */

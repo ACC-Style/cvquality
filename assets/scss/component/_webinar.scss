@@ -4,37 +4,144 @@
  * @molecule Webinar
  * @section Webinar
  * @modifiers
- *  .cp
- *  .afib
- *  .highlighted
+ *  .primary			Alters the button style to a btn-primary instead of just a link.
+ *  .secondary			Alters the button style to a btn-secondary instead of just a link.
+ *  .success			Alters the button style to a btn-success instead of just a link.
+ *  .ep-webinar      	Changes the graphic to display the product in the icon area.
+ *  .afib-webinar     	Changes the graphic to display the product in the icon area.  
+ *  .cathlab-webinar  	Changes the graphic to display the product in the icon area.     
+ *  .cpc-webinar     	Changes the graphic to display the product in the icon area. 
+ *  .fsed-webinar    	Changes the graphic to display the product in the icon area.  
+ *  .hf-webinar     	Changes the graphic to display the product in the icon area. 
  * @markup
- *  <div class="Cardio primary webinar">
+ *  <div class="ep-webinar primary webinar">
  *      <div class="icon">
- *          <i class="fa fa-3x fa-play"></i>
+ *          <i class="product"></i>
+ *		<div class="action">
+ *			<a class="btn btn-block">View Webinar <i class="fa fa-play-circle" aria-hidden="true"></i></a>
+ *		</div>
  *      </div>
  *      <div class="data">
  *          <div class="title">
- *          	<a>This is the title of this Video</a>
+ *          	<a>@{lipsum:12:words}</a>
  *          </div>
- *          <div class="view-time"><strong>View Time:</strong>&nbsp;<span>62 minutes</span></div>
- *  		<div class="action">
- *  			<a class="btn btn-secondary">View On Demand</a>
- *  		</div>
+ *          <div class="view-time"><strong>View Time:</strong>&nbsp;<span>@{lipsum:2:numbers} minutes</span></div>
  *      </div>
  *  </div>
  */
 
- .webinar{
- 	@extend .box;
- 	@include acc-flexbox();
- 	align-items: center;
- 	.icon{@include acc-flex(0 1 150px);}
- 	.data{@include acc-flex( 0 1 auto);}
- 	.title{ 
- 		@extend h3;
- 		line-height: 1;
- 		}
- 	.view-time{ 
- 		font-size: ms(1);
- 		}
- }
+.webinar {
+    margin-bottom: 1rem;
+    padding: .5rem .75rem;
+    clear: both;
+    @include acc-flexbox();
+    background-color: $off-white;
+    border: 6px solid $soft-grey;
+    align-items: stretch;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    flex-flow: column;
+    @include dropshadow;
+    @include bp(md) {
+        align-items: center;
+        justify-content: stretch;
+        flex-flow: row;
+    }
+    .icon {
+        @include acc-flex(1 1 150px);
+        @include bp(md) {
+            max-width: 300px;
+        }
+        .product {
+            width: 100%;
+            height: 140px;
+            display: block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-color: white;
+            border: 2px solid $soft-grey;
+        }
+    }
+    .data {
+        @include acc-flex( 1 1 auto);
+        padding: .5rem 0rem;
+        justify-self: left;
+        align-self: flex-start;
+        @include bp(md) {
+            padding: 0 1rem;
+        }
+    }
+    .action {
+        padding: .5rem 0;
+    }
+    .title a {
+        @extend h4;
+        @include font-display();
+        line-height: 1.25;
+        margin: 0;
+        color: $orange-dark;
+    }
+    .view-time {
+        font-size: ms(-1);
+        color: $warm-grey-dark;
+    }
+    &.primary {
+        .action a.btn {
+            @extend .btn-primary;
+        }
+    }
+    &.success {
+        .action a.btn {
+            @extend .btn-success;
+        }
+    }
+    &.secondary{
+    	.action a.btn {
+            @extend .btn-secondary;
+        }
+
+    }
+    &.ep-webinar {
+        .icon {
+            .product {
+                background-image: url(../images/ep-webinar-thumbnail.jpg);
+            }
+        }
+    }
+    &.afib-webinar {
+        .icon {
+            .product {
+                background-image: url(../images/afib-webinar-thumbnail.jpg);
+            }
+        }
+    }
+    &.cathlab-webinar {
+        .icon {
+            .product {
+                background-image: url(../images/cathlab-webinar-thumbnail.jpg);
+            }
+        }
+    }
+    &.cpc-webinar {
+        .icon {
+            .product {
+                background-image: url(../images/cpc-webinar-thumbnail.jpg);
+            }
+        }
+    }
+    &.fsed-webinar {
+        .icon {
+            .product {
+                background-image: url(../images/fsed-webinar-thumbnail.jpg);
+            }
+        }
+    }
+    &.hf-webinar {
+        .icon {
+            .product {
+                background-image: url(../images/hf-webinar-thumbnail.jpg);
+            }
+        }
+    }
+}

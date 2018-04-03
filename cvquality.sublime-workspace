@@ -336,14 +336,6 @@
 	"buffers":
 	[
 		{
-			"file": "assets/scss/base/_fonts.scss",
-			"settings":
-			{
-				"buffer_size": 825,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"contents": "Searching 170 files for \"banded\"\n\nC:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss\\structure\\_cqc-clinician-management.scss:\n    2   * Header of the CQC Clincian Mangagment\n    3   * \n    4:  * @molecule Banded Lists Extra\n    5:  * @section Lists > Banded Extra\n    6   * @markup\n    7:  *  <ul class=\"banded-list banded-extra\">\n    8   *      <li class=\"bg-warm-grey-dark\">\n    9   *          <div class=\"row\">\n   ..\n   67   *  </ul>\n   68   **/\n   69:  .banded-extra{}\n   70  \n\nC:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss\\structure\\_cqc.scss:\n  146   * Highly stylized list\n  147   * \n  148:  * @molecule Banded Lists\n  149:  * @section Lists > Banded \n  150  * @modifiers\n  151   *  .bg-orange-dark decorator class that turns the Li background to orange-dark.\n  ...\n  159   *  .bg-mix-orange_teal decorator class that turns the Li background to mix-orange_teal.\n  160   * @markup\n  161:  *  <ul class=\"banded-list\">\n  162   *   <li>\n  163   *      <div class=\"row\">\n  ...\n  183   *  </ul>\n  184   **/\n  185: ul.banded-list{\n  186      @extend .no-bullets;\n  187      @extend .no-indent;\n  ...\n  238   *               <div aria-expanded=\"true\" aria-labelledby=\"headingOne\" class=\"panel-collapse collapse\" id=\"accordionboardsbasic\" role=\"tabpanel\">\n  239   *                   <div class=\"panel-body\">\n  240:  *                       <ul class=\"banded-list\">\n  241   *                         <li>\n  242   *                               <div class=\"row\">\n  ...\n  294   *               <div aria-expanded=\"true\" aria-labelledby=\"headingOne\" class=\"panel-collapse collapse\" id=\"accordioncertsbasic\" role=\"tabpanel\">\n  295   *                   <div class=\"panel-body\">\n  296:  *                       <ul class=\"banded-list\">\n  297   *                         <li>\n  298   *                               <div class=\"row\">\n  ...\n  346   *       <div id=\"accordionDatabasic\" class=\"panel-collapse collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" aria-expanded=\"true\">\n  347   *         <div class=\"panel-body\">\n  348:  *          @{include:ul.banded-list}\n  349   *         </div>\n  350   *       </div>\n\n12 matches across 2 files\n",
 			"settings":
 			{
@@ -359,6 +351,32 @@
 			{
 				"buffer_size": 17906,
 				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/scss/index.scss",
+			"settings":
+			{
+				"buffer_size": 2113,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/scss/component/_webinar.scss",
+			"settings":
+			{
+				"buffer_size": 921,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/helpers/_flex.scss",
+			"settings":
+			{
+				"buffer_size": 1152,
 				"line_ending": "Unix"
 			}
 		}
@@ -560,7 +578,10 @@
 	"expanded_folders":
 	[
 		"/C/Users/mwatier/REPOS/cvquality",
-		"/C/Users/mwatier/REPOS/cvquality/assets"
+		"/C/Users/mwatier/REPOS/cvquality/assets",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/component",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/structure"
 	],
 	"file_history":
 	[
@@ -890,41 +911,11 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "assets/scss/base/_fonts.scss",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 825,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522425457.6,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"semi_transient": false,
 					"settings":
 					{
@@ -1010,11 +1001,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "assets/scss/structure/_cqc.scss",
 					"semi_transient": false,
 					"settings":
@@ -1026,8 +1017,8 @@
 						"selection":
 						[
 							[
-								9106,
-								9106
+								5837,
+								5661
 							]
 						],
 						"settings":
@@ -1038,10 +1029,100 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2706.0,
+						"translation.y": 2076.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "assets/scss/index.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2113,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1314,
+								1314
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1522695029.62,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 90.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "assets/scss/component/_webinar.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 921,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								758,
+								758
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"markdonw_live_preview_last_run": 1522695068.3,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "assets/scss/helpers/_flex.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1152,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								155,
+								163
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1522695772.16,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1095,6 +1176,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"helpfl",
+				"assets\\scss\\helpers\\_flex.scss"
+			],
 			[
 				"nav-su",
 				"assets\\scss\\component\\_nav-sub.scss"
@@ -1602,10 +1687,6 @@
 			[
 				"boot3button.scs",
 				"assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\mixins\\_buttons.scss"
-			],
-			[
-				"boot3button",
-				"assets\\scss\\vendor\\bootstrap-sass-3.3.7\\javascripts\\bootstrap\\button.js"
 			]
 		],
 		"width": 0.0
