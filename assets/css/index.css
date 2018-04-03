@@ -10237,15 +10237,15 @@ ul.multiselect-container li.active a {
  * @molecule Webinar
  * @section Webinar
  * @modifiers
- *  .primary			Alters the button style to a btn-primary instead of just a link.
- *  .secondary			Alters the button style to a btn-secondary instead of just a link.
- *  .success			Alters the button style to a btn-success instead of just a link.
- *  .ep-webinar      	Changes the graphic to display the product in the icon area.
- *  .afib-webinar     	Changes the graphic to display the product in the icon area.  
- *  .cathlab-webinar  	Changes the graphic to display the product in the icon area.     
- *  .cpc-webinar     	Changes the graphic to display the product in the icon area. 
- *  .fsed-webinar    	Changes the graphic to display the product in the icon area.  
- *  .hf-webinar     	Changes the graphic to display the product in the icon area. 
+ *  .primary   			Alters the button style to a btn-primary instead of just a link.
+ *  .secondary  		Alters the button style to a btn-secondary instead of just a link.
+ *  .success 			Alters the button style to a btn-success instead of just a link.
+ *  .ep-webinar      	Changes the product graphic.
+ *  .afib-webinar     	Changes the product graphic.  
+ *  .cathlab-webinar  	Changes the product graphic.     
+ *  .cpc-webinar     	Changes the product graphic. 
+ *  .fsed-webinar    	Changes the product graphic.  
+ *  .hf-webinar     	Changes the product graphic. 
  * @markup
  *  <div class="ep-webinar primary webinar">
  *      <div class="icon">
@@ -10302,7 +10302,8 @@ ul.multiselect-container li.active a {
       background-repeat: no-repeat;
       background-position: center center;
       background-color: white;
-      border: 2px solid #eceaea; }
+      border: 2px solid #eceaea;
+      background-image: url(../images/webinar-thumbnail.jpg); }
   .webinar .data {
     -webkit-box-flex: 1 1 auto;
     -moz-box-flex: 1 1 auto;
