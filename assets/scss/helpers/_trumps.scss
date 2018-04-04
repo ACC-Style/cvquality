@@ -5,11 +5,12 @@
 * @section Helpers > trumps
 * @mixin No Margin
 * @example
-*  class="m-0"      will remove the margin on all sides
-*  class="m-l-0"    will remove the margin on the left
-*  class="m-r-0"    will remove the margin on the right
-*  class="m-t-0"    will remove the margin on the top
-*  class="m-b-0"    will remove the margin on the bottom 
+*  class="m-0"              will remove the margin on all sides
+*  class="no-margin"        Alias for m-0
+*  class="m-l-0"            will remove the margin on the left
+*  class="m-r-0"            will remove the margin on the right
+*  class="m-t-0"            will remove the margin on the top
+*  class="m-b-0"            will remove the margin on the bottom 
 * 
 */
 .no-margin{}
@@ -28,6 +29,22 @@
 }
 .no-margin{@extend .m-0;}
 
+/**
+* Some times the defualt padding needs to be removed.  Adding these class will selectivly remove the padding of the DOM item it is placed on. 
+* ~~ Open the example to see the other class and how they will effect the design ~~
+*
+* @section Helpers > trumps
+* @mixin No Padding
+* @example
+*  class="p-0"              will remove the padding on all sides
+*  class="no-padding"       Alias for p-0
+*  class="p-l-0"            will remove the padding on the left
+*  class="p-r-0"            will remove the padding on the right
+*  class="p-t-0"            will remove the padding on the top
+*  class="p-b-0"            will remove the padding on the bottom 
+* 
+*/
+.no-padding{}
 .p-0,.p-l-0{
     padding-left:0 !important;
 }
@@ -42,17 +59,55 @@
 }
 .no-padding{@extend .p-0;}
 
+/**
+* No Gutter removes the gutter/padding of column directly contained.. 
+* ~~ Open the example to see the other class and how they will effect the design ~~
+*
+* @section Helpers > trumps
+* @mixin No Padding
+* @example
+*  class="p-0"              will remove the padding on all sides
+*  class="no-padding"       Alias for p-0
+*  class="p-l-0"            will remove the padding on the left
+*  class="p-r-0"            will remove the padding on the right
+*  class="p-t-0"            will remove the padding on the top
+*  class="p-b-0"            will remove the padding on the bottom 
+* 
+*/
+.no-gutter{}
 .no-gutter > .sf_cols > [class*='col-'],.no-gutter > [class*='col-'] {
     @extend .p-r-0;
      @extend .p-l-0;
 }
-.expanded{ width:100%;}
+/**
+* Expanded will change any object to 100% width with 100% max-width 
+* ~~ Open the example to see the other class and how they will effect the design ~~
+*
+* @section Helpers > trumps
+* @mixin Expanded
+* @example
+*  class="expanded"              wiidth="100%"; max-width="100%"
+* 
+*/
+.expanded{ width:100% !important; max-width: 100% !important;}
 .input-group.expanded{
-    width:100%;
+   width:100% !important; max-width: 100% !important;
      >*{
-        width:100%;
+       width:100% !important; max-width: 100% !important;
      }
     }
+/**
+* Apply a multi column css3 property to a container with the deonted break point.
+* ~~ Open the example to see the other class and how they will effect the design ~~
+*
+* @section Helpers > trumps
+* @mixin Multi-column
+* @example
+*  class="multi-column-md-2"              2 column container that collapses back to 1 when screen is below medium
+*  class="multi-column-lg-2"              2 column container that collapses back to 1 when screen is below large
+* 
+*/
+.multi-colum-xx-2{}
 .multi-column-md-2 {
     @include bp(md) {
         -moz-column-count: 2;

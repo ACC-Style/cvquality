@@ -9694,7 +9694,7 @@ input {
           .nav-sub ul ul ul ul > li a:hover {
             background: #b5b3b5; }
     .nav-sub ul .active > ul {
-      max-height: 400px; }
+      max-height: 2000px; }
   .nav-sub li {
     display: block;
     cursor: pointer;
@@ -12281,11 +12281,12 @@ ul.banded-list li, ul.banded-list li:nth-child(even) {
 * @section Helpers > trumps
 * @mixin No Margin
 * @example
-*  class="m-0"      will remove the margin on all sides
-*  class="m-l-0"    will remove the margin on the left
-*  class="m-r-0"    will remove the margin on the right
-*  class="m-t-0"    will remove the margin on the top
-*  class="m-b-0"    will remove the margin on the bottom 
+*  class="m-0"              will remove the margin on all sides
+*  class="no-margin"        Alias for m-0
+*  class="m-l-0"            will remove the margin on the left
+*  class="m-r-0"            will remove the margin on the right
+*  class="m-t-0"            will remove the margin on the top
+*  class="m-b-0"            will remove the margin on the bottom 
 * 
 */
 .m-0, .no-margin, .m-l-0 {
@@ -12300,6 +12301,21 @@ ul.banded-list li, ul.banded-list li:nth-child(even) {
 .m-0, .no-margin, .m-b-0 {
   margin-bottom: 0 !important; }
 
+/**
+* Some times the defualt padding needs to be removed.  Adding these class will selectivly remove the padding of the DOM item it is placed on. 
+* ~~ Open the example to see the other class and how they will effect the design ~~
+*
+* @section Helpers > trumps
+* @mixin No Padding
+* @example
+*  class="p-0"              will remove the padding on all sides
+*  class="no-padding"       Alias for p-0
+*  class="p-l-0"            will remove the padding on the left
+*  class="p-r-0"            will remove the padding on the right
+*  class="p-t-0"            will remove the padding on the top
+*  class="p-b-0"            will remove the padding on the bottom 
+* 
+*/
 .p-0, .no-padding, .p-l-0, .no-gutter > .sf_cols > [class*='col-'], .no-gutter > [class*='col-'] {
   padding-left: 0 !important; }
 
@@ -12312,14 +12328,53 @@ ul.banded-list li, ul.banded-list li:nth-child(even) {
 .p-0, .no-padding, .p-b-0 {
   padding-bottom: 0 !important; }
 
+/**
+* No Gutter removes the gutter/padding of column directly contained.. 
+* ~~ Open the example to see the other class and how they will effect the design ~~
+*
+* @section Helpers > trumps
+* @mixin No Padding
+* @example
+*  class="p-0"              will remove the padding on all sides
+*  class="no-padding"       Alias for p-0
+*  class="p-l-0"            will remove the padding on the left
+*  class="p-r-0"            will remove the padding on the right
+*  class="p-t-0"            will remove the padding on the top
+*  class="p-b-0"            will remove the padding on the bottom 
+* 
+*/
+/**
+* Expanded will change any object to 100% width with 100% max-width 
+* ~~ Open the example to see the other class and how they will effect the design ~~
+*
+* @section Helpers > trumps
+* @mixin Expanded
+* @example
+*  class="expanded"              wiidth="100%"; max-width="100%"
+* 
+*/
 .expanded {
-  width: 100%; }
+  width: 100% !important;
+  max-width: 100% !important; }
 
 .input-group.expanded {
-  width: 100%; }
+  width: 100% !important;
+  max-width: 100% !important; }
   .input-group.expanded > * {
-    width: 100%; }
+    width: 100% !important;
+    max-width: 100% !important; }
 
+/**
+* Apply a multi column css3 property to a container with the deonted break point.
+* ~~ Open the example to see the other class and how they will effect the design ~~
+*
+* @section Helpers > trumps
+* @mixin Multi-column
+* @example
+*  class="multi-column-md-2"              2 column container that collapses back to 1 when screen is below medium
+*  class="multi-column-lg-2"              2 column container that collapses back to 1 when screen is below large
+* 
+*/
 @media only screen and (min-width: 768px) {
   .multi-column-md-2 {
     -moz-column-count: 2;
