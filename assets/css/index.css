@@ -12594,6 +12594,28 @@ ul.banded-list li, ul.banded-list li:nth-child(even) {
     padding-left: 4.5px;
     padding-right: 4.5px; }
 
+/**
+* section padding often you will need to inject some spacing into the top and bottom of a container so the section and container do not collide. 
+* ~~ Open the example to see the other class and how they will effect the design ~~
+*
+* @section Helpers > trumps
+* @mixin section Padding
+* @example
+*  class="section-padding"              will add a full line-height space on the top and bottom inside a container
+*  class="section-padding half"         will add a 1/2 the line-height space on the top and bottom inside a container
+*  class="section-padding quarter"      will add a 1/4 line-height space on the top and bottom inside a container
+* 
+*/
+.section-padding {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem; }
+  .section-padding.half {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem; }
+  .section-padding.quarter {
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem; }
+
 img + .btn.btn-block, img + .btn-block[data-sf-role="expandAll"], img + .btn-block[data-sf-role="collapseAll"], img + .btn-block.button {
   line-height: 1.75;
   margin-top: 4px; }

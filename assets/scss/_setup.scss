@@ -4,7 +4,7 @@ $ms-ratio-2: 1.125 + (.25 * 1/3);
 $ms-ratio-3: 1.125 + (.25 * 2/3);
 $ms-ratio-4:  1.125 + (.25 * 3/3);
 $baseline-modifier:1.5;
-
+$line-height:1rem * $baseline-modifier;
 @import "vendor/modular-scale";
 @import "helpers/mixens";
 @import "helpers/breakpoints";
