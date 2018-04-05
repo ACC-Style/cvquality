@@ -7043,182 +7043,6 @@ ul.generic-list {
     padding-top: .5rem; }
 
 /**
-* Definision List are groups of an item and the description.  Classic definision list is Q&A 
-*
-* @molecule Definision List
-* @section Typography > Definision List
-* @markup
-*    <dl class="grouped-definision-list term-xs">
-*        <dt><img src="@{image:100:100}" alt="..."></dt> 
-*        <dd>
-*            <h2><a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a></h2>
-*            <p>@{lipsum:3:sentences}</p>
-*        </dd>
-*        <dt><img src="@{image:100:100}" alt="..."></dt> 
-*        <dd>
-*            <h2><a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a></h2>
-*            <p>@{lipsum:1:sentences}</p><p>@{lipsum:2:sentences}</p>
-*        </dd>
-*        <dt><img src="@{image:100:100}" alt="..."></dt> 
-*        <dd>
-*            <h2><a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a></h2>
-*            <p>@{lipsum:3:sentences}</p>
-*        </dd>
-*        <dt><img src="@{image:100:100}" alt="..."></dt> 
-*        <dd>
-*            <h2>
-*          <a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a>
-*          </h2>
-*            <p>@{lipsum:3:sentences}</p>
-*            <p>@{lipsum:3:sentences}</p>
-*           @{include:.accordion.simple}
-*        </dd>
-*    </dl>
-*/
-dl.grouped-definision-list dt {
-  padding: .5rem 0;
-  float: left;
-  clear: both;
-  text-align: center; }
-  dl.grouped-definision-list dt > * {
-    margin: 0 auto; }
-dl.grouped-definision-list dd {
-  float: left;
-  margin-left: 18px;
-  border-bottom: 1px dashed #d6d4d4; }
-  dl.grouped-definision-list dd > *:first-child {
-    margin-top: 0; }
-dl.grouped-definision-list dt:after, dl.grouped-definision-list dd:after {
-  content: "";
-  display: table;
-  width: 100%; }
-dl.grouped-definision-list.term-xs dt {
-  width: 30%; }
-dl.grouped-definision-list.term-xs dd {
-  width: 65%;
-  width: calc(70% - $grid-gutter-width); }
-dl.grouped-definision-list.term-sm dt {
-  width: 40%; }
-dl.grouped-definision-list.term-sm dd {
-  width: 55%;
-  width: calc(60% - $grid-gutter-width); }
-dl.grouped-definision-list.term-md dt, dl.grouped-definision-list.term-md dd, dl.grouped-definision-list.term-lg dt, dl.grouped-definision-list.term-lg dd {
-  width: 100%;
-  margin-left: 0;
-  clear: both; }
-@media only screen and (min-width: 768px) {
-  dl.grouped-definision-list.term-xs dt {
-    width: 20%; }
-  dl.grouped-definision-list.term-xs dd {
-    width: 75%;
-    width: calc(80% - $grid-gutter-width); }
-  dl.grouped-definision-list.term-sm dt {
-    width: 30%; }
-  dl.grouped-definision-list.term-sm dd {
-    width: 65%;
-    width: calc(70% - $grid-gutter-width); }
-  dl.grouped-definision-list.term-md dt {
-    width: 40%; }
-  dl.grouped-definision-list.term-md dd {
-    width: 55%;
-    width: calc(60% - $grid-gutter-width); }
-  dl.grouped-definision-list.term-lg dt {
-    width: 50%; }
-  dl.grouped-definision-list.term-lg dd {
-    width: 45%;
-    width: calc(50% - $grid-gutter-width); } }
-@media only screen and (min-width: 1024px) {
-  dl.grouped-definision-list.term-xs dt {
-    width: 10%; }
-  dl.grouped-definision-list.term-xs dd {
-    width: 85%;
-    width: calc(90% - $grid-gutter-width); }
-  dl.grouped-definision-list.term-sm dt {
-    width: 20%; }
-  dl.grouped-definision-list.term-sm dd {
-    width: 75%;
-    width: calc(80% - $grid-gutter-width); }
-  dl.grouped-definision-list.term-md dt {
-    width: 30%; }
-  dl.grouped-definision-list.term-md dd {
-    width: 65%;
-    width: calc(70% - $grid-gutter-width); }
-  dl.grouped-definision-list.term-lg dt {
-    width: 50%; }
-  dl.grouped-definision-list.term-lg dd {
-    width: 45%;
-    width: calc(50% - $grid-gutter-width); } }
-dl.grouped-definision-list.term-sq-sm dt {
-  width: 20%; }
-dl.grouped-definision-list.term-sq-sm dd {
-  width: 80%;
-  width: calc(80% - $grid-gutter-width); }
-dl.grouped-definision-list.term-sq-md dt {
-  width: 20%; }
-dl.grouped-definision-list.term-sq-md dd {
-  width: 80%;
-  width: calc(80% - $grid-gutter-width); }
-dl.grouped-definision-list.term-sq-lg dt {
-  width: 20%; }
-dl.grouped-definision-list.term-sq-lg dd {
-  width: 80%;
-  width: calc(80% - $grid-gutter-width); }
-
-/**
-* Sitefinity Expanding List
-*
-* @molecule Expanding List
-* @section Typography > Exapnding Lists
-* @markup
-*  <div data-sf-role="lists" class="expanding-list">
-*          <h3>
-*              <span>
-*                  Learn more about QII. Click the questions below to expose their answer.
-*              </span>
-*          </h3>
-*              <div>
-*                  <a href="javascript:void(0)" data-sf-role="toggleLink" class="expanded">What is Quality Improvement for Institutions?</a>
-*                  <div style="display: block;">
-*                      <p>Quality Improvement for Institutions is a suite of registries, quality campaigns, accreditation services and clinical toolkits offered to health care facilities and their staff in a convenient, single website.&nbsp; These online assets are intended to inspire and accelerate quality improvement in the facility while saving staff time and energy by providing ready-to-go, off-the-shelf programs and tools.</p>
-*                  </div>
-*              </div>
-*              <div>
-*                  <a href="javascript:void(0)" data-sf-role="toggleLink">How do I access Quality Improvement for Institutions online?</a>
-*                  <div style="display:none;">
-*                      The website for Quality Improvement for Institutions is CVQuality.ACC.org.&nbsp;
-*                  </div>
-*              </div>
-*              <div>
-*                  <a href="javascript:void(0)" data-sf-role="toggleLink">Who is eligible to participate in Quality Improvement for Institutions?</a>
-*                  <div style="display:none;">
-*                      <p style="background: white;">Individuals from&nbsp;<strong>NCDR Registry participating hospitals&nbsp;</strong>have access to the program as part of their NCDR fee.</p> Individuals from&nbsp;<strong>participating PINNACLE Registry practices</strong>&nbsp;have access to the program as part of their PINNACLE Registry association. <br><br>Hospitals that do not participate in an NCDR hospital registry or PINNACLE Registry can join Quality Improvement for Institutions for an annual fee. <br><br>*At this time, hospitals accredited through ACC Accreditation services do not have access to the quality improvement resources available on <em>CVQuality.ACC.org</em>, unless they are also part of an NCDR registry. The ACC is working to provide access to ACC Accredited facilities.
-*                  </div>
-*              </div>
-*      <p data-sf-role="expandAll" style="display: block;">Expand all</p>
-*      <p data-sf-role="collapseAll" style="display:none;">Collapse all</p>
-*  </div>
-*/
-.expanding-list h3 {
-  font-size: 22px;
-  color: #e87d1e; }
-.expanding-list [data-sf-role="toggleLink"] {
-  font-size: 18px;
-  line-height: 1.5; }
-  .expanding-list [data-sf-role="toggleLink"]:before {
-    content: "\f196"; }
-  .expanding-list [data-sf-role="toggleLink"].expanded:before {
-    content: "\f147"; }
-.expanding-list [data-sf-role="toggleLink"] + div {
-  padding: .75rem 1.5rem .5rem 2.25rem; }
-.expanding-list > div + div {
-  margin-top: .5rem;
-  border-top: 1px dashed #d6d4d4;
-  padding-top: .5rem; }
-
-[data-sf-role="expandAll"], [data-sf-role="collapseAll"] {
-  margin-top: 1rem; }
-
-/**
 * @atom Tables
 * @section Typography > Tables
 * @markup
@@ -7752,6 +7576,465 @@ dl.grouped-definision-list.term-sq-lg dd {
 *  </div>
 *  </div>
 **/
+/**
+* @atom Tables
+* @section Typography > Tables
+* @markup
+*   <table class="table table-hover">
+*   	<thead>
+*   	<tr>
+*   		<th>#</th>
+*   		<th>First Name</th>
+*   		<th>Tables</th>
+*   	</tr>
+*   	</thead>
+*   	<tbody>
+*   	<tr>
+*   		<td>1</td>
+*   		<td>Michael</td>
+*   		<td>Are formatted like this</td>
+*   	</tr>
+*   	<tr>
+*   		<td>2</td>
+*   		<td>Lucille</td>
+*   		<td>Do you like them?</td>
+*   	</tr>
+*   	<tr class="success">
+*   		<td>3</td>
+*   		<td>Success</td>
+*   		<td></td>
+*   	</tr>
+*   	<tr class="danger">
+*   		<td>4</td>
+*   		<td>Danger</td>
+*   		<td></td>
+*   	</tr>
+*   	<tr class="warning">
+*   		<td>5</td>
+*   		<td>Warning</td>
+*   		<td></td>
+*   	</tr>
+*   	<tr class="active">
+*   		<td>6</td>
+*   		<td>Active</td>
+*   		<td></td>
+*   	</tr>
+*   	</tbody>
+*   </table>
+*   <table class="table table-striped table-bordered table-condensed">
+*   	<thead>
+*   	<tr>
+*   		<th>#</th>
+*   		<th>First Name</th>
+*   		<th>Tables</th>
+*   	</tr>
+*   	</thead>
+*   	<tbody>
+*   	<tr>
+*   		<td>1</td>
+*   		<td>Michael</td>
+*   		<td>This one is bordered and condensed</td>
+*   	</tr>
+*   	<tr>
+*   		<td>2</td>
+*   		<td>Lucille</td>
+*   		<td>Do you still like it?</td>
+*   	</tr>
+*   	</tbody>
+*   </table>
+**/
+/**
+* @atom Tables Scrollable
+* @section Typography > Tables
+* @markup
+*  <div class="table-scrollable">
+*    <div class="instructions"> <i class="fa fa-long-arrow-left"></i> Scroll For Software Companies  <i class="fa fa-long-arrow-right"></i> </div>
+*      <table class="software-vendors">
+*          <thead>
+*              <tr>
+*                  <th>Certified NCDR Software Vendor</th>
+*                  <th>IMPACT Registry</th>
+*                  <th>ACTION Registry</th>
+*                  <th>PVI Registry</th>
+*                  <th>CathPCI Registry</th>
+*                  <th>ICD Registry</th>
+*                  <th>AFib Registry</th>
+*              </tr>
+*          </thead>
+*          <tbody>
+*              <tr>
+*                  <td><a href="#157" class="company">ARMUS Corporation</a></td>
+*                  <td>Certified 04/21/2017</td>
+*                  <td>Certified 12/23/14</td>
+*                  <td>Certified October 18, 2017
+*                  </td>
+*                  <td>Certified - Interoperable with ACTION v2 07/14/10</td>
+*                  <td>Certified 08/05/2016</td>
+*                  <td>Certified 08/05/2016</td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#101" class="company">Axis Clinical Software, Inc.</a></td>
+*                  <td>Certified 08/24/2016</td>
+*                  <td>Interoperable with CathPCI and ICD v4 01/13/15</td>
+*                  <td>Certified 11/07/2014</td>
+*                  <td>Certified Interoperable with ACTION v2 10/28/11 and ICD v2 04/13/12
+*                      <br><b>*Metric License </b></td>
+*                  <td>Certified 05/27/16
+*                      <br><b>*Metric License </b></td>
+*                  <td>Certified 07/29/2016</td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#127" class="company">BayaTree, LLC</a></td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Certified 07/12/2017</td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Certified 08/18/2009</td>
+*                  <td>Certified 05/24/16</td>
+*                  <td>Certified 09/09/2016</td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#179" class="company">CardioAccess, Inc.</a></td>
+*                  <td>Certified 06/03/2016</td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#110" class="company">CardioPulse</a></td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Interoperable with CathPCI v4 and ICD v2 04/10/15</td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Interoperable with ICD v2 and ACTION v2 9/6/11</td>
+*                  <td>Certified 09/08/2016</td>
+*                  <td>Certified 10/18/2017</td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#103" class="company">Cedaron Medical, Inc.</a></td>
+*                  <td>Certified 01/15/2016</td>
+*                  <td>Interoperable with CathPCI and ICD v4 11/24/14
+*                      <br><b>*Metric License </b></td>
+*                  <td>Certified 06/03/2014
+*                      <br><b>*Metric License </b></td>
+*                  <td>Certified Interoperable with ACTION v2 05/04/10
+*                      <br><b>*Metric License </b></td>
+*                  <td>Certified 05/25/16
+*                      <br><b>*Metric License </b></td>
+*                  <td>Certified 07/13/2016</td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#140" class="company">Epic</a></td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Certified 06/09/2009</td>
+*                  <td>Certified 04/28/2016</td>
+*                  <td>Certified 04/12/2017</td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#205" class="company">Flexible Informatics</a></td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Certified 07/13/2017</td>
+*                  <td>Certified 07/25/2017</td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#105" class="company">GE Healthcare</a></td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Certified 03/06/2009</td>
+*                  <td>Certified 07/07/16</td>
+*                  <td>Certified 07/12/2016</td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#200" class="company">Health Level</a></td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Certified v4.4 12/07/2016</td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#108" class="company">heartbase</a></td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Interoperable with CathPCI and ICD 05/01/15</td>
+*                  <td>Certified 06/18/2014</td>
+*                  <td>Interoperable with ACTION v2 and ICD v2 03/29/13
+*                      <br><b>*Metric License </b></td>
+*                  <td>Certified 06/08/16</td>
+*                  <td>Certified 08/03/2016</td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#118" class="company">Juniper Consulting Group</a></td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Certified 06/22/2009</td>
+*                  <td>Certified 05/24/16</td>
+*                  <td>Certified 11/10/2016</td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#111" class="company">LUMEDX</a></td>
+*                  <td>Certified 03/17/2016
+*                      <br><b>*Metric License </b></td>
+*                  <td>Interoperable with CathPCI and ICD v4 02/05/15</td>
+*                  <td>Certified 05/11/2015</td>
+*                  <td>Interoperable with ACTION v2</td>
+*                  <td>Certified 08/10/16
+*                      <br><b>*Metric License </b></td>
+*                  <td>Certified 12/22/2016</td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#183" class="company">Navion Healthcare Solutions</a></td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Certified 01/23/15
+*                      <br><b>*Metric License </b></td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Certified 04/01/2013
+*                      <br><b>*Metric License </b></td>
+*                  <td>Certified 08/09/16
+*                      <br><b>*Metric License </b></td>
+*                  <td>Certified 04/19/2017</td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#199" class="company">Q-Centrix</a></td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Certified v2.4 05/17/2016
+*                      <br><b>*Metric License </b></td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Certified 04/28/16
+*                      <br><b>*Metric License </b></td>
+*                  <td>Certified 11/22/2016</td>
+*                  <td>Certified 10/12/2017</td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#138" class="company">Quantros, Inc.</a></td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Certified 09/30/2009</td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#153" class="company">Quintiles</a></td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Certified 03/10/15</td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#176" class="company">Scientific Software Solutions, Inc.</a></td>
+*                  <td>Certified 02/05/2016</td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*              </tr>
+*              <tr>
+*                  <td><a href="#174" class="company">SoftLink International Inc.</a></td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>&nbsp;
+*                  </td>
+*                  <td>Certified 05/02/2012</td>
+*                  <td>Certified 05/26/2016</td>
+*                  <td>Certified 05/26/2016</td>
+*              </tr>
+*          </tbody>
+*      </table>
+*  </div>
+*  
+**/
+.table-scrollable:after {
+  content: "";
+  display: table;
+  clear: both; }
+.table-scrollable table {
+  display: block;
+  position: relative;
+  border: 1px solid #d6d4d4;
+  border-top: 0 none transparent; }
+.table-scrollable thead, .table-scrollable tbody {
+  display: block; }
+.table-scrollable thead {
+  width: 40%;
+  z-index: 2;
+  background-color: #eceaea;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 3px solid #0088aa; }
+  @media only screen and (min-width: 768px) {
+    .table-scrollable thead {
+      width: 18em; } }
+  .table-scrollable thead tr {
+    width: 100%;
+    display: block; }
+  .table-scrollable thead th {
+    display: block;
+    height: 6rem;
+    font-size: 16px;
+    line-height: 1.3; }
+    @media only screen and (min-width: 768px) {
+      .table-scrollable thead th {
+        height: 4rem; } }
+    @media only screen and (max-height: 768px) {
+      .table-scrollable thead th {
+        line-height: 1.15;
+        font-size: 14px;
+        height: 3.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis; } }
+    .table-scrollable thead th:nth-child(2n+2) {
+      background-color: #e5e7ea; }
+.table-scrollable tbody {
+  white-space: nowrap;
+  padding-left: 40%;
+  overflow-x: scroll; }
+  @media only screen and (min-width: 768px) {
+    .table-scrollable tbody {
+      padding-left: 18em; } }
+  .table-scrollable tbody tr {
+    width: 90%;
+    white-space: normal;
+    display: inline-block;
+    margin-right: -.125em; }
+    @media only screen and (min-width: 768px) {
+      .table-scrollable tbody tr {
+        width: 15em; } }
+  .table-scrollable tbody tr + tr {
+    border-left: #a4cded 1px solid; }
+  .table-scrollable tbody td {
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    line-height: 1.3;
+    height: 6rem; }
+    @media only screen and (min-width: 768px) {
+      .table-scrollable tbody td {
+        height: 4rem; } }
+    @media only screen and (max-height: 768px) {
+      .table-scrollable tbody td {
+        line-height: 1.15;
+        height: 3.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 11px; } }
+    .table-scrollable tbody td b {
+      color: #e87d1e; }
+    .table-scrollable tbody td:nth-child(2n+2) {
+      background-color: #f6fafd; }
+.table-scrollable th, .table-scrollable td {
+  padding: .5rem 1rem .25rem 1rem;
+  border-bottom: 1px solid #d6d4d4; }
+  @media only screen and (max-height: 768px) {
+    .table-scrollable th, .table-scrollable td {
+      padding: .25rem .5rem .125rem .5rem; } }
+.table-scrollable th {
+  border-bottom: 1px solid #a1a0a4; }
+.table-scrollable .instructions {
+  color: #e87d1e;
+  border: 1px solid #d6d4d4;
+  border-bottom: 2px solid #a1a0a4;
+  width: 100%;
+  text-align: center;
+  background-color: #eceaea;
+  display: block;
+  padding: .25rem 1rem;
+  font-size: 12px; }
+  .table-scrollable .instructions .fa {
+    margin: 0 .25rem; }
+
+.software-vendors .company {
+  font-size: 16px;
+  font-family: 'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #047294; }
+  .software-vendors .company:after {
+    color: #e87d1e;
+    content: "\f05a"; }
+
+@media print {
+  .table-scrollable .software-vendors .company {
+    padding: 1em; }
+  .table-scrollable .instructions {
+    display: none; }
+  .table-scrollable table {
+    width: 100%;
+    position: relative;
+    clear: both;
+    display: table; }
+    .table-scrollable table * {
+      width: auto;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      position: relative; }
+    .table-scrollable table thead, .table-scrollable table tbody, .table-scrollable table tfoot {
+      display: table-row-group; }
+    .table-scrollable table tr {
+      display: table-row; }
+    .table-scrollable table td, .table-scrollable table th {
+      display: table-cell;
+      padding: 5px; } }
 fieldset {
   margin: 0;
   padding: 0;
@@ -7804,6 +8087,362 @@ input {
     position: absolute;
     top: 0;
     right: 0; }
+
+ul.no-bullets, ul.banded-list, ul.no-bullets li, ul.banded-list li, ul.multiselect-container, ul.multiselect-container li, ul.generic-list, ul.generic-list li {
+  list-style: none;
+  list-style-type: none; }
+
+ul.no-indent, ul.banded-list, ul.multiselect-container, ul.generic-list {
+  margin: 0;
+  padding: 0; }
+  ul.no-indent, ul.banded-list, ul.no-indent li, ul.banded-list li, ul.multiselect-container, ul.multiselect-container li, ul.generic-list, ul.generic-list li {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0; }
+
+/**
+* Basic List with no bullets 
+*
+* @molecule No Bullet List
+* @section Typography > Generic List
+* @markup
+*    <ul class="no-bullets">
+*        <li>
+*            <h2>
+*          <a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a>
+*          </h2>
+*            <p>@{lipsum:3:sentences}
+*            </p>
+*            <a>more <i class="fa fa-arrow-right"></i></a>
+*        </li>
+*        <li>
+*            <h2>
+*          <a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a>
+*          </h2>
+*            <p>@{lipsum:3:sentences}
+*            </p>
+*            <a>more <i class="fa fa-arrow-right"></i></a>
+*        </li>
+*    </ul>
+*/
+/**
+* Semantic List for content that shouldn't be bulleted or indented. 
+*
+* @molecule Generic List
+* @section Typography > Generic List
+* @markup
+*    <ul class="generic-list">
+*        <li>
+*            <h2>
+*          <a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a>
+*          </h2>
+*            <p>@{lipsum:3:sentences}
+*            </p>
+*            <a>more <i class="fa fa-arrow-right"></i></a>
+*        </li>
+*        <li>
+*            <h2>
+*          <a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a>
+*          </h2>
+*            <p>@{lipsum:3:sentences}
+*            </p>
+*            <a>more <i class="fa fa-arrow-right"></i></a>
+*        </li>
+*    </ul>
+*/
+ul.generic-list {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+  ul.generic-list li {
+    margin: 0 0 .5em;
+    overflow: visible;
+    list-style-type: none; }
+  ul.generic-list > li + li {
+    margin-top: .5rem;
+    border-top: 1px dashed #d6d4d4;
+    padding-top: .5rem; }
+
+/**
+* Definision List are groups of an item and the description.  Classic definision list is Q&A 
+*
+* @molecule Definision List
+* @section Typography > Definision List
+* @markup
+*    <dl class="grouped-definision-list term-xs">
+*        <dt><img src="@{image:100:100}" alt="..."></dt> 
+*        <dd>
+*            <h2><a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a></h2>
+*            <p>@{lipsum:3:sentences}</p>
+*        </dd>
+*        <dt><img src="@{image:100:100}" alt="..."></dt> 
+*        <dd>
+*            <h2><a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a></h2>
+*            <p>@{lipsum:1:sentences}</p><p>@{lipsum:2:sentences}</p>
+*        </dd>
+*        <dt><img src="@{image:100:100}" alt="..."></dt> 
+*        <dd>
+*            <h2><a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a></h2>
+*            <p>@{lipsum:3:sentences}</p>
+*        </dd>
+*        <dt><img src="@{image:100:100}" alt="..."></dt> 
+*        <dd>
+*            <h2>
+*          <a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a>
+*          </h2>
+*            <p>@{lipsum:3:sentences}</p>
+*            <p>@{lipsum:3:sentences}</p>
+*           @{include:.accordion.simple}
+*        </dd>
+*    </dl>
+*/
+dl.grouped-definision-list dt {
+  padding: .5rem 0;
+  float: left;
+  clear: both;
+  text-align: center; }
+  dl.grouped-definision-list dt > * {
+    margin: 0 auto; }
+dl.grouped-definision-list dd {
+  float: left;
+  margin-left: 18px;
+  border-bottom: 1px dashed #d6d4d4; }
+  dl.grouped-definision-list dd > *:first-child {
+    margin-top: 0; }
+dl.grouped-definision-list dt:after, dl.grouped-definision-list dd:after {
+  content: "";
+  display: table;
+  width: 100%; }
+dl.grouped-definision-list.term-xs dt {
+  width: 30%; }
+dl.grouped-definision-list.term-xs dd {
+  width: 65%;
+  width: calc(70% - $grid-gutter-width); }
+dl.grouped-definision-list.term-sm dt {
+  width: 40%; }
+dl.grouped-definision-list.term-sm dd {
+  width: 55%;
+  width: calc(60% - $grid-gutter-width); }
+dl.grouped-definision-list.term-md dt, dl.grouped-definision-list.term-md dd, dl.grouped-definision-list.term-lg dt, dl.grouped-definision-list.term-lg dd {
+  width: 100%;
+  margin-left: 0;
+  clear: both; }
+@media only screen and (min-width: 768px) {
+  dl.grouped-definision-list.term-xs dt {
+    width: 20%; }
+  dl.grouped-definision-list.term-xs dd {
+    width: 75%;
+    width: calc(80% - $grid-gutter-width); }
+  dl.grouped-definision-list.term-sm dt {
+    width: 30%; }
+  dl.grouped-definision-list.term-sm dd {
+    width: 65%;
+    width: calc(70% - $grid-gutter-width); }
+  dl.grouped-definision-list.term-md dt {
+    width: 40%; }
+  dl.grouped-definision-list.term-md dd {
+    width: 55%;
+    width: calc(60% - $grid-gutter-width); }
+  dl.grouped-definision-list.term-lg dt {
+    width: 50%; }
+  dl.grouped-definision-list.term-lg dd {
+    width: 45%;
+    width: calc(50% - $grid-gutter-width); } }
+@media only screen and (min-width: 1024px) {
+  dl.grouped-definision-list.term-xs dt {
+    width: 10%; }
+  dl.grouped-definision-list.term-xs dd {
+    width: 85%;
+    width: calc(90% - $grid-gutter-width); }
+  dl.grouped-definision-list.term-sm dt {
+    width: 20%; }
+  dl.grouped-definision-list.term-sm dd {
+    width: 75%;
+    width: calc(80% - $grid-gutter-width); }
+  dl.grouped-definision-list.term-md dt {
+    width: 30%; }
+  dl.grouped-definision-list.term-md dd {
+    width: 65%;
+    width: calc(70% - $grid-gutter-width); }
+  dl.grouped-definision-list.term-lg dt {
+    width: 50%; }
+  dl.grouped-definision-list.term-lg dd {
+    width: 45%;
+    width: calc(50% - $grid-gutter-width); } }
+dl.grouped-definision-list.term-sq-sm dt {
+  width: 20%; }
+dl.grouped-definision-list.term-sq-sm dd {
+  width: 80%;
+  width: calc(80% - $grid-gutter-width); }
+dl.grouped-definision-list.term-sq-md dt {
+  width: 20%; }
+dl.grouped-definision-list.term-sq-md dd {
+  width: 80%;
+  width: calc(80% - $grid-gutter-width); }
+dl.grouped-definision-list.term-sq-lg dt {
+  width: 20%; }
+dl.grouped-definision-list.term-sq-lg dd {
+  width: 80%;
+  width: calc(80% - $grid-gutter-width); }
+
+/**
+* Sitefinity Expanding List
+*
+* @molecule Expanding List
+* @section Typography > Exapnding Lists
+* @markup
+*  <div data-sf-role="lists" class="expanding-list">
+*          <h3>
+*              <span>
+*                  Learn more about QII. Click the questions below to expose their answer.
+*              </span>
+*          </h3>
+*              <div>
+*                  <a href="javascript:void(0)" data-sf-role="toggleLink" class="expanded">What is Quality Improvement for Institutions?</a>
+*                  <div style="display: block;">
+*                      <p>Quality Improvement for Institutions is a suite of registries, quality campaigns, accreditation services and clinical toolkits offered to health care facilities and their staff in a convenient, single website.&nbsp; These online assets are intended to inspire and accelerate quality improvement in the facility while saving staff time and energy by providing ready-to-go, off-the-shelf programs and tools.</p>
+*                  </div>
+*              </div>
+*              <div>
+*                  <a href="javascript:void(0)" data-sf-role="toggleLink">How do I access Quality Improvement for Institutions online?</a>
+*                  <div style="display:none;">
+*                      The website for Quality Improvement for Institutions is CVQuality.ACC.org.&nbsp;
+*                  </div>
+*              </div>
+*              <div>
+*                  <a href="javascript:void(0)" data-sf-role="toggleLink">Who is eligible to participate in Quality Improvement for Institutions?</a>
+*                  <div style="display:none;">
+*                      <p style="background: white;">Individuals from&nbsp;<strong>NCDR Registry participating hospitals&nbsp;</strong>have access to the program as part of their NCDR fee.</p> Individuals from&nbsp;<strong>participating PINNACLE Registry practices</strong>&nbsp;have access to the program as part of their PINNACLE Registry association. <br><br>Hospitals that do not participate in an NCDR hospital registry or PINNACLE Registry can join Quality Improvement for Institutions for an annual fee. <br><br>*At this time, hospitals accredited through ACC Accreditation services do not have access to the quality improvement resources available on <em>CVQuality.ACC.org</em>, unless they are also part of an NCDR registry. The ACC is working to provide access to ACC Accredited facilities.
+*                  </div>
+*              </div>
+*      <p data-sf-role="expandAll" style="display: block;">Expand all</p>
+*      <p data-sf-role="collapseAll" style="display:none;">Collapse all</p>
+*  </div>
+*/
+.expanding-list h3 {
+  font-size: 22px;
+  color: #e87d1e; }
+.expanding-list [data-sf-role="toggleLink"] {
+  font-size: 18px;
+  line-height: 1.5; }
+  .expanding-list [data-sf-role="toggleLink"]:before {
+    content: "\f196"; }
+  .expanding-list [data-sf-role="toggleLink"].expanded:before {
+    content: "\f147"; }
+.expanding-list [data-sf-role="toggleLink"] + div {
+  padding: .75rem 1.5rem .5rem 2.25rem; }
+.expanding-list > div + div {
+  margin-top: .5rem;
+  border-top: 1px dashed #d6d4d4;
+  padding-top: .5rem; }
+
+[data-sf-role="expandAll"], [data-sf-role="collapseAll"] {
+  margin-top: 1rem; }
+
+/**
+ * Highly stylized list
+
+ * @molecule Banded Lists
+ * @section Lists > Banded 
+* @modifiers
+ *  .bg-orange-dark decorator class that turns the Li background to orange-dark.
+ *  .bg-orange-light decorator class that turns the Li background to orange-light.
+ *  .bg-pink decorator class that turns the Li background to pink.
+ *  .bg-blue decorator class that turns the Li background to blue.
+ *  .bg-warm-grey-dark decorator class that turns the Li background to warm-grey-dark.
+ *  .bg-warm-grey decorator class that turns the Li background to warm-grey.
+ *  .bg-scrub-teal decorator class that turns the Li background to scrub-teal.
+ *  .bg-mix-teal_orange decorator class that turns the Li background to mix-teal_orange.
+ *  .bg-mix-orange_teal decorator class that turns the Li background to mix-orange_teal.
+ *  .bg-green decorator class that turns the Li background to green. alias for bg-cme.
+ *  .bg-purple decorator class that turns the Li background to purple. alias for bg-cop.
+ *  .bg-grey decorator class that turns the Li background to grey. alias for bg-ce.
+ *  .bg-magenta-dark decorator class that turns the Li background to magenta-dark. alias for bg-moc2.
+ *  .bg-cyan-dark decorator class that turns the Li background to cyan-dark. alias for bg-cne.
+ * @markup
+ *  <ul class="banded-list">
+ *   <li>
+ *      <div class="row">
+ *        <div class="col-sm-7"><strong>@{lipsum:3:words}</strong></div>
+ *        <div class="col-sm-2 text-right"><small><em>Started:</em> @{lipsum:1:numbers}/@{lipsum:1:numbers}/2017</small></div>
+ *        <div class="col-sm-3">@{include:.progress-bar-primary}</div>
+ *      </div>
+ *   </li>
+ *    <li class="bg-cop">
+ *      <div class="row">
+ *        <div class="col-sm-7"><strong>@{lipsum:3:words}</strong></div>
+ *        <div class="col-sm-2 text-right"><small><em>Started:</em> @{lipsum:1:numbers}/@{lipsum:1:numbers}/2017</small></div>
+ *        <div class="col-sm-3">@{include:.progress-bar-primary}</div>
+ *      </div>
+ *   </li>
+ *   <li>
+ *      <div class="row">
+ *        <div class="col-sm-7"><strong>@{lipsum:3:words}</strong></div>
+ *        <div class="col-sm-2 text-right"><small><em>Started:</em> @{lipsum:1:numbers}/@{lipsum:1:numbers}/2017</small></div>
+ *        <div class="col-sm-3">@{include:.progress-bar-primary}</div>
+ *      </div> 
+ *   </li>
+ *   <li>
+ *      <div class="row">
+ *        <div class="col-sm-7"><strong>@{lipsum:3:words}</strong></div>
+ *        <div class="col-sm-2 text-right"><small><em>Started:</em> @{lipsum:1:numbers}/@{lipsum:1:numbers}/2017</small></div>
+ *        <div class="col-sm-3">@{include:.progress-bar-primary}</div>
+ *      </div>
+ *   </li>
+ *  </ul>
+ **/
+ul.banded-list .progress {
+  height: 1rem;
+  margin-bottom: 0; }
+ul.banded-list .progress-bar {
+  font-size: 10px;
+  line-height: 1.75em; }
+ul.banded-list li:nth-child(even) {
+  background-color: #e8f3fb; }
+ul.banded-list li, ul.banded-list li:nth-child(even) {
+  padding: .5rem 1rem; }
+  ul.banded-list li.bg-warm-grey, ul.banded-list li:nth-child(even).bg-warm-grey {
+    background-color: #a1a0a4;
+    color: #fafafa; }
+  ul.banded-list li.bg-warm-grey-dark, ul.banded-list li:nth-child(even).bg-warm-grey-dark {
+    background-color: #6f6b6f;
+    color: #fafafa; }
+  ul.banded-list li.bg-orange-dark, ul.banded-list li:nth-child(even).bg-orange-dark {
+    background-color: #e87d1e;
+    color: #fafafa; }
+  ul.banded-list li.bg-orange-light, ul.banded-list li:nth-child(even).bg-orange-light {
+    background-color: #ffc425;
+    color: #2f2f2f; }
+  ul.banded-list li.bg-scrub-teal, ul.banded-list li:nth-child(even).bg-scrub-teal {
+    background-color: #0088aa;
+    color: #fafafa; }
+  ul.banded-list li.bg-mix-teal_orange, ul.banded-list li:nth-child(even).bg-mix-teal_orange {
+    background-color: #58B5A5;
+    color: #fafafa; }
+  ul.banded-list li.bg-mix-orange_teal, ul.banded-list li:nth-child(even).bg-mix-orange_teal {
+    background-color: #ACBD65;
+    color: #fafafa; }
+  ul.banded-list li.bg-pink, ul.banded-list li:nth-child(even).bg-pink {
+    background-color: #e91e63;
+    color: white; }
+  ul.banded-list li.bg-blue, ul.banded-list li:nth-child(even).bg-blue {
+    background-color: #a4cded;
+    color: white; }
+  ul.banded-list li.bg-cme, ul.banded-list li.bg-green, ul.banded-list li:nth-child(even).bg-cme, ul.banded-list li:nth-child(even).bg-green {
+    background-color: #00a15b;
+    color: white; }
+  ul.banded-list li.bg-cop, ul.banded-list li.bg-purple, ul.banded-list li:nth-child(even).bg-cop, ul.banded-list li:nth-child(even).bg-purple {
+    background-color: #775891;
+    color: white; }
+  ul.banded-list li.bg-ce, ul.banded-list li.bg-grey, ul.banded-list li:nth-child(even).bg-ce, ul.banded-list li:nth-child(even).bg-grey {
+    background-color: #a8a8a8;
+    color: white; }
+  ul.banded-list li.bg-moc2, ul.banded-list li.bg-magenta-dark, ul.banded-list li:nth-child(even).bg-moc2, ul.banded-list li:nth-child(even).bg-magenta-dark {
+    background-color: #9a1267;
+    color: white; }
+  ul.banded-list li.bg-cne, ul.banded-list li.bg-cyan-dark, ul.banded-list li:nth-child(even).bg-cne, ul.banded-list li:nth-child(even).bg-cyan-dark {
+    background-color: #198dae;
+    color: white; }
 
 /**
 * Accordion collapse their content by a header bar. Vanilla accordion just has a plain headline with no indicators. Most of the time adding the class  `.basic` will make UI conform to expected user's experience.
@@ -11992,95 +12631,6 @@ body, .body {
   margin-top: .75rem;
   border-top: 1px solid #a1a0a4; }
 
-/**
- * Highly stylized list
- * 
- * @molecule Banded Lists
- * @section Lists > Banded 
-* @modifiers
- *  .bg-orange-dark decorator class that turns the Li background to orange-dark.
- *  .bg-orange-light decorator class that turns the Li background to orange-light.
- *  .bg-pink decorator class that turns the Li background to pink.
- *  .bg-blue decorator class that turns the Li background to blue.
- *  .bg-warm-grey-dark decorator class that turns the Li background to warm-grey-dark.
- *  .bg-warm-grey decorator class that turns the Li background to warm-grey.
- *  .bg-scrub-teal decorator class that turns the Li background to scrub-teal.
- *  .bg-mix-teal_orange decorator class that turns the Li background to mix-teal_orange.
- *  .bg-mix-orange_teal decorator class that turns the Li background to mix-orange_teal.
- * @markup
- *  <ul class="banded-list">
- *   <li>
- *      <div class="row">
- *        <div class="col-sm-7"><strong>@{lipsum:3:words}</strong></div>
- *        <div class="col-sm-2 text-right"><small><em>Started:</em> @{lipsum:1:numbers}/@{lipsum:1:numbers}/2017</small></div>
- *        <div class="col-sm-3">@{include:.progress-bar-primary}</div>
- *      </div>
- *   </li>
- *   <li>
- *      <div class="row">
- *        <div class="col-sm-7"><strong>@{lipsum:3:words}</strong></div>
- *        <div class="col-sm-2 text-right"><small><em>Started:</em> @{lipsum:1:numbers}/@{lipsum:1:numbers}/2017</small></div>
- *        <div class="col-sm-3">@{include:.progress-bar-primary}</div>
- *      </div> 
- *   </li>
- *   <li>
- *      <div class="row">
- *        <div class="col-sm-7"><strong>@{lipsum:3:words}</strong></div>
- *        <div class="col-sm-2 text-right"><small><em>Started:</em> @{lipsum:1:numbers}/@{lipsum:1:numbers}/2017</small></div>
- *        <div class="col-sm-3">@{include:.progress-bar-primary}</div>
- *      </div>
- *   </li>
- *  </ul>
- **/
-ul.banded-list .progress {
-  height: 1rem;
-  margin-bottom: 0; }
-ul.banded-list .progress-bar {
-  font-size: 10px;
-  line-height: 1.75em; }
-ul.banded-list li:nth-child(even) {
-  background-color: #e8f3fb; }
-ul.banded-list li, ul.banded-list li:nth-child(even) {
-  padding: .5rem 1rem; }
-  ul.banded-list li.bg-warm-grey, ul.banded-list li:nth-child(even).bg-warm-grey {
-    background-color: #a1a0a4;
-    color: #fafafa; }
-  ul.banded-list li.bg-warm-grey-dark, ul.banded-list li:nth-child(even).bg-warm-grey-dark {
-    background-color: #6f6b6f;
-    color: #fafafa; }
-  ul.banded-list li.bg-orange-dark, ul.banded-list li:nth-child(even).bg-orange-dark {
-    background-color: #e87d1e;
-    color: #fafafa; }
-  ul.banded-list li.bg-orange-light, ul.banded-list li:nth-child(even).bg-orange-light {
-    background-color: #ffc425;
-    color: #2f2f2f; }
-  ul.banded-list li.bg-scrub-teal, ul.banded-list li:nth-child(even).bg-scrub-teal {
-    background-color: #0088aa;
-    color: #fafafa; }
-  ul.banded-list li.bg-mix-teal_orange, ul.banded-list li:nth-child(even).bg-mix-teal_orange {
-    background-color: #58B5A5;
-    color: #fafafa; }
-  ul.banded-list li.bg-mix-orange_teal, ul.banded-list li:nth-child(even).bg-mix-orange_teal {
-    background-color: #ACBD65;
-    color: #fafafa; }
-  ul.banded-list li.bg-pink, ul.banded-list li:nth-child(even).bg-pink {
-    background-color: #e91e63;
-    color: white; }
-  ul.banded-list li.bg-blue, ul.banded-list li:nth-child(even).bg-blue {
-    background-color: #e91e63;
-    color: white; }
-
-/*******  >>>>>>>>>>>>>>>>>>>>   TO DO <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
- **      Create these alias
- **      CME    AMA PRA Category 1TM Credit(s)  #00a15b     
- **     COP Participation   #775891 
- **     CE  CE  #a8a8a8 This is the old name for what is currently called CNE. We donΓÇÖt grant this anymore, but it is still in the system. 
- **     MOC ABIM MOC Part II    #9a1267 Usually for MOC II 
- **     CNE     CNE     #198dae    
-**/
-/*******  >>>>>>>>>>>>>>>>>>>>   TO DO <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
- **     Move all list to a _list.scss file.   There is some in typography and here. 
-**/
 /**
  * The expanded data of a clinician.
  * 
