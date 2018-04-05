@@ -6990,56 +6990,6 @@ a.link[href^="fax:"]:before {
 a.link:hover {
   text-decoration: underline; }
 
-ul.no-bullets, ul.banded-list, ul.no-bullets li, ul.banded-list li, ul.multiselect-container, ul.multiselect-container li, ul.generic-list, ul.generic-list li {
-  list-style: none;
-  list-style-type: none; }
-
-ul.no-indent, ul.banded-list, ul.multiselect-container, ul.generic-list {
-  margin: 0;
-  padding: 0; }
-  ul.no-indent, ul.banded-list, ul.no-indent li, ul.banded-list li, ul.multiselect-container, ul.multiselect-container li, ul.generic-list, ul.generic-list li {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0; }
-
-/**
-* Semantic List for content that shouldn't be bulleted or indented. 
-*
-* @molecule Generic List
-* @section Typography > Generic List
-* @markup
-*    <ul class="generic-list">
-*        <li>
-*            <h2>
-*          <a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a>
-*          </h2>
-*            <p>@{lipsum:3:sentences}
-*            </p>
-*            <a>more <i class="fa fa-arrow-right"></i></a>
-*        </li>
-*        <li>
-*            <h2>
-*          <a href="/Clinical-Toolkits/QI-Toolkit">@{lipsum:3:words}</a>
-*          </h2>
-*            <p>@{lipsum:3:sentences}
-*            </p>
-*            <a>more <i class="fa fa-arrow-right"></i></a>
-*        </li>
-*    </ul>
-*/
-ul.generic-list {
-  margin-top: 1em;
-  margin-bottom: 1em; }
-  ul.generic-list li {
-    margin: 0 0 .5em;
-    overflow: visible;
-    list-style-type: none; }
-  ul.generic-list > li + li {
-    margin-top: .5rem;
-    border-top: 1px dashed #d6d4d4;
-    padding-top: .5rem; }
-
 /**
 * @atom Tables
 * @section Typography > Tables
@@ -8442,6 +8392,74 @@ ul.banded-list li, ul.banded-list li:nth-child(even) {
     background-color: #198dae;
     color: white; }
 
+/**
+ * Header of the CQC Clincian Mangagment
+ * 
+ * @molecule Banded Lists with Modifiers
+ * @section Lists > Banded Extra
+ * @markup
+ *  <ul class="banded-list banded-extra">
+ *      <li class="bg-warm-grey-dark">
+ *          <div class="row">
+ *               <div class="col-xs-12">
+ *                   <strong>
+ *                       License
+ *                   </strong>
+ *               </div>
+ *          </div>
+ *      </li>
+ *      <li class="bg-warm-grey">
+ *           <div class="row">
+ *              <div class="col-xs-4">
+ *                  <strong>License     </strong>
+ *              </div>  
+ *              <div class="col-xs-4 text-center">
+ *                  <strong>License Number</strong>
+ *              </div>
+ *              <div class="col-xs-4 text-right">
+ *                  <strong>Issue date</strong>
+ *              </div>
+ *          </div>
+ *      </li>
+ *      <li class="bg-cop">
+ *          <div class="row ">
+ *              <div class="col-xs-4">
+ *                  <strong>Maryland</strong>
+ *              </div>  
+ *              <div class="col-xs-4 text-center">
+ *                  <strong>1475309</strong>
+ *              </div>
+ *              <div class="col-xs-4 text-right">
+ *                  <strong>6/8/2008</strong>
+ *              </div>
+ *          </div>
+ *      </li><li class="bg-cne">
+ *          <div class="row">
+ *              <div class="col-xs-4">
+ *                  <strong>DC</strong>
+ *              </div>  
+ *              <div class="col-xs-4 text-center">
+ *                  <strong>1475309</strong>
+ *              </div>
+ *              <div class="col-xs-4 text-right">
+ *                  <strong>6/8/2008</strong>
+ *              </div>
+ *          </div>
+ *      </li><li>
+ *          <div class="row">
+ *              <div class="col-xs-4">
+ *                  <strong>Verginia</strong>
+ *              </div>  
+ *              <div class="col-xs-4 text-center">
+ *                  <strong>1475309</strong>
+ *              </div>
+ *              <div class="col-xs-4 text-right">
+ *                  <strong>6/8/2008</strong>
+ *              </div>
+ *          </div>
+ *      </li> 
+ *  </ul>
+ **/
 /**
 * Accordion collapse their content by a header bar. Vanilla accordion just has a plain headline with no indicators. Most of the time adding the class  `.basic` will make UI conform to expected user's experience.
 * @structure Accordion
