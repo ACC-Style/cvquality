@@ -227,8 +227,8 @@ span {
  * @section Fonts & Branding
  * @markup 
  * 	<div class="alphabet-display row font-normal">
- *		<div class="ms12 col-md-4 col-sm-6 col-lg-3 font--dropcase_2x">La</div>
- *    	<div class="col-md-8 col-sm-6 col-lg-9 font--example">
+ *		<div class="ms12 col-sm-6 col-lg-5 font--dropcase_2x">La</div>
+ *    	<div class="col-sm-6 col-lg-7 font--example">
  *  		<h3>Primary Navigation & Body Copy</h3>
  *   	  	<div class="font--lowercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
  *    	 	<div class="font--uppercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
@@ -248,8 +248,8 @@ span {
  * @section Fonts & Branding
  * @markup 
  *  <div class="alphabet-display row font-display">
- *	  <div class="ms12 col-md-4 col-sm-6 col-lg-3 font--dropcase_2x">MP</div>
- *	  <div class="col-md-8 col-sm-6 col-lg-9 font--example">
+ *	  <div class="ms12 col-sm-6 col-lg-5 font--dropcase_2x">MP</div>
+ *	  <div class="col-sm-6 col-lg-7 font--example">
  *   	<h3>Headers & Secondary Navs</h3>
  *  	  <div class="font--lowercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
  *  	  <div class="font--uppercase ms2">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
@@ -6735,7 +6735,7 @@ body {
   font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
   font-weight: 400;
   color: #333;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4rem; }
 
 /**
@@ -9461,6 +9461,7 @@ input {
     background-color: transparent;
     border: none transparent 0; }
   .nav-primary .nav-item.alt.primary {
+    min-width: 250px;
     background: #047294;
     /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -12599,7 +12600,7 @@ ul.banded-list li, ul.banded-list li:nth-child(even) {
 * ~~ Open the example to see the other class and how they will effect the design ~~
 *
 * @section Helpers > trumps
-* @mixin section Padding
+* @mixin Section Padding
 * @example
 *  class="section-padding"              will add a full line-height space on the top and bottom inside a container
 *  class="section-padding half"         will add a 1/2 the line-height space on the top and bottom inside a container

@@ -73,6 +73,7 @@
         &.alt {
 
             &.primary {
+                min-width: 250px;
                 @include teal-gradient;
 
                 &:hover {
