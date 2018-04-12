@@ -230,6 +230,7 @@ strong{}
 *  <a class="link" href="https://www.abc.ppt">An External link that is a Power Point Document</a><br/>
 *  <a class="link" href="tel:1-555-555-5555">1-555-555-5555</a><br/>
 *  <a class="link" href="mailto:test@abc.org">test@abc.org</a><br/>
+*  <a class="link" href="xyz.zip">A link that is a Zip Document</a><br/>
 * @modifiers
 *  .pdf Portable Document Format
 *  .doc Word Documents
@@ -241,34 +242,51 @@ strong{}
 *  _blank External Link icons will appear after any link that has target blank, or the href begins with http, or https
  */
 
-a.link{
+a.link {
     @extend .icon-before;
-    &[href$=".pdf"]:before{
-        content: "\f1c1";   
+
+    &[href*=".pdf"]:before {
+        content: "\f1c1";
     }
-    &[href$=".doc"]:before,&[href$=".docx"]:before,&[href$=".txt"]:before{
-            content: "\f016";   
+
+    &[href*=".doc"]:before, &[href*=".docx"]:before, &[href*=".txt"]:before {
+        content: "\f016";
     }
-    &[href$=".ppt"]:before,&[href$=".pptx"]:before{
-         content: "\f080";
+
+    &[href*=".zip"]:before {
+        content: "\f1c6";
     }
-    &[href$=".csv"]:before,&[href$=".xls"]:before,&[href$=".xlsx"]:before{
-        content: "\f0ce";   
+
+    &[href*=".ppt"]:before, &[href*=".pptx"]:before {
+        content: "\f080";
     }
-    &[target=_blank]:after,&[href^="http"]:after,&[href^="https"]:after{
+
+    &[href*=".csv"]:before, &[href*=".xls"]:before, &[href*=".xlsx"]:before {
+        content: "\f0ce";
+    }
+
+    &[href*=".mp4"]:before, &[href*=".mov"]:before {
+        content: "\f03d";
+    }
+
+    &[target='_blank']:after, &[href^="http"]:after, &[href^="https"]:after {
         @extend .icon-after;
-        content:"\f14c";
+        content: "\f14c";
     }
-    &[href^="mailto:"]:before{ 
+
+    &[href^="mailto:"]:before {
         content: "\f003";
     }
-    &[href^="tel:"]:before{ 
+
+    &[href^="tel:"]:before {
         content: "\f095";
     }
-    &[href^="fax:"]:before{ 
+
+    &[href^="fax:"]:before {
         content: "\f1ac";
     }
-    &:hover{
+
+    &:hover {
         text-decoration: underline;
     }
 }
@@ -358,5 +376,3 @@ a.link{
 .typography-kitchensink{}
 
 
-@import "included/table";
-@import "included/table_scrollable";
