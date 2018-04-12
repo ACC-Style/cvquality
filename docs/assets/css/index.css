@@ -6573,9 +6573,21 @@ blockquote {
   background: none;
   z-index: 1; }
   .jumbotron h1 {
-    font-size: 45px; }
+    font-size: 28px; }
   .jumbotron p {
-    font-size: 18px; }
+    font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px; }
+  @media only screen and (min-width: 768px) {
+    .jumbotron h1 {
+      font-size: 36px; }
+    .jumbotron p {
+      font-size: 16px; } }
+  @media only screen and (min-width: 1024px) {
+    .jumbotron h1 {
+      font-size: 45px; }
+    .jumbotron p {
+      font-size: 20px; } }
   .jumbotron .btn, .jumbotron [data-sf-role="expandAll"], .jumbotron [data-sf-role="collapseAll"], .jumbotron .button {
     background: #6f6b6f;
     color: #fafafa;
@@ -6630,9 +6642,6 @@ blockquote {
     padding-right: 1rem;
     max-width: 980px;
     width: auto; }
-  .jumbotron p {
-    font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
-    font-weight: 400; }
 
 /*
 * Jumbotron Fluid go full width  with in the page layout and are great at the head of page content from edge to edge of the page.
@@ -10441,9 +10450,9 @@ ul.multiselect-container li.active a {
  * @molecule Webinar
  * @section Webinar
  * @modifiers
- *  .primary   			Alters the button style to a btn-primary instead of just a link.
- *  .secondary  		Alters the button style to a btn-secondary instead of just a link.
- *  .success 			Alters the button style to a btn-success instead of just a link.
+ *  .primary			Alters the button style to a btn-primary instead of just a link.
+ *  .secondary			Alters the button style to a btn-secondary instead of just a link.
+ *  .success			Alters the button style to a btn-success instead of just a link.
  *  .ep-webinar      	Changes the product graphic.
  *  .afib-webinar     	Changes the product graphic.  
  *  .cathlab-webinar  	Changes the product graphic.     
@@ -11914,7 +11923,7 @@ body, .body {
     padding-bottom: .25em; }
     @media only screen and (min-width: 1024px) {
       #footer h2 {
-        height: 3rem; } }
+        height: 3.25rem; } }
   #footer address {
     margin-top: 1rem; }
   #footer .footer-sitemap, #footer .nav-social-button {
