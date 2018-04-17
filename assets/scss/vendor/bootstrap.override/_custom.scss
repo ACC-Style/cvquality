@@ -45,12 +45,20 @@ $theme-colors: (
 );
 //3.3.7 Colors
 
+$gray-darker:            mix($warm-grey-dark,$off-black);
+$gray-dark:              $warm-grey-dark;   // #333
+$gray:                   $warm-grey; // #555
+$gray-light:             $warm-grey-light; // #777
+$gray-lighter:           mix($warm-grey-light,$off-white);
+
+
 $brand-primary:$scrub-teal;
 $brand-success: $green;
 $brand-info:$cyan;
 $brand-warning:$yellow;
 $brand-danger:$red;
 
+$text-color: $off-black;
 
 // Radius
 $border-radius-base:        6px;
@@ -110,6 +118,7 @@ $grid-gutter-width: ms(2);
 // Font, line-height, and color for body text, headings, and more.
 
 $font-family-sans-serif: 'Lato', Verdana, Helvetica, sans-serif;
+$font-family-serif:  'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:       $font-family-sans-serif !default;
 
@@ -177,3 +186,48 @@ $padding-small-horizontal:  .75 * $ms-base;
 
 $padding-xs-vertical:      (1/16) * $ms-base;
 $padding-xs-horizontal:     .5 * $ms-base;
+
+//** Tooltip max width
+$tooltip-max-width:           300px !default;
+//** Tooltip text color
+$tooltip-color:               #fff !default;
+//** Tooltip background color
+$tooltip-bg:                  $gray-darker;
+$tooltip-opacity:             .9 !default;
+
+//** Tooltip arrow width
+$tooltip-arrow-width:         5px !default;
+//** Tooltip arrow color
+$tooltip-arrow-color:         $tooltip-bg !default;
+
+//== Modals
+//
+//##
+
+//** Padding applied to the modal body
+$modal-inner-padding:         15px !default;
+
+//** Padding applied to the modal title
+$modal-title-padding:         15px !default;
+//** Modal title line-height
+$modal-title-line-height:     $line-height-base !default;
+
+//** Background color of modal content area
+$modal-content-bg:                             #fff !default;
+//** Modal content border color
+$modal-content-border-color: $scrub-teal;
+//** Modal content border color **for IE8**
+$modal-content-fallback-border-color:          #999 !default;
+
+//** Modal backdrop background color
+$modal-backdrop-bg:           $off-black;
+//** Modal backdrop opacity
+$modal-backdrop-opacity:      .5 !default;
+//** Modal header border color
+$modal-header-border-color:   $soft-blue;
+//** Modal footer border color
+$modal-footer-border-color:   $modal-header-border-color !default;
+
+$modal-lg:                    900px !default;
+$modal-md:                    600px !default;
+$modal-sm:                    300px !default;

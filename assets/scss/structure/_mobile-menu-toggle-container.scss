@@ -2,10 +2,10 @@
 
 
 /**
- * Container for the Menu Toggle for the Mobile Nav. 
+ * Container for the Menu Toggle for the Mobile Nav when user is anonymous. 
  *
- * @structure Mobile Menu Toggle
- * @section Page Sections > Header
+ * @structure Mobile Menu Toggle (ANONYMOUS)
+ * @section Page Sections > Mobile Toggle
  * @markup
  *  <div class="mobile-menu-toggle-container">
  *         <div class="user-status-container">
@@ -18,7 +18,7 @@
  *                           <a class="nav-link" title="Logout" href="">Logout</a>
  *                       </li>
  *                   </ul>
- *                 <div class="user account"><span class="welcome">Welcome</span><span class="username">@{lipsum:3:words}</span></div>
+ *                 <!--<div class="user account"><span class="welcome">Welcome</span><span class="username">[User Name]</span></div>-->
  *             </nav>
  *         </div>
  *         <div class="mobile-menu-toggle" onclick="$('.mobile-menu-container').toggleClass('open')"><span class="text">Menu</span> <i class="fa fa-bars"></i></div>
@@ -49,7 +49,6 @@
         .user{ display: none;}
         .nav-user-status{
             text-align: left;
-           .acount{display:none;}
         }
         .user + .nav-user-status {
             margin-top: 0rem;
@@ -91,3 +90,32 @@
        &,&.open{max-height: initial;overflow: visible;}
     }
 }
+
+/**
+ * Container for the Menu Toggle for the Mobile Nav when there is an authenticated user. 
+ *
+ * @structure Mobile Menu Toggle (AUTHENTICATED)
+ * @section Page Sections > Mobile Toggle
+ * @markup
+ *  <div class="mobile-menu-toggle-container">
+ *         <div class="user-status-container">
+ *              <nav class="nav-user-status">
+ *                   <!-- <ul class="nav no-account">
+ *                       <li class="register nav-item action">
+ *                           <a class="nav-link" title="Register" href="">Register</a>
+ *                       </li>
+ *                       <li class="logout nav-item action">
+ *                           <a class="nav-link" title="Logout" href="">Logout</a>
+ *                       </li>
+ *                   </ul> -->
+ *                 <div class="user account"><span class="welcome">Welcome</span><span class="username">[User Name]</span></div>
+ *             </nav>
+ *         </div>
+ *         <div class="mobile-menu-toggle" onclick="$('.mobile-menu-container').toggleClass('open')"><span class="text">Menu</span> <i class="fa fa-bars"></i></div>
+ *  </div>
+ *  <div class="mobile-menu-container">
+ *     @{include:.nav-primary}
+ *  </div>
+ */
+
+ .mobile-menu-toggle-container.authenticated{}
