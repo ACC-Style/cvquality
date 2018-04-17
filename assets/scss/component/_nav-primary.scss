@@ -62,7 +62,7 @@
         }
 
         + .nav-item {
-            border: $off-white dotted 1px;
+            border-top: $off-white dotted 1px;
         }
         // removal of bootstrap decorating the a
         &.open > a, &.open > a:focus, &.open > a:hover {
@@ -131,6 +131,14 @@
     }
 
     .dropdown-menu {
+        -webkit-box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.175);
+        -moz-box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.175);
+        box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.175);
+        border:0px;
+        @include bp(md){
+            -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+        }
         border-radius: 0px;
         background-color: $soft-grey;
         padding: 0;
@@ -157,7 +165,7 @@
     }
 
     .dropdown-divider {
-        border: 1px dotted $soft-blue;
+        border-top: 1px dotted $soft-blue;
     }
 
     .dropdown-menu.alt {

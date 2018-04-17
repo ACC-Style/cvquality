@@ -4,7 +4,9 @@
 }
 
 .dropdown:hover > .dropdown-menu {
-  display: block;
+  @include bp(md){
+    display: block;
+  }
 }
 @include bp(sm-down) {
     .dropdown.open > .dropdown-menu {
