@@ -46,9 +46,9 @@
     .user-status-container{
         height:2.25rem;
         padding:.65rem 0;
-        .user{ display: none;}
-        .nav-user-status{
+        .nav-user-status, .user{
             text-align: left;
+            line-height: 1;
         }
         .user + .nav-user-status {
             margin-top: 0rem;
