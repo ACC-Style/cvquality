@@ -18,8 +18,8 @@
  *                           <a class="nav-link" title="Logout" href="">Logout</a>
  *                       </li>
  *                   </ul>
- *                 <!--<div class="user account"><span class="welcome">Welcome</span><span class="username">[User Name]</span></div>-->
  *             </nav>
+ *                 <!--<span class="user account"><span class="welcome">Welcome:</span><span class="username">[User Name @{lipsum:3:words}]</span></span>-->
  *         </div>
  *         <div class="mobile-menu-toggle" onclick="$('.mobile-menu-container').toggleClass('open')"><span class="text">Menu</span> <i class="fa fa-bars"></i></div>
  *  </div>
@@ -36,22 +36,30 @@
     height: 2.75rem;
     @include lightgrey-gradient;
     @include dropshadow;
-    align-content:space-between;
+    justify-content:space-between;
+    align-items:center;
     @include bp(md){
         display: none;
     }
-    .user-status-container, .mobile-menu-toggle{
-        flex:1 0 auto;
+    .user-status-container {
+        flex:0 1 auto;
+        overflow: hidden;
+        padding-right:.75rem;
+    }
+    .mobile-menu-toggle{
+        flex: 0 0 105px;
     }
     .user-status-container{
-        height:2.25rem;
-        padding:.65rem 0;
+        height: 2.25rem;
+        text-overflow: ellipsis;
+        padding: .7rem .75rem .55rem 0;
         .nav-user-status, .user{
             text-align: left;
             line-height: 1;
         }
-        .user + .nav-user-status {
-            margin-top: 0rem;
+        .user {
+           white-space: nowrap;
+           margin-top: 0;
         }
     }
 
@@ -108,8 +116,8 @@
  *                           <a class="nav-link" title="Logout" href="">Logout</a>
  *                       </li>
  *                   </ul> -->
- *                 <div class="user account"><span class="welcome">Welcome</span><span class="username">[User Name]</span></div>
  *             </nav>
+ *                 <span class="user account"><span class="welcome">Welcome:</span><span class="username">[User Name @{lipsum:3:words}]</span></span>
  *         </div>
  *         <div class="mobile-menu-toggle" onclick="$('.mobile-menu-container').toggleClass('open')"><span class="text">Menu</span> <i class="fa fa-bars"></i></div>
  *  </div>
