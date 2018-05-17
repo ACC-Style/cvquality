@@ -7860,6 +7860,8 @@ dl.grouped-definision-list.term-sq-lg dd {
  * @molecule Banded Lists
  * @section Lists > Banded 
  * @modifiers
+ *  .banded-list--even adds a soft blue background on every even Li
+ *  .banded-list--odd adds a soft blue background on every odd Li
  *  .bg-orange-dark decorator class that turns the Li background to orange-dark.
  *  .bg-orange-light decorator class that turns the Li background to orange-light.
  *  .bg-pink decorator class that turns the Li background to pink.
