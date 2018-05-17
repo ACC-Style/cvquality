@@ -380,11 +380,11 @@ dl.grouped-definision-list {
 
 
 /**
- * Highly stylized list
+ * Highly stylized list.  The banded list is defaultly just white with a light grey divider.  Add the class `banded-list--even` or  `banded-list--odd` to add a soft blue background on alternating li's.
 
  * @molecule Banded Lists
  * @section Lists > Banded 
-* @modifiers
+ * @modifiers
  *  .bg-orange-dark decorator class that turns the Li background to orange-dark.
  *  .bg-orange-light decorator class that turns the Li background to orange-light.
  *  .bg-pink decorator class that turns the Li background to pink.
@@ -400,7 +400,7 @@ dl.grouped-definision-list {
  *  .bg-magenta-dark decorator class that turns the Li background to magenta-dark. alias for bg-moc2.
  *  .bg-cyan-dark decorator class that turns the Li background to cyan-dark. alias for bg-cne.
  * @markup
- *  <ul class="banded-list">
+ *  <ul class="banded-list banded-list-even">
  *   <li>
  *      <div class="row">
  *        <div class="col-sm-7"><strong>@{lipsum:3:words}</strong></div>
@@ -444,8 +444,11 @@ ul.banded-list {
         font-size: ms(-3);
         line-height: 1.75em;
     }
-
-    li:nth-child(even) {
+    li + li {border-top:1px solid $warm-grey-light;}
+    @at-root ul.banded-list--even li:nth-child(even) {
+        background-color: mix($soft-blue,white,25%);
+    }
+    @at-root ul.banded-list--odd li:nth-child(odd) {
         background-color: mix($soft-blue,white,25%);
     }
 

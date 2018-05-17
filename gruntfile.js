@@ -20,6 +20,13 @@ module.exports = function(grunt) {
                 }]
             }
         },
+        autoprefixer:{
+          dist:{
+            files:{
+              'assets/css/*.css':'assets/css/*.css'
+            }
+          }
+        },
         cssmin: { 
           options: {
                compress: true,
@@ -49,7 +56,7 @@ module.exports = function(grunt) {
         watch: {
             css: {
                 files: 'assets/scss/**/*.scss',
-                tasks: ['sass','cssmin','copy', 'exec'],
+                tasks: ['sass', 'autoprefixer','cssmin','copy', 'exec'],
                 options:{livereload: true,}
             },
             html:{
@@ -82,6 +89,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-exec');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-autoprefixer');
     // grunt.loadNpmTasks('@micahgodbolt/grunt-phantomcss');
 
 
