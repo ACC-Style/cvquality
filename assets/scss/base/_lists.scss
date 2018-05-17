@@ -402,7 +402,7 @@ dl.grouped-definision-list {
  *  .bg-magenta-dark decorator class that turns the Li background to magenta-dark. alias for bg-moc2.
  *  .bg-cyan-dark decorator class that turns the Li background to cyan-dark. alias for bg-cne.
  * @markup
- *  <ul class="banded-list banded-list-even">
+ *  <ul class="banded-list banded-list--even">
  *   <li>
  *      <div class="row">
  *        <div class="col-sm-7"><strong>@{lipsum:3:words}</strong></div>
@@ -447,10 +447,10 @@ ul.banded-list {
         line-height: 1.75em;
     }
     li + li {border-top:1px solid $warm-grey-light;}
-    @at-root ul.banded-list--even li:nth-child(even) {
+    &.banded-list--even li:nth-child(even) {
         background-color: mix($soft-blue,white,25%);
     }
-    @at-root ul.banded-list--odd li:nth-child(odd) {
+    &.banded-list--odd li:nth-child(odd) {
         background-color: mix($soft-blue,white,25%);
     }
 

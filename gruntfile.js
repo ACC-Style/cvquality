@@ -20,29 +20,26 @@ module.exports = function(grunt) {
                 }]
             }
         },
-        autoprefixer:{
-          dist:{
-            files:{
-              'assets/css/*.css':'assets/css/*.css'
-            }
-          }
-        },
-        cssmin: { 
-          options: {
-               compress: true,
-               yuicompress: true,
-               optimization: 2
+        postcss: {
+            options: {
+              map: true, // inline sourcemaps
+
+              // or
+              map: {
+                  inline: false, // save all sourcemaps as separate files...
+                  annotation: 'dist/css/maps/' // ...to the specified directory
+              },
+
+              processors: [
+                require('pixrem')(), // add fallbacks for rem units
+                require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
+                require('cssnano')() // minify the result
+              ]
             },
-          target: {
-            files: [{
-              expand: true,
-              cwd: 'assets/css',
-              src: ['*.css', '!*.min.css'],
-              dest: 'assets/css',
-              ext: '.min.css'
-            }]
-          }
-        },
+            dist: {
+              src: 'assets/css/*.css'
+            }
+          },
         copy: {
             main: {
                 expand: true,
@@ -56,7 +53,7 @@ module.exports = function(grunt) {
         watch: {
             css: {
                 files: 'assets/scss/**/*.scss',
-                tasks: ['sass', 'autoprefixer','cssmin','copy', 'exec'],
+                tasks: ['sass','postcss','copy', 'exec'],
                 options:{livereload: true,}
             },
             html:{
@@ -89,9 +86,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-exec');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-autoprefixer');
+    grunt.loadNpmTasks('grunt-postcss');
     // grunt.loadNpmTasks('@micahgodbolt/grunt-phantomcss');
 
 
-    grunt.registerTask('default', ['connect','sass','watch']);
+    grunt.registerTask('default', ['connect','sass','postcss','copy', 'exec','watch']);
 }
