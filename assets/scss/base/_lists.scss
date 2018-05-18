@@ -447,6 +447,8 @@ ul.banded-list {
         line-height: 1.75em;
     }
     li + li {border-top:1px solid $warm-grey-light;}
+    &.no-border{border-top:0 none; }
+    > li.no-border{border-top:0 none;}
     &.banded-list--even li:nth-child(even) {
         background-color: mix($soft-blue,white,25%);
     }
