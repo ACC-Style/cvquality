@@ -42,14 +42,14 @@
     flex-wrap: wrap;
     flex-flow: column;
     @include dropshadow;
-    @include bp(md) {
+    @include bp(lg) {
         align-items: center;
         justify-content: stretch;
         flex-flow: row;
     }
     .icon {
-        @include acc-flex(1 1 150px);
-        @include bp(md) {
+        flex: 1 0 200px;
+        @include bp(lg) {
             max-width: 300px;
         }
         .product {
@@ -65,11 +65,11 @@
         }
     }
     .data {
-        @include acc-flex( 1 1 auto);
+        flex:0 1 auto;
         padding: .5rem 0rem;
         justify-self: left;
         align-self: flex-start;
-        @include bp(md) {
+        @include bp(lg) {
             padding: 0 1rem;
         }
     }
