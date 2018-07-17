@@ -336,283 +336,18 @@
 	"buffers":
 	[
 		{
-			"contents": "Searching 170 files for \"banded\"\n\nC:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss\\structure\\_cqc-clinician-management.scss:\n    2   * Header of the CQC Clincian Mangagment\n    3   * \n    4:  * @molecule Banded Lists Extra\n    5:  * @section Lists > Banded Extra\n    6   * @markup\n    7:  *  <ul class=\"banded-list banded-extra\">\n    8   *      <li class=\"bg-warm-grey-dark\">\n    9   *          <div class=\"row\">\n   ..\n   67   *  </ul>\n   68   **/\n   69:  .banded-extra{}\n   70  \n\nC:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss\\structure\\_cqc.scss:\n  146   * Highly stylized list\n  147   * \n  148:  * @molecule Banded Lists\n  149:  * @section Lists > Banded \n  150  * @modifiers\n  151   *  .bg-orange-dark decorator class that turns the Li background to orange-dark.\n  ...\n  159   *  .bg-mix-orange_teal decorator class that turns the Li background to mix-orange_teal.\n  160   * @markup\n  161:  *  <ul class=\"banded-list\">\n  162   *   <li>\n  163   *      <div class=\"row\">\n  ...\n  183   *  </ul>\n  184   **/\n  185: ul.banded-list{\n  186      @extend .no-bullets;\n  187      @extend .no-indent;\n  ...\n  238   *               <div aria-expanded=\"true\" aria-labelledby=\"headingOne\" class=\"panel-collapse collapse\" id=\"accordionboardsbasic\" role=\"tabpanel\">\n  239   *                   <div class=\"panel-body\">\n  240:  *                       <ul class=\"banded-list\">\n  241   *                         <li>\n  242   *                               <div class=\"row\">\n  ...\n  294   *               <div aria-expanded=\"true\" aria-labelledby=\"headingOne\" class=\"panel-collapse collapse\" id=\"accordioncertsbasic\" role=\"tabpanel\">\n  295   *                   <div class=\"panel-body\">\n  296:  *                       <ul class=\"banded-list\">\n  297   *                         <li>\n  298   *                               <div class=\"row\">\n  ...\n  346   *       <div id=\"accordionDatabasic\" class=\"panel-collapse collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" aria-expanded=\"true\">\n  347   *         <div class=\"panel-body\">\n  348:  *          @{include:ul.banded-list}\n  349   *         </div>\n  350   *       </div>\n\n12 matches across 2 files\n\n\nSearching 172 files for \"banded-list-extra\"\n\n0 matches\n\nSearching 172 files for \"banded-list-extra\"\n\n0 matches\n\nSearching 172 files for \"banded list extra\"\n\n0 matches\n\nSearching 210 files for \"Banded Lists Extra\"\n\nC:\\Users\\mwatier\\REPOS\\cvquality\\assets\\css\\index.css:\n 12783   * Header of the CQC Clincian Mangagment\n 12784   * \n 12785:  * @molecule Banded Lists Extra\n 12786   * @section Lists > Banded Extra\n 12787   * @markup\n\nC:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss\\structure\\_cqc-clinician-management.scss:\n    2   * Header of the CQC Clincian Mangagment\n    3   * \n    4:  * @molecule Banded Lists Extra\n    5   * @section Lists > Banded Extra\n    6   * @markup\n\n2 matches across 2 files\n",
+			"file": "assets/css/index.css.map",
 			"settings":
 			{
-				"buffer_size": 2836,
-				"line_ending": "Windows",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "assets/scss/structure/_cqc-clinician-management.scss",
-			"settings":
-			{
-				"buffer_size": 1,
-				"encoding": "UTF-8",
+				"buffer_size": 159760,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "assets/scss/structure/_cqc.scss",
+			"file": "gruntfile.js",
 			"settings":
 			{
-				"buffer_size": 14373,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/scss/index.scss",
-			"settings":
-			{
-				"buffer_size": 2135,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/scss/base/_lists.scss",
-			"settings":
-			{
-				"buffer_size": 16659,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-applicant.html",
-			"settings":
-			{
-				"buffer_size": 31289,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-applications.html",
-			"settings":
-			{
-				"buffer_size": 32842,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-applications_post-selection.html",
-			"settings":
-			{
-				"buffer_size": 32396,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-applications-filtered.html",
-			"settings":
-			{
-				"buffer_size": 35206,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-blank.html",
-			"settings":
-			{
-				"buffer_size": 18521,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-committee-manage-single.html",
-			"settings":
-			{
-				"buffer_size": 23618,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-com-management.html",
-			"settings":
-			{
-				"buffer_size": 16924,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-committees.html",
-			"settings":
-			{
-				"buffer_size": 41585,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-committees-appointed.html",
-			"settings":
-			{
-				"buffer_size": 36059,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-committees-details.html",
-			"settings":
-			{
-				"buffer_size": 27090,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-committees-dashboard.html",
-			"settings":
-			{
-				"buffer_size": 24406,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-committees-list.html",
-			"settings":
-			{
-				"buffer_size": 29362,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-commmittee-active-users.html",
-			"settings":
-			{
-				"buffer_size": 15908,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-proposed.html",
-			"settings":
-			{
-				"buffer_size": 19436,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-questions.html",
-			"settings":
-			{
-				"buffer_size": 25235,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-questions-CV.html",
-			"settings":
-			{
-				"buffer_size": 32417,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-questions-type.html",
-			"settings":
-			{
-				"buffer_size": 40185,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-reports.html",
-			"settings":
-			{
-				"buffer_size": 15112,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-seasons.html",
-			"settings":
-			{
-				"buffer_size": 14490,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-messages.html",
-			"settings":
-			{
-				"buffer_size": 14638,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/mwatier/REPOS/Bristol/docs/index.html",
-			"settings":
-			{
-				"buffer_size": 2791,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-Users.html",
-			"settings":
-			{
-				"buffer_size": 29296,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/vendor/bootstrap.override/_jumbotron.override.scss",
-			"settings":
-			{
-				"buffer_size": 3102,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "mods to node-styleguid/nucleus-styleguide/assets/styles/molecules/buttons.scss",
-			"settings":
-			{
-				"buffer_size": 801,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/scss/base/_typography.scss",
-			"settings":
-			{
-				"buffer_size": 11098,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/scss/emailpdf.scss",
-			"settings":
-			{
-				"buffer_size": 2087,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/component/_webinar.scss",
-			"settings":
-			{
-				"buffer_size": 3920,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/helpers/_flex.scss",
-			"settings":
-			{
-				"buffer_size": 1152,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"settings":
-			{
-				"buffer_size": 0,
+				"buffer_size": 2700,
 				"line_ending": "Windows"
 			}
 		}
@@ -813,15 +548,50 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/mwatier/REPOS/cvquality"
+		"/C/Users/mwatier/REPOS/cvquality",
+		"/C/Users/mwatier/REPOS/cvquality/assets",
+		"/C/Users/mwatier/REPOS/cvquality/assets/css",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/component",
+		"/C/Users/mwatier/REPOS/cvquality/docs",
+		"/C/Users/mwatier/REPOS/cvquality/docs/assets",
+		"/C/Users/mwatier/REPOS/cvquality/docs/assets/css"
 	],
 	"file_history":
 	[
-		"/C/Users/mwatier/REPOS/cvquality/assets/scss/component/_nav-sub.scss",
-		"/C/Users/mwatier/REPOS/cvquality/assets/scss/index.scss",
-		"/C/Users/mwatier/REPOS/cvquality/assets/scss/structure/_cqc-clinician-management.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/component/_webinar.scss",
 		"/C/Users/mwatier/REPOS/cvquality/assets/scss/structure/_cqc.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/index.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/base/_lists.scss",
+		"/C/Users/mwatier/REPOS/Bristol/docs/admin-applicant.html",
+		"/C/Users/mwatier/REPOS/Bristol/docs/admin-applications.html",
+		"/C/Users/mwatier/REPOS/Bristol/docs/admin-applications_post-selection.html",
+		"/C/Users/mwatier/REPOS/Bristol/docs/admin-applications-filtered.html",
+		"/C/Users/mwatier/REPOS/Bristol/docs/admin-blank.html",
+		"/C/Users/mwatier/REPOS/Bristol/docs/admin-committee-manage-single.html",
+		"/C/Users/mwatier/REPOS/Bristol/docs/admin-com-management.html",
+		"/C/Users/mwatier/REPOS/Bristol/docs/admin-committees.html",
+		"/C/Users/mwatier/REPOS/Bristol/docs/admin-committees-appointed.html",
+		"/C/Users/mwatier/REPOS/Bristol/docs/admin-committees-details.html",
+		"/C/Users/mwatier/REPOS/Bristol/docs/admin-committees-dashboard.html",
+		"/C/Users/mwatier/REPOS/Bristol/docs/admin-committees-list.html",
+		"/C/Users/mwatier/REPOS/Bristol/docs/admin-commmittee-active-users.html",
+		"/C/Users/mwatier/REPOS/Bristol/docs/admin-proposed.html",
+		"/C/Users/mwatier/REPOS/Bristol/docs/admin-questions.html",
+		"/C/Users/mwatier/REPOS/Bristol/docs/admin-questions-CV.html",
+		"/C/Users/mwatier/REPOS/Bristol/docs/admin-questions-type.html",
+		"/C/Users/mwatier/REPOS/Bristol/docs/admin-reports.html",
+		"/C/Users/mwatier/REPOS/Bristol/docs/admin-seasons.html",
+		"/C/Users/mwatier/REPOS/Bristol/docs/admin-messages.html",
+		"/C/Users/mwatier/REPOS/Bristol/docs/index.html",
+		"/C/Users/mwatier/REPOS/Bristol/docs/admin-Users.html",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/vendor/bootstrap.override/_jumbotron.override.scss",
+		"/C/Users/mwatier/REPOS/cvquality/mods to node-styleguid/nucleus-styleguide/assets/styles/molecules/buttons.scss",
 		"/C/Users/mwatier/REPOS/cvquality/assets/scss/base/_typography.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/emailpdf.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/helpers/_flex.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/structure/_cqc-clinician-management.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/component/_nav-sub.scss",
 		"/C/Users/mwatier/REPOS/cvquality/assets/scss/_setup.scss",
 		"/C/Users/mwatier/Desktop/Sitemenu.txt",
 		"/C/Users/mwatier/REPOS/cvquality/assets/scss/vendor/bootstrap.override/_collapse.override.scss",
@@ -916,39 +686,11 @@
 		"/C/Users/mwatier/Repo/cvquality/ToDo.md",
 		"/C/Users/mwatier/Repo/cvquality/gruntfile.js",
 		"/C/Users/mwatier/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc.defaults.json",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/included/_table-scrollable.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_list-nobullets.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/_list-nobullets.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/_table.scss",
-		"/C/Users/mwatier/Repo/cvquality/mods to node-styleguid/nucleus-styleguide/assets/styles/molecules/tables.scss",
-		"/C/Users/mwatier/Repo/cvquality/node_modules/.bin/lorem-ipsum",
-		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/src/entities/Molecule.js",
-		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/src/entities/Structure.js",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_toolkit-sublisting.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_video-player.scss",
-		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/assets/styles/molecules/tables.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_mobile-menu-toggle.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap-sass-3.3.7/sass/bootstrap/_variables.scss",
-		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/assets/styles/structures/layouts.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/_html.scss",
-		"/C/Users/mwatier/Repo/cvquality/node_modules/grunt-reload/.idea/scopes/scope_settings.xml",
-		"/C/Users/mwatier/Repo/cvquality/.sass-cache/825ee957c1e68c0a11a4049aafcc815ceea5fa45/_card.scssc",
-		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/src/entities/Brand.js",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap-sass-3.3.7/sass/bootstrap/_media.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap-sass-3.3.7/sass/bootstrap/_buttons.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_kitchensink.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/base/_table.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_blockquote.override.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap/_kitchensink.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap-sass-3.3.7/sass/bootstrap/_panels.scss",
-		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/src/entities/Icon.js",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap-sass-3.3.7/sass/bootstrap/mixins/_buttons.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_nav-basic.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap-sass-3.3.7/javascripts/bootstrap/button.js"
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/included/_table-scrollable.scss"
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 28.0
 	},
 	"find_in_files":
 	{
@@ -1144,115 +886,16 @@
 	"groups":
 	[
 		{
-			"selected": 27,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"semi_transient": false,
+					"file": "assets/css/index.css.map",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 2836,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										200,
-										206
-									],
-									[
-										246,
-										252
-									],
-									[
-										299,
-										305
-									],
-									[
-										311,
-										317
-									],
-									[
-										453,
-										459
-									],
-									[
-										605,
-										611
-									],
-									[
-										645,
-										651
-									],
-									[
-										903,
-										909
-									],
-									[
-										1012,
-										1018
-									],
-									[
-										1344,
-										1350
-									],
-									[
-										1710,
-										1716
-									],
-									[
-										2046,
-										2052
-									],
-									[
-										2487,
-										2505
-									],
-									[
-										2733,
-										2751
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								2618,
-								2618
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"line_numbers": false,
-							"markdonw_live_preview_last_run": 1522946870.63,
-							"output_tag": 5,
-							"result_base_dir": "",
-							"result_file_regex": "^([^ \t].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1035.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 27,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "assets/scss/structure/_cqc-clinician-management.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1,
+						"buffer_size": 159760,
 						"regions":
 						{
 						},
@@ -1265,779 +908,8 @@
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1522948184.43,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 26,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "assets/scss/structure/_cqc.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 14373,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6754,
-								6765
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522946870.64,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1350.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 28,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "assets/scss/index.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2135,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								787,
-								792
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522946870.64,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 25,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "assets/scss/base/_lists.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 16659,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								12554,
-								12554
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522947242.58,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 6024.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 23,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-applicant.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 31289,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522948592.23,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 22,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-applications.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 32842,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522948592.25,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 21,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-applications_post-selection.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 32396,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522948592.58,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 20,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-applications-filtered.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 35206,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522948592.55,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 19,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-blank.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 18521,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522948592.48,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 18,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-committee-manage-single.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 23618,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522948592.57,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-com-management.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 16924,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522948592.58,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-committees.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 41585,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522948592.58,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 15,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-committees-appointed.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 36059,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522948592.58,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-committees-details.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 27090,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522948592.58,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-committees-dashboard.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 24406,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522948592.58,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-committees-list.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 29362,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522948592.58,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-commmittee-active-users.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 15908,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522948592.58,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 18,
-					"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-proposed.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 19436,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522948592.58,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 19,
-					"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-questions.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 25235,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522948592.58,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 20,
-					"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-questions-CV.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 32417,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522948592.58,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 21,
-					"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-questions-type.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 40185,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522948592.59,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 22,
-					"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-reports.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 15112,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522948592.59,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 23,
-					"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-seasons.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 14490,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522948592.59,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 24,
-					"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-messages.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 14638,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522948592.59,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 25,
-					"file": "/C/Users/mwatier/REPOS/Bristol/docs/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2791,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522948592.59,
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 26,
-					"file": "/C/Users/mwatier/REPOS/Bristol/docs/admin-Users.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 29296,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								492,
-								492
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522948592.59,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"markdonw_live_preview_last_run": 1530043002.93,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -2047,212 +919,34 @@
 					"type": "text"
 				},
 				{
-					"buffer": 27,
-					"file": "assets/scss/vendor/bootstrap.override/_jumbotron.override.scss",
+					"buffer": 1,
+					"file": "gruntfile.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3102,
+						"buffer_size": 2700,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1101,
-								1101
+								258,
+								258
 							]
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1523483633.78,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 402.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 28,
-					"file": "mods to node-styleguid/nucleus-styleguide/assets/styles/molecules/buttons.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 801,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								514,
-								514
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522948511.78,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 24,
-					"type": "text"
-				},
-				{
-					"buffer": 29,
-					"file": "assets/scss/base/_typography.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 11098,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522947257.88,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3417.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 29,
-					"type": "text"
-				},
-				{
-					"buffer": 30,
-					"file": "assets/scss/emailpdf.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2087,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								796,
-								796
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522947182.36,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 31,
-					"type": "text"
-				},
-				{
-					"buffer": 31,
-					"file": "assets/scss/component/_webinar.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3920,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"_anf_new": "",
-							"markdonw_live_preview_last_run": 1522946870.63,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 32,
-					"type": "text"
-				},
-				{
-					"buffer": 32,
-					"file": "assets/scss/helpers/_flex.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1152,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								155,
-								163
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1522946870.64,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"markdonw_live_preview_last_run": 1530043005.71,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 702.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 33,
-					"type": "text"
-				},
-				{
-					"buffer": 33,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 30,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -2260,7 +954,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -2297,7 +991,7 @@
 	"project": "cvquality.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -2306,6 +1000,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"grunt",
+				"gruntfile.js"
+			],
 			[
 				"jumb",
 				"assets\\scss\\vendor\\bootstrap.override\\_jumbotron.override.scss"
@@ -2813,10 +1511,6 @@
 			[
 				"search.scss",
 				"assets\\scss\\component\\_searchbar.scss"
-			],
-			[
-				"mobilemen",
-				"assets\\scss\\structure\\_mobile-menu-toggle-container.scss"
 			]
 		],
 		"width": 0.0
@@ -2847,7 +1541,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 169.0,
+	"side_bar_width": 639.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

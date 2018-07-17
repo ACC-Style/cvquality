@@ -1,0 +1,69 @@
+/**
+ * Editor Decorators are only visible in the Sitefinity Editor
+ * 
+ * @molecule Editor Container Decorator
+ * @section Xtra > Editor Helper 
+ * @markup
+ *  <div class="sfPageEditor">
+ *       <div class="visible-authenticated-block">
+ *          <ul class="nav-pills nav">
+ *              <li class="nav-item active"><a class="nav-link">Profile</a></li>
+ *              <li class="nav-item"><a class="nav-link">Settings</a></li>
+ *              <li class="nav-item"><a class="nav-link">Logout</a></li>
+ *          </ul>
+ *       </div>
+ *       <div class="visible-anonymous-block">
+ *          <ul class="nav-pills nav">
+ *              <li class="nav-item active"><a class="nav-link">FAQ</a></li>
+ *              <li class="nav-item"><a class="nav-link">Getting Started</a></li>
+ *              <li class="nav-item"><a class="nav-link">Login</a></li>
+ *          </ul>
+ *       </div>
+ *   </div>
+ **/
+
+
+.sfPageEditor {
+    .visible-authenticated-block {
+        img {
+            display: none;
+        }
+        &:after, &:before {
+            content: "AUTHENTICATED CONTENT - REMBER TO CHANGE PERMISIONS OF CONTENT IN AREA - Permision/Role/Authenticated";
+            display: block;
+            position: relative;
+            font-size: ms(-1);
+            text-align: center;
+            color: $scrub-teal-dark;
+        }
+        display: block !important;
+        opacity: .75;
+        border: 2px dotted $mix-teal_orange;
+        margin: 5px;
+        background: mix($mix-teal_orange, white, 10%);
+    }
+    .visible-anonymous-block {
+        img {
+            display: none;
+        }
+        &:after, &:before {
+            content: "ANONYMOUS CONTENT - REMBER TO CHANGE PERMISIONS OF CONTENT IN AREA - Permision/Role/Anonymous";
+            display: block;
+            position: relative;
+            font-size: ms(-1);
+            text-align: center;
+            color: $orange-dark;
+        }
+        display: block !important;
+        opacity: .75;
+        border: 2px dotted $orange-light;
+        margin: 5px;
+        background: mix($orange-light, white, 10%);
+    }
+}
+// Overrides of Elements
+.sfPageEditor {
+    .accordion .panel-collapse.collapse{
+        display: block !important;
+    }
+}
