@@ -1,7 +1,8 @@
+
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-       connect: {
+        connect: {
           server: {
             options: {
               port: 8000,
@@ -53,7 +54,7 @@ module.exports = function(grunt) {
         watch: {
             css: {
                 files: 'assets/scss/**/*.scss',
-                tasks: ['sass','postcss','copy', 'exec'],
+                tasks: ['sass', 'postcss', 'copy', 'exec'],
                 options:{livereload: true,}
             },
             html:{
@@ -88,7 +89,16 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-postcss');
     // grunt.loadNpmTasks('@micahgodbolt/grunt-phantomcss');
-
+    var backstopjs = require('backstopjs');
+    grunt.registerTask('backstop', 'BackstopJS integration', function (cmd) {
+        // cmd is either 'reference', 'test', or 'openReport'
+        var done = this.async();
+        backstopjs(cmd).then(function () {
+            done(true);
+        }).catch(function () {
+            done(false);
+        });
+    });
 
     grunt.registerTask('default', ['connect','sass','postcss','copy', 'exec','watch']);
 }

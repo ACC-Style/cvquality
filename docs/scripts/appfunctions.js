@@ -29,7 +29,8 @@
              vAxis: { format: 'decimal', viewWindow: { max: 17, min: 0 } },
              colors: ['#E87D1E', '#0088AA', '#A1A0A4']
          };
+         if (document.getElementById('columnchart_material') != null ){
          var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
-         chart.draw(data, google.charts.Bar.convertOptions(options));
+         chart.draw(data, google.charts.Bar.convertOptions(options));}
      }
  });
