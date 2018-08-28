@@ -161,7 +161,7 @@
     }
 
     h1, h3 {
-        color: $orange-dark;
+        color: $primary-color-dark;
     }
 
     h2, h4 {
@@ -303,11 +303,11 @@
     border-color: $warm-grey-light;
 
     .triangle:before {
-        border-color: transparent transparent transparent $orange-light;
+        border-color: transparent transparent transparent $primary-color-light;
     }
 
     .card-header {
-        color: $orange-dark;
+        color: $primary-color-dark;
     }
 }
 
@@ -392,7 +392,7 @@
 
     .title {
         @include font("regular");
-        color: $orange-dark;
+        color: $primary-color-dark;
         line-height: $crunched;
         text-transform: capitalize;
         margin-top: 0;
@@ -632,7 +632,7 @@
         font-size: ms(1);
 
         &:before, &:after {
-            color: $orange-light;
+            color: $primary-color-light;
         }
 
         &:before {
@@ -841,7 +841,7 @@
     h1, h2, h3, h4 {
         &:first-child{margin-top:.5rem;}
         font-weight: bold;
-        color: $orange-dark;
+        color: $primary-color-dark;
     }
     + .box{ margin-top:.5rem;}
 }

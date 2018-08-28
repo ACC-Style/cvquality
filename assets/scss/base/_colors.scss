@@ -1,18 +1,18 @@
 /**
- * Orange - Dark (Headers)
+ * Primary - Dark (Headers)
  *
  * @color 
  * @section QII Brand
  */
- $orange-dark: #e87d1e;
+ $primary-color-dark: #E87D1E;
 
 /**
- * Orange - Light (Highlights)
+ * Primary - Light (Highlights)
  *
  * @color 
  * @section QII Brand
  */
- $orange-light: #ffc425;
+ $primary-color-light: #FFC425;
  /**
  * ACC Blue
  *
@@ -102,19 +102,19 @@ $warm-grey-light: #d6d4d4;
  */
  $scrub-teal-dark:#047294;
 /**
- * ScrubTeal & Orange Light 30%
+ * ScrubTeal & Primary Light 30%
  *
  * @color
  * @section Blends      
  */
- $mix-teal_orange:#58B5A5;
+ $mix-teal_primary:#58B5A5;
  /**
- *  Orange Light & ScrubTeal 30%
+ *  Primary Light & ScrubTeal 30%
  *
  * @color
  * @section Blends      
  */
- $mix-orange_teal:#ACBD65;
+ $mix-primary_teal:#ACBD65;
 
  @mixin teal-gradient{
   background: $scrub-teal-dark;
@@ -241,17 +241,17 @@ $warm-grey-light: #d6d4d4;
     /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1YWVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjgzYWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(top,$orange-dark 0%, mix($orange-dark, $orange-light) 100%);
+    background: -moz-linear-gradient(top,$primary-color-dark 0%, mix($primary-color-dark, $primary-color-light) 100%);
     /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, mix($orange-dark, $orange-light)), color-stop(100%, mix($orange-dark, $orange-light)));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, mix($primary-color-dark, $primary-color-light)), color-stop(100%, mix($primary-color-dark, $primary-color-light)));
     /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,$orange-dark 0%, mix($orange-dark, $orange-light) 100%);
+    background: -webkit-linear-gradient(top,$primary-color-dark 0%, mix($primary-color-dark, $primary-color-light) 100%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,$orange-dark 0%, mix($orange-dark, $orange-light) 100%);
+    background: -o-linear-gradient(top,$primary-color-dark 0%, mix($primary-color-dark, $primary-color-light) 100%);
     /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,$orange-dark 0%, mix($orange-dark, $orange-light) 100%);
+    background: -ms-linear-gradient(top,$primary-color-dark 0%, mix($primary-color-dark, $primary-color-light) 100%);
     /* IE10+ */
-    background: linear-gradient(to bottom,$orange-dark 0%, mix($orange-dark, $orange-light) 100%);
+    background: linear-gradient(to bottom,$primary-color-dark 0%, mix($primary-color-dark, $primary-color-light) 100%);
     /* W3C */
  }
   @mixin warmgrey-gradient-reverse{

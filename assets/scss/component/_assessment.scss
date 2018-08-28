@@ -24,7 +24,7 @@
     h1, h2, h3, h4 {
         &:first-child{margin-top:.5rem;}
         font-weight: bold;
-        color: $orange-dark;
+        color: $primary-color-dark;
     }
 
     + .box {
@@ -85,7 +85,7 @@
     h1, h2, h3, h4 {
         &:first-child{margin-top:.5rem;}
         font-weight: bold;
-        color: $orange-dark;
+        color: $primary-color-dark;
     }
 }
 
@@ -122,7 +122,7 @@
     line-height: $normal;
     text-align: right;
     text-transform: uppercase;
-    color: $orange-dark;
+    color: $primary-color-dark;
     border-bottom: solid 2px $warm-grey-dark;
    
     &:before {
@@ -172,7 +172,7 @@
         background-color: $soft-grey;
     }
     .overall-score & {
-        background-color: $orange-dark;
+        background-color: $primary-color-dark;
         padding: .75rem .5rem;
         color: white;
         font-weight: bold;
@@ -193,7 +193,7 @@
     .title{
         font-size: ms(7);
         @include font-display("bold");
-        color:$orange-dark;
+        color:$primary-color-dark;
         margin:0;
         line-height: 1;
         vertical-align:bottom;

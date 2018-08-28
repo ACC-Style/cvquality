@@ -40,7 +40,7 @@
 .font-normal{@include font();}
 .alphabet-display{
 	.font--name{color:$warm-grey;}
-	.font--dropcase_2x{color:$orange-dark;}
+	.font--dropcase_2x{color:$primary-color-dark;}
 	.font--lowercase{ text-transform: lowercase;}
 	.font--uppercase{ text-transform: uppercase;}
 	.ms12{@include baseline-font(24);}

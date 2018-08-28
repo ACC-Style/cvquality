@@ -99,8 +99,8 @@
             border-color: $off-white;
 
             &.active {
-                border-color: $orange-light;
-                background-color: $orange-light;
+                border-color: $primary-color-light;
+                background-color: $primary-color-light;
             }
         }
     }
@@ -152,7 +152,7 @@
       width: 1.28571429em;
       text-align: center;
       content: "\f054";
-      color: $orange-light;
+      color: $primary-color-light;
       font-size: ms(4);
       padding-top: 5px;
 
@@ -219,7 +219,7 @@
                     &.active {
                         background-color: $warm-grey-dark;
                         color: white;
-                        border-right: $orange-dark 10px solid;
+                        border-right: $primary-color-dark 10px solid;
                         padding-right: 10px;
                     }
                 }
@@ -271,7 +271,7 @@
     &:hover,
     &:focus {
         outline: 0;
-        color: $orange-light;
+        color: $primary-color-light;
         text-decoration: none;
 
         @include opacity(0.9);

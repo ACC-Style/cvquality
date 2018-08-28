@@ -1,0 +1,2307 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"d",
+				"default"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"bac",
+				"background-position"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"color",
+				"color-name"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"b",
+				"bg\tbackground"
+			],
+			[
+				"se",
+				"secondary"
+			],
+			[
+				"li",
+				"list-style-type"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"leave",
+				"leave-comment"
+			],
+			[
+				"tex",
+				"text-right"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"over",
+				"overflow-x"
+			],
+			[
+				"circle",
+				"circle-radius"
+			],
+			[
+				"me",
+				"medium-6"
+			],
+			[
+				"page",
+				"page-header"
+			],
+			[
+				"n",
+				"no-vertical-margin"
+			],
+			[
+				"section",
+				"section-padding"
+			],
+			[
+				"nav-",
+				"nav-utility"
+			],
+			[
+				"po",
+				"relative-position"
+			],
+			[
+				"paper",
+				"paper-page"
+			],
+			[
+				"button",
+				"button-group"
+			],
+			[
+				"sub",
+				"sub-line"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"warm",
+				"warm-grey-light"
+			],
+			[
+				"in",
+				"instructions"
+			],
+			[
+				"teal-",
+				"scrub-teal-light"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"item",
+				"item-divider"
+			],
+			[
+				"war",
+				"warm-grey-dark"
+			],
+			[
+				"bor",
+				"border-style"
+			],
+			[
+				"sc",
+				"scrub-teal-dark"
+			],
+			[
+				"tra",
+				"transparent"
+			],
+			[
+				"tran",
+				"transparent"
+			],
+			[
+				"scur",
+				"scrub-teal-dark"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"j",
+				"jumbotron"
+			],
+			[
+				"jum",
+				"jumbotron-fluid"
+			],
+			[
+				"scrub",
+				"scrub-teal-dark"
+			],
+			[
+				"off",
+				"off-white"
+			],
+			[
+				"oran",
+				"orange-light"
+			],
+			[
+				"add",
+				"address-line"
+			],
+			[
+				"list-",
+				"list-style-type"
+			],
+			[
+				"left",
+				"left-align"
+			],
+			[
+				"lo",
+				"lowercase"
+			],
+			[
+				"panel",
+				"panel-title"
+			],
+			[
+				"acc",
+				"accordion"
+			],
+			[
+				"coun",
+				"counter-increment"
+			],
+			[
+				"count",
+				"counter-reset"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"padin",
+				"padding-bottom"
+			],
+			[
+				"orang",
+				"light-orange"
+			],
+			[
+				"car",
+				"card-action"
+			],
+			[
+				"bord",
+				"border-width"
+			],
+			[
+				"tabl",
+				"table-cell"
+			],
+			[
+				"event",
+				"event-details"
+			],
+			[
+				"ev",
+				"event-date"
+			],
+			[
+				"points",
+				"points-possible"
+			],
+			[
+				"sof",
+				"soft-blue"
+			],
+			[
+				"warm-gre",
+				"warm-grey-light"
+			],
+			[
+				"flex-",
+				"flex-direction"
+			],
+			[
+				"soft",
+				"soft-grey"
+			],
+			[
+				"scu",
+				"scrubteal-dark"
+			],
+			[
+				"up",
+				"uppercase"
+			],
+			[
+				"card",
+				"card-header"
+			],
+			[
+				"text-in",
+				"text-indent"
+			],
+			[
+				"caro",
+				"carousel-indicators"
+			],
+			[
+				"ali",
+				"align-self"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"block",
+				"blockquote"
+			],
+			[
+				"pso",
+				"position"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"off-",
+				"off-white"
+			],
+			[
+				"nav",
+				"nav-link"
+			],
+			[
+				"last",
+				"last-child"
+			],
+			[
+				"drop",
+				"dropdown-menu"
+			],
+			[
+				"content",
+				"content-padding"
+			],
+			[
+				"large",
+				"large-pull-8"
+			],
+			[
+				"lare",
+				"large-push-4"
+			],
+			[
+				"la",
+				"large-4"
+			],
+			[
+				"small",
+				"small-9"
+			],
+			[
+				"ma",
+				"max-width"
+			],
+			[
+				"lin",
+				"line-height"
+			],
+			[
+				"footer",
+				"footer-sitemap"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"spa",
+				"space-between"
+			],
+			[
+				"input",
+				"input-group-addon"
+			],
+			[
+				"com",
+				"component"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/mwatier/REPOS/Strathmore/assets/scss/helpers/functions/_clamp.scss",
+			"settings":
+			{
+				"buffer_size": 278,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/mwatier/REPOS/Strathmore/assets/scss/helpers/functions/_map-get-deep.scss",
+			"settings":
+			{
+				"buffer_size": 1534,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/mwatier/REPOS/Strathmore/assets/scss/helpers/functions/_str-explode.scss",
+			"settings":
+			{
+				"buffer_size": 1282,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/mwatier/REPOS/Strathmore/assets/scss/helpers/functions/_functions.scss",
+			"settings":
+			{
+				"buffer_size": 220,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/mwatier/REPOS/Strathmore/assets/scss/utility-css/_typoography.scss",
+			"settings":
+			{
+				"buffer_size": 3901,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/mwatier/REPOS/Strathmore/assets/scss/helpers/functions/_make-shadow.scss",
+			"settings":
+			{
+				"buffer_size": 812,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/mwatier/REPOS/COP Print/package.json",
+			"settings":
+			{
+				"buffer_size": 1519,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/mwatier/REPOS/COP Print/gulpfile.js",
+			"settings":
+			{
+				"buffer_size": 3442,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/mwatier/REPOS/Strathmore/assets/scss/structures/_cards.override.scss",
+			"settings":
+			{
+				"buffer_size": 1278,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/mwatier/REPOS/Strathmore/gruntFile.js",
+			"settings":
+			{
+				"buffer_size": 4522,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/mwatier/REPOS/Strathmore/assets/scss/config/_colors.scss",
+			"settings":
+			{
+				"buffer_size": 1845,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/mwatier/REPOS/Strathmore/assets/scss/utility-css/_hover.scss",
+			"settings":
+			{
+				"buffer_size": 5746,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/mwatier/REPOS/Strathmore/assets/scss/config/_utility-css-definitions.scss",
+			"settings":
+			{
+				"buffer_size": 3697,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/mwatier/REPOS/Strathmore/assets/scss/utility-css/_background.scss",
+			"settings":
+			{
+				"buffer_size": 3300,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/mwatier/REPOS/Strathmore/assets/scss/utility-css/_utility-css.scss",
+			"settings":
+			{
+				"buffer_size": 394,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/mwatier/REPOS/Strathmore/assets/scss/utility-css/_opacity.scss",
+			"settings":
+			{
+				"buffer_size": 1596,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/mwatier/REPOS/Strathmore/assets/scss/components/_buttons.scss",
+			"settings":
+			{
+				"buffer_size": 1320,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"set",
+				"Set Syntax: SCSS"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"set s",
+				"Set Syntax: SCSS"
+			],
+			[
+				"word",
+				"Word Wrap: Toggle"
+			],
+			[
+				"beau",
+				"HTMLBeautify"
+			],
+			[
+				"forma",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"set html",
+				"Set Syntax: HTML"
+			],
+			[
+				"set scs",
+				"Set Syntax: SCSS"
+			],
+			[
+				"lower",
+				"Convert Case: Lower Case"
+			],
+			[
+				"format as j",
+				"CodeFormatter: Format as Javascript Syntax"
+			],
+			[
+				"format as",
+				"CodeFormatter: Format as SCSS Syntax"
+			],
+			[
+				"set asp",
+				"Set Syntax: HTML (ASP)"
+			],
+			[
+				"set sc",
+				"Set Syntax: SCSS"
+			],
+			[
+				"formapmp",
+				"CodeFormatter: Show PHP Transformations"
+			],
+			[
+				"markdown  ch",
+				"Markdown Preview: Open Markdown Cheat sheet"
+			],
+			[
+				"mar",
+				"Build With: Markdown"
+			],
+			[
+				"build",
+				"Build With: Markdown"
+			],
+			[
+				"set mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"format java",
+				"CodeFormatter: Format as Javascript Syntax"
+			],
+			[
+				"set jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set  json",
+				"Set Syntax: JSON"
+			],
+			[
+				"mark",
+				"Build With: Markdown"
+			],
+			[
+				"spell",
+				"Google Spell Check"
+			],
+			[
+				"spacing",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"ht",
+				"HTMLPrettify"
+			],
+			[
+				"bea",
+				"HTMLBeautify"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"pack remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"code",
+				"CodeFormatter: Format as PHP Syntax"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"prett",
+				"HTMLPrettify"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"set h",
+				"Set Syntax: HTML"
+			],
+			[
+				"for",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"update",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"pretty",
+				"HTMLPrettify"
+			],
+			[
+				"format",
+				"CodeFormatter: Format as HTML Syntax"
+			],
+			[
+				"conver",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"set scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"set sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"set liqui",
+				"Set Syntax: HTML (Liquid)"
+			],
+			[
+				"FORMA",
+				"CodeFormatter: Format as HTML Syntax"
+			],
+			[
+				"set liqu",
+				"Set Syntax: HTML Liquid"
+			],
+			[
+				"fora",
+				"CodeFormatter: Format as HTML Syntax"
+			],
+			[
+				"form",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"seth",
+				"Set Syntax: HTML (Tcl)"
+			],
+			[
+				"format html",
+				"CodeFormatter: Format as HTML Syntax"
+			],
+			[
+				"from h",
+				"CodeFormatter: Format as HTML Syntax"
+			],
+			[
+				"set hml",
+				"Set Syntax: HTML (Liquid)"
+			],
+			[
+				"fomr",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"foram",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"sent scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"codefor",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"covert spa",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"be",
+				"SassBeautify"
+			],
+			[
+				"pretty ",
+				"HTMLPrettify"
+			],
+			[
+				"conver spa",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"CONVER SPA",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"sethmlt",
+				"Set Syntax: HTML (Tcl)"
+			],
+			[
+				"con",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"sass",
+				"SassBeautify"
+			],
+			[
+				"PRETT",
+				"HTMLPrettify"
+			],
+			[
+				"set ht",
+				"Set Syntax: HTML (Tcl)"
+			],
+			[
+				"convt",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"b",
+				"SassBeautify"
+			],
+			[
+				"pre",
+				"HTMLPrettify: Set Prettify Preferences"
+			],
+			[
+				"set html\t",
+				"Set Syntax: HTML"
+			],
+			[
+				"set ham",
+				"Set Syntax: HTML"
+			],
+			[
+				"pret",
+				"HTMLPrettify"
+			],
+			[
+				"s",
+				"SassBeautify"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 444.0
+	},
+	"console":
+	{
+		"height": 171.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/C/Users/mwatier/AppData/Local/Temp/Temp1_liquid-master.zip/liquid-master/README.md",
+		"/C/Users/mwatier/REPOS/COP Print/.gitignore",
+		"/C/Users/mwatier/REPOS/Strathmore/gulpfile.js",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/helpers/mixins/_color-loop.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/utility-css/_background.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/utility-css/_hover.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/utility-css/_utility-css.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/utility-css/_typoography.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/helpers/_get.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/structures/_pagination.override.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/structures/_quicklinks.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/helpers/mixins/_BEM.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/vendor/foundation-sites/prototype/_shadow.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/config/_utility-css-definitions.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/helpers/functions/_deep-map-check.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/helpers/functions/_deep-map-check.scss.txt",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/utility-css/_spacing.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/structures/_cards.override.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/css/index.css",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/config/_foundation-settings.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/bower_components/foundation-sites/scss/forms/_select.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/README.md",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/config/_colors.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/styleguide/_design-base.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/utility-css/_textures.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/styleguide/_basic-html.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/utility-css/_border.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/css/index.min.css",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/helpers/mixins/_size-loop.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/config/_textures.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/package.json",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/config/_fonts.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/gruntFile.js",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/structures/_structures.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/components/_buttons.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/config/_config.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/helpers/functions/_functions.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/node_modules/json-schema/draft-03/examples/card",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/css/index_2.min.css",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/index.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/components/_components.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/components/_close-button.override.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/utility-css/_shadows.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/vendor/foundation-sites/components/_button.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/bower_components/foundation-sites/scss/settings/_settings.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/styleguide/_navigation-components.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/Strathmore/js/vendor.js",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/base/_typography.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/utility-css/_flex.scss",
+		"/C/Users/mwatier/REPOS/Bristol/Assets/scss/base/_font-local-include.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/helpers/mixins/_font-include.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/helpers/mixins/_mixins.scss",
+		"/C/Users/mwatier/REPOS/Bristol/Assets/scss/base/_fonts.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/styleguide/_styleguide.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/bower_components/foundation-sites/scss/util/_breakpoint.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/styleguide/_templates.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/css/diff/index.css.diff",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/base/_base.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/settings/_settings.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/base/_setup.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/utilities/_typoography.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/base/variables/_definitions.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/utilities/_utilities.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/base/variables/_settings.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/vendor/foundation-sites/_global.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/vendor/foundation-sites/util/_color.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/Strathmore/assets/css/index.css",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/utilities/_spacing.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/vendor/_modular-scale.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/helpers/mixins/_utilities.color-loop.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/helpers/mixins/_utlities.size-loop.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/base/variables/_vars.scss",
+		"/C/Users/mwatier/REPOS/Bristol/Assets/scss/_setup.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/vendor/foundation-sites/foundation.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/base/_fonts.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/base/_colors.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/helpers/variables/_vars.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/util/_spacing.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/util/_typoography.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/_setup.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/base/_modular-scale-typography.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/util/mixin/_BEM.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/util/_border.scss",
+		"/C/Users/mwatier/REPOS/Bristol/Assets/scss/alc/_border.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/vendor/foundation-sites/settings/_settings.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/util/_utilities.scss",
+		"/C/Users/mwatier/REPOS/Bristol/Assets/scss/index.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/css/maps/index.css.map",
+		"/C/Users/mwatier/REPOS/Strathmore/node_modules/foundation-sites/gulpfile.js",
+		"/C/Users/mwatier/REPOS/Strathmore/node_modules/foundation-sites/README.md",
+		"/C/Users/mwatier/REPOS/Strathmore/uiList.md",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/styleguide/_containers.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/assets/scss/styleguide/_question-block.scss",
+		"/C/Users/mwatier/REPOS/Strathmore/docs/index.html",
+		"/C/Users/mwatier/AppData/Roaming/Visual Studio Setup/user.json",
+		"/C/Users/mwatier/REPOS/Strathmore/docs/css/_styleguide_variables.css",
+		"/C/Users/mwatier/REPOS/Strathmore/docs/assets/css/index.css",
+		"/C/Users/mwatier/REPOS/Strathmore/dist/index.html",
+		"/C/Users/mwatier/REPOS/Strathmore/tests/phantomcss/sReadme-test.js",
+		"/C/Users/mwatier/REPOS/Strathmore/tests/phantomcss/start.js",
+		"/C/Users/mwatier/REPOS/Strathmore/ORIGAMI.md",
+		"/C/Users/mwatier/REPOS/Bristol/Assets/css/acc-login-container.css",
+		"/C/Users/mwatier/REPOS/Bristol/Assets/scss/alc/_input.scss",
+		"/C/Users/mwatier/REPOS/Bristol/Assets/scss/alc/_spacing.scss",
+		"/C/Users/mwatier/REPOS/Bristol/docs/admin-applicant.html",
+		"/C/Users/mwatier/REPOS/Bristol/templates/admin-nomination-dashboard.liquid",
+		"/C/Users/mwatier/REPOS/Bristol/templates/includes/admin/sections/topbar-season.liquid",
+		"/C/Users/mwatier/REPOS/Bristol/templates/includes/admin/sections/topbar-global.liquid",
+		"/C/Users/mwatier/REPOS/Bristol/Assets/scss/alc/colors.scss",
+		"/C/Users/mwatier/REPOS/Bristol/Assets/scss/alc/_font-styles.scss",
+		"/C/Users/mwatier/REPOS/Bristol/Assets/scss/alc/_professional-type.scss",
+		"/C/Users/mwatier/REPOS/Bristol/Assets/scss/alc/_alert.scss",
+		"/C/Users/mwatier/REPOS/Bristol/Assets/scss/alc/panel.scss",
+		"/C/Users/mwatier/REPOS/Bristol/Assets/scss/acc-login-container.scss",
+		"/C/Users/mwatier/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/mwatier/REPOS/Bristol/Assets/scss/components/answer_question/__answer_question.required.scss",
+		"/C/Users/mwatier/REPOS/Bristol/Assets/scss/alc/_breakpoints.scss",
+		"/C/Users/mwatier/REPOS/Bristol/styleguide/assets/scss/base/_colors.scss",
+		"/C/Users/mwatier/REPOS/Bristol/Assets/css/acc-login-container.css.map",
+		"/C/Users/mwatier/REPOS/Bristol/styleguide/assets/css/acc-login-container.css",
+		"/C/Users/mwatier/REPOS/Bristol/styleguide/assets/css/acc-login-container.min.css",
+		"/C/Users/mwatier/REPOS/Bristol/templates/includes/admin/elements/notes.liquid",
+		"/C/Users/mwatier/REPOS/Bristol/templates/admin-committees-list.liquid",
+		"/C/Users/mwatier/REPOS/Bristol/templates/includes/admin/elements/search-bar.liquid",
+		"/C/Users/mwatier/REPOS/Bristol/templates/includes/admin/elements/search-bar-committee.liquid",
+		"/C/Users/mwatier/REPOS/Bristol/templates/admin-Users.liquid",
+		"/C/Users/mwatier/REPOS/Bristol/templates/index.liquid",
+		"/C/Users/mwatier/REPOS/Bristol/templates/includes/elements/stars-buttons.liquid"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+			"C:\\Users\\mwatier\\REPOS\\Strathmore\\assets\\scss",
+			"C:\\Users\\mwatier\\REPOS\\Strathmore\\assets\\scss\\vendor",
+			"C:\\Users\\mwatier\\REPOS\\Strathmore\\assets\\scss",
+			"C:\\Users\\mwatier\\REPOS\\Strathmore\\assets\\scss\\utilities",
+			"C:\\Users\\mwatier\\REPOS\\Strathmore"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"padding_2",
+			" padding_2",
+			"font-bold",
+			"font-4",
+			"padding_2",
+			"auto",
+			" text-center",
+			"ext-center",
+			"secondary-5",
+			"background",
+			"1s;",
+			"error",
+			"hover",
+			".opacity",
+			"opacity",
+			"opacicty",
+			"  p",
+			"    ",
+			"   ",
+			"  ",
+			"color_white",
+			"back_",
+			"back",
+			"1",
+			"whtie",
+			")}",
+			"#fff",
+			"#000",
+			"black",
+			"Black",
+			"000",
+			"border_black",
+			"- ",
+			".back",
+			".",
+			"back_",
+			"back_p",
+			"back",
+			"far",
+			"fas",
+			"pv1 pl1 pr3",
+			"br2 br--left flex flex-column",
+			"search-results-list-icon",
+			"font_5",
+			"flex flex-row items-stretch",
+			"padding_2 border-width_1 border_secondary-4 border_solid",
+			" ma0 pb3 ",
+			"ma0 pb3",
+			" style=\"font-size: 32px;\"",
+			"\" class=\"search",
+			" border_secondary-4 border_solid",
+			" relative shadow-hover default h-100 hover-bg-white br2 hide-child",
+			"w-50",
+			"<li class=",
+			"column",
+			"all",
+			"0",
+			"-color_black",
+			"-color",
+			"border-width_1",
+			"border black with alpha of ",
+			"Styleguide",
+			"83.",
+			"80.",
+			"80",
+			"back_info",
+			"color_whtie",
+			"back_alert",
+			"auto",
+			"small-1",
+			"cell",
+			"warning color",
+			"cell",
+			"81",
+			"info",
+			"80.",
+			"quicklinks__item",
+			"!important",
+			" !important",
+			"important",
+			"imporant",
+			"important",
+			"$multiplier",
+			"†",
+			".color",
+			"back_primary color_white",
+			"tinySwitch",
+			" width=",
+			"family",
+			".font-weight",
+			".font",
+			"font-family_",
+			"0.2",
+			"X*",
+			"global-spacing",
+			"ms( ",
+			"on the moduclar scale",
+			"90",
+			"whte",
+			"black",
+			"g  | Not Used",
+			"$global-spacing",
+			"globalspacing",
+			"-",
+			" -1",
+			"5",
+			"| '.",
+			"   ",
+			"'|",
+			"'  |",
+			"        ",
+			"       ",
+			"      ",
+			"     ",
+			"    ",
+			"|     |",
+			"\n    ",
+			"|\n        |",
+			",\n        long-name:",
+			",\n        css-style:",
+			"\n        short-name:",
+			"'.",
+			",\n        css-style:'",
+			",\n        long-name:",
+			"|\n        |",
+			"|\n        | ",
+			"short-name:",
+			":("
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"css-styles"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 7,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/mwatier/REPOS/Strathmore/assets/scss/helpers/functions/_clamp.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 278,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								278,
+								278
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1534450960.66,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/mwatier/REPOS/Strathmore/assets/scss/helpers/functions/_map-get-deep.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1534,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1534450960.67,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/mwatier/REPOS/Strathmore/assets/scss/helpers/functions/_str-explode.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1282,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								440,
+								440
+							],
+							[
+								612,
+								612
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1534450960.67,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/mwatier/REPOS/Strathmore/assets/scss/helpers/functions/_functions.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 220,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								220,
+								220
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1534450960.67,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/mwatier/REPOS/Strathmore/assets/scss/utility-css/_typoography.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3901,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2958,
+								2958
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1534450960.68,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2166.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/Users/mwatier/REPOS/Strathmore/assets/scss/helpers/functions/_make-shadow.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 812,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								812,
+								812
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1534450960.68,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/Users/mwatier/REPOS/COP Print/package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1519,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1534450960.67,
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/C/Users/mwatier/REPOS/COP Print/gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3442,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1534450960.68,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/C/Users/mwatier/REPOS/Strathmore/assets/scss/structures/_cards.override.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1278,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1100,
+								668
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1534450964.36,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/C/Users/mwatier/REPOS/Strathmore/gruntFile.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 4522,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1314,
+								1899
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1534454229.25,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 2972.0,
+						"translation.y": 201.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/C/Users/mwatier/REPOS/Strathmore/assets/scss/config/_colors.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1845,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								155,
+								155
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1534513954.5,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/C/Users/mwatier/REPOS/Strathmore/assets/scss/utility-css/_hover.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5746,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								5001
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1534450960.68,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1506.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/C/Users/mwatier/REPOS/Strathmore/assets/scss/config/_utility-css-definitions.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3697,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								512,
+								512
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1534450960.68,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 680.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/C/Users/mwatier/REPOS/Strathmore/assets/scss/utility-css/_background.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3300,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3213,
+								3213
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1534450960.68,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 570.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/C/Users/mwatier/REPOS/Strathmore/assets/scss/utility-css/_utility-css.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 394,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								394,
+								394
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1534450960.69,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "/C/Users/mwatier/REPOS/Strathmore/assets/scss/utility-css/_opacity.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1596,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1034,
+								1034
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"markdonw_live_preview_last_run": 1534450960.69,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 294.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "/C/Users/mwatier/REPOS/Strathmore/assets/scss/components/_buttons.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1320,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1320,
+								1320
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1534450960.69,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 47.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 60.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.markdown":
+	{
+		"height": 132.0
+	},
+	"pinned_build_system": "",
+	"project": "/C/Users/mwatier/REPOS/Strathmore/Strathmore.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"colors.scss",
+				"assets\\scss\\config\\_colors.scss"
+			],
+			[
+				"cards",
+				"assets\\scss\\structures\\_cards.override.scss"
+			],
+			[
+				"backgroun scs",
+				"assets\\scss\\utility-css\\_background.scss"
+			],
+			[
+				"",
+				"assets\\scss\\utility-css\\_hover.scss"
+			],
+			[
+				"utl de",
+				"assets\\scss\\config\\_utility-css-definitions.scss"
+			],
+			[
+				"utl css",
+				"assets\\scss\\utility-css\\_utility-css.scss"
+			],
+			[
+				"hover",
+				"assets\\scss\\utility-css\\_hover.scss"
+			],
+			[
+				"bem.",
+				"assets\\scss\\helpers\\mixins\\_BEM.scss"
+			],
+			[
+				"quicklin",
+				"assets\\scss\\structures\\_quicklinks.scss"
+			],
+			[
+				"paginatino",
+				"assets\\scss\\structures\\_pagination.override.scss"
+			],
+			[
+				"back",
+				"assets\\scss\\utility-css\\_background.scss"
+			],
+			[
+				"util de",
+				"assets\\scss\\config\\_utility-css-definitions.scss"
+			],
+			[
+				"color-loo",
+				"assets\\scss\\helpers\\mixins\\_color-loop.scss"
+			],
+			[
+				"border.scs",
+				"assets\\scss\\utility-css\\_border.scss"
+			],
+			[
+				"size loo",
+				"assets\\scss\\helpers\\mixins\\_size-loop.scss"
+			],
+			[
+				"color.scs",
+				"assets\\scss\\config\\_colors.scss"
+			],
+			[
+				"color scss",
+				"assets\\scss\\config\\_colors.scss"
+			],
+			[
+				"border",
+				"assets\\scss\\utility-css\\_border.scss"
+			],
+			[
+				"card over",
+				"assets\\scss\\structures\\_cards.override.scss"
+			],
+			[
+				"textures",
+				"assets\\scss\\utility-css\\_textures.scss"
+			],
+			[
+				"backgrou scss",
+				"assets\\scss\\utility-css\\_background.scss"
+			],
+			[
+				"siz",
+				"assets\\scss\\helpers\\mixins\\_size-loop.scss"
+			],
+			[
+				"ut def",
+				"assets\\scss\\config\\_utility-css-definitions.scss"
+			],
+			[
+				"paginat",
+				"assets\\scss\\structures\\_pagination.override.scss"
+			],
+			[
+				"spac",
+				"assets\\scss\\utility-css\\_spacing.scss"
+			],
+			[
+				"size-loop",
+				"assets\\scss\\helpers\\mixins\\_size-loop.scss"
+			],
+			[
+				"read",
+				"README.md"
+			],
+			[
+				"design bas",
+				"assets\\scss\\styleguide\\_design-base.scss"
+			],
+			[
+				"color-loop",
+				"assets\\scss\\helpers\\mixins\\_color-loop.scss"
+			],
+			[
+				"pagination.",
+				"assets\\scss\\structures\\_pagination.override.scss"
+			],
+			[
+				"basichtml",
+				"assets\\scss\\styleguide\\_basic-html.scss"
+			],
+			[
+				"basic html",
+				"assets\\scss\\styleguide\\_basic-html.scss"
+			],
+			[
+				"utli def",
+				"assets\\scss\\config\\_utility-css-definitions.scss"
+			],
+			[
+				"sizeloop",
+				"assets\\scss\\helpers\\mixins\\_size-loop.scss"
+			],
+			[
+				"utlity de",
+				"assets\\scss\\config\\_utility-css-definitions.scss"
+			],
+			[
+				"foundation select",
+				"bower_components\\foundation-sites\\scss\\forms\\_select.scss"
+			],
+			[
+				"found se",
+				"assets\\scss\\config\\_foundation-settings.scss"
+			],
+			[
+				"color scs",
+				"assets\\scss\\config\\_colors.scss"
+			],
+			[
+				"found setin",
+				"assets\\scss\\config\\_foundation-settings.scss"
+			],
+			[
+				"spacin",
+				"assets\\scss\\utility-css\\_spacing.scss"
+			],
+			[
+				"textur",
+				"assets\\scss\\utility-css\\_textures.scss"
+			],
+			[
+				"definis",
+				"assets\\scss\\config\\_utility-css-definitions.scss"
+			],
+			[
+				"quicklins",
+				"assets\\scss\\structures\\_quicklinks.scss"
+			],
+			[
+				"foundation-se",
+				"assets\\scss\\config\\_foundation-settings.scss"
+			],
+			[
+				"pagin",
+				"assets\\scss\\structures\\_pagination.override.scss"
+			],
+			[
+				"size-l",
+				"assets\\scss\\helpers\\mixins\\_size-loop.scss"
+			],
+			[
+				"over card",
+				"assets\\scss\\structures\\_cards.override.scss"
+			],
+			[
+				"card",
+				"node_modules\\json-schema\\draft-03\\examples\\card"
+			],
+			[
+				"found sett",
+				"assets\\scss\\config\\_foundation-settings.scss"
+			],
+			[
+				"texture",
+				"assets\\scss\\utility-css\\_textures.scss"
+			],
+			[
+				"colorl",
+				"assets\\scss\\helpers\\mixins\\_color-loop.scss"
+			],
+			[
+				"border.scss",
+				"assets\\scss\\utility-css\\_border.scss"
+			],
+			[
+				"assets scss css",
+				"assets\\scss\\config\\_utility-css-definitions.scss"
+			],
+			[
+				"grunt",
+				"gruntFile.js"
+			],
+			[
+				"button.scss",
+				"assets\\scss\\vendor\\foundation-sites\\components\\_button.scss"
+			],
+			[
+				"settings.scss",
+				"bower_components\\foundation-sites\\scss\\settings\\_settings.scss"
+			],
+			[
+				"font scss",
+				"assets\\scss\\config\\_fonts.scss"
+			],
+			[
+				"found settin",
+				"assets\\scss\\config\\_foundation-settings.scss"
+			],
+			[
+				"index.scss",
+				"assets\\scss\\index.scss"
+			],
+			[
+				"found setting",
+				"assets\\scss\\config\\_foundation-settings.scss"
+			],
+			[
+				"assets foundation setting",
+				"assets\\scss\\config\\_foundation-settings.scss"
+			],
+			[
+				"buttons scss",
+				"assets\\scss\\components\\_buttons.scss"
+			],
+			[
+				"foundation breakpoint",
+				"bower_components\\foundation-sites\\scss\\util\\_breakpoint.scss"
+			],
+			[
+				"sizeloo",
+				"assets\\scss\\helpers\\mixins\\_size-loop.scss"
+			],
+			[
+				"settings.sc",
+				"assets\\scss\\base\\variables\\_settings.scss"
+			],
+			[
+				"base setting",
+				"assets\\scss\\base\\variables\\_settings.scss"
+			],
+			[
+				"base setup",
+				"assets\\scss\\base\\_setup.scss"
+			],
+			[
+				"setting settings.scss",
+				"assets\\scss\\vendor\\foundation-sites\\settings\\_settings.scss"
+			],
+			[
+				"util BEM",
+				"assets\\scss\\util\\mixin\\_BEM.scss"
+			],
+			[
+				"TEMP scs",
+				"assets\\scss\\styleguide\\_TEMPLATES.scss"
+			],
+			[
+				"layou scss",
+				"Assets\\scss\\structures\\_layout.scss"
+			],
+			[
+				"layout grou",
+				"Assets\\scss\\structures\\_layout-section-grouping.scss"
+			],
+			[
+				"utilit scs",
+				"Assets\\scss\\trumps\\_utilities.scss"
+			],
+			[
+				"profes",
+				"Assets\\scss\\alc\\_professional-type.scss"
+			],
+			[
+				"admin topbar",
+				"templates\\includes\\admin\\sections\\topbar-season.liquid"
+			],
+			[
+				"admin top glo",
+				"templates\\includes\\admin\\sections\\topbar-global.liquid"
+			],
+			[
+				"spacing ",
+				"Assets\\scss\\alc\\_spacing.scss"
+			],
+			[
+				"alc colo",
+				"Assets\\scss\\alc\\colors.scss"
+			],
+			[
+				"border scs",
+				"Assets\\scss\\alc\\_border.scss"
+			],
+			[
+				"inpu scss",
+				"Assets\\scss\\alc\\_input.scss"
+			],
+			[
+				"fon st",
+				"Assets\\scss\\alc\\_font-styles.scss"
+			],
+			[
+				"answer ques",
+				"Assets\\scss\\components\\answer_question\\__answer_question.required.scss"
+			],
+			[
+				"font-st",
+				"Assets\\scss\\alc\\_font-styles.scss"
+			],
+			[
+				"font styls",
+				"Assets\\scss\\alc\\_font-styles.scss"
+			],
+			[
+				"color",
+				"styleguide\\assets\\scss\\base\\_colors.scss"
+			],
+			[
+				"help break",
+				"Assets\\scss\\helpers\\_breakpoints.scss"
+			],
+			[
+				"-alt.l",
+				"templates\\admin-committees-list-alt.liquid"
+			],
+			[
+				"application-comments",
+				"templates\\includes\\admin\\sections\\com\\application-comments.liquid"
+			],
+			[
+				"adminsectioncomm",
+				"templates\\includes\\admin\\sections\\interested-committee-list.liquid"
+			],
+			[
+				"comerat",
+				"templates\\includes\\elements\\comment-rate.liquid"
+			],
+			[
+				"commentrate",
+				"templates\\includes\\elements\\comment-rate.liquid"
+			],
+			[
+				"starbu",
+				"templates\\includes\\elements\\stars-buttons.liquid"
+			],
+			[
+				"notes",
+				"templates\\includes\\admin\\elements\\notes.liquid"
+			],
+			[
+				"admincomm",
+				"templates\\admin-committees.liquid"
+			],
+			[
+				"elementsstar",
+				"templates\\includes\\elements\\stars-buttons.liquid"
+			],
+			[
+				"elementstar",
+				"templates\\includes\\elements\\stars.liquid"
+			],
+			[
+				"admincomme",
+				"templates\\admin-committees.liquid"
+			],
+			[
+				"elelnewseson",
+				"templates\\includes\\elements\\new-season.liquid"
+			],
+			[
+				"index.",
+				"templates\\index.liquid"
+			],
+			[
+				"searchbarcom",
+				"templates\\includes\\admin\\elements\\search-bar-committee.liquid"
+			],
+			[
+				"adminsear",
+				"templates\\includes\\admin\\elements\\search-bar.liquid"
+			],
+			[
+				"users",
+				"templates\\admin-Users.liquid"
+			],
+			[
+				"admincommlis",
+				"templates\\admin-committees-list.liquid"
+			],
+			[
+				"admincomlist",
+				"templates\\admin-committees-list.liquid"
+			],
+			[
+				"warning.li",
+				"templates\\includes\\elements\\new-season-warning.liquid"
+			],
+			[
+				"admincomap",
+				"templates\\admin-committees-appointed.liquid"
+			],
+			[
+				"inde",
+				"templates\\index.liquid"
+			],
+			[
+				"adminpro",
+				"templates\\admin-proposed.liquid"
+			],
+			[
+				"appliapo",
+				"templates\\admin-applications_post-selection.liquid"
+			],
+			[
+				"new-sea",
+				"templates\\includes\\elements\\new-season.liquid"
+			],
+			[
+				"new-se",
+				"templates\\includes\\elements\\new-season.liquid"
+			],
+			[
+				"newseason",
+				"templates\\includes\\elements\\new-season.liquid"
+			],
+			[
+				"adminse",
+				"templates\\admin-seasons.liquid"
+			],
+			[
+				"topbar",
+				"Assets\\scss\\vendor\\foundation\\_override.topbar.scss"
+			],
+			[
+				"adminlay",
+				"templates\\includes\\layouts\\admin-committee-layout.liquid"
+			],
+			[
+				"topbarseas",
+				"templates\\includes\\admin\\sections\\topbar-season.liquid"
+			],
+			[
+				"adminnotesli",
+				"templates\\admin-notes.liquid"
+			],
+			[
+				"adminnot",
+				"docs\\admin-notes.html"
+			],
+			[
+				"global",
+				"templates\\includes\\admin\\sections\\topbar-global.liquid"
+			],
+			[
+				"repotli",
+				"templates\\admin-reports.liquid"
+			],
+			[
+				"adminrepor",
+				"templates\\admin-reports.liquid"
+			],
+			[
+				"adminapplication",
+				"templates\\admin-applications.liquid"
+			],
+			[
+				"admin-committees-appointed",
+				"templates\\admin-committees-appointed.liquid"
+			],
+			[
+				"admincomedetali",
+				"templates\\admin-committees-details.liquid"
+			],
+			[
+				"admincommli",
+				"templates\\admin-committees.liquid"
+			],
+			[
+				"admincomlistli",
+				"templates\\admin-committees-list.liquid"
+			],
+			[
+				"admincomlay",
+				"templates\\includes\\layouts\\admin-committee-layout.liquid"
+			],
+			[
+				"topbarscss",
+				"Assets\\scss\\vendor\\foundation\\_override.topbar.scss"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 625.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 475.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 471.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

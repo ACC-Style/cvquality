@@ -47,12 +47,7 @@
  *          <div id="layout">
  *              <div class="page-content full-screen">
  *                  <div class="row">
- *                      <div class="col-lg-4 col-xl-5">
- *                          @{include:.featured.card}</div>
- *                      <div class="col-lg-8 col-xl-11">
- *                          @{include:.carousel}
- *                          @{include:.leaderboard-lg}
- *                      </div>
+ *                        <div class="col-md-12">  @{include:.carousel}</div>
  *                  </div>
  *                  <div class="row vh_50">
  *                      <div class="col-xl-4 col-lg-7 col-md-12">@{include:.highlighted.card}</div> 

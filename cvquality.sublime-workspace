@@ -336,18 +336,264 @@
 	"buffers":
 	[
 		{
-			"file": "assets/css/index.css.map",
-			"settings":
-			{
-				"buffer_size": 159760,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "gruntfile.js",
 			"settings":
 			{
 				"buffer_size": 2700,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "\n\n body, .body {\n    @include lightblue-gradient;\n}\n.wrapper {\n    margin: 0 auto;\n    background: #fff;\n    max-width:980px;\n    @include bp(lg){max-width:1024px;}\n    @include bp(xl){max-width:1200px;}\n    &:before {\n        content: \"\";\n        display: table;\n    }\n    &:after {\n        content: \"\";\n        display: table;\n        clear: both;\n    }\n    *zoom: 1;\n}\n\n.page-content{\n    padding: .5rem  0 1rem;\n   @include bp(md){ padding: .5rem 1rem 2rem;}\n   @include bp(lg){ padding: .5rem 2.5rem 2rem;}\n    + .page-content{\n        padding-top:0;\n        @include bp(md){  margin-top:-1rem;}\n    }\n    &.full-screen{   @include bp(lg){ padding: .5rem 1rem 2rem;}}\n}\n\n \n/**\n * Home page layout uses special cards to make more of a varried typography which doesn't exsist in sub pages. \n * \n * @layouts Home Page\n * @section Layouts > Home Page\n * @flag full-width\n * @markup\n *  <div class=\"body\">\n *      <div class=\"wrapper container-fluid\">\n *           @{include:#header}\n *          <div class=\"row\">@{include:.nav-primary}</div>\n *          <div id=\"layout\">\n *              <div class=\"page-content full-screen\">\n *                  <div class=\"row\">\n *                        <div class=\"col-md-12\">  @{include:.jumbotron}</div>\n *                  </div>\n *                  <div class=\"row vh_50\">\n *                      <div class=\"col-xl-4 col-lg-7 col-md-12\">@{include:.highlighted.card}</div> \n *                      <div class=\"col-xl-4 col-lg-5 col-md-12\">@{include:.highlighted.card}</div>\n *                      <div class=\"col-xl-4 col-lg-5 col-md-12\">@{include:.highlighted.card}</div>\n *                      <div class=\"col-xl-4 col-lg-7 col-md-12\">@{include:.highlighted.card}</div>\n *                  </div>\n *              </div>           \n *          </div>\n *       @{include:#footer}\n *      </div>\n *  </div>\n */\n.homepage{}\n/**\n * Page layout product or page listing.\n * \n * @layouts Page\n * @section Layouts > Products\n * @flag full-width\n * @markup\n *  <div class=\"body\">\n *      <div class=\"wrapper container-fluid\">\n *           @{include:#header}\n *           @{include:.mobile-menu-toggle-container}\n *           <div class=\"row\">@{include:.nav-primary}</div>\n *           <div id=\"aux\" class=\"row\">@{include:.breadcrumb}</div>\n *           <div id=\"layout\" class=\"row no-gutter\">\n *              <div class=\"col-lg-3 col-md-4 col-xl-3 p-0 d-none d-lg-block\"> @{include:.nav-sub}@{include:.nav-social-button.small}</div>\n *              <div class=\"col-lg-9 col-md-8 col-xl-13\"><div class=\"page-content\"><h1>Sample Page</h1> @{include:dl.grouped-definision-list} @{include:dl.grouped-definision-list}</div></div>\n *           </div>\n *           @{include:#footer}\n *      </div>\n *  </div>\n */\n .product-page\n\n\n\n/**\n * Page Layout for the Assements Score\n * \n * @layouts Assessments\n * @section Layouts > Asseements\n * @flag full-width\n * @markup\n *  <div class=\"body\">\n *      <div class=\"wrapper container-fluid\">\n *           @{include:#header}\n *           <div class=\"row\">@{include:.nav-primary}</div>\n *      <div id=\"aux\" class=\"row\">@{include:.breadcrumb}</div>\n *      <div id=\"layout\" class=\"row no-gutter\">\n *          <div class=\"col-lg-3 col-md-4 col-xl-3 p-0 d-none d-lg-block\"> @{include:.nav-sub}</div>\n *          <div class=\"col-lg-9 col-md-8 col-xl-13\"><div class=\"page-content\">\n *          <h1>Assements Page</h1>  \n *          <p><strong>User:</strong> @{lipsum:2:words}</p>\n *          <p><strong>Facility Site:</strong> @{lipsum:5:words}</p>\n *          <p><strong>You have completed the Assessment on the following dates:</strong></p>\n *          <ul><li>Oct 23, 2017 (Q4 - 2017)</li><li>Oct 23, 2017 (Q4 - 2017)</li><li>Jun 20, 2017 (Q2 - 2017)</li><li>Jun 16, 2017 (Q2 - 2017)</li><li>Jun 09, 2017 (Q2 - 2017)</li><li>May 24, 2017 (Q2 - 2017)</li><li>May 18, 2017 (Q2 - 2017)</li><li>May 09, 2017 (Q2 - 2017)</li><li>May 09, 2017 (Q2 - 2017)</li><li>May 09, 2017 (Q2 - 2017)</li><li>May 03, 2017 (Q2 - 2017)</li><li>May 03, 2017 (Q2 - 2017)</li><li>May 03, 2017 (Q2 - 2017)</li><li>Mar 22, 2017 (Q1 - 2017)</li><li>Mar 21, 2017 (Q1 - 2017)</li><li>Mar 13, 2017 (Q1 - 2017)</li><li>Jan 30, 2017 (Q1 - 2017)</li><li>Apr 18, 2016 (Q2 - 2016)</li></ul>    \n *          @{include:.box.alt}\n *          @{include:.overall-score.box}\n *           @{include:.box.score.accordion}\n *           @{include:.box.score.accordion}\n *           @{include:.wizard.box}\n *          </div></div>\n *      </div>\n *       @{include:#footer}\n *  </div>\n *  </div>\n */\n\n .assessment{}\n\n/**\n * Primary pages can have more graphic layouts with adding the jumbotron.\n * \n * @layouts Jumbotron Page\n * @section Layouts > Jumbotron Full\n * @flag full-width\n * @markup\n *  <div class=\"body\">\n *      <div class=\"wrapper container-fluid\">\n *           @{include:#header}\n *          <div class=\"row\">@{include:.nav-primary}</div>\n *          <div id=\"layout\">\n *              <div class=\"page-content full-screen\">\n *                  @{include:.jumbotron-fluid}\n *                  <div class=\"row vh_40\">\n *                      <div class=\"col-lg-8 col-md-7\">@{include:.undecorated.card}</div> \n *                      <div class=\"col-lg-4 col-md-5\">@{include:.highlighted.card}</div>\n *                  </div>\n *              </div>           \n *          </div>\n *       @{include:#footer}\n *      </div>\n *  </div>\n */\n\n .jumbo-pages{}\n/**\n * Primary pages can have more graphic layouts with adding the jumbotron.\n * \n * @layouts Jumbotron in Content\n * @section Layouts > Jumbotron Full\n * @flag full-width\n * @markup\n *  <div class=\"body\">\n *      <div class=\"wrapper container-fluid\">\n *           @{include:#header}\n *          <div class=\"row\">@{include:.nav-primary}</div>\n *          <div id=\"layout\" class=\"row no-gutter\">\n *          <div class=\"col-lg-3 col-md-4 col-xl-3 d-none d-lg-block\"> @{include:.nav-sub}</div>\n *          <div class=\"col-lg-9 col-md-8 col-xl-13 col\"><div class=\"page-content\">\n *           @{include:.jumbotron}\n *           <h1>@{lipsum:4:words}</h1><p>@{lipsum:4:paragraphs}</p><a class=\"btn btn-primary\">@{lipsum:4:words}</a>\n *          </div></div>\n *      </div>\n *       @{include:#footer}\n *      </div>\n *  </div>\n */\n\n .jumbo-content-pages{}\n\n/**\n* Layout for the wires. \n* \n* @layouts Test Wire Layout\n* @section Wireframe Layouts\n* @flag full-width\n* @markup\n*  <div class=\"body afib\">\n*      <div class=\"wrapper container-fluid\">\n*           @{include:#header}\n*           <div class=\"row\">@{include:.nav-primary}</div>\n*           <div id=\"aux\" class=\"row\">@{include:.breadcrumb}</div>\n*           <div id=\"layout\" class=\"row no-gutter\">\n*              <div class=\"col-lg-3 col-md-4 col-xl-3 p-0 d-none d-lg-block\">\n*               @{include:.nav-sub}\n*               @{include:.accred-address}\n*               @{include:.ad-container}\n*               </div>\n*              <div class=\"col-lg-9 col-md-8 col-xl-13 \"><div class=\"page-content\">\n*                    <h1> @{lipsum:5:words} </h1>\n*                    <div class=\"row\">\n*                        <div class=\"col-lg-6\">\n*                            <p>@{lipsum:1:paragraphs}</p>\n*                            <p>@{lipsum:1:paragraphs}</p>\n*                        </div>\n*                        <div class=\"col-lg-6\">\n*                            <img src=\"@{image:400:200}\" alt=\"\">\n*                            <a href=\"\" class=\"btn btn-primary btn-block\">@{lipsum:3:words}</a>\n*                        </div>\n*                    </div>\n*                    <hr class=\"group-divider\">\n*                    <div class=\"row\">\n*                        <div class=\"col-lg-8\">\n*                        <h2>@{lipsum:4:words}</h2>\n*                        <p>@{lipsum:2:paragraphs}</p>\n*                        <hr class=\"item-divider\"/>\n*                        <div class=\"card testimonial undecorated\">\n*                            <div class=\"card-body\">\n*                                <article class=\"blockquote\">\n*                                    <p>@{lipsum:15:words}</p>\n*                                    <cite class=\"blockquote-cite\">Someone famous</cite>\n*                                </article>\n*                            </div>\n*                        </div>\n*                        <hr class=\"item-divider\"/>\n*                        <div class=\"card testimonial undecorated\">\n*                            <div class=\"card-body\">\n*                                <article class=\"blockquote\">\n*                                    <p>@{lipsum:15:words}</p>\n*                                    <cite class=\"blockquote-cite\">Someone famous</cite>\n*                                </article>\n*                            </div>\n*                        </div>\n*                        <hr class=\"item-divider\"/>\n*                         <div class=\"card testimonial undecorated\">\n*                            <div class=\"card-body\">\n*                                <article class=\"blockquote\">\n*                                    <p>@{lipsum:15:words}</p>\n*                                    <cite class=\"blockquote-cite\">Someone famous</cite>\n*                                </article>\n*                            </div>\n*                        </div>\n*                        <a href=\"\" class=\"btn btn-block btn-primary\">@{lipsum:3:words}</a>\n*                    </div>\n*                    <div class=\"col-lg-4\">@{include:.card.alt} @{include:.card.alt} </div>\n*                    </div>\n*                    <hr class=\"group-divider\"/>\n*                        <h2>@{lipsum:4:words}</h2> <p>@{lipsum:4:sentences}</p>                  \n*                    <div class=\"panel-group accordion basic\">\n*                     <div class=\"panel\" id=\"testpage1\" role=\"tablist\" aria-multiselectable=\"true\">\n*                         <div class=\"panel-heading\" role=\"tab\" id=\"headingOne\">\n*                           <h4 class=\"panel-title\">\n*                             <a role=\"button\" data-toggle=\"collapse\" data-parent=\"#testpage1\" href=\"#accordionbasic-testpage1\" aria-expanded=\"true\" aria-controls=\"accordionbasic-testpage1\" class=\"collapsed\">\n*                               <span class=\"text\">@{lipsum:5:words}</span>\n*                             </a>\n*                           </h4>\n*                         </div>\n*                         <div id=\"accordionbasic-testpage1\" class=\"panel-collapse collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" aria-expanded=\"true\">\n*                           <div class=\"panel-body\">\n*                             <p>@{lipsum:5:sentence}</p>\n*                             <ul class=\"no-bullets\">    \n*                               <li style=\"page-break-inside: avoid\">\n*                                   <a href=\"#.pdf\" class=\"link\" target=\"_blank\">@{lipsum:5:words}</a>\n*                               </li>\n*                               <li style=\"page-break-inside: avoid\">\n*                                   <a href=\"#.pdf\" class=\"link\" target=\"_blank\">@{lipsum:5:words}</a>\n*                               </li>\n*                               <li style=\"page-break-inside: avoid\">\n*                                   <a href=\"#.pdf\" class=\"link\" target=\"_blank\">@{lipsum:5:words}</a>\n*                               </li>\n*                             </ul>\n*                           </div>\n*                         </div>\n*                     </div>\n*                    </div>\n*                    <div class=\"panel-group accordion basic\">\n*                     <div class=\"panel\" id=\"testpage2\" role=\"tablist\" aria-multiselectable=\"true\">\n*                         <div class=\"panel-heading\" role=\"tab\" id=\"headingOne\">\n*                           <h4 class=\"panel-title\">\n*                             <a role=\"button\" data-toggle=\"collapse\" data-parent=\"#testpage2\" href=\"#accordionbasic-testpage2\" aria-expanded=\"true\" aria-controls=\"accordionbasic-testpage2\" class=\"collapsed\">\n*                               <span class=\"text\">@{lipsum:5:words}</span>\n*                             </a>\n*                           </h4>\n*                         </div>\n*                         <div id=\"accordionbasic-testpage2\" class=\"panel-collapse collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" aria-expanded=\"true\">\n*                           <div class=\"panel-body\">\n*                             <p>@{lipsum:5:sentence}</p>\n*                             <ul class=\"no-bullets\">    \n*                               <li style=\"page-break-inside: avoid\">\n*                                   <a href=\"#.pdf\" class=\"link\" target=\"_blank\">@{lipsum:5:words}</a>\n*                               </li>\n*                               <li style=\"page-break-inside: avoid\">\n*                                   <a href=\"#.pdf\" class=\"link\" target=\"_blank\">@{lipsum:5:words}</a>\n*                               </li>\n*                               <li style=\"page-break-inside: avoid\">\n*                                   <a href=\"#.pdf\" class=\"link\" target=\"_blank\">@{lipsum:5:words}</a>\n*                               </li>\n*                             </ul>\n*                           </div>\n*                         </div>\n*                     </div>\n*                    </div>\n*              </div></div>\n*           </div>\n*           @{include:#footer}\n*      </div>\n*  </div>\n*/\n .afib{}",
+			"file": "assets/scss/structure/_page.scss",
+			"file_size": 13660,
+			"file_write_time": 131763250183277153,
+			"settings":
+			{
+				"buffer_size": 13359,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "mods to node-styleguid/nucleus-styleguide/src/entities/Layouts.js",
+			"settings":
+			{
+				"buffer_size": 1696,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "mods to node-styleguid/nucleus-styleguide/index.js",
+			"settings":
+			{
+				"buffer_size": 4129,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/scss/base/_colors.scss",
+			"settings":
+			{
+				"buffer_size": 14705,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/structure/_header.scss",
+			"settings":
+			{
+				"buffer_size": 1887,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "config.nucleus.json",
+			"settings":
+			{
+				"buffer_size": 546,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/base/_fonts.kitchensink.scss",
+			"settings":
+			{
+				"buffer_size": 2205,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/base/_lists.scss",
+			"settings":
+			{
+				"buffer_size": 17262,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/base/_typography.scss",
+			"settings":
+			{
+				"buffer_size": 11119,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/base/included/_table_scrollable.scss",
+			"settings":
+			{
+				"buffer_size": 13950,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/component/_assessment.scss",
+			"settings":
+			{
+				"buffer_size": 7122,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/component/_card.scss",
+			"settings":
+			{
+				"buffer_size": 22845,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/component/_carousel.scss",
+			"settings":
+			{
+				"buffer_size": 8840,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/component/_map.scss",
+			"settings":
+			{
+				"buffer_size": 7466,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/component/_nav-primary.scss",
+			"settings":
+			{
+				"buffer_size": 6021,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/component/_nav-utility.scss",
+			"settings":
+			{
+				"buffer_size": 2262,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/component/_nav-social-buttons.scss",
+			"settings":
+			{
+				"buffer_size": 3680,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/component/_nav-sub.scss",
+			"settings":
+			{
+				"buffer_size": 6250,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/component/_webinar.scss",
+			"settings":
+			{
+				"buffer_size": 3900,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/helpers/_sitefinity-editor.scss",
+			"settings":
+			{
+				"buffer_size": 2241,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/structure/infographic/_timeline.scss",
+			"settings":
+			{
+				"buffer_size": 5545,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/styleguide.scss",
+			"settings":
+			{
+				"buffer_size": 2944,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/vendor/bootstrap.override/_dropdown.override.scss",
+			"settings":
+			{
+				"buffer_size": 430,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/helpers/_states.scss",
+			"settings":
+			{
+				"buffer_size": 259,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/vendor/bootstrap.override/_collapse.override.scss",
+			"settings":
+			{
+				"buffer_size": 16663,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/vendor/bootstrap.override/_custom.scss",
+			"settings":
+			{
+				"buffer_size": 6549,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/vendor/bootstrap.override/_modal.override.scss",
+			"settings":
+			{
+				"buffer_size": 921,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/_shame.scss",
+			"settings":
+			{
+				"buffer_size": 1300,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -535,6 +781,8 @@
 		"height": 171.0,
 		"history":
 		[
+			"dir",
+			"grunt"
 		]
 	},
 	"distraction_free":
@@ -550,15 +798,13 @@
 	[
 		"/C/Users/mwatier/REPOS/cvquality",
 		"/C/Users/mwatier/REPOS/cvquality/assets",
-		"/C/Users/mwatier/REPOS/cvquality/assets/css",
 		"/C/Users/mwatier/REPOS/cvquality/assets/scss",
-		"/C/Users/mwatier/REPOS/cvquality/assets/scss/component",
-		"/C/Users/mwatier/REPOS/cvquality/docs",
-		"/C/Users/mwatier/REPOS/cvquality/docs/assets",
-		"/C/Users/mwatier/REPOS/cvquality/docs/assets/css"
+		"/C/Users/mwatier/REPOS/cvquality/node_modules",
+		"/C/Users/mwatier/REPOS/cvquality/node_modules/nucleus-styleguide"
 	],
 	"file_history":
 	[
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/structure/_page.scss",
 		"/C/Users/mwatier/REPOS/cvquality/assets/scss/component/_webinar.scss",
 		"/C/Users/mwatier/REPOS/cvquality/assets/scss/structure/_cqc.scss",
 		"/C/Users/mwatier/REPOS/cvquality/assets/scss/index.scss",
@@ -685,8 +931,7 @@
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/helpers/_breakpoints.scss",
 		"/C/Users/mwatier/Repo/cvquality/ToDo.md",
 		"/C/Users/mwatier/Repo/cvquality/gruntfile.js",
-		"/C/Users/mwatier/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc.defaults.json",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/included/_table-scrollable.scss"
+		"/C/Users/mwatier/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc.defaults.json"
 	],
 	"find":
 	{
@@ -697,6 +942,7 @@
 		"height": 158.0,
 		"where_history":
 		[
+			"C:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss",
 			"C:\\Users\\mwatier\\REPOS\\cvquality\\assets",
 			"C:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss",
 			"C:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss\\base",
@@ -736,6 +982,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"$mix-teal_orange",
+			" $mix-teal_orange",
+			"orange",
+			"Orange",
+			"$orange-light",
+			"$orange-dark",
 			"Banded Lists Extra",
 			"banded list extra",
 			"banded-list-extra",
@@ -857,13 +1109,7 @@
 			"\n\n",
 			"sidebar",
 			"no-gutter",
-			"<li>\n                        <a",
-			"</h2>\n                <ul>",
-			"<li>\n                <h2>",
-			"<a href",
-			"<li>",
-			"dd{width:",
-			"width:"
+			"<li>\n                        <a"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -871,6 +1117,10 @@
 		"regex": false,
 		"replace_history":
 		[
+			"$mix-teal_primary",
+			" $mix-teal_primary",
+			"$primary-color-light",
+			"$primary-color-dark",
 			"-dynamic",
 			"Page Sections",
 			"$scrub-teal",
@@ -891,11 +1141,73 @@
 			[
 				{
 					"buffer": 0,
-					"file": "assets/css/index.css.map",
-					"semi_transient": true,
+					"file": "gruntfile.js",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 159760,
+						"buffer_size": 2700,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2680,
+								2688
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1531842607.78,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1372.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "assets/scss/structure/_page.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13359,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1716,
+								1316
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1531849154.64,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 426.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "mods to node-styleguid/nucleus-styleguide/src/entities/Layouts.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1696,
 						"regions":
 						{
 						},
@@ -908,45 +1220,816 @@
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1530043002.93,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"markdonw_live_preview_last_run": 1531850013.13,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 300.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "gruntfile.js",
+					"buffer": 3,
+					"file": "mods to node-styleguid/nucleus-styleguide/index.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2700,
+						"buffer_size": 4129,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								258,
-								258
+								4107,
+								4107
 							]
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1530043005.71,
+							"markdonw_live_preview_last_run": 1531850130.44,
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 702.0,
+						"translation.y": 2379.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "assets/scss/base/_colors.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14705,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								210,
+								210
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1531843165.7,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "assets/scss/structure/_header.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1887,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								632,
+								632
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1531845116.14,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "config.nucleus.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 546,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								546,
+								546
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1531845335.42,
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "assets/scss/base/_fonts.kitchensink.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2205,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1531843217.87,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 28,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "assets/scss/base/_lists.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17262,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1531843217.87,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "assets/scss/base/_typography.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11119,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1531843217.87,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 27,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "assets/scss/base/included/_table_scrollable.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13950,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1531843217.87,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 26,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "assets/scss/component/_assessment.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7122,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1531843217.87,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "assets/scss/component/_card.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22845,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1531843217.88,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "assets/scss/component/_carousel.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8840,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1531843217.88,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "assets/scss/component/_map.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7466,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1531843217.88,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "assets/scss/component/_nav-primary.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6021,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1531843217.89,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "assets/scss/component/_nav-utility.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2262,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1531843239.73,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "assets/scss/component/_nav-social-buttons.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3680,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1531843217.89,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 25,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "assets/scss/component/_nav-sub.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6250,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1531843217.89,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "assets/scss/component/_webinar.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3900,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1531843217.89,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "assets/scss/helpers/_sitefinity-editor.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2241,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1531843217.9,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "assets/scss/structure/infographic/_timeline.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5545,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1531843239.73,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "assets/scss/styleguide.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2944,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1531843239.74,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "assets/scss/vendor/bootstrap.override/_dropdown.override.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 430,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1531843239.75,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "assets/scss/helpers/_states.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 259,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1531843217.92,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "assets/scss/vendor/bootstrap.override/_collapse.override.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16663,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1531843217.92,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "assets/scss/vendor/bootstrap.override/_custom.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6549,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1531843217.92,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"file": "assets/scss/vendor/bootstrap.override/_modal.override.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 921,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1531843217.92,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 28,
+					"file": "assets/scss/_shame.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1300,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1531843217.86,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
 					"type": "text"
 				}
 			]
@@ -1000,6 +2083,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"confi",
+				"config.nucleus.json"
+			],
+			[
+				"header",
+				"assets\\scss\\structure\\_header.scss"
+			],
 			[
 				"grunt",
 				"gruntfile.js"
@@ -1503,14 +2594,6 @@
 			[
 				"breadcrub",
 				"assets\\scss\\vendor\\bootstrap.override\\_breadcrumbs.override.scss"
-			],
-			[
-				"mobile",
-				"assets\\scss\\structure\\_mobile-menu-toggle-container.scss"
-			],
-			[
-				"search.scss",
-				"assets\\scss\\component\\_searchbar.scss"
 			]
 		],
 		"width": 0.0

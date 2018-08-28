@@ -68,10 +68,10 @@ ul.result-list {
         &:hover {
             background-color: $warm-grey-dark;
             border-color: $off-white;
-            border-right: $orange-dark 10px solid;
+            border-right: $primary-color-dark 10px solid;
             padding-right: 10px;
             .address-line {
-                color: $orange-light;
+                color: $primary-color-light;
             }
             .name {
                 color: $off-white;
@@ -85,7 +85,7 @@ ul.result-list {
 .kendo-map {
     .searchbar.box {
         border: 1px $warm-grey-dark solid;
-        border-top: 2px solid $orange-dark;
+        border-top: 2px solid $primary-color-dark;
         margin: -1px 0 0;
     }
     a.btn.map-toggle {
@@ -97,7 +97,7 @@ ul.result-list {
 }
 .map-container {
     width: 100%;
-    border-bottom: 2px solid $orange-dark;
+    border-bottom: 2px solid $primary-color-dark;
     &:after {
         display: table;
         clear: both;
@@ -164,7 +164,7 @@ ul.multiselect-container {
             }
         }
         &.active a {
-            background-color: mix(white, $orange-light);
+            background-color: mix(white, $primary-color-light);
             color: $off-black;
         }
     }
@@ -173,12 +173,12 @@ ul.multiselect-container {
     .k-marker {
         @extend .icon-before;
         font-size: 40px;
-        color: $orange-dark;
+        color: $primary-color-dark;
         background-image: none !important;
         text-align: center;
         overflow: visible;
         :hover {
-            color: $orange-light;
+            color: $primary-color-light;
         }
         &:before {
             margin: 0;
