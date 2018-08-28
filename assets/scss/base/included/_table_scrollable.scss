@@ -347,7 +347,7 @@
             }
             ;
             b {
-                color: $orange-dark;
+                color: $primary-color-dark;
             }
             &:nth-child(2n+2) {
                 background-color: mix($soft-blue, white, 10);
@@ -366,7 +366,7 @@
         border-bottom: 1px solid $warm-grey;
     }
     .instructions {
-        color: $orange-dark;
+        color: $primary-color-dark;
         border: 1px solid $warm-grey-light;
         border-bottom: 2px solid $warm-grey;
         width: 100%;
@@ -387,7 +387,7 @@
         color: $scrub-teal-dark;
         @extend .icon-after;
         &:after {
-            color: $orange-dark;
+            color: $primary-color-dark;
             content: "\f05a";
         }
     }

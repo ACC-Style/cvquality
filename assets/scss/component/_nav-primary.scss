@@ -50,7 +50,7 @@
     @include nav-mobile-basic;
     font-size: ms(0);
     background: $warm-grey;
-    border-top: $orange-light 4px solid;
+    border-top: $primary-color-light 4px solid;
     margin-bottom: .5rem;
 
     .nav {
@@ -194,10 +194,10 @@
             }
 
             &.alt {
-                background-color: $orange-dark;
+                background-color: $primary-color-dark;
 
                 &:hover {
-                    background-color: mix($orange-dark, $off-black, 40%);
+                    background-color: mix($primary-color-dark, $off-black, 40%);
                 }
             }
         }

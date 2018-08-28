@@ -29,9 +29,9 @@ svg:not(:root) {
 
     display: block !important;
     opacity: .75;
-    border: 2px dotted $mix-teal_orange;
+    border: 2px dotted $mix-teal_primary;
     margin: 5px;
-    background: mix($mix-teal_orange,white,10%);
+    background: mix($mix-teal_primary,white,10%);
 }
 .sfPageEditor .visible-anonymous-block {
     img {
@@ -44,12 +44,12 @@ svg:not(:root) {
         position: relative;
         font-size: ms(-1);
         text-align: center;
-        color: $orange-dark;
+        color: $primary-color-dark;
     }
 
     display: block !important;
     opacity: .75;
-    border: 2px dotted $orange-light;
+    border: 2px dotted $primary-color-light;
     margin: 5px;
-    background: mix($orange-light,white,10%);
+    background: mix($primary-color-light,white,10%);
 }

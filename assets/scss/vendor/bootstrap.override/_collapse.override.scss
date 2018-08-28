@@ -414,7 +414,7 @@
                 transition: transform 0.25s ease-out;
                 -moz-transition: transform 0.25s ease-out;
                 -webkit-transition: transform 0.25s ease-out;
-                background-color: $orange-dark;
+                background-color: $primary-color-dark;
                 color: white;
                 padding: 1rem;
                 width: 3em;
@@ -468,7 +468,7 @@
 
         .panel-heading, .panel-heading, .panel-heading {
             &:active, &:focus, &:hover {
-                border-color: $orange-dark;
+                border-color: $primary-color-dark;
 
                 .panel-title {
                     a {
@@ -477,7 +477,7 @@
                     }
 
                     a:after {
-                        background-color: $orange-dark;
+                        background-color: $primary-color-dark;
                         color: white;
                     }
 

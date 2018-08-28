@@ -340,7 +340,7 @@ dl.grouped-definision-list {
         @extend .divider;
         @extend .orange;
         @extend .bold;
-        color: $orange-dark;
+        color: $primary-color-dark;
     }
 
     [data-sf-role="toggleLink"] {
@@ -395,7 +395,7 @@ dl.grouped-definision-list {
  *  .bg-warm-grey decorator class that turns the Li background to warm-grey.
  *  .bg-scrub-teal decorator class that turns the Li background to scrub-teal.
  *  .bg-mix-teal_orange decorator class that turns the Li background to mix-teal_orange.
- *  .bg-mix-orange_teal decorator class that turns the Li background to mix-orange_teal.
+ *  .bg-mix-primary_teal decorator class that turns the Li background to mix-primary_teal.
  *  .bg-green decorator class that turns the Li background to green. alias for bg-cme.
  *  .bg-purple decorator class that turns the Li background to purple. alias for bg-cop.
  *  .bg-grey decorator class that turns the Li background to grey. alias for bg-ce.
@@ -470,12 +470,12 @@ ul.banded-list {
         }
 
         &.bg-orange-dark {
-            background-color: $orange-dark;
+            background-color: $primary-color-dark;
             color: $off-white
         }
 
         &.bg-orange-light {
-            background-color: $orange-light;
+            background-color: $primary-color-light;
             color: $off-black
         }
 
@@ -485,12 +485,12 @@ ul.banded-list {
         }
 
         &.bg-mix-teal_orange {
-            background-color: $mix-teal_orange;
+            background-color: $mix-teal_primary;
             color: $off-white
         }
 
-        &.bg-mix-orange_teal {
-            background-color: $mix-orange_teal;
+        &.bg-mix-primary_teal {
+            background-color: $mix-primary_teal;
             color: $off-white
         }
 

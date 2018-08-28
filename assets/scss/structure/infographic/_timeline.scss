@@ -102,19 +102,19 @@
 		.circle-img-badge {float:left;}
         &:nth-child(4n+1) {
             .circle-img-badge {
-                background-color: $orange-light;
+                background-color: $primary-color-light;
             }
         }
 
         &:nth-child(4n+2) {
             .circle-img-badge {
-                background-color: $mix-orange_teal;
+                background-color: $mix-primary_teal;
             }
         }
 
         &:nth-child(4n+3) {
             .circle-img-badge {
-                background-color: $mix-teal_orange;
+                background-color: $mix-teal_primary;
             }
         }
 
