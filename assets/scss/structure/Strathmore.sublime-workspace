@@ -480,10 +480,10 @@
 			}
 		},
 		{
-			"file": "/C/Users/mwatier/REPOS/Strathmore/gruntFile.js",
+			"file": "/C/Users/mwatier/REPOS/Strathmore/package.json",
 			"settings":
 			{
-				"buffer_size": 4522,
+				"buffer_size": 1650,
 				"line_ending": "Windows"
 			}
 		},
@@ -878,6 +878,7 @@
 	},
 	"expanded_folders":
 	[
+		"/C/Users/mwatier/REPOS/Strathmore"
 	],
 	"file_history":
 	[
@@ -1012,7 +1013,7 @@
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -1177,7 +1178,7 @@
 	"groups":
 	[
 		{
-			"selected": 7,
+			"selected": 9,
 			"sheets":
 			[
 				{
@@ -1199,7 +1200,7 @@
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1534450960.66,
+							"markdonw_live_preview_last_run": 1535463437.02,
 							"syntax": "Packages/SCSS/SCSS.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -1228,7 +1229,7 @@
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1534450960.67,
+							"markdonw_live_preview_last_run": 1535463437.03,
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
@@ -1263,7 +1264,7 @@
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1534450960.67,
+							"markdonw_live_preview_last_run": 1535463437.03,
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -1294,7 +1295,7 @@
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1534450960.67,
+							"markdonw_live_preview_last_run": 1535463437.03,
 							"syntax": "Packages/SCSS/SCSS.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -1323,7 +1324,7 @@
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1534450960.68,
+							"markdonw_live_preview_last_run": 1535463437.03,
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -1354,7 +1355,7 @@
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1534450960.68,
+							"markdonw_live_preview_last_run": 1535463437.04,
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
@@ -1385,7 +1386,7 @@
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1534450960.67,
+							"markdonw_live_preview_last_run": 1535463437.04,
 							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -1416,7 +1417,7 @@
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1534450960.68,
+							"markdonw_live_preview_last_run": 1535463437.03,
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -1425,7 +1426,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -1447,7 +1448,7 @@
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1534450964.36,
+							"markdonw_live_preview_last_run": 1535463437.04,
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
@@ -1460,33 +1461,33 @@
 				},
 				{
 					"buffer": 9,
-					"file": "/C/Users/mwatier/REPOS/Strathmore/gruntFile.js",
+					"file": "/C/Users/mwatier/REPOS/Strathmore/package.json",
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 4522,
+						"buffer_size": 1650,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1314,
-								1899
+								821,
+								825
 							]
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1534454229.25,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 4,
+							"markdonw_live_preview_last_run": 1535463452.91,
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 2972.0,
-						"translation.y": 201.0,
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1508,7 +1509,7 @@
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1534513954.5,
+							"markdonw_live_preview_last_run": 1535463437.04,
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -1517,7 +1518,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -1539,7 +1540,7 @@
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1534450960.68,
+							"markdonw_live_preview_last_run": 1535463437.04,
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -1570,7 +1571,7 @@
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1534450960.68,
+							"markdonw_live_preview_last_run": 1535463437.04,
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
@@ -1600,7 +1601,7 @@
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1534450960.68,
+							"markdonw_live_preview_last_run": 1535463437.04,
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -1631,7 +1632,7 @@
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1534450960.69,
+							"markdonw_live_preview_last_run": 1535463437.04,
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
@@ -1662,7 +1663,7 @@
 						"settings":
 						{
 							"_anf_new": "",
-							"markdonw_live_preview_last_run": 1534450960.69,
+							"markdonw_live_preview_last_run": 1535463437.04,
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
@@ -1692,7 +1693,7 @@
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1534450960.69,
+							"markdonw_live_preview_last_run": 1535463437.04,
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
@@ -1700,7 +1701,7 @@
 						"translation.y": 47.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]

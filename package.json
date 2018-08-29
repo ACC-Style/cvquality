@@ -4,6 +4,7 @@
   "description": "style guide for qii",
   "main": "index.js",
   "dependencies": {
+    "chromy": "^0.5.11",
     "grunt-express": "^1.4.1",
     "grunt-livereload": "^0.1.3",
     "grunt-reload": "^0.2.0"

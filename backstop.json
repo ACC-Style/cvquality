@@ -1,7 +1,7 @@
 {
   "id": "backstop_default",
   "viewports": [
-     {
+    {
       "label": "desktop",
       "width": 1200,
       "height": 1024
@@ -11,61 +11,64 @@
   "onReadyScript": "puppet/onReady.js",
   "scenarios": [
     {
-      "label": "CVQuality Atoms",
-      "cookiePath": "backstop_data/engine_scripts/cookies.json",
+      "label": "Atoms",
+      "cookiePath": "",
       "url": "http://localhost:8000/atoms.html",
       "referenceUrl": "https://acc-style.github.io/cvquality/atoms.html",
       "readyEvent": "",
-      "readySelector": "",
-      "delay": 0,
+      "readySelector": ".SG-component__preview",
+      "delay": 10000,
       "hideSelectors": [],
       "removeSelectors": [],
       "hoverSelector": "",
       "clickSelector": "",
       "postInteractionWait": 0,
-      "selectors": [".SG-layout .SG-component__preview", ".SG-icon-preview"],
+      "selectors": [ ".SG-component__preview"  ],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold": 0.1,
-      "requireSameDimensions": true
+      "misMatchThreshold": 10,
+      "requireSameDimensions": false
     },
-       {
-         "label": "CVQuality Molecules",
-         "cookiePath": "backstop_data/engine_scripts/cookies.json",
-         "url": "http://localhost:8000/molecules.html",
-         "referenceUrl": "https://acc-style.github.io/cvquality/molecules.html",
-         "readyEvent": "",
-         "readySelector": "",
-         "delay": 0,
-         "hideSelectors": [],
-         "removeSelectors": [],
-         "hoverSelector": "",
-         "clickSelector": "",
-         "postInteractionWait": 0,
-         "selectors": [".SG-layout .SG-component__preview"],
-         "selectorExpansion": true,
-         "expect": 0,
-         "misMatchThreshold": 0.1,
-         "requireSameDimensions": true
-       }, {
-         "label": "CVQuality Structures",
-         "cookiePath": "backstop_data/engine_scripts/cookies.json",
-         "url": "http://localhost:8000/structures.html",
-         "referenceUrl": "https://acc-style.github.io/cvquality/structures.html",
-         "readyEvent": "",
-         "readySelector": "",
-         "delay": 0,
-         "hideSelectors": [],
-         "removeSelectors": [],
-         "hoverSelector": "",
-         "clickSelector": "",
-         "postInteractionWait": 0,
-         "selectors": [".SG-layout .SG-component__preview"],
-         "selectorExpansion": true,
-         "expect": 0,
-         "misMatchThreshold": 0.1,
-         "requireSameDimensions": true
-       }
+    {
+      "label": "Molecules",
+      "cookiePath": "",
+      "url": "http://localhost:8000/molecules.html",
+      "referenceUrl": "https://acc-style.github.io/cvquality/molecules.html",
+      "readyEvent": "",
+      "readySelector": ".SG-component__preview",
+      "delay": 10000,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [
+        ".SG-component__preview"
+      ],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold": 10,
+      "requireSameDimensions": false
+    }, 
+    {
+      "label": "Structures",
+      "cookiePath": "",
+      "url": "http://localhost:8000/structures.html",
+      "referenceUrl": "https://acc-style.github.io/cvquality/structures.html",
+      "readyEvent": "",
+      "readySelector": ".SG-component__preview",
+      "delay": 20000,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [ ".SG-component__preview"  ],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold": 10,
+      "requireSameDimensions": false
+    }
   ],
   "paths": {
     "bitmaps_reference": "backstop_data/bitmaps_reference",
@@ -75,8 +78,9 @@
     "ci_report": "backstop_data/ci_report"
   },
   "report": ["browser"],
-  "engine": "puppeteer",
+  "engine": "chromy",
   "engineOptions": {
+    "ignoreHTTPSErrors": false,
     "args": ["--no-sandbox"]
   },
   "asyncCaptureLimit": 5,

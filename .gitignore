@@ -61,3 +61,7 @@ node_modules
 # dotenv environment variables file
 .env
 
+
+backstop_data/bitmaps_reference/
+
+backstop_data/bitmaps_test/
