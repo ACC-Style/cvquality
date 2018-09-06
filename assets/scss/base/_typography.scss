@@ -242,30 +242,27 @@ strong{}
 *  _blank External Link icons will appear after any link that has target blank, or the href begins with http, or https
  */
 
-a.link {
+a.link{
     @extend .icon-before;
-
-    &[href*=".pdf"]:before {
-        content: "\f1c1";
+    &[href$=".pdf"]:before{
+        content: "\f1c1";   
+    }
+    &[href$=".doc"]:before,&[href$=".docx"]:before,&[href$=".txt"]:before{
+            content: "\f016";   
     }
 
-    &[href*=".doc"]:before, &[href*=".docx"]:before, &[href*=".txt"]:before {
-        content: "\f016";
-    }
-
-    &[href*=".zip"]:before {
+    &[href$=".zip"]:before {
         content: "\f1c6";
     }
 
     &[href*=".ppt"]:before, &[href*=".pptx"]:before {
         content: "\f080";
     }
-
-    &[href*=".csv"]:before, &[href*=".xls"]:before, &[href*=".xlsx"]:before {
-        content: "\f0ce";
+    &[href$=".csv"]:before,&[href$=".xls"]:before,&[href$=".xlsx"]:before{
+        content: "\f0ce";   
     }
 
-    &[href*=".mp4"]:before, &[href*=".mov"]:before {
+    &[href$=".mp4"]:before, &[href$=".mov"]:before {
         content: "\f03d";
     }
 

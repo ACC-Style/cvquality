@@ -1,75 +1,75 @@
-@import "setup";
+// @import "setup";
 
-@import "https://use.fontawesome.com/972bb54a90.css";
+// @import "https://use.fontawesome.com/972bb54a90.css";
 
-@import "helpers/flex";
-@import "base/modular-scale-typography";
-@import "base/html";
-@import "helpers/fixes";
-@import "base/fonts.kitchensink";
-@import "vendor/bootstrap.override/custom";
-@import "vendor/bootstrap-sass-3.3.7/sass/bootstrap";
-// starts to overide the basic nav decorations  
-@import "base/nav-basic";
-@import "vendor/bootstrap.override/grid.override";
-@import "vendor/bootstrap.override/dropdown.override";
-@import "vendor/bootstrap.override/breadcrumbs.override";
-@import "vendor/bootstrap.override/blockquote.override";
-@import "vendor/bootstrap.override/jumbotron.override";
+// @import "helpers/flex";
+// @import "base/modular-scale-typography";
+// @import "base/html";
+// @import "helpers/fixes";
+// @import "base/fonts.kitchensink";
+// @import "vendor/bootstrap.override/custom";
+// @import "vendor/bootstrap-sass-3.3.7/sass/bootstrap";
+// // starts to overide the basic nav decorations  
+// @import "base/nav-basic";
+// @import "vendor/bootstrap.override/grid.override";
+// @import "vendor/bootstrap.override/dropdown.override";
+// @import "vendor/bootstrap.override/breadcrumbs.override";
+// @import "vendor/bootstrap.override/blockquote.override";
+// @import "vendor/bootstrap.override/jumbotron.override";
 
-@import "vendor/bootstrap.override/forms.kitchensink";
+// @import "vendor/bootstrap.override/forms.kitchensink";
 
-@import "base/typography";
-@import "base/inputs";
-@import "base/lists";
+// @import "base/typography";
+// @import "base/inputs";
+// @import "base/lists";
 
-@import "vendor/bootstrap.override/collapse.override";
-@import "vendor/bootstrap.override/pagination.override";
-@import "vendor/bootstrap.override/progress-bar.override";
-@import "vendor/bootstrap.override/nav-pills.override";
-
-
-@import "component/card";
-@import "component/button";
-
-@import "component/user-status-container";
-@import "component/nav-utility";
-@import "component/nav-primary";
-@import "component/nav-sub";
-@import "component/video-player";
-@import "component/ads";
-@import "component/searchbar";
-@import "component/toolkit";
-@import "component/charts";
-@import "component/map";
-
-/* Legacy Support */ 
-@import "component/assessment";
-//@import "shame/assessment";
-
-/* Footer */
-@import "component/address";
-@import "component/nav-social-buttons";
-@import "component/nav-footer";
+// @import "vendor/bootstrap.override/collapse.override";
+// @import "vendor/bootstrap.override/pagination.override";
+// @import "vendor/bootstrap.override/progress-bar.override";
+// @import "vendor/bootstrap.override/nav-pills.override";
 
 
-/*! Javascript Components */
-@import "component/carousel";
+// @import "component/card";
+// @import "component/button";
 
-@import "structure/infographic";
-@import "structure/infographic/timeline";
-/*! Layouts */
-@import "structure/page";
-@import "structure/footer";
-@import "structure/header";
-@import "structure/mobile-menu-toggle-container";
-@import "structure/cqc";
-@import "helpers/height-utiltiy";
-@import "helpers/states";
-@import "helpers/print";
-@import "helpers/swappable";
-@import "helpers/trumps";
+// @import "component/user-status-container";
+// @import "component/nav-utility";
+// @import "component/nav-primary";
+// @import "component/nav-sub";
+// @import "component/video-player";
+// @import "component/ads";
+// @import "component/searchbar";
+// @import "component/toolkit";
+// @import "component/charts";
+// @import "component/map";
+
+// /* Legacy Support */ 
+// @import "component/assessment";
+// //@import "shame/assessment";
+
+// /* Footer */
+// @import "component/address";
+// @import "component/nav-social-buttons";
+// @import "component/nav-footer";
 
 
-@import "_shame";
-@import "shame/_emailpdf";
+// /*! Javascript Components */
+// @import "component/carousel";
+
+// @import "structure/infographic";
+// @import "structure/infographic/timeline";
+// /*! Layouts */
+// @import "structure/page";
+// @import "structure/footer";
+// @import "structure/header";
+// @import "structure/mobile-menu-toggle-container";
+// @import "structure/cqc";
+// @import "helpers/height-utiltiy";
+// @import "helpers/states";
+// @import "helpers/print";
+// @import "helpers/swappable";
+// @import "helpers/trumps";
+
+
+// @import "_shame";
+// @import "shame/_emailpdf";
