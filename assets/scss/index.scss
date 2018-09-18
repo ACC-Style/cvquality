@@ -17,7 +17,7 @@
 @import "vendor/bootstrap.override/breadcrumbs.override";
 @import "vendor/bootstrap.override/blockquote.override";
 @import "vendor/bootstrap.override/jumbotron.override";
-
+@import "vendor/bootstrap.override/card.override";
 @import "vendor/bootstrap.override/forms.kitchensink";
 
 @import "base/typography";
@@ -33,7 +33,7 @@
 
 @import "component/card";
 // !Todo Fix for 4.0 upgrade
-// @import "component/button";
+@import "component/button";
 
 @import "component/user-status-container";
 @import "component/nav-utility";
@@ -53,8 +53,7 @@
 //@import "shame/assessment";
 
 /* Footer */
-// !Todo Fix for 4.0 upgrade
-// @import "component/address";
+@import "component/address";
 @import "component/nav-social-buttons";
 @import "component/nav-footer";
 

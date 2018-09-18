@@ -15,40 +15,6 @@
     .triangle:before {
         border-color: transparent transparent transparent $warm-grey;
     }
-
-    .card-header {
-        padding: 0 1rem;
-        text-align: center;
-        position: relative;
-
-        &.triangle {
-            padding-left: 1.5rem;
-        }
-
-        &.triangle:before {
-            content: "";
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: .5em 0 .5em .75em;
-            position: absolute;
-            left: 0;
-        }
-    }
-
-    .card-body {
-        padding: 0 1rem 1.25rem;
-        text-align: center;
-    }
-
-    .card-action {
-        padding: 0 2rem 1.25rem;
-    }
-
-    .card-body + .card-action {
-        margin-top: -.75rem;
-    }
-
     > .card {
         margin: 0 1rem 1rem;
         width: auto;
@@ -132,6 +98,43 @@
         }
     }
 }
+.card-header {
+        padding: 0 1rem;
+        text-align: center;
+        position: relative;
+
+        &.triangle {
+            padding-left: 1.5rem;
+        }
+
+        &.triangle:before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: .5em 0 .5em .75em;
+            position: absolute;
+            left: 0;
+        }
+    }
+ .card-body {
+        padding: 0 1rem 1.25rem;
+        text-align: center;
+    }
+
+    .card-action {
+        padding: 0 2rem 1.25rem;
+        .btn{
+            @extend .btn-lg;
+            font-weight: 600;
+        }
+    }
+.card-footer {
+        padding: 0 1rem 1rem;
+    }
+    .card-body + .card-action, .card-body + .card-footer, {
+        margin-top: -.75rem;
+    }
 
 /**
  * Highlighted Cards are stylized cards with a soft blue background and changes all header sizes and text to a bit larger. These cards are used as hero area or of extra interst.
@@ -151,7 +154,7 @@
  *    <div class="card-body">
  *      <p>@{lipsum:30:words}</p>
  *    </div>
- *     <div class="card-action card-footer"> <a class="btn btn-primary btn-block">Action</a></div>
+ *     <div class="card-footer"> <a href="#" class="btn btn-primary btn-block">Action</a></div>
  *  </div>
  *
  */
@@ -198,10 +201,6 @@
         text-align: left;
     }
 
-    .card-action {
-        padding-right: 1em;
-        padding-left: 1em;
-    }
 }
 
 /**
@@ -216,7 +215,7 @@
  *    <div class="card-body">
  *      <p>@{lipsum:30:words}</p>
  *    </div>
- *     <div class="card-action"> <a class="btn btn-primary btn-block">Action</a></div>
+ *     <div class="card-footer"> <a href="#" class="btn btn-primary btn-block">Action</a></div>
  *  </div>
  *
  */
@@ -238,10 +237,7 @@
         text-align: left;
     }
 
-    .card-action {
-        padding-right: 1em;
-        padding-left: 1em;
-    }
+
 }
 
 /**
@@ -256,7 +252,7 @@
  *    <div class="card-body">
  *      <p>@{lipsum:30:words}</p>
  *    </div>
- *     <div class="card-action"> <a class="btn btn-primary btn-block">Action</a></div>
+ *     <div class="card-action"> <a href="#" class="btn btn-primary btn-block">Action</a></div>
  *  </div>
  *
  */
@@ -294,7 +290,7 @@
  *    <div class="card-body">
  *      <p>@{lipsum:15:words}</p>
  *    </div>
- *     <div class="card-action"> <a class="btn btn-secondary btn-block">Action</a></div>
+ *     <div class="card-action"> <a href="#" class="btn btn-secondary btn-block">Action</a></div>
  *  </div>
  *
  */
@@ -339,8 +335,8 @@
  *      <div class="card-body">     
  *          <p>@{lipsum:1:paragraphs}</p>
  *      </div>
- *      <div class="card-action"><strong>Add to Calendar: </strong><a class="link">Outlook</a> | <a class="link">Google</a> | <a class="link">iCal</a></div>
- *      <div class="card-action"><a class="btn btn-default btn-sm">Register</a></div>
+ *      <div class="card-footer"><strong>Add to Calendar: </strong><a href="#" class="link">Outlook</a> | <a href="#" class="link">Google</a> | <a href="#" class="link">iCal</a></div>
+ *      <div class="card-action"><a href="#" class="btn btn-default">Register</a></div>
  *
  */
 .card.event {
@@ -421,13 +417,16 @@
         font-style: italic;
         margin-bottom: 1em;
     }
-
-    .card-action {
+    .card-footer, .card-action{
         text-align: center;
         background-color: $off-white;
         padding-top: .5rem;
-        padding-bottom: .5rem;
         color: $warm-grey-dark;
+    }
+    .card-footer{
+       padding-bottom: .5rem;
+    }
+    .card-action {
         strong {
             display: none;
             @include bp(md) {
@@ -511,8 +510,8 @@
  *      <div class="card-body">     
  *          <p>@{lipsum:1:paragraphs}</p>
  *      </div>
- *      <div class="card-action"><strong>Add to Calendar: </strong><a class="link">Outlook</a> | <a class="link">Google</a> | <a class="link">iCal</a></div>
- *      <div class="card-action"><a class="btn btn-default btn-sm">Register</a></div>
+ *      <div class="card-action"><strong>Add to Calendar: </strong><a  href="#" class="link">Outlook</a> | <a href="#"  class="link">Google</a> | <a href="#"  class="link">iCal</a></div>
+ *      <div class="card-action"><a href="#" class="btn btn-default btn-sm">Register</a></div>
  *  </div>
  *
  */
@@ -559,7 +558,7 @@
  * @markup
  *  <div class="card testimonial">
  *    <header class="card-header">
- *      <img class="card-img img-circle img-thumbnail" src="@{image:200:200}"/>
+ *      <img class="card-img rounded-circle img-thumbnail" src="@{image:200:200}"/>
  *    </header>
  *    <div class="card-body">
  *      <article class="blockquote">
@@ -572,6 +571,7 @@
  */
 .card.testimonial{}
 .card.testimonial,.card.product {
+    background-color: $soft-blue;
     border-style: solid;
     border-width: 1px;
     margin-top: 0;
@@ -583,7 +583,7 @@
 
 
     .card-header {
-        background-color: $soft-blue;
+        
         margin-bottom: 75px;
 
         @include bp(md) {
@@ -606,6 +606,9 @@
     .card-body {
         padding: 10px 1em 1em;
         position: relative;
+        background-color: $white;
+        border: 1px solid rgba(0,0,0,.3);
+        margin: -1px;
     }
 
     .blockquote {
@@ -685,10 +688,12 @@
     @include bp(md) {
         display: block;
         margin-top: 0;
-        display: table;
+        display: flex;
+        flex-direction: row;
 
         .card-header, .card-body {
-            display: table-cell;
+            flex:1 1 auto;
+            display: block;
             width: unset;
             padding: 10px;
             margin: 0;
@@ -747,7 +752,7 @@
  *          <input type="email" class="form-control" id="exampleInputFacility" placeholder="Start Typing your facility name" autocomplete="on">
  *      </div>
  *    </div>
- *     <div class="card-action"><a class="btn btn-primary btn-block">Search</a></div>
+ *     <div class="card-action"><a href="#" class="btn btn-primary btn-block">Search</a></div>
  *     <div class="card">
  *      <h3 class="card-header">
  *          Can't find your facility?
@@ -773,7 +778,7 @@
  *    <div class="card-body">
  *      <p>@{lipsum:20:words}</p>
  *    </div>
- *     <div class="card-action card-footer"> <a class="btn btn-primary btn-block">Action</a></div>
+ *     <div class="card-footer"> <a href="#" class="btn btn-primary btn-block">Action</a></div>
  *  </div>
  *
  *
@@ -797,13 +802,13 @@
 * @markup
 *  <div class="card product">
 *    <header class="card-header">
-*       <img src="http://accreditation.acc.org/images/facilitymap/AF.png" alt="" class="mapseal">
+*       <img src="https://cvquality.acc.org/images/default-source/accreditation/afbutton.jpg?sfvrsn=f32980bf_2" alt="" class="mapseal">
 *    </header>
 *    <div class="card-body">
 *      <article>
 *       <h2 class="m-0">@{lipsum:3:words}</h2>
 *        <p>@{lipsum:15:words}</p>
-*        <a class="btn btn-primary">Link To Product <i class="fa fa-external-link-square"></i></a>
+*        <a class="btn btn-primary" href="#">Link To Product &nbsp; <i class="fa fa-external-link-square"></i></a>
 *      </article>
 *    </div>
 *  </div>
@@ -833,6 +838,7 @@
 */
 
 .box {
+    text-align: left;
     margin-bottom: 1rem;
     padding: .5rem .75rem;
     border:1px solid $soft-grey;

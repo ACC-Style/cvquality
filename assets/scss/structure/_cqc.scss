@@ -150,10 +150,10 @@
  * @section Xtra > CQC 
  * @markup
  *  <div class="clinician-data row">
- *  <div class="panel-group accordion basic">
- *       <div aria-multiselectable="true" class="panel" id="accordionboards" role="tablist">
- *               <div class="panel-heading" id="headingOne" role="tab">
- *                   <h4 class="panel-title">
+ *  <div class="col-12 accordion basic m-b-0">
+ *       <div aria-multiselectable="true" class="card" id="accordionboards" role="tablist">
+ *               <div class="card-header" id="headingOne" role="tab">
+ *                   <h4 class="card-title">
  *                       <a aria-controls="accordionboardsbasic" aria-expanded="true" class="collapsed" data-parent="#accordionboards" data-toggle="collapse" href="#accordionboardsbasic" role="button">
  *                           <span class="text">
  *                               Boards
@@ -164,8 +164,8 @@
  *                       </a>
  *                   </h4>
  *               </div>
- *               <div aria-expanded="true" aria-labelledby="headingOne" class="panel-collapse collapse" id="accordionboardsbasic" role="tabpanel">
- *                   <div class="panel-body">
+ *               <div aria-expanded="true" aria-labelledby="headingOne" class="card-collapse collapse" id="accordionboardsbasic" role="tabcard">
+ *                   <div class="card-body">
  *                       <ul class="banded-list">
  *                         <li>
  *                               <div class="row">
@@ -206,10 +206,10 @@
  *               </div>
  *           </div>
  *       </div>
- *  <div class="panel-group accordion basic">
- *       <div aria-multiselectable="true" class="panel" id="accordioncerts" role="tablist">
- *               <div class="panel-heading" id="headingOne" role="tab">
- *                   <h4 class="panel-title">
+ *  <div class="col-12 accordion basic m-b-0">
+ *       <div aria-multiselectable="true" class="card" id="accordioncerts" role="tablist">
+ *               <div class="card-header" id="headingOne" role="tab">
+ *                   <h4 class="card-title">
  *                       <a aria-controls="accordioncertsbasic" aria-expanded="true" class="collapsed" data-parent="#accordioncerts" data-toggle="collapse" href="#accordioncertsbasic" role="button">
  *                           <span class="text">
  *                               Certificates
@@ -220,8 +220,8 @@
  *                       </a>
  *                   </h4>
  *               </div>
- *               <div aria-expanded="true" aria-labelledby="headingOne" class="panel-collapse collapse" id="accordioncertsbasic" role="tabpanel">
- *                   <div class="panel-body">
+ *               <div aria-expanded="true" aria-labelledby="headingOne" class="card-collapse collapse" id="accordioncertsbasic" role="tabcard">
+ *                   <div class="card-body">
  *                       <ul class="banded-list">
  *                         <li>
  *                               <div class="row">
@@ -262,18 +262,18 @@
  *               </div>
  *           </div>
  *       </div>
- *  <div class="panel-group accordion basic m-b-0">
- *   <div class="panel" id="accordionData" role="tablist" aria-multiselectable="true">
- *       <div class="panel-heading" role="tab" id="headingOne">
- *         <h4 class="panel-title">
+ *  <div class="col-12 accordion basic m-b-0 m-b-0">
+ *   <div class="card" id="accordionData" role="tablist" aria-multiselectable="true">
+ *       <div class="card-header" role="tab" id="headingOne">
+ *         <h4 class="card-title">
  *           <a role="button" data-toggle="collapse" data-parent="#accordionData" href="#accordionDatabasic" aria-expanded="true" aria-controls="accordionDatabasic" class="collapsed">
  *             <span class="text">Active CQAs</span>
  *             <strong class="pull-right">3</strong>
  *           </a>
  *         </h4>
  *       </div>
- *       <div id="accordionDatabasic" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
- *         <div class="panel-body">
+ *       <div id="accordionDatabasic" class="card-collapse collapse" role="tabcard" aria-labelledby="headingOne" aria-expanded="true">
+ *         <div class="card-body">
  *          @{include:ul.banded-list}
  *         </div>
  *       </div>
@@ -283,9 +283,9 @@
  **/
 .clinician-data{
     .panel-group .panel{border-radius:0;border:0 none;}
-    .accordion .panel-heading{border-bottom:$warm-grey 2px solid;border-top:$warm-grey 2px solid;border-radius:0;}
-    .panel-body{padding:0;}
-    .panel-title{font-size:ms(1);}
+    .accordion .card-header{border-bottom:$warm-grey 2px solid;border-top:$warm-grey 2px solid;border-radius:0;}
+    .card-body{padding:0;}
+    .card-title{font-size:ms(1);}
 }
 
 

@@ -30,37 +30,40 @@ $grays: map-merge((
 $grays);
 
 
-$blue: #007bff !default;
-$indigo: #6610f2 !default;
-$purple: #6f42c1 !default;
-$pink: #e83e8c !default;
+$blue: #007bff ;
+$indigo: #6610f2 ;
+$purple: #6f42c1 ;
+$pink: #e83e8c ;
 $red: $error-color;
-$orange: #fd7e14 !default;
-$yellow: #ffc107 !default;
-$green: #28a745 !default;
+$orange: $dark-orange;
+$yellow: $yellow-orange;
+$green: #28a745 ;
 $teal: $scrub-teal;
-$cyan: #17a2b8 !default;
-$colors: () !default;
+$cyan:  $scrub-teal-light;
+$colors: () ;
 
 // stylelint-disable-next-line scss/dollar-variable-default
-$colors: map-merge(("blue": $blue,
-"indigo": $indigo,
-"purple": $purple,
-"pink": $pink,
-"red": $red,
-"orange": $orange,
-"yellow": $yellow,
-"green": $green,
-"teal": $teal,
-"cyan": $cyan,
-"white": $white,
-"gray": $gray-600,
-"gray-dark": $gray-800),
-$colors);
+$colors: map-merge((
+    "blue": $blue,
+    "indigo": $indigo,
+    "purple": $purple,
+    "pink": $pink,
+    "red": $red,
+    "orange": $orange,
+    "yellow": $yellow,
+    "green": $green,
+    "teal": $teal,
+    "cyan": $cyan,
+    "white": $white,
+    "gray": $gray-600,
+    "gray-dark": $gray-800
+    ),
+    $colors
+);
 
 
 
-$primary: $scrub-teal;
+$primary: $primary-color;
 $secondary: $warm-grey-light;
 $success: $green;
 $info: $cyan;
@@ -69,7 +72,7 @@ $danger: $red;
 $light: $warm-grey-light;
 $dark: $warm-grey-dark;
 //4.0 Colors
-$theme-colors: () !default;
+$theme-colors: () ;
 // stylelint-disable-next-line scss/dollar-variable-default
 $theme-colors: map-merge((
     "primary": $primary,
@@ -104,28 +107,48 @@ $grid-gutter-width: ms(2);
 // Fonts
 //
 // Font, line-height, and color for body text, headings, and more.
-$font-family-sans-serif:'Lato',
-Verdana,
-Helvetica,
-sans-serif;
- 
-$font-family-serif: 'Maven Pro',
-Verdana,
-Helvetica,
-Arial,
-sans-serif;
-$font-family-monospace: Menlo,
-Monaco,
-Consolas,
-"Liberation Mono",
-"Courier New",
-monospace;
+$font-family-sans-serif:'Lato', Verdana, Helvetica, sans-serif;
+$font-family-serif: 'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
+$font-family-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$headings-font-family: 'Muli', Verdana, Helvetica, sans-serif;
 $font-family-base: $font-family-sans-serif;
 
-$font-size-base: ( ms(1)/$ms-base) * 1rem; //must me in rems
-@debug $font-size-base;
-$font-size-lg: (ms(2)/$ms-base) * 1rem;
-$font-size-sm: (ms(0)/$ms-base) * 1rem;
 
 $font-weight-normal: 400;
 $font-weight-bold: 700;
+$line-height-base: $baseline-modifier;
+
+$h1-font-size: ms(7);
+$h2-font-size: ms(5);
+$h3-font-size: ms(3);
+$h4-font-size: ms(2);
+$h5-font-size: ms(1);
+$h6-font-size: ms(0);
+$font-size-base: (ms(1)/$ms-base) * 1rem;
+$font-size-lg:(ms(2)/$ms-base) * 1rem;
+$font-size-sm:(ms(0)/$ms-base) * 1rem;
+
+
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+$input-btn-padding-y:         .25  * 1rem;
+$input-btn-padding-x:         1rem;
+$input-btn-padding-y-sm:      .125  * 1rem;
+$input-btn-padding-x-sm:      .75 * 1rem;
+$input-btn-padding-y-lg:      .375 * 1rem;
+$input-btn-padding-x-lg:      1.5 * 1rem;
+
+
+
+// Cards
+$card-border-width:                 0;
+$card-border-radius:                0;
+$card-border-color:                 transparent;
+$card-inner-border-radius:          0;
+$card-cap-bg:                       transparent;
+$card-bg:                           $white;
+
+

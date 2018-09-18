@@ -7,17 +7,17 @@
 *  .basic          gives a little bit of animation and wiggle, and ads the chevron indicator if it is open or closed.
 *  .simple         removes all of the container decoration and converts the header into a more link.
 * @markup
-*  <div class="panel-group accordion">
-*   <div class="panel" id="accordion" role="tablist" aria-multiselectable="true">
-*       <div class="panel-heading" role="tab" id="headingOne">
-*         <h4 class="panel-title">
+*  <div class="accordion">
+*   <div class="card" id="accordion" role="tablist" aria-multiselectable="true">
+*       <div class="card-header" role="tab" id="headingOne">
+*         <h4 class="card-title">
 *           <a role="button" data-toggle="collapse" data-parent="#accordion" href="#accordion2" aria-expanded="true" aria-controls="accordion2" class="collapsed">
 *             <span class="text">Collapsible Group Item #1</span>
 *           </a>
 *         </h4>
 *       </div>
-*       <div id="accordion2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
-*         <div class="panel-body">
+*       <div id="accordion2" class="collapse" role="tabcard" aria-labelledby="headingOne" aria-expanded="true">
+*         <div class="card-body">
 *           <p>@{lipsum:5:sentence}</p>
 *           <ul class="no-bullets">    
 *             <li style="page-break-inside: avoid">
@@ -39,17 +39,24 @@
 .accordion{
     margin-bottom:1rem;
     clear:both;
-    .panel-heading{
+    &, .card, .card-header, .card-body,.card-footer{text-align: left;}
+    .card{
+        border-radius: 5px;
+        box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+        padding-bottom: 0px;
+    }
+    .card-header{
         background-color: $soft-grey;
         border:$warm-grey-light 1px solid;
         border-bottom: $scrub-teal-light 2px solid;
         padding:0;
+        border-radius: 5px 5px 0 0;
         &:hover{
             background-color:$soft-blue;
             border: $scrub-teal-light 1px solid;
             border-bottom: $scrub-teal 2px solid;
         }
-        .panel-title{
+        .card-title{
             a{ text-decoration:none;}
             &:hover, a:hover{
                 color:$off-black;
@@ -57,30 +64,41 @@
             }
         }
     }
-    .panel-title a{
+    .card-title{
+        margin:0;
+        color:$black;
+    }
+    .card-title a{
+            color:$black;
             padding: 10px 15px;
             display: block;
             width:100%;
     }
-    .panel-title a:after{ 
+    .card-title a:after{ 
         @extend .icon-after;
     }
-    .panel-title a:before{
+    .card-title a:before{
         @extend .icon-before;
     }
+    
+    .card-body{
+            padding: 1rem;
+    }
+
     +.accordion{margin-top:-1rem;
-        .panel-heading {
+        .card-header {
             border-top-right-radius: 0;
             border-top-left-radius: 0;
             
         }
     }
     .accordion{
-        .panel-title{ font-size:ms(0);}
-        .panel-title a{
+        .card-title{ font-size:ms(0);}
+        .card-title a{
             padding:5px 15px;
         }
     }
+
 }
 /**
 * Collapse page content with the header. Adding `.basic` will give a chevron and a little bit of wiggle. You can also nest accordians and they will style a bit smaller.
@@ -88,17 +106,17 @@
 * @structure Accordion (Basic with a little bit of wiggle)
 * @section Advanced Containers > Accordion
 * @markup
-*  <div class="panel-group accordion basic">
-*   <div class="panel" id="accordion" role="tablist" aria-multiselectable="true">
-*       <div class="panel-heading" role="tab" id="headingOne">
-*         <h4 class="panel-title">
+*  <div class="accordion basic">
+*   <div class="card" id="accordion" role="tablist" aria-multiselectable="true">
+*       <div class="card-header" role="tab" id="headingOne">
+*         <h4 class="card-title">
 *           <a role="button" data-toggle="collapse" data-parent="#accordion" href="#accordionbasic" aria-expanded="true" aria-controls="accordionbasic" class="collapsed">
 *             <span class="text">Collapsible Group Item #1</span>
 *           </a>
 *         </h4>
 *       </div>
-*       <div id="accordionbasic" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
-*         <div class="panel-body">
+*       <div id="accordionbasic" class="collapse" role="tabcard" aria-labelledby="headingOne" aria-expanded="true">
+*         <div class="card-body">
 *           <p>@{lipsum:5:sentence}</p>
 *           <ul class="no-bullets">    
 *             <li style="page-break-inside: avoid">
@@ -118,15 +136,15 @@
 *
 */
 .accordion.basic {
-    .panel-title a:before {
+    .card-title a:before {
         content: "\f078";
     }
 
-    .panel-title a.collapsed:before {
+    .card-title a.collapsed:before {
         content: "\f054";
     }
 
-    .panel-title {
+    .card-title {
         &:hover a:before {
             animation: wiggle .75s ease-in 2;
             -webkit-animation: wiggle .75s ease-in 2;
@@ -135,11 +153,11 @@
     }
 
     .accordion {
-        .panel-title a:before {
+        .card-title a:before {
             content: "\f0d7";
         }
 
-        .panel-title a.collapsed:before {
+        .card-title a.collapsed:before {
             content: "\f0da";
         }
     }
@@ -218,17 +236,17 @@
 *  .right-align      The "More" text will align to the right.
 *  .center-align     The "More" text will align with the center.
 * @markup
-*  <div class="panel-group accordion simple">
-*   <div class="panel" id="accordion" role="tablist" aria-multiselectable="true">
-*       <div class="panel-heading" role="tab" id="headingOne">
-*         <h4 class="panel-title">
+*  <div class="accordion simple">
+*   <div class="card" id="accordion" role="tablist" aria-multiselectable="true">
+*       <div class="card-header" role="tab" id="headingOne">
+*         <h4 class="card-title">
 *           <a role="button" data-toggle="collapse" data-parent="#accordion" href="#accordionsimple" aria-expanded="true" aria-controls="accordionsimple" class="collapsed">
 *             <span class="text">Find Out</span>
 *           </a>
 *         </h4>
 *       </div>
-*       <div id="accordionsimple" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
-*         <div class="panel-body">
+*       <div id="accordionsimple" class="collapse" role="tabcard" aria-labelledby="headingOne" aria-expanded="true">
+*         <div class="card-body">
 *           <p>@{lipsum:3:sentences}.</p>
 *         </div>
 *       </div>
@@ -237,92 +255,92 @@
 *
 */
     .accordion.simple {
-        .panel {
+        .card {
             border-radius: 0px;
-            -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
-            box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
+            box-shadow: none;
         }
 
-        .panel-heading, .panel-body {
+        .card-header, .card-body {
             background: none;
             border: none;
         }
 
-        .panel-body {
+        .card-body {
         }
 
-        .panel-heading + .panel-collapse > .panel-body, .panel-heading + .panel-collapse > .list-group {
+        .card-header + .collapse > .card-body, .card-header + .collapse > .list-group {
             border-top: 1px solid rgba($scrub-teal-light,.25);
         }
 
-        .panel-title a {
+        .card-title a {
             padding: .125em 0;
         }
 
-        .panel-title a:before {
+        .card-title a:before {
             // fa-minus-square-o
             content: "\f147";
             margin-right: .125
         }
 
-        .panel-title:hover a:before {
+        .card-title:hover a:before {
             content: "\f146";
         }
 
-        .panel-title a.collapsed:before {
+        .card-title a.collapsed:before {
             // fa-plus-square-o
             content: "\f196";
         }
 
-        .panel-title:hover a.collapsed:before {
+        .card-title:hover a.collapsed:before {
             content: "\f0fe";
         }
 
-        .panel-title a .text, .panel-title a:after, .panel-title a:before {
+        .card-title a .text, .card-title a:after, .card-title a:before {
             display: inline-block;
             width: auto;
             font-size: ms(-1);
             color: $scrub-teal-dark;
         }
 
-        .panel-title a .text, .panel-title a:after {
+        .card-title a .text, .card-title a:after {
             @include font-display("light");
             text-transform: lowercase;
         }
 
-        .panel-title a:after {
+        .card-title a:after {
             content: "more...";
         }
 
-        &.left-align .panel-title a {
+        &.left-align .card-title a {
             text-align: left;
         }
 
-        &.center-align .panel-title a {
+        &.center-align .card-title a {
             text-align: center;
         }
 
-        &.right-align .panel-title a {
+        &.right-align .card-title a {
             text-align: right;
         }
     }
-    /**
+
+/**
 * Fancy Accordions are used in  the toolkit 
 *
 * @structure  Accordion (Fancy)
 * @section Advanced Containers > Accordion
 * @markup  
-*   <div class="panel-group fancy accordion" id="fancyaccordion" role="tablist" aria-multiselectable="true">
-*     <div class="panel panel-default">
-*       <div class="panel-heading" role="tab" id="headingOne">
-*         <h3 class="panel-title">
+*   <div class="fancy accordion" id="fancyaccordion" role="tablist" aria-multiselectable="true">
+*     <div class="card card-default">
+*       <div class="card-header" role="tab" id="headingOne">
+*         <h3 class="card-title">
 *           <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 *             <span class="text">Collapsible Group Item #1</span>
 *           </a>
 *         </h3>
 *       </div>
-*       <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-*         <div class="panel-body">
+*       <div id="collapseOne" class="collapse" role="tabcard" aria-labelledby="headingOne">
+*         <div class="card-body">
 *               <div class="row">
 *                   <div class="col-md-6"><img src="@{image:200:200}" class="toolkit-badge"/></div>
 *                   <div class="col-md-6">
@@ -343,16 +361,16 @@
 *         </div>
 *       </div>
 *     </div>
-*     <div class="panel panel-default">
-*       <div class="panel-heading" role="tab" id="headingTwo">
-*         <h3 class="panel-title">
+*     <div class="card card-default">
+*       <div class="card-header" role="tab" id="headingTwo">
+*         <h3 class="card-title">
 *           <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 *              <span class="text">@{lipsum:1:paragraphs}</span>
 *           </a>
 *         </h3>
 *       </div>
-*       <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-*         <div class="panel-body">
+*       <div id="collapseTwo" class="collapse" role="tabcard" aria-labelledby="headingTwo">
+*         <div class="card-body">
 *               <div class="row">
 *                   <div class="col-md-6">&nbsp;</div>
 *                   <div class="col-md-6">
@@ -382,9 +400,12 @@
         border: 1px solid $warm-grey-light;
         counter-reset: item;
 
-        .panel {
+        .card {
             counter-increment: item;
             counter-reset: subitem;
+            margin-bottom: 0;
+            margin-top: 1px;
+            padding-bottom: 1px; 
 
             ol li {
                 counter-increment: subitem;
@@ -396,14 +417,14 @@
             }
         }
 
-        .panel-title a {
+        .card-title a {
             display: table;
             padding: 0;
             vertical-align: middle;
             @include font-display(500);
         }
 
-        .panel-title {
+        .card-title {
             a {
                 color: $off-white;
                 background-color: $scrub-teal-dark;
@@ -416,7 +437,7 @@
                 -webkit-transition: transform 0.25s ease-out;
                 background-color: $primary-color-dark;
                 color: white;
-                padding: 1rem;
+                padding: 1.5rem 1rem;
                 width: 3em;
                 text-align: center;
             }
@@ -426,13 +447,13 @@
                 @include font-display("regular");
                 color: $off-white;
                 font-size: ms(7);
-                padding: 1rem 1rem;
+                padding: 1.5rem 1rem;
                 text-align: center;
                 min-width: 4rem;
             }
 
             span.text {
-                padding: 1rem 1rem 1rem 0;
+                padding: 1.5rem 1rem 1.5rem 0;
             }
 
             a:before, a:after, span.text, {
@@ -441,7 +462,7 @@
             }
         }
 
-        .panel-title a.collapsed {
+        .card-title a.collapsed {
             background-color: $off-white;
             color: $off-black;
 
@@ -462,15 +483,15 @@
             }
         }
 
-        .panel-heading {
-            border-bottom: 0 solid $warm-grey;
+        .card-header {
+            border-bottom: 1px solid $warm-grey;
         }
 
-        .panel-heading, .panel-heading, .panel-heading {
+        .card-header, .card-header, .card-header {
             &:active, &:focus, &:hover {
                 border-color: $primary-color-dark;
 
-                .panel-title {
+                .card-title {
                     a {
                         color: $off-white;
                         background-color: $scrub-teal-dark;
@@ -488,17 +509,31 @@
             }
         }
 
-        .panel-heading:hover .panel-title a:after {
+        .card-header:hover .card-title a:after {
             animation: btn-bounce .3s ease-in 2;
             -webkit-animation: btn-bounce .3s ease-in 2;
             -moz-animation: btn-bounce 0.3s ease-in 2;
         }
 
-        .panel-body {
+        .card-body {
             @include lightgrey-gradient;
             border: 1px solid $warm-grey-light;
             padding: 2rem 1rem;
             line-height: $loose
+        }
+
+        img.toolkit-badge{
+            padding: 4px;
+            line-height: 1.5;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            vertical-align: middle;
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            margin:0 auto;
+            width:225px;
+            display: block;
         }
     }
 

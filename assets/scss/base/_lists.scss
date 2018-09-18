@@ -381,7 +381,7 @@ dl.grouped-definision-list {
 
 /**
  * Highly stylized list.  The banded list is defaultly just white with a light grey divider.  Add the class `banded-list--even` or  `banded-list--odd` to add a soft blue background on alternating li's.
-
+ *
  * @molecule Banded Lists
  * @section Lists > Banded 
  * @modifiers
@@ -407,28 +407,28 @@ dl.grouped-definision-list {
  *      <div class="row">
  *        <div class="col-sm-7"><strong>@{lipsum:3:words}</strong></div>
  *        <div class="col-sm-2 text-right"><small><em>Started:</em> @{lipsum:1:numbers}/@{lipsum:1:numbers}/2017</small></div>
- *        <div class="col-sm-3">@{include:.progress-bar-primary}</div>
+ *        <div class="col-sm-3">@{include:.progress-bar.bg-primary}</div>
  *      </div>
  *   </li>
  *    <li class="bg-cop">
  *      <div class="row">
  *        <div class="col-sm-7"><strong>@{lipsum:3:words}</strong></div>
  *        <div class="col-sm-2 text-right"><small><em>Started:</em> @{lipsum:1:numbers}/@{lipsum:1:numbers}/2017</small></div>
- *        <div class="col-sm-3">@{include:.progress-bar-primary}</div>
+ *        <div class="col-sm-3">@{include:.progress-bar.bg-primary}</div>
  *      </div>
  *   </li>
  *   <li>
  *      <div class="row">
  *        <div class="col-sm-7"><strong>@{lipsum:3:words}</strong></div>
  *        <div class="col-sm-2 text-right"><small><em>Started:</em> @{lipsum:1:numbers}/@{lipsum:1:numbers}/2017</small></div>
- *        <div class="col-sm-3">@{include:.progress-bar-primary}</div>
+ *        <div class="col-sm-3">@{include:.progress-bar.bg-primary}</div>
  *      </div> 
  *   </li>
  *   <li>
  *      <div class="row">
  *        <div class="col-sm-7"><strong>@{lipsum:3:words}</strong></div>
  *        <div class="col-sm-2 text-right"><small><em>Started:</em> @{lipsum:1:numbers}/@{lipsum:1:numbers}/2017</small></div>
- *        <div class="col-sm-3">@{include:.progress-bar-primary}</div>
+ *        <div class="col-sm-3">@{include:.progress-bar.bg-primary}</div>
  *      </div>
  *   </li>
  *  </ul>

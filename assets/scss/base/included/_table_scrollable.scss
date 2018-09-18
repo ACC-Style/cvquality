@@ -290,13 +290,13 @@
         }
         th {
             display: block;
-            height: 6rem;
+            height: 7rem;
             font-size: ms(1);
             line-height: $tight;
             @include bp(md) {
                 height: 4rem;
             }
-            @include bp(md-height-down) {
+            @include bp(sm-height-down) {
                 line-height: $crunched;
                 font-size: ms(0);
                 height: 3.5rem;
@@ -334,11 +334,11 @@
             width: 100%;
             font-size: ms(-1);
             line-height: $tight;
-            height: 6rem;
+            height: 7rem;
             @include bp(md) {
                 height: 4rem;
             }
-            @include bp(md-height-down) {
+            @include bp(sm-height-down) {
                 line-height: $crunched;
                 height: 3.5rem;
                 overflow: hidden;
@@ -357,7 +357,7 @@
     th, td {
         padding: .5rem 1rem .25rem 1rem;
         border-bottom: 1px solid $warm-grey-light;
-        @include bp(md-height-down) {
+        @include bp(sm-height-down) {
             padding: .25rem .5rem .125rem .5rem;
         }
         ;

@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"font",
+				"font-weight"
+			],
+			[
+				"scrub",
+				"scrub-teal"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
 				"line",
 				"line-height"
 			],
@@ -30,10 +50,6 @@
 			[
 				"teal-",
 				"scrub-teal-light"
-			],
-			[
-				"margin",
-				"margin-top"
 			],
 			[
 				"pad",
@@ -88,20 +104,12 @@
 				"background-color"
 			],
 			[
-				"font",
-				"font-size"
-			],
-			[
 				"j",
 				"jumbotron"
 			],
 			[
 				"jum",
 				"jumbotron-fluid"
-			],
-			[
-				"scrub",
-				"scrub-teal-dark"
 			],
 			[
 				"off",
@@ -188,10 +196,6 @@
 				"event-date"
 			],
 			[
-				"padding",
-				"padding-left"
-			],
-			[
 				"points",
 				"points-possible"
 			],
@@ -234,10 +238,6 @@
 			[
 				"ali",
 				"align-self"
-			],
-			[
-				"mar",
-				"margin-top"
 			],
 			[
 				"font-",
@@ -336,83 +336,54 @@
 	"buffers":
 	[
 		{
-			"file": "gruntfile.js",
+			"file": "assets/scss/vendor/bootstrap-4.1.3/_variables.scss",
 			"settings":
 			{
-				"buffer_size": 2700,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "\n\n body, .body {\n    @include lightblue-gradient;\n}\n.wrapper {\n    margin: 0 auto;\n    background: #fff;\n    max-width:980px;\n    @include bp(lg){max-width:1024px;}\n    @include bp(xl){max-width:1200px;}\n    &:before {\n        content: \"\";\n        display: table;\n    }\n    &:after {\n        content: \"\";\n        display: table;\n        clear: both;\n    }\n    *zoom: 1;\n}\n\n.page-content{\n    padding: .5rem  0 1rem;\n   @include bp(md){ padding: .5rem 1rem 2rem;}\n   @include bp(lg){ padding: .5rem 2.5rem 2rem;}\n    + .page-content{\n        padding-top:0;\n        @include bp(md){  margin-top:-1rem;}\n    }\n    &.full-screen{   @include bp(lg){ padding: .5rem 1rem 2rem;}}\n}\n\n \n/**\n * Home page layout uses special cards to make more of a varried typography which doesn't exsist in sub pages. \n * \n * @layouts Home Page\n * @section Layouts > Home Page\n * @flag full-width\n * @markup\n *  <div class=\"body\">\n *      <div class=\"wrapper container-fluid\">\n *           @{include:#header}\n *          <div class=\"row\">@{include:.nav-primary}</div>\n *          <div id=\"layout\">\n *              <div class=\"page-content full-screen\">\n *                  <div class=\"row\">\n *                        <div class=\"col-md-12\">  @{include:.jumbotron}</div>\n *                  </div>\n *                  <div class=\"row vh_50\">\n *                      <div class=\"col-xl-4 col-lg-7 col-md-12\">@{include:.highlighted.card}</div> \n *                      <div class=\"col-xl-4 col-lg-5 col-md-12\">@{include:.highlighted.card}</div>\n *                      <div class=\"col-xl-4 col-lg-5 col-md-12\">@{include:.highlighted.card}</div>\n *                      <div class=\"col-xl-4 col-lg-7 col-md-12\">@{include:.highlighted.card}</div>\n *                  </div>\n *              </div>           \n *          </div>\n *       @{include:#footer}\n *      </div>\n *  </div>\n */\n.homepage{}\n/**\n * Page layout product or page listing.\n * \n * @layouts Page\n * @section Layouts > Products\n * @flag full-width\n * @markup\n *  <div class=\"body\">\n *      <div class=\"wrapper container-fluid\">\n *           @{include:#header}\n *           @{include:.mobile-menu-toggle-container}\n *           <div class=\"row\">@{include:.nav-primary}</div>\n *           <div id=\"aux\" class=\"row\">@{include:.breadcrumb}</div>\n *           <div id=\"layout\" class=\"row no-gutter\">\n *              <div class=\"col-lg-3 col-md-4 col-xl-3 p-0 d-none d-lg-block\"> @{include:.nav-sub}@{include:.nav-social-button.small}</div>\n *              <div class=\"col-lg-9 col-md-8 col-xl-13\"><div class=\"page-content\"><h1>Sample Page</h1> @{include:dl.grouped-definision-list} @{include:dl.grouped-definision-list}</div></div>\n *           </div>\n *           @{include:#footer}\n *      </div>\n *  </div>\n */\n .product-page\n\n\n\n/**\n * Page Layout for the Assements Score\n * \n * @layouts Assessments\n * @section Layouts > Asseements\n * @flag full-width\n * @markup\n *  <div class=\"body\">\n *      <div class=\"wrapper container-fluid\">\n *           @{include:#header}\n *           <div class=\"row\">@{include:.nav-primary}</div>\n *      <div id=\"aux\" class=\"row\">@{include:.breadcrumb}</div>\n *      <div id=\"layout\" class=\"row no-gutter\">\n *          <div class=\"col-lg-3 col-md-4 col-xl-3 p-0 d-none d-lg-block\"> @{include:.nav-sub}</div>\n *          <div class=\"col-lg-9 col-md-8 col-xl-13\"><div class=\"page-content\">\n *          <h1>Assements Page</h1>  \n *          <p><strong>User:</strong> @{lipsum:2:words}</p>\n *          <p><strong>Facility Site:</strong> @{lipsum:5:words}</p>\n *          <p><strong>You have completed the Assessment on the following dates:</strong></p>\n *          <ul><li>Oct 23, 2017 (Q4 - 2017)</li><li>Oct 23, 2017 (Q4 - 2017)</li><li>Jun 20, 2017 (Q2 - 2017)</li><li>Jun 16, 2017 (Q2 - 2017)</li><li>Jun 09, 2017 (Q2 - 2017)</li><li>May 24, 2017 (Q2 - 2017)</li><li>May 18, 2017 (Q2 - 2017)</li><li>May 09, 2017 (Q2 - 2017)</li><li>May 09, 2017 (Q2 - 2017)</li><li>May 09, 2017 (Q2 - 2017)</li><li>May 03, 2017 (Q2 - 2017)</li><li>May 03, 2017 (Q2 - 2017)</li><li>May 03, 2017 (Q2 - 2017)</li><li>Mar 22, 2017 (Q1 - 2017)</li><li>Mar 21, 2017 (Q1 - 2017)</li><li>Mar 13, 2017 (Q1 - 2017)</li><li>Jan 30, 2017 (Q1 - 2017)</li><li>Apr 18, 2016 (Q2 - 2016)</li></ul>    \n *          @{include:.box.alt}\n *          @{include:.overall-score.box}\n *           @{include:.box.score.accordion}\n *           @{include:.box.score.accordion}\n *           @{include:.wizard.box}\n *          </div></div>\n *      </div>\n *       @{include:#footer}\n *  </div>\n *  </div>\n */\n\n .assessment{}\n\n/**\n * Primary pages can have more graphic layouts with adding the jumbotron.\n * \n * @layouts Jumbotron Page\n * @section Layouts > Jumbotron Full\n * @flag full-width\n * @markup\n *  <div class=\"body\">\n *      <div class=\"wrapper container-fluid\">\n *           @{include:#header}\n *          <div class=\"row\">@{include:.nav-primary}</div>\n *          <div id=\"layout\">\n *              <div class=\"page-content full-screen\">\n *                  @{include:.jumbotron-fluid}\n *                  <div class=\"row vh_40\">\n *                      <div class=\"col-lg-8 col-md-7\">@{include:.undecorated.card}</div> \n *                      <div class=\"col-lg-4 col-md-5\">@{include:.highlighted.card}</div>\n *                  </div>\n *              </div>           \n *          </div>\n *       @{include:#footer}\n *      </div>\n *  </div>\n */\n\n .jumbo-pages{}\n/**\n * Primary pages can have more graphic layouts with adding the jumbotron.\n * \n * @layouts Jumbotron in Content\n * @section Layouts > Jumbotron Full\n * @flag full-width\n * @markup\n *  <div class=\"body\">\n *      <div class=\"wrapper container-fluid\">\n *           @{include:#header}\n *          <div class=\"row\">@{include:.nav-primary}</div>\n *          <div id=\"layout\" class=\"row no-gutter\">\n *          <div class=\"col-lg-3 col-md-4 col-xl-3 d-none d-lg-block\"> @{include:.nav-sub}</div>\n *          <div class=\"col-lg-9 col-md-8 col-xl-13 col\"><div class=\"page-content\">\n *           @{include:.jumbotron}\n *           <h1>@{lipsum:4:words}</h1><p>@{lipsum:4:paragraphs}</p><a class=\"btn btn-primary\">@{lipsum:4:words}</a>\n *          </div></div>\n *      </div>\n *       @{include:#footer}\n *      </div>\n *  </div>\n */\n\n .jumbo-content-pages{}\n\n/**\n* Layout for the wires. \n* \n* @layouts Test Wire Layout\n* @section Wireframe Layouts\n* @flag full-width\n* @markup\n*  <div class=\"body afib\">\n*      <div class=\"wrapper container-fluid\">\n*           @{include:#header}\n*           <div class=\"row\">@{include:.nav-primary}</div>\n*           <div id=\"aux\" class=\"row\">@{include:.breadcrumb}</div>\n*           <div id=\"layout\" class=\"row no-gutter\">\n*              <div class=\"col-lg-3 col-md-4 col-xl-3 p-0 d-none d-lg-block\">\n*               @{include:.nav-sub}\n*               @{include:.accred-address}\n*               @{include:.ad-container}\n*               </div>\n*              <div class=\"col-lg-9 col-md-8 col-xl-13 \"><div class=\"page-content\">\n*                    <h1> @{lipsum:5:words} </h1>\n*                    <div class=\"row\">\n*                        <div class=\"col-lg-6\">\n*                            <p>@{lipsum:1:paragraphs}</p>\n*                            <p>@{lipsum:1:paragraphs}</p>\n*                        </div>\n*                        <div class=\"col-lg-6\">\n*                            <img src=\"@{image:400:200}\" alt=\"\">\n*                            <a href=\"\" class=\"btn btn-primary btn-block\">@{lipsum:3:words}</a>\n*                        </div>\n*                    </div>\n*                    <hr class=\"group-divider\">\n*                    <div class=\"row\">\n*                        <div class=\"col-lg-8\">\n*                        <h2>@{lipsum:4:words}</h2>\n*                        <p>@{lipsum:2:paragraphs}</p>\n*                        <hr class=\"item-divider\"/>\n*                        <div class=\"card testimonial undecorated\">\n*                            <div class=\"card-body\">\n*                                <article class=\"blockquote\">\n*                                    <p>@{lipsum:15:words}</p>\n*                                    <cite class=\"blockquote-cite\">Someone famous</cite>\n*                                </article>\n*                            </div>\n*                        </div>\n*                        <hr class=\"item-divider\"/>\n*                        <div class=\"card testimonial undecorated\">\n*                            <div class=\"card-body\">\n*                                <article class=\"blockquote\">\n*                                    <p>@{lipsum:15:words}</p>\n*                                    <cite class=\"blockquote-cite\">Someone famous</cite>\n*                                </article>\n*                            </div>\n*                        </div>\n*                        <hr class=\"item-divider\"/>\n*                         <div class=\"card testimonial undecorated\">\n*                            <div class=\"card-body\">\n*                                <article class=\"blockquote\">\n*                                    <p>@{lipsum:15:words}</p>\n*                                    <cite class=\"blockquote-cite\">Someone famous</cite>\n*                                </article>\n*                            </div>\n*                        </div>\n*                        <a href=\"\" class=\"btn btn-block btn-primary\">@{lipsum:3:words}</a>\n*                    </div>\n*                    <div class=\"col-lg-4\">@{include:.card.alt} @{include:.card.alt} </div>\n*                    </div>\n*                    <hr class=\"group-divider\"/>\n*                        <h2>@{lipsum:4:words}</h2> <p>@{lipsum:4:sentences}</p>                  \n*                    <div class=\"panel-group accordion basic\">\n*                     <div class=\"panel\" id=\"testpage1\" role=\"tablist\" aria-multiselectable=\"true\">\n*                         <div class=\"panel-heading\" role=\"tab\" id=\"headingOne\">\n*                           <h4 class=\"panel-title\">\n*                             <a role=\"button\" data-toggle=\"collapse\" data-parent=\"#testpage1\" href=\"#accordionbasic-testpage1\" aria-expanded=\"true\" aria-controls=\"accordionbasic-testpage1\" class=\"collapsed\">\n*                               <span class=\"text\">@{lipsum:5:words}</span>\n*                             </a>\n*                           </h4>\n*                         </div>\n*                         <div id=\"accordionbasic-testpage1\" class=\"panel-collapse collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" aria-expanded=\"true\">\n*                           <div class=\"panel-body\">\n*                             <p>@{lipsum:5:sentence}</p>\n*                             <ul class=\"no-bullets\">    \n*                               <li style=\"page-break-inside: avoid\">\n*                                   <a href=\"#.pdf\" class=\"link\" target=\"_blank\">@{lipsum:5:words}</a>\n*                               </li>\n*                               <li style=\"page-break-inside: avoid\">\n*                                   <a href=\"#.pdf\" class=\"link\" target=\"_blank\">@{lipsum:5:words}</a>\n*                               </li>\n*                               <li style=\"page-break-inside: avoid\">\n*                                   <a href=\"#.pdf\" class=\"link\" target=\"_blank\">@{lipsum:5:words}</a>\n*                               </li>\n*                             </ul>\n*                           </div>\n*                         </div>\n*                     </div>\n*                    </div>\n*                    <div class=\"panel-group accordion basic\">\n*                     <div class=\"panel\" id=\"testpage2\" role=\"tablist\" aria-multiselectable=\"true\">\n*                         <div class=\"panel-heading\" role=\"tab\" id=\"headingOne\">\n*                           <h4 class=\"panel-title\">\n*                             <a role=\"button\" data-toggle=\"collapse\" data-parent=\"#testpage2\" href=\"#accordionbasic-testpage2\" aria-expanded=\"true\" aria-controls=\"accordionbasic-testpage2\" class=\"collapsed\">\n*                               <span class=\"text\">@{lipsum:5:words}</span>\n*                             </a>\n*                           </h4>\n*                         </div>\n*                         <div id=\"accordionbasic-testpage2\" class=\"panel-collapse collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" aria-expanded=\"true\">\n*                           <div class=\"panel-body\">\n*                             <p>@{lipsum:5:sentence}</p>\n*                             <ul class=\"no-bullets\">    \n*                               <li style=\"page-break-inside: avoid\">\n*                                   <a href=\"#.pdf\" class=\"link\" target=\"_blank\">@{lipsum:5:words}</a>\n*                               </li>\n*                               <li style=\"page-break-inside: avoid\">\n*                                   <a href=\"#.pdf\" class=\"link\" target=\"_blank\">@{lipsum:5:words}</a>\n*                               </li>\n*                               <li style=\"page-break-inside: avoid\">\n*                                   <a href=\"#.pdf\" class=\"link\" target=\"_blank\">@{lipsum:5:words}</a>\n*                               </li>\n*                             </ul>\n*                           </div>\n*                         </div>\n*                     </div>\n*                    </div>\n*              </div></div>\n*           </div>\n*           @{include:#footer}\n*      </div>\n*  </div>\n*/\n .afib{}",
-			"file": "assets/scss/structure/_page.scss",
-			"file_size": 13660,
-			"file_write_time": 131763250183277153,
-			"settings":
-			{
-				"buffer_size": 13359,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "mods to node-styleguid/nucleus-styleguide/src/entities/Layouts.js",
-			"settings":
-			{
-				"buffer_size": 1696,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "mods to node-styleguid/nucleus-styleguide/index.js",
-			"settings":
-			{
-				"buffer_size": 4129,
-				"encoding": "UTF-8",
+				"buffer_size": 38670,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "assets/scss/base/_colors.scss",
+			"file": "bootstrap-impact.md",
 			"settings":
 			{
-				"buffer_size": 14705,
+				"buffer_size": 1797,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "assets/scss/structure/_header.scss",
+			"file": "assets/scss/vendor/bootstrap.override/_card.override.scss",
 			"settings":
 			{
-				"buffer_size": 1887,
+				"buffer_size": 188,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "config.nucleus.json",
+			"file": "assets/scss/index.scss",
 			"settings":
 			{
-				"buffer_size": 546,
+				"buffer_size": 2369,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "assets/scss/base/_fonts.kitchensink.scss",
+			"file": "assets/scss/component/_card.scss",
 			"settings":
 			{
-				"buffer_size": 2205,
+				"buffer_size": 23228,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "assets/scss/base/_lists.scss",
+			"file": "assets/scss/component/_webinar.scss",
 			"settings":
 			{
-				"buffer_size": 17262,
+				"buffer_size": 3891,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -421,7 +392,7 @@
 			"file": "assets/scss/base/_typography.scss",
 			"settings":
 			{
-				"buffer_size": 11119,
+				"buffer_size": 11334,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -436,100 +407,46 @@
 			}
 		},
 		{
-			"file": "assets/scss/component/_assessment.scss",
+			"file": "assets/scss/base/included/_table.scss",
 			"settings":
 			{
-				"buffer_size": 7122,
+				"buffer_size": 1282,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "assets/scss/component/_card.scss",
+			"file": "assets/scss/vendor/bootstrap-4.1.3/_reboot.scss",
 			"settings":
 			{
-				"buffer_size": 22845,
+				"buffer_size": 11553,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/scss/vendor/bootstrap.override/_kitchensink.scss",
+			"settings":
+			{
+				"buffer_size": 36246,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "assets/scss/component/_carousel.scss",
+			"file": "docs/scripts/appfunctions.js",
 			"settings":
 			{
-				"buffer_size": 8840,
+				"buffer_size": 2521,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "assets/scss/component/_map.scss",
+			"file": "config.nucleus.json",
 			"settings":
 			{
-				"buffer_size": 7466,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/component/_nav-primary.scss",
-			"settings":
-			{
-				"buffer_size": 6021,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/component/_nav-utility.scss",
-			"settings":
-			{
-				"buffer_size": 2262,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/component/_nav-social-buttons.scss",
-			"settings":
-			{
-				"buffer_size": 3680,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/component/_nav-sub.scss",
-			"settings":
-			{
-				"buffer_size": 6250,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/component/_webinar.scss",
-			"settings":
-			{
-				"buffer_size": 3900,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/helpers/_sitefinity-editor.scss",
-			"settings":
-			{
-				"buffer_size": 2241,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/scss/structure/infographic/_timeline.scss",
-			"settings":
-			{
-				"buffer_size": 5545,
+				"buffer_size": 630,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -538,25 +455,91 @@
 			"file": "assets/scss/styleguide.scss",
 			"settings":
 			{
-				"buffer_size": 2944,
+				"buffer_size": 3489,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "assets/scss/vendor/bootstrap.override/_dropdown.override.scss",
+			"file": "assets/css/styleguide.css",
 			"settings":
 			{
-				"buffer_size": 430,
+				"buffer_size": 3282,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "# Impact of bootstrap 4.0 upgrade\n\n## Card Class name changes*\n\n3.x Name for header has changed. 0ld class name of .card-heading is now .card-header I have been able to implement a pure css fix so no DOM changes should be required. \n\n*impacted components:*\n\n\t• CVQuality\\Mvc\\Views\\ActivateNowWidget\\Index.cshtml(14):   \n\t• CVQuality\\Mvc\\Views\\CardWidget\\Default.cshtml(6):   \n\t• CVQuality\\Mvc\\Views\\Event\\Detail.CVQuality.cshtml(10):     \n\t• CVQuality\\Mvc\\Views\\Event\\List.CVQualityEvents.cshtml(22):            \n\t• CVQuality\\Mvc\\Views\\Event\\List.CVQualityUndecoratedEvents.cshtml(22): \n\t• CVQuality\\Mvc\\Views\\InstitutionUpdateWidget\\Index.cshtml(18):\n\t• CVQuality\\Mvc\\Views\\LoginWidget\\Index.cshtml(38):  \n\t• CVQuality\\Mvc\\Views\\LoginWidget\\Index.cshtml(94):\n\t• CVQuality\\Mvc\\Views\\LoginWidget\\Index.cshtml(135):\n\t• CVQuality\\Mvc\\Views\\ProductWidget\\Default.cshtml(68): \n\t• CVQuality\\Mvc\\Views\\RegisterWidget\\Index.cshtml(277)\n\t• CVQuality\\Mvc\\Views\\Shared\\_EmailSubmission.cshtml(4):                                      \n\t• CVQuality\\Mvc\\Views\\SingleCardWidget\\Index.cshtml(7): \n\t• CVQuality\\Mvc\\Views\\TestimonialWidget\\Default.cshtml(22):\n\n\n## Card has replaced Panel, Wells\n\n4.x no longer uses .panel structure and has replaced it to .card DOM for all items. Javascripts are connecting to objects so I am unable to do the above modification to fix this problem with a pure css fix.  Alteration must be done to each of these components. \n\n*impacted components:*\n\n\t• CVQuality\\Mvc\\Views\\AccordionWidget\\Default.cshtml(7):       \n\t• CVQuality\\Mvc\\Views\\AdminAssessmentQuestions\\Index.cshtml(51):\n\t• CVQuality\\Mvc\\Views\\AdminAssessmentQuestions\\Index.cshtml(109):\n\t• CVQuality\\Mvc\\Views\\AssessmentResultsWidget\\Default.cshtml(81):\n\t* CVQuality\\Mvc\\Views\\CQC_PracticeAdminWidget\\Default.cshtml(167):\n\t• CVQuality\\Mvc\\Views\\HospitalEnrollmentWidget\\Index.cshtml(6):  \n\t• CVQuality\\Mvc\\Views\\MoreLinkWidget\\Default.cshtml(7): \n\t• CVQuality\\Mvc\\Views\\ProductWidget\\Default.cshtml(24):\n\t• CVQuality\\Mvc\\Views\\ShareYourStoryWidget\\Index.cshtml(6):  \n\t• CVQuality\\Mvc\\Views\\ToolkitWidget\\Default.cshtml(9):\n\n\n\n\n## Progress bar uses utility class\n\nProgress bars no longer use the .progress-bar-{state} classes for coloring but now use the utlity classes bg-{state}\n\n*impacted components:*\n\n\t*   CVQuality\\Mvc\\Views\\AssessmentWidget\\Default.cshtml(51)\n\n\n## Progress bar changed animated class\n\nProgress bars no longer use the .active classes for animation but now use the .progress-bar-animated\n\n*impacted components:*\n\n\t*   CVQuality\\Mvc\\Views\\AssessmentWidget\\Default.cshtml(51)\n\n\n\n## Display and Hidden altered to { d-none, d-block, d-inline }\n\nDisplay classess have changed to a shortened class name.  \n\n*impacted components are incomplete and usage could be expanded into the content view:*\n\n\t* CVQuality\\Mvc\\Views\\AssessmentResultsWidget\\Default.cshtml(22)\n\t* CVQuality\\Mvc\\Views\\AssessmentResultsWidget\\Default.cshtml(44)\n\t* CVQuality\\Mvc\\Views\\AssessmentResultsWidget\\Default.cshtml(112)\n\t* CVQuality\\Mvc\\Views\\Breadcrumb\\Breadcrumb.Cvquality.cshtml(3)\n\t* CVQuality\\Mvc\\Views\\Layouts\\BaseLayout.cshtml(73)\n\t* CVQuality\\Mvc\\Views\\Layouts\\BaseLayout.cshtml(101)\n\t* CVQuality\\Mvc\\Views\\Navigation\\NavigationView.CvqualityHorizontal.cshtml(9)\n\t* CVQuality\\Mvc\\Views\\Navigation\\NavigationView.CvqualityVertical.cshtml(20)\n\t* CVQuality\\Mvc\\Views\\Shared\\_EmailSubmission.cshtml(14)\n\t* CVQuality\\Mvc\\Views\\Shared\\_EmailSubmission.cshtml(25)\n\t* CVQuality\\Mvc\\Views\\SlideShowWidget\\Default.cshtml(6)\n\n\n## Inline Forms need utilty classes to fix alignment issues. \n\nNo longer is there an line form alignment styles and is fixes by using utility classes like mb-2 to alter bottom margins to align content. \n\n*impacted components:*\n\n\t* currently undiscovered in project.\n\n\n## Checkmarks have new DOM. \n\nCheckmarks now use a more BEM sturcture to the DOM and not altering it will make checkmarks colide with the label. Checkmarks now wrap both label and input int there own classes form-check-input and form-check-label.  \n\n*impacted components:*\n\n\t* CVQuality\\Mvc\\Views\\AdminAssessmentQuestions\\Index.cshtml(321):\n\t* CVQuality\\Mvc\\Views\\HospitalEnrollmentWidget\\Index.cshtml(100):  \n\t* CVQuality\\Mvc\\Views\\SlideShowWidget\\DesignerView.Simple.cshtml(24):   \n\t* CVQuality\\Mvc\\Views\\SlideShowWidget\\DesignerView.Simple.cshtml(31): \n\t* CVQuality\\Mvc\\Views\\SlideShowWidget\\DesignerView.Simple.cshtml(38):  \n\t* CVQuality\\Mvc\\Views\\AssessmentWidget\\Default.cshtml(32):   \n\n\n## State classes for form validations have changed with altered DOM\nhas-warning no longer exsists and both has-success and has-error have been changed to is-valid and is-invalid. Messages are now held in feedback-invalid and feedback-valid divs.   \n\n*impacted components:*\n\n\t* All Forms USING BOOTSRAP 4.0 STYLES\n\t* C:\\tfsonline\\cvqualitySCPC\\CVQuality\\Mvc\\Views\\AccordionWidget\\DesignerView.Simple.cshtml(3): \n\t* C:\\tfsonline\\cvqualitySCPC\\CVQuality\\Mvc\\Views\\AssessmentResultsWidget\\Default.cshtml(29):  \n\t* C:\\tfsonline\\cvqualitySCPC\\CVQuality\\Mvc\\Views\\AssessmentSplashWidget\\Default.cshtml(35): \n\t* C:\\tfsonline\\cvqualitySCPC\\CVQuality\\Mvc\\Views\\CardWidget\\DesignerView.Simple.cshtml(5):  \n\t* C:\\tfsonline\\cvqualitySCPC\\CVQuality\\Mvc\\Views\\CardWidget\\DesignerView.Simple.cshtml(15): \n\t* C:\\tfsonline\\cvqualitySCPC\\CVQuality\\Mvc\\Views\\CardWidget\\DesignerView.Simple.cshtml(19):  \n\t* C:\\tfsonline\\cvqualitySCPC\\CVQuality\\Mvc\\Views\\CardWidget\\DesignerView.Simple.cshtml(23):  \n\t* C:\\tfsonline\\cvqualitySCPC\\CVQuality\\Mvc\\Views\\CardWidget\\DesignerView.Simple.cshtml(32): \n\t* C:\\tfsonline\\cvqualitySCPC\\CVQuality\\Mvc\\Views\\DividerBreak\\DesignerView.Simple.cshtml(6): \n\t* C:\\tfsonline\\cvqualitySCPC\\CVQuality\\Mvc\\Views\\FacilityMapWidget\\Default.cshtml(30)\n\t* C:\\tfsonline\\cvqualitySCPC\\CVQuality\\Mvc\\Views\\FacilityMapWidget\\Default.cshtml(39):\n\t* ...\n\n\n##  File Upload is now a custom form and should be swapped out when needed.\n\nUpdated custom form elements now use class custom-file and other needed DOM\n\n*impacted components:*\n\n\t* ???\n\n\n## Carousel New DOM and Javascript\nnew dom and structure of the carousel \n\n*impacted components:*\n\n\t* \\CVQuality\\Mvc\\Views\\SlideShowWidget\\Default.cshtml\n\n## Card Footer and Card Action\nThe containers now have a subtle differnce where .card-action has mor padding and makes buttons larger by default. DOM changes in all cards depending on the design. \n\n\t* *Uses both*\n\t* \\CVQuality\\Mvc\\Views\\Event\\Default.cshtml\n\t* *Uses .card-action*\n\t* Notice Cards\n\t* *Uses .card-footer*\n\t* Basic Cards, Highlight Cards, Info, Product Card Etc. \n\n\n\n\n## Img-Thumbnail Moidfiers have Changed. \nAll images that used img-thumbnail in conjunction with .img-circle or .img-radius now use .rounded-circle .rounded\n\n\t* *All places were images are used.*\n\t* Events\n\t* Testimonials\n\t* Infographics",
+			"file": "ToDo.md",
+			"file_size": 6530,
+			"file_write_time": 131816651740055510,
+			"settings":
+			{
+				"buffer_size": 6767,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "assets/scss/helpers/_states.scss",
+			"file": "/C/Users/mwatier/Creative Cloud Files/Projects/999 - Product Model ACC/Data.json",
 			"settings":
 			{
-				"buffer_size": 259,
+				"buffer_size": 7181,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/component/_carousel.scss",
+			"settings":
+			{
+				"buffer_size": 10218,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/vendor/bootstrap.override/_forms.kitchensink.scss",
+			"settings":
+			{
+				"buffer_size": 3912,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/vendor/bootstrap.override/_progress-bar.override.scss",
+			"settings":
+			{
+				"buffer_size": 2305,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 262 files for \"cqc\"\n\nC:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss\\base\\_lists.scss:\n  534  \n  535  /**\n  536:  * Header of the CQC Clincian Mangagment\n  537   * \n  538   * @molecule Banded Lists with Modifiers\n\nC:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss\\cqc-techcurl.scss:\n    1  @import \"vendor/daterangepicker\";\n    2: @import \"vendor/cqc-techcurl/cqc.overrides\";\n\nC:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss\\emailpdf.scss:\n   64  // @import \"structure/header\";\n   65  // @import \"structure/mobile-menu-toggle-container\";\n   66: // @import \"structure/cqc\";\n   67  // @import \"helpers/height-utiltiy\";\n   68  // @import \"helpers/states\";\n\nC:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss\\index.scss:\n   72  @import \"structure/header\";\n   73  @import \"structure/mobile-menu-toggle-container\";\n   74: @import \"structure/cqc\";\n   75  \n   76  @import \"helpers/height-utiltiy\";\n\nC:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss\\structure\\_cqc.scss:\n    1  /**\n    2:  * Header of the CQC so you can navigate between section of the micro app.\n    3   * \n    4:  * @molecule CQC - CQC Header \n    5:  * @section Xtra > CQC \n    6   * @markup\n    7:  *  <header class=\"cqc-header row\">\n    8   *   <hr class=\"divider teal bold m-t-0 \"/>\n    9   *       <div class=\"m-t-0 m-b-0\">\n   ..\n   18   *   </header>\n   19   **/\n   20:  .cqc-header{}\n   21  \n   22  /**\n   23   * Header of the practice Dashboard.\n   24   * \n   25:  * @molecule CQC - Practice Dashbaord Header \n   26:  * @section Xtra > CQC \n   27   * @markup\n   28   *  <header class=\"practice-dashboard-header row\">\n   ..\n   56   * The list of clinicians for the clinican dashboard\n   57   * \n   58:  * @molecule CQC - Clinician List Header \n   59:  * @section Xtra > CQC \n   60   * @markup\n   61   *  <div class=\"clinician-list-header row\">\n   ..\n   77   * The overview data of a clinician.\n   78   * \n   79:  * @molecule CQC - Clinician Overview \n   80:  * @section Xtra > CQC \n   81   * @markup\n   82   *  <div class=\"clinician-overview row\">\n   ..\n  147   * The expanded data of a clinician.\n  148   * \n  149:  * @molecule CQC - Clinician Data \n  150:  * @section Xtra > CQC \n  151   * @markup\n  152   *  <div class=\"clinician-data row\">\n  ...\n  293   * the list of clinicians for the clinican dashboard\n  294   * \n  295:  * @structure CQC - Clinician List\n  296:  * @section Xtra > CQC \n  297   * @markup\n  298   *  <div class=\"clinician-list\">\n  ...\n  314   * A mirco app inside the cvquality runs the administration of Clinical Quaility Coach.\n  315   * \n  316:  * @layouts CQC Page - Practice Dashboard\n  317:  * @section Wireframes CQC > Practice Dashboard\n  318   * @flag full-width\n  319   * @markup\n  ...\n  328   *              <div class=\"col-lg-9 col-md-8 col-xl-13\">\n  329   *                  <div class=\"page-content\">\n  330:  *                      @{include:.cqc-header} \n  331   *                      @{include:.practice-dashboard-header}\n  332   *                      @{include:.clinicians-list}\n  ...\n  340   *  </div>\n  341   */\n  342:  .x-cqc-page{}\n  343  \n\n25 matches across 5 files\n\n\nSearching 262 files for \"breadcrumb\"\n\nC:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss\\emailpdf.scss:\n   14  // @import \"vendor/bootstrap.override/grid.override\";\n   15  // @import \"vendor/bootstrap.override/dropdown.override\";\n   16: // @import \"vendor/bootstrap.override/breadcrumbs.override\";\n   17  // @import \"vendor/bootstrap.override/blockquote.override\";\n   18  // @import \"vendor/bootstrap.override/jumbotron.override\";\n\nC:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss\\index.scss:\n   15  @import \"vendor/bootstrap.override/grid.override\";\n   16  @import \"vendor/bootstrap.override/dropdown.override\";\n   17: @import \"vendor/bootstrap.override/breadcrumbs.override\";\n   18  @import \"vendor/bootstrap.override/blockquote.override\";\n   19  @import \"vendor/bootstrap.override/jumbotron.override\";\n\nC:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss\\structure\\_cqc.scss:\n  323   *           @{include:.mobile-menu-toggle-container}\n  324   *           <div class=\"row\">@{include:.nav-primary}</div>\n  325:  *           <div id=\"aux\" class=\"row\">@{include:.breadcrumb}</div>\n  326   *           <div id=\"layout\" class=\"row no-gutter\">\n  327   *              <div class=\"col-lg-3 col-md-4 col-xl-3 p-0 d-none d-lg-block\"> @{include:.nav-sub}@{include:.nav-social-button.small}</div>\n\nC:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss\\structure\\_page.scss:\n   75   *           @{include:.mobile-menu-toggle-container}\n   76   *           <div class=\"row\">@{include:.nav-primary}</div>\n   77:  *           <div id=\"aux\" class=\"row\">@{include:.breadcrumb}</div>\n   78   *           <div id=\"layout\" class=\"row no-gutter\">\n   79   *              <div class=\"col-lg-3 col-md-4 col-xl-3 p-0 d-none d-lg-block\"> @{include:.nav-sub}@{include:.nav-social-button.small}</div>\n   ..\n   99   *           @{include:#header}\n  100   *           <div class=\"row\">@{include:.nav-primary}</div>\n  101:  *      <div id=\"aux\" class=\"row\">@{include:.breadcrumb}</div>\n  102   *      <div id=\"layout\" class=\"row no-gutter\">\n  103   *          <div class=\"col-lg-3 col-md-4 col-xl-3 p-0 d-none d-lg-block\"> @{include:.nav-sub}</div>\n  ...\n  184  *           @{include:#header}\n  185  *           <div class=\"row\">@{include:.nav-primary}</div>\n  186: *           <div id=\"aux\" class=\"row\">@{include:.breadcrumb}</div>\n  187  *           <div id=\"layout\" class=\"row no-gutter\">\n  188  *              <div class=\"col-lg-3 col-md-4 col-xl-3 p-0 d-none d-lg-block\">\n\nC:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss\\vendor\\bootstrap-4.1.3\\_breadcrumb.scss:\n    1: .breadcrumb {\n    2    display: flex;\n    3    flex-wrap: wrap;\n    4:   padding: $breadcrumb-padding-y $breadcrumb-padding-x;\n    5:   margin-bottom: $breadcrumb-margin-bottom;\n    6    list-style: none;\n    7:   background-color: $breadcrumb-bg;\n    8:   @include border-radius($breadcrumb-border-radius);\n    9  }\n   10  \n   11: .breadcrumb-item {\n   12:   // The separator between breadcrumbs (by default, a forward-slash: \"/\")\n   13:   + .breadcrumb-item {\n   14:     padding-left: $breadcrumb-item-padding;\n   15  \n   16      &::before {\n   17        display: inline-block; // Suppress underlining of the separator in modern browsers\n   18:       padding-right: $breadcrumb-item-padding;\n   19:       color: $breadcrumb-divider-color;\n   20:       content: $breadcrumb-divider;\n   21      }\n   22    }\n   23  \n   24:   // IE9-11 hack to properly handle hyperlink underlines for breadcrumbs built\n   25    // without `<ul>`s. The `::before` pseudo-element generates an element\n   26:   // *within* the .breadcrumb-item and thereby inherits the `text-decoration`.\n   27    //\n   28    // To trick IE into suppressing the underline, we give the pseudo-element an\n   29    // underline and then immediately remove it.\n   30:   + .breadcrumb-item:hover::before {\n   31      text-decoration: underline;\n   32    }\n   33    // stylelint-disable-next-line no-duplicate-selectors\n   34:   + .breadcrumb-item:hover::before {\n   35      text-decoration: none;\n   36    }\n   37  \n   38    &.active {\n   39:     color: $breadcrumb-active-color;\n   40    }\n   41  }\n\nC:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss\\vendor\\bootstrap-4.1.3\\_variables.scss:\n  888  \n  889  \n  890: // Breadcrumbs\n  891  \n  892: $breadcrumb-padding-y:              .75rem !default;\n  893: $breadcrumb-padding-x:              1rem !default;\n  894: $breadcrumb-item-padding:           .5rem !default;\n  895  \n  896: $breadcrumb-margin-bottom:          1rem !default;\n  897  \n  898: $breadcrumb-bg:                     $gray-200 !default;\n  899: $breadcrumb-divider-color:          $gray-600 !default;\n  900: $breadcrumb-active-color:           $gray-600 !default;\n  901: $breadcrumb-divider:                quote(\"/\") !default;\n  902  \n  903: $breadcrumb-border-radius:          $border-radius !default;\n  904  \n  905  \n\nC:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss\\vendor\\bootstrap-4.1.3\\bootstrap.scss:\n   26  @import \"navbar\";\n   27  @import \"card\";\n   28: @import \"breadcrumb\";\n   29  @import \"pagination\";\n   30  @import \"badge\";\n\nC:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\_bootstrap.scss:\n   30  @import \"bootstrap/navs\";\n   31  @import \"bootstrap/navbar\";\n   32: @import \"bootstrap/breadcrumbs\";\n   33  @import \"bootstrap/pagination\";\n   34  @import \"bootstrap/pager\";\n\nC:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\_breadcrumbs.scss:\n    1  //\n    2: // Breadcrumbs\n    3  // --------------------------------------------------\n    4  \n    5  \n    6: .breadcrumb {\n    7:   padding: $breadcrumb-padding-vertical $breadcrumb-padding-horizontal;\n    8    margin-bottom: $line-height-computed;\n    9    list-style: none;\n   10:   background-color: $breadcrumb-bg;\n   11    border-radius: $border-radius-base;\n   12  \n   ..\n   17        // [converter] Workaround for https://github.com/sass/libsass/issues/1115\n   18        $nbsp: \"\\00a0\";\n   19:       content: \"#{$breadcrumb-separator}#{$nbsp}\"; // Unicode space added since inline-block means non-collapsing white-space\n   20        padding: 0 5px;\n   21:       color: $breadcrumb-color;\n   22      }\n   23    }\n   24  \n   25    > .active {\n   26:     color: $breadcrumb-active-color;\n   27    }\n   28  }\n\nC:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\_variables.scss:\n  789  \n  790  \n  791: //== Breadcrumbs\n  792  //\n  793  //##\n  794  \n  795: $breadcrumb-padding-vertical:   8px !default;\n  796: $breadcrumb-padding-horizontal: 15px !default;\n  797: //** Breadcrumb background color\n  798: $breadcrumb-bg:                 #f5f5f5 !default;\n  799: //** Breadcrumb text color\n  800: $breadcrumb-color:              #ccc !default;\n  801: //** Text color of current page in the breadcrumb\n  802: $breadcrumb-active-color:       $gray-light !default;\n  803: //** Textual separator for between breadcrumb elements\n  804: $breadcrumb-separator:          \"/\" !default;\n  805  \n  806  \n\nC:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss\\vendor\\bootstrap.override\\_breadcrumbs.override.scss:\n    1  /**\n    2: * Breadcrumbs \n    3  *\n    4: * @structure Breadcrumb\n    5  * @section Nav > Utility \n    6  * @markup\n    7: *  <ol class=\"breadcrumb\">\n    8: *   <li class=\"breadcrumb-item\"><a href=\"#\">@{lipsum:2:words}</a></li>\n    9: *   <li class=\"breadcrumb-item\"><a href=\"#\">@{lipsum:2:words}</a></li>\n   10: *   <li class=\"active breadcrumb-item\">@{lipsum:2:words}</li>\n   11  *  </ol>\n   12  */\n   13: .breadcrumb{\n   14      // most of the style changes came from modifing the custom.scss varibles\n   15      @extend %nav-basic;\n   ..\n   20  }\n   21  // adding in font awesome to change the character type to an icon.\n   22: .breadcrumb-item + .breadcrumb-item::before{\n   23      display: inline-block;\n   24      margin-right: .5em;\n\nC:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss\\vendor\\bootstrap.override\\_custom-hold.scss:\n  129  sans-serif;\n  130  // cheveron content \"\\f054\"\n  131: $breadcrumb-padding-horiztonal: .25rem;\n  132: $breadcrumb-padding-vertical: .5rem;\n  133: $breadcrumb-bg: #fff;\n  134: $breadcrumb-color: $scrub-teal;\n  135: $breadcrumb-divider-color: $warm-grey;\n  136: $breadcrumb-active-color: $warm-grey-dark;\n  137: $breadcrumb-separator: \"\\f054\";\n  138  // Progress bars\n  139  $progress-bg: $warm-grey-light;\n\nC:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss\\vendor\\bootstrap.override\\_kitchensink.scss:\n  437  * \t\t</div>\n  438  * \t\t<div class=\"col-sm-6\">\n  439: * \t\t\t<h3>Breadcrumb</h3>\n  440: * \t\t\t<nav class=\"breadcrumb\">\n  441: * \t\t\t\t<a class=\"breadcrumb-item\" href=\"#\">Home</a>\n  442: * \t\t\t\t<a class=\"breadcrumb-item\" href=\"#\">Library</a>\n  443: * \t\t\t\t<span class=\"breadcrumb-item active\">Breadcrumb</span>\n  444  * \t\t\t</nav>\n  445  * \t\t\t<h3>Carousel</h3>\n\n77 matches across 13 files\n\n\nSearching 262 files for \"acc-flex\"\n\nC:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss\\helpers\\_flex.scss:\n    1: @mixin acc-flexbox() {\n    2    display: -webkit-box;\n    3    display: -moz-box;\n    .\n    7  }\n    8  \n    9: @mixin acc-flex($values) {\n   10    -webkit-box-flex: $values;\n   11    -moz-box-flex:  $values;\n\n2 matches in 1 file\n",
+			"settings":
+			{
+				"buffer_size": 12176,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "assets/scss/vendor/bootstrap.override/_breadcrumbs.override.scss",
+			"settings":
+			{
+				"buffer_size": 1026,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/structure/_cqc.scss",
+			"settings":
+			{
+				"buffer_size": 14351,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -565,7 +548,43 @@
 			"file": "assets/scss/vendor/bootstrap.override/_collapse.override.scss",
 			"settings":
 			{
-				"buffer_size": 16663,
+				"buffer_size": 17210,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/component/_nav-sub.scss",
+			"settings":
+			{
+				"buffer_size": 6323,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/component/_toolkit.scss",
+			"settings":
+			{
+				"buffer_size": 0,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/structure/_infographic.scss",
+			"settings":
+			{
+				"buffer_size": 163,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/base/_lists.scss",
+			"settings":
+			{
+				"buffer_size": 17280,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -574,26 +593,60 @@
 			"file": "assets/scss/vendor/bootstrap.override/_custom.scss",
 			"settings":
 			{
-				"buffer_size": 6549,
+				"buffer_size": 3468,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "assets/scss/vendor/bootstrap.override/_modal.override.scss",
+			"file": "assets/scss/component/_button.scss",
 			"settings":
 			{
-				"buffer_size": 921,
+				"buffer_size": 3066,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "assets/scss/_shame.scss",
+			"file": "assets/scss/component/_address.scss",
 			"settings":
 			{
-				"buffer_size": 1300,
+				"buffer_size": 5832,
 				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/vendor/bootstrap-4.1.3/_buttons.scss",
+			"settings":
+			{
+				"buffer_size": 2712,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/scss/vendor/bootstrap.override/_jumbotron.override.scss",
+			"settings":
+			{
+				"buffer_size": 3267,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/base/_colors.scss",
+			"settings":
+			{
+				"buffer_size": 10634,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/scss/_setup.scss",
+			"settings":
+			{
+				"buffer_size": 359,
 				"line_ending": "Windows"
 			}
 		}
@@ -609,6 +662,46 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"forma",
+				"CodeFormatter: Format as Javascript Syntax"
+			],
+			[
+				"set json",
+				"Set Syntax: JSON"
+			],
+			[
+				"markd",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"set mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"set html",
+				"Set Syntax: HTML"
+			],
+			[
+				"mar",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"beau",
+				"HTMLBeautify"
+			],
+			[
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"bea",
+				"HTMLBeautify"
+			],
+			[
+				"beaut",
+				"HTMLBeautify"
+			],
 			[
 				"sethtml",
 				"Set Syntax: HTML"
@@ -628,10 +721,6 @@
 			[
 				"sent scss",
 				"Set Syntax: SCSS"
-			],
-			[
-				"set html",
-				"Set Syntax: HTML"
 			],
 			[
 				"form",
@@ -668,10 +757,6 @@
 			[
 				"pretty ",
 				"HTMLPrettify"
-			],
-			[
-				"bea",
-				"SassBeautify"
 			],
 			[
 				"set sass",
@@ -746,10 +831,6 @@
 				"Set Syntax: HTML"
 			],
 			[
-				"beau",
-				"SassBeautify"
-			],
-			[
 				"set ham",
 				"Set Syntax: HTML"
 			],
@@ -799,16 +880,51 @@
 		"/C/Users/mwatier/REPOS/cvquality",
 		"/C/Users/mwatier/REPOS/cvquality/assets",
 		"/C/Users/mwatier/REPOS/cvquality/assets/scss",
-		"/C/Users/mwatier/REPOS/cvquality/node_modules",
-		"/C/Users/mwatier/REPOS/cvquality/node_modules/nucleus-styleguide"
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/base",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/structure",
+		"/C/Users/mwatier/REPOS/cvquality/backstop_data",
+		"/C/Users/mwatier/REPOS/cvquality/docs",
+		"/C/Users/mwatier/REPOS/cvquality/docs/assets",
+		"/C/Users/mwatier/REPOS/cvquality/docs/scripts",
+		"/C/Users/mwatier/REPOS/cvquality/docs/styles"
 	],
 	"file_history":
 	[
+		"/C/Users/mwatier/AppData/Local/Temp/Temp1_bootstrap-4.1.3.zip/bootstrap-4.1.3/README.md",
+		"/C/Users/mwatier/REPOS/cvquality/.sass-cache/c5643a238a06414af322445301cb1381ba830ee4/_forms.kitchensink.scssc",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/vendor/bootstrap-4.1.3/_reboot.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/_setup.scss",
+		"/C/Users/mwatier/REPOS/cvquality/mods to node-styleguid/nucleus-styleguide/assets/styles/nuclides/colors.scss",
+		"/C/Users/mwatier/REPOS/cvquality/gruntfile.js",
 		"/C/Users/mwatier/REPOS/cvquality/assets/scss/structure/_page.scss",
+		"/C/Users/mwatier/REPOS/cvquality/mods to node-styleguid/nucleus-styleguide/src/entities/Layouts.js",
+		"/C/Users/mwatier/REPOS/cvquality/mods to node-styleguid/nucleus-styleguide/index.js",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/base/_colors.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/structure/_header.scss",
+		"/C/Users/mwatier/REPOS/cvquality/config.nucleus.json",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/base/_fonts.kitchensink.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/base/_lists.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/base/_typography.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/base/included/_table_scrollable.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/component/_assessment.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/component/_card.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/component/_carousel.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/component/_map.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/component/_nav-primary.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/component/_nav-utility.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/component/_nav-social-buttons.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/component/_nav-sub.scss",
 		"/C/Users/mwatier/REPOS/cvquality/assets/scss/component/_webinar.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/helpers/_sitefinity-editor.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/structure/infographic/_timeline.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/styleguide.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/vendor/bootstrap.override/_dropdown.override.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/helpers/_states.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/vendor/bootstrap.override/_collapse.override.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/_shame.scss",
+		"/C/Users/mwatier/REPOS/cvquality/assets/scss/vendor/bootstrap.override/_modal.override.scss",
 		"/C/Users/mwatier/REPOS/cvquality/assets/scss/structure/_cqc.scss",
 		"/C/Users/mwatier/REPOS/cvquality/assets/scss/index.scss",
-		"/C/Users/mwatier/REPOS/cvquality/assets/scss/base/_lists.scss",
 		"/C/Users/mwatier/REPOS/Bristol/docs/admin-applicant.html",
 		"/C/Users/mwatier/REPOS/Bristol/docs/admin-applications.html",
 		"/C/Users/mwatier/REPOS/Bristol/docs/admin-applications_post-selection.html",
@@ -833,15 +949,10 @@
 		"/C/Users/mwatier/REPOS/Bristol/docs/admin-Users.html",
 		"/C/Users/mwatier/REPOS/cvquality/assets/scss/vendor/bootstrap.override/_jumbotron.override.scss",
 		"/C/Users/mwatier/REPOS/cvquality/mods to node-styleguid/nucleus-styleguide/assets/styles/molecules/buttons.scss",
-		"/C/Users/mwatier/REPOS/cvquality/assets/scss/base/_typography.scss",
 		"/C/Users/mwatier/REPOS/cvquality/assets/scss/emailpdf.scss",
 		"/C/Users/mwatier/REPOS/cvquality/assets/scss/helpers/_flex.scss",
 		"/C/Users/mwatier/REPOS/cvquality/assets/scss/structure/_cqc-clinician-management.scss",
-		"/C/Users/mwatier/REPOS/cvquality/assets/scss/component/_nav-sub.scss",
-		"/C/Users/mwatier/REPOS/cvquality/assets/scss/_setup.scss",
 		"/C/Users/mwatier/Desktop/Sitemenu.txt",
-		"/C/Users/mwatier/REPOS/cvquality/assets/scss/vendor/bootstrap.override/_collapse.override.scss",
-		"/C/Users/mwatier/REPOS/cvquality/assets/scss/base/_colors.scss",
 		"/C/Users/mwatier/REPOS/cvquality/assets/scss/component/_button.scss",
 		"/C/Users/mwatier/REPOS/cvquality/node_modules/nucleus-styleguide/src/Substitute.js",
 		"/C/Users/mwatier/REPOS/cvquality/mods to node-styleguid/generator.js",
@@ -906,42 +1017,22 @@
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_nav-footer.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/_fonts.scss",
 		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/_nav-basic.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_toolkit.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_charts.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/helpers/_fixes.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/styleguide.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/structure/_footer.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/structure/_header.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/structure/_mobile-menu-toggle-container.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_nav-utility.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/shame/_assessment.scss",
-		"/C/Users/mwatier/Repo/cvquality/.sass-cache/79c50d697742f97fc26abd9806e1b64aa8267bf1/_collapse.override.scssc",
-		"/C/Users/mwatier/Repo/cvquality/assets/css/index.css",
-		"/C/Users/mwatier/Repo/cvquality/docs/scripts/appfunctions.js",
-		"/C/Users/mwatier/Repo/cvquality/config.nucleus.json",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/base/_fonts.kitchensink.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_dropdown.override.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_searchbar.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap.override/_breadcrumbs.override.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/_oldshame.scss",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/vendor/bootstrap/_card.scss",
-		"/C/Users/mwatier/Repo/cvquality/.sass-cache/8ad8dc8855a8d00af3297f5169a3b828bbea5905/_modular-scale-typography.scssc",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_assessments.scss",
-		"/C/Users/mwatier/Repo/cvquality/node_modules/nucleus-styleguide/assets/views/common/components.pug",
-		"/C/Users/mwatier/Repo/cvquality/assets/scss/helpers/_breakpoints.scss",
-		"/C/Users/mwatier/Repo/cvquality/ToDo.md",
-		"/C/Users/mwatier/Repo/cvquality/gruntfile.js",
-		"/C/Users/mwatier/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc.defaults.json"
+		"/C/Users/mwatier/Repo/cvquality/assets/scss/component/_toolkit.scss"
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
 		"height": 158.0,
 		"where_history":
 		[
+			"C:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss",
+			"C:\\Users\\mwatier\\REPOS\\cvquality\\assets",
+			"C:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss",
+			"C:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss\\base",
+			"C:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss\\vendor\\bootstrap-4.1.3",
 			"C:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss",
 			"C:\\Users\\mwatier\\REPOS\\cvquality\\assets",
 			"C:\\Users\\mwatier\\REPOS\\cvquality\\assets\\scss",
@@ -982,6 +1073,101 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"col-12 accordion basic",
+			"accordion basic",
+			"card-group",
+			"accordion basic",
+			"accordion",
+			"product",
+			"card-header",
+			"thumb",
+			"acc-flex",
+			"card.product",
+			"event",
+			"highlighted",
+			"highi",
+			"button-si",
+			"scrub-teal-dark",
+			"temp",
+			"light",
+			"dark",
+			"gradi",
+			"https://unsplash.it/630/420?random=0.8297187690426346",
+			"breadcrumb",
+			"<a ",
+			"fancy",
+			"card-col",
+			"card-coll",
+			"card-tittle",
+			"CQC",
+			":",
+			"panel",
+			"panel-group ",
+			"panel-collapse collapse",
+			"panel-body",
+			"\"panel-body",
+			"panel-title",
+			"panel-heading",
+			"panel",
+			"card-title",
+			"card-heading",
+			"panel",
+			"clinical ",
+			"cqc",
+			"panel",
+			"panel panel-default",
+			"form-group",
+			"@{include:.progress-bar-primary}",
+			"@include:.progress",
+			"input type=\"text\"",
+			"CheckMeOut",
+			".progress-bar-primary",
+			"@{include:.progress-bar-primary}",
+			"progress-bar-animated",
+			"bf",
+			"active",
+			" progress-bar-success",
+			" aria-hidden=\"true\"",
+			"aria-hidden",
+			"•\t",
+			"btn-link",
+			"btn-link[data-sf-role=expandAll",
+			"btn-link[data-sf-role=expandAll]",
+			"border",
+			"border:0",
+			"<!--",
+			"<!-- .col -->",
+			"<!--  /.row    -->\n",
+			"<!-- Tab panes -->\n",
+			"<!-- Modal -->\n",
+			"<!-- Button trigger modal -->\n",
+			"<!-- /btn-toolbar -->\n",
+			"<!-- /btn-group -->\n",
+			"<!--  /.col    -->\n",
+			"<!-- /.row -->\n",
+			"<!-- /.col -->\n",
+			"\t<!-- /.row -->",
+			"\t\t<!-- /.col -->",
+			" class=\"card\" ",
+			"<div>",
+			"p>",
+			"p",
+			"C:\\t",
+			"C:\\",
+			": ",
+			"C:\\",
+			"card",
+			"card-heading",
+			"panel",
+			"panel-default",
+			"a:not([href]):not([tabindex])",
+			"6rem",
+			"table",
+			"4",
+			"html",
+			"body",
+			"body, html",
+			"$dark-orange",
 			"$mix-teal_orange",
 			" $mix-teal_orange",
 			"orange",
@@ -1014,102 +1200,7 @@
 			"lipsum",
 			"lorem",
 			"clincal overview",
-			"nav-basic",
-			"mobile-menu-toggle",
-			"fa ",
-			"fa",
-			"group-divide-auto",
-			"normal\"",
-			".blockquote-cite",
-			"blockquote-cite",
-			"absolute",
-			"blockquote-cite",
-			"none",
-			".blockquote-cite",
-			"blockquote-cite",
-			"cite",
-			".product",
-			"180",
-			"120",
-			"60",
-			"icon-60",
-			"152",
-			"144",
-			"72",
-			"120",
-			"60",
-			"114",
-			"57",
-			"100",
-			"50",
-			"80",
-			"40",
-			"114",
-			"icon@2",
-			"icon",
-			"57",
-			"180",
-			"portrait",
-			"Default",
-			"ios",
-			"\"res/",
-			">\n",
-			"md",
-			"tooltip",
-			"cqc",
-			"<hr",
-			"hr",
-			"m-0",
-			"divider",
-			"tabs",
-			"@modifier",
-			".box",
-			"button",
-			"clinician",
-			"Clinician",
-			"clinician",
-			"blue",
-			"accordionboards",
-			"float-righ",
-			"<div class=\"col-sm-2\"><small><em>",
-			"accordionData",
-			"Started:<",
-			"12",
-			"lipsum",
-			"units",
-			"words.length",
-			"lips",
-			".banded",
-			"em",
-			"12/12/2017",
-			".progress-bar",
-			"{lipsum:1",
-			"lipsum:2",
-			"primary",
-			"strong bold",
-			"progress",
-			"lipsum",
-			"lorem",
-			"clinicians-overview",
-			"accordion",
-			"col-sm-2",
-			"h3",
-			"b",
-			"h4",
-			"strong",
-			"lass=\"\"",
-			"id",
-			"                \n\n",
-			"\n                                ",
-			"<!-- ko",
-			" -->",
-			"<!-- ko",
-			"<!-- /ko -->",
-			"\n\n    ",
-			"\n\n",
-			"sidebar",
-			"no-gutter",
-			"<li>\n                        <a"
+			"nav-basic"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1117,6 +1208,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"card-title",
 			"$mix-teal_primary",
 			" $mix-teal_primary",
 			"$primary-color-light",
@@ -1136,248 +1228,94 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 22,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "gruntfile.js",
+					"file": "assets/scss/vendor/bootstrap-4.1.3/_variables.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2700,
+						"buffer_size": 38670,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2680,
-								2688
+								28837,
+								28837
 							]
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1531842607.78,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"markdonw_live_preview_last_run": 1536246427.34,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1372.0,
+						"translation.y": 10908.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 29,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "assets/scss/structure/_page.scss",
+					"file": "bootstrap-impact.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 13359,
+						"buffer_size": 1797,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1716,
-								1316
+								61,
+								61
 							]
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1531849154.64,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"_anf_new": "",
+							"markdonw_live_preview_last_run": 1536349439.06,
+							"parser": "markdown",
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"target": "disk"
 						},
 						"translation.x": 0.0,
-						"translation.y": 426.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 27,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "mods to node-styleguid/nucleus-styleguide/src/entities/Layouts.js",
+					"file": "assets/scss/vendor/bootstrap.override/_card.override.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1696,
+						"buffer_size": 188,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								107,
+								107
 							]
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1531850013.13,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 300.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "mods to node-styleguid/nucleus-styleguide/index.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4129,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4107,
-								4107
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1531850130.44,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2379.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "assets/scss/base/_colors.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 14705,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								210,
-								210
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1531843165.7,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "assets/scss/structure/_header.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1887,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								632,
-								632
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1531845116.14,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "config.nucleus.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 546,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								546,
-								546
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1531845335.42,
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "assets/scss/base/_fonts.kitchensink.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2205,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1531843217.87,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"_anf_new": "",
+							"markdonw_live_preview_last_run": 1536336014.26,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1387,25 +1325,1008 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "assets/scss/base/_lists.scss",
+					"buffer": 3,
+					"file": "assets/scss/index.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 17262,
+						"buffer_size": 2369,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1424,
+								1424
 							]
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1531843217.87,
+							"markdonw_live_preview_last_run": 1536326249.89,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 48.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "assets/scss/component/_card.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23228,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								20229,
+								20229
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1536336145.79,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 12301.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "assets/scss/component/_webinar.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3891,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1320,
+								1320
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1537192020.72,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "assets/scss/base/_typography.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11334,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1196,
+								1196
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1536252338.22,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 288.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 26,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "assets/scss/base/included/_table_scrollable.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13950,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10734,
+								10734
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1536260269.49,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4519.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 33,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "assets/scss/base/included/_table.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1282,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								440,
+								440
+							],
+							[
+								539,
+								539
+							],
+							[
+								636,
+								636
+							],
+							[
+								735,
+								735
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1536260742.21,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 32,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "assets/scss/vendor/bootstrap-4.1.3/_reboot.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11553,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5530,
+								5530
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1536252550.03,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3080.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 30,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "assets/scss/vendor/bootstrap.override/_kitchensink.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 36246,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14801,
+								14801
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1536326665.89,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 5587.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 25,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "docs/scripts/appfunctions.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2521,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2521,
+								2521
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1536583096.96,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 651.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "config.nucleus.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 630,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								630,
+								630
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1536583511.7,
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "assets/scss/styleguide.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3489,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2811,
+								2811
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1536583835.36,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1840.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "assets/css/styleguide.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3282,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3282,
+								3282
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1536584691.7,
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "ToDo.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6767,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6767,
+								6767
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1537206314.85,
+							"parser": "github",
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"target": "disk",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2160.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "/C/Users/mwatier/Creative Cloud Files/Projects/999 - Product Model ACC/Data.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7181,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								633,
+								633
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "assets/scss/component/_carousel.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10218,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1705,
+								1705
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1536606716.37,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 576.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "assets/scss/vendor/bootstrap.override/_forms.kitchensink.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3912,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								233,
+								233
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1536589348.13,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "assets/scss/vendor/bootstrap.override/_progress-bar.override.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2305,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								808,
+								808
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1536587846.6,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 96.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12176,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										137,
+										140
+									],
+									[
+										349,
+										352
+									],
+									[
+										362,
+										365
+									],
+									[
+										566,
+										569
+									],
+									[
+										828,
+										831
+									],
+									[
+										985,
+										988
+									],
+									[
+										1074,
+										1077
+									],
+									[
+										1080,
+										1083
+									],
+									[
+										1118,
+										1121
+									],
+									[
+										1167,
+										1170
+									],
+									[
+										1326,
+										1329
+									],
+									[
+										1433,
+										1436
+									],
+									[
+										1492,
+										1495
+									],
+									[
+										1670,
+										1673
+									],
+									[
+										1725,
+										1728
+									],
+									[
+										1880,
+										1883
+									],
+									[
+										1932,
+										1935
+									],
+									[
+										2084,
+										2087
+									],
+									[
+										2132,
+										2135
+									],
+									[
+										2297,
+										2300
+									],
+									[
+										2344,
+										2347
+									],
+									[
+										2538,
+										2541
+									],
+									[
+										2598,
+										2601
+									],
+									[
+										2835,
+										2838
+									],
+									[
+										3022,
+										3025
+									],
+									[
+										3339,
+										3349
+									],
+									[
+										3715,
+										3725
+									],
+									[
+										4117,
+										4127
+									],
+									[
+										4595,
+										4605
+									],
+									[
+										4984,
+										4994
+									],
+									[
+										5331,
+										5341
+									],
+									[
+										5588,
+										5598
+									],
+									[
+										5670,
+										5680
+									],
+									[
+										5692,
+										5702
+									],
+									[
+										5739,
+										5749
+									],
+									[
+										5820,
+										5830
+									],
+									[
+										5868,
+										5878
+									],
+									[
+										5920,
+										5930
+									],
+									[
+										5972,
+										5982
+									],
+									[
+										6031,
+										6041
+									],
+									[
+										6075,
+										6085
+									],
+									[
+										6256,
+										6266
+									],
+									[
+										6302,
+										6312
+									],
+									[
+										6351,
+										6361
+									],
+									[
+										6471,
+										6481
+									],
+									[
+										6595,
+										6605
+									],
+									[
+										6819,
+										6829
+									],
+									[
+										6976,
+										6986
+									],
+									[
+										7100,
+										7110
+									],
+									[
+										7257,
+										7267
+									],
+									[
+										7285,
+										7295
+									],
+									[
+										7345,
+										7355
+									],
+									[
+										7403,
+										7413
+									],
+									[
+										7470,
+										7480
+									],
+									[
+										7536,
+										7546
+									],
+									[
+										7599,
+										7609
+									],
+									[
+										7662,
+										7672
+									],
+									[
+										7725,
+										7735
+									],
+									[
+										7797,
+										7807
+									],
+									[
+										8022,
+										8032
+									],
+									[
+										8278,
+										8288
+									],
+									[
+										8493,
+										8503
+									],
+									[
+										8590,
+										8600
+									],
+									[
+										8622,
+										8632
+									],
+									[
+										8651,
+										8661
+									],
+									[
+										8784,
+										8794
+									],
+									[
+										9000,
+										9010
+									],
+									[
+										9157,
+										9167
+									],
+									[
+										9247,
+										9257
+									],
+									[
+										9426,
+										9436
+									],
+									[
+										9476,
+										9486
+									],
+									[
+										9529,
+										9539
+									],
+									[
+										9587,
+										9597
+									],
+									[
+										9623,
+										9633
+									],
+									[
+										9684,
+										9694
+									],
+									[
+										9714,
+										9724
+									],
+									[
+										9806,
+										9816
+									],
+									[
+										9825,
+										9835
+									],
+									[
+										9920,
+										9930
+									],
+									[
+										9948,
+										9958
+									],
+									[
+										10129,
+										10139
+									],
+									[
+										10171,
+										10181
+									],
+									[
+										10253,
+										10263
+									],
+									[
+										10288,
+										10298
+									],
+									[
+										10366,
+										10376
+									],
+									[
+										10451,
+										10461
+									],
+									[
+										10525,
+										10535
+									],
+									[
+										10749,
+										10759
+									],
+									[
+										10768,
+										10778
+									],
+									[
+										11011,
+										11021
+									],
+									[
+										11058,
+										11068
+									],
+									[
+										11102,
+										11112
+									],
+									[
+										11131,
+										11141
+									],
+									[
+										11170,
+										11180
+									],
+									[
+										11216,
+										11226
+									],
+									[
+										11266,
+										11276
+									],
+									[
+										11519,
+										11529
+									],
+									[
+										11559,
+										11569
+									],
+									[
+										11595,
+										11605
+									],
+									[
+										11653,
+										11663
+									],
+									[
+										11717,
+										11727
+									],
+									[
+										11741,
+										11751
+									],
+									[
+										11953,
+										11961
+									],
+									[
+										12065,
+										12073
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								12176,
+								12176
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 3,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 5041.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "assets/scss/vendor/bootstrap.override/_breadcrumbs.override.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1026,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								549,
+								549
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1536606836.92,
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
@@ -1418,105 +2339,113 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "assets/scss/base/_typography.scss",
+					"buffer": 22,
+					"file": "assets/scss/structure/_cqc.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11119,
+						"buffer_size": 14351,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								5772,
+								5772
+							],
+							[
+								8663,
+								8663
+							],
+							[
+								11561,
+								11561
 							]
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1531843217.87,
+							"markdonw_live_preview_last_run": 1536594121.56,
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1997.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 27,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "assets/scss/base/included/_table_scrollable.scss",
+					"buffer": 23,
+					"file": "assets/scss/vendor/bootstrap.override/_collapse.override.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 13950,
+						"buffer_size": 17210,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								13162,
+								13162
 							]
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1531843217.87,
+							"markdonw_live_preview_last_run": 1536595115.28,
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 5837.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 26,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
-					"file": "assets/scss/component/_assessment.scss",
+					"buffer": 24,
+					"file": "assets/scss/component/_nav-sub.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7122,
+						"buffer_size": 6323,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								5645,
+								5645
 							]
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1531843217.87,
+							"markdonw_live_preview_last_run": 1536606428.76,
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1536.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
-					"file": "assets/scss/component/_card.scss",
+					"buffer": 25,
+					"file": "assets/scss/component/_toolkit.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 22845,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -1529,103 +2458,8 @@
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1531843217.88,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 18,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "assets/scss/component/_carousel.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8840,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1531843217.88,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "assets/scss/component/_map.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7466,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1531843217.88,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "assets/scss/component/_nav-primary.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6021,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1531843217.89,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"markdonw_live_preview_last_run": 1536605493.77,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1635,56 +2469,25 @@
 					"type": "text"
 				},
 				{
-					"buffer": 16,
-					"file": "assets/scss/component/_nav-utility.scss",
+					"buffer": 26,
+					"file": "assets/scss/structure/_infographic.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2262,
+						"buffer_size": 163,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								162,
+								162
 							]
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1531843239.73,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"file": "assets/scss/component/_nav-social-buttons.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3680,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1531843217.89,
+							"markdonw_live_preview_last_run": 1536605749.72,
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
@@ -1692,335 +2495,122 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 25,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
-					"buffer": 18,
-					"file": "assets/scss/component/_nav-sub.scss",
+					"buffer": 27,
+					"file": "assets/scss/base/_lists.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6250,
+						"buffer_size": 17280,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								10077,
+								10077
 							]
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1531843217.89,
+							"markdonw_live_preview_last_run": 1536590453.01,
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 24,
-					"type": "text"
-				},
-				{
-					"buffer": 19,
-					"file": "assets/scss/component/_webinar.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3900,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1531843217.89,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 23,
-					"type": "text"
-				},
-				{
-					"buffer": 20,
-					"file": "assets/scss/helpers/_sitefinity-editor.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2241,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1531843217.9,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 21,
-					"file": "assets/scss/structure/infographic/_timeline.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5545,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1531843239.73,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 22,
-					"file": "assets/scss/styleguide.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2944,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1531843239.74,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 23,
-					"file": "assets/scss/vendor/bootstrap.override/_dropdown.override.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 430,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1531843239.75,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 24,
-					"file": "assets/scss/helpers/_states.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 259,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1531843217.92,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 22,
-					"type": "text"
-				},
-				{
-					"buffer": 25,
-					"file": "assets/scss/vendor/bootstrap.override/_collapse.override.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 16663,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1531843217.92,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 21,
-					"type": "text"
-				},
-				{
-					"buffer": 26,
-					"file": "assets/scss/vendor/bootstrap.override/_custom.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6549,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"markdonw_live_preview_last_run": 1531843217.92,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 8365.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 20,
 					"type": "text"
 				},
 				{
-					"buffer": 27,
-					"file": "assets/scss/vendor/bootstrap.override/_modal.override.scss",
+					"buffer": 28,
+					"file": "assets/scss/vendor/bootstrap.override/_custom.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 921,
+						"buffer_size": 3468,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1316,
+								1316
 							]
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1531843217.92,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+							"markdonw_live_preview_last_run": 1536588811.17,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 240.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 19,
+					"stack_index": 21,
 					"type": "text"
 				},
 				{
-					"buffer": 28,
-					"file": "assets/scss/_shame.scss",
+					"buffer": 29,
+					"file": "assets/scss/component/_button.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1300,
+						"buffer_size": 3066,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1506,
+								1506
 							]
 						],
 						"settings":
 						{
-							"markdonw_live_preview_last_run": 1531843217.86,
+							"markdonw_live_preview_last_run": 1536582727.59,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 421.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 30,
+					"file": "assets/scss/component/_address.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5832,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1344,
+								1344
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1537189754.96,
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
@@ -2029,7 +2619,172 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 31,
+					"file": "assets/scss/vendor/bootstrap-4.1.3/_buttons.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2712,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2133,
+								2136
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1537190055.74,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 240.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 32,
+					"file": "assets/scss/vendor/bootstrap.override/_jumbotron.override.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3267,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1114,
+								1114
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1536326800.69,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 122.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 31,
+					"type": "text"
+				},
+				{
+					"buffer": 33,
+					"file": "assets/scss/base/_colors.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10634,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8126,
+								8126
+							],
+							[
+								8155,
+								8155
+							],
+							[
+								8305,
+								8305
+							],
+							[
+								8371,
+								8371
+							],
+							[
+								8487,
+								8487
+							],
+							[
+								8516,
+								8516
+							],
+							[
+								8636,
+								8636
+							],
+							[
+								8665,
+								8665
+							],
+							[
+								8778,
+								8778
+							],
+							[
+								8807,
+								8807
+							],
+							[
+								8915,
+								8915
+							],
+							[
+								8944,
+								8944
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1536246620.33,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3677.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 34,
+					"file": "assets/scss/_setup.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 359,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								28,
+								32
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1536251468.92,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 34,
 					"type": "text"
 				}
 			]
@@ -2037,7 +2792,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 25.0
 	},
 	"input":
 	{
@@ -2074,7 +2829,7 @@
 	"project": "cvquality.sublime-project",
 	"replace":
 	{
-		"height": 52.0
+		"height": 46.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -2083,6 +2838,122 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"cqc",
+				"assets\\scss\\structure\\_cqc.scss"
+			],
+			[
+				"",
+				"assets\\scss\\component\\_card.scss"
+			],
+			[
+				"webinar",
+				"assets\\scss\\component\\_webinar.scss"
+			],
+			[
+				"boot 4 button",
+				"assets\\scss\\vendor\\bootstrap-4.1.3\\_buttons.scss"
+			],
+			[
+				"address",
+				"assets\\scss\\component\\_address.scss"
+			],
+			[
+				"address.s",
+				"assets\\scss\\component\\_address.scss"
+			],
+			[
+				"color.scss",
+				"assets\\scss\\base\\_colors.scss"
+			],
+			[
+				"assets button scss",
+				"assets\\scss\\component\\_button.scss"
+			],
+			[
+				"caro",
+				"assets\\scss\\component\\_carousel.scss"
+			],
+			[
+				"nav",
+				"assets\\scss\\component\\_nav-sub.scss"
+			],
+			[
+				"collap",
+				"assets\\scss\\vendor\\bootstrap.override\\_collapse.override.scss"
+			],
+			[
+				"colla",
+				"assets\\scss\\vendor\\bootstrap.override\\_collapse.override.scss"
+			],
+			[
+				"toolkit",
+				"assets\\scss\\component\\_toolkit.scss"
+			],
+			[
+				"card scss",
+				"assets\\scss\\component\\_card.scss"
+			],
+			[
+				"form ki",
+				"assets\\scss\\vendor\\bootstrap.override\\_forms.kitchensink.scss"
+			],
+			[
+				"forms.scss",
+				".sass-cache\\c5643a238a06414af322445301cb1381ba830ee4\\_forms.kitchensink.scssc"
+			],
+			[
+				"custom",
+				"assets\\scss\\vendor\\bootstrap.override\\_custom.scss"
+			],
+			[
+				"ass scss bas colo",
+				"assets\\scss\\base\\_colors.scss"
+			],
+			[
+				"custom.scs",
+				"assets\\scss\\vendor\\bootstrap.override\\_custom.scss"
+			],
+			[
+				"progress scss over",
+				"assets\\scss\\vendor\\bootstrap.override\\_progress-bar.override.scss"
+			],
+			[
+				"button",
+				"assets\\scss\\component\\_button.scss"
+			],
+			[
+				"variables.scss",
+				"assets\\scss\\vendor\\bootstrap-4.1.3\\_variables.scss"
+			],
+			[
+				"jumb",
+				"assets\\scss\\vendor\\bootstrap.override\\_jumbotron.override.scss"
+			],
+			[
+				"kitchen",
+				"assets\\scss\\vendor\\bootstrap.override\\_kitchensink.scss"
+			],
+			[
+				"index.scss",
+				"assets\\scss\\index.scss"
+			],
+			[
+				"setup.scss",
+				"assets\\scss\\_setup.scss"
+			],
+			[
+				"setup",
+				"assets\\scss\\_setup.scss"
+			],
+			[
+				"colors.scss",
+				"assets\\scss\\base\\_colors.scss"
+			],
+			[
+				"colors scss",
+				"mods to node-styleguid\\nucleus-styleguide\\assets\\styles\\nuclides\\colors.scss"
+			],
 			[
 				"confi",
 				"config.nucleus.json"
@@ -2096,18 +2967,6 @@
 				"gruntfile.js"
 			],
 			[
-				"jumb",
-				"assets\\scss\\vendor\\bootstrap.override\\_jumbotron.override.scss"
-			],
-			[
-				"",
-				"assets\\scss\\base\\_lists.scss"
-			],
-			[
-				"button",
-				"mods to node-styleguid\\nucleus-styleguide\\assets\\styles\\molecules\\buttons.scss"
-			],
-			[
 				"helpfl",
 				"assets\\scss\\helpers\\_flex.scss"
 			],
@@ -2116,24 +2975,12 @@
 				"assets\\scss\\component\\_nav-sub.scss"
 			],
 			[
-				"setup",
-				"assets\\scss\\_setup.scss"
-			],
-			[
 				"color",
 				"assets\\scss\\base\\_colors.scss"
 			],
 			[
-				"cqc",
-				"assets\\scss\\structure\\_cqc.scss"
-			],
-			[
 				"indexscss",
 				"assets\\scss\\index.scss"
-			],
-			[
-				"index.scss",
-				"cvquality\\assets\\scss\\index.scss"
 			],
 			[
 				"nav-pill",
@@ -2196,10 +3043,6 @@
 				"assets\\scss\\vendor\\bootstrap.override\\_custom.scss"
 			],
 			[
-				"custom",
-				"assets\\scss\\vendor\\bootstrap.override\\_custom.scss"
-			],
-			[
 				"index",
 				"assets\\scss\\index.scss"
 			],
@@ -2238,10 +3081,6 @@
 			[
 				"collapse",
 				"assets\\scss\\vendor\\bootstrap.override\\_collapse.override.scss"
-			],
-			[
-				"address",
-				"assets\\scss\\component\\_address.scss"
 			],
 			[
 				"nav-sub",
@@ -2308,14 +3147,6 @@
 				".sass-cache\\79c50d697742f97fc26abd9806e1b64aa8267bf1\\_collapse.override.scssc"
 			],
 			[
-				"colla",
-				"assets\\scss\\vendor\\bootstrap.override\\_collapse.override.scss"
-			],
-			[
-				"toolkit",
-				"assets\\scss\\component\\_toolkit-sublisting.scss"
-			],
-			[
 				"assement",
 				"assets\\scss\\shame\\_assessment.scss"
 			],
@@ -2330,10 +3161,6 @@
 			[
 				"mapscss",
 				"assets\\scss\\component\\_map.scss"
-			],
-			[
-				"caro",
-				"assets\\scss\\component\\_carousel.scss"
 			],
 			[
 				"index.css",
@@ -2468,10 +3295,6 @@
 				"assets\\scss\\structure\\_page.scss"
 			],
 			[
-				"custom.scs",
-				"assets\\scss\\vendor\\bootstrap.override\\_custom.scss"
-			],
-			[
 				"asstyograph",
 				"assets\\scss\\base\\_typography.scss"
 			],
@@ -2526,74 +3349,6 @@
 			[
 				"fontki",
 				"assets\\scss\\base\\_fonts.kitchensink.scss"
-			],
-			[
-				"cardss",
-				"assets\\scss\\component\\_card.scss"
-			],
-			[
-				"fonts",
-				"assets\\scss\\base\\_fonts.scss"
-			],
-			[
-				"strupage",
-				"assets\\scss\\structure\\_page.scss"
-			],
-			[
-				"colorsscss",
-				"assets\\scss\\base\\_colors.scss"
-			],
-			[
-				"button.scss",
-				"assets\\scss\\component\\_button.scss"
-			],
-			[
-				"media.scss",
-				"assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\_media.scss"
-			],
-			[
-				"progress",
-				"assets\\scss\\vendor\\bootstrap.override\\_progress-bar.override.scss"
-			],
-			[
-				"typography",
-				"node_modules\\nucleus-styleguide\\assets\\styles\\atoms\\typography.scss"
-			],
-			[
-				"customscss",
-				"assets\\scss\\vendor\\bootstrap.override\\_custom.scss"
-			],
-			[
-				"kitchensink",
-				"assets\\scss\\vendor\\bootstrap\\_kitchensink.scss"
-			],
-			[
-				"setup.scss",
-				"assets\\scss\\_setup.scss"
-			],
-			[
-				"varables",
-				"assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\_variables.scss"
-			],
-			[
-				"header.scs",
-				"assets\\scss\\structure\\_header.scss"
-			],
-			[
-				"searchbar",
-				"assets\\scss\\component\\_searchbar.scss"
-			],
-			[
-				"panel",
-				"assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\_panels.scss"
-			],
-			[
-				"variscss",
-				"assets\\scss\\vendor\\bootstrap-sass-3.3.7\\sass\\bootstrap\\_variables.scss"
-			],
-			[
-				"breadcrub",
-				"assets\\scss\\vendor\\bootstrap.override\\_breadcrumbs.override.scss"
 			]
 		],
 		"width": 0.0
@@ -2624,7 +3379,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 639.0,
+	"side_bar_width": 263.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

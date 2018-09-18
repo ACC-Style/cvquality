@@ -27,7 +27,6 @@
 
 address.vcard {
     @include font(normal);
-
     font-size: ms(-1);
     color: $off-black;
     margin-bottom: 0;
@@ -142,8 +141,8 @@ address.vcard {
         @include font(bold);
       }  
       .email, .tel {
-        @include button-variant($off-black, $off-white, $warm-grey-dark);
-        @include button-size($padding-xs-horizontal, $padding-xs-vertical, ms(-1), 1, 0.2rem);
+        @extend .btn;
+        @extend .btn-sm;
         border-width: 1px;
         border-style: solid;
         width: 48%;

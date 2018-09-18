@@ -141,3 +141,27 @@ body {
 
 
     .SG-toc>ul>li,.SG-toc>ul>li ul{line-height:1.5}
+
+
+    // Bootstrap Extras for Kitchen Sink.
+    .container.example  {border:1px solid #563d7c;}
+
+.example {border:1px solid #ccc;}
+.example .col {border:1px solid rgba(0,0,0,.2);}
+
+.container-fluid > h2 {margin:2rem 0;background:#e2e2e2;padding:.5rem;}
+
+
+
+
+.col-sm-6 > h3 {margin:2em 0 1em 0;
+  /*
+  border-bottom:1px solid #ccc;
+  */
+  padding-bottom:.5em;
+
+  
+}
+
+.container-fluid {padding:2em;}
+.demo-border {border:5px solid #563d7c;display: inline-block;height:100px;width:100px;background:#e2e2e2;padding:1rem;font-size:12px;margin:.5rem;}

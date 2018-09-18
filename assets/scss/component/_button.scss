@@ -23,6 +23,8 @@
 .btn.btn-link{
     background:none transparent;
     border:none transparent 0px;
+    color: $scrub-teal;
+    &:hover{color: $scrub-teal-dark;}
 }
 .btn.btn-outline-primary,.btn.btn-outline-secondary{
     background:none transparent;
@@ -48,13 +50,18 @@
     }
 }
 
-.btn.btn-secondary,.btn.btn-default{
+.btn.btn-secondary{
     @include warmgrey-gradient;
     &:visited, &{color:$off-black;}
 
     &:hover,&:active,&:focus{@include warmgrey-gradient-reverse;color:#000;}
 }
+.btn.btn-default{
+    @include orange-gradient;
+    &:visited, &{color:$off-black;}
 
+    &:hover,&:active,&:focus{@include orange-gradient-reverse;color:#000;}
+}
 .btn.btn-primary {
     @include teal-gradient;
     &:visited{color:$off-white;}
