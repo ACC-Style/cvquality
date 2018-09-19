@@ -26,7 +26,7 @@
       "selectors": [ ".SG-component__preview"  ],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold": 10,
+      "misMatchThreshold": 20,
       "requireSameDimensions": true
     },
     {
@@ -47,7 +47,7 @@
       ],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold": 0.1,
+      "misMatchThreshold": 20,
       "requireSameDimensions": true
     }, 
     {
@@ -66,7 +66,7 @@
       "selectors": [ ".SG-component__preview"  ],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold": 0.1,
+      "misMatchThreshold": 20,
       "requireSameDimensions": true
     }
   ],
