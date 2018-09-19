@@ -140,6 +140,38 @@ new dom and structure of the carousel
 	* \CVQuality\Mvc\Views\SlideShowWidget\Default.cshtml
 
 ## Card Footer and Card Action
-The containers now have a subtle differnce where .card-action has mor padding and makes buttons larger by default. 
+The containers now have a subtle differnce where .card-action has mor padding and makes buttons larger by default. DOM changes in all cards depending on the design. 
 
+	* *Uses both*
 	* \CVQuality\Mvc\Views\Event\Default.cshtml
+	* *Uses .card-action*
+	* Notice Cards
+	* *Uses .card-footer*
+	* Basic Cards, Highlight Cards, Info, Product Card Etc. 
+
+
+
+
+## Img-Thumbnail Moidfiers have Changed. 
+All images that used img-thumbnail in conjunction with .img-circle or .img-radius now use .rounded-circle .rounded
+
+	* *All places were images are used.*
+	* Events
+	* Testimonials
+	* Infographics
+
+## Input Group 	
+
+### input-group-addon is now input-group-prepend
+### All text inside of an append or prepend must be wrapped in a span of input-group-text to align and space properly. 
+### input-group-btn is now input-group-append or input-group-prepend
+there also a usage of using the margin utility modifiers to alter the position to align correctly. 
+	
+	* Search Bar and any multi grouped form elements. 
+
+## Boxes now a have a default centering so Accred Address now need and overriding class accred-address to align text to the left. 
+
+## Images No longer have a default width of width 100%
+adding the utility class w-100 will add width 100% when needed.
+
+

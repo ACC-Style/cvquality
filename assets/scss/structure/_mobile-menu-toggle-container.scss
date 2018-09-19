@@ -70,6 +70,6 @@
     }
     @include bp(sm){
         display: none;
-        &.show-mobile{display:block;}
+        &.show-mobile{display:flex;}
     }
 }

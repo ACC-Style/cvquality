@@ -21,7 +21,11 @@ body {
 
 .SG-header {
     padding: 0;
-    margin-bottom:2rem;
+    margin-bottom:2rem;    
+    top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1000;
     .SG-logo {
         margin-top: 0;
         padding: 11px 16px 0px;
@@ -31,6 +35,7 @@ body {
         background-color: $acc-blue;
     }
     .SG-nav {
+         background: white;
         background-color: grey(5);
         position: relative;
         margin: 0;

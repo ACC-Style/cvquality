@@ -26,7 +26,7 @@
       "selectors": [ ".SG-component__preview"  ],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold": 0.1,
+      "misMatchThreshold": 10,
       "requireSameDimensions": true
     },
     {

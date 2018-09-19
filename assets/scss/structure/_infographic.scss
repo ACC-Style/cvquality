@@ -1,7 +1,7 @@
 // most infographics are lists this is the reset to move the list into 
 .infographic{
 	.container, .node{
-		list-style-type: none;
+		list-style-type: none;list-style: none;
 		margin:0;
 		padding:0;
 	}

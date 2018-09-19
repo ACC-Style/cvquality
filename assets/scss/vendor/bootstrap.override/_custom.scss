@@ -152,3 +152,14 @@ $card-cap-bg:                       transparent;
 $card-bg:                           $white;
 
 
+
+// Progress bars
+
+$progress-height:                   1.25rem;
+$progress-font-size:                ($font-size-base * .8);
+$progress-bg:                       $soft-grey;
+$progress-box-shadow:               inset 0 .1rem .1rem rgba($black, .25);
+$progress-bar-color:                $white;
+$progress-bar-bg:                   theme-color("primary");
+$progress-bar-animation-timing:     1s linear infinite;
+$progress-bar-transition:           width .6s ease;

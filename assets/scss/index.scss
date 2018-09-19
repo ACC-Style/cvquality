@@ -32,7 +32,6 @@
 
 
 @import "component/card";
-// !Todo Fix for 4.0 upgrade
 @import "component/button";
 
 @import "component/user-status-container";
@@ -43,14 +42,13 @@
 @import "component/ads";
 @import "component/searchbar";
 // !Todo Fix for 4.0 upgrade
-// @import "component/toolkit";
+@import "component/toolkit";
 @import "component/charts";
 @import "component/map";
 @import "component/webinar";
 
 /* Legacy Support */ 
 @import "component/assessment";
-//@import "shame/assessment";
 
 /* Footer */
 @import "component/address";
@@ -63,7 +61,7 @@
 // @import "component/carousel";
 
 // !Todo Fix for 4.0 upgrade
-// @import "structure/infographic";
+@import "structure/infographic";
 @import "structure/infographic/timeline";
 /*! Layouts */
 @import "structure/page";

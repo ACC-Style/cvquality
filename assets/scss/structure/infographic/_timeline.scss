@@ -88,9 +88,9 @@
                 height: 0;
                 border-style: solid;
                 top: 0;
-                left: -25px;
+                left: -24px;
                 border-color: transparent  $scrub-teal-dark transparent transparent;
-                border-width: .875em 25px .875em 0;
+                border-width: .975em 25px .975em 0;
 
             }
         }
@@ -99,7 +99,7 @@
 			float: right;
 			padding-top: 23px;
 			}
-		.circle-img-badge {float:left;}
+		.circle-img-badge {@extend .rounded-circle; float:left;}
         &:nth-child(4n+1) {
             .circle-img-badge {
                 background-color: $primary-color-light;
@@ -141,9 +141,9 @@
 
                     &:before {
                     	left: auto;
-                        right: -25px;
+                        right: -24px;
                         border-color: transparent transparent transparent $scrub-teal-dark;
-                        border-width: .875em 0 .875em 25px;
+                        border-width: .975em 0 .975em 25px;
                     }
                 }
             }

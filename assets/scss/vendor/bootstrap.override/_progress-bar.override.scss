@@ -23,8 +23,12 @@
 	}
 	&.bg-secondary{
 		background-color: $warm-grey-dark !important;
+
 	}
 }
+.progress{ }
+.progress.dark{background-color: $warm-grey-dark;}
+.progress.light{background-color: $white;}
 
 /**
 * show the completion or loading progress of a task or system.

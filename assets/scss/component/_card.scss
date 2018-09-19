@@ -802,7 +802,7 @@
 * @markup
 *  <div class="card product">
 *    <header class="card-header">
-*       <img src="https://cvquality.acc.org/images/default-source/accreditation/afbutton.jpg?sfvrsn=f32980bf_2" alt="" class="mapseal">
+*       <img class="w-100" src="https://cvquality.acc.org/images/default-source/accreditation/afbutton.jpg?sfvrsn=f32980bf_2" alt="" class="mapseal">
 *    </header>
 *    <div class="card-body">
 *      <article>
@@ -816,7 +816,7 @@
 */
 .card.product{
     .card-header{margin-bottom:0; background-color:$warm-grey-light;}
-    .card-header img{max-height:200px; width:auto;margin:0 auto; padding:10px 0;}
+    .card-header img{max-height:200px; width:auto;margin:0 auto; padding:10px 0; width:100%}
 }
 
 
@@ -855,7 +855,7 @@
 * The box is by default white add the ".alt" class to make it grey and remove the boarders.
 *
 * @molecule Box Alt
-* @section Box > Box
+* @section Box > Box Alt
 * @markup
 *  <div class="box alt">
 *     <h3>Past Box</h3>
@@ -870,7 +870,7 @@
 *                         <option value="">@{lipsum:3:words}</option>
 *                         <option value="">@{lipsum:3:words}</option>
 *                     </select>
-*         <span class="input-group-btn">
+*         <span class="input-group-prepend">
 *           <button type="submit" class="btn btn-primary expanded">Go</button>      
 *         </span>
 *                 </div>

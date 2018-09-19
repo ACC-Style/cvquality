@@ -6,23 +6,23 @@
  * @markup
  *  <div class="searchbar">
  *  	<div class="input-group input-group-sm">
- *			<span class="input-group-addon"><i class="fa fa-search"></i></span>
+ *			<div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-search"></i></span></div>
  *			<input type="text" class="form-control" aria-label="Search" placeholder="Search...">
- *			<span class="input-group-btn">
- *				<input class="btn btn-primary" type="submit">Search</input>
+ *			<span class="input-group-append">
+ *				<input class="btn btn-primary" type="submit" value="Search"/>
  *			</span>
  *		</div>
  *	</div>
  *
  */
 .searchbar{
-	.input-group-addon,input,.input-group-btn{
+	.input-group-prepend,input,.input-group-btn{
 		border-color:$scrub-teal;
 	}
-	.input-group-addon.btn.btn-primary{
+	.input-group-append .btn.btn-primary{
 		color:white;
 	}
-	.input-group-addon{
+	.input-group-prepend{
 		background-color:$soft-blue;
 		color:$scrub-teal;
 		border-radius:2px;
