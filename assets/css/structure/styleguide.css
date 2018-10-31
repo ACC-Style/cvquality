@@ -1,31 +1,23 @@
 /* Styleguide */
 #styleguide {
   margin-top: 2em;
-  width: 100%;
-}
-#styleguide > tbody > tr:nth-child(2n) {
-  background: none repeat scroll 0 0 #ECECEC;
-}
-#styleguide > tbody > tr > td {
-  padding: 1em;
-  vertical-align: top;
-}
-#styleguide .styleguide-example {
-  width: 40%;
-}
-#styleguide .styleguide-code {
-  width: 35%;
-}
-#styleguide .styleguide-style {
-  width: 25%;
-}
-#styleguide textarea {
-  height: 100%;
-  width: 100%;
-}
-#styleguide caption {
-  padding-bottom: 2em;
-  text-align: left;
-}
+  width: 100%; }
+  #styleguide > tbody > tr:nth-child(2n) {
+    background: none repeat scroll 0 0 #ECECEC; }
+  #styleguide > tbody > tr > td {
+    padding: 1em;
+    vertical-align: top; }
+  #styleguide .styleguide-example {
+    width: 40%; }
+  #styleguide .styleguide-code {
+    width: 35%; }
+  #styleguide .styleguide-style {
+    width: 25%; }
+  #styleguide textarea {
+    height: 100%;
+    width: 100%; }
+  #styleguide caption {
+    padding-bottom: 2em;
+    text-align: left; }
 
-/*# sourceMappingURL=assets/css/structure/styleguide.css.map */
+/*# sourceMappingURL=styleguide.css.map */
