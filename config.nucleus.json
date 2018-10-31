@@ -1,5 +1,5 @@
 {
-    "title": "ACC | CardioSmart",
+    "title": "ACC | CardioSmart (Bootstrap 4)",
     "files": ["assets/scss/**/*.scss"],
     "target": "docs",
     "css": [
