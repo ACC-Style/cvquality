@@ -1,51 +1,51 @@
-// XLarge grid
-//
-// Columns, offsets, pushes, and pulls for the x-large desktop device range.
-@mixin calc-grid-column-dynamic($index, $class, $type, $max-column) {
-  @if ($type == width) and ($index > 0) {
-    .col-#{$class}-#{$index} {
-      width: percentage(($index / 16));
-    }
-  }
-  @if ($type == push) and ($index > 0) {
-    .col-#{$class}-push-#{$index} {
-      left: percentage(($index / 16));
-    }
-  }
-  @if ($type == push) and ($index == 0) {
-    .col-#{$class}-push-0 {
-      left: auto;
-    }
-  }
-  @if ($type == pull) and ($index > 0) {
-    .col-#{$class}-pull-#{$index} {
-      right: percentage(($index / 16));
-    }
-  }
-  @if ($type == pull) and ($index == 0) {
-    .col-#{$class}-pull-0 {
-      right: auto;
-    }
-  }
-  @if ($type == offset) {
-    .col-#{$class}-offset-#{$index} {
-      margin-left: percentage(($index / 16));
-    }
-  }
-}
+// // XLarge grid
+// //
+// // Columns, offsets, pushes, and pulls for the x-large desktop device range.
+// @mixin calc-grid-column-dynamic($index, $class, $type, $max-column) {
+//   @if ($type == width) and ($index > 0) {
+//     .col-#{$class}-#{$index} {
+//       width: percentage(($index / 16));
+//     }
+//   }
+//   @if ($type == push) and ($index > 0) {
+//     .col-#{$class}-push-#{$index} {
+//       left: percentage(($index / 16));
+//     }
+//   }
+//   @if ($type == push) and ($index == 0) {
+//     .col-#{$class}-push-0 {
+//       left: auto;
+//     }
+//   }
+//   @if ($type == pull) and ($index > 0) {
+//     .col-#{$class}-pull-#{$index} {
+//       right: percentage(($index / 16));
+//     }
+//   }
+//   @if ($type == pull) and ($index == 0) {
+//     .col-#{$class}-pull-0 {
+//       right: auto;
+//     }
+//   }
+//   @if ($type == offset) {
+//     .col-#{$class}-offset-#{$index} {
+//       margin-left: percentage(($index / 16));
+//     }
+//   }
+// }
 
-// [converter] This is defined recursively in LESS, but Sass supports real loops
-@mixin loop-grid-columns-dynamic($columns, $class, $type) {
-  @for $i from 0 through $columns {
-    @include calc-grid-column-dynamic($i, $class, $type, $columns);
-  }
-}
+// // [converter] This is defined recursively in LESS, but Sass supports real loops
+// @mixin loop-grid-columns-dynamic($columns, $class, $type) {
+//   @for $i from 0 through $columns {
+//     @include calc-grid-column-dynamic($i, $class, $type, $columns);
+//   }
+// }
 
 
-@media (min-width: $screen-xl-min) {
-  @include float-grid-columns(xl);
-  @include loop-grid-columns-dynamic(16, xl, width);
-  @include loop-grid-columns-dynamic(16, xl, pull);
-  @include loop-grid-columns-dynamic(16, xl, push);
-  @include loop-grid-columns-dynamic(16, xl, offset);
-}
+// @media (min-width: $screen-xl-min) {
+//   @include float-grid-columns(xl);
+//   @include loop-grid-columns-dynamic(16, xl, width);
+//   @include loop-grid-columns-dynamic(16, xl, pull);
+//   @include loop-grid-columns-dynamic(16, xl, push);
+//   @include loop-grid-columns-dynamic(16, xl, offset);
+// }

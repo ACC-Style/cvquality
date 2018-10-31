@@ -4,75 +4,88 @@
 * @molecule Bootstrap Forms
 * @section Bootstrap > Forms
 * @markup
-*  <div class="panel panel-default" id="forms">
-*  	<div class="panel-heading">Forms
-*  	</div>
-*  	<div class="panel-body">
-*  		<form>
-*  			<fieldset>
-*  				<legend>Legend</legend>
-*  				<div class="form-group">
-*  					<label for="exampleInputEmail10">Email address</label> <input type="text" class="form-control" id="exampleInputEmail10" placeholder="Enter email">
-*  				</div>
-*  				<div class="form-group">
-*  					<label for="exampleInputPassword">Password</label> <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
-*  				</div>
-*  				<div class="form-group">
-*  					<label for="exampleInputFile">File input</label> <input type="file" id="exampleInputFile">
-*  					<p class="help-block">Example block-level help text here.</p>
-*  				</div>
-*  				<div class="checkbox">
-*  					<label> <input type="checkbox">Check me out</label>
-*  				</div>
-*  				<button type="submit" class="btn btn-default">Submit</button>
-*  			</fieldset>
-*  		</form>
-*  		<hr>
-*  		<form class="form-inline">
-*  			<input type="text" class="form-control" placeholder="Email" style="width: 200px;"> <input type="password" class="form-control" placeholder="Password" style="width: 200px;">
-*  			<div class="checkbox">
-*  				<label> <input type="checkbox">Remember me</label>
-*  			</div>
-*  			<button type="submit" class="btn btn-default">Sign in</button>
-*  		</form>
-*  		<hr>
-*  		<form class="form-horizontal">
-*  			<div class="form-group">
-*  				<label for="inputEmail11" class="col-lg-2 control-label">Email</label>
-*  				<div class="col-lg-10">
-*  					<input type="text" class="form-control" id="inputEmail11" placeholder="Email">
-*  				</div>
-*  			</div>
-*  			<div class="form-group has-warning">
-*  				<label for="inputEmail12" class="col-lg-2 control-label">Email</label>
-*  				<div class="col-lg-10">
-*  					<input type="text" class="form-control" id="inputEmail12" placeholder="Email">
-*  				</div>
-*  			</div>
-*  			<div class="form-group has-error">
-*  				<label for="inputEmail" class="col-lg-2 control-label">Email</label>
-*  				<div class="col-lg-10">
-*  					<input type="text" class="form-control" id="inputEmail" placeholder="Email">
-*  				</div>
-*  			</div>
-*  			<div class="form-group has-success">
-*  				<label for="inputEmail13" class="col-lg-2 control-label">Email</label>
-*  				<div class="col-lg-10">
-*  					<input type="text" class="form-control" id="inputEmail13" placeholder="Email">
-*  				</div>
-*  			</div>
-*  			<div class="form-group">
-*  				<label for="inputPassword" class="col-lg-2 control-label">Password</label>
-*  				<div class="col-lg-10">
-*  					<input type="password" class="form-control" id="inputPassword" placeholder="Password">
-*  					<div class="checkbox">
-*  						<label> <input type="checkbox">Remember me</label>
-*  					</div>
-*  					<button type="submit" class="btn btn-default">Sign in</button>
-*  				</div>
-*  			</div>
-*  		</form>
-*  	</div>
-*  </div>
+* 		<div class="box" id="forms">
+* 			<div >Forms
+* 			</div>
+* 			<div >
+* 				<form>
+* 					<fieldset>
+* 						<legend>Legend</legend>
+* 						<div class="form-group">
+* 							<label for="exampleInputEmail10">Email address</label> <input type="text" class="form-control" id="exampleInputEmail10" placeholder="Enter email">
+* 						</div>
+* 						<div class="form-group">
+* 							<label for="exampleInputPassword">Password</label> <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+* 						</div>
+* 						<div class="custom-file">
+* 						  <input type="file" class="custom-file-input" id="customFile">
+* 						  <label class="custom-file-label" for="customFile">Choose file</label>
+* 						</div>
+* 						<div class="form-check">
+* 							<input type="checkbox" class="form-check-input" id="CheckMeOut"><label class="form-check-label" for="CheckMeOut"> Check me out</label>
+* 						</div>
+* 						<button type="submit" class="btn btn-default">Submit</button>
+* 					</fieldset>
+* 				</form>
+* 				<hr>
+* 				<form class="form-inline">
+* 					<label class="sr-only" for="inlineFormInputName2">Name</label>
+* 					<input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
+* 					<label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+* 					<div class="input-group mb-2 mr-sm-2">
+* 						<div class="input-group-prepend">
+* 							<div class="input-group-text">@</div>
+* 						</div>
+* 						<input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
+* 					</div>
+* 					<div class="form-check mb-2 mr-sm-2">
+* 						<input class="form-check-input" type="checkbox" id="inlineFormCheck">
+* 						<label class="form-check-label" for="inlineFormCheck">
+* 							Remember me
+* 						</label>
+* 					</div>
+* 					<button type="submit" class="btn btn-primary mb-2">Submit</button>
+* 				</form>
+* 				<hr>
+* 				<form class="form-horizontal">
+* 					<div class="form-group row">
+* 						<label for="inputEmail11" class="col-lg-2 control-label">Email</label>
+* 						<div class="col-lg-10">
+* 							<input type="text" class="form-control" id="inputEmail11" placeholder="Email">
+* 						</div>
+* 					</div>
+* 					<div class="form-group row ">
+* 						<label for="inputEmail" class="col-lg-2 control-label">Email</label>
+* 						<div class="col-lg-10">
+* 							<input type="text" class="form-control is-invalid" id="inputEmail" placeholder="Email" value="email@email">
+* 							<div class="invalid-feedback">
+* 								Email not formated.
+* 							</div>
+* 						</div>
+* 					</div>
+* 					<div class="form-group row has-success">
+* 						<label for="inputEmail13" class="col-lg-2 control-label">Email</label>
+* 						<div class="col-lg-10">
+* 							<input type="text" class="form-control is-valid" id="inputEmail13" placeholder="Email" value="email@email.com">
+* 							<div class="valid-feedback">
+* 								Thank you!
+* 							</div>
+* 						</div>
+* 					</div>
+* 					<div class="form-group row">
+* 						<label for="inputPassword" class="col-lg-2 control-label">Password</label>
+* 						<div class="col-lg-10">
+* 							<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+* 							<div class="row mt-2">
+* 								<div class="form-check">
+* 									<input type="checkbox" class="form-check-input" id="RememberMe"><label class="form-check-label" for="RememberMe">Remember Me</label>
+* 								</div></div><div class="row mt-2">
+* 								<button type="submit" class="btn btn-default">Sign in</button>
+* 							</div>
+* 						</div>
+* 					</div>
+* 				</form>
+* 			</div>
+* 		</div>
 **/
 .form-kitchensink{}

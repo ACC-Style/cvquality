@@ -26,8 +26,8 @@
       "selectors": [ ".SG-component__preview"  ],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold": 10,
-      "requireSameDimensions": false
+      "misMatchThreshold": 20,
+      "requireSameDimensions": true
     },
     {
       "label": "Molecules",
@@ -47,8 +47,8 @@
       ],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold": 10,
-      "requireSameDimensions": false
+      "misMatchThreshold": 20,
+      "requireSameDimensions": true
     }, 
     {
       "label": "Structures",
@@ -66,8 +66,8 @@
       "selectors": [ ".SG-component__preview"  ],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold": 10,
-      "requireSameDimensions": false
+      "misMatchThreshold": 20,
+      "requireSameDimensions": true
     }
   ],
   "paths": {

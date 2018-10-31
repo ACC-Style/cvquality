@@ -5,24 +5,30 @@
 * @section Advanced Containers > Progress Bar
 * @modifiers
 *  progress-bar-striped decorate the bar with a diagonal stripe to the progress bar
-*  active animate the strips to show action
-*  progress-bar-primary color the bar to blue
-*  progress-bar-secondary color the bar to dark grey
+*  progress-bar-animated animate the strips to show action
+*  bg-primary color the bar to blue
+*  bg-secondary color the bar to dark grey
+*
 * @markup
 *  <div class="progress">
-*    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+*    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
 *  </div>
 */
 
 .progress-bar{
-	.active{}
-	&.progress-bar-primary{
-		background-color: $scrub-teal;
+	background-color: $primary;
+	.progress-bar-animated{}
+	&.bg-primary{
+		background-color: $scrub-teal !important;
 	}
-	&.progress-bar-secondary{
-		background-color: $warm-grey-dark;
+	&.bg-secondary{
+		background-color: $warm-grey-dark !important;
+
 	}
 }
+.progress{ }
+.progress.dark{background-color: $warm-grey-dark;}
+.progress.light{background-color: $white;}
 
 /**
 * show the completion or loading progress of a task or system.
@@ -31,10 +37,12 @@
 * @section Advanced Containers > Progress Bar
 * @markup
 *  <div class="progress">
-*    <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="@{lipsum:2:numbers}" aria-valuemin="0" aria-valuemax="100" style="width: @{lipsum:2:numbers}%">xx%</div>
+*    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="@{lipsum:2:numbers}" aria-valuemin="0" aria-valuemax="100" style="width: @{lipsum:2:numbers}%">xx%</div>
 *  </div>
 */
-.progress-bar-primary{}
+
+.progress-bar.bg-primary{}
+
 /**
 * Progress bars can be stacked to show levels of completion.
 *
@@ -42,21 +50,21 @@
 * @section Advanced Containers > Progress Bar
 * @markup
 *  <div class="progress">
-*    <div class="progress-bar progress-bar-success" style="width: 35%">
+*    <div class="progress-bar bg-success" style="width: 35%">
 *      <span class="sr-only">35% Complete (success)</span>
 *    </div>
-*    <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
+*    <div class="progress-bar bg-warning progress-bar-striped" style="width: 20%">
 *      <span class="sr-only">20% Complete (warning)</span>
 *    </div>
-*    <div class="progress-bar progress-bar-danger" style="width: 10%">
+*    <div class="progress-bar bg-danger" style="width: 10%">
 *      <span class="sr-only">10% Complete (danger)</span>
 *    </div>
-*  </div>><br/>
-*  <div class="progress">
-*    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
 *  </div><br/>
 *  <div class="progress">
-*    <div class="progress-bar progress-bar-secondary progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+*    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+*  </div><br/>
+*  <div class="progress">
+*    <div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
 *  </div>
 **/
 

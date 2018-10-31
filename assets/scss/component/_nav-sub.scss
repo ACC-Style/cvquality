@@ -9,36 +9,36 @@
  *      <h2 class="nav-sub-img">@{lipsum:3:words}</h2>
  *      <ul class="nav">
  *          <li class="nav-item parent active current">
- *            <a class="nav-link" ><i class="fa fa-holder toggle"></i>@{lipsum:3:words}</a>
+ *            <a href="" class="nav-link" ><i class="fa fa-holder toggle"></i>@{lipsum:3:words}</a>
  *                  <ul class="nav flex-column">
- *                  <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
- *                  <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *                  <li class="nav-item"><a href="" class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *                  <li class="nav-item"><a href="" class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
  *                  <li class="nav-item parent active current">
- *                      <a class="nav-link" ><i class="fa fa-holder toggle"></i>@{lipsum:1:words}</a>
+ *                      <a href="" class="nav-link" ><i class="fa fa-holder toggle"></i>@{lipsum:1:words}</a>
  *                       <ul class="nav flex-column">
- *                           <li class="nav-item "><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
- *                           <li class="nav-item current"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:3:words}</a></li>
+ *                           <li class="nav-item "><a href="" class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *                           <li class="nav-item current"><a href="" class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:3:words}</a></li>
  *                           <li class="nav-item parent active current">
- *                              <a class="nav-link" ><i class="fa fa-holder toggle"></i>@{lipsum:1:words}</a>
+ *                              <a href="" class="nav-link" ><i class="fa fa-holder toggle"></i>@{lipsum:1:words}</a>
  *                              <ul class="nav flex-column">
- *                                  <li class="nav-item "><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
- *                                  <li class="nav-item current"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:3:words}</a></li>
- *                                  <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *                                  <li class="nav-item "><a  class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *                                  <li class="nav-item current"><a  class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:3:words}</a></li>
+ *                                  <li class="nav-item"><a  class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
  *                              </ul>
  *                           </li>
  *                       </ul>
  *                  </li>
  *              </ul>
  *          </li>
- *          <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
- *          <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:3:words}</a></li>
- *          <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *          <li class="nav-item"><a  class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *          <li class="nav-item"><a  class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:3:words}</a></li>
+ *          <li class="nav-item"><a  class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
  *          <li class="nav-item parent">
- *              <a class="nav-link" ><i class="fa fa-holder toggle"></i>@{lipsum:5:words}</a>
+ *              <a href="" class="nav-link" ><i class="fa fa-holder toggle"></i>@{lipsum:5:words}</a>
  *               <ul class="nav flex-column">
- *                   <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
- *                   <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:3:words}</a></li>
- *                   <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *                   <li class="nav-item"><a  class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
+ *                   <li class="nav-item"><a  class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:3:words}</a></li>
+ *                   <li class="nav-item"><a  class="nav-link" href=""><i class="fa fa-holder toggle"></i>@{lipsum:2:words}</a></li>
  *               </ul>
  *          </li>
  *      </ul>

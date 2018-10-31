@@ -1,11 +1,3 @@
-    html,
-    body {
-        @include font;
-        color: #333;
-        font-size:ms(1);
-        line-height: 1.4rem;
-    }
-
 /**
 * @atom Headline Tags
 * @section Typography > Headers
@@ -47,9 +39,19 @@
         }
         &.inline{display:inline;}
     }
+    %major-header-margin{
+        margin-top:24px;
+        margin-bottom: 12px;
+    }
+    %minor-header-margin{
+        margin-top:12px;
+        margin-bottom: 12px;
+    }
+
     
-    h1 {
+    h1,.h1 {
         @extend %header-link;
+        @extend %major-header-margin;
         @include font-display("light");
         color: $primary-color-dark;
         &.display-4{ font-size:ms(7, $ms-base, $ms-ratio-4);}
@@ -58,8 +60,9 @@
         &.display-4,&.display-3,&.display-2{font-weight:100;}       
     }
 
-    h2 {
+    h2,.h2 {
         @extend %header-link;
+        @extend %major-header-margin;
         @include font-display("light");
         color: $primary-color-dark;
         &.display-4{ font-size:ms(5, $ms-base, $ms-ratio-4);}
@@ -68,8 +71,9 @@
         &.display-4,&.display-3,&.display-2{font-weight:100;}  
     }
 
-    h3 {
+    h3,.h3 {
         @extend %header-link;
+        @extend %major-header-margin;
         @include font-display("light");
         color: $primary-color-dark;
         &.display-4{ font-size:ms(3, $ms-base, $ms-ratio-4);}
@@ -77,14 +81,19 @@
         &.display-2{ font-size:ms(3, $ms-base,$ms-ratio-2);} 
          &.display-4,&.display-3,&.display-2{font-weight:100;}   
     }
-    h4 {
+    h4,.h4 {
         @extend %header-link;
+         @extend %minor-header-margin;
         @include font-display("regular");
         color: $warm-grey-dark;
         &.display-4{ font-size:ms(2, $ms-base, $ms-ratio-4);}
         &.display-3{ font-size:ms(2, $ms-base, $ms-ratio-3);}
         &.display-2{ font-size:ms(2, $ms-base,$ms-ratio-2);} 
-         &.display-4,&.display-3,&.display-2{font-weight:300;}   
+        &.display-4,&.display-3,&.display-2{font-weight:300;}   
+    }
+    h5,.h5,h6,.h6{
+         @extend %minor-header-margin;
+
     }
     p{
         &.display-4{ font-size:ms(1, $ms-base, $ms-ratio-4);}
@@ -242,30 +251,27 @@ strong{}
 *  _blank External Link icons will appear after any link that has target blank, or the href begins with http, or https
  */
 
-a.link {
+a.link{
     @extend .icon-before;
-
-    &[href*=".pdf"]:before {
-        content: "\f1c1";
+    &[href$=".pdf"]:before{
+        content: "\f1c1";   
+    }
+    &[href$=".doc"]:before,&[href$=".docx"]:before,&[href$=".txt"]:before{
+            content: "\f016";   
     }
 
-    &[href*=".doc"]:before, &[href*=".docx"]:before, &[href*=".txt"]:before {
-        content: "\f016";
-    }
-
-    &[href*=".zip"]:before {
+    &[href$=".zip"]:before {
         content: "\f1c6";
     }
 
     &[href*=".ppt"]:before, &[href*=".pptx"]:before {
         content: "\f080";
     }
-
-    &[href*=".csv"]:before, &[href*=".xls"]:before, &[href*=".xlsx"]:before {
-        content: "\f0ce";
+    &[href$=".csv"]:before,&[href$=".xls"]:before,&[href$=".xlsx"]:before{
+        content: "\f0ce";   
     }
 
-    &[href*=".mp4"]:before, &[href*=".mov"]:before {
+    &[href$=".mp4"]:before, &[href$=".mov"]:before {
         content: "\f03d";
     }
 

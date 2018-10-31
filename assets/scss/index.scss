@@ -6,9 +6,11 @@
 @import "base/modular-scale-typography";
 @import "base/html";
 @import "helpers/fixes";
+@import "helpers/opacity";
+@import "helpers/gradients";
 @import "base/fonts.kitchensink";
 @import "vendor/bootstrap.override/custom";
-@import "vendor/bootstrap-sass-3.3.7/sass/bootstrap";
+@import "vendor/bootstrap-4.1.3/bootstrap";
 // starts to overide the basic nav decorations
 @import "base/nav-basic";
 @import "vendor/bootstrap.override/grid.override";
@@ -16,7 +18,7 @@
 @import "vendor/bootstrap.override/breadcrumbs.override";
 @import "vendor/bootstrap.override/blockquote.override";
 @import "vendor/bootstrap.override/jumbotron.override";
-
+@import "vendor/bootstrap.override/card.override";
 @import "vendor/bootstrap.override/forms.kitchensink";
 
 @import "base/typography";
@@ -40,6 +42,7 @@
 @import "component/video-player";
 @import "component/ads";
 @import "component/searchbar";
+// !Todo Fix for 4.0 upgrade
 @import "component/toolkit";
 @import "component/charts";
 @import "component/map";
@@ -47,7 +50,6 @@
 
 /* Legacy Support */ 
 @import "component/assessment";
-//@import "shame/assessment";
 
 /* Footer */
 @import "component/address";
@@ -56,8 +58,10 @@
 
 
 /*! Javascript Components */
-@import "component/carousel";
+// !Todo Fix for 4.0 upgrade
+ @import "component/carousel";
 
+// !Todo Fix for 4.0 upgrade
 @import "structure/infographic";
 @import "structure/infographic/timeline";
 /*! Layouts */

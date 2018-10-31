@@ -46,8 +46,9 @@
     .user{
         text-align:right;
         padding: 0.25rem .25rem;
-        span{ 
-            color:$warm-grey;
+        display: inline-block;
+        span {
+            color: $warm-grey;
         }
     }
     
@@ -82,5 +83,11 @@
     .action{
         font-weight: 700;
         text-transform: uppercase;
+    }
+}
+
+.card-header {
+    & .register-link {
+        font-size: 17px;
     }
 }

@@ -1,7 +1,7 @@
 /**
  * Address blocks are well formated micro-format to optimum usage in browsers.
  * @molecule address.vcard
- * @section Content Blocks
+ * @section Content Blocks > Address
  * @flag contained
  *
  * @markup
@@ -27,7 +27,6 @@
 
 address.vcard {
     @include font(normal);
-
     font-size: ms(-1);
     color: $off-black;
     margin-bottom: 0;
@@ -142,8 +141,8 @@ address.vcard {
         @include font(bold);
       }  
       .email, .tel {
-        @include button-variant($off-black, $off-white, $warm-grey-dark);
-        @include button-size($padding-xs-horizontal, $padding-xs-vertical, ms(-1), 1, 0.2rem);
+        @extend .btn;
+        @extend .btn-sm;
         border-width: 1px;
         border-style: solid;
         width: 48%;
@@ -182,13 +181,13 @@ address.vcard {
 /**
  * Accred Boxed Address
  * @molecule Accred Questions
- * @section Content Blocks
+ * @section Content Blocks > Address
  * @flag contained
  *
  * @markup
- *  <div class="box alt">
- *      <h4 class="m-b-0">Questions About Accreditation?</h4>
+ *  <div class="box alt accred-address">
  *      <div class="card-body">
+ *      <h4>Questions About Accreditation?</h4>
  *          <address class="vcard">
  *              <div class="contact">
  *                  <ul class="no-bullets no-indent">
@@ -213,9 +212,11 @@ address.vcard {
  *                <span class="postal-code hidden"></span>
  *              </span>
  *          </address>
- *          <hr class="space"/>
- *          @{include:.nav-social-button.small}
  *      </div>
+ *       <div class="card-footer">@{include:.nav-social-button.small}</div>
  *  </div>
 */
-.accred-address {}
+.accred-address {
+    .card-body{text-align: left !important;}
+    
+}

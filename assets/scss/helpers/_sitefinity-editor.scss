@@ -63,7 +63,7 @@
 }
 // Overrides of Elements
 .sfPageEditor {
-    .accordion .panel-collapse.collapse{
+    .accordion .panel-collapse.collapse, .accordion .panel-collapse {
         display: block !important;
     }
 }
