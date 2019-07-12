@@ -17,7 +17,8 @@
  *   <hr class="divider teal bold m-t-0"/>
  *   </header>
  **/
- .cqc-header{}
+.cqc-header {
+}
 
 /**
  * Header of the practice Dashboard.
@@ -38,18 +39,20 @@
  *  </header>
  *  <hr class="space"/>
  **/
- .practice-dashboard-header{}
-.clinician-overview,.clinician-list-header{
-    .data{
-        @include font('bold');
-        font-size:ms(0);
-        text-align:center;
-        display:block;
-    }
-        .data-holder + .data-holder{
-        border-left:1px dotted white;
-        margin-left:-1px;
-    }
+.practice-dashboard-header {
+}
+.clinician-overview,
+.clinician-list-header {
+  .data {
+    @include font("bold");
+    font-size: ms(0);
+    text-align: center;
+    display: block;
+  }
+  .data-holder + .data-holder {
+    border-left: 1px dotted white;
+    margin-left: -1px;
+  }
 }
 
 /**
@@ -72,7 +75,8 @@
  * 
  * 
  **/
-.clinicians-list-header{}
+.clinicians-list-header {
+}
 /**
  * The overview data of a clinician.
  * 
@@ -117,31 +121,30 @@
  * 
  * 
  **/
-.clinician-overview{
-    border-top:1px solid $scrub-teal-light;
-    border-bottom: 1px solid $warm-grey;
-    background:$soft-blue;
-    .name{margin:.5em 0 .25em;}
-    .data{
-        font-size:ms(4);
-        vertical-align:middle;
-        margin: 1.375em auto;
-        width: 1em;
-    }
+.clinician-overview {
+  border-top: 1px solid $scrub-teal-light;
+  border-bottom: 1px solid $warm-grey;
+  background: $soft-blue;
+  .name {
+    margin: 0.5em 0 0.25em;
+  }
+  .data {
+    font-size: ms(4);
+    vertical-align: middle;
+    margin: 1.375em auto;
+    width: 1em;
+  }
 
-    .id{
-        background-color:white;
-        padding:.25em 0 0;
-    }
-
+  .id {
+    background-color: white;
+    padding: 0.25em 0 0;
+  }
 }
-.more-link{
-    padding:.35rem;
-    margin-top:.75rem;
-    border-top: 1px solid $warm-grey;
+.more-link {
+  padding: 0.35rem;
+  margin-top: 0.75rem;
+  border-top: 1px solid $warm-grey;
 }
-
-
 
 /**
  * The expanded data of a clinician.
@@ -149,7 +152,7 @@
  * @molecule CQC - Clinician Data 
  * @section Xtra > CQC 
  * @markup
- *  <div class="clinician-data row no-gutters">
+ *  <div class="clinician-data row">
  *  <div class="col-12 accordion basic m-b-0">
  *       <div aria-multiselectable="true" class="card" id="accordionboards" role="tablist">
  *               <div class="card-header" id="headingOne" role="tab">
@@ -281,13 +284,23 @@
  *  </div>
  *  </div>
  **/
-.clinician-data{
-    .panel-group .panel{border-radius:0;border:0 none;}
-    .accordion .card-header{border-bottom:$warm-grey 2px solid;border-top:$warm-grey 2px solid;border-radius:0;}
-    .card-body{padding:0;}
-    .card-title{font-size:ms(1);}
+.clinician-data {
+  .panel-group .panel {
+    border-radius: 0;
+    border: 0 none;
+  }
+  .accordion .card-header {
+    border-bottom: $warm-grey 2px solid;
+    border-top: $warm-grey 2px solid;
+    border-radius: 0;
+  }
+  .card-body {
+    padding: 0;
+  }
+  .card-title {
+    font-size: ms(1);
+  }
 }
-
 
 /**
  * the list of clinicians for the clinican dashboard
@@ -308,7 +321,8 @@
  *  </div>
  *     
  */
-.clinicians-list{}
+.clinicians-list {
+}
 
 /**
  * A mirco app inside the cvquality runs the administration of Clinical Quaility Coach.
@@ -339,4 +353,5 @@
  *      </div>
  *  </div>
  */
- .x-cqc-page{}
+.x-cqc-page {
+}

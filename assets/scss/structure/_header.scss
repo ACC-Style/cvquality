@@ -4,7 +4,7 @@
  * @section Page Sections > Header
  *
  * @markup
- *  <header id="header" role="contentinfo" class="row">
+ *  <header id="header" role="contentinfo" class="row mx-0">
  *     <div class="col-md-6">
  *         <h1 class="site-logo"><a href="/" target="_top"><img src="assets/images/qii-logo.png" id="saHeader_imgHeader" alt="Quality Improvement for Institutions"></a></h1>
  *     </div>
@@ -18,62 +18,59 @@
  *  </header>
  *
  */
-#header{
-    
-    .site-logo{ 
-        margin-top:0;
-        margin-bottom:0;
-        padding:.75rem .33rem .5rem;
-        img {
-            height: 110/2 * 1px;
-            width:  470/2 * 1px;
-            max-width: unset;
-        }
-        @include bp(md){   
-            padding:1rem .5rem .75rem;
-            img{
-                height: 110/1.5 * 1px;
-                width: 470/1.5 * 1px;
-               }
-           }
-        @include bp(lg){
-            padding:2rem 1rem 1.5rem;
-            img{
-                height: 110 * 1px;
-                width:470 * 1px;
-            }
-        }
+#header {
+  .site-logo {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0.75rem 0.33rem 0.5rem;
+    img {
+      height: 110/2 * 1px;
+      width: 470/2 * 1px;
+      max-width: unset;
     }
-    .searchbar{
-        max-width:400px; 
-        float:right;
+    @include bp(md) {
+      padding: 1rem 0.5rem 0.75rem;
+      img {
+        height: 110/1.5 * 1px;
+        width: 470/1.5 * 1px;
+      }
     }
-    .actions{
-        margin: 10px 1rem 10px;
-        position: relative;
-        @include bp(md){ min-height: 115px;}
-        @include bp(lg){ min-height: 175px;}
-       
-        
-
+    @include bp(lg) {
+      padding: 2rem 1rem 1.5rem;
+      img {
+        height: 110 * 1px;
+        width: 470 * 1px;
+      }
     }
-    .nav-utility-position,
-    .searchbar-position,
-    .user-status-position{
-        display:block; 
-        clear:both;
-        float:none;
-       
+  }
+  .searchbar {
+    max-width: 400px;
+    float: right;
+  }
+  .actions {
+    margin: 10px 1rem 10px;
+    position: relative;
+    @include bp(md) {
+      min-height: 115px;
     }
-     .nav-utility-position{
-       
-     }
-     .searchbar-position{
-     
-     }
-     .user-status-position{
-        position: absolute;
-        bottom: 0;
-        right:0;
-     }
+    @include bp(lg) {
+      min-height: 175px;
+    }
+  }
+  .nav-utility-position,
+  .searchbar-position,
+  .user-status-position {
+    display: block;
+    clear: both;
+    float: none;
+  }
+  .nav-utility-position {
+  }
+  .searchbar-position {
+  }
+  .user-status-position {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }

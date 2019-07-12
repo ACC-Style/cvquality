@@ -1,38 +1,50 @@
-
-
- body, .body {
-    @include lightblue-gradient;
+body,
+.body {
+  @include lightblue-gradient;
 }
 .wrapper {
-    margin: 0 auto;
-    background: #fff;
-    max-width:980px;
-    @include bp(lg){max-width:1024px;}
-    @include bp(xl){max-width:1200px;}
-    &:before {
-        content: "";
-        display: table;
-    }
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    *zoom: 1;
+  margin: 0 auto;
+  background: #fff;
+  max-width: 980px;
+  @include bp(lg) {
+    max-width: 1024px;
+  }
+  @include bp(xl) {
+    max-width: 1200px;
+  }
+  &:before {
+    content: "";
+    display: table;
+  }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  *zoom: 1;
 }
 
-.page-content{
-    padding: .5rem  0 1rem;
-   @include bp(md){ padding: .5rem 1rem 2rem;}
-   @include bp(lg){ padding: .5rem 2.5rem 2rem;}
-    + .page-content{
-        padding-top:0;
-        @include bp(md){  margin-top:-1rem;}
+.page-content {
+  padding: 0.5rem 0 1rem;
+  @include bp(md) {
+    padding: 0.5rem 1rem 2rem;
+  }
+  @include bp(lg) {
+    padding: 0.5rem 2.5rem 2rem;
+  }
+  + .page-content {
+    padding-top: 0;
+    @include bp(md) {
+      margin-top: -1rem;
     }
-    &.full-screen{   @include bp(lg){ padding: .5rem 1rem 2rem;}}
+  }
+  &.full-screen {
+    @include bp(lg) {
+      padding: 0.5rem 1rem 2rem;
+    }
+  }
 }
 
- 
 /**
  * Home page layout uses special cards to make more of a varried typography which doesn't exsist in sub pages. 
  * 
@@ -41,9 +53,9 @@
  * @flag full-width
  * @markup
  *  <div class="body">
- *      <div class="wrapper container-fluid">
+ *      <div class="wrapper container-fluid px-0">
  *           @{include:#header}
- *          <div class="row">@{include:.nav-primary}</div>
+ *          <div class="row mx-0">@{include:.nav-primary}</div>
  *          <div id="layout">
  *              <div class="page-content full-screen">
  *                  <div class="row">
@@ -61,7 +73,8 @@
  *      </div>
  *  </div>
  */
-.homepage{}
+.homepage {
+}
 /**
  * Page layout product or page listing.
  * 
@@ -70,11 +83,11 @@
  * @flag full-width
  * @markup
  *  <div class="body">
- *      <div class="wrapper container-fluid">
+ *      <div class="wrapper container-fluid px-0">
  *           @{include:#header}
  *           @{include:.mobile-menu-toggle-container}
- *           <div class="row">@{include:.nav-primary}</div>
- *           <div id="aux" class="row">@{include:.breadcrumb}</div>
+ *           <div class="row mx-0">@{include:.nav-primary}</div>
+ *           <div id="aux" class="row mx-0">@{include:.breadcrumb}</div>
  *           <div id="layout" class="row no-gutter">
  *              <div class="col-lg-3 col-md-4 col-xl-3 p-0 d-none d-lg-block"> @{include:.nav-sub}@{include:.nav-social-button.small}</div>
  *              <div class="col-lg-9 col-md-8 col-xl-13"><div class="page-content"><h1>Sample Page</h1> @{include:dl.grouped-definision-list} @{include:dl.grouped-definision-list}</div></div>
@@ -83,7 +96,7 @@
  *      </div>
  *  </div>
  */
- .product-page
+.product-page
 
 
 
@@ -95,10 +108,10 @@
  * @flag full-width
  * @markup
  *  <div class="body">
- *      <div class="wrapper container-fluid">
+ *      <div class="wrapper container-fluid px-0">
  *           @{include:#header}
- *           <div class="row">@{include:.nav-primary}</div>
- *      <div id="aux" class="row">@{include:.breadcrumb}</div>
+ *           <div class="row mx-0">@{include:.nav-primary}</div>
+ *      <div id="aux" class="row mx-0">@{include:.breadcrumb}</div>
  *      <div id="layout" class="row no-gutter">
  *          <div class="col-lg-3 col-md-4 col-xl-3 p-0 d-none d-lg-block"> @{include:.nav-sub}</div>
  *          <div class="col-lg-9 col-md-8 col-xl-13"><div class="page-content">
@@ -119,7 +132,8 @@
  *  </div>
  */
 
- .assessment{}
+ .assessment {
+}
 
 /**
  * Primary pages can have more graphic layouts with adding the jumbotron.
@@ -129,9 +143,9 @@
  * @flag full-width
  * @markup
  *  <div class="body">
- *      <div class="wrapper container-fluid">
+ *      <div class="wrapper container-fluid px-0">
  *           @{include:#header}
- *          <div class="row">@{include:.nav-primary}</div>
+ *          <div class="row mx-0">@{include:.nav-primary}</div>
  *          <div id="layout">
  *              <div class="page-content full-screen">
  *                  @{include:.jumbotron-fluid}
@@ -146,7 +160,8 @@
  *  </div>
  */
 
- .jumbo-pages{}
+.jumbo-pages {
+}
 /**
  * Primary pages can have more graphic layouts with adding the jumbotron.
  * 
@@ -155,9 +170,9 @@
  * @flag full-width
  * @markup
  *  <div class="body">
- *      <div class="wrapper container-fluid">
+ *      <div class="wrapper container-fluid px-0">
  *           @{include:#header}
- *          <div class="row">@{include:.nav-primary}</div>
+ *          <div class="row mx-0">@{include:.nav-primary}</div>
  *          <div id="layout" class="row no-gutter">
  *          <div class="col-lg-3 col-md-4 col-xl-3 d-none d-lg-block"> @{include:.nav-sub}</div>
  *          <div class="col-lg-9 col-md-8 col-xl-13 col"><div class="page-content">
@@ -170,7 +185,8 @@
  *  </div>
  */
 
- .jumbo-content-pages{}
+.jumbo-content-pages {
+}
 
 /**
 * Layout for the wires. 
@@ -180,10 +196,10 @@
 * @flag full-width
 * @markup
 *  <div class="body afib">
-*      <div class="wrapper container-fluid">
+*      <div class="wrapper container-fluid px-0">
 *           @{include:#header}
-*           <div class="row">@{include:.nav-primary}</div>
-*           <div id="aux" class="row">@{include:.breadcrumb}</div>
+*           <div class="row mx-0">@{include:.nav-primary}</div>
+*           <div id="aux" class="row mx-0">@{include:.breadcrumb}</div>
 *           <div id="layout" class="row no-gutter">
 *              <div class="col-lg-3 col-md-4 col-xl-3 p-0 d-none d-lg-block">
 *               @{include:.nav-sub}
@@ -300,4 +316,5 @@
 *      </div>
 *  </div>
 */
- .afib{}
+.afib {
+}

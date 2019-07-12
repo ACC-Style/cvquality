@@ -9,8 +9,9 @@
 *  .alt used to make a standout button in the primary navigation
 *  .alt.primary used to decorate the standout button to the positive flow
 *  .alt.secondary used to convert the standout button to the alternate flow
+*
 * @markup 
-*  <nav class="nav-primary">
+*  <nav class="nav-primary expanded">
 *      <ul class="nav">
 *        <li class="nav-item">
 *          <a class="nav-link active" href="#">@{lipsum:1:words}</a>
@@ -46,160 +47,161 @@
 */
 
 .nav-primary {
-    @include font(700);
-    @include nav-mobile-basic;
-    font-size: ms(0);
-    background: $warm-grey;
-    border-top: $primary-color-light 4px solid;
-    margin-bottom: .5rem;
+  @include font(700);
+  @include nav-mobile-basic;
+  font-size: ms(0);
+  background: $warm-grey;
+  border-top: $primary-color-light 4px solid;
+  margin-bottom: 0.5rem;
 
-    .nav {
+  .nav {
+  }
+
+  .nav-item {
+    &:hover {
+      background-color: $warm-grey-dark;
     }
 
-    .nav-item {
+    + .nav-item {
+      border-top: $off-white dotted 1px;
+    }
+    // removal of bootstrap decorating the a
+    &.open > a,
+    &.open > a:focus,
+    &.open > a:hover {
+      background-color: transparent;
+      border: none transparent 0;
+    }
+
+    &.alt {
+      &.primary {
+        min-width: 250px;
+        @include teal-gradient;
+
         &:hover {
-            background-color: $warm-grey-dark;
+          @include teal-gradient-reverse;
         }
+      }
 
-        + .nav-item {
-            border-top: $off-white dotted 1px;
+      &.secondary {
+        @include grey-gradient;
+
+        &:hover {
+          @include grey-gradient-reverse;
         }
-        // removal of bootstrap decorating the a
-        &.open > a, &.open > a:focus, &.open > a:hover {
-            background-color: transparent;
-            border: none transparent 0;
-        }
+      }
+    }
+  }
 
-        &.alt {
+  .nav-link {
+    text-align: left;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-transform: uppercase;
+    color: $off-white;
 
-            &.primary {
-                min-width: 250px;
-                @include teal-gradient;
+    &:hover {
+      color: #fff;
+    }
+  }
 
-                &:hover {
-                    @include teal-gradient-reverse;
-                }
-            }
+  @include bp(md) {
+    @include nav-flex-row-basic;
 
-            &.secondary {
-                @include grey-gradient;
-
-                &:hover {
-                    @include grey-gradient-reverse;
-                }
-            }
-        }
+    .nav-item + .nav-item {
+      border: none transparent 0;
     }
 
     .nav-link {
-        text-align: left;
-        padding-bottom: 10px;
-        padding-top: 10px;
-        text-transform: uppercase;
-        color: $off-white;
-
-        &:hover {
-            color: #fff;
-        }
+      text-align: center;
     }
 
+    margin-bottom: 0.75rem;
+  }
+
+  @include bp(lg) {
+    font-size: ms(2);
+    margin-bottom: 1rem;
+  }
+
+  &.mobile {
+    // @extend .flex-column;
+  }
+
+  .dropdown-toggle::after {
+    border: none 0 transparent;
+  }
+
+  .dropdown-menu {
+    -webkit-box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.175);
+    -moz-box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.175);
+    border: 0px;
     @include bp(md) {
-        @include nav-flex-row-basic;
-
-        .nav-item + .nav-item {
-            border: none transparent 0;
-        }
-
-        .nav-link {
-            text-align: center;
-        }
-
-        margin-bottom: .75rem;
+      -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
     }
+    border-radius: 0px;
+    background-color: $soft-grey;
+    padding: 0;
+    margin: 0;
+    min-width: 20vw;
+    width: 100%;
+    width: intrinsic; /* Safari/WebKit uses a non-standard name */
+    width: -moz-max-content; /* Firefox/Gecko */
+    width: -webkit-max-content;
+    width: max-content;
+  }
 
-    @include bp(lg) {
-        font-size: ms(2);
-        margin-bottom: 1rem;
-    }
+  .dropdown-item {
+    @include font(700);
+    text-align: left;
+    font-size: ms(1);
+    padding: 0.5em 1em;
+    color: $warm-grey;
 
-    &.mobile {
-        // @extend .flex-column;
+    &:hover {
+      background-color: $warm-grey;
+      color: white;
     }
+  }
 
-    .dropdown-toggle::after {
-        border: none 0 transparent;
-    }
+  .dropdown-divider {
+    border-top: 1px dotted $soft-blue;
+  }
 
-    .dropdown-menu {
-        -webkit-box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.175);
-        -moz-box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.175);
-        box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.175);
-        border:0px;
-        @include bp(md){
-            -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-        }
-        border-radius: 0px;
-        background-color: $soft-grey;
-        padding: 0;
-        margin: 0;
-        min-width: 20vw;
-        width:100%;
-        width: intrinsic; /* Safari/WebKit uses a non-standard name */
-        width: -moz-max-content; /* Firefox/Gecko */
-        width: -webkit-max-content;
-        width: max-content;
-    }
+  .dropdown-menu.alt {
+    min-width: 100%;
+    left: auto;
+    right: 0;
+    background-color: mix($scrub-teal, $off-black, 70%);
 
     .dropdown-item {
-        @include font(700);
-        text-align: left;
-        font-size: ms(1);
-        padding: .5em 1em;
-        color: $warm-grey;
+      color: $off-white;
+      padding-right: 8em;
+
+      &:hover {
+        color: white;
+        background-color: mix($scrub-teal, $off-black, 40%);
+        text-decoration: none;
+      }
+
+      small {
+        position: absolute;
+        font-size: ms(-1);
+        padding-top: (ms(1) - ms(-1))/2;
+        padding-bottom: (ms(1) - ms(-1))/2;
+        top: 10px;
+        right: 1rem;
+      }
+
+      &.alt {
+        background-color: $primary-color-dark;
 
         &:hover {
-            background-color: $warm-grey;
-            color: white;
+          background-color: mix($primary-color-dark, $off-black, 40%);
         }
+      }
     }
-
-    .dropdown-divider {
-        border-top: 1px dotted $soft-blue;
-    }
-
-    .dropdown-menu.alt {
-        min-width: 100%;
-        left: auto;
-        right: 0;
-        background-color: mix($scrub-teal, $off-black, 70%);
-
-        .dropdown-item {
-            color: $off-white;
-            padding-right: 8em;
-
-            &:hover {
-                color: white;
-                background-color: mix($scrub-teal, $off-black, 40%);
-                text-decoration: none;
-            }
-
-            small {
-                position: absolute;
-                font-size: ms(-1);
-                padding-top: (ms(1) - ms(-1))/2;
-                padding-bottom: (ms(1) - ms(-1))/2;
-                top: 10px;
-                right: 1rem;
-            }
-
-            &.alt {
-                background-color: $primary-color-dark;
-
-                &:hover {
-                    background-color: mix($primary-color-dark, $off-black, 40%);
-                }
-            }
-        }
-    }
+  }
 }

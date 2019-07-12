@@ -1,18 +1,18 @@
 @import "setup";
 body {
-    background: white !important;
+  background: white !important;
 }
 
 .SG-row {
-    position: relative;
+  position: relative;
 }
 
 .SG-row .SG-row {
-    margin: 0;
+  margin: 0;
 }
 
 .SG-table .SG-table__cell {
-    margin: 0;
+  margin: 0;
 }
 
 .SG-layout {
@@ -20,110 +20,113 @@ body {
 }
 
 .SG-header {
-    padding: 0;
-    margin-bottom:2rem;    
-    top: 0;
-    position: -webkit-sticky;
-    position: sticky;
-    z-index: 1000;
-    .SG-logo {
-        margin-top: 0;
-        padding: 11px 16px 0px;
-        display: block;
-        width: 100%;
-        color: white;
-        background-color: $acc-blue;
+  padding: 0;
+  margin-bottom: 2rem;
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1000;
+  .SG-logo {
+    margin-top: 0;
+    padding: 11px 16px 0px;
+    display: block;
+    width: 100%;
+    color: white;
+    background-color: $acc-blue;
+    max-width: 100%;
+  }
+  .SG-nav {
+    background: white;
+    background-color: grey(5);
+    position: relative;
+    margin: 0;
+    max-width: 100%;
+    display: flex;
+    clear: both;
+    flex-direction: column;
+    width: 100%;
+    float: left;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.25);
+    .SG-nav__item {
+      border-bottom: 2px solid transparent;
+      border-top: 2px solid transparent;
+      width: 100%;
+      padding: 12px 10px 14px;
+      margin: 0;
+      &:hover {
+        border-top: #9b9b9b 2px solid;
+        border-bottom: #9b9b9b 2px solid;
+      }
     }
-    .SG-nav {
-         background: white;
-        background-color: grey(5);
+    .SG-nav__item.SG-nav__item--active {
+      border-bottom: 3px solid #a0518e;
+      border-top: 1px solid #a0518e;
+      background-color: #fcecf8;
+    }
+    li {
+      list-style: none;
+      flex: 0 1 auto;
+      position: relative;
+      min-width: 0;
+      margin: 0;
+    }
+    @include bp(md) {
+      flex-direction: row;
+      width: 100%;
+      flex-direction: row;
+      width: 100%;
+      max-width: 1150px;
+      float: none;
+      li {
+        list-style: none;
+        flex: 0 1 auto;
         position: relative;
-        margin: 0;
-        max-width: 100%;
-        display: flex;
-        clear: both;
-        flex-direction: column;
-        width: 100%;
-        float: left;
-
-        .SG-nav__item{
-            border-bottom:2px solid transparent;
-            border-top:2px solid transparent;
-            width:100%;
-            padding: 12px 10px 14px;
-            margin:0;
-            &:hover{
-                border-top:#9b9b9b 2px solid;
-                border-bottom:#9b9b9b 2px solid;
-            }
-        }
-        .SG-nav__item.SG-nav__item--active{border-bottom:3px solid #a0518e;border-top:1px solid #a0518e; background-color:#fcecf8;}
-        li{
-                list-style: none;
-                flex: 0 1 auto;
-                position: relative;
-                min-width: 0;
-                margin:0;
-
-
-             }
-        @include bp(md){
-            flex-direction: row;
-            width: 100%;
-            flex-direction: row;
-            width: 100%;
-            max-width: 1150px;
-            float: none;
-             li{
-                list-style: none;
-                flex: 0 1 auto;
-                position: relative;
-                min-width: 0;
-             }
-              .SG-nav__item{
-                width:auto;
-                padding: 22px 10px 24px;
-              }
-         }
-        @include bp(md){
-            .SG-nav__item{
-                
-                padding: 22px 40px 24px;
-              }
-          }
-
-    }
-    .SG-nav-icons {
-        padding-right: 25px;
+        min-width: 0;
+      }
+      .SG-nav__item {
         width: auto;
-        display: inline-block;
-        position: absolute;
-        right: 0;
-        top: 0;
-        li{margin:.5rem;}
+        padding: 22px 10px 24px;
+      }
     }
+    @include bp(md) {
+      .SG-nav__item {
+        padding: 22px 40px 24px;
+      }
+    }
+  }
+  .SG-nav-icons {
+    padding-right: 25px;
+    width: auto;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    li {
+      margin: 0.5rem;
+    }
+  }
 }
 
 .SG-component {
-    margin-bottom: 50px;
-    padding-left:10px;
-    padding-right:10px;
-    + .SG-component{
-        margin-top: 20px;
-        border-top:1px dotted $primary-color-light;
-       
-    }
-    + .SG-row{ border-top:15px solid $soft-grey;}
-    .SG-component__preview {
-        margin-top: 20px;
-    }
-    .SG-component__title{
-        font-size:ms(8);
-    }
+  margin-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  + .SG-component {
+    margin-top: 20px;
+    border-top: 1px dotted $primary-color-light;
+  }
+  + .SG-row {
+    border-top: 15px solid $soft-grey;
+  }
+  .SG-component__preview {
+    margin-top: 20px;
+  }
+  .SG-component__title {
+    font-size: ms(8);
+  }
 }
 
 .SG-table {
-
   .SG-table__cell {
     padding: 5px 0;
     margin: 5px 0;
@@ -131,42 +134,63 @@ body {
   }
 
   .SG-table__head {
-
     color: $warm-grey-dark;
     font-weight: 900;
     border-bottom: 1px solid $scrub-teal-light;
   }
 }
 
-.style-guide-override.tooltip{    
-    display: block;
-    position: relative;
-    opacity: 1;
-    width: 200px;}
+.style-guide-override.tooltip {
+  display: block;
+  position: relative;
+  opacity: 1;
+  width: 200px;
+}
 
+.SG-toc > ul > li,
+.SG-toc > ul > li ul {
+  line-height: 1.5;
+}
 
-    .SG-toc>ul>li,.SG-toc>ul>li ul{line-height:1.5}
+// Bootstrap Extras for Kitchen Sink.
+.container.example {
+  border: 1px solid #563d7c;
+}
 
+.example {
+  border: 1px solid #ccc;
+}
+.example .col {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
 
-    // Bootstrap Extras for Kitchen Sink.
-    .container.example  {border:1px solid #563d7c;}
+.container-fluid > h2 {
+  margin: 2rem 0;
+  background: #e2e2e2;
+  padding: 0.5rem;
+}
 
-.example {border:1px solid #ccc;}
-.example .col {border:1px solid rgba(0,0,0,.2);}
-
-.container-fluid > h2 {margin:2rem 0;background:#e2e2e2;padding:.5rem;}
-
-
-
-
-.col-sm-6 > h3 {margin:2em 0 1em 0;
+.col-sm-6 > h3 {
+  margin: 2em 0 1em 0;
   /*
   border-bottom:1px solid #ccc;
   */
-  padding-bottom:.5em;
-
-  
+  padding-bottom: 0.5em;
 }
 
-.container-fluid {padding:2em;}
-.demo-border {border:5px solid #563d7c;display: inline-block;height:100px;width:100px;background:#e2e2e2;padding:1rem;font-size:12px;margin:.5rem;}
+.container-fluid {
+  padding: 2em;
+}
+.demo-border {
+  border: 5px solid #563d7c;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background: #e2e2e2;
+  padding: 1rem;
+  font-size: 12px;
+  margin: 0.5rem;
+}
+.SG-header:before {
+  display: none;
+}
