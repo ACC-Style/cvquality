@@ -1,24 +1,23 @@
 .mobile-menu-toggle {
-    text-transform: uppercase;
-    cursor: pointer; 
-    text-align:right;
-    display: block;
-    position: relative;
-    .text{
-        @include font(700);
-        font-size: 1.25rem;
-        color: $scrub-teal;
-        display: inline-block;
-        vertical-align: top;
-        padding: .5rem .25rem;
-    }
-    i.fa {
-        color: $warm-grey;
-        font-size: 2.125rem;
-        margin: .125rem;
-    }
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: right;
+  display: block;
+  position: relative;
+  .text {
+    @include font(700);
+    font-size: 1.25rem;
+    color: $scrub-teal;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0.5rem 0.25rem;
+  }
+  i.fa {
+    color: $warm-grey;
+    font-size: 2.125rem;
+    margin: 0.125rem;
+  }
 }
-
 
 /**
  * Container for the Menu Toggle for the Mobile Nav. ~Inline Style should be removed. Currently used so it will show on all screen dimensions~
@@ -26,7 +25,7 @@
  * @structure Mobile Menu Toggle
  * @section Page Sections > Header
  * @markup
- *  <div class="mobile-menu-toggle-container row show-mobile">
+ *  <div class="d-none d-sm-large mobile-menu-toggle-container row mx-0" >
  *      <div class="col-md-7">
  *         <div class="user-status-container">
  *              <nav class="nav-user-status">
@@ -47,29 +46,34 @@
  *  </div>
  */
 
-
 .mobile-menu-toggle-container {
-    position: relative;
-    display: flex;
-    padding-top: .25rem;
-    padding-bottom: .25rem;
-    height: 2.75rem;
-    @include lightgrey-gradient;
-    @include dropshadow;
-    .user-status-container{
-        height:2.25rem;
-        padding:.5rem 0;
-        .user{ display: none;}
-        .nav-user-status{
-           float:left;
-           .acount{display:none;}
-        }
-        .user + .nav-user-status {
-            margin-top: 0rem;
-        }
+  position: relative;
+  display: flex;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  height: 2.75rem;
+  @include lightgrey-gradient;
+  @include dropshadow;
+  .user-status-container {
+    height: 2.25rem;
+    padding: 0.5rem 0;
+    .user {
+      display: none;
     }
-    @include bp(sm){
+    .nav-user-status {
+      float: left;
+      .acount {
         display: none;
-        &.show-mobile{display:flex;}
+      }
     }
+    .user + .nav-user-status {
+      margin-top: 0rem;
+    }
+  }
+  @include bp(sm) {
+    display: none;
+    &.show-mobile {
+      display: flex;
+    }
+  }
 }
