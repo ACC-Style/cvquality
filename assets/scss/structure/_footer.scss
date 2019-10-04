@@ -25,34 +25,52 @@
 	overflow: visible;
 	color: $off-black;
 	background: $warm-grey;
+	h2 {
+		font-size: ms(1);
+		line-height: $tight;
+		display: table-cell;
+		height: auto;
+		vertical-align: bottom;
+		padding-bottom: 0.25em;
+		@include bp(lg) {
+			height: 3.25rem;
+		}
+	}
+	address {
+		margin-top: 1rem;
+		text-align: center;
+	}
+
+	.footer-sitemap,
+	.nav-social-button {
+		margin-top: 1rem;
+	}
+	@include bp(md-down) {
+		.contact {
+			margin-top: 0.5rem;
+		}
+		.email,
+		.tel {
+			color: $off-black;
+			background-color: $off-white;
+			border-color: $warm-grey-dark;
+			padding: 7px 0.875px;
+			font-size: 12px;
+			line-height: 1;
+			border-radius: 0.2rem;
+			border-width: 1px;
+			border-style: solid;
+			width: 48%;
+			text-align: center;
+		}
+	}
 	@include bp(md) {
 		padding: 12px 1% 30px;
 	}
-		@include bp(lg) {
+	@include bp(lg) {
 		padding: 12px 0 30px;
+		address {
+			text-align: left;
+		}
 	}
-	h2{ 	
-		font-size: ms(1);
-        line-height: $tight;
-		display: table-cell;
-        height: auto;
-        vertical-align: bottom;
-        padding-bottom:.25em;
-        @include bp(lg){
-        	height: 3.25rem;
-        }
-    }
-    address{
-    	margin-top: 1rem;
-    }
-    .footer-sitemap, .nav-social-button{margin-top:1rem;}
-
 }
-
-
-
-
-
-
-
-
