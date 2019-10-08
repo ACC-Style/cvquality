@@ -118,7 +118,7 @@
 	}
 
 	&.triangle:before {
-		content: '';
+		content: "";
 		width: 0;
 		height: 0;
 		border-style: solid;
@@ -208,7 +208,7 @@
 	.card-header {
 		text-transform: uppercase;
 
-		@include font-display('regular');
+		@include font-display("regular");
 	}
 
 	background-color: mix($soft-blue, white);
@@ -373,7 +373,7 @@
 		background-color: $soft-grey;
 		display: table;
 		&:after {
-			content: '';
+			content: "";
 			clear: both;
 			display: table;
 		}
@@ -403,7 +403,7 @@
 	}
 
 	.title {
-		@include font('regular');
+		@include font("regular");
 		color: $primary-color-dark;
 		line-height: $crunched;
 		text-transform: capitalize;
@@ -413,13 +413,13 @@
 	}
 
 	.location-title {
-		@include font('bold');
+		@include font("bold");
 		color: $scrub-teal-dark;
 		font-size: ms(1);
 		line-height: $crunched;
 	}
 	.location {
-		@include font('regular');
+		@include font("regular");
 		font-size: ms(0);
 		line-height: $crunched;
 		color: $off-black;
@@ -429,7 +429,7 @@
 	}
 	.full-date,
 	.time {
-		@include font('regular');
+		@include font("regular");
 		font-size: ms(-1);
 		color: $off-black;
 		line-height: $tight;
@@ -483,7 +483,7 @@
 	}
 
 	.day {
-		@include font-display('light');
+		@include font-display("light");
 		font-size: ms(3);
 		font-weight: bold;
 		@include bp(md) {
@@ -492,7 +492,7 @@
 	}
 
 	.month {
-		@include font-display('regular');
+		@include font-display("regular");
 		font-size: ms(-1);
 		padding-top: 2px;
 		padding-bottom: 2px;
@@ -502,7 +502,7 @@
 	}
 
 	.year {
-		@include font-display('bold');
+		@include font-display("bold");
 		background-color: $scrub-teal;
 		color: $off-white;
 		font-size: ms(-1);
@@ -688,12 +688,12 @@
 
 		&:before {
 			margin-right: 0.5em;
-			content: '\f10d';
+			content: "\f10d";
 		}
 
 		&:after {
 			margin-left: 0.5em;
-			content: '\f10e';
+			content: "\f10e";
 		}
 	}
 
@@ -705,7 +705,7 @@
 
 		&:after {
 			margin-right: 0.5em;
-			content: '\f007';
+			content: "\f007";
 		}
 	}
 }
@@ -970,5 +970,8 @@
 	.h4,
 	.h5 {
 		color: $black;
+	}
+	address {
+		text-align: left;
 	}
 }
