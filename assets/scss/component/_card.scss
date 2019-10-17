@@ -1,140 +1,151 @@
 .card {
-    float: none;
-    width: 100%;
-    margin: 0;
-    display: block;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    transition: width 1s ease-out;
-    -webkit-transition: width 1s ease-out;
-    -moz-transition: width 1s ease-out;
-    border-color: $warm-grey;
-    background-color: white;
-    position: relative;
-    margin-bottom: 1rem;
-    .triangle:before {
-        border-color: transparent transparent transparent $warm-grey;
-    }
-    > .card {
-        margin: 0 1rem 1rem;
-        width: auto;
-    }
+	float: none;
+	width: 100%;
+	margin: 0;
+	display: block;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	transition: width 1s ease-out;
+	-webkit-transition: width 1s ease-out;
+	-moz-transition: width 1s ease-out;
+	border-color: $warm-grey;
+	background-color: white;
+	position: relative;
+	margin-bottom: 1rem;
+	.triangle:before {
+		border-color: transparent transparent transparent $warm-grey;
+	}
+	> .card {
+		margin: 0 1rem 1rem;
+		width: auto;
+	}
 
-    &.position-right {
-        float: right;
-        clear: right;
-        width: 45%;
-        margin-left: 5%;
-        margin-bottom: 1em;
-    }
+	&.position-right {
+		float: right;
+		clear: right;
+		width: 45%;
+		margin-left: 5%;
+		margin-bottom: 1em;
+	}
 
-    &.position-left {
-        float: left;
-        clear: left;
-        width: 45%;
-        margin-right: 5%;
-        margin-bottom: 1em;
-    }
+	&.position-left {
+		float: left;
+		clear: left;
+		width: 45%;
+		margin-right: 5%;
+		margin-bottom: 1em;
+	}
 
-    @include bp(sm) {
-        &.position-right, &.position-right-sm {
-            float: right;
-            clear: right;
-            width: 40%;
-            margin-left: 1.5em;
-            margin-bottom: 1em;
-            min-width:200px;
-        }
+	@include bp(sm) {
+		&.position-right,
+		&.position-right-sm {
+			float: right;
+			clear: right;
+			width: 40%;
+			margin-left: 1.5em;
+			margin-bottom: 1em;
+			min-width: 200px;
+		}
 
-        &.position-left, &.position-left-sm {
-            float: left;
-            clear: left;
-            width: 40%;
-            margin-right: 1.5em;
-            margin-bottom: 1em;
-            min-width:200px;
-        }
-    }
+		&.position-left,
+		&.position-left-sm {
+			float: left;
+			clear: left;
+			width: 40%;
+			margin-right: 1.5em;
+			margin-bottom: 1em;
+			min-width: 200px;
+		}
+	}
 
+	@include bp(md) {
+		&.position-right,
+		&.position-right-sm,
+		&.position-right-md {
+			float: right;
+			clear: right;
+			width: 35%;
+			margin-left: 1.5em;
+			margin-bottom: 1em;
+			min-width: 200px;
+		}
 
-    @include bp(md) {
-        &.position-right, &.position-right-sm, &.position-right-md {
-            float: right;
-            clear: right;
-            width: 35%;
-            margin-left: 1.5em;
-            margin-bottom: 1em;
-            min-width:200px;
-        }
+		&.position-left,
+		&.position-left-sm,
+		&.position-left-md {
+			float: left;
+			clear: left;
+			width: 35%;
+			margin-right: 1.5em;
+			margin-bottom: 1em;
+			min-width: 200px;
+		}
+	}
 
-        &.position-left, &.position-left-sm, &.position-left-md {
-            float: left;
-            clear: left;
-            width: 35%;
-            margin-right: 1.5em;
-            margin-bottom: 1em;
-            min-width:200px;
-        }
-    }
+	@include bp(lg) {
+		&.position-right,
+		&.position-right-sm,
+		&.position-right-md,
+		&.position-right-lg {
+			float: right;
+			clear: right;
+			width: 30%;
+			margin-left: 1.5em;
+			margin-bottom: 1em;
+			min-width: 200px;
+		}
 
-
-    @include bp(lg) {
-        &.position-right, &.position-right-sm, &.position-right-md, &.position-right-lg {
-            float: right;
-            clear: right;
-            width: 30%;
-            margin-left: 1.5em;
-            margin-bottom: 1em;
-            min-width:200px;
-        }
-
-        &.position-left, &.position-left-sm, &.position-left-md, &.position-left-lg {
-            float: left;
-            clear: left;
-            width: 30%;
-            margin-right: 1.5em;
-            margin-bottom: 1em;
-            min-width:200px;
-        }
-    }
+		&.position-left,
+		&.position-left-sm,
+		&.position-left-md,
+		&.position-left-lg {
+			float: left;
+			clear: left;
+			width: 30%;
+			margin-right: 1.5em;
+			margin-bottom: 1em;
+			min-width: 200px;
+		}
+	}
 }
 .card-header {
-        padding: 0 1rem;
-        text-align: center;
-        position: relative;
+	padding: 0 1rem;
+	text-align: center;
+	position: relative;
 
-        &.triangle {
-            padding-left: 1.5rem;
-        }
+	&.triangle {
+		padding-left: 1.5rem;
+	}
 
-        &.triangle:before {
-            content: "";
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: .5em 0 .5em .75em;
-            position: absolute;
-            left: 0;
-        }
-    }
- .card-body {
-        padding: 0 1rem 1.25rem;
-        text-align: center;
-    }
+	&.triangle:before {
+		content: "";
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0.5em 0 0.5em 0.75em;
+		position: absolute;
+		left: 0;
+	}
+}
+.card-body {
+	padding: 0 1rem 1.25rem;
+	text-align: center;
+}
 
-    .card-action {
-        padding: 0 2rem 1.25rem;
-        .btn{
-            @extend .btn-lg;
-            font-weight: 600;
-        }
-    }
+.card-action {
+	padding: 0 2rem 1.25rem;
+	.btn {
+		@extend .btn-lg;
+		font-weight: 600;
+	}
+}
 .card-footer {
-        padding: 0 1rem 1rem;
-    }
-    .card-body + .card-action, .card-body + .card-footer, {
-        margin-top: -.75rem;
-    }
+	padding: 0 1rem 1rem;
+}
+.card-body + .card-action,
+.card-body + .card-footer {
+	margin-top: -0.75rem;
+}
 
 /**
  * Highlighted Cards are stylized cards with a soft blue background and changes all header sizes and text to a bit larger. These cards are used as hero area or of extra interst.
@@ -159,48 +170,53 @@
  *
  */
 .highlighted.card {
-    h1, h2, h3, h4 {
-        line-height: $crunched;
-    }
+	h1,
+	h2,
+	h3,
+	h4 {
+		line-height: $crunched;
+	}
 
-    h1, h3 {
-        color: $primary-color-dark;
-    }
+	h1,
+	h3 {
+		color: $primary-color-dark;
+	}
 
-    h2, h4 {
-        color: $off-black;
-    }
+	h2,
+	h4 {
+		color: $off-black;
+	}
 
-    h2 {
-        font-size: ms(6);
-    }
+	h2 {
+		font-size: ms(6);
+	}
 
-    h3 {
-        font-size: ms(5);
-    }
+	h3 {
+		font-size: ms(5);
+	}
 
-    h4 {
-        font-size: ms(4);
-    }
+	h4 {
+		font-size: ms(4);
+	}
 
-    p {
-        font-size: ms(2);
-    }
+	p {
+		font-size: ms(2);
+	}
 
-    border-color: $soft-blue;
+	border-color: $soft-blue;
 
-    .card-header {
-        text-transform: uppercase;
+	.card-header {
+		text-transform: uppercase;
 
-        @include font-display("regular");
-    }
+		@include font-display("regular");
+	}
 
-    background-color: mix($soft-blue, white);
+	background-color: mix($soft-blue, white);
 
-    .card-header, .card-body {
-        text-align: left;
-    }
-
+	.card-header,
+	.card-body {
+		text-align: left;
+	}
 }
 
 /**
@@ -220,24 +236,23 @@
  *
  */
 .info.card {
-    .triangle:before {
-        border-color: transparent transparent transparent $warm-grey;
-    }
+	.triangle:before {
+		border-color: transparent transparent transparent $warm-grey;
+	}
 
-    border-color: $warm-grey;
+	border-color: $warm-grey;
 
-    .card-header {
-        color: $off-black;
-        font-weight: 900;
-    }
+	.card-header {
+		color: $off-black;
+		font-weight: 900;
+	}
 
-    background-color: $warm-grey-light;
+	background-color: $warm-grey-light;
 
-    .card-header, .card-body {
-        text-align: left;
-    }
-
-
+	.card-header,
+	.card-body {
+		text-align: left;
+	}
 }
 
 /**
@@ -256,26 +271,28 @@
  *  </div>
  *
  */
-.card.notice {}
+.card.notice {
+}
 
-.card.notice, .card.notice.alt {
-    .card-header {
-        text-transform: capitalize;
-        font-weight: normal;
-    }
+.card.notice,
+.card.notice.alt {
+	.card-header {
+		text-transform: capitalize;
+		font-weight: normal;
+	}
 }
 
 .card.notice {
-    background-color: mix($soft-blue, white);
-    border-color: $soft-blue;
+	background-color: mix($soft-blue, white);
+	border-color: $soft-blue;
 
-    .triangle:before {
-        border-color: transparent transparent transparent $soft-grey;
-    }
+	.triangle:before {
+		border-color: transparent transparent transparent $soft-grey;
+	}
 
-    .card-header {
-        color: $scrub-teal-dark;
-    }
+	.card-header {
+		color: $scrub-teal-dark;
+	}
 }
 
 /**
@@ -295,16 +312,16 @@
  *
  */
 .card.alt {
-    background-color: $soft-grey;
-    border-color: $warm-grey-light;
+	background-color: $soft-grey;
+	border-color: $warm-grey-light;
 
-    .triangle:before {
-        border-color: transparent transparent transparent $primary-color-light;
-    }
+	.triangle:before {
+		border-color: transparent transparent transparent $primary-color-light;
+	}
 
-    .card-header {
-        color: $primary-color-dark;
-    }
+	.card-header {
+		color: $primary-color-dark;
+	}
 }
 
 /**
@@ -340,149 +357,162 @@
  *
  */
 .card.event {
-    border-style: solid;
-    border-width: 1px;
-    position: relative;
+	border-style: solid;
+	border-width: 1px;
+	position: relative;
 
-    i.fa.fa-calendar {
-        @include bp(md) {
-            display: none;
-        }
-    }
+	i.fa.fa-calendar {
+		@include bp(md) {
+			display: none;
+		}
+	}
 
-    .card-header {
-        padding-top: 1rem;
-        text-align: left;
-        background-color: $soft-grey;
-        display: table;
-        &:after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-    }
-    .event-date, .event-details{
-        display: table-cell;
-        vertical-align: top;
-    }
-    .event-date {
-        padding-right:1rem;
-        text-align: center;
-        width:1%;
-    }
+	.card-header {
+		padding-top: 1rem;
+		text-align: left;
+		background-color: $soft-grey;
+		display: table;
+		&:after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+	}
+	.event-date,
+	.event-details {
+		display: table-cell;
+		vertical-align: top;
+	}
+	.event-date {
+		padding-right: 1rem;
+		text-align: center;
+		width: 1%;
+	}
 
-    .event-details {
-        padding-bottom:.75rem;
-    }
+	.event-details {
+		padding-bottom: 0.75rem;
+	}
 
-    .card-body {
-        text-align: left;
-        clear: both;
-        padding-top: .5rem;
-    }
+	.card-body {
+		text-align: left;
+		clear: both;
+		padding-top: 0.5rem;
+	}
 
-    .date {
+	.date {
+	}
 
-    }
+	.title {
+		@include font("regular");
+		color: $primary-color-dark;
+		line-height: $crunched;
+		text-transform: capitalize;
+		margin-top: 0;
+		margin-bottom: 0.25rem;
+		font-size: ms(3);
+	}
 
-
-    .title {
-        @include font("regular");
-        color: $primary-color-dark;
-        line-height: $crunched;
-        text-transform: capitalize;
-        margin-top: 0;
-        margin-bottom: .25rem;
-        font-size: ms(3);
-    }
-
-    .location-title{
-        @include font("bold");
-        color:$scrub-teal-dark;
-        font-size: ms(1);
-        line-height: $crunched;
-    }
-    .location {
-        @include font("regular");
-        font-size: ms(0);
-        line-height: $crunched;
-        color: $off-black;
-    }
-    .full-date{display: none;}
-    .full-date,.time {
-        @include font("regular");
-        font-size: ms(-1);
-        color: $off-black;
-        line-height: $tight;
-        font-style: italic;
-        margin-bottom: 1em;
-    }
-    .card-footer, .card-action{
-        text-align: center;
-        background-color: $off-white;
-        padding-top: .5rem;
-        color: $warm-grey-dark;
-    }
-    .card-footer{
-       padding-bottom: .5rem;
-    }
-    .card-action {
-        strong {
-            display: none;
-            @include bp(md) {
-                display: inline;
-            }
-        }
-        .btn{ width:100%;}
-    }
+	.location-title {
+		@include font("bold");
+		color: $scrub-teal-dark;
+		font-size: ms(1);
+		line-height: $crunched;
+	}
+	.location {
+		@include font("regular");
+		font-size: ms(0);
+		line-height: $crunched;
+		color: $off-black;
+	}
+	.full-date {
+		display: none;
+	}
+	.full-date,
+	.time {
+		@include font("regular");
+		font-size: ms(-1);
+		color: $off-black;
+		line-height: $tight;
+		font-style: italic;
+		margin-bottom: 1em;
+	}
+	.card-footer,
+	.card-action {
+		text-align: center;
+		background-color: $off-white;
+		padding-top: 0.5rem;
+		color: $warm-grey-dark;
+	}
+	.card-footer {
+		padding-bottom: 0.5rem;
+	}
+	.card-action {
+		strong {
+			display: none;
+			@include bp(md) {
+				display: inline;
+			}
+		}
+		.btn {
+			width: 100%;
+		}
+	}
 }
 
 .event {
-    .date {
-        max-width: 120px;
-        margin-bottom:.75rem;  
-        background-color: $off-white;
-        text-align: center;
-        border: 2px solid $scrub-teal;
-        @include bp(md){ border-width:4px;}
-        display: inline-block;
-    }
+	.date {
+		max-width: 120px;
+		margin-bottom: 0.75rem;
+		background-color: $off-white;
+		text-align: center;
+		border: 2px solid $scrub-teal;
+		@include bp(md) {
+			border-width: 4px;
+		}
+		display: inline-block;
+	}
 
-    .day, .month, .year {
-        display: block;
-        clear: both;
-        line-height: 1;
-        padding-right: 5px;
-        padding-left: 5px;
-    }
+	.day,
+	.month,
+	.year {
+		display: block;
+		clear: both;
+		line-height: 1;
+		padding-right: 5px;
+		padding-left: 5px;
+	}
 
-    .day {
-        @include font-display("light");  
-        font-size: ms(3);
-        font-weight: bold;
-        @include bp(md){ font-size: ms(7);}
-    }
+	.day {
+		@include font-display("light");
+		font-size: ms(3);
+		font-weight: bold;
+		@include bp(md) {
+			font-size: ms(7);
+		}
+	}
 
-    .month {
-       @include font-display("regular"); 
-       font-size: ms(-1); 
-       padding-top: 2px;
-       padding-bottom: 2px;
-       @include bp(md){ font-size: ms(2);}
-    }
+	.month {
+		@include font-display("regular");
+		font-size: ms(-1);
+		padding-top: 2px;
+		padding-bottom: 2px;
+		@include bp(md) {
+			font-size: ms(2);
+		}
+	}
 
-    .year {
-        @include font-display("bold");  
-        background-color: $scrub-teal;
-        color: $off-white;
-        font-size: ms(-1);
-        padding-top: 3px;
-        @include bp(md){
-            padding-right:10px;
-            padding-left:10px;
-            font-size: ms(2);
-        }
-    }
+	.year {
+		@include font-display("bold");
+		background-color: $scrub-teal;
+		color: $off-white;
+		font-size: ms(-1);
+		padding-top: 3px;
+		@include bp(md) {
+			padding-right: 10px;
+			padding-left: 10px;
+			font-size: ms(2);
+		}
+	}
 }
 
 /**
@@ -515,35 +545,50 @@
  *  </div>
  *
  */
-.card.event.undecorated{
-    .event-date{display:none;}
-    .location{font-size:ms(-1); display:inline;}
-    .full-date,.time{display:inline;margin-left:.25rem;}
-    .event-details {padding-bottom:0;}
-    .card-header{
-        padding-right:0;
-        padding-left:0;
-        background-color:transparent;
-    }
-    .card-body{
-        padding-right:0;
-        padding-left:0;
-        border-top:1px solid $warm-grey-light;
-        padding-top:.125rem;
-        padding-bottom:.125rem;
-    }
-    .card-action{
-        padding-right:0;
-        padding-left:0;
-        background-color:transparent;
-        font-size: ms(-1);
-        padding-top:.125rem;
-        padding-bottom:.125rem;
-        text-align: left;
-        .btn{ width:200px;}
-    }
+.card.event.undecorated {
+	.event-date {
+		display: none;
+	}
+	.location {
+		font-size: ms(-1);
+		display: inline;
+	}
+	.full-date,
+	.time {
+		display: inline;
+		margin-left: 0.25rem;
+	}
+	.event-details {
+		padding-bottom: 0;
+	}
+	.card-header {
+		padding-right: 0;
+		padding-left: 0;
+		background-color: transparent;
+	}
+	.card-body {
+		padding-right: 0;
+		padding-left: 0;
+		border-top: 1px solid $warm-grey-light;
+		padding-top: 0.125rem;
+		padding-bottom: 0.125rem;
+	}
+	.card-action {
+		padding-right: 0;
+		padding-left: 0;
+		background-color: transparent;
+		font-size: ms(-1);
+		padding-top: 0.125rem;
+		padding-bottom: 0.125rem;
+		text-align: left;
+		.btn {
+			width: 200px;
+		}
+	}
 }
-.card.event.undecorated + .card.event.undecorated{border-top:1px dotted $scrub-teal-dark;}
+.card.event.undecorated + .card.event.undecorated {
+	border-top: 1px dotted $scrub-teal-dark;
+}
 
 /**
  * Testimonial Card are containers for Testimonial Data Type 
@@ -569,98 +614,100 @@
  *  </div>
  *
  */
-.card.testimonial{}
-.card.testimonial,.card.product {
-    background-color: $soft-blue;
-    border-style: solid;
-    border-width: 1px;
-    margin-top: 0;
-    padding: 0;
+.card.testimonial {
+}
+.card.testimonial,
+.card.product {
+	background-color: $soft-blue;
+	border-style: solid;
+	border-width: 1px;
+	margin-top: 0;
+	padding: 0;
 
-    @include bp(md) {
-        margin-top: 100px;
-    }
+	@include bp(md) {
+		margin-top: 100px;
+	}
 
+	.card-header {
+		margin-bottom: 75px;
 
-    .card-header {
-        
-        margin-bottom: 75px;
+		@include bp(md) {
+			margin-bottom: 0;
+		}
+	}
 
-        @include bp(md) {
-            margin-bottom: 0;
-        }
-    }
+	.card-img {
+		margin: 20px auto -50px;
+		width: 100px;
+		height: 100px;
 
-    .card-img {
-        margin: 20px auto -50px;
-        width: 100px;
-        height: 100px;
+		@include bp(md) {
+			margin: -100px auto 20px;
+			width: 200px;
+			height: 200px;
+		}
+	}
 
-        @include bp(md) {
-            margin: -100px auto 20px;
-            width: 200px;
-            height: 200px;
-        }
-    }
+	.card-body {
+		padding: 10px 1em 1em;
+		position: relative;
+		background-color: $white;
+		border: 1px solid rgba(0, 0, 0, 0.3);
+		margin: -1px;
+	}
 
-    .card-body {
-        padding: 10px 1em 1em;
-        position: relative;
-        background-color: $white;
-        border: 1px solid rgba(0,0,0,.3);
-        margin: -1px;
-    }
+	.blockquote {
+		position: relative;
+		text-align: center;
+	}
 
-    .blockquote {
-        position: relative;
-        text-align: center;
-    }
+	.blockquote p,
+	.blockquote-cite {
+		display: block;
+		&:before,
+		&:after {
+			display: inline-block;
+			font: normal normal normal 14px/1 FontAwesome;
+			font-size: inherit;
+			text-rendering: auto;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			transform: translate(0, 0);
+			width: 1.28571429em;
+			text-align: center;
+		}
+	}
 
-    .blockquote p, .blockquote-cite {
-        display:block;
-        &:before, &:after {
-            display: inline-block;
-            font: normal normal normal 14px/1 FontAwesome;
-            font-size: inherit;
-            text-rendering: auto;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            transform: translate(0, 0);
-            width: 1.28571429em;
-            text-align: center;
-        }
-    }
+	.blockquote p {
+		font-size: ms(1);
 
-    .blockquote p {
-        font-size: ms(1);
+		&:before,
+		&:after {
+			color: $primary-color-light;
+		}
 
-        &:before, &:after {
-            color: $primary-color-light;
-        }
+		&:before {
+			margin-right: 0.5em;
+			content: "\f10d";
+		}
 
-        &:before {
-            margin-right: .5em;
-            content: "\f10d";
-        }
+		&:after {
+			margin-left: 0.5em;
+			content: "\f10e";
+		}
+	}
 
-        &:after {
-            margin-left: .5em;
-            content: "\f10e";
-        }
-    }
+	.blockquote-cite {
+		font-size: ms(0);
+		position: relative;
+		right: 0;
+		color: $warm-grey;
 
-    .blockquote-cite {
-        font-size: ms(0);
-        position: relative;
-        right: 0;
-        color: $warm-grey;
-
-
-        &:after {
-            margin-right: .5em;
-            content: "\f007";
-        }
-    }
+		&:after {
+			margin-right: 0.5em;
+			content: "\f007";
+		}
+	}
 }
 
 /**
@@ -683,58 +730,64 @@
 *  </div>
 *
 */
-.card.testimonial.horizontal{}
-.card.testimonial.horizontal, .card.product{
-    @include bp(md) {
-        display: block;
-        margin-top: 0;
-        display: flex;
-        flex-direction: row;
-
-        .card-header, .card-body {
-            flex:1 1 auto;
-            display: block;
-            width: unset;
-            padding: 10px;
-            margin: 0;
-            vertical-align: middle;
-            float: none;
-        }
-
-        .card-img {
-            margin: 10px;
-            height: 125px;
-            width: 125px;
-        }
-
-        .card-header {
-            min-width: 160px;
-        }
-
-        .card-body {
-            text-align: left;
-
-            .blockquote-cite {
-                float: none;
-            }
-        }
-
-        .blockquote {
-            text-align: left;
-        }
-
-        .blockquote-cite {
-            text-align: right;
-            display:block;
-        }
-    }
+.card.testimonial.horizontal {
 }
-.card.testimonial.horizontal.undecorated,.card.testimonial.undecorated{
-    margin-top:0;
-    .card-header{display:none!important;}
+.card.testimonial.horizontal,
+.card.product {
+	@include bp(md) {
+		display: block;
+		margin-top: 0;
+		display: flex;
+		flex-direction: row;
+
+		.card-header,
+		.card-body {
+			flex: 1 1 auto;
+			display: block;
+			width: unset;
+			padding: 10px;
+			margin: 0;
+			vertical-align: middle;
+			float: none;
+		}
+
+		.card-img {
+			margin: 10px;
+			height: 125px;
+			width: 125px;
+		}
+
+		.card-header {
+			min-width: 160px;
+		}
+
+		.card-body {
+			text-align: left;
+
+			.blockquote-cite {
+				float: none;
+			}
+		}
+
+		.blockquote {
+			text-align: left;
+		}
+
+		.blockquote-cite {
+			text-align: right;
+			display: block;
+		}
+	}
+}
+.card.testimonial.horizontal.undecorated,
+.card.testimonial.undecorated {
+	margin-top: 0;
+	.card-header {
+		display: none !important;
+	}
 }
 .card.testimonial.vertical-spacing {
-    margin-bottom: 120px;
+	margin-bottom: 120px;
 }
 /**
  * The "Facility Card" is a combination of cards and ui to make the UI element that is found on the home page. 
@@ -764,7 +817,8 @@
  *  </div>
  *
  */
-.featured.card {}
+.featured.card {
+}
 
 /**
  * "Undecorated" cards remove the background,padding and border of cards with leaving behind all of the typography treatment of card.  This is mosly used on the homepage in combination with the highlighted card 
@@ -784,13 +838,13 @@
  *
  */
 .undecorated.card {
-    border-width: 0;
-    background-color: transparent;
-    padding: 0;
+	border-width: 0;
+	background-color: transparent;
+	padding: 0;
 
-    .card-header.triangle:before {
-        display: none;
-    }
+	.card-header.triangle:before {
+		display: none;
+	}
 }
 
 /**
@@ -802,7 +856,7 @@
 * @markup
 *  <div class="card product">
 *    <header class="card-header">
-*       <img class="w-100" src="https://cvquality.acc.org/images/default-source/accreditation/afbutton.jpg?sfvrsn=f32980bf_2" alt="" class="mapseal">
+*       <img  src="https://cvquality.acc.org/images/default-source/accreditation/afbutton.jpg?sfvrsn=f32980bf_2" alt="" class="mapseal">
 *    </header>
 *    <div class="card-body">
 *      <article>
@@ -814,11 +868,19 @@
 *  </div>
 *
 */
-.card.product{
-    .card-header{margin-bottom:0; background-color:$warm-grey-light;}
-    .card-header img{max-height:200px; width:auto;margin:0 auto; padding:10px 0; width:100%}
+.card.product {
+	.card-header {
+		margin-bottom: 0;
+		background-color: $warm-grey-light;
+	}
+	.card-header img {
+		max-height: 200px;
+		width: 100%;
+		width: auto;
+		margin: 0 auto;
+		padding: 10px 0;
+	}
 }
-
 
 /**
  * Boxes(".box") are a simple decorator that has internal padding, a colored background, and fills its parent container. 
@@ -838,18 +900,28 @@
 */
 
 .box {
-    text-align: left;
-    margin-bottom: 1rem;
-    padding: .5rem .75rem;
-    border:1px solid $soft-grey;
-    .card-header{margin-left:0; margin-right:0;}
+	text-align: left;
+	margin-bottom: 1rem;
+	padding: 0.5rem 0.75rem;
+	border: 1px solid $soft-grey;
+	.card-header {
+		margin-left: 0;
+		margin-right: 0;
+	}
 
-    h1, h2, h3, h4 {
-        &:first-child{margin-top:.5rem;}
-        font-weight: bold;
-        color: $primary-color-dark;
-    }
-    + .box{ margin-top:.5rem;}
+	h1,
+	h2,
+	h3,
+	h4 {
+		&:first-child {
+			margin-top: 0.5rem;
+		}
+		font-weight: bold;
+		color: $primary-color-dark;
+	}
+	+ .box {
+		margin-top: 0.5rem;
+	}
 }
 /**
 * The box is by default white add the ".alt" class to make it grey and remove the boarders.
@@ -861,7 +933,7 @@
 *     <h3>Past Box</h3>
 *     <p>@{lipsum:2:paragraphs}</p>     
 *     <div class="row">
-*         <div class="col-sm-9 col-lg-6 p-r-0">
+*         <div class="col-sm-9 col-lg-6">
 *             <div class="form-group">
 *                 <div class="input-group">
 *                     <select name="" id="" class="form-control">
@@ -882,7 +954,24 @@
 *     </div>
 *  </div>
 */
-.box.alt{
-    background-color: $soft-grey;
-    &.blue{background-color:$soft-blue;}
+.box.alt {
+	background-color: $soft-grey;
+	&.blue {
+		background-color: $soft-blue;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	.h1,
+	.h2,
+	.h3,
+	.h4,
+	.h5 {
+		color: $black;
+	}
+	address {
+		text-align: left;
+	}
 }

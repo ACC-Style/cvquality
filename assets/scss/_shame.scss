@@ -1,62 +1,72 @@
 select#SelectedQuarters {
-  width: 100%;
+	width: 100%;
 }
 
 select#SelectedQuarters option {
-  width: 100%;
-  padding: 4px 10px;
-  border-bottom: 1px dotted lightgrey;
+	width: 100%;
+	padding: 4px 10px;
+	border-bottom: 1px dotted lightgrey;
 }
 svg:not(:root) {
-  padding: 5px 0 0;
-  overflow: visible;
+	padding: 5px 0 0;
+	overflow: visible;
 }
 
 .sfPageEditor .visible-authenticated-block {
-  img {
-    display: none;
-  }
+	img {
+		display: none;
+	}
 
-  &:after,
-  &:before {
-    content: "AUTHENTICATED CONTENT - REMBER TO CHANGE PERMISIONS OF CONTENT IN AREA - Permision/Role/Authenticated";
-    display: block;
-    position: relative;
-    font-size: ms(-1);
-    text-align: center;
-    color: $scrub-teal-dark;
-  }
+	&:after,
+	&:before {
+		content: "AUTHENTICATED CONTENT - REMBER TO CHANGE PERMISIONS OF CONTENT IN AREA - Permision/Role/Authenticated";
+		display: block;
+		position: relative;
+		font-size: ms(-1);
+		text-align: center;
+		color: $scrub-teal-dark;
+	}
 
-  display: block !important;
-  opacity: 0.75;
-  border: 2px dotted $mix-teal_primary;
-  margin: 5px;
-  background: mix($mix-teal_primary, white, 10%);
+	display: block !important;
+	opacity: 0.75;
+	border: 2px dotted $mix-teal_primary;
+	margin: 5px;
+	background: mix($mix-teal_primary, white, 10%);
 }
 .sfPageEditor .visible-anonymous-block {
-  img {
-    display: none;
-  }
+	img {
+		display: none;
+	}
 
-  &:after,
-  &:before {
-    content: "ANONYMOUS CONTENT - REMBER TO CHANGE PERMISIONS OF CONTENT IN AREA - Permision/Role/Anonymous";
-    display: block;
-    position: relative;
-    font-size: ms(-1);
-    text-align: center;
-    color: $primary-color-dark;
-  }
+	&:after,
+	&:before {
+		content: "ANONYMOUS CONTENT - REMBER TO CHANGE PERMISIONS OF CONTENT IN AREA - Permision/Role/Anonymous";
+		display: block;
+		position: relative;
+		font-size: ms(-1);
+		text-align: center;
+		color: $primary-color-dark;
+	}
 
-  display: block !important;
-  opacity: 0.75;
-  border: 2px dotted $primary-color-light;
-  margin: 5px;
-  background: mix($primary-color-light, white, 10%);
+	display: block !important;
+	opacity: 0.75;
+	border: 2px dotted $primary-color-light;
+	margin: 5px;
+	background: mix($primary-color-light, white, 10%);
 }
 .wrapper.container-fluid {
-  padding: 0;
+	padding: 0;
 }
 .wrapper > .row {
-  margin: 0;
+	margin: 0;
 }
+// .hide {
+// 	display: none !important;
+// }
+// .show {
+// 	display: block !important;
+// }
+// .invisible {
+// 	visibility: hidden;
+// 	opacity: 0;
+// }
