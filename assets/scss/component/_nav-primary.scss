@@ -47,161 +47,169 @@
 */
 
 .nav-primary {
-  @include font(700);
-  @include nav-mobile-basic;
-  font-size: ms(0);
-  background: $warm-grey;
-  border-top: $primary-color-light 4px solid;
-  margin-bottom: 0.5rem;
+	@include font(700);
+	@include nav-mobile-basic;
+	font-size: ms(0);
+	background: $warm-grey;
+	border-top: $primary-color-light 4px solid;
+	margin-bottom: 0.5rem;
 
-  .nav {
-  }
+	.nav {
+	}
 
-  .nav-item {
-    &:hover {
-      background-color: $warm-grey-dark;
-    }
+	.nav-item {
+		&:hover {
+			background-color: $warm-grey-dark;
+		}
 
-    + .nav-item {
-      border-top: $off-white dotted 1px;
-    }
-    // removal of bootstrap decorating the a
-    &.open > a,
-    &.open > a:focus,
-    &.open > a:hover {
-      background-color: transparent;
-      border: none transparent 0;
-    }
+		+ .nav-item {
+			border-top: $off-white dotted 1px;
+		}
+		// removal of bootstrap decorating the a
+		&.open > a,
+		&.open > a:focus,
+		&.open > a:hover {
+			background-color: transparent;
+			border: none transparent 0;
+		}
+		&.active {
+			background-color: mix($off-white, $warm-grey-light);
+			&:hover {
+				background-color: $warm-grey-light;
+			}
+			> .nav-link.dropdown-toggle {
+				color: #e87d1e;
+			}
+		}
+		&.alt {
+			&.primary {
+				min-width: 250px;
+				@include teal-gradient;
 
-    &.alt {
-      &.primary {
-        min-width: 250px;
-        @include teal-gradient;
+				&:hover {
+					@include teal-gradient-reverse;
+				}
+			}
 
-        &:hover {
-          @include teal-gradient-reverse;
-        }
-      }
+			&.secondary {
+				@include grey-gradient;
 
-      &.secondary {
-        @include grey-gradient;
+				&:hover {
+					@include grey-gradient-reverse;
+				}
+			}
+		}
+	}
 
-        &:hover {
-          @include grey-gradient-reverse;
-        }
-      }
-    }
-  }
+	.nav-link {
+		text-align: left;
+		padding-bottom: 10px;
+		padding-top: 10px;
+		text-transform: uppercase;
+		color: $off-white;
 
-  .nav-link {
-    text-align: left;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    text-transform: uppercase;
-    color: $off-white;
+		&:hover {
+			color: #fff;
+		}
+	}
 
-    &:hover {
-      color: #fff;
-    }
-  }
+	@include bp(md) {
+		@include nav-flex-row-basic;
 
-  @include bp(md) {
-    @include nav-flex-row-basic;
+		.nav-item + .nav-item {
+			border: none transparent 0;
+		}
 
-    .nav-item + .nav-item {
-      border: none transparent 0;
-    }
+		.nav-link {
+			text-align: center;
+		}
 
-    .nav-link {
-      text-align: center;
-    }
+		margin-bottom: 0.75rem;
+	}
 
-    margin-bottom: 0.75rem;
-  }
+	@include bp(lg) {
+		font-size: ms(2);
+		margin-bottom: 1rem;
+	}
 
-  @include bp(lg) {
-    font-size: ms(2);
-    margin-bottom: 1rem;
-  }
+	&.mobile {
+		// @extend .flex-column;
+	}
 
-  &.mobile {
-    // @extend .flex-column;
-  }
+	.dropdown-toggle::after {
+		border: none 0 transparent;
+	}
 
-  .dropdown-toggle::after {
-    border: none 0 transparent;
-  }
+	.dropdown-menu {
+		-webkit-box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.175);
+		-moz-box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.175);
+		box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.175);
+		border: 0px;
+		@include bp(md) {
+			-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+			box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+		}
+		border-radius: 0px;
+		background-color: $soft-grey;
+		padding: 0;
+		margin: 0;
+		min-width: 20vw;
+		width: 100%;
+		width: intrinsic; /* Safari/WebKit uses a non-standard name */
+		width: -moz-max-content; /* Firefox/Gecko */
+		width: -webkit-max-content;
+		width: max-content;
+	}
 
-  .dropdown-menu {
-    -webkit-box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.175);
-    -moz-box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.175);
-    box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.175);
-    border: 0px;
-    @include bp(md) {
-      -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-    }
-    border-radius: 0px;
-    background-color: $soft-grey;
-    padding: 0;
-    margin: 0;
-    min-width: 20vw;
-    width: 100%;
-    width: intrinsic; /* Safari/WebKit uses a non-standard name */
-    width: -moz-max-content; /* Firefox/Gecko */
-    width: -webkit-max-content;
-    width: max-content;
-  }
+	.dropdown-item {
+		@include font(700);
+		text-align: left;
+		font-size: ms(1);
+		padding: 0.5em 1em;
+		color: $warm-grey;
 
-  .dropdown-item {
-    @include font(700);
-    text-align: left;
-    font-size: ms(1);
-    padding: 0.5em 1em;
-    color: $warm-grey;
+		&:hover {
+			background-color: $warm-grey;
+			color: white;
+		}
+	}
 
-    &:hover {
-      background-color: $warm-grey;
-      color: white;
-    }
-  }
+	.dropdown-divider {
+		border-top: 1px dotted $soft-blue;
+	}
 
-  .dropdown-divider {
-    border-top: 1px dotted $soft-blue;
-  }
+	.dropdown-menu.alt {
+		min-width: 100%;
+		left: auto;
+		right: 0;
+		background-color: mix($scrub-teal, $off-black, 70%);
 
-  .dropdown-menu.alt {
-    min-width: 100%;
-    left: auto;
-    right: 0;
-    background-color: mix($scrub-teal, $off-black, 70%);
+		.dropdown-item {
+			color: $off-white;
+			padding-right: 8em;
 
-    .dropdown-item {
-      color: $off-white;
-      padding-right: 8em;
+			&:hover {
+				color: white;
+				background-color: mix($scrub-teal, $off-black, 40%);
+				text-decoration: none;
+			}
 
-      &:hover {
-        color: white;
-        background-color: mix($scrub-teal, $off-black, 40%);
-        text-decoration: none;
-      }
+			small {
+				position: absolute;
+				font-size: ms(-1);
+				padding-top: (ms(1) - ms(-1))/2;
+				padding-bottom: (ms(1) - ms(-1))/2;
+				top: 10px;
+				right: 1rem;
+			}
 
-      small {
-        position: absolute;
-        font-size: ms(-1);
-        padding-top: (ms(1) - ms(-1))/2;
-        padding-bottom: (ms(1) - ms(-1))/2;
-        top: 10px;
-        right: 1rem;
-      }
+			&.alt {
+				background-color: $primary-color-dark;
 
-      &.alt {
-        background-color: $primary-color-dark;
-
-        &:hover {
-          background-color: mix($primary-color-dark, $off-black, 40%);
-        }
-      }
-    }
-  }
+				&:hover {
+					background-color: mix($primary-color-dark, $off-black, 40%);
+				}
+			}
+		}
+	}
 }
