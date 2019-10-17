@@ -1,22 +1,22 @@
 .mobile-menu-toggle {
-  text-transform: uppercase;
-  cursor: pointer;
-  text-align: right;
-  display: block;
-  position: relative;
-  .text {
-    @include font(700);
-    font-size: 1.25rem;
-    color: $scrub-teal;
-    display: inline-block;
-    vertical-align: top;
-    padding: 0.5rem 0.25rem;
-  }
-  i.fa {
-    color: $warm-grey;
-    font-size: 2.125rem;
-    margin: 0.125rem;
-  }
+	text-transform: uppercase;
+	cursor: pointer;
+	text-align: right;
+	display: block;
+	position: relative;
+	.text {
+		@include font(700);
+		font-size: 1.25rem;
+		color: $scrub-teal;
+		display: inline-block;
+		vertical-align: top;
+		padding: 0.5rem 0.25rem;
+	}
+	i.fa {
+		color: $warm-grey;
+		font-size: 2.125rem;
+		margin: 0.125rem;
+	}
 }
 
 /**
@@ -47,33 +47,34 @@
  */
 
 .mobile-menu-toggle-container {
-  position: relative;
-  display: flex;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  height: 2.75rem;
-  @include lightgrey-gradient;
-  @include dropshadow;
-  .user-status-container {
-    height: 2.25rem;
-    padding: 0.5rem 0;
-    .user {
-      display: none;
-    }
-    .nav-user-status {
-      float: left;
-      .acount {
-        display: none;
-      }
-    }
-    .user + .nav-user-status {
-      margin-top: 0rem;
-    }
-  }
-  @include bp(sm) {
-    display: none;
-    &.show-mobile {
-      display: flex;
-    }
-  }
+	position: relative;
+	display: flex;
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+	height: 2.75rem;
+	@include lightgrey-gradient;
+	@include dropshadow;
+	.user-status-container {
+		height: 2.25rem;
+		padding: 0.5rem 0;
+		.user {
+			display: none;
+		}
+		.nav-user-status {
+			float: left;
+			.acount {
+				display: none;
+			}
+		}
+		.user + .nav-user-status {
+			margin-top: 0rem;
+		}
+	}
+	//  Ticket Legacy-353  use utility instead of hard coding the style.
+	// @include bp(sm) {
+	//   display: none;
+	//   &.show-mobile {
+	//     display: flex;
+	//   }
+	// }
 }
