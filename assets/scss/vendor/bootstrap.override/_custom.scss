@@ -3,7 +3,6 @@
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
-
 $white: #fff;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
@@ -17,51 +16,52 @@ $gray-900: #212529;
 $black: #000;
 $grays: ();
 // stylelint-disable-next-line scss/dollar-variable-default
-$grays: map-merge((
-    "100": $gray-100,
-    "200": $gray-200,
-    "300": $gray-300,
-    "400": $gray-400,
-    "500": $gray-500,
-    "600": $gray-600,
-    "700": $gray-700,
-    "800": $gray-800,
-    "900": $gray-900),
-$grays);
+$grays: map-merge(
+	(
+		'100': $gray-100,
+		'200': $gray-200,
+		'300': $gray-300,
+		'400': $gray-400,
+		'500': $gray-500,
+		'600': $gray-600,
+		'700': $gray-700,
+		'800': $gray-800,
+		'900': $gray-900
+	),
+	$grays
+);
 
-
-$blue: #007bff ;
-$indigo: #6610f2 ;
-$purple: #6f42c1 ;
-$pink: #e83e8c ;
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
 $red: $error-color;
 $orange: $dark-orange;
 $yellow: $yellow-orange;
-$green: #28a745 ;
+$green: #28a745;
 $teal: $scrub-teal;
-$cyan:  $scrub-teal-light;
-$colors: () ;
+$cyan: $scrub-teal-light;
+$colors: ();
 
 // stylelint-disable-next-line scss/dollar-variable-default
-$colors: map-merge((
-    "blue": $blue,
-    "indigo": $indigo,
-    "purple": $purple,
-    "pink": $pink,
-    "red": $red,
-    "orange": $orange,
-    "yellow": $yellow,
-    "green": $green,
-    "teal": $teal,
-    "cyan": $cyan,
-    "white": $white,
-    "gray": $gray-600,
-    "gray-dark": $gray-800
-    ),
-    $colors
+$colors: map-merge(
+	(
+		'blue': $blue,
+		'indigo': $indigo,
+		'purple': $purple,
+		'pink': $pink,
+		'red': $red,
+		'orange': $orange,
+		'yellow': $yellow,
+		'green': $green,
+		'teal': $teal,
+		'cyan': $cyan,
+		'white': $white,
+		'gray': $gray-600,
+		'gray-dark': $gray-800
+	),
+	$colors
 );
-
-
 
 $primary: $primary-color;
 $secondary: $warm-grey-light;
@@ -72,34 +72,39 @@ $danger: $red;
 $light: $warm-grey-light;
 $dark: $warm-grey-dark;
 //4.0 Colors
-$theme-colors: () ;
+$theme-colors: ();
 // stylelint-disable-next-line scss/dollar-variable-default
-$theme-colors: map-merge((
-    "primary": $primary,
-    "secondary": $secondary,
-    "success": $success,
-    "info": $info,
-    "warning": $warning,
-    "danger": $danger,
-    "light": $light,
-    "dark": $dark),
-$theme-colors);
+$theme-colors: map-merge(
+	(
+		'primary': $primary,
+		'secondary': $secondary,
+		'success': $success,
+		'info': $info,
+		'warning': $warning,
+		'danger': $danger,
+		'light': $light,
+		'dark': $dark
+	),
+	$theme-colors
+);
 
-$grid-breakpoints: (xs: 0,
-sm: 576px,
-md: 768px,
-lg: 1024px,
-xl: 1200px,
-xxl: 1400px);
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 1024px,
+	xl: 1200px,
+	xxl: 1400px
+);
 
 // Grid containers
 //
 // Define the maximum width of `.container` for different screen sizes.
 $container-max-widths: (
-md: 720px,
-lg: 960px,
-xl: 1140px,
-xxl: 1350px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	xxl: 1350px
 );
 
 $grid-gutter-width: ms(2);
@@ -107,12 +112,11 @@ $grid-gutter-width: ms(2);
 // Fonts
 //
 // Font, line-height, and color for body text, headings, and more.
-$font-family-sans-serif:'Lato', Verdana, Helvetica, sans-serif;
-$font-family-serif: 'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
-$font-family-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-$headings-font-family: 'Muli', Verdana, Helvetica, sans-serif;
+$font-family-sans-serif: font();
+$font-family-serif: font-display();
+$font-family-monospace: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+$headings-font-family: font-display();
 $font-family-base: $font-family-sans-serif;
-
 
 $font-weight-normal: 400;
 $font-weight-bold: 700;
@@ -124,42 +128,36 @@ $h3-font-size: ms(3);
 $h4-font-size: ms(2);
 $h5-font-size: ms(1);
 $h6-font-size: ms(0);
-$font-size-base: (ms(1)/$ms-base) * 1rem;
-$font-size-lg:(ms(2)/$ms-base) * 1rem;
-$font-size-sm:(ms(0)/$ms-base) * 1rem;
-
-
+$font-size-base: (ms(1) / $ms-base) * 1rem;
+$font-size-lg: (ms(2) / $ms-base) * 1rem;
+$font-size-sm: (ms(0) / $ms-base) * 1rem;
 
 // Buttons + Forms
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-$input-btn-padding-y:         .25  * 1rem;
-$input-btn-padding-x:         1rem;
-$input-btn-padding-y-sm:      .125  * 1rem;
-$input-btn-padding-x-sm:      .75 * 1rem;
-$input-btn-padding-y-lg:      .375 * 1rem;
-$input-btn-padding-x-lg:      1.5 * 1rem;
-
-
+$input-btn-padding-y: 0.25 * 1rem;
+$input-btn-padding-x: 1rem;
+$input-btn-padding-y-sm: 0.125 * 1rem;
+$input-btn-padding-x-sm: 0.75 * 1rem;
+$input-btn-padding-y-lg: 0.375 * 1rem;
+$input-btn-padding-x-lg: 1.5 * 1rem;
 
 // Cards
-$card-border-width:                 0;
-$card-border-radius:                0;
-$card-border-color:                 transparent;
-$card-inner-border-radius:          0;
-$card-cap-bg:                       transparent;
-$card-bg:                           $white;
-
-
+$card-border-width: 0;
+$card-border-radius: 0;
+$card-border-color: transparent;
+$card-inner-border-radius: 0;
+$card-cap-bg: transparent;
+$card-bg: $white;
 
 // Progress bars
 
-$progress-height:                   1.25rem;
-$progress-font-size:                ($font-size-base * .8);
-$progress-bg:                       $soft-grey;
-$progress-box-shadow:               inset 0 .1rem .1rem rgba($black, .25);
-$progress-bar-color:                $white;
-$progress-bar-bg:                   theme-color("primary");
-$progress-bar-animation-timing:     1s linear infinite;
-$progress-bar-transition:           width .6s ease;
+$progress-height: 1.25rem;
+$progress-font-size: ($font-size-base * 0.8);
+$progress-bg: $soft-grey;
+$progress-box-shadow: inset 0 0.1rem 0.1rem rgba($black, 0.25);
+$progress-bar-color: $white;
+$progress-bar-bg: theme-color('primary');
+$progress-bar-animation-timing: 1s linear infinite;
+$progress-bar-transition: width 0.6s ease;
