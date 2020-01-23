@@ -1,218 +1,218 @@
-
 .pa-page {
-    display: none;
+	display: none;
 }
 
 .pull {
-    float: left;
-    width: 100%;
+	float: left;
+	width: 100%;
 }
 
 .sorting li {
-    margin-left: 0;
+	margin-left: 0;
 }
 
 #loader {
-    background: rgba(0,0,0,0.5);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 99999;
-    height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99999;
+	height: 100%;
 }
 
 #loader .inner {
-    position: absolute;
-    margin: auto;
-    width: 27px;
-    height: 30px;
-    top: 0;
-    left: 0;
-    color: #fff;
-    right: 0;
-    bottom: 0;
-    font-size: 26px;
+	position: absolute;
+	margin: auto;
+	width: 27px;
+	height: 30px;
+	top: 0;
+	left: 0;
+	color: #fff;
+	right: 0;
+	bottom: 0;
+	font-size: 26px;
 }
 
 .box-head {
-    float: left;
-    width: 100%;
-    padding: 0 10px;
-    margin-bottom: 5px;
+	float: left;
+	width: 100%;
+	padding: 0 10px;
+	margin-bottom: 5px;
 }
 
 .cs-message a {
-    display: inline !important;
-    padding: 0 !important;
+	display: inline !important;
+	padding: 0 !important;
 }
 
 .box-head .status {
-    padding: 13px 6px;
-    font-size: 25px;
+	padding: 13px 6px;
+	font-size: 25px;
 }
 
 .box-head .label {
-    float: left;
-    padding: 15px 10px;
+	float: left;
+	padding: 15px 10px;
 }
 
 .box-head button {
-    margin-top: 7px;
+	margin-top: 7px;
 }
 
 .box-head .label .sub-head span {
-    float: left;
-    width: 100%;
-    color: black;
-    font-size: 16px;
-    margin-top: 2px;
-    text-align: left;
+	float: left;
+	width: 100%;
+	color: black;
+	font-size: 16px;
+	margin-top: 2px;
+	text-align: left;
 }
 
 .box-head .label h3 {
-    margin-top: 0 !important;
+	margin-top: 0 !important;
 }
 
 .box-head .label h3 span {
-    color: #e87d1e;
+	color: #e87d1e;
 }
 
-.box-head .label h3, .box-head .label .sub-head {
-    float: left;
-    width: 100%;
-}
-
-.cs-panel {
-    margin-bottom: 0;
+.box-head .label h3,
+.box-head .label .sub-head {
+	float: left;
+	width: 100%;
 }
 
 .cs-panel {
-    float: left;
-    width: 100%;
+	margin-bottom: 0;
+}
+
+.cs-panel {
+	float: left;
+	width: 100%;
 }
 
 .cs-panel a a {
-    padding-left: 0 !important;
-    display: inline !important;
+	padding-left: 0 !important;
+	display: inline !important;
 }
 
 .cs-panel a a:before {
-    display: none !important;
+	display: none !important;
 }
 
 .cs-panel .panel {
-    width: 100%;
-    float: left;
+	width: 100%;
+	float: left;
 }
 
 ul.banded-list .alert-warning {
-    border-radius: 0;
-    margin-bottom: 0;
-    background: #fcf8e4 !important;
+	border-radius: 0;
+	margin-bottom: 0;
+	background: mix($warning, white, 10%) !important; //#fcf8e4
 }
 
 ul.banded-list .alert-warning strong i {
-    float: left;
-    padding: 4px;
+	float: left;
+	padding: 4px;
 }
 
-.clinician-overview .data-holder + .data-holder, .clinician-list-header .data-holder + .data-holder {
-    /*   min-height: 88px;*/
+.clinician-overview .data-holder + .data-holder,
+.clinician-list-header .data-holder + .data-holder {
+	/*   min-height: 88px;*/
 }
 
 .data-holder.alert {
-    border-radius: 0;
+	border-radius: 0;
 }
 
 .clinician-list-name {
-    margin-bottom: 0px !important;
-    margin-top: 0px !important;
+	margin-bottom: 0px !important;
+	margin-top: 0px !important;
 }
 
 .clinician-overview .fa-spinner {
-    text-align: center;
-    width: 100%;
-    margin-top: 54%;
+	text-align: center;
+	width: 100%;
+	margin-top: 54%;
 }
 
 .list-unstyled li {
-    list-style: none;
+	list-style: none;
 }
 
 .started-date-col {
-    width: 107px;
-    float: right;
-    text-align: left;
+	width: 107px;
+	float: right;
+	text-align: left;
 }
 
-.started-date-col em, .started-date-col p {
-    display: inline;
+.started-date-col em,
+.started-date-col p {
+	display: inline;
 }
 
 .daterangepicker * {
-    font-size: 14px;
+	font-size: 14px;
 }
 
 .daterangepicker .ranges li {
-    list-style-type: none;
-    margin-left: 0;
+	list-style-type: none;
+	margin-left: 0;
 }
 
 .date-filter {
-    width: 240px;
+	width: 240px;
 }
 
 .practice-dashboard-header .date {
-    position: relative;
-    float: right;
-    margin-bottom: 3px;
+	position: relative;
+	float: right;
+	margin-bottom: 3px;
 }
 
 .practice-dashboard-header .date i {
-    position: absolute;
-    right: 10px;
-    top: 10px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
 }
 
 .clinician-data .date {
-    position: relative;
-    float: right;
-    margin-bottom: 5px;
-    margin-top: 5px;
+	position: relative;
+	float: right;
+	margin-bottom: 5px;
+	margin-top: 5px;
 }
 
 .clinician-data .info-text {
-    margin-top: 7px;
-    float: left;
+	margin-top: 7px;
+	float: left;
 }
 
 .clinician-data .date i {
-    position: absolute;
-    right: 10px;
-    top: 10px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
 }
-
 
 .practice-dashboard-header .box .info-text {
-    width: 100%;
-    float: right;
-    font-size: 87%;
-    text-align: right;
+	width: 100%;
+	float: right;
+	font-size: 87%;
+	text-align: right;
 }
 
+@media (max-width: 1024px) {
+	.practice-dashboard-header .date {
+		float: left !important;
+		margin-top: 10px;
+	}
 
-@media(max-width:1024px) {
-    .practice-dashboard-header .date {
-        float: left !important;
-        margin-top: 10px;
-    }
-
-    .practice-dashboard-header .box .info-text {
-        float: left;
-        font-size: 87%;
-        text-align: left;
-    }
+	.practice-dashboard-header .box .info-text {
+		float: left;
+		font-size: 87%;
+		text-align: left;
+	}
 }
 
 /*Custom Tabs*/
@@ -224,483 +224,530 @@ ul.banded-list .alert-warning strong i {
     color: #0088aa;
 }*/
 
-
-
 .cs-tabs-content li {
-    margin-left: 12px;
+	margin-left: 12px;
 }
 
 .cs-tabs-content .fix-height {
-    min-height: 120px;
-    max-height: 300px;
-    overflow: auto;
-    z-index: 999999;
-    position: relative;
-    margin-bottom: 0;
+	min-height: 120px;
+	max-height: 300px;
+	overflow: auto;
+	z-index: 999999;
+	position: relative;
+	margin-bottom: 0;
 }
 
 .run-report-modal .modal-body {
-    padding: 15px 15px 0 15px;
+	padding: 15px 15px 0 15px;
 }
 
 .run-report-modal .cs-alert {
-    margin: 10px 0;
+	margin: 10px 0;
 }
 
 .alert.alert-danger ul li {
-    list-style: none;
+	list-style: none;
 }
 
 .cs-tabs li.cs-active {
-    border-bottom: 4px solid #0088aa !important;
+	border-bottom: 4px solid #0088aa !important;
 }
 
 .cs-tabs tab {
-    cursor: pointer !important;
+	cursor: pointer !important;
 }
 
 .cs-tabs li a {
-    color: #333;
-    border-top: 0 !important;
-    border-left: 0 !important;
-    border-right: 0 !important;
-    border-bottom: 4px solid transparent !important;
+	color: #333;
+	border-top: 0 !important;
+	border-left: 0 !important;
+	border-right: 0 !important;
+	border-bottom: 4px solid transparent !important;
 }
 
 .inline-loader {
-    height: 120px;
-    display: table;
+	height: 120px;
+	display: table;
 }
 
 .inline-loader .container {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
 }
 
 .inline-loader .container i {
-    font-size: 20px;
+	font-size: 20px;
 }
 
 .no-record {
-    padding: 10px 0;
+	padding: 10px 0;
 }
 
-.card h3, .card h2 {
-    margin-top: 15px;
+.card h3,
+.card h2 {
+	margin-top: 15px;
 }
 
 .card .card-body {
-    padding-bottom: 10px;
+	padding-bottom: 10px;
 }
 
-/*	ul.banded-list li:nth-child(even){
-    		background: #efefef;
-    	}
-    	ul.banded-list {
-    		margin-bottom: 5px;
-    	}
-    	ul.banded-list li{
-    		padding: 0 10px;
-    		color: #717171;
-    	}
-    	ul.banded-list li .row{
-		    border-bottom: 1px solid #cccccc85;
-		    padding-bottom: 7px;
-		    padding-top: 7px;
-    	}
-    	ul.banded-list .t-header{
-    		background: #e0e0e0;
-    		color: black;
-    	}
-    	ul.banded-list li.grey-bg{
-    		color: black;
-    	}*/
 .grey-bg {
-    background-color: #c5c5c5;
+	background-color: #c5c5c5;
 }
 
 .color-white {
-    color: white;
+	color: white;
 }
 
 .nav li a.row {
-    padding-left: 15px !important;
+	padding-left: 15px !important;
 }
 
 .nav-sub .nav-item {
-    margin-bottom: 3px;
+	margin-bottom: 3px;
 }
 
 .nav-sub ul {
-    background: white;
+	background: white;
 }
 
 .nav-sub ul li {
-    background: #eceaea;
+	background: #eceaea;
 }
 
 .color-black {
-    color: black;
+	color: black;
 }
 
-
 .clini-manag .sorting {
-    padding: 20px 0 5px 0;
-    float: left;
-    width: 100%;
+	padding: 20px 0 5px 0;
+	float: left;
+	width: 100%;
 }
 
 .clini-manag .sorting .left {
-    float: left;
+	float: left;
 }
 
 .clini-manag .sorting .show {
-    float: right;
+	float: right;
 }
 
 .clini-manag .sorting .show strong {
-    margin-right: 19px;
+	margin-right: 19px;
 }
 
 .clini-manag .sorting h2 {
-    margin: 0;
+	margin: 0;
 }
 
 .clini-manag .sorting select {
-    padding: 7px;
+	padding: 7px;
 }
 
 .clini-manag .clinicians .list {
-    background-color: #e3f0f9;
-    float: left;
-    width: 100%;
-    margin-bottom: 10px;
+	background-color: #e3f0f9;
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
 }
 
 .clini-manag .clinicians .list .status {
-    width: 3em;
-    min-width: 45px;
-    float: left;
-    text-align: center;
-    padding: 15px 0;
-    border: 2px solid #e7e7e3;
+	width: 3em;
+	min-width: 45px;
+	float: left;
+	text-align: center;
+	padding: 15px 0;
+	border: 2px solid #e7e7e3;
 }
 
 .clini-manag .clinicians .list .status.done {
-    color: #fff;
-    background-color: #83d07f;
+	color: #fff;
+	background-color: #83d07f;
 }
 
 .clini-manag .clinicians .list .status.loading {
-    background-color: #04a5d9;
-    color: #fff;
+	background-color: #04a5d9;
+	color: #fff;
 }
 
 .clini-manag .clinicians .list .status.error {
-    background-color: #ee7e90;
-    color: #fff;
+	background-color: #ee7e90;
+	color: #fff;
 }
 
 .clini-manag .clinicians .list .status i {
-    font-size: 30px;
+	font-size: 30px;
 }
 
 .clini-manag .clinicians .list .name {
-    float: left;
-    width: 90%;
-    padding: 10px;
+	float: left;
+	width: 90%;
+	padding: 10px;
 }
 
 .clini-manag .clinicians .list .name h2 {
-    font-weight: 600;
-    margin: 0;
+	font-weight: 600;
+	margin: 0;
 }
 
 .clini-manag .clinicians .list .name h4 {
-    font-weight: 600;
-    margin: 0;
+	font-weight: 600;
+	margin: 0;
 }
 
 .clini-manag .clinicians .list .name .code {
-    color: #333;
+	color: #333;
 }
 
 .clini-manag .clinicians .list .left {
-    float: left;
+	float: left;
 }
 
 .clini-manag .clinicians .list .remove {
-    margin: 7px 0;
-    float: right;
-    min-width: 120px;
+	margin: 7px 0;
+	float: right;
+	min-width: 120px;
 }
 
-
 .clini-manag .clinicians .accordion {
-    float: left;
-    width: 100%;
-    margin-bottom: 0;
-    border: 2px solid #e7e7e3;
-    position: relative;
+	float: left;
+	width: 100%;
+	margin-bottom: 0;
+	border: 2px solid #e7e7e3;
+	position: relative;
 }
 
 .clini-manag .clinicians .accordion .icon {
-    position: absolute;
-    width: 3em;
-    text-align: center;
-    z-index: 999;
+	position: absolute;
+	width: 3em;
+	text-align: center;
+	z-index: 999;
 }
 
 .clini-manag .clinicians .accordion .icon i {
-    padding: 7px 10px;
-    color: #333;
-    font-size: 20px;
+	padding: 7px 10px;
+	color: #333;
+	font-size: 20px;
 }
 
 .clini-manag .clinicians .accordion ul {
-    background-color: #e7e7e3;
-    float: left;
-    width: 100%;
-    margin-bottom: 0;
-    min-height: 33px;
+	background-color: #e7e7e3;
+	float: left;
+	width: 100%;
+	margin-bottom: 0;
+	min-height: 33px;
 }
 
 .clinician-data .banded-list {
-    border-bottom: 2px solid #bbb;
+	border-bottom: 2px solid #bbb;
 }
 
 .clini-manag .clinicians .accordion ul li {
-    margin-left: 0 !important;
-    list-style: none;
-    position: relative;
-    padding: 5px 0 5px 40px;
-    float: left;
-    width: 100%;
+	margin-left: 0 !important;
+	list-style: none;
+	position: relative;
+	padding: 5px 0 5px 40px;
+	float: left;
+	width: 100%;
 }
 
 .clini-manag .clinicians .accordion ul li a {
-    color: black;
+	color: black;
 }
 
 .clini-manag .clinicians .accordion ul li.warning {
-    background-color: #ffbf4f;
+	background-color: #ffbf4f;
 }
 
 .clini-manag .clinicians .accordion ul li.error {
-    color: #0f0f0f;
-    background-color: #ee7e90;
+	color: #0f0f0f;
+	background-color: #ee7e90;
 }
 
 .clini-manag .clinicians .accordion ul li.loading {
-    background-color: #04a5d9;
-    color: #fff;
+	background-color: #04a5d9;
+	color: #fff;
 }
 
 .clini-manag .clinicians .accordion ul li.success {
-    background-color: #e7e7e3;
-    color: #0f0f0f;
+	background-color: #e7e7e3;
+	color: #0f0f0f;
 }
 
 .clini-manag .clinicians .accordion ul li i {
-    padding: 0 10px 0 0px;
+	padding: 0 10px 0 0px;
 }
 
-.clini-manag .brown-btn, .pract-manag .brown-btn {
-    border-radius: 5px;
-    text-align: center;
-    color: #fff;
-    text-decoration: none;
-    background: #747474;
-    background: -moz-linear-gradient(top, #747474 0%, #575757 100%);
-    background: -webkit-linear-gradient(top, #747474 0%, #575757 100%);
-    background: linear-gradient(to bottom, #747474 0%, #575757 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#747474', endColorstr='#575757',GradientType=0 );
+.clini-manag .brown-btn,
+.pract-manag .brown-btn {
+	border-radius: 5px;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	background: #747474;
+	background: -moz-linear-gradient(top, #747474 0%, #575757 100%);
+	background: -webkit-linear-gradient(top, #747474 0%, #575757 100%);
+	background: linear-gradient(to bottom, #747474 0%, #575757 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#747474', endColorstr='#575757',GradientType=0 );
 }
-
-
 
 /*Transcript section*/
 
 .popover {
-    max-width: 450px;
+	max-width: 450px;
 }
 
 .green-bg {
-    background-color: #14b057;
+	background-color: #14b057;
 }
 
 .purple-bg {
-    background-color: #7d5891;
+	background-color: #7d5891;
 }
 
 .pink-bg {
-    background-color: #b84299;
+	background-color: #b84299;
 }
 
 .blue-bg {
-    background-color: #198dae;
+	background-color: #198dae;
 }
 
 .grey-bg {
-    background: #b3b3b3;
+	background: #b3b3b3;
 }
 
 .white-co {
-    color: #fff;
+	color: #fff;
 }
 
 .divided-content a {
-    margin-right: 10px;
+	margin-right: 10px;
 }
 
 .cs-records {
-    float: left;
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    background: #f6f6f6;
-    margin: 0px 0px 20px 0px;
-    background: #f6f6f6;
+	float: left;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	background: #f6f6f6;
+	margin: 0px 0px 20px 0px;
+	background: #f6f6f6;
 }
 
 .cs-table {
-    width: 100%;
+	width: 100%;
 }
 
 .cs-table th {
-    background: #198dae;
-    border: 0px;
-    font-size: 14px;
+	background: #198dae;
+	border: 0px;
+	font-size: 14px;
 }
 
 .cs-table th a {
-    color: #fff;
+	color: #fff;
 }
 
 .cs-table th.sort {
-    background-color: #004176;
-    border: 0px;
+	background-color: #004176;
+	border: 0px;
 }
 
 .cs-table th {
-    color: #656565;
-    text-align: left;
-    background: #dedede;
-    font-size: 13px;
-    border-collapse: collapse;
-    line-height: initial;
+	color: #656565;
+	text-align: left;
+	background: #dedede;
+	font-size: 13px;
+	border-collapse: collapse;
+	line-height: initial;
 }
 
 .cs-table tr:nth-child(even) {
-    background: #f6f6f6;
+	background: #f6f6f6;
 }
 
 .cs-table tr {
-    background: white;
+	background: white;
 }
 
-.cs-table th, .cs-table td {
-    padding: 10px;
+.cs-table th,
+.cs-table td {
+	padding: 10px;
 }
 
 .cs-table .title {
-    padding-bottom: 10px;
+	padding-bottom: 10px;
 }
 
 .w70 {
-    width: 70px;
+	width: 70px;
 }
 
 .sort-pannel {
-    margin-bottom: 5px;
-    margin-left: 5px;
-    vertical-align: middle;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	vertical-align: middle;
 }
 
 .sort-pannel select {
-    margin-left: 5px;
-    vertical-align: middle;
+	margin-left: 5px;
+	vertical-align: middle;
 }
 
 .sort-pannel .icon-pdf:before {
-    font-family: FontAwesome;
-    content: "\f1c1";
-    font-size: 20px;
-    margin-right: 4px;
+	font-family: FontAwesome;
+	content: "\f1c1";
+	font-size: 20px;
+	margin-right: 4px;
 }
 
-.pink-bg, .pink-bg:hover {
-    background: #e91e63 !important;
+.pink-bg,
+.pink-bg:hover {
+	background: #e91e63 !important;
 }
 
-.card h3, .card h2 {
-    margin-top: 15px;
+.card h3,
+.card h2 {
+	margin-top: 15px;
 }
 
 .card .card-body {
-    padding-bottom: 10px;
+	padding-bottom: 10px;
 }
 
-ul.banded-list li:nth-child(even) {
+/*ul.banded-list li:nth-child(even) {
     background: #efefef;
-}
+}*/
 
 ul.banded-list {
-    margin-bottom: 5px;
+	margin-bottom: 5px;
+	&.no-border {
+		border: 0px;
+	}
 }
 
-ul.banded-list li {
-    padding: 0 10px;
-    color: #717171;
+ul.banded-list li,
+ul.banded-list li:nth-child(even) {
+	padding: 8px 16px;
+	color: #717171;
 }
 
-ul.banded-list li .row {
+/*ul.banded-list li .row {
     border-bottom: 1px solid #cccccc85;
     padding-bottom: 7px;
     padding-top: 7px;
-}
+}*/
 
 ul.banded-list .t-header {
-    background: #e0e0e0;
-    color: black;
+	background: #e0e0e0;
+	color: black;
 }
 
 ul.banded-list li.grey-bg {
-    color: black;
+	color: black;
+}
+
+.bg-pink {
+	background-color: #e91e63;
+	color: white;
+}
+
+.bg-blue {
+	background-color: #a4cded;
+	color: white;
+}
+
+.bg-cme,
+.bg-green {
+	background-color: #00a15b;
+	color: white;
+}
+
+.bg-cop,
+.bg-purple {
+	background-color: #775891;
+	color: white;
+}
+
+.bg-ce,
+.bg-grey {
+	background-color: #a8a8a8;
+	color: white;
+}
+
+.bg-moc2,
+.bg-magenta-dark {
+	background-color: #9a1267;
+	color: white;
+}
+
+.bg-cne,
+.bg-cyan-dark {
+	background-color: #198dae;
+	color: white;
+}
+
+.bg-ecme {
+	background-color: #d16528;
+	color: white;
+}
+
+.bg-pharmad {
+	background-color: #992e2e;
+	color: white;
+}
+
+.bg-moc4 {
+	background-color: #d3248d;
+	color: white;
+}
+
+.bg-abp {
+	background-color: #007a5b;
+	color: white;
+}
+
+.bg-cne-rx {
+	background-color: #52549e;
+	color: white;
 }
 
 .grey-bg {
-    background-color: #c5c5c5;
+	background-color: #c5c5c5;
 }
 
-.blue-bg, .blue-bg:hover {
-    background: #2196f3 !important;
+.blue-bg,
+.blue-bg:hover {
+	background: #2196f3 !important;
 }
 
 .color-white {
-    color: white;
+	color: white;
 }
 
 .color-black {
-    color: black;
+	color: black;
 }
 
 .wauto {
-    width: auto;
+	width: auto;
 }
 
 .pull {
-    float: left;
-    width: 100%;
+	float: left;
+	width: 100%;
 }
 
 .popover .close {
-    position: absolute;
-    top: 6px;
-    right: 10px;
+	position: absolute;
+	top: 6px;
+	right: 10px;
 }
 
 .popover-title {
-    padding-right: 30px;
+	padding-right: 30px;
 }

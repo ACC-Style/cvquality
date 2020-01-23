@@ -14,6 +14,7 @@
 // starts to overide the basic nav decorations
 @import "base/nav-basic";
 @import "vendor/bootstrap.override/grid.override";
+@import "vendor/bootstrap.override/forms";
 @import "vendor/bootstrap.override/dropdown.override";
 @import "vendor/bootstrap.override/breadcrumbs.override";
 @import "vendor/bootstrap.override/blockquote.override";
@@ -31,7 +32,6 @@
 @import "vendor/bootstrap.override/nav-pills.override";
 @import "vendor/bootstrap.override/modal.override";
 
-
 @import "component/card";
 @import "component/button";
 
@@ -48,7 +48,7 @@
 @import "component/map";
 @import "component/webinar";
 
-/* Legacy Support */ 
+/* Legacy Support */
 @import "component/assessment";
 
 /* Footer */
@@ -56,10 +56,9 @@
 @import "component/nav-social-buttons";
 @import "component/nav-footer";
 
-
 /*! Javascript Components */
 // !Todo Fix for 4.0 upgrade
- @import "component/carousel";
+@import "component/carousel";
 
 // !Todo Fix for 4.0 upgrade
 @import "structure/infographic";

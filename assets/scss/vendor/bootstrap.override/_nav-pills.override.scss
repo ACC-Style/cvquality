@@ -1,11 +1,22 @@
-.nav-pills{
-	.nav-link{background-color:$off-white;}
-	.nav-link.alt{
-		background-color:$warm-grey;
-		color:$black;
-		&:hover{
-		background-color:$warm-grey-dark;
-		color:$off-white;	
+.nav-pills {
+	.nav-link {
+		background-color: $off-white;
+		border-radius: $border-radius;
+	}
+	.nav-pill {
+		padding-right: 1px;
+	}
+	&.show > .nav-link,
+	.nav-link.active {
+		color: $off-white;
+		background-color: $scrub-teal;
+	}
+	.nav-link.alt {
+		background-color: $warm-grey;
+		color: $black;
+		&:hover {
+			background-color: $warm-grey-dark;
+			color: $off-white;
 		}
 	}
 }
